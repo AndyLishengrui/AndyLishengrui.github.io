@@ -46,82 +46,70 @@
         
         .main-features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: 1fr;
             gap: 30px;
             margin-bottom: 40px;
         }
         
         .feature-card {
             background: white;
-            border-radius: 20px;
-            padding: 40px 30px;
-            text-align: center;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            padding: 25px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
         }
         
         .feature-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 25px 45px rgba(0,0,0,0.15);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .feature-content {
+            display: flex;
+            align-items: center;
+            flex: 1;
         }
         
         .feature-icon {
-            font-size: 4em;
-            margin-bottom: 20px;
+            font-size: 2.5em;
+            margin-right: 20px;
             background: linear-gradient(135deg, #667eea, #764ba2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            flex-shrink: 0;
         }
         
-        .feature-card h2 {
-            font-size: 2em;
-            margin-bottom: 15px;
+        .feature-info h2 {
+            font-size: 1.5em;
+            margin: 0 0 5px 0;
             color: #333;
         }
         
-        .feature-description {
-            font-size: 1.1em;
-            color: #666;
-            margin-bottom: 25px;
-            line-height: 1.8;
-        }
-        
-        .feature-stats {
-            display: flex;
-            justify-content: space-around;
-            margin: 25px 0;
-        }
-        
-        .stat-item {
-            text-align: center;
-        }
-        
-        .stat-number {
-            font-size: 2em;
-            font-weight: bold;
-            color: #667eea;
-        }
-        
-        .stat-label {
+        .feature-info .feature-description {
             font-size: 0.9em;
             color: #666;
-            margin-top: 5px;
+            margin: 0;
+            line-height: 1.4;
         }
+        
+
         
         .action-button {
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
             border: none;
-            padding: 15px 30px;
-            border-radius: 25px;
-            font-size: 1.1em;
+            padding: 12px 25px;
+            border-radius: 20px;
+            font-size: 1em;
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s ease;
-            width: 100%;
-            max-width: 250px;
+            white-space: nowrap;
         }
         
         .action-button:hover {
@@ -221,21 +209,28 @@
         }
         
         @media (max-width: 768px) {
-            .main-features {
-                grid-template-columns: 1fr;
+            .feature-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
             }
             
-            .feature-stats {
+            .feature-content {
                 flex-direction: column;
-                gap: 15px;
+                margin-bottom: 20px;
+            }
+            
+            .feature-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
             }
             
             .header h1 {
                 font-size: 2em;
             }
             
-            .feature-card {
-                padding: 30px 20px;
+            .action-button {
+                width: 100%;
             }
         }
     </style>
@@ -249,51 +244,19 @@
     <div class="container">
         <!-- 主要功能卡片 -->
         <div class="main-features">
-            <!-- 填空练习卡片 -->
+            <!-- 经文小测卡片 -->
             <div class="feature-card" onclick="startFillBlankPractice()">
-                <div class="feature-icon">
-                    <i class="fas fa-edit"></i>
-                </div>
-                <h2>填空练习</h2>
-                <p class="feature-description">通过填空练习加深对圣经经文的记忆，选择不同难度和章节进行针对性练习</p>
-                <div class="feature-stats">
-                    <div class="stat-item">
-                        <div class="stat-number" id="completedPractices">0</div>
-                        <div class="stat-label">已完成练习</div>
+                <div class="feature-content">
+                    <div class="feature-icon">
+                        <i class="fas fa-edit"></i>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="accuracy">0%</div>
-                        <div class="stat-label">准确率</div>
+                    <div class="feature-info">
+                        <h2>经文小测</h2>
+                        <p class="feature-description">通过填空练习加深对圣经经文的记忆，选择不同难度和章节进行针对性练习</p>
                     </div>
                 </div>
                 <button class="action-button">
-                    <i class="fas fa-play"></i> 开始练习
-                </button>
-            </div>
-            
-            <!-- 读经打卡卡片 -->
-            <div class="feature-card" onclick="openReadingCheckin()">
-                <div class="feature-icon">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-                <h2>读经打卡</h2>
-                <p class="feature-description">建立每日读经习惯，记录学习进度，与其他学习者分享心得体会</p>
-                <div class="feature-stats">
-                    <div class="stat-item">
-                        <div class="stat-number" id="streakDays">1</div>
-                        <div class="stat-label">连续天数</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="totalDays">1</div>
-                        <div class="stat-label">总计天数</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="chaptersRead">1</div>
-                        <div class="stat-label">已读章节</div>
-                    </div>
-                </div>
-                <button class="action-button">
-                    <i class="fas fa-calendar-check"></i> 今日打卡
+                    <i class="fas fa-play"></i> 开始经文测试
                 </button>
             </div>
         </div>
@@ -322,17 +285,12 @@
         let booksData = {};
         let userProgress = JSON.parse(localStorage.getItem('userProgress')) || {
             practices: 0,
-            accuracy: 0,
-            streakDays: 1,
-            totalDays: 1,
-            chaptersRead: 1,
-            lastCheckin: null
+            accuracy: 0
         };
 
         // 初始化页面
         document.addEventListener('DOMContentLoaded', function() {
             loadBooksData();
-            updateStats();
             setDailyVerse();
         });
 
@@ -429,14 +387,7 @@
             });
         }
 
-        // 更新统计数据
-        function updateStats() {
-            document.getElementById('completedPractices').textContent = userProgress.practices;
-            document.getElementById('accuracy').textContent = userProgress.accuracy + '%';
-            document.getElementById('streakDays').textContent = userProgress.streakDays;
-            document.getElementById('totalDays').textContent = userProgress.totalDays;
-            document.getElementById('chaptersRead').textContent = userProgress.chaptersRead;
-        }
+
 
         // 设置每日金句
         function setDailyVerse() {
@@ -457,11 +408,6 @@
         // 开始填空练习
         function startFillBlankPractice() {
             window.location.href = 'practice.html';
-        }
-
-        // 打开读经打卡
-        function openReadingCheckin() {
-            window.location.href = 'checkin.html';
         }
 
         // 保存用户进度

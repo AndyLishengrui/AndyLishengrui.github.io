@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>填空练习 | 圣经学习助手</title>
+    <title>选择测试书卷 | 圣经学习助手</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         * {
@@ -57,17 +57,44 @@
         
         .settings-panel {
             background: white;
-            border-radius: 20px;
-            padding: 40px;
+            border-radius: 15px;
+            padding: 25px 30px;
             margin-bottom: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .settings-header {
+            margin-bottom: 30px;
+        }
+        
+        .settings-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .settings-icon {
+            font-size: 2.5em;
+            color: #4facfe;
+            flex-shrink: 0;
+        }
+        
+        .settings-info {
+            text-align: left;
+            flex: 1;
         }
         
         .settings-title {
-            font-size: 1.8em;
-            margin-bottom: 30px;
+            font-size: 1.5em;
+            margin: 0 0 5px 0;
             color: #333;
+        }
+        
+        .settings-description {
+            font-size: 0.9em;
+            color: #666;
+            margin: 0;
+            line-height: 1.4;
         }
         
         .setting-group {
@@ -126,13 +153,13 @@
             background: linear-gradient(135deg, #4facfe, #00f2fe);
             color: white;
             border: none;
-            padding: 15px 40px;
-            border-radius: 25px;
-            font-size: 1.2em;
+            padding: 12px 25px;
+            border-radius: 20px;
+            font-size: 1em;
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s ease;
-            margin-top: 20px;
+            margin: 0;
         }
         
         .start-btn:hover {
@@ -240,6 +267,40 @@
             margin-top: 30px;
         }
         
+        /* 顶部控制按钮 */
+        .top-controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+            padding: 8px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+        
+        .check-btn {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            font-size: 0.9em;
+            padding: 8px 15px;
+        }
+        
+        .check-btn:hover {
+            background: linear-gradient(135deg, #2980b9, #1f618d);
+            transform: translateY(-1px);
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            font-size: 0.9em;
+            padding: 8px 18px;
+        }
+        
+        .submit-btn:hover {
+            background: linear-gradient(135deg, #c0392b, #a93226);
+            transform: translateY(-1px);
+        }
+
+        
         .action-btn {
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
@@ -275,6 +336,42 @@
             margin-bottom: 20px;
             text-align: center;
             font-weight: bold;
+        }
+        
+        .chapter-difficulty-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .chapter-difficulty-row .chapter-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .chapter-difficulty-row .chapter-icon {
+            font-size: 2em;
+            color: #4facfe;
+            flex-shrink: 0;
+        }
+        
+        .chapter-difficulty-row .chapter-details h3 {
+            font-size: 1.3em;
+            margin: 0 0 5px 0;
+            color: #333;
+        }
+        
+        .chapter-difficulty-row .chapter-details p {
+            font-size: 0.9em;
+            color: #666;
+            margin: 0;
+        }
+        
+        .chapter-difficulty-row .start-action {
+            flex-shrink: 0;
         }
         
         .books-grid {
@@ -420,8 +517,6 @@
         
         /* 多节经文容器样式 */
         .verses-container {
-            max-height: 75vh;
-            overflow-y: auto;
             margin: 15px 0;
         }
         
@@ -429,8 +524,8 @@
             background: #ffffff;
             border: 1px solid #e9ecef;
             border-radius: 8px;
-            margin: 8px 0;
-            padding: 15px;
+            margin: 6px 0;
+            padding: 12px 15px;
             transition: all 0.2s ease;
         }
         
@@ -453,29 +548,7 @@
             vertical-align: top;
         }
         
-        .edit-verse-btn {
-            background: #ffc107;
-            border: none;
-            color: white;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 10px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            margin-left: 8px;
-            opacity: 0.7;
-            transition: all 0.3s ease;
-            float: right;
-        }
-        
-        .edit-verse-btn:hover {
-            opacity: 1;
-            transform: scale(1.1);
-            background: #e0a800;
-        }
+
         
         .verse-text {
             clear: both;
@@ -566,6 +639,29 @@
         }
         
         @media (max-width: 768px) {
+            .settings-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .settings-icon {
+                margin-bottom: 15px;
+            }
+            
+            .settings-info {
+                text-align: center;
+            }
+            
+            .chapter-difficulty-row {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .chapter-difficulty-row .chapter-info {
+                flex-direction: column;
+                text-align: center;
+            }
+            
             .difficulty-options {
                 flex-direction: column;
                 align-items: center;
@@ -584,13 +680,17 @@
             .practice-area {
                 padding: 20px;
             }
+            
+            .settings-panel {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <button class="back-button" onclick="goBackToBookSelection()">
-            <i class="fas fa-arrow-left"></i> 返回书卷选择
+        <button class="back-button" onclick="goBackToIndex()">
+            <i class="fas fa-arrow-left"></i> 返回主页
         </button>
         <div class="progress-info" id="progressInfo" style="display: none;">
             <span id="progressText">第 1 题 / 共 10 题</span> | 
@@ -599,18 +699,22 @@
     </div>
 
     <div class="container">
-        <!-- GitHub Pages 静态版本提示 -->
-        <div id="static-notice" style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 10px; margin: 10px 0; border-radius: 5px; font-size: 14px;">
-            📋 <strong>静态版本说明</strong>: 此为 GitHub Pages 托管版本，在线编辑功能已禁用。如需编辑经文，请下载完整版本在本地使用。
-        </div>
-        
         <!-- 设置面板 -->
         <div class="settings-panel" id="settingsPanel">
-            <h2 class="settings-title"><i class="fas fa-cog"></i> 智能填空练习</h2>
+            <div class="settings-header">
+                <div class="settings-content">
+                    <div class="settings-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="settings-info">
+                        <h2 class="settings-title">选择测试书卷</h2>
+                        <p class="settings-description">选择一个圣经书卷开始您的经文小测</p>
+                    </div>
+                </div>
+            </div>
             
-            <!-- 步骤1：选择书卷 -->
+            <!-- 书卷选择 -->
             <div class="step-container" id="bookSelectionStep">
-                <h3 class="step-title">📚 选择学习书卷</h3>
                 <div class="books-grid" id="booksGrid">
                     <!-- 书卷卡片将动态生成 -->
                 </div>
@@ -618,9 +722,23 @@
             
             <!-- 步骤2：选择章节和难度 -->
             <div class="step-container" id="chapterSelectionStep" style="display: none;">
-                <h3 class="step-title">📖 选择章节与难度</h3>
-                <div class="selected-book-info" id="selectedBookInfo">
-                    <!-- 显示已选择的书卷信息 -->
+                <div class="chapter-difficulty-row">
+                    <div class="chapter-info">
+                        <div class="chapter-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="chapter-details">
+                            <h3>选择章节与难度</h3>
+                            <div class="selected-book-info" id="selectedBookInfo">
+                                <!-- 显示已选择的书卷信息 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="start-action">
+                        <button class="start-btn" onclick="startPractice()">
+                            <i class="fas fa-play"></i> 开始经文测试
+                        </button>
+                    </div>
                 </div>
                 
                 <div class="chapters-section">
@@ -649,17 +767,6 @@
                     <button class="action-btn secondary-btn" onclick="backToBookSelection()">
                         <i class="fas fa-arrow-left"></i> 重选书卷
                     </button>
-                    <button class="action-btn" id="verseEditorBtn" title="经文校对工具" style="background: linear-gradient(135deg, #ffc107, #ff8c00);">
-                        <i class="fas fa-edit"></i> 经文校对
-                    </button>
-                    <button class="start-btn" onclick="startPractice()">
-                        <i class="fas fa-play"></i> 开始练习
-                    </button>
-                </div>
-                
-                <!-- 调试信息 -->
-                <div style="margin-top: 10px; font-size: 12px; color: #666; text-align: center;">
-                    调试: <span id="debugInfo">等待选择...</span>
                 </div>
             </div>
         </div>
@@ -673,13 +780,13 @@
                 <!-- 经文引用将在这里显示 -->
             </div>
             <div class="action-buttons">
-                <button class="action-btn" onclick="checkAnswer()">
-                    <i class="fas fa-check"></i> 检查答案
+                <button class="action-btn" id="prevBtn" onclick="prevVerse()" disabled>
+                    <i class="fas fa-arrow-left"></i> 上一组
                 </button>
                 <button class="action-btn" onclick="showHint()">
                     <i class="fas fa-lightbulb"></i> 提示
                 </button>
-                <button class="action-btn" id="nextBtn" style="display: none;">
+                <button class="action-btn" id="nextBtn" onclick="nextVerse()">
                     <i class="fas fa-arrow-right"></i> 下一组
                 </button>
             </div>
@@ -717,6 +824,7 @@
         let totalQuestions = 0;
         let correctAnswers = 0;
         let startTime = 0;
+        let savedAnswers = {}; // 存储各组的用户答案
 
         
 
@@ -759,18 +867,7 @@
                 });
             });
 
-            // 经文校对按钮
-            const verseEditorBtn = document.getElementById('verseEditorBtn');
-            if (verseEditorBtn) {
-                console.log('找到经文校对按钮，添加点击事件');
-                verseEditorBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    console.log('经文校对按钮被点击');
-                    openVerseEditor();
-                });
-            } else {
-                console.error('未找到经文校对按钮');
-            }
+
 
             // 旧的下拉选择器已被卡片式选择替代
             // 新的交互通过 selectBook() 和 selectChapter() 函数处理
@@ -1055,6 +1152,7 @@
             
             currentBook = selectedBook;
             currentChapter = selectedChapter;
+            savedAnswers = {}; // 清空答案存储
             
             console.log('开始加载练习数据:', currentBook, '第', currentChapter, '章');
             
@@ -1209,9 +1307,7 @@
                     <div class="verse-group" data-verse-id="${verseId}">
                         <div class="verse-content">
                             <span class="verse-reference-inline">${bookName} ${verse.chapter}:${verse.verse}</span>
-                            <button class="edit-verse-btn" data-verse-id="${verseId}" data-original-text="${verseText.replace(/"/g, '&quot;')}" data-book-name="${bookName}" data-chapter="${verse.chapter}" data-verse="${verse.verse}" title="编辑经文">
-                                <i class="fas fa-edit"></i>
-                            </button>
+
                             <div class="verse-text" data-original="${verseText.replace(/"/g, '&quot;')}">${blankedText}</div>
                         </div>
                     </div>
@@ -1227,6 +1323,14 @@
                         <div class="progress-fill" style="width: ${((currentVerseIndex + versesToShow.length) / currentVerses.length * 100)}%"></div>
                     </div>
                 </div>
+                <div class="top-controls">
+                    <button class="action-btn check-btn" onclick="checkAnswer()">
+                        <i class="fas fa-check"></i> 检查答案
+                    </button>
+                    <button class="action-btn submit-btn" onclick="showResults()">
+                        <i class="fas fa-check-circle"></i> 提交答案
+                    </button>
+                </div>
                 <div class="verses-container">${versesHtml}</div>
             `;
             
@@ -1234,18 +1338,27 @@
             const verseReference = document.getElementById('verseReference');
             verseReference.innerHTML = '';
             
-            // 更新按钮状态
+            // 更新导航按钮状态
+            const prevBtn = document.getElementById('prevBtn');
             const nextBtn = document.getElementById('nextBtn');
-            nextBtn.style.display = 'none';
             
-            // 判断是否为最后一组
-            const isLastGroup = (currentVerseIndex + versesToShow.length) >= currentVerses.length;
-            if (isLastGroup) {
-                nextBtn.innerHTML = '<i class="fas fa-check-circle"></i> 提交答案';
-                nextBtn.onclick = showResults;
+            // 检查是否为第一组
+            if (currentVerseIndex === 0) {
+                prevBtn.disabled = true;
+                prevBtn.style.opacity = '0.5';
             } else {
-                nextBtn.innerHTML = '<i class="fas fa-arrow-right"></i> 下一组';
-                nextBtn.onclick = nextVerse;
+                prevBtn.disabled = false;
+                prevBtn.style.opacity = '1';
+            }
+            
+            // 检查是否为最后一组
+            const isLastGroup = (currentVerseIndex + 5) >= currentVerses.length;
+            if (isLastGroup) {
+                nextBtn.disabled = true;
+                nextBtn.style.opacity = '0.5';
+            } else {
+                nextBtn.disabled = false;
+                nextBtn.style.opacity = '1';
             }
             
             // 添加输入框事件监听器
@@ -1285,23 +1398,7 @@
                 });
             });
             
-            // 为编辑按钮添加事件监听器
-            const editButtons = document.querySelectorAll('.edit-verse-btn');
-            editButtons.forEach(button => {
-                button.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const verseId = this.dataset.verseId;
-                    const originalText = this.dataset.originalText;
-                    const bookName = this.dataset.bookName;
-                    const chapter = this.dataset.chapter;
-                    const verse = this.dataset.verse;
-                    
-                    console.log('编辑按钮被点击:', {verseId, originalText, bookName, chapter, verse});
-                    
-                    editVerse(verseId, originalText, bookName, chapter, verse);
-                });
-            });
+
         }
         
         // 检查所有填空是否都正确
@@ -1319,8 +1416,6 @@
                 // 所有答案都正确，显示鼓励信息和下一题按钮
                 setTimeout(() => {
                     showEncouragement();
-                    correctAnswers++;
-                    document.getElementById('nextBtn').style.display = 'inline-block';
                 }, 500);
             }
         }
@@ -1769,12 +1864,7 @@
             
             console.log(`检查结果: 正确${correct}/${total}`);
             
-            // 只有首次检查时才更新统计数据
-            if (!alreadyChecked) {
-                totalQuestions += total;
-                correctAnswers += correct;
-                console.log(`统计更新: 总题数+${total}, 正确数+${correct}`);
-            }
+            // 注意：不在这里更新全局统计，因为showResults会做实际统计
             
             // 显示温和的学习反馈
             const resultHTML = document.getElementById('verseReference');
@@ -1793,7 +1883,7 @@
                 ];
                 
                 const randomEncouragement = encouragements[Math.floor(Math.random() * encouragements.length)];
-                resultHTML.innerHTML += `<br><span style="color: #27ae60; font-weight: bold; font-size: 1.05em;">${randomEncouragement}</span>`;
+                showFeedbackMessage(randomEncouragement, '#27ae60');
                 
             } else {
                 const partialScore = Math.floor((correct / total) * 100);
@@ -1826,11 +1916,10 @@
                     feedbackMessage = gentleMessages[Math.floor(Math.random() * gentleMessages.length)];
                 }
                 
-                resultHTML.innerHTML += `<br><span style="color: #3498db; font-weight: bold;">${feedbackMessage}</span>`;
+                showFeedbackMessage(feedbackMessage, '#3498db');
             }
             
-            // 显示下一步按钮
-            document.getElementById('nextBtn').style.display = 'inline-block';
+            // 答题完成，无需额外操作
         }
 
         // 显示提示（参考study.html的逻辑）
@@ -1855,13 +1944,57 @@
                 
                 console.log('提示答案:', randomInput.dataset.answer);
                 
-                // 显示提示反馈
-                const resultHTML = document.getElementById('verseReference');
-                if (!resultHTML.innerHTML.includes('💡 已提示')) {
-                    resultHTML.innerHTML += '<br><span style="color: #f39c12; font-size: 0.9em;">💡 已提示一个答案</span>';
-                }
+                // 显示提示反馈 - 使用固定位置的提示区域
+                showHintMessage('💡 已提示一个答案: ' + randomInput.dataset.answer);
             } else {
                 alert('所有答案都已正确！');
+            }
+        }
+
+        // 显示提示消息（在进度信息区域显示，不影响按钮布局）
+        function showHintMessage(message) {
+            console.log('显示提示信息:', message);
+            const progressInfo = document.querySelector('.progress-info');
+            console.log('找到的progressInfo元素:', progressInfo);
+            if (progressInfo) {
+                // 保存原始内容
+                const originalText = progressInfo.textContent;
+                console.log('原始文本:', originalText);
+                
+                // 显示提示信息
+                progressInfo.innerHTML = `<span style="color: #f39c12; font-weight: bold;">${message}</span>`;
+                
+                // 3秒后恢复原始内容
+                setTimeout(() => {
+                    progressInfo.textContent = originalText;
+                }, 3000);
+            } else {
+                // 如果没有找到进度信息，就用alert作为备选
+                console.log('未找到progress-info元素，使用alert');
+                alert(message);
+            }
+        }
+
+        // 显示反馈消息（在进度信息区域显示，不影响按钮布局）
+        function showFeedbackMessage(message, color = '#3498db') {
+            console.log('显示反馈信息:', message);
+            const progressInfo = document.querySelector('.progress-info');
+            console.log('找到的progressInfo元素:', progressInfo);
+            if (progressInfo) {
+                // 保存原始内容
+                const originalText = progressInfo.textContent;
+                
+                // 显示反馈信息
+                progressInfo.innerHTML = `<span style="color: ${color}; font-weight: bold;">${message}</span>`;
+                
+                // 4秒后恢复原始内容（反馈信息显示时间稍长一些）
+                setTimeout(() => {
+                    progressInfo.textContent = originalText;
+                }, 4000);
+            } else {
+                // 如果没有找到进度信息，就用alert作为备选
+                console.log('未找到progress-info元素，使用alert');
+                alert(message);
             }
         }
 
@@ -1872,14 +2005,69 @@
             document.getElementById('scoreDisplay').textContent = `第 ${currentVerseIndex + 1} 题 / 共 ${totalQuestions} 题 | 得分: ${score}`;
         }
 
+        // 保存当前组的用户答案
+        function saveCurrentAnswers() {
+            const groupIndex = Math.floor(currentVerseIndex / 5);
+            const inputs = document.querySelectorAll('.blank-input');
+            savedAnswers[groupIndex] = {};
+            
+            inputs.forEach((input, index) => {
+                savedAnswers[groupIndex][index] = {
+                    value: input.value,
+                    classes: input.className
+                };
+            });
+            
+            console.log('保存第' + (groupIndex + 1) + '组答案:', savedAnswers[groupIndex]);
+        }
+
+        // 恢复当前组的用户答案
+        function restoreCurrentAnswers() {
+            const groupIndex = Math.floor(currentVerseIndex / 5);
+            if (savedAnswers[groupIndex]) {
+                const inputs = document.querySelectorAll('.blank-input');
+                
+                inputs.forEach((input, index) => {
+                    if (savedAnswers[groupIndex][index]) {
+                        input.value = savedAnswers[groupIndex][index].value;
+                        input.className = savedAnswers[groupIndex][index].classes;
+                    }
+                });
+                
+                console.log('恢复第' + (groupIndex + 1) + '组答案:', savedAnswers[groupIndex]);
+            }
+        }
+
+        // 上一组（5节）
+        function prevVerse() {
+            if (currentVerseIndex > 0) {
+                // 保存当前答案
+                saveCurrentAnswers();
+                
+                currentVerseIndex -= 5;
+                if (currentVerseIndex < 0) {
+                    currentVerseIndex = 0;
+                }
+                displayCurrentVerse();
+                
+                // 恢复答案
+                setTimeout(restoreCurrentAnswers, 100);
+            }
+        }
+
         // 下一组（5节）
         function nextVerse() {
+            // 保存当前答案
+            saveCurrentAnswers();
+            
             currentVerseIndex += 5;  // 每次跳转5节
             if (currentVerseIndex >= currentVerses.length) {
-                showResults();
-            } else {
-                displayCurrentVerse();
+                currentVerseIndex = Math.max(0, currentVerses.length - 5);
             }
+            displayCurrentVerse();
+            
+            // 恢复答案
+            setTimeout(restoreCurrentAnswers, 100);
         }
 
         // 显示结果
@@ -1887,21 +2075,35 @@
             const endTime = Date.now();
             const timeSpent = Math.floor((endTime - startTime) / 1000);
             
-            // 确保准确率计算正确
-            const accuracy = totalQuestions > 0 ? Math.round((correctAnswers / totalQuestions) * 100) : 0;
+            // 重新统计所有答案的正确性
+            const allInputs = document.querySelectorAll('.blank-input');
+            let actualCorrect = 0;
+            let actualTotal = allInputs.length;
+            
+            allInputs.forEach(input => {
+                const userAnswer = input.value.trim();
+                const correctAnswer = input.dataset.answer;
+                if (userAnswer === correctAnswer) {
+                    actualCorrect++;
+                }
+            });
+            
+            // 使用实际统计的结果
+            const accuracy = actualTotal > 0 ? Math.round((actualCorrect / actualTotal) * 100) : 0;
             
             console.log('练习结果:', {
-                correctAnswers: correctAnswers,
-                totalQuestions: totalQuestions,
-                accuracy: accuracy
+                实际正确数: actualCorrect,
+                实际总题数: actualTotal,
+                准确率: accuracy,
+                之前统计: { correctAnswers, totalQuestions }
             });
             
             document.getElementById('practiceArea').style.display = 'none';
             document.getElementById('progressInfo').style.display = 'none';
             document.getElementById('resultsPanel').style.display = 'block';
             
-            document.getElementById('totalAnswered').textContent = totalQuestions;
-            document.getElementById('correctAnswers').textContent = correctAnswers;
+            document.getElementById('totalAnswered').textContent = actualTotal;
+            document.getElementById('correctAnswers').textContent = actualCorrect;
             document.getElementById('accuracyRate').textContent = accuracy + '%';
             document.getElementById('timeSpent').textContent = timeSpent + '秒';
             
@@ -1958,6 +2160,11 @@
             window.location.href = 'index.html';
         }
         
+        // 返回主页
+        function goBackToIndex() {
+            window.location.href = 'index.html';
+        }
+        
         // 返回书卷选择页面
         function goBackToBookSelection() {
             // 隐藏所有屏幕
@@ -1990,33 +2197,7 @@
             return newArray;
         }
         
-        // 打开经文校对工具
-        function openVerseEditor() {
-            console.log('开始打开经文校对工具...');
-            
-            try {
-                // 尝试在新标签页打开
-                const newWindow = window.open('verse_editor.html', '_blank');
-                
-                // 检查是否被弹窗拦截器阻止
-                setTimeout(() => {
-                    if (!newWindow || newWindow.closed || typeof newWindow.closed == 'undefined') {
-                        console.log('弹窗被阻止，使用备用方案');
-                        if (confirm('🔒 浏览器阻止了弹窗\n\n是否直接跳转到经文校对工具？\n（建议允许此网站的弹窗以获得更好体验）')) {
-                            window.location.href = 'verse_editor.html';
-                        }
-                    } else {
-                        console.log('成功在新标签页打开校对工具');
-                        newWindow.focus();
-                    }
-                }, 100);
-                
-            } catch (error) {
-                console.error('打开校对工具失败:', error);
-                // 备用方案：直接跳转
-                window.location.href = 'verse_editor.html';
-            }
-        }
+
         
         // 编辑经文函数
         function editVerse(verseId, originalText, bookName, chapter, verse) {
