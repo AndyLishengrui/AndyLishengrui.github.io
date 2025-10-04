@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CS002:计算机科学导论</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="icon" type="image/vnd.microsoft.icon/" href="images/hat.ico" /> 
+</head>
+<body>
+	<div class="container_16 clear_fix">
+		<div id="header" class="grid_16">
+			<img src="images/arui.jpg" alt=""/> 
+			<img src="images/lufei.jpg" style="position: absolute; top: 0px; left: 0px;" class="imagehover" alt=""/>
+			<img src="images/op.jpg" alt=""/>
+			<div id="title">
+				<h2>CS002:计算机科学导论</h2>
+				Introduction to Computer Science 
+				<h5>李胜睿 Assistant Professor [lishengrui@gmail.com]</h5>
+			</div>
+			<div class="grid_3 omega clear_fix">
+				<a href="../index.html" class="navlink" onmouseover="this.style.backgroundImage='url(images/index_hov.jpg)'" onmouseout="this.style.backgroundImage='url(images/index.jpg)'" style="background: url('images/index.jpg') no-repeat #fff;">
+                    <span class="linkname">5DG海贼团</span>
+					<br>
+				</a>
+			</div>
+			<div class="grid_3 omega lear_fix">
+				<a href="cs001.html" class="navlink" onmouseover="this.style.backgroundImage='url(images/cs001_hov.jpg)'" onmouseout="this.style.backgroundImage='url(images/cs001.jpg)'" style="background: url('images/cs001.jpg') no-repeat #fff;">
+					<span class="linkname">CS001:<br />计算机基础</span>
+					<br>
+				</a>
+			</div>
+			<div class="grid_3 omega clear_fix">
+				<a href="cs002.html" class="navlink" onmouseover="this.style.backgroundImage='url(images/cs002_hov.jpg)'" onmouseout="this.style.backgroundImage='url(images/cs002.jpg)'" style="background: url('images/cs002.jpg') no-repeat #fff;">
+					<span class="linkname">CS002:<br />计算机科学导论</span>
+					<br>
+				</a>
+			</div>
+		</div>
+		<div id="content" class="grid_16">
+			<h2>5DG群：<a href="http://qun.qq.com/#jointhegroup/gid/103258429" >103258429</a> </h2>
+			curriculum schedule 
+			<table cellpadding="5px" cellspacing="0" id="hours">
+				<tbody> 
+					<tr class="ttitle">
+						<td></td>
+						<td>sun</td>
+						<td>mon</td>
+						<td>tues</td>
+						<td>wed</td>
+						<td>thurs</td>
+						<td>fri</td>
+						<td>sat</td>
+					</tr> 
+					<tr class="bgcolor">
+						<td style="background: #000; color: #fff">第一节</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>5#517</td>
+						<td></td>
+					</tr> 
+					<tr class="bgcolor">
+						<td style="background: #000; color: #fff">第二节</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>5#517</td>
+						<td></td>
+					</tr> 
+					<tr>
+						<td style="background: #000; color: #fff">第三节</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr> 
+					<tr>
+						<td style="background: #000; color: #fff">第四节</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr> 
+					<tr class="bgcolor">
+						<td style="background: #000; color: #fff">第五节</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr> 
+					<tr class="bgcolor"> 
+						<td style="background: #000; color: #fff">第六节</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr> 
+					<tr class="bgcolor">
+						<td style="background: #000; color: #fff">第七节</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr> 
+				</tbody>
+			</table> 
+			<div class="tablefoot"></div>
+			<br>
+			<div class="lectures grid_8 alpha">
+				<div class="date">
+					OCT<br>08
+				</div>
+				<h2>Human vision</h2>
+				<a href="ftp://lsrcai@218.193.53.74/student/cs002/week1/week1.pptx">[PPTX]</a>
+				<a href="ftp://lsrcai@218.193.53.74/student/Videos/other/face.flv"> [人脸] </a>	
+				<a href="ftp://lsrcai@218.193.53.74/student/Videos/other/projection.flv"> [透视] </a>
+				<a href="http://v.youku.com/v_show/id_XMTYwMTE0NjA0.html"> [Invisible Worlds] </a>				
+				<a href="ftp://lsrcai@218.193.53.74/student/software/Alice"> [AliceInstallers] </a>				
+				<a href="ftp://lsrcai@218.193.53.74/student/TextBooks"> [SICP]</a>				
+			</div>
+			<div class="lectures grid_8 alpha">
+				<div class="date">
+					OCT<br>15
+				</div>
+			<h2>Randy Pausch's Last Lecture</h2>
+				<a href="ftp://lsrcai@218.193.53.74/student/cs002/week2/week2.pptx"></a>
+				<a href="ftp://lsrcai@218.193.53.74/student/readings/Randy/Randy.Pausch.Last.Lecture.wmv">[wmv]</a>
+				<a href="ftp://lsrcai@218.193.53.74/student/readings/Randy/Randy.Pausch.Last.Lecture.Powerpoint.Slides.ppt">[ppt]</a>
+				<a href="ftp://lsrcai@218.193.53.74/student/readings/Randy/Randy.Pausch.Time.Management.wmv">[Time Management]</a>
+				<a href="http://www.cmu.edu/news/archive/2008/July/july25_pausch.shtml"> [Memoriam]</a>
+			</div>
+			<div class="lectures grid_8 alpha">
+				<div class="date">
+					OCT<br>22
+				</div>
+				<h2>Alice Programming</h2>
+				<a href="#"></a>
+			</div>
+			<div class="lectures grid_8 alpha">
+				<div class="date">
+					OCT<br>29
+				</div>
+				<h2>Alice Projects Show</h2>
+				<a href="#"></a>
+			</div>
+			<div class="lectures grid_8 alpha">
+				<div class="date">
+					NOV<br>5
+				</div>
+				<h2>Computer Graphic</h2>
+				<a href="#"></a>
+			</div>
+			<div class="lectures grid_8 alpha">
+				<div class="date">
+					NOV<br>13
+				</div>
+				<h2>Introction to Scheme(Rocket)</h2>
+				<a href="#"></a>
+			</div>
+			<div class="lectures grid_8 alpha">
+				<div class="date">
+					NOV<br>21
+				</div>
+				<h2>SICP WalkThrought</h2>
+				<a href="#"></a>
+			</div>
+			<div class="lectures grid_8 alpha">
+				<div class="date">
+					NOV<br>29
+				</div>
+			<h2>  </h2>
+				<a href="#"></a>
+			</div>
+
+		<div id="footer" class="grid_16">
+		</div>
+	</div>
+</body>
+

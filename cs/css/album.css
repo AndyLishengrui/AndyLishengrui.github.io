@@ -1,0 +1,139 @@
+#album{
+	margin: 0;
+	padding: 0;
+	width: 710px;
+}
+
+h2.album_title{
+	margin-bottom: 0px;
+}
+p.album_data{
+	color: #CCCCCC;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.album_data span{
+	border-right:1px solid #DDDDDD;
+	color:#999999;
+	margin-right:4px;
+	padding-right:7px;
+}
+ul.photo_list{
+	margin-left: 0px;
+}
+li.photo{
+	list-style-type: none;
+	margin: 10px 20px;
+	position: relative;
+	padding: 0;
+}
+.photo{
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+	height: 160px;
+	width: 160px;
+	padding: 4px;
+	display: inline;
+}
+.photo img {
+	position: absolute;
+	padding: 4px ;
+	border: 1px solid #A9A9A9;
+}
+
+li.album{
+	list-style-type: none;
+	float: left;
+	margin-left: 0;
+	margin-right: 20px;
+	display: inline;
+}
+
+ul.album_list{
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
+.img-wrapper {
+	background: url(../images/shadow.gif) no-repeat bottom right;
+	float: left;
+	clear: right;
+	position: relative;
+	display: inline;
+}
+
+.img-wrapper img{
+	background-color: #FFFFFF;
+	width: 160px;
+	height: 160px;
+	border: 1px solid #A9A9A9;
+	padding: 4px;
+	display: block;
+	margin: -5px 5px 5px -5px;
+	position: relative;
+}
+
+p.album_desc{
+	clear: left;
+	text-align: center;
+	font-weight: bold;
+	width:160px;
+	height: 2em;
+}
+
+/* styles for photos list page navigation bar */
+ol.nav-bar {
+	width: 670px;
+	float: left;
+	margin: 10px 20px 10px 20px;
+	padding: 0px;
+	text-align: right;
+	list-style-type: none;
+}
+
+ol.nav-bar li{
+	float: left;
+	margin-left: 0px;
+	margin-right: 10px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	display: inline;
+}
+
+ol.nav-bar a,
+ol.nav-bar a:visited,
+ol.nav-bar li.selected {
+	color: blue;
+	display: block;
+	border: 1px solid #ccc;
+	text-decoration: none;
+}
+
+ol.nav-bar a:hover,
+ol.nav-bar a:focus,
+ol.nav-bar li.selected{
+	background-color: #0066cc;
+	color: #cccccc;
+}
+
+li.hight a,
+li.hight a:visited {
+	background-color: #0066cc;
+	color: #cccccc;
+}
+ol.nav-bar a[rel="prev"],
+ol.nav-bar a[rel="next"] {
+	border: none;
+}
+
+ol.nav-bar a[rel="prev"]:before {
+	content: "\00AB";
+	padding-right: 0.5em;
+}
+
+ol.nav-bar a[rel="next"]:after {
+	content: "\00BB";
+	padding-left: 0.5em;
+}

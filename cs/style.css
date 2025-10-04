@@ -1,0 +1,122 @@
+/* = import 960.gs css framework */
+@import url(css/960.gs.css);
+/* 960.gs css framework */
+
+/* ------------------
+ * gobal settings
+ * --------------- */
+body {
+	background: url(images/bg.jpg) top repeat-x;
+}
+/* ------------------
+ * header
+ * --------------- */
+#header {
+	position:relative;
+	margin-top:10px;
+}
+#title {
+	margin-left:5px;
+	width:500px;
+	float:left;
+	font-size:125%;
+}
+#header h5 {
+	color:#fff;
+	font-weight:normal;
+}
+#header img {
+	border:5px solid #000;
+	margin-right:5px;
+	float:left;
+}
+.imagehover:hover {
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+.navlink {
+	line-height:16px;
+	display: block;
+	padding-left: 57px; 
+	height: 53px; 
+	text-decoration: none; 
+	color: #000;
+	margin-top: 0px
+}
+h2 {
+	display: block;
+	margin: 0px;
+	font-weight: normal;
+	font-size: 165%;
+}
+a {
+	color:#0066ff;
+	text-decoration:none;
+}
+/* ------------------
+ * container 
+ * --------------- */
+#content table {
+	margin:0px;
+	width:100%;
+	border:0px;
+}
+#hours {
+	table-layout: fixed;
+}
+#hours td {
+	padding:5px;
+}
+.ttitle td {
+	background-color:#000;
+	color:#fff;
+}
+.bgcolor td {
+	background-color:#eeeeee;
+}
+.tablefoot {
+	background-color:#000;
+	width:100%;
+	height:5px;
+	margin-top:0px;
+}
+.lectures {
+	margin-bottom:5px;
+}
+.date {
+	background-color:#000;
+	color:#fff;
+	width:32px;
+	height:32px;
+	padding:10px;
+	float:left;
+	text-align:center;
+	margin-right:5px;
+}
+.member {
+	position:relative;
+	background-color:#000;
+	color:#fff;
+    margin-bottom:5px;
+}
+.member img {
+	margin-right:5px;
+	border:5px solid #000;
+	float:left;
+}
+.memberDetail {
+	height:150px;
+	padding:5px;
+}
+.links {
+	float:right
+}
+
+/* ------------------
+ * footer 
+ * --------------- */
+#footer {
+    margin-top: 15px;
+    padding: 15px 0;
+    text-align: center;
+}

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>5DG海贼团</title>
+<link rel="stylesheet" href="cs/style.css" type="text/css" />
+<link rel="icon" type="image/vnd.microsoft.icon/" href="cs/images/hat.ico" /> 
+</head>
+<body>
+	<div class="container_16 clear_fix">
+		<div id="header" class="grid_16">
+			<img src="cs/images/pirates.jpg" alt=""/> 
+			<img src="cs/images/op.jpg" alt=""/>
+			<div id="title">
+				<h2>5DG海贼团</h2>
+				5DG Pirates
+				<h5>李胜睿 Assistant Professor [lishengrui@gmail.com]</h5>
+			</div>
+			<div class="grid_3 omega clear_fix">
+				<a href="index.html" class="navlink" onmouseover="this.style.backgroundImage='url(cs/images/index_hov.jpg)'" onmouseout="this.style.backgroundImage='url(cs/images/index.jpg)'" style="background: url('cs/images/index.jpg') no-repeat #fff;">
+                    <span class="linkname">5DG海贼团</span>
+					<br>
+				</a>
+			</div>
+			<div class="grid_3 omega lear_fix">
+				<a href="cs/cs001.html" class="navlink" onmouseover="this.style.backgroundImage='url(cs/images/cs001_hov.jpg)'" onmouseout="this.style.backgroundImage='url(cs/images/cs001.jpg)'" style="background: url('cs/images/cs001.jpg') no-repeat #fff;">
+					<span class="linkname">CS001:计算机基础</span>
+					<br>
+				</a>
+			</div>
+			<div class="grid_3 omega clear_fix">
+				<a href="cs/cs002.html" class="navlink" onmouseover="this.style.backgroundImage='url(cs/images/cs002_hov.jpg)'" onmouseout="this.style.backgroundImage='url(cs/images/cs002.jpg)'" style="background: url('cs/images/cs002.jpg') no-repeat #fff;">
+					<span class="linkname">CS002:计算机科学导论</span>
+					<br>
+				</a>
+			</div>
+		</div>
+		<div id="content" class="grid_16">
+			<h2>5DG群：<a href="http://qun.qq.com/#jointhegroup/gid/103258429" >103258429</a> </h2>
+			<br>
+			<div class="member grid_8 alpha">
+				<img src="cs/images/arui.jpg" alt=""/>
+				<img src="cs/images/lufei.jpg" style="position: absolute; top: 0px; left: 0px;" class="imagehover" alt=""/>
+				<div class="memberDetail">
+                    <b>李胜睿</b><br>
+                    <a href="mailto:lishengrui@gmail.com">Email</a>
+				</div>
+				<div class="links">
+					<a href="http://www.renren.com/profile.do?id=248305373"><img src="cs/images/renren.png" alt="renren"/></a>
+					<a href="http://t.qq.com/shengruili"><img src="cs/images/tqq.png" alt="t.qq"/></a>
+					<a href="http://t.sina.com/shengruili"><img src="cs/images/sina.png" alt="buzz"/></a>
+				</div>
+			</div>
+			<div class="member grid_8 alpha">
+				<img src="cs/images/jing.jpg" alt=""/>
+				<img src="cs/images/qiaoba.jpg" style="position: absolute; top: 0px; left: 0px;" class="imagehover" alt=""/>
+				<div class="memberDetail">
+                    <b>蔡静静</b><br>
+					厦门大学计算机科学系05级<br>
+                    <a href="mailto:gardenia.han@gmail.com">Email</a>
+
+				</div>
+				<div class="links">
+					<a href="http://www.renren.com/profile.do?id=1003335029"><img src="cs/images/renren.png" alt="renren"/></a>
+					<a href="http://t.qq.com/unwinding"><img src="cs/images/tqq.png" alt="t.qq"/></a>
+					<a href="http://www.google.com/profiles/106642983021513925712"><img src="cs/images/buzz.png" alt="t.qq"/></a>
+				</div>
+			</div>
+		</div>
+		<div id="footer" class="grid_16">
+		</div>
+	</div>
+</body>
+

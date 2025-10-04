@@ -1,0 +1,765 @@
+{
+  "book": "philippians",
+  "name": "腓利比书",
+  "englishName": "Philippians",
+  "testament": "new",
+  "category": "pauline_epistles",
+  "chapters": 4,
+  "color": "#f39c12",
+  "description": "保罗在监狱中写给腓利比教会的信，强调喜乐、合一和基督的榜样",
+  "keyThemes": [
+    "喜乐的生活",
+    "基督的谦卑",
+    "合一与和谐",
+    "信心与盼望",
+    "知足与感恩"
+  ],
+  "verses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "zh": "基督耶稣的仆人保罗和提摩太，写信给凡住腓利比、在基督耶稣里的众圣徒，和诸位监督、诸位执事。",
+      "en": "Paul and Timothy, servants of Christ Jesus, To all God’s holy people in Christ Jesus at Philippi, together with the overseers and deacons:"
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "zh": "愿恩惠、平安从神我们的父并主耶稣基督归与你们！",
+      "en": "Grace and peace to you from God our Father and the Lord Jesus Christ."
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "zh": "我每逢想念你们，就感谢我的神。",
+      "en": "I thank my God every time I remember you."
+    },
+    {
+      "chapter": 1,
+      "verse": 4,
+      "zh": "每逢为你们众人祈求的时候，常是欢欢喜喜的祈求。",
+      "en": "In all my prayers for all of you, I always pray with joy"
+    },
+    {
+      "chapter": 1,
+      "verse": 5,
+      "zh": "因为从头一天直到如今，你们是同心合意地兴旺福音。",
+      "en": "because of your partnership in the gospel from the first day until now,"
+    },
+    {
+      "chapter": 1,
+      "verse": 6,
+      "zh": "我深信那在你们心里动了善工的，必成全这工，直到耶稣基督的日子。",
+      "en": "being confident of this, that he who began a good work in you will carry it on to completion until the day of Christ Jesus."
+    },
+    {
+      "chapter": 1,
+      "verse": 7,
+      "zh": "我为你们众人有这样的意念，原是应当的，因你们常在我心里，无论我在捆锁之中，是在辩明证实福音的时候，你们都与我一同得恩。",
+      "en": "It is right for me to feel this way about all of you, since I have you in my heart and, whether I am in chains or defending and confirming the gospel, all of you share in God’s grace with me."
+    },
+    {
+      "chapter": 1,
+      "verse": 8,
+      "zh": "我体会基督耶稣的心肠，切切地想念你们众人，这是神可以给我作见证的。",
+      "en": "God can testify how I long for all of you with the affection of Christ Jesus."
+    },
+    {
+      "chapter": 1,
+      "verse": 9,
+      "zh": "我所祷告的，就是要你们的爱心在知识和各样见识上多而又多，",
+      "en": "And this is my prayer: that your love may abound more and more in knowledge and depth of insight,"
+    },
+    {
+      "chapter": 1,
+      "verse": 10,
+      "zh": "使你们能分别是非，作诚实无过的人，直到基督的日子。",
+      "en": "so that you may be able to discern what is best and may be pure and blameless for the day of Christ,"
+    },
+    {
+      "chapter": 1,
+      "verse": 11,
+      "zh": "并靠着耶稣基督结满了仁义的果子，叫荣耀称赞归与神。",
+      "en": "filled with the fruit of righteousness that comes through Jesus Christ—to the glory and praise of God."
+    },
+    {
+      "chapter": 1,
+      "verse": 12,
+      "zh": "弟兄们，我愿意你们知道，我所遭遇的事更是叫福音兴旺。",
+      "en": "Now I want you to know, brothers and sisters, that what has happened to me has actually served to advance the gospel."
+    },
+    {
+      "chapter": 1,
+      "verse": 13,
+      "zh": "以致我受的捆锁，在御营全军和其余的人中，已经显明是为基督的缘故。",
+      "en": "As a result, it has become clear throughout the whole palace guard and to everyone else that I am in chains for Christ."
+    },
+    {
+      "chapter": 1,
+      "verse": 14,
+      "zh": "并且那在主里的弟兄，多半因我受的捆锁，就笃信不疑，越发放胆传神的道，无所惧怕。",
+      "en": "And because of my chains, most of the brothers and sisters have become confident in the Lord and dare all the more to proclaim the gospel without fear."
+    },
+    {
+      "chapter": 1,
+      "verse": 15,
+      "zh": "有的传基督是出于嫉妒纷争，也有的是出于好意。",
+      "en": "It is true that some preach Christ out of envy and rivalry, but others out of goodwill."
+    },
+    {
+      "chapter": 1,
+      "verse": 16,
+      "zh": "这一等是出于爱心，知道我是为辩明福音设立的。",
+      "en": "The latter do so out of love, knowing that I am put here for the defense of the gospel."
+    },
+    {
+      "chapter": 1,
+      "verse": 17,
+      "zh": "那一等传基督是出于结党，并不诚实，意思要加增我捆锁的苦楚。",
+      "en": "The former preach Christ out of selfish ambition, not sincerely, supposing that they can stir up trouble for me while I am in chains."
+    },
+    {
+      "chapter": 1,
+      "verse": 18,
+      "zh": "这有何妨呢？或是假意，或是真心，无论怎样，基督究竟被传开了。为此，我就欢喜，并且还要欢喜。",
+      "en": "But what does it matter? The important thing is that in every way, whether from false motives or true, Christ is preached. And because of this I rejoice. Yes, and I will continue to rejoice,"
+    },
+    {
+      "chapter": 1,
+      "verse": 19,
+      "zh": "因为我知道，这事藉着你们的祈祷和耶稣基督之灵的帮助，终必叫我得救。",
+      "en": "for I know that through your prayers and God’s provision of the Spirit of Jesus Christ what has happened to me will turn out for my deliverance."
+    },
+    {
+      "chapter": 1,
+      "verse": 20,
+      "zh": "照着我所切慕、所盼望的，没有一事叫我羞愧。只要凡事放胆，无论是生是死，总叫基督在我身上照常显大。",
+      "en": "I eagerly expect and hope that I will in no way be ashamed, but will have sufficient courage so that now as always Christ will be exalted in my body, whether by life or by death."
+    },
+    {
+      "chapter": 1,
+      "verse": 21,
+      "zh": "因我活着就是基督，我死了就有益处。",
+      "en": "For to me, to live is Christ and to die is gain."
+    },
+    {
+      "chapter": 1,
+      "verse": 22,
+      "zh": "但我在肉身活着，若成就我工夫的果子，我就不知道该挑选甚么。",
+      "en": "If I am to go on living in the body, this will mean fruitful labor for me. Yet what shall I choose? I do not know!"
+    },
+    {
+      "chapter": 1,
+      "verse": 23,
+      "zh": "我正在两难之间，情愿离世与基督同在，因为这是好得无比的。",
+      "en": "I am torn between the two: I desire to depart and be with Christ, which is better by far;"
+    },
+    {
+      "chapter": 1,
+      "verse": 24,
+      "zh": "然而，我在肉身活着，为你们更是要紧的。",
+      "en": "but it is more necessary for you that I remain in the body."
+    },
+    {
+      "chapter": 1,
+      "verse": 25,
+      "zh": "我既然这样深信，就知道仍要住在世间，且与你们众人同住，使你们在所信的道上又长进又喜乐。",
+      "en": "Convinced of this, I know that I will remain, and I will continue with all of you for your progress and joy in the faith,"
+    },
+    {
+      "chapter": 1,
+      "verse": 26,
+      "zh": "叫你们在基督耶稣里的荣耀，因我再到你们那里去，就越发加增。",
+      "en": "so that through my being with you again your boasting in Christ Jesus will abound on account of me."
+    },
+    {
+      "chapter": 1,
+      "verse": 27,
+      "zh": "只要你们行事为人与基督的福音相称，叫我或来见你们，或不在你们那里，可以听见你们的景况，知道你们同有一个心志，站立得稳，为所信的福音齐心努力。",
+      "en": "Whatever happens, conduct yourselves in a manner worthy of the gospel of Christ. Then, whether I come and see you or only hear about you in my absence, I will know that you stand firm in the one Spirit, striving together as one for the faith of the gospel"
+    },
+    {
+      "chapter": 1,
+      "verse": 28,
+      "zh": "凡事不怕敌人的惊吓，这是证明他们沉沦，你们得救，都是出于神。",
+      "en": "without being frightened in any way by those who oppose you. This is a sign to them that they will be destroyed, but that you will be saved—and that by God."
+    },
+    {
+      "chapter": 1,
+      "verse": 29,
+      "zh": "因为你们蒙恩，不但得以信服基督，并要为他受苦。",
+      "en": "For it has been granted to you on behalf of Christ not only to believe in him, but also to suffer for him,"
+    },
+    {
+      "chapter": 1,
+      "verse": 30,
+      "zh": "你们的争战，就与你们在我身上从前所看见、现在所听见的一样。",
+      "en": "since you are going through the same struggle you saw I had, and now hear that I still have."
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "zh": "所以在基督里若有甚么劝勉，爱心有甚么安慰，圣灵有甚么交通，心中有甚么慈悲怜悯，",
+      "en": "Therefore if you have any encouragement from being united with Christ, if any comfort from his love, if any common sharing in the Spirit, if any tenderness and compassion,"
+    },
+    {
+      "chapter": 2,
+      "verse": 2,
+      "zh": "你们就要意念相同，爱心相同，有一样的心思，有一样的意念，使我的喜乐可以满足。",
+      "en": "then make my joy complete by being like-minded, having the same love, being one in spirit and of one mind."
+    },
+    {
+      "chapter": 2,
+      "verse": 3,
+      "zh": "凡事不可结党，不可贪图虚浮的荣耀，只要存心谦卑，各人看别人比自己强。",
+      "en": "Do nothing out of selfish ambition or vain conceit. Rather, in humility value others above yourselves,"
+    },
+    {
+      "chapter": 2,
+      "verse": 4,
+      "zh": "各人不要单顾自己的事，也要顾别人的事。",
+      "en": "not looking to your own interests but each of you to the interests of the others."
+    },
+    {
+      "chapter": 2,
+      "verse": 5,
+      "zh": "你们当以基督耶稣的心为心。",
+      "en": "In your relationships with one another, have the same mindset as Christ Jesus:"
+    },
+    {
+      "chapter": 2,
+      "verse": 6,
+      "zh": "他本有神的形像，不以自己与神同等为强夺的。",
+      "en": "Who, being in very nature God, did not consider equality with God something to be used to his own advantage;"
+    },
+    {
+      "chapter": 2,
+      "verse": 7,
+      "zh": "反倒虚己，取了奴仆的形像，成为人的样式。",
+      "en": "rather, he made himself nothing by taking the very nature of a servant, being made in human likeness."
+    },
+    {
+      "chapter": 2,
+      "verse": 8,
+      "zh": "既有人的样子，就自己卑微，存心顺服，以至于死，且死在十字架上。",
+      "en": "And being found in appearance as a man, he humbled himself by becoming obedient to death—even death on a cross!"
+    },
+    {
+      "chapter": 2,
+      "verse": 9,
+      "zh": "因此，神将他升为至高，又赐给他那超乎万名之上的名。",
+      "en": "Therefore God exalted him to the highest place and gave him the name that is above every name,"
+    },
+    {
+      "chapter": 2,
+      "verse": 10,
+      "zh": "叫一切在天上的、地上的，和地底下的，因耶稣的名无不屈膝，",
+      "en": "that at the name of Jesus every knee should bow, in heaven and on earth and under the earth,"
+    },
+    {
+      "chapter": 2,
+      "verse": 11,
+      "zh": "一切舌头都必承认耶稣基督是主，使荣耀归与父神。",
+      "en": "and every tongue acknowledge that Jesus Christ is Lord, to the glory of God the Father."
+    },
+    {
+      "chapter": 2,
+      "verse": 12,
+      "zh": "这样看来，我亲爱的弟兄，你们既是常顺服的，不但我在你们那里，就是我如今不在你们那里，更是顺服的，就当恐惧战兢，作成你们得救的工夫。",
+      "en": "Therefore, my beloved, as you have always obeyed—so now, not only as in my presence but much more in my absence—continue to work out your salvation with fear and trembling,"
+    },
+    {
+      "chapter": 2,
+      "verse": 13,
+      "zh": "因为你们立志行事，都是神在你们心里运行，为要成就他的美意。",
+      "en": "for it is God who works in you to will and to act in order to fulfill his good purpose."
+    },
+    {
+      "chapter": 2,
+      "verse": 14,
+      "zh": "凡事不可发怨言，起争论，",
+      "en": "Do everything without grumbling or arguing,"
+    },
+    {
+      "chapter": 2,
+      "verse": 15,
+      "zh": "使你们无可指摘，诚实无伪，在这弯曲悖谬的世代，作神无瑕疵的儿女。你们显在这世代中，好像明光照耀，",
+      "en": "so that you may become blameless and pure, children of God without fault in a warped and crooked generation. Then you will shine among them like stars in the sky"
+    },
+    {
+      "chapter": 2,
+      "verse": 16,
+      "zh": "将生命的道表明出来，可以在基督的日子，夸我没有空跑，也没有徒劳。",
+      "en": "as you hold firmly to the word of life. And then I will be able to boast on the day of Christ that I did not run or labor in vain."
+    },
+    {
+      "chapter": 2,
+      "verse": 17,
+      "zh": "我以你们的信心为供献的祭物，我若被浇奠在其上，也是喜乐，并且与你们众人一同喜乐。",
+      "en": "But even if I am being poured out like a drink offering on the sacrifice and service coming from your faith, I am glad and rejoice with all of you."
+    },
+    {
+      "chapter": 2,
+      "verse": 18,
+      "zh": "你们也要照样喜乐，并且与我一同喜乐。",
+      "en": "So you too should be glad and rejoice with me."
+    },
+    {
+      "chapter": 2,
+      "verse": 19,
+      "zh": "我靠主耶稣指望快打发提摩太去见你们，叫我知道你们的事，心里就得着安慰。",
+      "en": "I hope in the Lord Jesus to send Timothy to you soon, that I also may be cheered when I receive news about you."
+    },
+    {
+      "chapter": 2,
+      "verse": 20,
+      "zh": "因为我没有别人与我同心，实在挂念你们的事。",
+      "en": "I have no one else like him, who will show genuine concern for your welfare."
+    },
+    {
+      "chapter": 2,
+      "verse": 21,
+      "zh": "别人都求自己的事，并不求耶稣基督的事。",
+      "en": "For everyone looks out for their own interests, not those of Jesus Christ."
+    },
+    {
+      "chapter": 2,
+      "verse": 22,
+      "zh": "但你们知道提摩太的明证，他兴旺福音，与我同劳，待我像儿子待父亲一样。",
+      "en": "But you know that Timothy has proved himself, because as a son with his father he has served with me in the work of the gospel."
+    },
+    {
+      "chapter": 2,
+      "verse": 23,
+      "zh": "所以，我一看出我的事怎样了结，就盼望立刻打发他去。",
+      "en": "I hope, therefore, to send him as soon as I see how things go with me."
+    },
+    {
+      "chapter": 2,
+      "verse": 24,
+      "zh": "但我靠着主自信，我也必快去。",
+      "en": "And I am confident in the Lord that I myself will come soon."
+    },
+    {
+      "chapter": 2,
+      "verse": 25,
+      "zh": "然而我想必须打发以巴弗提到你们那里去。他是我的兄弟，与我一同作工，一同当兵，是你们所差遣的，也是供给我需用的。",
+      "en": "But I think it is necessary to send back to you Epaphroditus, my brother, co-worker and fellow soldier, who is also your messenger, whom you sent to take care of my needs."
+    },
+    {
+      "chapter": 2,
+      "verse": 26,
+      "zh": "他很想念你们众人，并且极其难过，因为你们听见他病了。",
+      "en": "For he longs for all of you and is distressed because you heard he was ill."
+    },
+    {
+      "chapter": 2,
+      "verse": 27,
+      "zh": "他实在是病了，几乎要死，神却怜悯他，不但怜悯他，也怜悯我，免得我忧上加忧。",
+      "en": "Indeed he was ill, and almost died. But God had mercy on him, and not on him only but also on me, to spare me sorrow upon sorrow."
+    },
+    {
+      "chapter": 2,
+      "verse": 28,
+      "zh": "所以我越发急速打发他去，叫你们再见他，就可以喜乐，我也可以少些忧愁。",
+      "en": "Therefore I am all the more eager to send him, so that when you see him again you may be glad and I may have less anxiety."
+    },
+    {
+      "chapter": 2,
+      "verse": 29,
+      "zh": "故此，你们要在主里欢欢喜喜地接待他，而且要尊重这样的人。",
+      "en": "So then, welcome him in the Lord with great joy, and honor people like him,"
+    },
+    {
+      "chapter": 2,
+      "verse": 30,
+      "zh": "因他为作基督的工夫，几乎至死，不顾性命，要补足你们供给我的不及之处。",
+      "en": "because he almost died for the work of Christ. He risked his life to make up for the help you yourselves could not give me."
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "zh": "弟兄们，我还有话说，你们要靠主喜乐。我把这话再写给你们，于我并不为难，于你们却是妥当。",
+      "en": "Further, my brothers and sisters, rejoice in the Lord! It is no trouble for me to write the same things to you again, and it is a safeguard for you."
+    },
+    {
+      "chapter": 3,
+      "verse": 2,
+      "zh": "应当防备犬类，防备作恶的，防备妄自行割的。",
+      "en": "Watch out for those dogs, those evildoers, those mutilators of the flesh."
+    },
+    {
+      "chapter": 3,
+      "verse": 3,
+      "zh": "因为真受割礼的，乃是我们这以神的灵敬拜、在基督耶稣里夸口、不靠着肉体的。",
+      "en": "For it is we who are the circumcision, we who serve God by his Spirit, who boast in Christ Jesus, and who put no confidence in the flesh—"
+    },
+    {
+      "chapter": 3,
+      "verse": 4,
+      "zh": "其实，我也可以靠肉体。若是别人想他可以靠肉体，我更可以靠着了。",
+      "en": "though I myself have reasons for such confidence. If someone else thinks they have reasons to put confidence in the flesh, I have more:"
+    },
+    {
+      "chapter": 3,
+      "verse": 5,
+      "zh": "我第八天受割礼，我是以色列族、便雅悯支派的人，是希伯来人所生的希伯来人。就律法说，我是法利赛人。",
+      "en": "Circumcised on the eighth day, of the people of Israel, of the tribe of Benjamin, a Hebrew of Hebrews; in regard to the law, a Pharisee;"
+    },
+    {
+      "chapter": 3,
+      "verse": 6,
+      "zh": "就热心说，我是逼迫教会的；就律法上的义说，我是无可指摘的。",
+      "en": "as for zeal, persecuting the church; as for righteousness based on the law, faultless."
+    },
+    {
+      "chapter": 3,
+      "verse": 7,
+      "zh": "只是我先前以为与我有益的，我现在因基督都当作有损的。",
+      "en": "But whatever were gains to me I now consider loss for the sake of Christ."
+    },
+    {
+      "chapter": 3,
+      "verse": 8,
+      "zh": "不但如此，我也将万事当作有损的，因我以认识我主基督耶稣为至宝。我为他已经丢弃万事，看作粪土，为要得着基督。",
+      "en": "What is more, I consider everything a loss because of the surpassing worth of knowing Christ Jesus my Lord, for whose sake I have lost all things. I consider them garbage, that I may gain Christ"
+    },
+    {
+      "chapter": 3,
+      "verse": 9,
+      "zh": "并且得以在他里面，不是有自己因律法而得的义，乃是有信基督的义，就是因信神而来的义。",
+      "en": "and be found in him, not having a righteousness of my own that comes from the law, but that which is through faith in Christ—the righteousness that comes from God on the basis of faith."
+    },
+    {
+      "chapter": 3,
+      "verse": 10,
+      "zh": "使我认识基督，晓得他复活的大能，并且晓得和他一同受苦，效法他的死。",
+      "en": "I want to know Christ—yes, to know the power of his resurrection and participation in his sufferings, becoming like him in his death,"
+    },
+    {
+      "chapter": 3,
+      "verse": 11,
+      "zh": "或者我也得以从死里复活。",
+      "en": "and so, somehow, attaining to the resurrection from the dead."
+    },
+    {
+      "chapter": 3,
+      "verse": 12,
+      "zh": "这不是说，我已经得着了，已经完全了，我乃是竭力追求，或者可以得着基督耶稣所以得着我的。",
+      "en": "Not that I have already obtained all this, or have already arrived at my goal, but I press on to take hold of that for which Christ Jesus took hold of me."
+    },
+    {
+      "chapter": 3,
+      "verse": 13,
+      "zh": "弟兄们，我不是以为自己已经得着了，我只有一件事，就是忘记背后，努力面前的。",
+      "en": "Brothers and sisters, I do not consider myself yet to have taken hold of it. But one thing I do: Forgetting what is behind and straining toward what is ahead,"
+    },
+    {
+      "chapter": 3,
+      "verse": 14,
+      "zh": "向着标竿直跑，要得神在基督耶稣里从上面召我来得的奖赏。",
+      "en": "I press on toward the goal to win the prize for which God has called me heavenward in Christ Jesus."
+    },
+    {
+      "chapter": 3,
+      "verse": 15,
+      "zh": "所以我们中间凡是完全人，总要存这样的心。若在甚么事上存别样的心，神也要以此指示你们。",
+      "en": "All of us, then, who are mature should take such a view of things. And if on some point you think differently, that too God will make clear to you."
+    },
+    {
+      "chapter": 3,
+      "verse": 16,
+      "zh": "然而，我们到了甚么地步，就当照着甚么地步行。",
+      "en": "Only let us live up to what we have already attained."
+    },
+    {
+      "chapter": 3,
+      "verse": 17,
+      "zh": "弟兄们，你们要一同效法我，也当留意看那些照我们榜样行的人。",
+      "en": "Join together in following my example, brothers and sisters, and just as you have us as a model, keep your eyes on those who live as we do."
+    },
+    {
+      "chapter": 3,
+      "verse": 18,
+      "zh": "因为有许多人行事是基督十字架的仇敌。我屡次告诉你们，现在又流泪地告诉你们。",
+      "en": "For, as I have often told you before and now tell you again even with tears, many live as enemies of the cross of Christ."
+    },
+    {
+      "chapter": 3,
+      "verse": 19,
+      "zh": "他们的结局就是沉沦，他们的神就是自己的肚腹，他们以自己的羞辱为荣耀，专以地上的事为念。",
+      "en": "Their destiny is destruction, their god is their stomach, and their glory is in their shame. Their mind is set on earthly things."
+    },
+    {
+      "chapter": 3,
+      "verse": 20,
+      "zh": "我们却是天上的国民，并且等候救主，就是主耶稣基督从天上降临。",
+      "en": "But our citizenship is in heaven. And we eagerly await a Savior from there, the Lord Jesus Christ,"
+    },
+    {
+      "chapter": 3,
+      "verse": 21,
+      "zh": "他要按着那能叫万有归服自己的大能，将我们这卑贱的身体改变形状，和他自己荣耀的身体相似。",
+      "en": "who, by the power that enables him to bring everything under his control, will transform our lowly bodies so that they will be like his glorious body."
+    },
+    {
+      "chapter": 4,
+      "verse": 1,
+      "zh": "我所亲爱的弟兄们，我所想念、所喜爱的，我得胜的冠冕，你们应当这样在主里站立得稳。",
+      "en": "Therefore, my brothers and sisters, you whom I love and long for, my joy and crown, stand firm in the Lord in this way, dear friends!"
+    },
+    {
+      "chapter": 4,
+      "verse": 2,
+      "zh": "我劝友阿爹和循都基，要在主里同心。",
+      "en": "I plead with Euodia and I plead with Syntyche to be of the same mind in the Lord."
+    },
+    {
+      "chapter": 4,
+      "verse": 3,
+      "zh": "我也求你这真实同负一轭的，帮助这两个女人，因为她们在福音上曾与我一同劳苦，与革利免，并其余和我一同作工的，他们的名字都在生命册上。",
+      "en": "Yes, and I ask you, my true companion, help these women since they have contended at my side in the cause of the gospel, along with Clement and the rest of my co-workers, whose names are in the book of life."
+    },
+    {
+      "chapter": 4,
+      "verse": 4,
+      "zh": "你们要靠主常常喜乐。我再说，你们要喜乐。",
+      "en": "Rejoice in the Lord always. I will say it again: Rejoice!"
+    },
+    {
+      "chapter": 4,
+      "verse": 5,
+      "zh": "当叫众人知道你们谦和的心。主已经近了。",
+      "en": "Let your gentleness be evident to all. The Lord is near."
+    },
+    {
+      "chapter": 4,
+      "verse": 6,
+      "zh": "应当一无挂虑，只要凡事藉着祷告、祈求，和感谢，将你们所要的告诉神。",
+      "en": "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God."
+    },
+    {
+      "chapter": 4,
+      "verse": 7,
+      "zh": "神所赐、出人意外的平安，必在基督耶稣里保守你们的心怀意念。",
+      "en": "And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus."
+    },
+    {
+      "chapter": 4,
+      "verse": 8,
+      "zh": "弟兄们，我还有末了的话：凡是真实的、可敬的、公义的、清洁的、可爱的、有美名的，若有甚么德行，若有甚么称赞，这些事你们都要思念。",
+      "en": "Finally, brothers and sisters, whatever is true, whatever is noble, whatever is right, whatever is pure, whatever is lovely, whatever is admirable—if anything is excellent or praiseworthy—think about such things."
+    },
+    {
+      "chapter": 4,
+      "verse": 9,
+      "zh": "你们在我身上所学习的，所领受的，所听见的，所看见的，这些事你们都要去行。赐平安的神就必与你们同在。",
+      "en": "Whatever you have learned or received or heard from me, or seen in me—put it into practice. And the God of peace will be with you."
+    },
+    {
+      "chapter": 4,
+      "verse": 10,
+      "zh": "我靠主大大地喜乐，因为你们思念我的心如今又发生；你们向来就思念我，只是没得机会。",
+      "en": "I rejoiced greatly in the Lord that at last you renewed your concern for me. Indeed, you were concerned, but you had no opportunity to show it."
+    },
+    {
+      "chapter": 4,
+      "verse": 11,
+      "zh": "我并不是因缺乏说这话，我无论在甚么景况都可以知足，这是我已经学会了。",
+      "en": "I am not saying this because I am in need, for I have learned to be content whatever the circumstances."
+    },
+    {
+      "chapter": 4,
+      "verse": 12,
+      "zh": "我知道怎样处卑贱，也知道怎样处丰富，或饱足，或饥饿，或有余，或缺乏，随事随在，我都得了秘诀。",
+      "en": "I know what it is to be in need, and I know what it is to have plenty. I have learned the secret of being content in any and every situation, whether well fed or hungry, whether living in plenty or in want."
+    },
+    {
+      "chapter": 4,
+      "verse": 13,
+      "zh": "我靠着那加给我力量的，凡事都能作。",
+      "en": "I can do all this through him who gives me strength."
+    },
+    {
+      "chapter": 4,
+      "verse": 14,
+      "zh": "然而，你们和我同受患难，原是美事。",
+      "en": "Yet it was good of you to share in my troubles."
+    },
+    {
+      "chapter": 4,
+      "verse": 15,
+      "zh": "腓利比人哪，你们也知道我初传福音，离了马其顿的时候，唯有你们教会与我往来，论到授受的事，除了你们以外，并没有别的教会。",
+      "en": "Moreover, as you Philippians know, in the early days of your acquaintance with the gospel, when I set out from Macedonia, not one church shared with me in the matter of giving and receiving, except you only;"
+    },
+    {
+      "chapter": 4,
+      "verse": 16,
+      "zh": "就是我在帖撒罗尼迦，你们也一次两次地打发人供给我的需用。",
+      "en": "for even when I was in Thessalonica, you sent me aid more than once when I was in need."
+    },
+    {
+      "chapter": 4,
+      "verse": 17,
+      "zh": "我并不求甚么馈送，所求的就是你们的果子渐渐增多，归在你们的账上。",
+      "en": "Not that I desire your gifts; what I desire is that more be credited to your account."
+    },
+    {
+      "chapter": 4,
+      "verse": 18,
+      "zh": "但我样样都有，并且有余。我已经充足，因我从以巴弗提受了你们的馈送，当作极美的香气，为神所收纳所喜悦的祭物。",
+      "en": "I have received full payment and have more than enough. I am amply supplied, now that I have received from Epaphroditus the gifts you sent. They are a fragrant offering, an acceptable sacrifice, pleasing to God."
+    },
+    {
+      "chapter": 4,
+      "verse": 19,
+      "zh": "我的神必照他荣耀的丰富，在基督耶稣里，使你们一切所需用的都充足。",
+      "en": "And my God will meet all your needs according to the riches of his glory in Christ Jesus."
+    },
+    {
+      "chapter": 4,
+      "verse": 20,
+      "zh": "愿荣耀归给我们的父神，直到永永远远。阿们！",
+      "en": "To our God and Father be glory for ever and ever. Amen."
+    },
+    {
+      "chapter": 4,
+      "verse": 21,
+      "zh": "请问在基督耶稣里的各位圣徒安。在我这里的众弟兄都问你们安。",
+      "en": "Greet all God’s people in Christ Jesus. The brothers and sisters who are with me send greetings."
+    },
+    {
+      "chapter": 4,
+      "verse": 22,
+      "zh": "众圣徒都问你们安。在凯撒家里的人特特地问你们安。",
+      "en": "All God’s people here send you greetings, especially those who belong to Caesar’s household."
+    },
+    {
+      "chapter": 4,
+      "verse": 23,
+      "zh": "愿主耶稣基督的恩惠常与你们众人同在。阿们！",
+      "en": "The grace of the Lord Jesus Christ be with your spirit. Amen."
+    }
+  ],
+  "keyVerses": [
+    {
+      "chapter": 1,
+      "verse": 6
+    },
+    {
+      "chapter": 1,
+      "verse": 21
+    },
+    {
+      "chapter": 1,
+      "verse": 27
+    },
+    {
+      "chapter": 2,
+      "verse": 3
+    },
+    {
+      "chapter": 2,
+      "verse": 4
+    },
+    {
+      "chapter": 2,
+      "verse": 5
+    },
+    {
+      "chapter": 2,
+      "verse": 6
+    },
+    {
+      "chapter": 2,
+      "verse": 7
+    },
+    {
+      "chapter": 2,
+      "verse": 8
+    },
+    {
+      "chapter": 2,
+      "verse": 9
+    },
+    {
+      "chapter": 2,
+      "verse": 10
+    },
+    {
+      "chapter": 2,
+      "verse": 11
+    },
+    {
+      "chapter": 2,
+      "verse": 12
+    },
+    {
+      "chapter": 2,
+      "verse": 13
+    },
+    {
+      "chapter": 3,
+      "verse": 7
+    },
+    {
+      "chapter": 3,
+      "verse": 8
+    },
+    {
+      "chapter": 3,
+      "verse": 9
+    },
+    {
+      "chapter": 3,
+      "verse": 10
+    },
+    {
+      "chapter": 3,
+      "verse": 13
+    },
+    {
+      "chapter": 3,
+      "verse": 14
+    },
+    {
+      "chapter": 3,
+      "verse": 20
+    },
+    {
+      "chapter": 4,
+      "verse": 4
+    },
+    {
+      "chapter": 4,
+      "verse": 5
+    },
+    {
+      "chapter": 4,
+      "verse": 6
+    },
+    {
+      "chapter": 4,
+      "verse": 7
+    },
+    {
+      "chapter": 4,
+      "verse": 8
+    },
+    {
+      "chapter": 4,
+      "verse": 11
+    },
+    {
+      "chapter": 4,
+      "verse": 12
+    },
+    {
+      "chapter": 4,
+      "verse": 13
+    },
+    {
+      "chapter": 4,
+      "verse": 19
+    }
+  ]
+}

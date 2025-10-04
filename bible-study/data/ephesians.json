@@ -1,0 +1,1125 @@
+{
+  "book": "ephesians",
+  "name": "以弗所书",
+  "englishName": "Ephesians",
+  "testament": "new",
+  "category": "pauline_epistles",
+  "chapters": 6,
+  "color": "#3498db",
+  "description": "保罗向以弗所教会论述神在基督里的丰盛恩典",
+  "keyThemes": [
+    "神的拣选",
+    "教会合一",
+    "属灵争战",
+    "夫妻关系",
+    "基督的爱"
+  ],
+  "verses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "zh": "奉神旨意，作基督耶稣使徒的保罗，写信给在以弗所的圣徒，就是在基督耶稣里有忠心的人。",
+      "en": "Paul, an apostle of Christ Jesus by the will of God, To God’s holy people in Ephesus, the faithful in Christ Jesus."
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "zh": "愿恩惠、平安从神我们的父和主耶稣基督归与你们！",
+      "en": "Grace and peace to you from God our Father and the Lord Jesus Christ."
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "zh": "愿颂赞归与我们主耶稣基督的父神！他在基督里曾赐给我们天上各样属灵的福气。",
+      "en": "Praise be to the God and Father of our Lord Jesus Christ, who has blessed us in the heavenly realms with every spiritual blessing in Christ.",
+      "background": "背景: 这是保罗书信中常见的开篇颂赞。“在基督里”是本书的关键，意味着信徒所有福气的来源和范围都在基督联合的生命里。“天上”不单指地理位置，更是一种属灵的境界。"
+    },
+    {
+      "chapter": 1,
+      "verse": 4,
+      "zh": "就如神从创立世界以前，在基督里拣选了我们，使我们在他面前成为圣洁，无有瑕疵。",
+      "en": "For he chose us in him before the creation of the world to be holy and blameless in his sight."
+    },
+    {
+      "chapter": 1,
+      "verse": 5,
+      "zh": "又因爱我们，就按着自己意旨所喜悦的，预定我们藉着耶稣基督得儿子的名分，",
+      "en": "In love he predestined us for adoption to sonship through Jesus Christ, in accordance with his pleasure and will—"
+    },
+    {
+      "chapter": 1,
+      "verse": 6,
+      "zh": "使他荣耀的恩典得着称赞；这恩典是他在爱子里所赐给我们的。",
+      "en": "to the praise of his glorious grace, which he has freely given us in the One he loves."
+    },
+    {
+      "chapter": 1,
+      "verse": 7,
+      "zh": "我们藉这爱子的血得蒙救赎，过犯得以赦免，乃是照他丰富的恩典。",
+      "en": "In him we have redemption through his blood, the forgiveness of sins, in accordance with the riches of God’s grace.",
+      "background": "词义解析: “救赎” (Redemption) 在原文中有“付费买回”的意思，常用于赎回奴隶。这里指基督用祂的宝血作为代价，将我们从罪的奴役中释放出来。"
+    },
+    {
+      "chapter": 1,
+      "verse": 8,
+      "zh": "这恩典是神用诸般智慧聪明，充充足足赏给我们的；",
+      "en": "that he lavished on us. With all wisdom and understanding,"
+    },
+    {
+      "chapter": 1,
+      "verse": 9,
+      "zh": "都是照他自己所预定的美意，叫我们知道他旨意的奥秘，",
+      "en": "he made known to us the mystery of his will according to his good pleasure, which he purposed in Christ,"
+    },
+    {
+      "chapter": 1,
+      "verse": 10,
+      "zh": "要照所安排的，在日期满足的时候，使天上、地上、一切所有的都在基督里面同归于一。",
+      "en": "to be put into effect when the times reach their fulfillment—to bring unity to all things in heaven and on earth under Christ."
+    },
+    {
+      "chapter": 1,
+      "verse": 11,
+      "zh": "我们也在他里面得了基业；这原是那位随己意行、做万事的，照着他旨意所预定的。",
+      "en": "In him we were also chosen, having been predestined according to the plan of him who works out everything in conformity with the purpose of his will,"
+    },
+    {
+      "chapter": 1,
+      "verse": 12,
+      "zh": "叫他的荣耀从我们这首先在基督里有盼望的人可以得着称赞。",
+      "en": "in order that we, who were the first to put our hope in Christ, might be for the praise of his glory."
+    },
+    {
+      "chapter": 1,
+      "verse": 13,
+      "zh": "你们既听见真理的道，就是那叫你们得救的福音，也信了基督，既然信他，就受了所应许的圣灵为印记。",
+      "en": "And you also were included in Christ when you heard the message of truth, the gospel of your salvation. When you believed, you were marked in him with a seal, the promised Holy Spirit,"
+    },
+    {
+      "chapter": 1,
+      "verse": 14,
+      "zh": "这圣灵是我们得基业的凭据，直等到神之民被赎，使他的荣耀得着称赞。",
+      "en": "who is a deposit guaranteeing our inheritance until the redemption of those who are God’s possession—to the praise of his glory."
+    },
+    {
+      "chapter": 1,
+      "verse": 15,
+      "zh": "因此，我既听见你们信从主耶稣，亲爱众圣徒，",
+      "en": "For this reason, ever since I heard about your faith in the Lord Jesus and your love for all God’s people,"
+    },
+    {
+      "chapter": 1,
+      "verse": 16,
+      "zh": "就为你们不住地感谢神。祷告的时候，常提到你们，",
+      "en": "I have not stopped giving thanks for you, remembering you in my prayers."
+    },
+    {
+      "chapter": 1,
+      "verse": 17,
+      "zh": "求我们主耶稣基督的神，荣耀的父，将那赐人智慧和启示的灵赏给你们，使你们真知道他，",
+      "en": "I keep asking that the God of our Lord Jesus Christ, the glorious Father, may give you the Spirit of wisdom and revelation, so that you may know him better."
+    },
+    {
+      "chapter": 1,
+      "verse": 18,
+      "zh": "并且照明你们心中的眼睛，使你们知道他的恩召有何等指望，他在圣徒中得的基业有何等丰盛的荣耀；",
+      "en": "I pray that the eyes of your heart may be enlightened in order that you may know the hope to which he has called you, the riches of his glorious inheritance in his holy people,"
+    },
+    {
+      "chapter": 1,
+      "verse": 19,
+      "zh": "并知道他向我们这信的人所显的能力是何等浩大，",
+      "en": "and his incomparably great power for us who believe."
+    },
+    {
+      "chapter": 1,
+      "verse": 20,
+      "zh": "就是照他在基督身上所运行的大能大力，使他从死里复活，叫他在天上坐在自己的右边，",
+      "en": "That power is the same as the mighty strength he exerted when he raised Christ from the dead and seated him at his right hand in the heavenly realms,"
+    },
+    {
+      "chapter": 1,
+      "verse": 21,
+      "zh": "远超过一切执政的、掌权的、有能的、主治的，和一切有名的；不但是今世的，连来世的也都超过了。",
+      "en": "far above all rule and authority, power and dominion, and every name that is invoked, not only in the present age but also in the one to come."
+    },
+    {
+      "chapter": 1,
+      "verse": 22,
+      "zh": "又将万有服在他的脚下，使他为教会作万有之首。",
+      "en": "And God placed all things under his feet and appointed him to be head over everything for the church,"
+    },
+    {
+      "chapter": 1,
+      "verse": 23,
+      "zh": "教会是他的身体，是那充满万有者所充满的。",
+      "en": "which is his body, the fullness of him who fills everything in every way."
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "zh": "你们死在过犯罪恶之中，他叫你们活过来。",
+      "en": "As for you, you were dead in your transgressions and sins,"
+    },
+    {
+      "chapter": 2,
+      "verse": 2,
+      "zh": "那时，你们在其中行事为人，随从今世的风俗，顺服空中掌权者的首领，就是现今在悖逆之子心中运行的邪灵。",
+      "en": "in which you used to live when you followed the ways of this world and of the ruler of the kingdom of the air, the spirit who is now at work in those who are disobedient."
+    },
+    {
+      "chapter": 2,
+      "verse": 3,
+      "zh": "我们从前也都在他们中间，放纵肉体的私欲，随着肉体和心中所喜好的去行，本为可怒之子，和别人一样。",
+      "en": "All of us also lived among them at one time, gratifying the cravings of our flesh and following its desires and thoughts. Like the rest, we were by nature deserving of wrath."
+    },
+    {
+      "chapter": 2,
+      "verse": 4,
+      "zh": "然而，神既有丰富的怜悯，因他爱我们的大爱，",
+      "en": "But because of his great love for us, God, who is rich in mercy,"
+    },
+    {
+      "chapter": 2,
+      "verse": 5,
+      "zh": "当我们死在过犯中的时候，便叫我们与基督一同活过来（你们得救是本乎恩）。",
+      "en": "made us alive with Christ even when we were dead in transgressions—it is by grace you have been saved."
+    },
+    {
+      "chapter": 2,
+      "verse": 6,
+      "zh": "他又叫我们与基督耶稣一同复活，一同坐在天上，",
+      "en": "And God raised us up with Christ and seated us with him in the heavenly realms in Christ Jesus,"
+    },
+    {
+      "chapter": 2,
+      "verse": 7,
+      "zh": "要将他极丰富的恩典，就是他在基督耶稣里向我们所施的恩慈，显明给后来的世代看。",
+      "en": "in order that in the coming ages he might show the incomparable riches of his grace, expressed in his kindness to us in Christ Jesus."
+    },
+    {
+      "chapter": 2,
+      "verse": 8,
+      "zh": "你们得救是本乎恩，也因着信；这并不是出于自己，乃是神所赐的；",
+      "en": "For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God—",
+      "background": "神学探讨: 这是福音的核心经文之一，强调了救恩的两个方面：神的恩典是源头，人的信是管道。并且，连这个“信”本身也是神所赐的礼物，彻底排除了人靠行为自救的可能性。"
+    },
+    {
+      "chapter": 2,
+      "verse": 9,
+      "zh": "也不是出于行为，免得有人自夸。",
+      "en": "not by works, so that no one can boast."
+    },
+    {
+      "chapter": 2,
+      "verse": 10,
+      "zh": "我们原是他的工作，在基督耶稣里造成的，为要叫我们行善，就是神所预备叫我们行的。",
+      "en": "For we are God’s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do."
+    },
+    {
+      "chapter": 2,
+      "verse": 11,
+      "zh": "所以你们应当记念：你们从前按肉体是外邦人，是称为没受割礼的；这名原是那些凭人手在肉身上称为受割礼之人所起的。",
+      "en": "Therefore, remember that formerly you who are Gentiles by birth and called “uncircumcised” by those who call themselves “the circumcision” (which is done in the body by human hands)—"
+    },
+    {
+      "chapter": 2,
+      "verse": 12,
+      "zh": "那时，你们与基督无关，在以色列国民以外，在所应许的诸约上是局外人，并且活在世上没有指望，没有神。",
+      "en": "remember that at that time you were separate from Christ, excluded from citizenship in Israel and foreigners to the covenants of the promise, without hope and without God in the world."
+    },
+    {
+      "chapter": 2,
+      "verse": 13,
+      "zh": "你们从前远离神的人，如今却在基督耶稣里，靠着他的血，已经得亲近了。",
+      "en": "But now in Christ Jesus you who once were far away have been brought near by the blood of Christ."
+    },
+    {
+      "chapter": 2,
+      "verse": 14,
+      "zh": "因他使我们和睦，将两下合而为一，拆毁了中间隔断的墙；",
+      "en": "For he himself is our peace, who has made the two groups one and has destroyed the barrier, the dividing wall of hostility,"
+    },
+    {
+      "chapter": 2,
+      "verse": 15,
+      "zh": "而且以自己的身体废掉冤仇，就是那记在律法上的规条，为要将两下藉着自己造成一个新人，如此便成就了和睦。",
+      "en": "by setting aside in his flesh the law with its commands and regulations. His purpose was to create in himself one new humanity out of the two, thus making peace,"
+    },
+    {
+      "chapter": 2,
+      "verse": 16,
+      "zh": "既在十字架上灭了冤仇，便藉这十字架使两下归为一体，与神和好了，",
+      "en": "and in one body to reconcile both of them to God through the cross, by which he put to death their hostility."
+    },
+    {
+      "chapter": 2,
+      "verse": 17,
+      "zh": "并且来传和平的福音给你们远处的人，也给那近处的人。",
+      "en": "He came and preached peace to you who were far away and peace to those who were near."
+    },
+    {
+      "chapter": 2,
+      "verse": 18,
+      "zh": "因为我们两下藉着他被一个圣灵所感，得以进到父面前。",
+      "en": "For through him we both have access to the Father by one Spirit."
+    },
+    {
+      "chapter": 2,
+      "verse": 19,
+      "zh": "这样，你们不再作外人和客旅，是与圣徒同国，是神家里的人了；",
+      "en": "Consequently, you are no longer foreigners and strangers, but fellow citizens with God’s people and also members of his household,"
+    },
+    {
+      "chapter": 2,
+      "verse": 20,
+      "zh": "并且被建造在使徒和先知的根基上，有基督耶稣自己为房角石，",
+      "en": "built on the foundation of the apostles and prophets, with Christ Jesus himself as the chief cornerstone."
+    },
+    {
+      "chapter": 2,
+      "verse": 21,
+      "zh": "各房靠他联络得合式，渐渐成为主的圣殿。",
+      "en": "In him the whole building is joined together and rises to become a holy temple in the Lord."
+    },
+    {
+      "chapter": 2,
+      "verse": 22,
+      "zh": "你们也靠他同被建造，成为神藉着圣灵居住的所在。",
+      "en": "And in him you too are being built together to become a dwelling in which God lives by his Spirit."
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "zh": "因此，我保罗为你们外邦人作了基督耶稣被囚的，替你们祈祷。",
+      "en": "For this reason I, Paul, the prisoner of Christ Jesus for the sake of you Gentiles—"
+    },
+    {
+      "chapter": 3,
+      "verse": 2,
+      "zh": "谅必你们曾听见神赐恩给我，将关切你们的职分托付我，",
+      "en": "Surely you have heard about the administration of God’s grace that was given to me for you,"
+    },
+    {
+      "chapter": 3,
+      "verse": 3,
+      "zh": "用启示使我知道福音的奥秘，正如我以前略略写过的。",
+      "en": "that is, the mystery made known to me by revelation, as I have already written briefly."
+    },
+    {
+      "chapter": 3,
+      "verse": 4,
+      "zh": "你们念了，就能晓得我深知基督的奥秘。",
+      "en": "In reading this, then, you will be able to understand my insight into the mystery of Christ,"
+    },
+    {
+      "chapter": 3,
+      "verse": 5,
+      "zh": "这奥秘在以前的世代没有叫人知道，像如今藉着圣灵启示他的圣使徒和先知一样。",
+      "en": "which was not made known to people in other generations as it has now been revealed by the Spirit to God’s holy apostles and prophets."
+    },
+    {
+      "chapter": 3,
+      "verse": 6,
+      "zh": "这奥秘就是外邦人在基督耶稣里，藉着福音，得以同为后嗣，同为一体，同蒙应许。",
+      "en": "This mystery is that through the gospel the Gentiles are heirs together with Israel, members together of one body, and sharers together in the promise in Christ Jesus."
+    },
+    {
+      "chapter": 3,
+      "verse": 7,
+      "zh": "我作了这福音的执事，是照神的恩赐，这恩赐是照他运行的大能赐给我的。",
+      "en": "I became a servant of this gospel by the gift of God’s grace given me through the working of his power."
+    },
+    {
+      "chapter": 3,
+      "verse": 8,
+      "zh": "我本来比众圣徒中最小的还小，然而他还赐我这恩典，叫我把基督那测不透的丰富传给外邦人，",
+      "en": "Although I am less than the least of all the Lord’s people, this grace was given me: to preach to the Gentiles the unsearchable riches of Christ,"
+    },
+    {
+      "chapter": 3,
+      "verse": 9,
+      "zh": "又使众人都明白，这历代以来隐藏在创造万物之神里的奥秘是如何安排的。",
+      "en": "and to make plain to everyone the administration of this mystery, which for ages past was kept hidden in God, who created all things."
+    },
+    {
+      "chapter": 3,
+      "verse": 10,
+      "zh": "为要藉着教会使天上执政的、掌权的，现在得知神百般的智慧。",
+      "en": "His intent was that now, through the church, the manifold wisdom of God should be made known to the rulers and authorities in the heavenly realms,"
+    },
+    {
+      "chapter": 3,
+      "verse": 11,
+      "zh": "这是照神从万世以前，在我们主基督耶稣里所定的旨意。",
+      "en": "according to his eternal purpose that he accomplished in Christ Jesus our Lord."
+    },
+    {
+      "chapter": 3,
+      "verse": 12,
+      "zh": "我们因信耶稣，就在他里面放胆无惧，笃信不疑地来到神面前。",
+      "en": "In him and through faith in him we may approach God with freedom and confidence."
+    },
+    {
+      "chapter": 3,
+      "verse": 13,
+      "zh": "所以我求你们，不要因我为你们所受的患难丧胆，这原是你们的荣耀。",
+      "en": "I ask you, therefore, not to be discouraged because of my sufferings for you, which are your glory."
+    },
+    {
+      "chapter": 3,
+      "verse": 14,
+      "zh": "因此，我在父面前屈膝，",
+      "en": "For this reason I kneel before the Father,"
+    },
+    {
+      "chapter": 3,
+      "verse": 15,
+      "zh": "（天上地上的各家，都是从他得名。）",
+      "en": "from whom every family in heaven and on earth derives its name."
+    },
+    {
+      "chapter": 3,
+      "verse": 16,
+      "zh": "求他按着他丰盛的荣耀，藉着他的灵，叫你们心里的力量刚强起来，",
+      "en": "I pray that out of his glorious riches he may strengthen you with power through his Spirit in your inner being,"
+    },
+    {
+      "chapter": 3,
+      "verse": 17,
+      "zh": "使基督因你们的信，住在你们心里，叫你们的爱心有根有基，",
+      "en": "so that Christ may dwell in your hearts through faith. And I pray that you, being rooted and established in love,"
+    },
+    {
+      "chapter": 3,
+      "verse": 18,
+      "zh": "能以和众圣徒一同明白基督的爱是何等长阔高深，",
+      "en": "may have power, together with all the Lord’s holy people, to grasp how wide and long and high and deep is the love of Christ,"
+    },
+    {
+      "chapter": 3,
+      "verse": 19,
+      "zh": "并知道这爱是过于人所能测度的，便叫神一切所充满的，充满了你们。",
+      "en": "and to know this love that surpasses knowledge—that you may be filled to the measure of all the fullness of God."
+    },
+    {
+      "chapter": 3,
+      "verse": 20,
+      "zh": "神能照着运行在我们心里的大力充充足足地成就一切，超过我们所求所想的。",
+      "en": "Now to him who is able to do immeasurably more than all we ask or imagine, according to his power that is at work within us,",
+      "background": "默想与应用: 这节经文鼓励我们向神大胆地祈求。神的作为不受我们想象力的限制。祂在我们生命中的工作，往往远超我们的预期。这提醒我们信靠神的大能，而非自己的有限。"
+    },
+    {
+      "chapter": 3,
+      "verse": 21,
+      "zh": "但愿他在教会中，并在基督耶稣里，得着荣耀，直到世世代代，永永远远。阿们！",
+      "en": "to him be glory in the church and in Christ Jesus throughout all generations, for ever and ever! Amen."
+    },
+    {
+      "chapter": 4,
+      "verse": 1,
+      "zh": "我为主被囚的劝你们：既然蒙召，行事为人就当与蒙召的恩相称。",
+      "en": "As a prisoner for the Lord, then, I urge you to live a life worthy of the calling you have received."
+    },
+    {
+      "chapter": 4,
+      "verse": 2,
+      "zh": "凡事谦虚、温柔、忍耐，用爱心互相宽容，",
+      "en": "Be completely humble and gentle; be patient, bearing with one another in love."
+    },
+    {
+      "chapter": 4,
+      "verse": 3,
+      "zh": "用和平彼此联络，竭力保守圣灵所赐合而为一的心。",
+      "en": "Make every effort to keep the unity of the Spirit through the bond of peace."
+    },
+    {
+      "chapter": 4,
+      "verse": 4,
+      "zh": "身体只有一个，圣灵只有一个，正如你们蒙召同有一个指望。",
+      "en": "There is one body and one Spirit, just as you were called to one hope when you were called;"
+    },
+    {
+      "chapter": 4,
+      "verse": 5,
+      "zh": "一主，一信，一洗，",
+      "en": "one Lord, one faith, one baptism;"
+    },
+    {
+      "chapter": 4,
+      "verse": 6,
+      "zh": "一神，就是众人的父，超乎众人之上，贯乎众人之中，也住在众人之内。",
+      "en": "one God and Father of all, who is over all and through all and in all."
+    },
+    {
+      "chapter": 4,
+      "verse": 7,
+      "zh": "我们各人蒙恩，都是照基督所量给各人的恩赐。",
+      "en": "But to each one of us grace has been given as Christ apportioned it."
+    },
+    {
+      "chapter": 4,
+      "verse": 8,
+      "zh": "所以经上说：他升上高天的时候，掳掠了仇敌，将各样的恩赐赏给人。",
+      "en": "This is why it says: “When he ascended on high, he took many captives and gave gifts to his people.”"
+    },
+    {
+      "chapter": 4,
+      "verse": 9,
+      "zh": "（既说升上，岂不是先降在地下吗？",
+      "en": "(What does “he ascended” mean except that he also descended to the lower, earthly regions?"
+    },
+    {
+      "chapter": 4,
+      "verse": 10,
+      "zh": "那降下的，就是远升诸天之上要充满万有的。）",
+      "en": "He who descended is the very one who ascended higher than all the heavens, in order to fill the whole universe.)"
+    },
+    {
+      "chapter": 4,
+      "verse": 11,
+      "zh": "他所赐的，有使徒，有先知，有传福音的，有牧师和教师，",
+      "en": "So Christ himself gave the apostles, the prophets, the evangelists, the pastors and teachers,"
+    },
+    {
+      "chapter": 4,
+      "verse": 12,
+      "zh": "为要成全圣徒，各尽其职，建立基督的身体，",
+      "en": "to equip his people for works of service, so that the body of Christ may be built up"
+    },
+    {
+      "chapter": 4,
+      "verse": 13,
+      "zh": "直等到我们众人在真道上同归于一，认识神的儿子，得以长大成人，满有基督长成的身量，",
+      "en": "until we all reach unity in the faith and in the knowledge of the Son of God and become mature, attaining to the whole measure of the fullness of Christ."
+    },
+    {
+      "chapter": 4,
+      "verse": 14,
+      "zh": "使我们不再作小孩子，中了人的诡计和欺骗的法术，被一切异教之风摇动，飘来飘去，就随从各样的异端；",
+      "en": "Then we will no longer be infants, tossed back and forth by the waves, and blown here and there by every wind of teaching and by the cunning and craftiness of people in their deceitful scheming."
+    },
+    {
+      "chapter": 4,
+      "verse": 15,
+      "zh": "惟用爱心说诚实话，凡事长进，连于元首基督，",
+      "en": "Instead, speaking the truth in love, we will grow to become in every respect the mature body of him who is the head, that is, Christ."
+    },
+    {
+      "chapter": 4,
+      "verse": 16,
+      "zh": "全身都靠他联络得合式，百节各按各职，照着各体的功用彼此相助，便叫身体渐渐增长，在爱中建立自己。",
+      "en": "From him the whole body, joined and held together by every supporting ligament, grows and builds itself up in love, as each part does its work."
+    },
+    {
+      "chapter": 4,
+      "verse": 17,
+      "zh": "所以我说，且在主里确实地说，你们行事不要再像外邦人存虚妄的心行事。",
+      "en": "So I tell you this, and insist on it in the Lord, that you must no longer live as the Gentiles do, in the futility of their thinking."
+    },
+    {
+      "chapter": 4,
+      "verse": 18,
+      "zh": "他们心地昏昧，与神所赐的生命隔绝了，都因自己无知，心里刚硬；",
+      "en": "They are darkened in their understanding and separated from the life of God because of the ignorance that is in them due to the hardening of their hearts."
+    },
+    {
+      "chapter": 4,
+      "verse": 19,
+      "zh": "良心既然丧尽，就放纵私欲，贪行种种的污秽。",
+      "en": "Having lost all sensitivity, they have given themselves over to sensuality so as to indulge in every kind of impurity, and they are full of greed."
+    },
+    {
+      "chapter": 4,
+      "verse": 20,
+      "zh": "你们学了基督，却不是这样。",
+      "en": "That, however, is not the way of life you learned"
+    },
+    {
+      "chapter": 4,
+      "verse": 21,
+      "zh": "如果你们听过他的道，领了他的教，学了他的真理，",
+      "en": "when you heard about Christ and were taught in him in accordance with the truth that is in Jesus."
+    },
+    {
+      "chapter": 4,
+      "verse": 22,
+      "zh": "就要脱去你们从前行为上的旧人，这旧人是因私欲的迷惑渐渐变坏的；",
+      "en": "You were taught, with regard to your former way of life, to put off your old self, which is being corrupted by its deceitful desires;"
+    },
+    {
+      "chapter": 4,
+      "verse": 23,
+      "zh": "又要将你们的心志改换一新，",
+      "en": "to be made new in the attitude of your minds;"
+    },
+    {
+      "chapter": 4,
+      "verse": 24,
+      "zh": "并且穿上新人；这新人是照着神的形像造的，有真理的仁义和圣洁。",
+      "en": "and to put on the new self, created to be like God in true righteousness and holiness."
+    },
+    {
+      "chapter": 4,
+      "verse": 25,
+      "zh": "所以你们要弃绝谎言，各人与邻舍说实话，因为我们是互相为肢体。",
+      "en": "Therefore each of you must put off falsehood and speak truthfully to your neighbor, for we are all members of one body."
+    },
+    {
+      "chapter": 4,
+      "verse": 26,
+      "zh": "生气却不要犯罪；不可含怒到日落，",
+      "en": "“In your anger do not sin”: Do not let the sun go down while you are still angry,"
+    },
+    {
+      "chapter": 4,
+      "verse": 27,
+      "zh": "也不可给魔鬼留地步。",
+      "en": "and do not give the devil a foothold."
+    },
+    {
+      "chapter": 4,
+      "verse": 28,
+      "zh": "从前偷窃的，不要再偷；总要劳力，亲手做正经事，就可有余分给那缺少的人。",
+      "en": "Anyone who has been stealing must steal no longer, but must work, doing something useful with their own hands, that they may have something to share with those in need."
+    },
+    {
+      "chapter": 4,
+      "verse": 29,
+      "zh": "污秽的言语一句不可出口，只要随事说造就人的好话，叫听见的人得益处。",
+      "en": "Do not let any unwholesome talk come out of your mouths, but only what is helpful for building others up according to their needs, that it may benefit those who listen."
+    },
+    {
+      "chapter": 4,
+      "verse": 30,
+      "zh": "不要叫神的圣灵担忧；你们原是受了他的印记，等候得赎的日子来到。",
+      "en": "And do not grieve the Holy Spirit of God, with whom you were sealed for the day of redemption."
+    },
+    {
+      "chapter": 4,
+      "verse": 31,
+      "zh": "一切苦毒、恼恨、忿怒、嚷闹、毁谤，并一切的恶毒，都当从你们中间除掉；",
+      "en": "Get rid of all bitterness, rage and anger, brawling and slander, along with every form of malice."
+    },
+    {
+      "chapter": 4,
+      "verse": 32,
+      "zh": "并要以恩慈相待，存怜悯的心，彼此饶恕，正如神在基督里饶恕了你们一样。",
+      "en": "Be kind and compassionate to one another, forgiving each other, just as in Christ God forgave you."
+    },
+    {
+      "chapter": 5,
+      "verse": 1,
+      "zh": "所以，你们该效法神，好像蒙慈爱的儿女一样。",
+      "en": "Follow God’s example, therefore, as dearly loved children"
+    },
+    {
+      "chapter": 5,
+      "verse": 2,
+      "zh": "也要凭爱心行事，正如基督爱我们，为我们舍了自己，当作馨香的供物和祭物，献与神。",
+      "en": "and walk in the way of love, just as Christ loved us and gave himself up for us as a fragrant offering and sacrifice to God."
+    },
+    {
+      "chapter": 5,
+      "verse": 3,
+      "zh": "至于淫乱并一切污秽，或是贪婪，在你们中间连提都不可，方合圣徒的体统。",
+      "en": "But among you there must not be even a hint of sexual immorality, or of any kind of impurity, or of greed, because these are improper for God’s holy people."
+    },
+    {
+      "chapter": 5,
+      "verse": 4,
+      "zh": "淫词、妄语，和戏笑的话都不相宜；总要说感谢的话。",
+      "en": "Nor should there be obscenity, foolish talk or coarse joking, which are out of place, but rather thanksgiving."
+    },
+    {
+      "chapter": 5,
+      "verse": 5,
+      "zh": "因为你们确实地知道，无论是淫乱的，是污秽的，是有贪心的，在基督和神的国里都是无分的。有贪心的，就与拜偶像的一样。",
+      "en": "For of this you can be sure: No immoral, impure or greedy person—such a person is an idolater—has any inheritance in the kingdom of Christ and of God."
+    },
+    {
+      "chapter": 5,
+      "verse": 6,
+      "zh": "不要被人虚浮的话欺哄；因这些事，神的忿怒必临到那悖逆之子。",
+      "en": "Let no one deceive you with empty words, for because of such things God’s wrath comes on those who are disobedient."
+    },
+    {
+      "chapter": 5,
+      "verse": 7,
+      "zh": "所以，你们不要与他们同伙。",
+      "en": "Therefore do not be partners with them."
+    },
+    {
+      "chapter": 5,
+      "verse": 8,
+      "zh": "从前你们是暗昧的，但如今在主里面是光明的，行事为人就当像光明的子女。",
+      "en": "For you were once darkness, but now you are light in the Lord. Live as children of light"
+    },
+    {
+      "chapter": 5,
+      "verse": 9,
+      "zh": "光明所结的果子就是一切良善、公义、诚实。",
+      "en": "(for the fruit of the light consists in all goodness, righteousness and truth)"
+    },
+    {
+      "chapter": 5,
+      "verse": 10,
+      "zh": "总要察验何为主所喜悦的事。",
+      "en": "and find out what pleases the Lord."
+    },
+    {
+      "chapter": 5,
+      "verse": 11,
+      "zh": "那暗昧无益的事，不要与人同行，倒要责备行这事的人；",
+      "en": "Have nothing to do with the fruitless deeds of darkness, but rather expose them."
+    },
+    {
+      "chapter": 5,
+      "verse": 12,
+      "zh": "因为他们暗中所行的，就是提起来也是可耻的。",
+      "en": "It is shameful even to mention what the disobedient do in secret."
+    },
+    {
+      "chapter": 5,
+      "verse": 13,
+      "zh": "凡事受了责备，就被光显明出来，因为一切能显明的就是光。",
+      "en": "But everything exposed by the light becomes visible—and everything that is illuminated becomes a light."
+    },
+    {
+      "chapter": 5,
+      "verse": 14,
+      "zh": "所以主说：你这睡着的人当醒过来，从死里复活！基督就要光照你了。",
+      "en": "This is why it is said: “Wake up, sleeper, rise from the dead, and Christ will shine on you.”"
+    },
+    {
+      "chapter": 5,
+      "verse": 15,
+      "zh": "你们要谨慎行事，不要像愚昧人，当像智慧人。",
+      "en": "Be very careful, then, how you live—not as unwise but as wise,"
+    },
+    {
+      "chapter": 5,
+      "verse": 16,
+      "zh": "要爱惜光阴，因为现今的世代邪恶。",
+      "en": "making the most of every opportunity, because the days are evil.",
+      "background": "词义解析: “爱惜光阴” (making the most of every opportunity) 原文意为“赎回时间”。指智慧地抓住每一个时机，将其从虚度或邪恶中“买回来”，用于有永恒价值的事情上。"
+    },
+    {
+      "chapter": 5,
+      "verse": 17,
+      "zh": "不要作糊涂人，要明白主的旨意如何。",
+      "en": "Therefore do not be foolish, but understand what the Lord’s will is."
+    },
+    {
+      "chapter": 5,
+      "verse": 18,
+      "zh": "不要醉酒，酒能使人放荡；乃要被圣灵充满。",
+      "en": "Do not get drunk on wine, which leads to debauchery. Instead, be filled with the Spirit,"
+    },
+    {
+      "chapter": 5,
+      "verse": 19,
+      "zh": "当用诗章、颂词、灵歌彼此对说，口唱心和地赞美主。",
+      "en": "speaking to one another with psalms, hymns, and songs from the Spirit. Sing and make music from your heart to the Lord,"
+    },
+    {
+      "chapter": 5,
+      "verse": 20,
+      "zh": "凡事要奉我们主耶稣基督的名常常感谢父神。",
+      "en": "always giving thanks to God the Father for everything, in the name of our Lord Jesus Christ."
+    },
+    {
+      "chapter": 5,
+      "verse": 21,
+      "zh": "又当存敬畏基督的心，彼此顺服。",
+      "en": "Submit to one another out of reverence for Christ."
+    },
+    {
+      "chapter": 5,
+      "verse": 22,
+      "zh": "你们作妻子的，当顺服自己的丈夫，如同顺服主。",
+      "en": "Wives, submit yourselves to your own husbands as you do to the Lord."
+    },
+    {
+      "chapter": 5,
+      "verse": 23,
+      "zh": "因为丈夫是妻子的头，如同基督是教会的头；他又是教会全体的救主。",
+      "en": "For the husband is the head of the wife as Christ is the head of the church, his body, of which he is the Savior."
+    },
+    {
+      "chapter": 5,
+      "verse": 24,
+      "zh": "教会怎样顺服基督，妻子也要怎样凡事顺服丈夫。",
+      "en": "Now as the church submits to Christ, so also wives should submit to their husbands in everything."
+    },
+    {
+      "chapter": 5,
+      "verse": 25,
+      "zh": "你们作丈夫的，要爱你们的妻子，正如基督爱教会，为教会舍己。",
+      "en": "Husbands, love your wives, just as Christ loved the church and gave himself up for her"
+    },
+    {
+      "chapter": 5,
+      "verse": 26,
+      "zh": "要用水藉着道把教会洗净，成为圣洁，",
+      "en": "to make her holy, cleansing her by the washing with water through the word,"
+    },
+    {
+      "chapter": 5,
+      "verse": 27,
+      "zh": "可以献给自己，作个荣耀的教会，毫无玷污、皱纹等类的病，乃是圣洁没有瑕疵的。",
+      "en": "and to present her to himself as a radiant church, without stain or wrinkle or any other blemish, but holy and blameless."
+    },
+    {
+      "chapter": 5,
+      "verse": 28,
+      "zh": "丈夫也当照样爱妻子，如同爱自己的身子；爱妻子便是爱自己了。",
+      "en": "In this same way, husbands ought to love their wives as their own bodies. He who loves his wife loves himself."
+    },
+    {
+      "chapter": 5,
+      "verse": 29,
+      "zh": "从来没有人恨恶自己的身子，总是保养顾惜，正像基督待教会一样，",
+      "en": "After all, no one ever hated their own body, but they feed and care for their body, just as Christ does the church—"
+    },
+    {
+      "chapter": 5,
+      "verse": 30,
+      "zh": "因我们是他身上的肢体。",
+      "en": "for we are members of his body."
+    },
+    {
+      "chapter": 5,
+      "verse": 31,
+      "zh": "为这个缘故，人要离开父母，与妻子连合，二人成为一体。",
+      "en": "“For this reason a man will leave his father and mother and be united to his wife, and the two will become one flesh.”"
+    },
+    {
+      "chapter": 5,
+      "verse": 32,
+      "zh": "这是极大的奥秘，但我是指着基督和教会说的。",
+      "en": "This is a profound mystery—but I am talking about Christ and the church."
+    },
+    {
+      "chapter": 5,
+      "verse": 33,
+      "zh": "然而，你们各人都当爱妻子，如同爱自己一样。妻子也当敬重她的丈夫。",
+      "en": "However, each one of you also must love his wife as he loves himself, and the wife must respect her husband."
+    },
+    {
+      "chapter": 6,
+      "verse": 1,
+      "zh": "你们作儿女的，要在主里听从父母，这是理所当然的。",
+      "en": "Children, obey your parents in the Lord, for this is right."
+    },
+    {
+      "chapter": 6,
+      "verse": 2,
+      "zh": "要孝敬父母，使你得福，在世长寿。这是第一条带应许的诫命。",
+      "en": "“Honor your father and mother”—which is the first commandment with a promise—"
+    },
+    {
+      "chapter": 6,
+      "verse": 3,
+      "zh": "“so that it may go well with you and that you may enjoy long life on the earth.”",
+      "en": "“so that it may go well with you and that you may enjoy long life on the earth.”"
+    },
+    {
+      "chapter": 6,
+      "verse": 4,
+      "zh": "你们作父亲的，不要惹儿女的气，只要照着主的教训和警戒养育他们。",
+      "en": "Fathers, do not exasperate your children; instead, bring them up in the training and instruction of the Lord."
+    },
+    {
+      "chapter": 6,
+      "verse": 5,
+      "zh": "你们作仆人的，要惧怕战兢，用诚实的心听从你们肉身的主人，好像听从基督一般。",
+      "en": "Slaves, obey your earthly masters with respect and fear, and with sincerity of heart, just as you would obey Christ."
+    },
+    {
+      "chapter": 6,
+      "verse": 6,
+      "zh": "不要只在眼前事奉，像是讨人喜欢的，要像基督的仆人，从心里遵行神的旨意。",
+      "en": "Obey them not only to win their favor when their eye is on you, but as slaves of Christ, doing the will of God from your heart."
+    },
+    {
+      "chapter": 6,
+      "verse": 7,
+      "zh": "甘心事奉，好像服事主，不像服事人。",
+      "en": "Serve wholeheartedly, as if you were serving the Lord, not people,"
+    },
+    {
+      "chapter": 6,
+      "verse": 8,
+      "zh": "因为晓得各人所行的善事，不论是为奴的，是自主的，都必按所行的得主的赏赐。",
+      "en": "because you know that the Lord will reward each one for whatever good they do, whether they are slave or free."
+    },
+    {
+      "chapter": 6,
+      "verse": 9,
+      "zh": "你们作主人的，待仆人也是一理，不要威吓他们。因为知道，他们和你们同有一位主在天上；他并不偏待人。",
+      "en": "And masters, treat your slaves in the same way. Do not threaten them, since you know that he who is both their Master and yours is in heaven, and there is no favoritism with him."
+    },
+    {
+      "chapter": 6,
+      "verse": 10,
+      "zh": "我还有末了的话：你们要靠着主，倚赖他的大能大力作刚强的人。",
+      "en": "Finally, be strong in the Lord and in his mighty power."
+    },
+    {
+      "chapter": 6,
+      "verse": 11,
+      "zh": "要穿戴神所赐的全副军装，就能抵挡魔鬼的诡计。",
+      "en": "Put on the full armor of God, so that you can take your stand against the devil’s schemes."
+    },
+    {
+      "chapter": 6,
+      "verse": 12,
+      "zh": "因我们并不是与属血气的争战，乃是与那些执政的、掌权的、管辖这幽暗世界的，以及天空属灵气的恶魔争战。",
+      "en": "For our struggle is not against flesh and blood, but against the rulers, against the authorities, against the powers of this dark world and against the spiritual forces of evil in the heavenly realms.",
+      "background": "核心教义: 这节经文揭示了基督徒属灵争战的真实对象不是人，而是背后属灵界的邪恶势力。这帮助我们正确地看待人际冲突，将焦点对准真正的敌人。"
+    },
+    {
+      "chapter": 6,
+      "verse": 13,
+      "zh": "所以，要拿起神所赐的全副军装，好在磨难的日子抵挡仇敌，并且成就了一切，还能站立得住。",
+      "en": "Therefore put on the full armor of God, so that when the day of evil comes, you may be able to stand your ground, and after you have done everything, to stand."
+    },
+    {
+      "chapter": 6,
+      "verse": 14,
+      "zh": "所以要站稳了，用真理当作带子束腰，用公义当作护心镜遮胸，",
+      "en": "Stand firm then, with the belt of truth buckled around your waist, with the breastplate of righteousness in place,"
+    },
+    {
+      "chapter": 6,
+      "verse": 15,
+      "zh": "又用平安的福音当作预备走路的鞋穿在脚上。",
+      "en": "and with your feet fitted with the readiness that comes from the gospel of peace."
+    },
+    {
+      "chapter": 6,
+      "verse": 16,
+      "zh": "此外，又拿着信德当作藤牌，可以灭尽那恶者一切的火箭；",
+      "en": "In addition to all this, take up the shield of faith, with which you can extinguish all the flaming arrows of the evil one."
+    },
+    {
+      "chapter": 6,
+      "verse": 17,
+      "zh": "并戴上救恩的头盔，拿着圣灵的宝剑，就是神的道；",
+      "en": "Take the helmet of salvation and the sword of the Spirit, which is the word of God."
+    },
+    {
+      "chapter": 6,
+      "verse": 18,
+      "zh": "靠着圣灵，随时多方祷告祈求；并要在此警醒不倦，为众圣徒祈求，",
+      "en": "And pray in the Spirit on all occasions with all kinds of prayers and requests. With this in mind, be alert and always keep on praying for all the Lord’s people."
+    },
+    {
+      "chapter": 6,
+      "verse": 19,
+      "zh": "也为我祈求，使我得着口才，能以放胆开口讲明福音的奥秘，",
+      "en": "Pray also for me, that whenever I speak, words may be given me so that I will fearlessly make known the mystery of the gospel,"
+    },
+    {
+      "chapter": 6,
+      "verse": 20,
+      "zh": "（我为这福音的奥秘作了带锁链的使者，）并使我照着当尽的本分放胆讲论。",
+      "en": "for which I am an ambassador in chains. Pray that I may declare it fearlessly, as I should."
+    },
+    {
+      "chapter": 6,
+      "verse": 21,
+      "zh": "今有所亲爱、忠心事奉主的兄弟推基古，他要把我的事并我的景况如何全告诉你们，叫你们知道。",
+      "en": "Tychicus, the dear brother and faithful servant in the Lord, will tell you everything, so that you also may know how I am and what I am doing."
+    },
+    {
+      "chapter": 6,
+      "verse": 22,
+      "zh": "我特意打发他到你们那里去，好叫你们知道我们的光景，又叫他安慰你们的心。",
+      "en": "I am sending him to you for this very purpose, that you may know how we are, and that he may encourage you."
+    },
+    {
+      "chapter": 6,
+      "verse": 23,
+      "zh": "愿平安、仁爱、信心从父神和主耶稣基督归与弟兄们！",
+      "en": "Peace to the brothers and sisters, and love with faith from God the Father and the Lord Jesus Christ."
+    },
+    {
+      "chapter": 6,
+      "verse": 24,
+      "zh": "并愿所有诚心爱我们主耶稣基督的人都蒙恩惠！",
+      "en": "Grace to all who love our Lord Jesus Christ with an undying love."
+    }
+  ],
+  "keyVerses": [
+    {
+      "chapter": 1,
+      "verse": 3
+    },
+    {
+      "chapter": 1,
+      "verse": 4
+    },
+    {
+      "chapter": 1,
+      "verse": 7
+    },
+    {
+      "chapter": 1,
+      "verse": 11
+    },
+    {
+      "chapter": 1,
+      "verse": 13
+    },
+    {
+      "chapter": 1,
+      "verse": 17
+    },
+    {
+      "chapter": 1,
+      "verse": 20
+    },
+    {
+      "chapter": 2,
+      "verse": 1
+    },
+    {
+      "chapter": 2,
+      "verse": 4
+    },
+    {
+      "chapter": 2,
+      "verse": 5
+    },
+    {
+      "chapter": 2,
+      "verse": 8
+    },
+    {
+      "chapter": 2,
+      "verse": 9
+    },
+    {
+      "chapter": 2,
+      "verse": 10
+    },
+    {
+      "chapter": 2,
+      "verse": 19
+    },
+    {
+      "chapter": 3,
+      "verse": 6
+    },
+    {
+      "chapter": 3,
+      "verse": 12
+    },
+    {
+      "chapter": 3,
+      "verse": 16
+    },
+    {
+      "chapter": 3,
+      "verse": 17
+    },
+    {
+      "chapter": 3,
+      "verse": 18
+    },
+    {
+      "chapter": 3,
+      "verse": 19
+    },
+    {
+      "chapter": 3,
+      "verse": 20
+    },
+    {
+      "chapter": 4,
+      "verse": 1
+    },
+    {
+      "chapter": 4,
+      "verse": 2
+    },
+    {
+      "chapter": 4,
+      "verse": 3
+    },
+    {
+      "chapter": 4,
+      "verse": 13
+    },
+    {
+      "chapter": 4,
+      "verse": 15
+    },
+    {
+      "chapter": 4,
+      "verse": 29
+    },
+    {
+      "chapter": 4,
+      "verse": 32
+    },
+    {
+      "chapter": 5,
+      "verse": 1
+    },
+    {
+      "chapter": 5,
+      "verse": 2
+    },
+    {
+      "chapter": 5,
+      "verse": 8
+    },
+    {
+      "chapter": 5,
+      "verse": 15
+    },
+    {
+      "chapter": 5,
+      "verse": 16
+    },
+    {
+      "chapter": 5,
+      "verse": 18
+    },
+    {
+      "chapter": 5,
+      "verse": 25
+    },
+    {
+      "chapter": 6,
+      "verse": 1
+    },
+    {
+      "chapter": 6,
+      "verse": 2
+    },
+    {
+      "chapter": 6,
+      "verse": 10
+    },
+    {
+      "chapter": 6,
+      "verse": 11
+    },
+    {
+      "chapter": 6,
+      "verse": 12
+    },
+    {
+      "chapter": 6,
+      "verse": 17
+    },
+    {
+      "chapter": 6,
+      "verse": 18
+    }
+  ]
+}

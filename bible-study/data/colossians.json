@@ -1,0 +1,723 @@
+{
+  "book": "colossians",
+  "name": "歌罗西书",
+  "englishName": "Colossians",
+  "testament": "new",
+  "category": "pauline_epistles",
+  "chapters": 4,
+  "color": "#8e44ad",
+  "description": "保罗写给歌罗西教会的信，强调基督的至高地位和在基督里的新生命",
+  "keyThemes": [
+    "基督的至高地位",
+    "在基督里的新生命",
+    "放纵情欲的危险",
+    "家庭与社会关系",
+    "属灵的智慧"
+  ],
+  "verses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "zh": "奉神旨意，作基督耶稣使徒的保罗，和兄弟提摩太，",
+      "en": "Paul, an apostle of Christ Jesus by the will of God, and Timothy our brother,"
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "zh": "写信给在歌罗西的圣徒，在基督里有忠心的弟兄。愿恩惠、平安从神我们的父归与你们！",
+      "en": "To God’s holy people in Colossae, the faithful brothers and sisters in Christ: Grace and peace to you from God our Father."
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "zh": "我们感谢神我们主耶稣基督的父，常常为你们祷告。",
+      "en": "We always thank God, the Father of our Lord Jesus Christ, when we pray for you,"
+    },
+    {
+      "chapter": 1,
+      "verse": 4,
+      "zh": "因听见你们在基督耶稣里的信心，并向众圣徒的爱心。",
+      "en": "because we have heard of your faith in Christ Jesus and of the love you have for all God’s people—"
+    },
+    {
+      "chapter": 1,
+      "verse": 5,
+      "zh": "是为那给你们存在天上的盼望。这盼望就是你们从前在福音真理的道上所听见的。",
+      "en": "the faith and love that spring from the hope stored up for you in heaven and about which you have already heard in the true message of the gospel"
+    },
+    {
+      "chapter": 1,
+      "verse": 6,
+      "zh": "这福音传到你们那里，也传到普天之下，并且结果，增长，如同在你们中间，自从你们听见福音，真知道神恩惠的日子一样。",
+      "en": "that has come to you. In the same way, the gospel is bearing fruit and growing throughout the whole world—just as it has been doing among you since the day you heard it and truly understood God’s grace."
+    },
+    {
+      "chapter": 1,
+      "verse": 7,
+      "zh": "你们从我们所亲爱的同工以巴弗那里学了这福音。他为我们作了基督忠心的执事。",
+      "en": "You learned it from Epaphras, our dear fellow servant, who is a faithful minister of Christ on our behalf,"
+    },
+    {
+      "chapter": 1,
+      "verse": 8,
+      "zh": "也把你们因圣灵所存的爱心告诉了我们。",
+      "en": "and who also told us of your love in the Spirit."
+    },
+    {
+      "chapter": 1,
+      "verse": 9,
+      "zh": "因此，我们自从听见的日子，也就为你们不住地祷告祈求，愿你们在一切属灵的智慧悟性上，满心知道神的旨意。",
+      "en": "For this reason, since the day we heard about you, we have not stopped praying for you. We continually ask God to fill you with the knowledge of his will through all the wisdom and understanding that the Spirit gives,"
+    },
+    {
+      "chapter": 1,
+      "verse": 10,
+      "zh": "好叫你们行事为人对得起主，凡事蒙他喜悦，在一切善事上结果子，渐渐地多知道神。",
+      "en": "so that you may live a life worthy of the Lord and please him in every way: bearing fruit in every good work, growing in the knowledge of God,"
+    },
+    {
+      "chapter": 1,
+      "verse": 11,
+      "zh": "照他荣耀的权能，得以在各样的力上加力，使你们凡事欢欢喜喜地忍耐宽容。",
+      "en": "being strengthened with all power according to his glorious might so that you may have great endurance and patience,"
+    },
+    {
+      "chapter": 1,
+      "verse": 12,
+      "zh": "又感谢父，叫我们能与众圣徒在光明中同得基业。",
+      "en": "and giving joyful thanks to the Father, who has qualified you to share in the inheritance of his holy people in the kingdom of light."
+    },
+    {
+      "chapter": 1,
+      "verse": 13,
+      "zh": "他救了我们脱离黑暗的权势，把我们迁到他爱子的国里。",
+      "en": "For he has rescued us from the dominion of darkness and brought us into the kingdom of the Son he loves,"
+    },
+    {
+      "chapter": 1,
+      "verse": 14,
+      "zh": "我们在爱子里得蒙救赎，罪过得以赦免。",
+      "en": "in whom we have redemption, the forgiveness of sins."
+    },
+    {
+      "chapter": 1,
+      "verse": 15,
+      "zh": "爱子是那不能看见之神的像，是首生的，在一切被造的以先。",
+      "en": "The Son is the image of the invisible God, the firstborn over all creation."
+    },
+    {
+      "chapter": 1,
+      "verse": 16,
+      "zh": "因为万有都是靠他造的，无论是天上的、地上的、能看见的、不能看见的，或是有位的、主治的、执政的、掌权的，一概都是藉着他造的，又是为他造的。",
+      "en": "For in him all things were created: things in heaven and on earth, visible and invisible, whether thrones or powers or rulers or authorities; all things have been created through him and for him."
+    },
+    {
+      "chapter": 1,
+      "verse": 17,
+      "zh": "他在万有之先，万有也靠他而立。",
+      "en": "He is before all things, and in him all things hold together."
+    },
+    {
+      "chapter": 1,
+      "verse": 18,
+      "zh": "他也是教会全体之首。他是元始，是从死里首先复生的，使他可以在凡事上居首位。",
+      "en": "And he is the head of the body, the church; he is the beginning and the firstborn from among the dead, so that in everything he might have the supremacy."
+    },
+    {
+      "chapter": 1,
+      "verse": 19,
+      "zh": "因为父喜欢叫一切的丰盛在他里面居住。",
+      "en": "For God was pleased to have all his fullness dwell in him,"
+    },
+    {
+      "chapter": 1,
+      "verse": 20,
+      "zh": "既然藉着他在十字架上所流的血，成就了和平，便藉着他叫万有，无论是地上的、天上的，都与自己和好了。",
+      "en": "and through him to reconcile to himself all things, whether things on earth or things in heaven, by making peace through his blood, shed on the cross."
+    },
+    {
+      "chapter": 1,
+      "verse": 21,
+      "zh": "你们从前与神隔绝，因着恶行，心里与他为敌。",
+      "en": "Once you were alienated from God and were enemies in your minds because of your evil behavior."
+    },
+    {
+      "chapter": 1,
+      "verse": 22,
+      "zh": "但如今他藉着基督的肉身受死，叫你们与自己和好，都成了圣洁，没有瑕疵，无可责备，把你们引到自己面前。",
+      "en": "But now he has reconciled you by Christ’s physical body through death to present you holy in his sight, without blemish and free from accusation—"
+    },
+    {
+      "chapter": 1,
+      "verse": 23,
+      "zh": "只要你们在所信的道上恒心，根基稳固，坚定不移，不至被引动失去福音的盼望。这福音就是你们所听过的，也是传与普天下万人听的。我保罗也作了这福音的执事。",
+      "en": "if you continue in your faith, established and firm, and do not move from the hope held out in the gospel. This is the gospel that you heard and that has been proclaimed to every creature under heaven, and of which I, Paul, have become a servant."
+    },
+    {
+      "chapter": 1,
+      "verse": 24,
+      "zh": "现在我为你们受苦，倒觉欢乐，并且为基督的身体，就是为教会，要在我肉身上补满基督患难的缺欠。",
+      "en": "Now I rejoice in what I am suffering for you, and I fill up in my flesh what is still lacking in regard to Christ’s afflictions, for the sake of his body, which is the church."
+    },
+    {
+      "chapter": 1,
+      "verse": 25,
+      "zh": "我作了教会的执事，是照神为你们所赐我的职分，要把神的道理传得全备。",
+      "en": "I have become its servant by the commission God gave me to present to you the word of God in its fullness—"
+    },
+    {
+      "chapter": 1,
+      "verse": 26,
+      "zh": "这道理就是历世历代所隐藏的奥秘，但如今向他的圣徒显明了。",
+      "en": "the mystery that has been kept hidden for ages and generations, but is now disclosed to the Lord’s people."
+    },
+    {
+      "chapter": 1,
+      "verse": 27,
+      "zh": "神愿意叫他们知道，这奥秘在外邦人中有何等丰盛的荣耀，就是基督在你们心里成了荣耀的盼望。",
+      "en": "To them God has chosen to make known among the Gentiles the glorious riches of this mystery, which is Christ in you, the hope of glory."
+    },
+    {
+      "chapter": 1,
+      "verse": 28,
+      "zh": "我们传扬他，是用诸般的智慧，劝戒各人，教导各人，要把各人在基督里完完全全地引到神面前。",
+      "en": "He is the one we proclaim, admonishing and teaching everyone with all wisdom, so that we may present everyone fully mature in Christ."
+    },
+    {
+      "chapter": 1,
+      "verse": 29,
+      "zh": "我也为此劳苦，照着他在我里面运用的大能，尽心竭力地作工。",
+      "en": "To this end I strenuously contend with all the energy Christ so powerfully works in me."
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "zh": "我愿意你们知道，我为你们和老底嘉人，并一切没有与我亲自见面的人，是何等地争战。",
+      "en": "I want you to know how hard I am contending for you and for those at Laodicea, and for all who have not met me personally."
+    },
+    {
+      "chapter": 2,
+      "verse": 2,
+      "zh": "要叫他们的心得安慰，因爱心互相联络，以致丰丰足足在悟性中有充足的信心，使他们真知神的奥秘，就是基督。",
+      "en": "My goal is that they may be encouraged in heart and united in love, so that they may have the full riches of complete understanding, in order that they may know the mystery of God, namely, Christ,"
+    },
+    {
+      "chapter": 2,
+      "verse": 3,
+      "zh": "所积蓄的一切智慧知识，都在他里面藏着。",
+      "en": "in whom are hidden all the treasures of wisdom and knowledge."
+    },
+    {
+      "chapter": 2,
+      "verse": 4,
+      "zh": "我说这话，免得有人用花言巧语迷惑你们。",
+      "en": "I tell you this so that no one may deceive you by fine-sounding arguments."
+    },
+    {
+      "chapter": 2,
+      "verse": 5,
+      "zh": "我身子虽与你们相离，心却与你们同在，见你们循规蹈矩，信基督的心也坚固，我就欢喜了。",
+      "en": "For though I am absent from you in body, I am present with you in spirit and delight to see how disciplined you are and how firm your faith in Christ is."
+    },
+    {
+      "chapter": 2,
+      "verse": 6,
+      "zh": "你们既然接受了主基督耶稣，就当遵他而行。",
+      "en": "So then, just as you received Christ Jesus as Lord, continue to live your lives in him,"
+    },
+    {
+      "chapter": 2,
+      "verse": 7,
+      "zh": "在他里面生根建造，信心坚固，正如你们所领的教训，感谢的心也更增长了。",
+      "en": "rooted and built up in him, strengthened in the faith as you were taught, and overflowing with thankfulness."
+    },
+    {
+      "chapter": 2,
+      "verse": 8,
+      "zh": "你们要谨慎，恐怕有人用他的理学和虚空的妄言，不照着基督，乃照人间的遗传和世上的小学，就把你们掳去。",
+      "en": "See to it that no one takes you captive through hollow and deceptive philosophy, which depends on human tradition and the elemental spiritual forces of this world rather than on Christ."
+    },
+    {
+      "chapter": 2,
+      "verse": 9,
+      "zh": "因为神本性一切的丰盛，都有形有体地居住在基督里面。",
+      "en": "For in Christ all the fullness of the Deity lives in bodily form,"
+    },
+    {
+      "chapter": 2,
+      "verse": 10,
+      "zh": "你们在他里面也得了丰盛。他是各样执政掌权者的元首。",
+      "en": "and in Christ you have been brought to fullness. He is the head over every power and authority."
+    },
+    {
+      "chapter": 2,
+      "verse": 11,
+      "zh": "你们在他里面，也受了不是人手所行的割礼，乃是基督使你们脱去肉体情欲的割礼。",
+      "en": "In him you were also circumcised with a circumcision not performed by human hands. Your whole self ruled by the flesh was put off when you were circumcised by Christ,"
+    },
+    {
+      "chapter": 2,
+      "verse": 12,
+      "zh": "你们既受洗与他一同埋葬，也就在此与他一同复活，都因信那叫他从死里复活神的功用。",
+      "en": "having been buried with him in baptism, in which you were also raised with him through your faith in the working of God, who raised him from the dead."
+    },
+    {
+      "chapter": 2,
+      "verse": 13,
+      "zh": "你们从前在过犯和未受割礼的肉体中死了，神赦免了你们一切过犯，便叫你们与基督一同活过来。",
+      "en": "When you were dead in your sins and in the uncircumcision of your flesh, God made you alive with Christ. He forgave us all our sins,"
+    },
+    {
+      "chapter": 2,
+      "verse": 14,
+      "zh": "又涂抹了在律例上所写，攻击我们有碍于我们的字据，把它撤去，钉在十字架上。",
+      "en": "having canceled the charge of our legal indebtedness, which stood against us and condemned us; he has taken it away, nailing it to the cross."
+    },
+    {
+      "chapter": 2,
+      "verse": 15,
+      "zh": "既将一切执政的、掌权的掳来，明显给众人看，就仗着十字架夸胜。",
+      "en": "And having disarmed the powers and authorities, he made a public spectacle of them, triumphing over them by the cross."
+    },
+    {
+      "chapter": 2,
+      "verse": 16,
+      "zh": "所以，不要让人因着吃喝、节期、月朔、安息日，就论断你们。",
+      "en": "Therefore do not let anyone judge you by what you eat or drink, or with regard to a religious festival, a New Moon celebration or a Sabbath day."
+    },
+    {
+      "chapter": 2,
+      "verse": 17,
+      "zh": "这些原是后事的影儿，那形体却是基督。",
+      "en": "These are a shadow of the things that were to come; the reality, however, is found in Christ."
+    },
+    {
+      "chapter": 2,
+      "verse": 18,
+      "zh": "不要被人用谦虚和敬拜天使的假意夺去奖赏。这等人拘泥在所见过的异象上，心里妄自高大，一味地敬肉体。",
+      "en": "Do not let anyone who delights in false humility and the worship of angels disqualify you. Such a person also goes into great detail about what they have seen; they are puffed up with idle notions by their unspiritual mind."
+    },
+    {
+      "chapter": 2,
+      "verse": 19,
+      "zh": "这等人不持定元首，全身既然靠着他筋节和联络得供应滋养，就因神而长大。",
+      "en": "They have lost connection with the head, from whom the whole body, supported and held together by its ligaments and sinews, grows as God causes it to grow."
+    },
+    {
+      "chapter": 2,
+      "verse": 20,
+      "zh": "你们若是与基督同死，脱离了世上的小学，为甚么仍像在世俗中活着，服从那不可拿、不可尝、不可摸等类的规条呢？",
+      "en": "Since you died with Christ to the elemental spiritual forces of this world, why, as though you still belonged to the world, do you submit to its rules:"
+    },
+    {
+      "chapter": 2,
+      "verse": 21,
+      "zh": "就是说，不可拿、不可尝、不可摸。",
+      "en": "Do not handle! Do not taste! Do not touch!?"
+    },
+    {
+      "chapter": 2,
+      "verse": 22,
+      "zh": "这都是照人所吩咐所教导的。说到这一切，正用的时候就都败坏了。",
+      "en": "These rules, which have to do with things that are all destined to perish with use, are based on merely human commands and teachings."
+    },
+    {
+      "chapter": 2,
+      "verse": 23,
+      "zh": "这些规条，使人徒有智慧之名，用私意崇拜，自表谦卑，苦待己身，其实在克制肉体的情欲上是毫无功效。",
+      "en": "Such regulations indeed have an appearance of wisdom, with their self-imposed worship, their false humility and their harsh treatment of the body, but they lack any value in restraining sensual indulgence."
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "zh": "所以，你们若真与基督一同复活，就当求在上面的事，那里有基督坐在神的右边。",
+      "en": "Since, then, you have been raised with Christ, set your hearts on things above, where Christ is, seated at the right hand of God."
+    },
+    {
+      "chapter": 3,
+      "verse": 2,
+      "zh": "你们要思念上面的事，不要思念地上的事。",
+      "en": "Set your minds on things above, not on earthly things."
+    },
+    {
+      "chapter": 3,
+      "verse": 3,
+      "zh": "因为你们已经死了，你们的生命与基督一同藏在神里面。",
+      "en": "For you died, and your life is now hidden with Christ in God."
+    },
+    {
+      "chapter": 3,
+      "verse": 4,
+      "zh": "基督是我们的生命，他显现的时候，你们也要与他一同显现在荣耀里。",
+      "en": "When Christ, who is your life, appears, then you also will appear with him in glory."
+    },
+    {
+      "chapter": 3,
+      "verse": 5,
+      "zh": "所以，要治死你们在地上的肢体，就如淫乱、污秽、邪情、恶欲，和贪婪（贪婪就与拜偶像一样）。",
+      "en": "Put to death, therefore, whatever belongs to your earthly nature: sexual immorality, impurity, lust, evil desires and greed, which is idolatry."
+    },
+    {
+      "chapter": 3,
+      "verse": 6,
+      "zh": "因这些事，神的忿怒必临到那悖逆之子。",
+      "en": "Because of these, the wrath of God is coming."
+    },
+    {
+      "chapter": 3,
+      "verse": 7,
+      "zh": "当你们在这些事中活着的时候，也曾这样行过。",
+      "en": "You used to walk in these ways, in the life you once lived."
+    },
+    {
+      "chapter": 3,
+      "verse": 8,
+      "zh": "但现在你们要弃绝这一切的事，以及恼恨、忿怒、恶毒、毁谤，并口中污秽的言语。",
+      "en": "But now you must also rid yourselves of all such things as these: anger, rage, malice, slander, and filthy language from your lips."
+    },
+    {
+      "chapter": 3,
+      "verse": 9,
+      "zh": "不要彼此说谎，因你们已经脱去旧人和旧人的行为。",
+      "en": "Do not lie to each other, since you have taken off your old self with its practices"
+    },
+    {
+      "chapter": 3,
+      "verse": 10,
+      "zh": "穿上了新人，这新人是照着创造主的形像渐渐更新，以致有充足的知识。",
+      "en": "and have put on the new self, which is being renewed in knowledge in the image of its Creator."
+    },
+    {
+      "chapter": 3,
+      "verse": 11,
+      "zh": "在此并不分希腊人、犹太人，受割礼的、未受割礼的、化外人、西古提人、为奴的、自主的，惟有基督是包括一切，又住在各人之内。",
+      "en": "Here there is no Gentile or Jew, circumcised or uncircumcised, barbarian, Scythian, slave or free, but Christ is all, and is in all."
+    },
+    {
+      "chapter": 3,
+      "verse": 12,
+      "zh": "所以，你们既是神的选民，圣洁蒙爱的人，就要存怜悯、恩慈、谦虚、温柔、忍耐的心。",
+      "en": "Therefore, as God’s chosen people, holy and dearly loved, clothe yourselves with compassion, kindness, humility, gentleness and patience."
+    },
+    {
+      "chapter": 3,
+      "verse": 13,
+      "zh": "倘若这人与那人有嫌隙，总要彼此包容，彼此饶恕；主怎样饶恕了你们，你们也要怎样饶恕人。",
+      "en": "Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you."
+    },
+    {
+      "chapter": 3,
+      "verse": 14,
+      "zh": "在这一切之外，要存着爱心，爱心就是联络全德的。",
+      "en": "And over all these virtues put on love, which binds them all together in perfect unity."
+    },
+    {
+      "chapter": 3,
+      "verse": 15,
+      "zh": "又要叫基督的平安在你们心里作主，你们也为此蒙召，归为一体，且要存感谢的心。",
+      "en": "Let the peace of Christ rule in your hearts, since as members of one body you were called to peace. And be thankful."
+    },
+    {
+      "chapter": 3,
+      "verse": 16,
+      "zh": "当用各样的智慧，把基督的道理丰丰富富地存在心里，用诗章、颂词、灵歌，彼此教导，互相劝戒，心被恩感歌颂神。",
+      "en": "Let the message of Christ dwell among you richly as you teach and admonish one another with all wisdom through psalms, hymns, and songs from the Spirit, singing to God with gratitude in your hearts."
+    },
+    {
+      "chapter": 3,
+      "verse": 17,
+      "zh": "无论作甚么，或说话或行事，都要奉主耶稣的名，藉着他感谢父神。",
+      "en": "And whatever you do, whether in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through him."
+    },
+    {
+      "chapter": 3,
+      "verse": 18,
+      "zh": "你们作妻子的，当顺服自己的丈夫，这在主里面是相宜的。",
+      "en": "Wives, submit yourselves to your husbands, as is fitting in the Lord."
+    },
+    {
+      "chapter": 3,
+      "verse": 19,
+      "zh": "你们作丈夫的，要爱你们的妻子，不可苦待他们。",
+      "en": "Husbands, love your wives and do not be harsh with them."
+    },
+    {
+      "chapter": 3,
+      "verse": 20,
+      "zh": "你们作儿女的，要凡事听从父母，因为这是主所喜悦的。",
+      "en": "Children, obey your parents in everything, for this pleases the Lord."
+    },
+    {
+      "chapter": 3,
+      "verse": 21,
+      "zh": "你们作父亲的，不要惹儿女的气，恐怕他们失了志气。",
+      "en": "Fathers, do not embitter your children, or they will become discouraged."
+    },
+    {
+      "chapter": 3,
+      "verse": 22,
+      "zh": "你们作仆人的，要凡事听从你们肉身的主人，不要只在眼前事奉，像是讨人喜欢的，总要存心诚实敬畏主。",
+      "en": "Slaves, obey your earthly masters in everything; and do it, not only when their eye is on you and to curry their favor, but with sincerity of heart and reverence for the Lord."
+    },
+    {
+      "chapter": 3,
+      "verse": 23,
+      "zh": "无论作甚么，都要从心里作，像是给主作的，不是给人作的。",
+      "en": "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters,"
+    },
+    {
+      "chapter": 3,
+      "verse": 24,
+      "zh": "因你们知道从主那里必得着基业为赏赐。你们所事奉的乃是主基督。",
+      "en": "since you know that you will receive an inheritance from the Lord as a reward. It is the Lord Christ you are serving."
+    },
+    {
+      "chapter": 3,
+      "verse": 25,
+      "zh": "那行不义的，必受不义的报应，主并不偏待人。",
+      "en": "Anyone who does wrong will be repaid for their wrongs, and there is no favoritism."
+    },
+    {
+      "chapter": 4,
+      "verse": 1,
+      "zh": "你们作主人的，要公公平平地待仆人，因为知道你们也有一位主在天上。",
+      "en": "Masters, provide your slaves with what is right and fair, because you know that you also have a Master in heaven."
+    },
+    {
+      "chapter": 4,
+      "verse": 2,
+      "zh": "你们要恒切祷告，在此儆醒感恩。",
+      "en": "Devote yourselves to prayer, being watchful and thankful."
+    },
+    {
+      "chapter": 4,
+      "verse": 3,
+      "zh": "也要为我们祷告，求神给我们开传道的门，能以讲基督的奥秘（我为此被捆锁），",
+      "en": "And pray for us, too, that God may open a door for our message, so that we may proclaim the mystery of Christ, for which I am in chains."
+    },
+    {
+      "chapter": 4,
+      "verse": 4,
+      "zh": "叫我按着所该说的话，将这奥秘发明出来。",
+      "en": "Pray that I may proclaim it clearly, as I should."
+    },
+    {
+      "chapter": 4,
+      "verse": 5,
+      "zh": "你们在外人面前要谨慎，赎回光阴。",
+      "en": "Be wise in the way you act toward outsiders; make the most of every opportunity."
+    },
+    {
+      "chapter": 4,
+      "verse": 6,
+      "zh": "你们的言语要常常带着和气，好像用盐调和，就可知道怎样回答各人。",
+      "en": "Let your conversation be always full of grace, seasoned with salt, so that you may know how to answer everyone."
+    },
+    {
+      "chapter": 4,
+      "verse": 7,
+      "zh": "一切在我这里的景况，推基古要告诉你们。他是亲爱的兄弟，和忠心的执事，并同作仆人的。",
+      "en": "Tychicus will tell you all the news about me. He is a dear brother, a faithful minister and fellow servant in the Lord."
+    },
+    {
+      "chapter": 4,
+      "verse": 8,
+      "zh": "我特意打发他到你们那里去，好叫你们知道我们的光景，又叫他安慰你们的心。",
+      "en": "I am sending him to you for the express purpose that you may know about our circumstances and that he may encourage your hearts."
+    },
+    {
+      "chapter": 4,
+      "verse": 9,
+      "zh": "我又打发忠心亲爱的兄弟阿尼西母同去。他也是你们那里的人。他们要把这里一切的事都告诉你们。",
+      "en": "He is coming with Onesimus, our faithful and dear brother, who is one of you. They will tell you everything that is happening here."
+    },
+    {
+      "chapter": 4,
+      "verse": 10,
+      "zh": "与我一同坐监的亚里达古问你们安。巴拿巴的表弟马可也问你们安。（说到这马可，你们已经受了吩咐，若是他来到你们那里，你们就接待他。）",
+      "en": "My fellow prisoner Aristarchus sends you his greetings, as does Mark, the cousin of Barnabas. (You have received instructions about him; if he comes to you, welcome him.)"
+    },
+    {
+      "chapter": 4,
+      "verse": 11,
+      "zh": "耶数又称为犹士都，也问你们安。同为犹太教的人，只有这三个人帮助我，传神的国。他们也是我心中的安慰。",
+      "en": "Jesus, who is called Justus, also sends greetings. These are the only Jews among my co-workers for the kingdom of God, and they have proved a comfort to me."
+    },
+    {
+      "chapter": 4,
+      "verse": 12,
+      "zh": "为你们效力的以巴弗问你们安。他是基督耶稣的仆人，常为你们祈祷，愿你们在信心上站立得稳，凡事遵行神的旨意。",
+      "en": "Epaphras, who is one of you and a servant of Christ Jesus, sends greetings. He is always wrestling in prayer for you, that you may stand firm in all the will of God, mature and fully assured."
+    },
+    {
+      "chapter": 4,
+      "verse": 13,
+      "zh": "我可以为他作见证，他为你们和老底嘉并希拉波立的众人，多多劳苦。",
+      "en": "I vouch for him that he is working hard for you and for those at Laodicea and Hierapolis."
+    },
+    {
+      "chapter": 4,
+      "verse": 14,
+      "zh": "所亲爱的医生路加和底马问你们安。",
+      "en": "Our dear friend Luke, the doctor, and Demas send greetings."
+    },
+    {
+      "chapter": 4,
+      "verse": 15,
+      "zh": "请问老底嘉的弟兄和宁法，并他家里的教会安。",
+      "en": "Give my greetings to the brothers and sisters at Laodicea, and to Nympha and the church in her house."
+    },
+    {
+      "chapter": 4,
+      "verse": 16,
+      "zh": "你们念了这书信，便交给老底嘉的教会，叫他们也念；你们也要念从老底嘉来的书信。",
+      "en": "After this letter has been read to you, see that it is also read in the church of the Laodiceans and that you in turn read the letter from Laodicea."
+    },
+    {
+      "chapter": 4,
+      "verse": 17,
+      "zh": "要对亚基布说：务要谨慎，尽你从主所受的职分。",
+      "en": "Tell Archippus: See to it that you complete the ministry you have received in the Lord."
+    },
+    {
+      "chapter": 4,
+      "verse": 18,
+      "zh": "我保罗亲笔问你们安。你们要记念我的捆锁。愿恩惠常与你们同在！",
+      "en": "I, Paul, write this greeting in my own hand. Remember my chains. Grace be with you."
+    }
+  ],
+  "keyVerses": [
+    {
+      "chapter": 1,
+      "verse": 15
+    },
+    {
+      "chapter": 1,
+      "verse": 16
+    },
+    {
+      "chapter": 1,
+      "verse": 17
+    },
+    {
+      "chapter": 1,
+      "verse": 18
+    },
+    {
+      "chapter": 1,
+      "verse": 19
+    },
+    {
+      "chapter": 1,
+      "verse": 20
+    },
+    {
+      "chapter": 1,
+      "verse": 27
+    },
+    {
+      "chapter": 1,
+      "verse": 28
+    },
+    {
+      "chapter": 2,
+      "verse": 3
+    },
+    {
+      "chapter": 2,
+      "verse": 6
+    },
+    {
+      "chapter": 2,
+      "verse": 8
+    },
+    {
+      "chapter": 2,
+      "verse": 9
+    },
+    {
+      "chapter": 2,
+      "verse": 10
+    },
+    {
+      "chapter": 2,
+      "verse": 14
+    },
+    {
+      "chapter": 2,
+      "verse": 15
+    },
+    {
+      "chapter": 3,
+      "verse": 1
+    },
+    {
+      "chapter": 3,
+      "verse": 2
+    },
+    {
+      "chapter": 3,
+      "verse": 3
+    },
+    {
+      "chapter": 3,
+      "verse": 4
+    },
+    {
+      "chapter": 3,
+      "verse": 5
+    },
+    {
+      "chapter": 3,
+      "verse": 10
+    },
+    {
+      "chapter": 3,
+      "verse": 11
+    },
+    {
+      "chapter": 3,
+      "verse": 12
+    },
+    {
+      "chapter": 3,
+      "verse": 13
+    },
+    {
+      "chapter": 3,
+      "verse": 14
+    },
+    {
+      "chapter": 3,
+      "verse": 15
+    },
+    {
+      "chapter": 3,
+      "verse": 16
+    },
+    {
+      "chapter": 3,
+      "verse": 17
+    },
+    {
+      "chapter": 3,
+      "verse": 23
+    },
+    {
+      "chapter": 3,
+      "verse": 24
+    },
+    {
+      "chapter": 4,
+      "verse": 2
+    },
+    {
+      "chapter": 4,
+      "verse": 5
+    },
+    {
+      "chapter": 4,
+      "verse": 6
+    }
+  ]
+}

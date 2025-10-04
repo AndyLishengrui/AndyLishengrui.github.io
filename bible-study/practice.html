@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>填空练习 | 圣经学习助手</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .header {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .back-button {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .settings-panel {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .settings-title {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .setting-group {
+            margin-bottom: 25px;
+        }
+        
+        .setting-label {
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #555;
+            text-align: left;
+        }
+        
+        .setting-select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-size: 1em;
+            background: white;
+            cursor: pointer;
+            transition: border-color 0.3s ease;
+        }
+        
+        .setting-select:focus {
+            outline: none;
+            border-color: #4facfe;
+        }
+        
+        .difficulty-options {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .difficulty-btn {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            padding: 15px 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            min-width: 140px;
+        }
+        
+        .difficulty-btn.active {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            border-color: transparent;
+        }
+        
+        .start-btn {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .start-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(79, 172, 254, 0.4);
+        }
+        
+        .practice-area {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            display: none;
+        }
+        
+        .verse-display {
+            font-size: 1.5em;
+            line-height: 2;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .blank-input {
+            border: none;
+            border-bottom: 2px solid #4facfe;
+            background: transparent;
+            font-size: 1.5em;
+            text-align: center;
+            width: 40px;
+            margin: 0 2px;
+            padding: 2px;
+        }
+        
+        .blank-input:focus {
+            outline: none;
+            border-bottom-color: #00f2fe;
+        }
+        
+        .blank-input.correct {
+            background-color: #d4edda;
+            border-bottom-color: #28a745;
+            transform: scale(1.02);
+        }
+        
+        .blank-input.incorrect {
+            background-color: #f8d7da;
+            border-bottom-color: #dc3545;
+            animation: shake 0.5s;
+        }
+        
+        .correct-answer {
+            color: #27ae60 !important;
+            margin-left: 5px;
+            font-size: 0.85em;
+            font-weight: bold;
+            display: inline-block;
+            white-space: nowrap;
+        }
+        
+        .blank-container {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .hint-icon {
+            transition: all 0.3s ease;
+            opacity: 0.7;
+        }
+        
+        .blank-container:hover .hint-icon {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        .blank-container[title]:hover::after {
+            content: attr(title);
+            position: absolute;
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8em;
+            white-space: nowrap;
+            z-index: 1000;
+            pointer-events: none;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        
+
+        
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .action-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .progress-info {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: white;
+            text-align: center;
+        }
+        
+        /* 新的卡片式选择样式 */
+        .step-container {
+            margin-bottom: 30px;
+        }
+        
+        .step-title {
+            font-size: 1.4em;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .book-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 8px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        
+        .book-card.selected {
+            border-color: #ffd700;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+        }
+        
+        .book-card-title {
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-bottom: 3px;
+            line-height: 1.2;
+        }
+        
+        .book-card-subtitle {
+            font-size: 0.7em;
+            opacity: 0.9;
+            line-height: 1.1;
+        }
+        
+        .selected-book-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-left: 4px solid #4facfe;
+        }
+        
+        .chapters-section {
+            margin-bottom: 25px;
+        }
+        
+        .chapters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+            gap: 10px;
+            max-height: 200px;
+            overflow-y: auto;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .chapter-btn {
+            background: white;
+            border: 2px solid #e9ecef;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .chapter-btn:hover {
+            background: #e3f2fd;
+            border-color: #4facfe;
+        }
+        
+        .chapter-btn.selected {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            border-color: transparent;
+        }
+        
+        .secondary-btn {
+            background: #6c757d !important;
+        }
+        
+        .secondary-btn:hover {
+            background: #5a6268 !important;
+        }
+        
+        /* 练习区域样式 */
+        .practice-area {
+            display: none;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        
+        .verse-progress {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .progress-info {
+            color: #666;
+            font-size: 13px;
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #e9ecef;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+        
+        /* 多节经文容器样式 */
+        .verses-container {
+            max-height: 75vh;
+            overflow-y: auto;
+            margin: 15px 0;
+        }
+        
+        .verse-group {
+            background: #ffffff;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            margin: 8px 0;
+            padding: 15px;
+            transition: all 0.2s ease;
+        }
+        
+        .verse-group:hover {
+            border-color: #4facfe;
+            box-shadow: 0 3px 10px rgba(79, 172, 254, 0.1);
+        }
+        
+        .verse-reference-inline {
+            font-weight: bold;
+            color: #4facfe;
+            font-size: 13px;
+            margin-right: 8px;
+            font-style: italic;
+            background: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid #e9ecef;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .edit-verse-btn {
+            background: #ffc107;
+            border: none;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 8px;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+            float: right;
+        }
+        
+        .edit-verse-btn:hover {
+            opacity: 1;
+            transform: scale(1.1);
+            background: #e0a800;
+        }
+        
+        .verse-text {
+            clear: both;
+            margin-top: 5px;
+        }
+        
+        .verse-content {
+            font-size: 16px;
+            line-height: 1.8;
+            text-align: left;
+            margin: 0;
+            padding: 15px 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+
+        
+        .reference-text {
+            color: #666;
+            font-style: italic;
+            font-size: 16px;
+        }
+        
+        /* 填空输入框样式 */
+        .blank-input {
+            border: none;
+            border-bottom: 2px solid #ddd;
+            background: #f8f9fa;
+            font-size: inherit;
+            border-radius: 3px;
+            font-family: inherit;
+            text-align: center;
+            margin: 0 4px;
+            padding: 2px 4px;
+            transition: all 0.3s ease;
+            min-width: 60px;
+        }
+        
+        .blank-input:focus {
+            outline: none;
+            border-bottom-color: #4facfe;
+            background: rgba(79, 172, 254, 0.1);
+        }
+        
+        .blank-input.correct {
+            border-bottom-color: #28a745;
+            background: rgba(40, 167, 69, 0.1);
+            color: #28a745;
+        }
+        
+        .blank-input.incorrect {
+            border-bottom-color: #dc3545;
+            background: rgba(220, 53, 69, 0.1);
+            color: #dc3545;
+        }
+        
+        /* 鼓励信息样式 */
+        .encouragement-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(40, 167, 69, 0.95);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 500;
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+            animation: encouragementFade 3s ease-in-out;
+            z-index: 1000;
+        }
+        
+        .encouragement-content {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        @keyframes encouragementFade {
+            0% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+            20% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+            80% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+            100% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+        }
+        
+        @media (max-width: 768px) {
+            .difficulty-options {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .verse-content {
+                font-size: 16px;
+                padding: 15px;
+            }
+            
+            .practice-area {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <button class="back-button" onclick="goBackToBookSelection()">
+            <i class="fas fa-arrow-left"></i> 返回书卷选择
+        </button>
+        <div class="progress-info" id="progressInfo" style="display: none;">
+            <span id="progressText">第 1 题 / 共 10 题</span> | 
+            <span>得分: <span id="currentScore">0</span></span>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- GitHub Pages 静态版本提示 -->
+        <div id="static-notice" style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 10px; margin: 10px 0; border-radius: 5px; font-size: 14px;">
+            📋 <strong>静态版本说明</strong>: 此为 GitHub Pages 托管版本，在线编辑功能已禁用。如需编辑经文，请下载完整版本在本地使用。
+        </div>
+        
+        <!-- 设置面板 -->
+        <div class="settings-panel" id="settingsPanel">
+            <h2 class="settings-title"><i class="fas fa-cog"></i> 智能填空练习</h2>
+            
+            <!-- 步骤1：选择书卷 -->
+            <div class="step-container" id="bookSelectionStep">
+                <h3 class="step-title">📚 选择学习书卷</h3>
+                <div class="books-grid" id="booksGrid">
+                    <!-- 书卷卡片将动态生成 -->
+                </div>
+            </div>
+            
+            <!-- 步骤2：选择章节和难度 -->
+            <div class="step-container" id="chapterSelectionStep" style="display: none;">
+                <h3 class="step-title">📖 选择章节与难度</h3>
+                <div class="selected-book-info" id="selectedBookInfo">
+                    <!-- 显示已选择的书卷信息 -->
+                </div>
+                
+                <div class="chapters-section">
+                    <label class="setting-label">选择章节：</label>
+                    <div class="chapters-grid" id="chaptersGrid">
+                        <!-- 章节按钮将动态生成 -->
+                    </div>
+                </div>
+                
+                <div class="setting-group">
+                    <label class="setting-label">选择难度：</label>
+                    <div class="difficulty-options">
+                        <div class="difficulty-btn active" data-difficulty="easy">
+                            <i class="fas fa-star"></i> 简单 <br><small>(2-3个空)</small>
+                        </div>
+                        <div class="difficulty-btn" data-difficulty="medium">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i> 中等 <br><small>(4-5个空)</small>
+                        </div>
+                        <div class="difficulty-btn" data-difficulty="hard">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 困难 <br><small>(6+个空)</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="action-btn secondary-btn" onclick="backToBookSelection()">
+                        <i class="fas fa-arrow-left"></i> 重选书卷
+                    </button>
+                    <button class="action-btn" id="verseEditorBtn" title="经文校对工具" style="background: linear-gradient(135deg, #ffc107, #ff8c00);">
+                        <i class="fas fa-edit"></i> 经文校对
+                    </button>
+                    <button class="start-btn" onclick="startPractice()">
+                        <i class="fas fa-play"></i> 开始练习
+                    </button>
+                </div>
+                
+                <!-- 调试信息 -->
+                <div style="margin-top: 10px; font-size: 12px; color: #666; text-align: center;">
+                    调试: <span id="debugInfo">等待选择...</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 练习区域 -->
+        <div class="practice-area" id="practiceArea">
+            <div class="verse-display" id="verseDisplay">
+                <!-- 经文内容将在这里显示 -->
+            </div>
+            <div class="verse-reference" id="verseReference">
+                <!-- 经文引用将在这里显示 -->
+            </div>
+            <div class="action-buttons">
+                <button class="action-btn" onclick="checkAnswer()">
+                    <i class="fas fa-check"></i> 检查答案
+                </button>
+                <button class="action-btn" onclick="showHint()">
+                    <i class="fas fa-lightbulb"></i> 提示
+                </button>
+                <button class="action-btn" id="nextBtn" style="display: none;">
+                    <i class="fas fa-arrow-right"></i> 下一组
+                </button>
+            </div>
+        </div>
+
+        <!-- 结果面板 -->
+        <div class="settings-panel" id="resultsPanel" style="display: none;">
+            <h2 class="settings-title"><i class="fas fa-trophy"></i> 练习结果</h2>
+            <div style="font-size: 1.2em; margin: 20px 0;">
+                <p>总题数: <span id="totalAnswered">0</span></p>
+                <p>正确数: <span id="correctAnswers">0</span></p>
+                <p>准确率: <span id="accuracyRate">0%</span></p>
+                <p>用时: <span id="timeSpent">0秒</span></p>
+            </div>
+            <div class="action-buttons">
+                <button class="action-btn" onclick="restartPractice()">
+                    <i class="fas fa-redo"></i> 重新练习
+                </button>
+                <button class="action-btn" onclick="goHome()">
+                    <i class="fas fa-home"></i> 返回首页
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 全局变量
+        let booksData = {};
+        let currentBook = '';
+        let currentChapter = 1;
+        let currentVerses = [];
+        let currentVerseIndex = 0;
+        let difficulty = 'easy';
+        let score = 0;
+        let totalQuestions = 0;
+        let correctAnswers = 0;
+        let startTime = 0;
+
+        
+
+        
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('页面DOM加载完成');
+            
+            // 强制等待一点时间确保DOM完全加载
+            setTimeout(() => {
+                console.log('开始动态加载书卷数据...');
+                
+                const booksGrid = document.getElementById('booksGrid');
+                console.log('booksGrid元素:', booksGrid);
+                
+                if (booksGrid) {
+                    console.log('找到booksGrid，开始动态加载...');
+                    // 使用动态加载替代静态数据
+                    loadBooksData();
+                } else {
+                    console.error('未找到booksGrid元素！');
+                    // 尝试在整个文档中查找
+                    console.log('所有ID为booksGrid的元素:', document.querySelectorAll('#booksGrid'));
+                }
+                
+            }, 100);
+            
+            initializeEventListeners();
+        });
+
+        // 初始化事件监听器
+        function initializeEventListeners() {
+            // 难度选择
+            document.querySelectorAll('.difficulty-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.difficulty-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    difficulty = this.dataset.difficulty;
+                    console.log('选择难度:', difficulty);
+                });
+            });
+
+            // 经文校对按钮
+            const verseEditorBtn = document.getElementById('verseEditorBtn');
+            if (verseEditorBtn) {
+                console.log('找到经文校对按钮，添加点击事件');
+                verseEditorBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('经文校对按钮被点击');
+                    openVerseEditor();
+                });
+            } else {
+                console.error('未找到经文校对按钮');
+            }
+
+            // 旧的下拉选择器已被卡片式选择替代
+            // 新的交互通过 selectBook() 和 selectChapter() 函数处理
+        }
+
+        // 加载书卷数据
+        // 新增全局变量
+        let selectedBook = '';
+        let selectedChapter = 1;
+        
+        async function loadBooksData() {
+            try {
+                console.log('开始加载配置文件...');
+                const response = await fetch('data/config.json');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const config = await response.json();
+                console.log('配置加载成功:', config);
+                
+                if (!config.availableBooks || config.availableBooks.length === 0) {
+                    throw new Error('配置文件中没有可用书卷');
+                }
+                
+                // 生成书卷卡片
+                await generateBookCards(config);
+                
+            } catch (error) {
+                console.error('加载配置失败:', error);
+                alert('加载书卷数据失败，请刷新页面重试');
+            }
+        }
+        
+        // 生成书卷卡片
+        async function generateBookCards(config) {
+            console.log('开始生成书卷卡片...');
+            const booksGrid = document.getElementById('booksGrid');
+            
+            if (!booksGrid) {
+                console.error('找不到booksGrid元素');
+                return;
+            }
+            
+            console.log('找到booksGrid元素，清空内容');
+            booksGrid.innerHTML = '';
+            
+            console.log('可用书卷:', config.availableBooks);
+            
+            // 首先显示书卷卡片，即使没有加载数据
+            for (let bookKey of config.availableBooks) {
+                const bookConfig = config.books[bookKey];
+                if (bookConfig) {
+                    // 创建书卷卡片（只使用配置信息）
+                    const bookCard = document.createElement('div');
+                    bookCard.className = 'book-card';
+                    bookCard.dataset.bookKey = bookKey;
+                    // 设置书卷卡片颜色
+                    if (bookConfig.color) {
+                        bookCard.style.background = `linear-gradient(135deg, ${bookConfig.color}, ${adjustColor(bookConfig.color, -20)})`;
+                    }
+                    
+                    bookCard.innerHTML = `
+                        <div class="book-card-title">${bookConfig.name}</div>
+                        <div class="book-card-subtitle">${bookConfig.chapters} 章</div>
+                    `;
+                    
+                    bookCard.addEventListener('click', () => selectBook(bookKey, bookConfig.name, config));
+                    booksGrid.appendChild(bookCard);
+                    
+                    console.log(`创建卡片: ${bookKey} - ${bookConfig.name}`);
+                }
+            }
+            
+            // 后台加载详细数据
+            loadDetailedBookData(config);
+            
+        }
+        
+        // 颜色调整函数（加深或变浅）
+        function adjustColor(color, percent) {
+            const num = parseInt(color.replace('#', ''), 16);
+            const amt = Math.round(2.55 * percent);
+            const R = (num >> 16) + amt;
+            const G = (num >> 8 & 0x00FF) + amt;
+            const B = (num & 0x0000FF) + amt;
+            return '#' + (0x1000000 + (R < 255 ? R < 1 ? 0 : R : 255) * 0x10000 +
+                (G < 255 ? G < 1 ? 0 : G : 255) * 0x100 +
+                (B < 255 ? B < 1 ? 0 : B : 255)).toString(16).slice(1);
+        }
+        
+        // 颜色调整函数（加深或变浅）
+        function adjustColor(color, percent) {
+            const num = parseInt(color.replace('#', ''), 16);
+            const amt = Math.round(2.55 * percent);
+            const R = (num >> 16) + amt;
+            const G = (num >> 8 & 0x00FF) + amt;
+            const B = (num & 0x0000FF) + amt;
+            return '#' + (0x1000000 + (R < 255 ? R < 1 ? 0 : R : 255) * 0x10000 +
+                (G < 255 ? G < 1 ? 0 : G : 255) * 0x100 +
+                (B < 255 ? B < 1 ? 0 : B : 255)).toString(16).slice(1);
+        }
+        
+        // 后台加载详细书卷数据
+        async function loadDetailedBookData(config) {
+            console.log('开始后台加载详细数据...');
+            
+            for (let bookKey of config.availableBooks) {
+                try {
+                    console.log(`正在加载 ${bookKey}.json`);
+                    const bookResponse = await fetch(`data/${bookKey}.json`);
+                    if (!bookResponse.ok) {
+                        console.warn(`无法加载 ${bookKey}.json: HTTP ${bookResponse.status}`);
+                        continue;
+                    }
+                    const bookData = await bookResponse.json();
+                    
+                    // 合并配置信息和书卷数据
+                    booksData[bookKey] = {
+                        ...bookData,
+                        ...config.books[bookKey]
+                    };
+                    
+                    console.log(`成功加载 ${bookKey}: ${bookData.name}`);
+                } catch (error) {
+                    console.error(`无法加载 ${bookKey}.json:`, error);
+                }
+            }
+            
+            console.log('所有书卷数据加载完成:', Object.keys(booksData));
+        }
+
+        // 选择书卷
+        function selectBook(bookKey, bookName, config) {
+            selectedBook = bookKey;
+            currentBook = bookKey;
+            
+            console.log('选择书卷:', bookKey, bookName);
+            
+            // 更新卡片选择状态
+            document.querySelectorAll('.book-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            document.querySelector(`[data-book-key="${bookKey}"]`).classList.add('selected');
+            
+            // 获取章节数（从配置或已加载的数据）
+            const chapters = (booksData[bookKey] && booksData[bookKey].chapters) || 
+                           (config && config.books[bookKey] && config.books[bookKey].chapters) || 
+                           1;
+            
+            // 显示选择的书卷信息
+            const selectedBookInfo = document.getElementById('selectedBookInfo');
+            selectedBookInfo.innerHTML = `
+                <h4>📚 已选择: ${bookName}</h4>
+                <p>共 ${chapters} 章 | 点击下方选择要练习的章节</p>
+            `;
+            
+            // 生成章节选择
+            generateChapterButtons(chapters);
+            
+            // 显示第二步
+            document.getElementById('bookSelectionStep').style.display = 'none';
+            document.getElementById('chapterSelectionStep').style.display = 'block';
+        }
+        
+        // Fallback选择书卷函数
+        function selectBookFallback(bookKey, bookName, chapters) {
+            selectedBook = bookKey;
+            currentBook = bookKey;
+            
+            console.log('Fallback选择书卷:', bookKey, bookName);
+            
+            // 更新卡片选择状态
+            document.querySelectorAll('.book-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            document.querySelector(`[data-book-key="${bookKey}"]`).classList.add('selected');
+            
+            // 显示选择的书卷信息
+            const selectedBookInfo = document.getElementById('selectedBookInfo');
+            selectedBookInfo.innerHTML = `
+                <h4>📚 已选择: ${bookName}</h4>
+                <p>共 ${chapters} 章 | 点击下方选择要练习的章节</p>
+            `;
+            
+            // 生成章节选择
+            generateChapterButtons(chapters);
+            
+            // 显示第二步
+            document.getElementById('bookSelectionStep').style.display = 'none';
+            document.getElementById('chapterSelectionStep').style.display = 'block';
+        }
+        
+        // 生成章节按钮
+        function generateChapterButtons(totalChapters = 1) {
+            console.log('生成章节按钮，总章数:', totalChapters);
+            const chaptersGrid = document.getElementById('chaptersGrid');
+            
+            if (!chaptersGrid) {
+                console.error('找不到 chaptersGrid 元素');
+                return;
+            }
+            
+            chaptersGrid.innerHTML = '';
+            
+            for (let i = 1; i <= totalChapters; i++) {
+                const chapterBtn = document.createElement('div');
+                chapterBtn.className = 'chapter-btn';
+                chapterBtn.textContent = i;
+                chapterBtn.dataset.chapter = i;
+                
+                if (i === 1) {
+                    chapterBtn.classList.add('selected');
+                    selectedChapter = 1;
+                }
+                
+                chapterBtn.addEventListener('click', () => {
+                    console.log('选择章节:', i);
+                    selectChapter(i);
+                });
+                chaptersGrid.appendChild(chapterBtn);
+            }
+            
+            console.log('章节按钮生成完成，共生成:', totalChapters, '个按钮');
+            updateDebugInfo();
+        }
+        
+        // 更新调试信息
+        function updateDebugInfo() {
+            const debugInfo = document.getElementById('debugInfo');
+            if (debugInfo) {
+                debugInfo.textContent = `已选: ${selectedBook || '无'} - 第${selectedChapter || 0}章`;
+            }
+        }
+        
+        // 选择章节
+        function selectChapter(chapter) {
+            selectedChapter = chapter;
+            currentChapter = chapter;
+            
+            console.log('章节选择更新:', chapter);
+            
+            // 更新按钮选择状态
+            document.querySelectorAll('.chapter-btn').forEach(btn => {
+                btn.classList.remove('selected');
+            });
+            const selectedBtn = document.querySelector(`[data-chapter="${chapter}"]`);
+            if (selectedBtn) {
+                selectedBtn.classList.add('selected');
+            }
+            
+            // 更新调试信息
+            updateDebugInfo();
+        }
+        
+        // 返回书卷选择
+        function backToBookSelection() {
+            document.getElementById('chapterSelectionStep').style.display = 'none';
+            document.getElementById('bookSelectionStep').style.display = 'block';
+            
+            // 重置选择
+            document.querySelectorAll('.book-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            selectedBook = '';
+            selectedChapter = 1;
+        }
+        
+        // 废弃的旧函数（保持兼容性）
+        function loadChapters() {
+            // 这个函数已被新的卡片式选择替代
+            console.log('loadChapters 已被新的章节选择功能替代');
+        }
+
+        // 开始练习
+        async function startPractice() {
+            if (!selectedBook || !selectedChapter) {
+                alert('请选择书卷和章节');
+                return;
+            }
+            
+            currentBook = selectedBook;
+            currentChapter = selectedChapter;
+            
+            console.log('开始加载练习数据:', currentBook, '第', currentChapter, '章');
+            
+            try {
+                // 尝试加载数据
+                await loadVerseData(selectedBook, selectedChapter);
+                
+                // 隐藏设置面板，显示练习区域
+                document.getElementById('settingsPanel').style.display = 'none';
+                document.getElementById('practiceArea').style.display = 'block';
+                
+                // 显示第一节经文
+                displayCurrentVerse();
+                
+            } catch (error) {
+                console.error('加载经文数据失败:', error);
+                alert(`无法加载 ${getBookName(selectedBook)} 第${selectedChapter}章的数据。\n\n${error.message}`);
+            }
+        }
+        
+        // 加载经文数据
+        async function loadVerseData(bookKey, chapter) {
+            console.log(`开始加载 ${bookKey} 第${chapter}章数据...`);
+            
+            try {
+                // 尝试从JSON文件加载数据
+                const response = await fetch(`data/${bookKey}.json`);
+                
+                if (!response.ok) {
+                    throw new Error(`无法找到 ${getBookName(bookKey)} 的数据文件`);
+                }
+                
+                const data = await response.json();
+                console.log('数据加载成功:', data);
+                
+                if (!data.verses || data.verses.length === 0) {
+                    throw new Error('数据文件格式不正确或没有经文内容');
+                }
+                
+                // 筛选指定章节的经文
+                const chapterVerses = data.verses.filter(verse => verse.chapter === chapter);
+                
+                if (chapterVerses.length === 0) {
+                    throw new Error(`第${chapter}章没有找到经文数据`);
+                }
+                
+                console.log(`找到 ${chapterVerses.length} 节经文`);
+                
+                // 随机选择最多10节经文进行练习
+                currentVerses = shuffleArray(chapterVerses).slice(0, Math.min(10, chapterVerses.length));
+                currentVerseIndex = 0;
+                score = 0;
+                totalQuestions = currentVerses.length;
+                correctAnswers = 0;
+                startTime = Date.now();
+                
+            } catch (error) {
+                // 如果加载失败，使用示例数据
+                console.warn('无法加载真实数据，使用示例数据:', error);
+                createSampleVerses(bookKey, chapter);
+            }
+        }
+        
+        // 创建示例经文（当无法加载真实数据时）
+        function createSampleVerses(bookKey, chapter) {
+            const bookName = getBookName(bookKey);
+            
+            // 创建一些示例经文用于演示
+            const sampleVerses = [
+                {
+                    chapter: chapter,
+                    verse: 1,
+                    text: "这是一节示例经文，用于演示智能填空练习功能的效果。我们会将重要的神学术语和概念设为填空。"
+                },
+                {
+                    chapter: chapter, 
+                    verse: 2,
+                    text: "神就是爱，住在爱里面的，就是住在神里面，神也住在他里面。"
+                },
+                {
+                    chapter: chapter,
+                    verse: 3, 
+                    text: "你们要彼此相爱，像我爱你们一样。这就是我的命令。"
+                }
+            ];
+            
+            currentVerses = sampleVerses;
+            currentVerseIndex = 0;
+            score = 0;
+            totalQuestions = currentVerses.length;
+            correctAnswers = 0;
+            startTime = Date.now();
+            
+            console.log('使用示例数据，共', currentVerses.length, '节经文');
+        }
+        
+        // 获取书卷中文名称
+        function getBookName(bookKey) {
+            const bookNames = {
+                'matthew': '马太福音',
+                'mark': '马可福音', 
+                'luke': '路加福音',
+                'john': '约翰福音',
+                'acts': '使徒行传',
+                'romans': '罗马书',
+                'ephesians': '以弗所书'
+            };
+            return bookNames[bookKey] || bookKey;
+        }
+        
+        // 返回首页函数
+        function goHome() {
+            window.location.href = 'index.html';
+        }
+        
+        // 重置统计数据（调试用）
+        function resetStats() {
+            if (confirm('确定要重置所有统计数据吗？此操作不可撤销。')) {
+                localStorage.removeItem('userProgress');
+                alert('统计数据已重置');
+                location.reload();
+            }
+        }
+        
+        // 在控制台添加重置命令
+        window.resetStats = resetStats;
+        
+        // 显示当前经文并生成填空（一次显示5节）
+        function displayCurrentVerse() {
+            if (!currentVerses || currentVerseIndex >= currentVerses.length) {
+                console.error('没有经文数据或索引超出范围');
+                return;
+            }
+            
+            // 获取当前组的5节经文
+            const versesToShow = [];
+            for (let i = 0; i < 5 && (currentVerseIndex + i) < currentVerses.length; i++) {
+                versesToShow.push(currentVerses[currentVerseIndex + i]);
+            }
+            
+            console.log(`显示第 ${currentVerseIndex + 1}-${currentVerseIndex + versesToShow.length}/${currentVerses.length} 节经文:`, versesToShow);
+            
+            // 生成所有经文的HTML
+            let versesHtml = '';
+            versesToShow.forEach((verse, index) => {
+                const verseText = verse.text || verse.zh || '经文内容加载失败';
+                const blankedText = createBlankedVerse(verseText);
+                const bookName = getBookName(currentBook);
+                const verseId = `${currentBook}_${verse.chapter}_${verse.verse}`;
+                
+                versesHtml += `
+                    <div class="verse-group" data-verse-id="${verseId}">
+                        <div class="verse-content">
+                            <span class="verse-reference-inline">${bookName} ${verse.chapter}:${verse.verse}</span>
+                            <button class="edit-verse-btn" data-verse-id="${verseId}" data-original-text="${verseText.replace(/"/g, '&quot;')}" data-book-name="${bookName}" data-chapter="${verse.chapter}" data-verse="${verse.verse}" title="编辑经文">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <div class="verse-text" data-original="${verseText.replace(/"/g, '&quot;')}">${blankedText}</div>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            // 显示经文内容
+            const verseDisplay = document.getElementById('verseDisplay');
+            verseDisplay.innerHTML = `
+                <div class="verse-progress">
+                    <span class="progress-info">第${Math.floor(currentVerseIndex/5) + 1}组 (${currentVerseIndex + 1}-${currentVerseIndex + versesToShow.length}/${currentVerses.length}节)</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: ${((currentVerseIndex + versesToShow.length) / currentVerses.length * 100)}%"></div>
+                    </div>
+                </div>
+                <div class="verses-container">${versesHtml}</div>
+            `;
+            
+            // 清空经文引用区域（现在引用在每节经文上方）
+            const verseReference = document.getElementById('verseReference');
+            verseReference.innerHTML = '';
+            
+            // 更新按钮状态
+            const nextBtn = document.getElementById('nextBtn');
+            nextBtn.style.display = 'none';
+            
+            // 判断是否为最后一组
+            const isLastGroup = (currentVerseIndex + versesToShow.length) >= currentVerses.length;
+            if (isLastGroup) {
+                nextBtn.innerHTML = '<i class="fas fa-check-circle"></i> 提交答案';
+                nextBtn.onclick = showResults;
+            } else {
+                nextBtn.innerHTML = '<i class="fas fa-arrow-right"></i> 下一组';
+                nextBtn.onclick = nextVerse;
+            }
+            
+            // 添加输入框事件监听器
+            addInputEventListeners();
+        }
+        
+        // 为填空输入框添加事件监听器
+        function addInputEventListeners() {
+            const inputs = document.querySelectorAll('.blank-input');
+            inputs.forEach(input => {
+                // 自动检查答案
+                input.addEventListener('input', function() {
+                    const userAnswer = this.value.trim();
+                    const correctAnswer = this.dataset.answer;
+                    
+                    // 移除之前的状态
+                    this.classList.remove('correct', 'incorrect');
+                    
+                    if (userAnswer && userAnswer === correctAnswer) {
+                        this.classList.add('correct');
+                        // 检查是否所有空都填对了
+                        checkAllBlanks();
+                    } else if (userAnswer && userAnswer !== correctAnswer) {
+                        this.classList.add('incorrect');
+                    }
+                });
+                
+                // 回车键跳到下一个输入框
+                input.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        const allInputs = Array.from(document.querySelectorAll('.blank-input'));
+                        const currentIndex = allInputs.indexOf(this);
+                        if (currentIndex < allInputs.length - 1) {
+                            allInputs[currentIndex + 1].focus();
+                        }
+                    }
+                });
+            });
+            
+            // 为编辑按钮添加事件监听器
+            const editButtons = document.querySelectorAll('.edit-verse-btn');
+            editButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const verseId = this.dataset.verseId;
+                    const originalText = this.dataset.originalText;
+                    const bookName = this.dataset.bookName;
+                    const chapter = this.dataset.chapter;
+                    const verse = this.dataset.verse;
+                    
+                    console.log('编辑按钮被点击:', {verseId, originalText, bookName, chapter, verse});
+                    
+                    editVerse(verseId, originalText, bookName, chapter, verse);
+                });
+            });
+        }
+        
+        // 检查所有填空是否都正确
+        function checkAllBlanks() {
+            const inputs = document.querySelectorAll('.blank-input');
+            let allCorrect = true;
+            
+            inputs.forEach(input => {
+                if (!input.classList.contains('correct')) {
+                    allCorrect = false;
+                }
+            });
+            
+            if (allCorrect && inputs.length > 0) {
+                // 所有答案都正确，显示鼓励信息和下一题按钮
+                setTimeout(() => {
+                    showEncouragement();
+                    correctAnswers++;
+                    document.getElementById('nextBtn').style.display = 'inline-block';
+                }, 500);
+            }
+        }
+        
+        // 显示鼓励信息
+        function showEncouragement() {
+            const encouragements = [
+                "很好！继续加油！ 💪",
+                "答对了！神的话语很宝贵 ✨",
+                "棒极了！你记得很清楚 🌟", 
+                "太好了！继续学习神的话语 📖",
+                "做得很棒！神必赐福给你 🙏",
+                "答案正确！愿神的话语常在你心中 ❤️"
+            ];
+            
+            const randomIndex = Math.floor(Math.random() * encouragements.length);
+            const message = encouragements[randomIndex];
+            
+            // 创建鼓励提示
+            const encouragementDiv = document.createElement('div');
+            encouragementDiv.className = 'encouragement-message';
+            encouragementDiv.innerHTML = `
+                <div class="encouragement-content">
+                    <i class="fas fa-check-circle"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+            
+            document.getElementById('verseDisplay').appendChild(encouragementDiv);
+            
+            // 3秒后移除
+            setTimeout(() => {
+                if (encouragementDiv.parentNode) {
+                    encouragementDiv.parentNode.removeChild(encouragementDiv);
+                }
+            }, 3000);
+        }
+
+        // 返回首页函数
+        function goHome() {
+            window.location.href = 'index.html';
+        }
+
+        // 显示当前经文
+        function showCurrentVerse() {
+            const verse = currentVerses[currentVerseIndex];
+            const verseDisplay = document.getElementById('verseDisplay');
+            const verseReference = document.getElementById('verseReference');
+            
+            // 生成填空经文
+            const blankedVerse = createBlankedVerse(verse.text || verse.zh);
+            verseDisplay.innerHTML = blankedVerse;
+            const bookName = getBookName(currentBook);
+            verseReference.textContent = `${bookName} ${verse.chapter}:${verse.verse}`;
+            
+            // 更新进度
+            updateProgress();
+            
+            // 重置按钮状态
+            document.getElementById('nextBtn').style.display = 'none';
+        }
+
+        // 提取有意义的词语（从study.html复用）
+        function extractMeaningfulWords(text) {
+            // 确保输入是有效字符串
+            if (!text || typeof text !== 'string') {
+                console.error('extractMeaningfulWords: 无效的文本输入:', text);
+                return [];
+            }
+            
+            const meaningfulWords = [];
+            
+            // 高优先级词组模式（2-7字）
+            const phrasePatterns = [
+                '上帝的儿女', '神的国度', '耶稣基督', '圣灵充满', '救主耶稣', '天父上帝',
+                '基督的身体', '神的旨意', '主的命令', '圣灵的果子', '神的恩典', '主的道路',
+                '永生神的', '创造万物', '全能的神', '万物的主', '荣耀的王',
+                '圣洁无瑕', '公义和平', '慈爱和真理', '恩典和真理', '信望和爱',
+                '平安和喜乐', '谦卑和温柔', '良善和忍耐', '温柔谦卑', '善良忠厚'
+            ];
+            
+            // 首先搜索高优先级的完整词组
+            phrasePatterns.forEach(phrase => {
+                const index = text.indexOf(phrase);
+                if (index !== -1 && phrase.length >= 2 && phrase.length <= 7) {
+                    meaningfulWords.push({
+                        word: phrase,
+                        index: index,
+                        category: 'important-phrase',
+                        priority: phrase.length * 4,
+                        length: phrase.length
+                    });
+                }
+            });
+            
+            // 使用正则表达式提取其他有意义的词组（2-7字）
+            const phraseRegex = /[一-龥]{2,7}/g;
+            let match;
+            
+            while ((match = phraseRegex.exec(text)) !== null) {
+                const phrase = match[0];
+                const index = match.index;
+                
+                if (!isCommonWord(phrase) && 
+                    !meaningfulWords.find(w => w.word === phrase)) {
+                    
+                    let priority = phrase.length;
+                    
+                    if (isTheologicalTerm(phrase)) {
+                        priority *= 3;
+                    } else if (isVerbPhrase(phrase)) {
+                        priority *= 2.5;
+                    }
+                    
+                    meaningfulWords.push({
+                        word: phrase,
+                        index: index,
+                        category: 'phrase',
+                        priority: priority,
+                        length: phrase.length
+                    });
+                }
+            }
+            
+            return meaningfulWords.sort((a, b) => b.priority - a.priority);
+        }
+        
+        // 判断是否为常见虚词
+        function isCommonWord(phrase) {
+            const commonWords = [
+                '的人', '了吗', '还是', '就是', '都是', '也是', '不是', 
+                '可以', '应该', '可能', '也许', '或者', '但是', '而且',
+                '如果', '因为', '所以', '然后', '于是', '因此', '然而',
+                '这个', '那个', '这些', '那些', '这样', '那样'
+            ];
+            
+            return commonWords.some(word => phrase.includes(word)) || 
+                   /^[，。；：！？""''（）【】《》]+$/.test(phrase);
+        }
+        
+        // 判断是否为神学术语（扩充版）
+        function isTheologicalTerm(phrase) {
+            const coreTheologicalTerms = [
+                // 神的属性和名称
+                '神', '上帝', '耶和华', '主', '父', '天父', '全能者', '创造主', '救赎主',
+                
+                // 三位一体
+                '耶稣', '基督', '救主', '主耶稣', '耶稣基督', '圣子', '人子', '神的儿子',
+                '圣灵', '保惠师', '真理的灵', '神的灵',
+                
+                // 救恩概念
+                '救恩', '救赎', '恩典', '怜悯', '慈爱', '饶恕', '赦免', '称义', '成圣',
+                '重生', '得救', '永生', '复活', '升天', '再来',
+                
+                // 属灵概念
+                '信心', '盼望', '爱心', '真理', '公义', '圣洁', '良善', '忠心', '顺服',
+                '谦卑', '温柔', '忍耐', '节制', '智慧', '知识', '敬畏',
+                
+                // 教会和事工
+                '教会', '门徒', '使徒', '长老', '执事', '弟兄', '姐妹', '圣徒',
+                '事奉', '侍奉', '服事', '传道', '福音', '见证', '宣教',
+                
+                // 圣经和话语
+                '圣经', '经文', '话语', '真道', '律法', '诫命', '应许', '预言',
+                
+                // 属灵争战
+                '试探', '罪恶', '撒但', '魔鬼', '世界', '肉体', '争战',
+                
+                // 天国和永恒
+                '天国', '国度', '天堂', '永生', '永远', '荣耀', '宝座', '审判'
+            ];
+            
+            const conceptualPhrases = [
+                // 重要的神学短语
+                '因信称义', '恩典时代', '神的旨意', '主的恩典', '圣灵充满',
+                '基督的爱', '神的国度', '天父的爱', '主的怜悯', '神的荣耀',
+                '永远的生命', '救恩的盼望', '真理的道', '生命的粮', '世界的光'
+            ];
+            
+            // 检查是否包含核心神学术语
+            const hasCoreTerm = coreTheologicalTerms.some(term => phrase.includes(term));
+            // 检查是否是重要的概念短语
+            const hasConceptPhrase = conceptualPhrases.some(concept => phrase.includes(concept));
+            
+            return hasCoreTerm || hasConceptPhrase;
+        }
+        
+        // 判断是否是动词短语（有助于记忆动态场景）
+        function isVerbPhrase(word) {
+            const actionVerbs = [
+                "说", "讲", "告诉", "宣告", "呼喊", "回答", "问", "听见", "看见",
+                "来", "去", "走", "跑", "跟从", "离开", "进入", "出来", "回去",
+                "站起", "坐下", "起来", "躺下", "跪下", "俯伏", "举手",
+                "拿", "给", "带", "领", "递", "放", "扔", "伸出", "抓住",
+                "医治", "洁净", "赶出", "按手", "祷告", "祝福", "安慰", "扶持",
+                "传讲", "教训", "劝勉", "责备", "警告", "吩咐", "命令",
+                "爱", "恨", "喜悦", "忧愁", "害怕", "惊奇", "感谢", "赞美"
+            ];
+                          
+            const actionPhrases = [
+                "起来", "下来", "过来", "回来", "出去", "进去", "上去",
+                "伸出手", "举起手", "低下头", "抬起头", "睁开眼", "闭上眼",
+                "俯伏敬拜", "跪下祷告", "举手赞美", "开口说话", "侧耳听",
+                "放下", "拿起", "拥抱", "寻找", "寻求", "呼求", "倚靠"
+            ];
+            
+            return actionVerbs.some(verb => word.includes(verb)) || 
+                   actionPhrases.some(phrase => word.includes(phrase));
+        }
+        
+        // 判断是否为动词短语
+        function isVerbPhrase(phrase) {
+            const verbIndicators = [
+                '说', '来', '去', '做', '行', '走', '站', '坐', '看', '听',
+                '爱', '信', '望', '求', '给', '得', '成', '立', '建', '造'
+            ];
+            return verbIndicators.some(verb => phrase.includes(verb));
+        }
+        
+        // 选择用于填空的词语（记忆导向优化）
+        function selectWordsForBlanks(meaningfulWords, text) {
+            const blankCount = getBlankCount(text.length);
+            const selectedWords = [];
+            
+            console.log(`经文长度: ${text.length}, 计划填空数量: ${blankCount}`);
+            const usedIndices = new Set();
+            
+            // 按学习价值重新排序
+            meaningfulWords.sort((a, b) => {
+                // 优先级计算：神学术语 > 动词短语 > 长词组 > 短词组
+                let scoreA = a.priority;
+                let scoreB = b.priority;
+                
+                // 给神学术语额外加分
+                if (isTheologicalTerm(a.word)) scoreA += 20;
+                if (isTheologicalTerm(b.word)) scoreB += 20;
+                
+                // 给动作词组加分（有助于记忆动态场景）
+                if (isVerbPhrase(a.word)) scoreA += 15;
+                if (isVerbPhrase(b.word)) scoreB += 15;
+                
+                // 适中长度的词组更有记忆价值（3-5字）
+                if (a.word.length >= 3 && a.word.length <= 5) scoreA += 10;
+                if (b.word.length >= 3 && b.word.length <= 5) scoreB += 10;
+                
+                // 人称代词和称呼有助于记忆对话情境
+                if (['你', '我', '他', '夫子', '先生', '老师'].some(pronoun => a.word.includes(pronoun))) {
+                    scoreA += 8;
+                }
+                if (['你', '我', '他', '夫子', '先生', '老师'].some(pronoun => b.word.includes(pronoun))) {
+                    scoreB += 8;
+                }
+                
+                return scoreB - scoreA;
+            });
+            
+            console.log('按记忆价值排序的词语:', meaningfulWords);
+            console.log('最终决定的填空数量:', blankCount);
+            
+            for (const word of meaningfulWords) {
+                if (selectedWords.length >= blankCount) break;
+                if (word.word.length < 2 || word.word.length > 7) continue;
+                
+                let hasOverlap = false;
+                const wordEnd = word.index + word.word.length;
+                
+                for (let i = word.index; i < wordEnd; i++) {
+                    if (usedIndices.has(i)) {
+                        hasOverlap = true;
+                        break;
+                    }
+                }
+                
+                if (!hasOverlap) {
+                    selectedWords.push(word);
+                    for (let i = word.index; i < wordEnd; i++) {
+                        usedIndices.add(i);
+                    }
+                    
+                    console.log(`选择填空词语: "${word.word}" (类别: ${word.category}, 优先级: ${word.priority})`);
+                }
+            }
+            
+            return selectedWords;
+        }
+        
+        // 计算输入框宽度
+        function calculateInputWidth(text) {
+            return Math.max(text.length * 20, 40);
+        }
+        
+        // 合并相邻的输入框 - 临时注释掉修复语法错误
+        function mergeAdjacentInputs(html) {
+            // 简化版本，暂时不合并
+            return html;
+            
+            // 原版本暂时注释掉
+            /*
+            return html.replace(
+                /(<input[^>]*>)\s*(<input[^>]*>)/g,
+                function(match, input1, input2) {
+                    const answer1 = input1.match(/data-answer="([^"]*)")/) || ['', ''];
+                    const answer2 = input2.match(/data-answer="([^"]*)")/) || ['', ''];
+                    const combinedAnswer = answer1[1] + answer2[1];
+                    const baseWidth = calculateInputWidth(combinedAnswer);
+                    const fixedWidth = Math.max(baseWidth + 10, 70);
+                    const placeholder = '□'.repeat(combinedAnswer.length);
+                    
+                    return `<input type="text" class="blank-input" data-answer="${combinedAnswer}" placeholder="${placeholder}" style="width: ${fixedWidth}px;">`;
+                }
+            );
+            */
+        }
+        
+        // 创建填空经文（使用智能算法）
+        function createBlankedVerse(text) {
+            console.log('原文:', text);
+            
+            // 检查输入是否有效
+            if (!text || typeof text !== 'string') {
+                console.error('createBlankedVerse: 无效的文本输入:', text);
+                return '经文内容加载失败，请重新选择。';
+            }
+            
+            // 使用智能算法提取有意义的词语
+            const meaningfulWords = extractMeaningfulWords(text);
+            const selectedWords = selectWordsForBlanks(meaningfulWords, text);
+            
+            console.log('提取的有意义词语:', meaningfulWords);
+            console.log('选中的填空词语:', selectedWords);
+            
+            let blankedVerse = text;
+            // 按照词语长度从长到短排序，避免替换冲突
+            selectedWords.sort((a, b) => b.word.length - a.word.length);
+            
+            selectedWords.forEach(wordInfo => {
+                const baseWidth = calculateInputWidth(wordInfo.word);
+                const fixedWidth = Math.max(baseWidth + 10, 50);
+                const placeholder = '□'.repeat(wordInfo.word.length);
+                
+                // 添加学习提示（仅鼠标悬浮）
+                let hint = '';
+                if (isTheologicalTerm(wordInfo.word)) {
+                    hint = '💡神学术语';
+                } else if (isVerbPhrase(wordInfo.word)) {
+                    hint = '🎭动作词';
+                } else if (wordInfo.word.length >= 4) {
+                    hint = '📝重要词组';
+                } else {
+                    hint = '✒️关键词';
+                }
+                
+                // 创建简洁的填空输入框（鼠标悬浮显示提示）
+                const inputHTML = `<input type="text" class="blank-input" 
+                           data-answer="${wordInfo.word}" 
+                           placeholder="${placeholder}" 
+                           title="提示：${wordInfo.word} ${hint}"
+                           style="width: ${fixedWidth}px; margin: 0 2px;">`;
+                
+                blankedVerse = blankedVerse.replace(wordInfo.word, inputHTML);
+            });
+            
+            // 合并相邻的输入框
+            blankedVerse = mergeAdjacentInputs(blankedVerse);
+            
+            console.log('生成的HTML:', blankedVerse);
+            return blankedVerse;
+        }
+
+        // 根据难度获取填空数量
+        function getBlankCount(textLength = 50) {
+            // 使用传入的经文长度来动态调整填空数量
+            console.log('经文长度:', textLength);
+            
+            // 根据经文长度和难度计算填空数量
+            let baseCount;
+            if (textLength <= 30) {
+                // 短经文：1个空
+                baseCount = 1;
+            } else if (textLength <= 60) {
+                // 中等经文：2个空
+                baseCount = 2;
+            } else {
+                // 长经文：3个空
+                baseCount = 3;
+            }
+            
+            // 根据难度微调
+            switch (difficulty) {
+                case 'easy': 
+                    return Math.max(1, baseCount - 1); // 简单模式减少1个
+                case 'medium': 
+                    return baseCount; // 中等模式使用基础数量
+                case 'hard': 
+                    return Math.min(4, baseCount + 1); // 困难模式增加1个，但最多4个
+                default: 
+                    return baseCount;
+            }
+        }
+
+        // 检查答案（参考study.html的完善版本）
+        function checkAnswer() {
+            const inputs = document.querySelectorAll('.blank-input');
+            let correct = 0;
+            let total = inputs.length;
+            
+            console.log('开始检查答案，总输入框数:', total);
+            
+            // 检查是否已经检查过（防止重复计算统计数据）
+            const alreadyChecked = document.querySelector('.blank-input.correct, .blank-input.incorrect') !== null;
+            
+            // 先清除所有之前的正确答案显示
+            document.querySelectorAll('.correct-answer').forEach(answer => answer.remove());
+            
+            inputs.forEach((input, index) => {
+                input.classList.remove('correct', 'incorrect');
+                
+                const userAnswer = input.value.trim().replace(/\s+/g, ''); // 去除所有空格
+                const correctAnswer = input.dataset.answer.replace(/\s+/g, '');
+                
+                console.log(`输入框${index}: 用户答案="${userAnswer}", 正确答案="${correctAnswer}"`);
+                
+                if (userAnswer === correctAnswer || userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+                    input.classList.add('correct');
+                    correct++;
+                } else {
+                    input.classList.add('incorrect');
+                    
+                    // 创建正确答案显示元素
+                    const correctAnswerSpan = document.createElement('span');
+                    correctAnswerSpan.className = 'correct-answer';
+                    correctAnswerSpan.style.cssText = 'color: #27ae60; margin-left: 5px; font-size: 0.85em; font-weight: bold; display: inline-block;';
+                    correctAnswerSpan.textContent = `(${input.dataset.answer})`;
+                    
+                    // 在输入框后插入正确答案
+                    const container = input.parentElement;
+                    const nextElement = input.nextSibling;
+                    
+                    if (nextElement) {
+                        container.insertBefore(correctAnswerSpan, nextElement);
+                    } else {
+                        container.appendChild(correctAnswerSpan);
+                    }
+                }
+            });
+            
+            console.log(`检查结果: 正确${correct}/${total}`);
+            
+            // 只有首次检查时才更新统计数据
+            if (!alreadyChecked) {
+                totalQuestions += total;
+                correctAnswers += correct;
+                console.log(`统计更新: 总题数+${total}, 正确数+${correct}`);
+            }
+            
+            // 显示温和的学习反馈
+            const resultHTML = document.getElementById('verseReference');
+            if (correct === total) {
+                if (!alreadyChecked) {
+                    score += 100;
+                    console.log('全部正确！得100分');
+                }
+                
+                const encouragements = [
+                    '🌟 太棒了！你完全掌握了这段经文的要点！',
+                    '✨ 做得很好！神的话语已经深深印在你心里！',
+                    '🎉 完美！你对这些神学概念理解得很透彻！',
+                    '💫 优秀！这些重要的词语你都记住了！',
+                    '🏆 精彩！你的记忆力真是令人赞叹！'
+                ];
+                
+                const randomEncouragement = encouragements[Math.floor(Math.random() * encouragements.length)];
+                resultHTML.innerHTML += `<br><span style="color: #27ae60; font-weight: bold; font-size: 1.05em;">${randomEncouragement}</span>`;
+                
+            } else {
+                const partialScore = Math.floor((correct / total) * 100);
+                score += partialScore;
+                console.log(`部分正确，得${partialScore}分`);
+                
+                let feedbackMessage;
+                const accuracy = correct / total;
+                
+                if (accuracy >= 0.8) {
+                    const goodMessages = [
+                        `📖 很不错！你答对了 ${correct}/${total} 个，只差一点点就完美了！`,
+                        `🌱 做得很好！${correct}/${total} 个正确答案，你正在稳步进步！`,
+                        `💡 棒极了！你对大部分内容都掌握得很好！`
+                    ];
+                    feedbackMessage = goodMessages[Math.floor(Math.random() * goodMessages.length)];
+                } else if (accuracy >= 0.5) {
+                    const encouragingMessages = [
+                        `📚 不错的开始！答对了 ${correct}/${total} 个，继续努力记忆这些重要概念！`,
+                        `🌿 正在进步中！${correct}/${total} 个正确，多读几遍会更熟悉！`,
+                        `💪 继续加油！你已经掌握了一半以上的内容！`
+                    ];
+                    feedbackMessage = encouragingMessages[Math.floor(Math.random() * encouragingMessages.length)];
+                } else {
+                    const gentleMessages = [
+                        `🌱 没关系，学习需要过程！多读几遍这段经文，重点关注那些重要的词语！`,
+                        `📖 这是很好的学习机会！重新阅读经文，特别留意神学术语的含义！`,
+                        `💝 不要灰心！神的话语需要反复默想才能深入人心！`
+                    ];
+                    feedbackMessage = gentleMessages[Math.floor(Math.random() * gentleMessages.length)];
+                }
+                
+                resultHTML.innerHTML += `<br><span style="color: #3498db; font-weight: bold;">${feedbackMessage}</span>`;
+            }
+            
+            // 显示下一步按钮
+            document.getElementById('nextBtn').style.display = 'inline-block';
+        }
+
+        // 显示提示（参考study.html的逻辑）
+        function showHint() {
+            // 优先提示错误的，再提示空白的
+            let inputs = document.querySelectorAll('.blank-input.incorrect');
+            if (inputs.length === 0) {
+                inputs = document.querySelectorAll('.blank-input:not(.correct):not(.incorrect)');
+            }
+            
+            if (inputs.length > 0) {
+                const randomInput = inputs[0]; // 取第一个需要提示的
+                randomInput.value = randomInput.dataset.answer;
+                randomInput.classList.remove('incorrect');
+                randomInput.classList.add('correct');
+                
+                // 移除该输入框的错误答案显示（如果有的话）
+                const correctAnswerSpan = randomInput.parentElement.querySelector('.correct-answer');
+                if (correctAnswerSpan) {
+                    correctAnswerSpan.remove();
+                }
+                
+                console.log('提示答案:', randomInput.dataset.answer);
+                
+                // 显示提示反馈
+                const resultHTML = document.getElementById('verseReference');
+                if (!resultHTML.innerHTML.includes('💡 已提示')) {
+                    resultHTML.innerHTML += '<br><span style="color: #f39c12; font-size: 0.9em;">💡 已提示一个答案</span>';
+                }
+            } else {
+                alert('所有答案都已正确！');
+            }
+        }
+
+        // 更新进度
+        function updateProgress() {
+            const progress = ((currentVerseIndex + 1) / totalQuestions) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+            document.getElementById('scoreDisplay').textContent = `第 ${currentVerseIndex + 1} 题 / 共 ${totalQuestions} 题 | 得分: ${score}`;
+        }
+
+        // 下一组（5节）
+        function nextVerse() {
+            currentVerseIndex += 5;  // 每次跳转5节
+            if (currentVerseIndex >= currentVerses.length) {
+                showResults();
+            } else {
+                displayCurrentVerse();
+            }
+        }
+
+        // 显示结果
+        function showResults() {
+            const endTime = Date.now();
+            const timeSpent = Math.floor((endTime - startTime) / 1000);
+            
+            // 确保准确率计算正确
+            const accuracy = totalQuestions > 0 ? Math.round((correctAnswers / totalQuestions) * 100) : 0;
+            
+            console.log('练习结果:', {
+                correctAnswers: correctAnswers,
+                totalQuestions: totalQuestions,
+                accuracy: accuracy
+            });
+            
+            document.getElementById('practiceArea').style.display = 'none';
+            document.getElementById('progressInfo').style.display = 'none';
+            document.getElementById('resultsPanel').style.display = 'block';
+            
+            document.getElementById('totalAnswered').textContent = totalQuestions;
+            document.getElementById('correctAnswers').textContent = correctAnswers;
+            document.getElementById('accuracyRate').textContent = accuracy + '%';
+            document.getElementById('timeSpent').textContent = timeSpent + '秒';
+            
+            // 保存成绩
+            saveProgress(accuracy);
+        }
+
+        // 保存进度
+        function saveProgress(accuracy) {
+            let userProgress = JSON.parse(localStorage.getItem('userProgress')) || {
+                practices: 0,
+                accuracy: 0,
+                streakDays: 1,
+                totalDays: 1,
+                chaptersRead: 1
+            };
+            
+            // 确保准确率在合理范围内
+            accuracy = Math.max(0, Math.min(100, accuracy || 0));
+            
+            userProgress.practices++;
+            
+            // 修复准确率计算逻辑
+            if (userProgress.practices === 1) {
+                // 第一次练习，直接使用当前准确率
+                userProgress.accuracy = accuracy;
+            } else {
+                // 计算平均准确率
+                const totalAccuracy = userProgress.accuracy * (userProgress.practices - 1) + accuracy;
+                userProgress.accuracy = Math.round(totalAccuracy / userProgress.practices);
+            }
+            
+            // 确保最终准确率在0-100范围内
+            userProgress.accuracy = Math.max(0, Math.min(100, userProgress.accuracy));
+            
+            console.log('保存进度:', {
+                practices: userProgress.practices,
+                currentAccuracy: accuracy,
+                averageAccuracy: userProgress.accuracy
+            });
+            
+            localStorage.setItem('userProgress', JSON.stringify(userProgress));
+        }
+
+        // 重新开始练习
+        function restartPractice() {
+            document.getElementById('resultsPanel').style.display = 'none';
+            document.getElementById('settingsPanel').style.display = 'block';
+            document.getElementById('progressInfo').style.display = 'none';
+        }
+
+        // 返回首页
+        function goHome() {
+            window.location.href = 'index.html';
+        }
+        
+        // 返回书卷选择页面
+        function goBackToBookSelection() {
+            // 隐藏所有屏幕
+            document.getElementById('exerciseScreen').style.display = 'none';
+            document.getElementById('resultScreen').style.display = 'none';
+            document.getElementById('chapterSelectionStep').style.display = 'none';
+            
+            // 显示书卷选择页面
+            document.getElementById('bookSelectionStep').style.display = 'block';
+            
+            // 清理选中状态
+            document.querySelectorAll('.book-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            
+            // 重置变量
+            selectedBook = '';
+            currentBook = '';
+            selectedChapter = 1;
+            currentChapter = 1;
+        }
+
+        // 工具函数：数组洗牌
+        function shuffleArray(array) {
+            const newArray = [...array];
+            for (let i = newArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+            }
+            return newArray;
+        }
+        
+        // 打开经文校对工具
+        function openVerseEditor() {
+            console.log('开始打开经文校对工具...');
+            
+            try {
+                // 尝试在新标签页打开
+                const newWindow = window.open('verse_editor.html', '_blank');
+                
+                // 检查是否被弹窗拦截器阻止
+                setTimeout(() => {
+                    if (!newWindow || newWindow.closed || typeof newWindow.closed == 'undefined') {
+                        console.log('弹窗被阻止，使用备用方案');
+                        if (confirm('🔒 浏览器阻止了弹窗\n\n是否直接跳转到经文校对工具？\n（建议允许此网站的弹窗以获得更好体验）')) {
+                            window.location.href = 'verse_editor.html';
+                        }
+                    } else {
+                        console.log('成功在新标签页打开校对工具');
+                        newWindow.focus();
+                    }
+                }, 100);
+                
+            } catch (error) {
+                console.error('打开校对工具失败:', error);
+                // 备用方案：直接跳转
+                window.location.href = 'verse_editor.html';
+            }
+        }
+        
+        // 编辑经文函数
+        function editVerse(verseId, originalText, bookName, chapter, verse) {
+            console.log('editVerse被调用:', {verseId, originalText, bookName, chapter, verse});
+            
+            try {
+                const newText = prompt(`编辑经文 ${bookName} ${chapter}:${verse}\n\n请输入正确的经文内容：`, originalText);
+                console.log('用户输入的新经文:', newText);
+                
+                if (newText && newText.trim() !== originalText.trim()) {
+                // 更新当前显示
+                const verseGroup = document.querySelector(`[data-verse-id="${verseId}"]`);
+                if (verseGroup) {
+                    const verseTextDiv = verseGroup.querySelector('.verse-text');
+                    verseTextDiv.dataset.original = newText;
+                    
+                    // 重新生成填空
+                    const blankedText = createBlankedVerse(newText);
+                    verseTextDiv.innerHTML = blankedText;
+                    
+                    // 重新绑定输入事件
+                    addInputEventListeners();
+                }
+                
+                // 保存到服务器
+                saveVerseEdit(currentBook, chapter, verse, newText);
+                
+                // 更新内存中的数据
+                const verseIndex = currentVerses.findIndex(v => v.chapter == chapter && v.verse == verse);
+                if (verseIndex !== -1) {
+                    currentVerses[verseIndex].text = newText;
+                    currentVerses[verseIndex].zh = newText;
+                }
+                
+                    console.log(`经文已修改: ${bookName} ${chapter}:${verse}`);
+                    alert('✅ 经文已更新并保存！');
+                }
+            } catch (error) {
+                console.error('编辑经文时发生错误:', error);
+                alert('❌ 编辑经文时发生错误，请检查控制台');
+            }
+        }
+        
+        // 保存经文修改到服务器
+        async function saveVerseEdit(book, chapter, verse, newText) {
+            try {
+                const response = await fetch('/api/save-verse', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        book: book,
+                        chapter: chapter,
+                        verse: verse,
+                        text: newText
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error('保存失败');
+                }
+                
+                console.log('经文保存成功');
+            } catch (error) {
+                console.error('保存经文失败:', error);
+                alert('⚠️ 保存失败，请检查网络连接或联系管理员');
+            }
+        }
+    </script>
+</body>
+</html>
