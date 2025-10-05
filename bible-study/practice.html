@@ -1457,9 +1457,10 @@
                 <div class="verses-container">${versesHtml}</div>
             `;
             
-            // 清空经文引用区域
+            // 清空并隐藏经文引用区域
             const verseReference = document.getElementById('verseReference');
             verseReference.innerHTML = '';
+            verseReference.style.display = 'none';
             
             // 添加输入框事件监听器
             addInputEventListeners();
