@@ -52,7 +52,7 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 10px 15px;
         }
         
         .settings-panel {
@@ -170,8 +170,8 @@
         .practice-area {
             background: white;
             border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 20px;
+            padding: 25px 20px;
+            margin-bottom: 15px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.1);
             text-align: center;
             display: none;
@@ -185,31 +185,35 @@
         }
         
         .blank-input {
-            border: none;
-            border-bottom: 2px solid #4facfe;
-            background: transparent;
-            font-size: 1.5em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f8f9fa;
+            font-size: 14px;
             text-align: center;
-            width: 40px;
+            width: 35px;
             margin: 0 2px;
-            padding: 2px;
+            padding: 2px 4px;
+            transition: all 0.2s ease;
         }
         
         .blank-input:focus {
             outline: none;
-            border-bottom-color: #00f2fe;
+            border-color: #4facfe;
+            background: #ffffff;
+            box-shadow: 0 0 0 2px rgba(79, 172, 254, 0.2);
         }
         
         .blank-input.correct {
             background-color: #d4edda;
-            border-bottom-color: #28a745;
-            transform: scale(1.02);
+            border-color: #28a745;
+            color: #155724;
         }
         
         .blank-input.incorrect {
             background-color: #f8d7da;
-            border-bottom-color: #dc3545;
-            animation: shake 0.5s;
+            border-color: #dc3545;
+            color: #721c24;
+            animation: shake 0.3s;
         }
         
         .correct-answer {
@@ -482,9 +486,9 @@
             display: none;
             background: white;
             border-radius: 20px;
-            padding: 40px;
+            padding: 25px 20px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            margin-top: 20px;
+            margin-top: 15px;
         }
         
         .verse-progress {
@@ -493,11 +497,14 @@
         }
         
         .progress-info {
-            color: #666;
-            font-size: 13px;
+            color: #4a5568;
+            font-size: 16px;
+            font-weight: 600;
             display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
+            margin-bottom: 12px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .progress-bar {
@@ -556,15 +563,57 @@
         }
         
         .verse-content {
-            font-size: 16px;
-            line-height: 1.8;
+            font-size: 15px;
+            line-height: 1.6;
             text-align: left;
-            margin: 0;
-            padding: 15px 20px;
+            margin: 0 0 15px 0;
+            padding: 12px 15px;
             background: #ffffff;
             border-radius: 8px;
             border: 1px solid #e9ecef;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        /* 单页7节经文的容器优化 */
+        .verses-container {
+            padding: 8px 0;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            background: #fafbfc;
+        }
+        
+        .verse-group {
+            margin-bottom: 8px;
+            page-break-inside: avoid;
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            padding: 10px 12px;
+            margin: 6px 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        
+        .verse-group:hover {
+            border-color: #4facfe;
+            box-shadow: 0 2px 8px rgba(79, 172, 254, 0.1);
+        }
+        
+        .verse-reference {
+            font-size: 12px;
+            color: #666;
+            font-weight: 600;
+            margin-bottom: 5px;
+            padding: 3px 6px;
+            background: #e3f2fd;
+            border-radius: 3px;
+            display: inline-block;
+            border: 1px solid #bbdefb;
+        }
+        
+        .verse-text {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
         }
         
 
@@ -708,7 +757,7 @@
                     </div>
                     <div class="settings-info">
                         <h2 class="settings-title">选择测试书卷</h2>
-                        <p class="settings-description">选择一个圣经书卷开始您的经文小测</p>
+                        <p class="settings-description">选择一个圣经书卷开始您的经文测试</p>
                     </div>
                 </div>
             </div>
@@ -780,23 +829,23 @@
                 <!-- 经文引用将在这里显示 -->
             </div>
             <div class="action-buttons">
-                <button class="action-btn" id="prevBtn" onclick="prevVerse()" disabled>
-                    <i class="fas fa-arrow-left"></i> 上一组
+                <button class="action-btn" onclick="checkAllAnswers()">
+                    <i class="fas fa-check"></i> 检查答案
                 </button>
                 <button class="action-btn" onclick="showHint()">
                     <i class="fas fa-lightbulb"></i> 提示
                 </button>
-                <button class="action-btn" id="nextBtn" onclick="nextVerse()">
-                    <i class="fas fa-arrow-right"></i> 下一组
+                <button class="action-btn" onclick="showResults()">
+                    <i class="fas fa-trophy"></i> 查看成绩
                 </button>
             </div>
         </div>
 
         <!-- 结果面板 -->
         <div class="settings-panel" id="resultsPanel" style="display: none;">
-            <h2 class="settings-title"><i class="fas fa-trophy"></i> 练习结果</h2>
+            <h2 class="settings-title"><i class="fas fa-trophy"></i> 测试结果</h2>
             <div style="font-size: 1.2em; margin: 20px 0;">
-                <p>总题数: <span id="totalAnswered">0</span></p>
+                <p>空格数: <span id="totalAnswered">0</span></p>
                 <p>正确数: <span id="correctAnswers">0</span></p>
                 <p>准确率: <span id="accuracyRate">0%</span></p>
                 <p>用时: <span id="timeSpent">0秒</span></p>
@@ -1201,8 +1250,8 @@
                 
                 console.log(`找到 ${chapterVerses.length} 节经文`);
                 
-                // 随机选择最多10节经文进行练习
-                currentVerses = shuffleArray(chapterVerses).slice(0, Math.min(10, chapterVerses.length));
+                // 随机选择7节经文进行练习
+                currentVerses = shuffleArray(chapterVerses).slice(0, Math.min(7, chapterVerses.length));
                 currentVerseIndex = 0;
                 score = 0;
                 totalQuestions = currentVerses.length;
@@ -1220,23 +1269,15 @@
         function createSampleVerses(bookKey, chapter) {
             const bookName = getBookName(bookKey);
             
-            // 创建一些示例经文用于演示
+            // 创建7节示例经文用于演示
             const sampleVerses = [
-                {
-                    chapter: chapter,
-                    verse: 1,
-                    text: "这是一节示例经文，用于演示智能填空练习功能的效果。我们会将重要的神学术语和概念设为填空。"
-                },
-                {
-                    chapter: chapter, 
-                    verse: 2,
-                    text: "神就是爱，住在爱里面的，就是住在神里面，神也住在他里面。"
-                },
-                {
-                    chapter: chapter,
-                    verse: 3, 
-                    text: "你们要彼此相爱，像我爱你们一样。这就是我的命令。"
-                }
+                { chapter: chapter, verse: 1, text: "这是一节示例经文，用于演示智能填空练习功能的效果。我们会将重要的神学术语和概念设为填空。" },
+                { chapter: chapter, verse: 2, text: "神就是爱，住在爱里面的，就是住在神里面，神也住在他里面。" },
+                { chapter: chapter, verse: 3, text: "你们要彼此相爱，像我爱你们一样。这就是我的命令。" },
+                { chapter: chapter, verse: 4, text: "爱里没有惧怕，爱既完全，就把惧怕除去。" },
+                { chapter: chapter, verse: 5, text: "我们爱，因为神先爱我们。" },
+                { chapter: chapter, verse: 6, text: "人若说我爱神，却恨他的弟兄，就是说谎话的。" },
+                { chapter: chapter, verse: 7, text: "因为不爱他所看见的弟兄，就不能爱没有看见的神。" }
             ];
             
             currentVerses = sampleVerses;
@@ -1280,24 +1321,18 @@
         // 在控制台添加重置命令
         window.resetStats = resetStats;
         
-        // 显示当前经文并生成填空（一次显示5节）
+        // 显示所有7节经文
         function displayCurrentVerse() {
-            if (!currentVerses || currentVerseIndex >= currentVerses.length) {
-                console.error('没有经文数据或索引超出范围');
+            if (!currentVerses || currentVerses.length === 0) {
+                console.error('没有经文数据');
                 return;
             }
             
-            // 获取当前组的5节经文
-            const versesToShow = [];
-            for (let i = 0; i < 5 && (currentVerseIndex + i) < currentVerses.length; i++) {
-                versesToShow.push(currentVerses[currentVerseIndex + i]);
-            }
-            
-            console.log(`显示第 ${currentVerseIndex + 1}-${currentVerseIndex + versesToShow.length}/${currentVerses.length} 节经文:`, versesToShow);
+            console.log(`显示所有 ${currentVerses.length} 节经文:`, currentVerses);
             
             // 生成所有经文的HTML
             let versesHtml = '';
-            versesToShow.forEach((verse, index) => {
+            currentVerses.forEach((verse, index) => {
                 const verseText = verse.text || verse.zh || '经文内容加载失败';
                 const blankedText = createBlankedVerse(verseText);
                 const bookName = getBookName(currentBook);
@@ -1318,74 +1353,35 @@
             const verseDisplay = document.getElementById('verseDisplay');
             verseDisplay.innerHTML = `
                 <div class="verse-progress">
-                    <span class="progress-info">第${Math.floor(currentVerseIndex/5) + 1}组 (${currentVerseIndex + 1}-${currentVerseIndex + versesToShow.length}/${currentVerses.length}节)</span>
+                    <span class="progress-info">📖 经文测试 - 共 <span id="total-blanks">0</span>个空格</span>
                     <div class="progress-bar">
-                        <div class="progress-fill" style="width: ${((currentVerseIndex + versesToShow.length) / currentVerses.length * 100)}%"></div>
+                        <div class="progress-fill" style="width: 0%"></div>
                     </div>
-                </div>
-                <div class="top-controls">
-                    <button class="action-btn check-btn" onclick="checkAnswer()">
-                        <i class="fas fa-check"></i> 检查答案
-                    </button>
-                    <button class="action-btn submit-btn" onclick="showResults()">
-                        <i class="fas fa-check-circle"></i> 提交答案
-                    </button>
                 </div>
                 <div class="verses-container">${versesHtml}</div>
             `;
             
-            // 清空经文引用区域（现在引用在每节经文上方）
+            // 清空经文引用区域
             const verseReference = document.getElementById('verseReference');
             verseReference.innerHTML = '';
             
-            // 更新导航按钮状态
-            const prevBtn = document.getElementById('prevBtn');
-            const nextBtn = document.getElementById('nextBtn');
-            
-            // 检查是否为第一组
-            if (currentVerseIndex === 0) {
-                prevBtn.disabled = true;
-                prevBtn.style.opacity = '0.5';
-            } else {
-                prevBtn.disabled = false;
-                prevBtn.style.opacity = '1';
-            }
-            
-            // 检查是否为最后一组
-            const isLastGroup = (currentVerseIndex + 5) >= currentVerses.length;
-            if (isLastGroup) {
-                nextBtn.disabled = true;
-                nextBtn.style.opacity = '0.5';
-            } else {
-                nextBtn.disabled = false;
-                nextBtn.style.opacity = '1';
-            }
-            
             // 添加输入框事件监听器
             addInputEventListeners();
+            
+            // 计算并更新空格总数
+            setTimeout(() => {
+                const totalBlanks = document.querySelectorAll('.blank-input').length;
+                const totalBlanksElement = document.getElementById('total-blanks');
+                if (totalBlanksElement) {
+                    totalBlanksElement.textContent = totalBlanks;
+                }
+            }, 100);
         }
         
         // 为填空输入框添加事件监听器
         function addInputEventListeners() {
             const inputs = document.querySelectorAll('.blank-input');
             inputs.forEach(input => {
-                // 自动检查答案
-                input.addEventListener('input', function() {
-                    const userAnswer = this.value.trim();
-                    const correctAnswer = this.dataset.answer;
-                    
-                    // 移除之前的状态
-                    this.classList.remove('correct', 'incorrect');
-                    
-                    if (userAnswer && userAnswer === correctAnswer) {
-                        this.classList.add('correct');
-                        // 检查是否所有空都填对了
-                        checkAllBlanks();
-                    } else if (userAnswer && userAnswer !== correctAnswer) {
-                        this.classList.add('incorrect');
-                    }
-                });
-                
                 // 回车键跳到下一个输入框
                 input.addEventListener('keypress', function(e) {
                     if (e.key === 'Enter') {
@@ -1397,86 +1393,18 @@
                     }
                 });
             });
-            
+        }
+        
 
-        }
-        
-        // 检查所有填空是否都正确
-        function checkAllBlanks() {
-            const inputs = document.querySelectorAll('.blank-input');
-            let allCorrect = true;
-            
-            inputs.forEach(input => {
-                if (!input.classList.contains('correct')) {
-                    allCorrect = false;
-                }
-            });
-            
-            if (allCorrect && inputs.length > 0) {
-                // 所有答案都正确，显示鼓励信息和下一题按钮
-                setTimeout(() => {
-                    showEncouragement();
-                }, 500);
-            }
-        }
-        
-        // 显示鼓励信息
-        function showEncouragement() {
-            const encouragements = [
-                "很好！继续加油！ 💪",
-                "答对了！神的话语很宝贵 ✨",
-                "棒极了！你记得很清楚 🌟", 
-                "太好了！继续学习神的话语 📖",
-                "做得很棒！神必赐福给你 🙏",
-                "答案正确！愿神的话语常在你心中 ❤️"
-            ];
-            
-            const randomIndex = Math.floor(Math.random() * encouragements.length);
-            const message = encouragements[randomIndex];
-            
-            // 创建鼓励提示
-            const encouragementDiv = document.createElement('div');
-            encouragementDiv.className = 'encouragement-message';
-            encouragementDiv.innerHTML = `
-                <div class="encouragement-content">
-                    <i class="fas fa-check-circle"></i>
-                    <span>${message}</span>
-                </div>
-            `;
-            
-            document.getElementById('verseDisplay').appendChild(encouragementDiv);
-            
-            // 3秒后移除
-            setTimeout(() => {
-                if (encouragementDiv.parentNode) {
-                    encouragementDiv.parentNode.removeChild(encouragementDiv);
-                }
-            }, 3000);
-        }
+
+
 
         // 返回首页函数
         function goHome() {
             window.location.href = 'index.html';
         }
 
-        // 显示当前经文
-        function showCurrentVerse() {
-            const verse = currentVerses[currentVerseIndex];
-            const verseDisplay = document.getElementById('verseDisplay');
-            const verseReference = document.getElementById('verseReference');
-            
-            // 生成填空经文
-            const blankedVerse = createBlankedVerse(verse.text || verse.zh);
-            verseDisplay.innerHTML = blankedVerse;
-            const bookName = getBookName(currentBook);
-            verseReference.textContent = `${bookName} ${verse.chapter}:${verse.verse}`;
-            
-            // 更新进度
-            updateProgress();
-            
-            // 重置按钮状态
-            document.getElementById('nextBtn').style.display = 'none';
-        }
+
 
         // 提取有意义的词语（从study.html复用）
         function extractMeaningfulWords(text) {
@@ -1816,16 +1744,13 @@
             }
         }
 
-        // 检查答案（参考study.html的完善版本）
-        function checkAnswer() {
+        // 检查所有答案（新的简化版本）
+        function checkAllAnswers() {
             const inputs = document.querySelectorAll('.blank-input');
             let correct = 0;
             let total = inputs.length;
             
             console.log('开始检查答案，总输入框数:', total);
-            
-            // 检查是否已经检查过（防止重复计算统计数据）
-            const alreadyChecked = document.querySelector('.blank-input.correct, .blank-input.incorrect') !== null;
             
             // 先清除所有之前的正确答案显示
             document.querySelectorAll('.correct-answer').forEach(answer => answer.remove());
@@ -1862,18 +1787,23 @@
                 }
             });
             
+            // 更新进度条
+            const progress = (correct / total) * 100;
+            const progressBar = document.querySelector('.progress-fill');
+            if (progressBar) {
+                progressBar.style.width = progress + '%';
+            }
+            
+            // 更新进度信息
+            const progressInfo = document.querySelector('.progress-info');
+            if (progressInfo) {
+                progressInfo.textContent = `答题进度: ${correct}/${total} 正确 (${Math.round(progress)}%)`;
+            }
+            
             console.log(`检查结果: 正确${correct}/${total}`);
             
-            // 注意：不在这里更新全局统计，因为showResults会做实际统计
-            
             // 显示温和的学习反馈
-            const resultHTML = document.getElementById('verseReference');
             if (correct === total) {
-                if (!alreadyChecked) {
-                    score += 100;
-                    console.log('全部正确！得100分');
-                }
-                
                 const encouragements = [
                     '🌟 太棒了！你完全掌握了这段经文的要点！',
                     '✨ 做得很好！神的话语已经深深印在你心里！',
@@ -1886,10 +1816,6 @@
                 showFeedbackMessage(randomEncouragement, '#27ae60');
                 
             } else {
-                const partialScore = Math.floor((correct / total) * 100);
-                score += partialScore;
-                console.log(`部分正确，得${partialScore}分`);
-                
                 let feedbackMessage;
                 const accuracy = correct / total;
                 
@@ -1918,8 +1844,6 @@
                 
                 showFeedbackMessage(feedbackMessage, '#3498db');
             }
-            
-            // 答题完成，无需额外操作
         }
 
         // 显示提示（参考study.html的逻辑）
@@ -2075,31 +1999,28 @@
             const endTime = Date.now();
             const timeSpent = Math.floor((endTime - startTime) / 1000);
             
-            // 重新统计所有答案的正确性
+            // 统计所有答案的正确性
             const allInputs = document.querySelectorAll('.blank-input');
             let actualCorrect = 0;
             let actualTotal = allInputs.length;
             
             allInputs.forEach(input => {
-                const userAnswer = input.value.trim();
-                const correctAnswer = input.dataset.answer;
-                if (userAnswer === correctAnswer) {
+                const userAnswer = input.value.trim().replace(/\s+/g, '');
+                const correctAnswer = input.dataset.answer.replace(/\s+/g, '');
+                if (userAnswer === correctAnswer || userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
                     actualCorrect++;
                 }
             });
             
-            // 使用实际统计的结果
             const accuracy = actualTotal > 0 ? Math.round((actualCorrect / actualTotal) * 100) : 0;
             
             console.log('练习结果:', {
-                实际正确数: actualCorrect,
-                实际总题数: actualTotal,
-                准确率: accuracy,
-                之前统计: { correctAnswers, totalQuestions }
+                正确数: actualCorrect,
+                总题数: actualTotal,
+                准确率: accuracy
             });
             
             document.getElementById('practiceArea').style.display = 'none';
-            document.getElementById('progressInfo').style.display = 'none';
             document.getElementById('resultsPanel').style.display = 'block';
             
             document.getElementById('totalAnswered').textContent = actualTotal;

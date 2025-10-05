@@ -199,14 +199,7 @@
             z-index: 50;
         }
         
-        .progress-card {
-            background: rgba(255,255,255,0.95);
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            flex-shrink: 0;
-            max-height: 200px;
-        }
+
         
         .fill-blank-card {
             background: rgba(255,255,255,0.95);
@@ -683,17 +676,11 @@
                 </div>
 
                 <div class="sidebar">
-                    <div class="progress-card">
-                        <h3 class="section-title" style="font-size: 1.3em;">学习进度</h3>
-                        <div id="progress-summary">
-                            <p>当前章节: <span id="current-progress">0/0</span></p>
-                            <p>总体进度: <span id="total-progress">0/0</span></p>
-                        </div>
-                    </div>
-
                     <div class="fill-blank-card">
-                        <h3 class="section-title" style="font-size: 1.3em;">填空练习 
-                            <small style="font-size: 0.6em; color: #7f8c8d; font-weight: normal;">📖 可边看经文边练习</small>
+                        <h3 class="section-title" style="font-size: 1.3em;">经文填空 📖 
+                            <span style="font-size: 0.8em; color: #667eea; font-weight: normal;">
+                                (<span id="current-progress">0/0</span>, <span id="total-progress">0/0</span>)
+                            </span>
                         </h3>
                         <div class="exercise-buttons" style="margin-bottom: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
                             <button class="exercise-btn preview-btn" onclick="generateFillBlank('preview')" title="优先选择未打卡的经文进行预习">
@@ -1839,37 +1826,13 @@
             document.getElementById('current-progress').textContent = `${completedInChapter}/${chapterVerses.length}`;
             document.getElementById('total-progress').textContent = `${totalCompleted}/${bookData.verses.length}`;
             
-            // 更新练习统计
-            const exerciseStats = document.getElementById('exercise-stats') || createExerciseStats();
-            exerciseStats.innerHTML = `
-                <div style="display: flex; justify-content: space-between; margin: 10px 0; font-size: 0.9em;">
-                    <div style="text-align: center;">
-                        <div style="color: #74b9ff; font-weight: bold;">${previewCount}</div>
-                        <div style="color: #7f8c8d; font-size: 0.8em;">待预习</div>
-                    </div>
-                    <div style="text-align: center;">
-                        <div style="color: #fd79a8; font-weight: bold;">${reviewCount}</div>
-                        <div style="color: #7f8c8d; font-size: 0.8em;">可复习</div>
-                    </div>
-                    <div style="text-align: center;">
-                        <div style="color: #fdcb6e; font-weight: bold;">${keyVersesOfChapter.length}</div>
-                        <div style="color: #7f8c8d; font-size: 0.8em;">金句总数</div>
-                    </div>
-                </div>
-            `;
+
             
             // 更新练习按钮状态
             updateExerciseButtonsState();
         }
         
-        // 创建练习统计区域
-        function createExerciseStats() {
-            const progressSummary = document.getElementById('progress-summary');
-            const exerciseStats = document.createElement('div');
-            exerciseStats.id = 'exercise-stats';
-            progressSummary.appendChild(exerciseStats);
-            return exerciseStats;
-        }
+
 
         // 模态框事件
         document.addEventListener('DOMContentLoaded', () => {
