@@ -1,7 +1,10 @@
 {
+  "book": "mark",
   "name": "马可福音",
-  "englishName": "mark",
-  "color": "#2980b9",
+  "englishName": "Mark",
+  "testament": "new",
+  "category": "gospels",
+  "color": "#e74c3c",
   "description": "最早的福音书，记录耶稣基督的行动和神迹，强调祂是神的儿子",
   "chapters": 16,
   "verses": [
