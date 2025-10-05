@@ -1,0 +1,211 @@
+{
+  "book": "hebrews",
+  "name": "希伯来书",
+  "englishName": "Hebrews",
+  "testament": "new",
+  "category": "general_epistles",
+  "chapters": 13,
+  "color": "#4b0082",
+  "description": "写给希伯来基督徒的书信，论述基督的超越性和新约的优越性",
+  "keyThemes": [
+    "基督的超越性",
+    "新约的优越性",
+    "信心的榜样",
+    "坚持到底",
+    "大祭司基督"
+  ],
+  "verses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "zh": "神既在古时藉着众先知多次多方的晓谕列祖，",
+      "en": "In the past God spoke to our ancestors through the prophets at many times and in various ways,"
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "zh": "就在这末世藉着他儿子晓谕我们；又早已立他为承受万有的，也曾藉着他创造诸世界。",
+      "en": "but in these last days he has spoken to us by his Son, whom he appointed heir of all things, and through whom also he made the universe."
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "zh": "他是神荣耀所发的光辉，是神本体的真像，常用他权能的命令托住万有。他洗净了人的罪，就坐在高天至大者的右边。",
+      "en": "The Son is the radiance of God's glory and the exact representation of his being, sustaining all things by his powerful word. After he had provided purification for sins, he sat down at the right hand of the Majesty in heaven."
+    },
+    {
+      "chapter": 1,
+      "verse": 4,
+      "zh": "他既比天使更美，所得的名，也比天使的名更尊贵。",
+      "en": "So he became as much superior to the angels as the name he has inherited is superior to theirs."
+    },
+    {
+      "chapter": 1,
+      "verse": 5,
+      "zh": "所有的天使，神从来对哪一个说：'你是我的儿子，我今日生你'？又指着哪一个说：'我要作他的父，他要作我的子'？",
+      "en": "For to which of the angels did God ever say, 'You are my Son; today I have become your Father'? Or again, 'I will be his Father, and he will be my Son'?"
+    },
+    {
+      "chapter": 1,
+      "verse": 6,
+      "zh": "再者，神使长子到世上来的时候（或译：神再使长子到世上来的时候），就说：'神的使者都要拜他。'",
+      "en": "And again, when God brings his firstborn into the world, he says, 'Let all God's angels worship him.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 7,
+      "zh": "论到使者，又说：'神以风为使者，以火焰为仆役'；",
+      "en": "In speaking of the angels he says, 'He makes his angels spirits, and his servants flames of fire.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 8,
+      "zh": "论到子却说：'神啊，你的宝座是永永远远的；你的国权是正直的。",
+      "en": "But about the Son he says, 'Your throne, O God, will last for ever and ever; a scepter of justice will be the scepter of your kingdom."
+    },
+    {
+      "chapter": 1,
+      "verse": 9,
+      "zh": "你喜爱公义，恨恶罪恶；所以神，就是你的神，用喜乐油膏你，胜过膏你的同伴'；",
+      "en": "You have loved righteousness and hated wickedness; therefore God, your God, has set you above your companions by anointing you with the oil of joy.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 10,
+      "zh": "又说：'主啊，你起初立了地的根基；天也是你手所造的。",
+      "en": "He also says, 'In the beginning, Lord, you laid the foundations of the earth, and the heavens are the work of your hands."
+    },
+    {
+      "chapter": 1,
+      "verse": 11,
+      "zh": "天地都要灭没，你却要长存。天地都要像衣服渐渐旧了；",
+      "en": "They will perish, but you remain; they will all wear out like a garment."
+    },
+    {
+      "chapter": 1,
+      "verse": 12,
+      "zh": "你要将天地卷起来，像一件外衣，天地就都改变了。惟有你永不改变；你的年数没有穷尽。'",
+      "en": "You will roll them up like a robe; like a garment they will be changed. But you remain the same, and your years will never end.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 13,
+      "zh": "所有的天使，神从来对哪一个说：'你坐在我的右边，等我使你仇敌作你的脚凳'？",
+      "en": "To which of the angels did God ever say, 'Sit at my right hand until I make your enemies a footstool for your feet'?"
+    },
+    {
+      "chapter": 1,
+      "verse": 14,
+      "zh": "天使岂不都是服役的灵、奉差遣为那将要承受救恩的人效力吗？",
+      "en": "Are not all angels ministering spirits sent to serve those who will inherit salvation?"
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "zh": "所以，我们当越发郑重所听见的道理，恐怕我们随流失去。",
+      "en": "We must pay the most careful attention, therefore, to what we have heard, so that we do not drift away."
+    },
+    {
+      "chapter": 2,
+      "verse": 2,
+      "zh": "那藉着天使所传的话既是确定的；凡干犯悖逆的都受了该受的报应。",
+      "en": "For since the message spoken through angels was binding, and every violation and disobedience received its just punishment,"
+    },
+    {
+      "chapter": 2,
+      "verse": 3,
+      "zh": "我们若忽略这么大的救恩，怎能逃罪呢？这救恩起先是主亲自讲的，后来是听见的人给我们证实了。",
+      "en": "how shall we escape if we ignore so great a salvation? This salvation, which was first announced by the Lord, was confirmed to us by those who heard him."
+    },
+    {
+      "chapter": 2,
+      "verse": 4,
+      "zh": "神又按自己的旨意，用神迹、奇事和百般的异能，并圣灵的恩赐，同他们作见证。",
+      "en": "God also testified to it by signs, wonders and various miracles, and by gifts of the Holy Spirit distributed according to his will."
+    },
+    {
+      "chapter": 11,
+      "verse": 1,
+      "zh": "信就是所望之事的实底，是未见之事的确据。",
+      "en": "Now faith is confidence in what we hope for and assurance about what we do not see."
+    },
+    {
+      "chapter": 11,
+      "verse": 2,
+      "zh": "古人在这信上得了美好的证据。",
+      "en": "This is what the ancients were commended for."
+    },
+    {
+      "chapter": 11,
+      "verse": 3,
+      "zh": "我们因着信，就知道诸世界是藉神话造成的；这样，所看见的，并不是从显然之物造出来的。",
+      "en": "By faith we understand that the universe was formed at God's command, so that what is seen was not made out of what was visible."
+    },
+    {
+      "chapter": 11,
+      "verse": 4,
+      "zh": "亚伯因着信，献祭与神，比该隐所献的更美，因此便得了称义的见证，就是神指他礼物作的见证。他虽然死了，却因这信，仍旧说话。",
+      "en": "By faith Abel brought God a better offering than Cain did. By faith he was commended as righteous, when God spoke well of his offerings. And by faith Abel still speaks, even though he is dead."
+    },
+    {
+      "chapter": 11,
+      "verse": 5,
+      "zh": "以诺因着信，被接去，不至于见死，人也找不着他，因为神已经把他接去了；只是他被接去以先，已经得了神喜悦他的明证。",
+      "en": "By faith Enoch was taken from this life, so that he did not experience death: 'He could not be found, because God had taken him away.' For before he was taken, he was commended as one who pleased God."
+    },
+    {
+      "chapter": 11,
+      "verse": 6,
+      "zh": "人非有信，就不能得神的喜悦；因为到神面前来的人必须信有神，且信他赏赐那寻求他的人。",
+      "en": "And without faith it is impossible to please God, because anyone who comes to him must believe that he exists and that he rewards those who earnestly seek him."
+    },
+    {
+      "chapter": 11,
+      "verse": 7,
+      "zh": "挪亚因着信，既蒙神指示他未见的事，动了敬畏的心，预备了一只方舟，使他全家得救。因此就定了那世代的罪，自己也承受了那从信而来的义。",
+      "en": "By faith Noah, when warned about things not yet seen, in holy fear built an ark to save his family. By his faith he condemned the world and became heir of the righteousness that is in keeping with faith."
+    },
+    {
+      "chapter": 11,
+      "verse": 8,
+      "zh": "亚伯拉罕因着信，蒙召的时候就遵命出去，往将来要得为业的地方去；出去的时候，还不知往哪里去。",
+      "en": "By faith Abraham, when called to go to a place he would later receive as his inheritance, obeyed and went, even though he did not know where he was going."
+    },
+    {
+      "chapter": 11,
+      "verse": 9,
+      "zh": "他因着信，就在所应许之地作客，好像在异地居住帐棚，与那同蒙一个应许的以撒、雅各一样。",
+      "en": "By faith he made his home in the promised land like a stranger in a foreign country; he lived in tents, as did Isaac and Jacob, who were heirs with him of the same promise."
+    },
+    {
+      "chapter": 11,
+      "verse": 10,
+      "zh": "因为他等候那座有根基的城，就是神所经营所建造的。",
+      "en": "For he was looking forward to the city with foundations, whose architect and builder is God."
+    },
+    {
+      "chapter": 12,
+      "verse": 1,
+      "zh": "我们既有这许多的见证人，如同云彩围着我们，就当放下各样的重担，脱去容易缠累我们的罪，存心忍耐，奔那摆在我们前头的路程，",
+      "en": "Therefore, since we are surrounded by such a great cloud of witnesses, let us throw off everything that hinders and the sin that so easily entangles. And let us run with perseverance the race marked out for us,"
+    },
+    {
+      "chapter": 12,
+      "verse": 2,
+      "zh": "仰望为我们信心创始成终的耶稣（或译：仰望那将真道创始成终的耶稣）。他因那摆在前面的喜乐，就轻看羞辱，忍受了十字架的苦难，便坐在神宝座的右边。",
+      "en": "fixing our eyes on Jesus, the pioneer and perfecter of faith. For the joy set before him he endured the cross, scorning its shame, and sat down at the right hand of the throne of God."
+    },
+    {
+      "chapter": 12,
+      "verse": 3,
+      "zh": "那忍受罪人这样顶撞的，你们要思想，免得疲倦灰心。",
+      "en": "Consider him who endured such opposition from sinners, so that you will not grow weary and lose heart."
+    },
+    {
+      "chapter": 13,
+      "verse": 8,
+      "zh": "耶稣基督，昨日、今日、一直到永远，是一样的。",
+      "en": "Jesus Christ is the same yesterday and today and forever."
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "lastUpdated": "2025-10-04",
-  "availableBooks": ["matthew", "mark", "luke", "john", "acts", "romans", "1corinthians", "2corinthians", "galatians", "ephesians", "philippians", "colossians", "1thessalonians", "2thessalonians", "1timothy", "2timothy", "titus", "philemon"],
+  "lastUpdated": "2025-10-05",
+  "availableBooks": ["matthew", "mark", "luke", "john", "acts", "romans", "1corinthians", "2corinthians", "galatians", "ephesians", "philippians", "colossians", "1thessalonians", "2thessalonians", "1timothy", "2timothy", "titus", "philemon", "hebrews", "james"],
   "books": {
     "matthew": {
       "name": "马太福音",
@@ -152,6 +152,26 @@
       "color": "#ff6347",
       "description": "保罗写给腓利门的私人书信，请求他宽恕并接纳逃跑的奴隶阿尼西母",
       "keyThemes": ["饶恕与和好", "基督里的关系", "恩典与慈悲", "接纳与合一", "福音的改变力量"]
+    },
+    "hebrews": {
+      "name": "希伯来书",
+      "englishName": "Hebrews",
+      "testament": "new",
+      "category": "general_epistles",
+      "chapters": 13,
+      "color": "#4b0082",
+      "description": "写给希伯来基督徒的书信，论述基督的超越性和新约的优越性",
+      "keyThemes": ["基督的超越性", "新约的优越性", "信心的榜样", "坚持到底", "大祭司基督"]
+    },
+    "james": {
+      "name": "雅各书",
+      "englishName": "James",
+      "testament": "new",
+      "category": "general_epistles",
+      "chapters": 5,
+      "color": "#8b4513",
+      "description": "雅各写给分散各处的十二支派基督徒的信，强调信心与行为的关系",
+      "keyThemes": ["信心与行为", "试炼与智慧", "说话的智慧", "富人与穷人", "祷告的力量"]
     },
     "1corinthians": {
       "name": "哥林多前书",
