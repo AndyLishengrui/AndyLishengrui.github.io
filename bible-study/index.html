@@ -278,6 +278,14 @@
                 <!-- 书卷将通过JavaScript动态加载 -->
             </div>
         </div>
+
+        <!-- 旧约圣经部分 -->
+        <div class="testament-section" style="margin-top: 40px;">
+            <h2><i class="fas fa-scroll"></i> 旧约圣经 Old Testament</h2>
+            <div id="oldTestamentGrid" class="books-container">
+                <!-- 旧约书卷将通过JavaScript动态加载 -->
+            </div>
+        </div>
     </div>
 
     <script>
@@ -418,10 +426,12 @@
         // 显示书卷
         function displayBooks() {
             const bookGrid = document.getElementById('bookGrid');
+            const oldTestamentGrid = document.getElementById('oldTestamentGrid');
             bookGrid.innerHTML = '';
+            oldTestamentGrid.innerHTML = '';
             
-            // 按类别组织书卷
-            const categories = {
+            // 按类别组织书卷 - 新约
+            const ntCategories = {
                 'gospels': {title: '福音书', books: []},
                 'historical_nt': {title: '历史书', books: []}, 
                 'pauline_epistles': {title: '保罗书信', books: []},
@@ -429,18 +439,31 @@
                 'prophecy_nt': {title: '预言书', books: []}
             };
             
+            // 按类别组织书卷 - 旧约
+            const otCategories = {
+                'law': {title: '律法书', books: []},
+                'historical_ot': {title: '历史书', books: []},
+                'wisdom': {title: '智慧书', books: []},
+                'major_prophets': {title: '大先知书', books: []},
+                'minor_prophets': {title: '小先知书', books: []}
+            };
+            
             // 分类书卷
             Object.keys(booksData).forEach(bookKey => {
                 const book = booksData[bookKey];
                 const category = book.category || 'gospels';
-                if (categories[category]) {
-                    categories[category].books.push({key: bookKey, ...book});
+                const testament = book.testament || 'new';
+                
+                if (testament === 'new' && ntCategories[category]) {
+                    ntCategories[category].books.push({key: bookKey, ...book});
+                } else if (testament === 'old' && otCategories[category]) {
+                    otCategories[category].books.push({key: bookKey, ...book});
                 }
             });
             
-            // 显示每个类别
-            Object.keys(categories).forEach(categoryKey => {
-                const category = categories[categoryKey];
+            // 显示新约每个类别
+            Object.keys(ntCategories).forEach(categoryKey => {
+                const category = ntCategories[categoryKey];
                 if (category.books.length > 0) {
                     const categoryDiv = document.createElement('div');
                     categoryDiv.className = 'book-category';
@@ -462,6 +485,33 @@
                     });
                     
                     bookGrid.appendChild(categoryDiv);
+                }
+            });
+            
+            // 显示旧约每个类别
+            Object.keys(otCategories).forEach(categoryKey => {
+                const category = otCategories[categoryKey];
+                if (category.books.length > 0) {
+                    const categoryDiv = document.createElement('div');
+                    categoryDiv.className = 'book-category';
+                    
+                    const titleDiv = document.createElement('div');
+                    titleDiv.className = 'category-title';
+                    titleDiv.textContent = category.title;
+                    categoryDiv.appendChild(titleDiv);
+                    
+                    category.books.forEach(book => {
+                        const bookLink = document.createElement('a');
+                        bookLink.href = `study.html?book=${book.key}`;
+                        bookLink.className = 'book-item available';
+                        bookLink.innerHTML = `
+                            ${book.name || book.key}
+                            <span class="status">✓ 可学习</span>
+                        `;
+                        categoryDiv.appendChild(bookLink);
+                    });
+                    
+                    oldTestamentGrid.appendChild(categoryDiv);
                 }
             });
         }
