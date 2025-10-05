@@ -1,8 +1,18 @@
 {
   "version": "1.0",
   "lastUpdated": "2025-10-05",
-  "availableBooks": ["matthew", "mark", "luke", "john", "acts", "romans", "1corinthians", "2corinthians", "galatians", "ephesians", "philippians", "colossians", "1thessalonians", "2thessalonians", "1timothy", "2timothy", "titus", "philemon", "hebrews", "james"],
+  "availableBooks": ["ecclesiastes", "matthew", "mark", "luke", "john", "acts", "romans", "1corinthians", "2corinthians", "galatians", "ephesians", "philippians", "colossians", "1thessalonians", "2thessalonians", "1timothy", "2timothy", "titus", "philemon", "hebrews", "james"],
   "books": {
+    "ecclesiastes": {
+      "name": "传道书",
+      "englishName": "Ecclesiastes",
+      "testament": "old",
+      "category": "wisdom",
+      "chapters": 12,
+      "color": "#795548",
+      "description": "所罗门王对人生意义的探索，探讨在日光之下的虚空与智慧",
+      "keyThemes": ["虚空的虚空", "人生的意义", "敬畏神", "享受劳碌", "时间与永恒"]
+    },
     "matthew": {
       "name": "马太福音",
       "englishName": "Matthew",

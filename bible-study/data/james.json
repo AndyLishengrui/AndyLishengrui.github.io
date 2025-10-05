@@ -9,10 +9,27 @@
   "description": "雅各写给分散各处的十二支派基督徒的信，强调信心与行为的关系",
   "keyThemes": [
     "信心与行为",
-    "试炼与智慧",
-    "说话的智慧",
-    "富人与穷人",
-    "祷告的力量"
+    "试炼与忍耐",
+    "言语的力量",
+    "属天的智慧",
+    "祷告的能力"
+  ],
+  "keyVerses": [
+    {"chapter": 1, "verse": 2},
+    {"chapter": 1, "verse": 5},
+    {"chapter": 1, "verse": 22},
+    {"chapter": 2, "verse": 17},
+    {"chapter": 2, "verse": 19},
+    {"chapter": 2, "verse": 26},
+    {"chapter": 3, "verse": 2},
+    {"chapter": 3, "verse": 5},
+    {"chapter": 3, "verse": 17},
+    {"chapter": 4, "verse": 7},
+    {"chapter": 4, "verse": 8},
+    {"chapter": 4, "verse": 10},
+    {"chapter": 5, "verse": 13},
+    {"chapter": 5, "verse": 16},
+    {"chapter": 5, "verse": 20}
   ],
   "verses": [
     {
