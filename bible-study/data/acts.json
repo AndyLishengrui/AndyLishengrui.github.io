@@ -1,6 +1,9 @@
 {
+  "book": "acts",
   "name": "使徒行传",
-  "englishName": "acts",
+  "englishName": "Acts",
+  "testament": "new",
+  "category": "historical_nt",
   "color": "#f39c12",
   "description": "记录早期教会的建立和使徒们传福音的历史，见证圣灵的大能",
   "chapters": 28,
