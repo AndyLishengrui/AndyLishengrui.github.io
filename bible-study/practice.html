@@ -721,17 +721,113 @@
                 align-items: center;
             }
             
+            /* 移动端经文显示优化 */
             .verse-content {
                 font-size: 16px;
-                padding: 15px;
+                padding: 12px 8px;
+                line-height: 1.8;
+                text-align: left;
             }
             
             .practice-area {
-                padding: 20px;
+                padding: 15px 8px;
+                margin: 10px 5px;
             }
             
             .settings-panel {
-                padding: 20px;
+                padding: 15px 10px;
+            }
+            
+            /* 经文组容器移动端优化 */
+            .verses-container {
+                padding: 5px;
+                margin: 5px 0;
+            }
+            
+            .verse-group {
+                margin: 8px 5px;
+                padding: 12px 10px;
+                border-radius: 8px;
+            }
+            
+            .verse-text {
+                font-size: 15px;
+                line-height: 1.7;
+                color: #333;
+                word-break: break-word;
+            }
+            
+            .verse-reference {
+                font-size: 11px;
+                padding: 2px 5px;
+                margin-bottom: 8px;
+            }
+            
+            /* 填空输入框移动端优化 */
+            .blank-input {
+                min-width: 60px;
+                font-size: 15px;
+                padding: 3px 5px;
+                margin: 0 2px;
+                border-bottom-width: 1px;
+            }
+            
+            /* 标题区域移动端优化 */
+            .header {
+                padding: 15px 10px;
+            }
+            
+            .back-button {
+                padding: 8px 15px;
+                font-size: 14px;
+                left: 10px;
+                top: 15px;
+            }
+            
+            .progress-info {
+                font-size: 14px;
+                margin-top: 5px;
+            }
+            
+            /* 按钮组移动端优化 */
+            .action-buttons .btn {
+                padding: 12px 20px;
+                font-size: 15px;
+                margin: 5px 0;
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            /* 书卷选择网格移动端优化 */
+            .books-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+                padding: 10px 5px;
+            }
+            
+            .book-card {
+                padding: 12px 8px;
+                min-height: 70px;
+            }
+            
+            .book-card-title {
+                font-size: 0.85em;
+            }
+            
+            .book-card-subtitle {
+                font-size: 0.65em;
+            }
+            
+            /* 章节选择移动端优化 */
+            .chapters-grid {
+                grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+                gap: 8px;
+                padding: 8px 5px;
+            }
+            
+            .chapter-btn {
+                padding: 8px 4px;
+                font-size: 14px;
             }
         }
     </style>
