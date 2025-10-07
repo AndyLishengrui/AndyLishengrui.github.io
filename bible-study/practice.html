@@ -254,6 +254,18 @@
             white-space: nowrap;
             z-index: 1000;
             pointer-events: none;
+            animation: tooltipFadeIn 0.15s ease-out;
+        }
+        
+        @keyframes tooltipFadeIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(3px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
         }
         
         @keyframes shake {
@@ -1802,23 +1814,11 @@
                 const fixedWidth = Math.max(baseWidth + 10, 50);
                 const placeholder = '□'.repeat(wordInfo.word.length);
                 
-                // 添加学习提示（仅鼠标悬浮）
-                let hint = '';
-                if (isTheologicalTerm(wordInfo.word)) {
-                    hint = '💡神学术语';
-                } else if (isVerbPhrase(wordInfo.word)) {
-                    hint = '🎭动作词';
-                } else if (wordInfo.word.length >= 4) {
-                    hint = '📝重要词组';
-                } else {
-                    hint = '✒️关键词';
-                }
-                
-                // 创建简洁的填空输入框（鼠标悬浮显示提示）
+                // 创建简洁的填空输入框（鼠标悬浮显示答案）
                 const inputHTML = `<input type="text" class="blank-input" 
                            data-answer="${wordInfo.word}" 
                            placeholder="${placeholder}" 
-                           title="提示：${wordInfo.word} ${hint}"
+                           title="✨:${wordInfo.word}"
                            style="width: ${fixedWidth}px; margin: 0 2px;">`;
                 
                 blankedVerse = blankedVerse.replace(wordInfo.word, inputHTML);

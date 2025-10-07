@@ -198,12 +198,13 @@
         .verse-zh {
             margin-bottom: 10px;
             font-size: 1.1em;
-            line-height: 2;
+            line-height: 1.2;
         }
         
         .verse-en {
             color: #666;
             font-style: italic;
+            transition: all 0.3s ease;
         }
         
         .sidebar {
@@ -682,7 +683,9 @@
                         <table class="verse-table">
                             <thead>
                                 <tr>
-                                    <th>经文 (和合本 + NIV)</th>
+                                    <th style="text-align: center;">
+                                        中文(英文<input type="checkbox" id="englishToggle" checked style="margin-left: 5px; cursor: pointer; vertical-align: middle; width: 1.2em; height: 1.2em; transform: translateY(2px);">)
+                                    </th>
                                     <th style="width: 50px;">✓</th>
                                 </tr>
                             </thead>
@@ -1514,24 +1517,12 @@
                 const fixedWidth = Math.max(baseWidth + 10, 50); // 最小50px，增加10px缓冲
                 const placeholder = '□'.repeat(wordInfo.word.length);
                 
-                // 添加学习提示
-                let hint = '';
-                if (isTheologicalTerm(wordInfo.word)) {
-                    hint = ' 💡神学术语';
-                } else if (isVerbPhrase(wordInfo.word)) {
-                    hint = ' 🎭动作词';
-                } else if (wordInfo.word.length >= 4) {
-                    hint = ' 📝重要词组';
-                } else {
-                    hint = ' ✏️关键词';
-                }
-                
-                const inputHTML = `<span class="blank-container" title="提示：${wordInfo.word}${hint}">
+                // 创建简洁的填空输入框（鼠标悬浮显示答案）
+                const inputHTML = `<span class="blank-container" title="✨:${wordInfo.word}">
                     <input type="text" class="fill-blank-input" 
                            data-answer="${wordInfo.word}" 
                            placeholder="${placeholder}" 
                            style="width: ${fixedWidth}px; min-width: ${fixedWidth}px; max-width: ${fixedWidth}px;">
-                    <span class="hint-icon" style="color: #3498db; font-size: 0.8em; margin-left: 2px; cursor: help;">${hint}</span>
                 </span>`;
                 
                 // 只替换第一个匹配的词语
@@ -1545,13 +1536,13 @@
             let modeInfo = '';
             let modeIcon = '';
             if (mode === 'preview') {
-                modeInfo = '预习模式';
+                modeInfo = '预习';
                 modeIcon = '📚';
             } else if (mode === 'review') {
-                modeInfo = '复习模式';
+                modeInfo = '复习';
                 modeIcon = '🔄';
             } else {
-                modeInfo = '金句练习';
+                modeInfo = '金句';
                 modeIcon = '✨';
             }
             
@@ -1855,6 +1846,32 @@
         
 
 
+        // 英文显示控制
+        function initEnglishToggle() {
+            const englishToggle = document.getElementById('englishToggle');
+            if (!englishToggle) return;
+            
+            englishToggle.addEventListener('change', function() {
+                const allEnglishVerses = document.querySelectorAll('.verse-en');
+                allEnglishVerses.forEach(verse => {
+                    verse.style.display = this.checked ? 'block' : 'none';
+                });
+                // 保存用户偏好
+                localStorage.setItem('showEnglish', this.checked);
+            });
+
+            // 恢复用户偏好
+            const showEnglish = localStorage.getItem('showEnglish');
+            if (showEnglish !== null) {
+                englishToggle.checked = showEnglish === 'true';
+                if (!englishToggle.checked) {
+                    document.querySelectorAll('.verse-en').forEach(verse => {
+                        verse.style.display = 'none';
+                    });
+                }
+            }
+        }
+
         // 模态框事件
         document.addEventListener('DOMContentLoaded', () => {
             const modal = document.getElementById('background-modal');
@@ -1864,6 +1881,9 @@
             window.onclick = (event) => {
                 if (event.target === modal) modal.style.display = 'none';
             };
+            
+            // 初始化英文显示控制
+            initEnglishToggle();
         });
     </script>
 </body>
