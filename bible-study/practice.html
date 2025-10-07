@@ -178,21 +178,21 @@
         }
         
         .verse-display {
-            font-size: 1.5em;
-            line-height: 2;
-            margin-bottom: 30px;
+            font-size: 1.8em;
+            line-height: 2.2;
+            margin-bottom: 20px;
             color: #333;
         }
         
         .blank-input {
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
             background: #f8f9fa;
-            font-size: 14px;
+            font-size: 18px;
             text-align: center;
-            width: 35px;
-            margin: 0 2px;
-            padding: 2px 4px;
+            min-width: 45px;
+            margin: 0 3px;
+            padding: 4px 6px;
             transition: all 0.2s ease;
         }
         
@@ -318,6 +318,23 @@
         .action-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .compact-btn {
+            padding: 12px 20px !important;
+            font-size: 1em !important;
+            margin: 0 5px !important;
+            flex: 1;
+            max-width: 120px;
+        }
+        
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: nowrap;
+            margin-top: 20px;
         }
         
         .progress-info {
@@ -543,14 +560,14 @@
         
         .verse-reference-inline {
             font-weight: bold;
-            color: #4facfe;
-            font-size: 13px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-size: 14px;
             margin-right: 8px;
-            font-style: italic;
-            background: #f8f9fa;
-            padding: 2px 6px;
-            border-radius: 4px;
-            border: 1px solid #e9ecef;
+            margin-bottom: 8px;
+            border: none;
             display: inline-block;
             vertical-align: top;
         }
@@ -585,17 +602,20 @@
         .verse-group {
             margin-bottom: 8px;
             page-break-inside: avoid;
-            background: white;
-            border: 1px solid #e9ecef;
-            border-radius: 6px;
-            padding: 10px 12px;
-            margin: 6px 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            padding: 15px 8px;
+            margin: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .verse-group:last-child {
+            border-bottom: none;
         }
         
         .verse-group:hover {
-            border-color: #4facfe;
-            box-shadow: 0 2px 8px rgba(79, 172, 254, 0.1);
+            background: rgba(79, 172, 254, 0.05);
         }
         
         .verse-reference {
@@ -611,9 +631,10 @@
         }
         
         .verse-text {
-            font-size: 14px;
-            line-height: 1.5;
+            font-size: 18px;
+            line-height: 2;
             color: #333;
+            padding: 5px 0;
         }
         
 
@@ -629,7 +650,7 @@
             border: none;
             border-bottom: 2px solid #ddd;
             background: #f8f9fa;
-            font-size: inherit;
+            font-size: 18px;
             border-radius: 3px;
             font-family: inherit;
             text-align: center;
@@ -925,14 +946,14 @@
                 <!-- 经文引用将在这里显示 -->
             </div>
             <div class="action-buttons">
-                <button class="action-btn" onclick="checkAllAnswers()">
-                    <i class="fas fa-check"></i> 检查答案
+                <button class="action-btn compact-btn" onclick="checkAllAnswers()">
+                    <i class="fas fa-check-circle"></i> 批改
                 </button>
-                <button class="action-btn" onclick="showHint()">
+                <button class="action-btn compact-btn" onclick="showHint()">
                     <i class="fas fa-lightbulb"></i> 提示
                 </button>
-                <button class="action-btn" onclick="showResults()">
-                    <i class="fas fa-trophy"></i> 查看成绩
+                <button class="action-btn compact-btn" onclick="showResults()">
+                    <i class="fas fa-paper-plane"></i> 提交
                 </button>
             </div>
         </div>
@@ -1346,8 +1367,8 @@
                 
                 console.log(`找到 ${chapterVerses.length} 节经文`);
                 
-                // 随机选择7节经文进行练习
-                currentVerses = shuffleArray(chapterVerses).slice(0, Math.min(7, chapterVerses.length));
+                // 随机选择5节经文进行练习（优化手机端体验）
+                currentVerses = shuffleArray(chapterVerses).slice(0, Math.min(5, chapterVerses.length));
                 currentVerseIndex = 0;
                 score = 0;
                 totalQuestions = currentVerses.length;
