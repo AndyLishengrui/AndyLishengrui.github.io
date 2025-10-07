@@ -158,9 +158,14 @@
         }
         
         .verse-table td {
-            padding: 15px;
+            padding: 15px 10px;
             border-bottom: 1px solid #eee;
             vertical-align: top;
+        }
+        
+        .verse-table td:last-child {
+            text-align: center;
+            padding: 15px 5px;
         }
         
         .verse-table tr:hover {
@@ -173,13 +178,27 @@
             min-width: 40px;
         }
         
+        .verse-number-inline {
+            display: inline-block;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        
         .verse-text {
-            line-height: 1.7;
+            line-height: 2;
+            font-size: 1.05em;
         }
         
         .verse-zh {
-            margin-bottom: 8px;
-            font-size: 1.05em;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            line-height: 2;
         }
         
         .verse-en {
@@ -663,9 +682,8 @@
                         <table class="verse-table">
                             <thead>
                                 <tr>
-                                    <th style="width: 60px;">节</th>
                                     <th>经文 (和合本 + NIV)</th>
-                                    <th style="width: 60px;">✓</th>
+                                    <th style="width: 50px;">✓</th>
                                 </tr>
                             </thead>
                             <tbody id="verses-tbody">
@@ -854,18 +872,19 @@
                 row.setAttribute('data-chapter', verse.chapter);
                 row.setAttribute('data-verse', verse.verse);
                 
-                // 经文节数
-                const verseCell = document.createElement('td');
-                verseCell.className = 'verse-number';
-                verseCell.textContent = verse.verse;
-                
-                // 经文内容
+                // 经文内容（包含序号）
                 const textCell = document.createElement('td');
                 textCell.className = 'verse-text';
                 
+                // 经文序号标签
+                const verseLabel = document.createElement('span');
+                verseLabel.className = 'verse-number-inline';
+                verseLabel.textContent = verse.verse;
+                
                 const zhDiv = document.createElement('div');
                 zhDiv.className = 'verse-zh';
-                zhDiv.textContent = verse.zh;
+                zhDiv.appendChild(verseLabel);
+                zhDiv.appendChild(document.createTextNode(' ' + verse.zh));
                 
                 const enDiv = document.createElement('div');
                 enDiv.className = 'verse-en';
@@ -897,7 +916,6 @@
                 
                 checkCell.appendChild(checkbox);
                 
-                row.appendChild(verseCell);
                 row.appendChild(textCell);
                 row.appendChild(checkCell);
                 tbody.appendChild(row);
