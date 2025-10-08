@@ -1279,24 +1279,24 @@
             
             // 计算问题级别的统计
             let totalQuestions = Object.keys(questionStats).length;
-            let correctCount = 0;
-            let partialCount = 0;
-            let incorrectCount = 0;
+            let questionCorrectCount = 0;
+            let questionPartialCount = 0;
+            let questionIncorrectCount = 0;
             
             Object.values(questionStats).forEach(stats => {
                 const accuracy = stats.total > 0 ? stats.correct / stats.total : 0;
                 if (accuracy >= 0.8) {
-                    correctCount++;
+                    questionCorrectCount++;
                 } else if (accuracy >= 0.4) {
-                    partialCount++;
+                    questionPartialCount++;
                 } else {
-                    incorrectCount++;
+                    questionIncorrectCount++;
                 }
             });
             
             // 计算得分
-            const score = totalQuestions > 0 
-                ? Math.round(((correctCount + partialCount * 0.6) / totalQuestions) * 100) 
+            const score = totalInputs > 0 
+                ? Math.round(((correctInputs + partialInputs * 0.6) / totalInputs) * 100) 
                 : 0;
             
             // 显示成绩模态框
@@ -1307,7 +1307,7 @@
             finalScoreEl.textContent = score + '分';
             
             // 根据分数显示不同的消息
-            if (totalQuestions === 0) {
+            if (totalInputs === 0) {
                 scoreMessageEl.textContent = '本节暂无可评分的题目';
             } else if (score >= 90) {
                 scoreMessageEl.textContent = '优秀！你掌握得非常好！';
@@ -1320,10 +1320,10 @@
             }
             
             scoreDetailsEl.innerHTML = `
-                <p>📊 总题数: ${totalQuestions} (共 ${totalInputs} 个填空)</p>
-                <p>✅ 完全正确: ${correctCount}</p>
-                <p>⚠️ 部分正确: ${partialCount}</p>
-                <p>❌ 需要改进: ${incorrectCount}</p>
+                <p>📊 总题数: ${totalQuestions} 题 | 总答案框: ${totalInputs} 个</p>
+                <p>📋 问题统计: ✅${questionCorrectCount} ⚠️${questionPartialCount} ❌${questionIncorrectCount}</p>
+                <p>📝 答案框统计: ✅${correctInputs} ⚠️${partialInputs} ❌${incorrectInputs}</p>
+                <p>🎯 成绩计算: 基于答案框正确率 (${Math.round((correctInputs/totalInputs)*100)}% 完全正确)</p>
             `;
             
             document.getElementById('scoreModal').classList.add('show');
