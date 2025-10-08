@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>富足与慷慨 - 第1节 | 建立根基</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            border-radius: 15px 15px 0 0;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .breadcrumb {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+
+        .section-title-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .section-label {
+            display: inline-block;
+            border: 2px solid #333;
+            padding: 8px 20px;
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .section-name {
+            font-size: 1.3em;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .question-block {
+            margin-bottom: 35px;
+            padding: 0;
+            background: transparent;
+            border: none;
+        }
+
+        .question-header {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .question-number {
+            flex-shrink: 0;
+            margin-right: 10px;
+            color: #333;
+            font-size: 1em;
+        }
+
+        .question-text {
+            font-size: 1em;
+            color: #333;
+            font-weight: normal;
+            line-height: 1.6;
+        }
+
+        .answers-area {
+            margin-left: 30px;
+        }
+
+        .reference-with-blank {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .reference-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .reference-text {
+            color: #667eea;
+            font-size: 0.95em;
+            font-weight: 500;
+        }
+
+        .hint-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-hint-partial, .btn-hint-full {
+            padding: 4px 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.85em;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: white;
+        }
+
+        .btn-hint-partial {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+        }
+
+        .btn-hint-partial:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(243, 156, 18, 0.3);
+        }
+
+        .btn-hint-full {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+        }
+
+        .btn-hint-full:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(52, 152, 219, 0.3);
+        }
+
+        .answer-input {
+            width: 100%;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 1em;
+            font-family: inherit;
+            resize: vertical;
+            outline: none;
+            transition: all 0.3s;
+            line-height: 1.6;
+        }
+
+        .answer-input:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .answer-input.correct {
+            border-color: #27ae60;
+            background: rgba(39, 174, 96, 0.05);
+        }
+
+        .answer-input.incorrect {
+            border-color: #e74c3c;
+            background: rgba(231, 76, 60, 0.05);
+        }
+
+        .answer-input.partial {
+            border-color: #f39c12;
+            background: rgba(243, 156, 18, 0.05);
+        }
+
+        .answer-feedback {
+            margin-top: 8px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            display: none;
+        }
+
+        .answer-feedback.show {
+            display: block;
+        }
+
+        .answer-feedback.correct {
+            background: #d4edda;
+            color: #155724;
+            border-left: 4px solid #27ae60;
+        }
+
+        .answer-feedback.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .answer-feedback.partial {
+            background: #fff3cd;
+            color: #856404;
+            border-left: 4px solid #f39c12;
+        }
+
+        .standard-answer {
+            display: none;
+            margin-top: 10px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 0 5px 5px 0;
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .standard-answer.show {
+            display: block;
+        }
+
+        .standard-answer strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+
+        .application-section {
+            margin-top: 40px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .application-section h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .application-prompt {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        .application-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            font-family: inherit;
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .application-input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .action-bar {
+            background: white;
+            padding: 25px 40px;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .score-display {
+            font-size: 1.1em;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .score-number {
+            color: #667eea;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 500;
+        }
+
+        .btn-check {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-check:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-submit {
+            background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+            color: white;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(39, 174, 96, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        .navigation {
+            background: white;
+            padding: 20px 40px;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .nav-btn {
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .prev-btn, .next-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .prev-btn:hover, .next-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .home-btn {
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .home-btn:hover {
+            background: #e0e0e0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header, .content, .action-bar {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .navigation {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .nav-btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .action-bar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hint-buttons {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            display: none;
+            z-index: 1000;
+            max-width: 300px;
+        }
+
+        .toast.show {
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(400px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .score-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        .score-modal.show {
+            display: flex;
+        }
+
+        .score-modal-content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 400px;
+            animation: scaleIn 0.3s ease;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0.7);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .score-modal-content h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .final-score {
+            font-size: 4em;
+            color: #667eea;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .score-message {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .score-details {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .score-details p {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .btn-close-modal {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .btn-close-modal:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="index.html">建立根基</a> / 
+                第10课: 富足与慷慨
+            </div>
+            <h1>富足与慷慨</h1>
+            <div class="section-title-box">
+                <span class="section-label">第1节</span>
+                <span class="section-name">财富的危险</span>
+            </div>
+        </header>
+
+        <div class="content">
+            
+            <div class="question-block" data-question-id="1">
+                <div class="question-header">
+                    <span class="question-number">1.</span>
+                    <span class="question-text">主耶稣在撒种的比喻中提及，什么东西可能挤住神的道并使其</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <div class="reference-header">
+                        <span class="reference-text">可 4:18,19</span>
+                        <div class="hint-buttons">
+                            <button class="btn-hint-partial" onclick="showPartialHint('1', '可 4:18,19')" title="渐进提示">💡 提示</button>
+                            <button class="btn-hint-full" onclick="showFullHint('1', '可 4:18,19')" title="显示完整答案">👁️ 答案</button>
+                        </div>
+                    </div>
+                    <textarea class="answer-input" 
+                           rows="2"
+                           data-question="1" 
+                           data-reference="可 4:18,19"
+                           data-has-answer="true"
+                           data-hint-progress="0"
+                           placeholder="请填写经文内容..."></textarea>
+                    <div class="answer-feedback" data-ref="可 4:18,19"></div>
+                    <div class="standard-answer" data-ref="可 4:18,19"></div>
+                </div>
+                
+                </div>
+            </div>
+        
+            <div class="question-block" data-question-id="2">
+                <div class="question-header">
+                    <span class="question-number">2.</span>
+                    <span class="question-text">人在哪些方面会受钱财的迷惑？</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <textarea class="answer-input full-width" 
+                           rows="3"
+                           data-question="2" 
+                           placeholder="请写下你的答案..."></textarea>
+                </div>
+            
+                </div>
+            </div>
+        
+            <div class="question-block" data-question-id="3">
+                <div class="question-header">
+                    <span class="question-number">3.</span>
+                    <span class="question-text">有哪些世上的思虑可能挤住神的道并使其结不出果子来？</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <div class="reference-header">
+                        <span class="reference-text">太 6:25</span>
+                        <div class="hint-buttons">
+                            <button class="btn-hint-partial" onclick="showPartialHint('3', '太 6:25')" title="渐进提示">💡 提示</button>
+                            <button class="btn-hint-full" onclick="showFullHint('3', '太 6:25')" title="显示完整答案">👁️ 答案</button>
+                        </div>
+                    </div>
+                    <textarea class="answer-input" 
+                           rows="2"
+                           data-question="3" 
+                           data-reference="太 6:25"
+                           data-has-answer="true"
+                           data-hint-progress="0"
+                           placeholder="请填写经文内容..."></textarea>
+                    <div class="answer-feedback" data-ref="太 6:25"></div>
+                    <div class="standard-answer" data-ref="太 6:25"></div>
+                </div>
+                
+                <div class="reference-with-blank">
+                    <div class="reference-header">
+                        <span class="reference-text">太 6:28</span>
+                        <div class="hint-buttons">
+                            <button class="btn-hint-partial" onclick="showPartialHint('3', '太 6:28')" title="渐进提示">💡 提示</button>
+                            <button class="btn-hint-full" onclick="showFullHint('3', '太 6:28')" title="显示完整答案">👁️ 答案</button>
+                        </div>
+                    </div>
+                    <textarea class="answer-input" 
+                           rows="2"
+                           data-question="3" 
+                           data-reference="太 6:28"
+                           data-has-answer="true"
+                           data-hint-progress="0"
+                           placeholder="请填写经文内容..."></textarea>
+                    <div class="answer-feedback" data-ref="太 6:28"></div>
+                    <div class="standard-answer" data-ref="太 6:28"></div>
+                </div>
+                
+                <div class="reference-with-blank">
+                    <div class="reference-header">
+                        <span class="reference-text">太 6:31</span>
+                        <div class="hint-buttons">
+                            <button class="btn-hint-partial" onclick="showPartialHint('3', '太 6:31')" title="渐进提示">💡 提示</button>
+                            <button class="btn-hint-full" onclick="showFullHint('3', '太 6:31')" title="显示完整答案">👁️ 答案</button>
+                        </div>
+                    </div>
+                    <textarea class="answer-input" 
+                           rows="2"
+                           data-question="3" 
+                           data-reference="太 6:31"
+                           data-has-answer="true"
+                           data-hint-progress="0"
+                           placeholder="请填写经文内容..."></textarea>
+                    <div class="answer-feedback" data-ref="太 6:31"></div>
+                    <div class="standard-answer" data-ref="太 6:31"></div>
+                </div>
+                
+                <div class="reference-with-blank">
+                    <div class="reference-header">
+                        <span class="reference-text">太 6:34</span>
+                        <div class="hint-buttons">
+                            <button class="btn-hint-partial" onclick="showPartialHint('3', '太 6:34')" title="渐进提示">💡 提示</button>
+                            <button class="btn-hint-full" onclick="showFullHint('3', '太 6:34')" title="显示完整答案">👁️ 答案</button>
+                        </div>
+                    </div>
+                    <textarea class="answer-input" 
+                           rows="2"
+                           data-question="3" 
+                           data-reference="太 6:34"
+                           data-has-answer="true"
+                           data-hint-progress="0"
+                           placeholder="请填写经文内容..."></textarea>
+                    <div class="answer-feedback" data-ref="太 6:34"></div>
+                    <div class="standard-answer" data-ref="太 6:34"></div>
+                </div>
+                
+                </div>
+            </div>
+        
+            <div class="question-block" data-question-id="4">
+                <div class="question-header">
+                    <span class="question-number">4.</span>
+                    <span class="question-text">你们不能又事奉神，又是事奉_________________。路16:13</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <textarea class="answer-input full-width" 
+                           rows="3"
+                           data-question="4" 
+                           placeholder="请写下你的答案..."></textarea>
+                </div>
+            
+                </div>
+            </div>
+        
+            <div class="question-block" data-question-id="5">
+                <div class="question-header">
+                    <span class="question-number">5.</span>
+                    <span class="question-text">一心想发财的人会落得个什么下场？</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <div class="reference-header">
+                        <span class="reference-text">提前 6:9,10</span>
+                        <div class="hint-buttons">
+                            <button class="btn-hint-partial" onclick="showPartialHint('5', '提前 6:9,10')" title="渐进提示">💡 提示</button>
+                            <button class="btn-hint-full" onclick="showFullHint('5', '提前 6:9,10')" title="显示完整答案">👁️ 答案</button>
+                        </div>
+                    </div>
+                    <textarea class="answer-input" 
+                           rows="2"
+                           data-question="5" 
+                           data-reference="提前 6:9,10"
+                           data-has-answer="true"
+                           data-hint-progress="0"
+                           placeholder="请填写经文内容..."></textarea>
+                    <div class="answer-feedback" data-ref="提前 6:9,10"></div>
+                    <div class="standard-answer" data-ref="提前 6:9,10"></div>
+                </div>
+                
+                </div>
+            </div>
+        
+            <div class="question-block" data-question-id="6">
+                <div class="question-header">
+                    <span class="question-number">6.</span>
+                    <span class="question-text">你也想发财吗？这样的渴望有什么潜在的危险？</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <textarea class="answer-input full-width" 
+                           rows="3"
+                           data-question="6" 
+                           placeholder="请写下你的答案..."></textarea>
+                </div>
+            
+                </div>
+            </div>
+        
+            <div class="question-block" data-question-id="7">
+                <div class="question-header">
+                    <span class="question-number">7.</span>
+                    <span class="question-text">什么是万恶之根？</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <div class="reference-header">
+                        <span class="reference-text">提前 6:10</span>
+                        <div class="hint-buttons">
+                            <button class="btn-hint-partial" onclick="showPartialHint('7', '提前 6:10')" title="渐进提示">💡 提示</button>
+                            <button class="btn-hint-full" onclick="showFullHint('7', '提前 6:10')" title="显示完整答案">👁️ 答案</button>
+                        </div>
+                    </div>
+                    <textarea class="answer-input" 
+                           rows="2"
+                           data-question="7" 
+                           data-reference="提前 6:10"
+                           data-has-answer="true"
+                           data-hint-progress="0"
+                           placeholder="请填写经文内容..."></textarea>
+                    <div class="answer-feedback" data-ref="提前 6:10"></div>
+                    <div class="standard-answer" data-ref="提前 6:10"></div>
+                </div>
+                
+                </div>
+            </div>
+        
+            <div class="question-block" data-question-id="8">
+                <div class="question-header">
+                    <span class="question-number">8.</span>
+                    <span class="question-text">什么能救我们脱离死亡，是公义还是钱财？</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <div class="reference-header">
+                        <span class="reference-text">箴 11:4</span>
+                        <div class="hint-buttons">
+                            <button class="btn-hint-partial" onclick="showPartialHint('8', '箴 11:4')" title="渐进提示">💡 提示</button>
+                            <button class="btn-hint-full" onclick="showFullHint('8', '箴 11:4')" title="显示完整答案">👁️ 答案</button>
+                        </div>
+                    </div>
+                    <textarea class="answer-input" 
+                           rows="3"
+                           data-question="8" 
+                           data-reference="箴 11:4"
+                           data-has-answer="false"
+                           data-hint-progress="0"
+                           placeholder="暂无标准答案"></textarea>
+                    <div class="answer-feedback" data-ref="箴 11:4"></div>
+                    <div class="standard-answer" data-ref="箴 11:4"></div>
+                </div>
+                
+                </div>
+            </div>
+        
+            <div class="question-block" data-question-id="9">
+                <div class="question-header">
+                    <span class="question-number">9.</span>
+                    <span class="question-text">倚靠钱财的人会有什么结果？</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <div class="reference-header">
+                        <span class="reference-text">箴 11:28</span>
+                        <div class="hint-buttons">
+                            <button class="btn-hint-partial" onclick="showPartialHint('9', '箴 11:28')" title="渐进提示">💡 提示</button>
+                            <button class="btn-hint-full" onclick="showFullHint('9', '箴 11:28')" title="显示完整答案">👁️ 答案</button>
+                        </div>
+                    </div>
+                    <textarea class="answer-input" 
+                           rows="3"
+                           data-question="9" 
+                           data-reference="箴 11:28"
+                           data-has-answer="false"
+                           data-hint-progress="0"
+                           placeholder="暂无标准答案"></textarea>
+                    <div class="answer-feedback" data-ref="箴 11:28"></div>
+                    <div class="standard-answer" data-ref="箴 11:28"></div>
+                </div>
+                
+                </div>
+            </div>
+        
+            <div class="question-block" data-question-id="10">
+                <div class="question-header">
+                    <span class="question-number">10.</span>
+                    <span class="question-text">钱财能持久吗？</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <div class="reference-header">
+                        <span class="reference-text">箴 23:4,5</span>
+                        <div class="hint-buttons">
+                            <button class="btn-hint-partial" onclick="showPartialHint('10', '箴 23:4,5')" title="渐进提示">💡 提示</button>
+                            <button class="btn-hint-full" onclick="showFullHint('10', '箴 23:4,5')" title="显示完整答案">👁️ 答案</button>
+                        </div>
+                    </div>
+                    <textarea class="answer-input" 
+                           rows="3"
+                           data-question="10" 
+                           data-reference="箴 23:4,5"
+                           data-has-answer="false"
+                           data-hint-progress="0"
+                           placeholder="暂无标准答案"></textarea>
+                    <div class="answer-feedback" data-ref="箴 23:4,5"></div>
+                    <div class="standard-answer" data-ref="箴 23:4,5"></div>
+                </div>
+                
+                </div>
+            </div>
+        
+            <div class="question-block" data-question-id="11">
+                <div class="question-header">
+                    <span class="question-number">11.</span>
+                    <span class="question-text">我们应当提防什么？为什么？</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <div class="reference-header">
+                        <span class="reference-text">路 12:15</span>
+                        <div class="hint-buttons">
+                            <button class="btn-hint-partial" onclick="showPartialHint('11', '路 12:15')" title="渐进提示">💡 提示</button>
+                            <button class="btn-hint-full" onclick="showFullHint('11', '路 12:15')" title="显示完整答案">👁️ 答案</button>
+                        </div>
+                    </div>
+                    <textarea class="answer-input" 
+                           rows="2"
+                           data-question="11" 
+                           data-reference="路 12:15"
+                           data-has-answer="true"
+                           data-hint-progress="0"
+                           placeholder="请填写经文内容..."></textarea>
+                    <div class="answer-feedback" data-ref="路 12:15"></div>
+                    <div class="standard-answer" data-ref="路 12:15"></div>
+                </div>
+                
+                </div>
+            </div>
+        
+            <div class="question-block" data-question-id="11">
+                <div class="question-header">
+                    <span class="question-number">11.</span>
+                    <span class="question-text">在“无知财主的比喻”中，耶稣想告诉门徒什么？</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <div class="reference-header">
+                        <span class="reference-text">路 12:16-21</span>
+                        <div class="hint-buttons">
+                            <button class="btn-hint-partial" onclick="showPartialHint('11', '路 12:16-21')" title="渐进提示">💡 提示</button>
+                            <button class="btn-hint-full" onclick="showFullHint('11', '路 12:16-21')" title="显示完整答案">👁️ 答案</button>
+                        </div>
+                    </div>
+                    <textarea class="answer-input" 
+                           rows="4"
+                           data-question="11" 
+                           data-reference="路 12:16-21"
+                           data-has-answer="true"
+                           data-hint-progress="0"
+                           placeholder="请填写经文内容..."></textarea>
+                    <div class="answer-feedback" data-ref="路 12:16-21"></div>
+                    <div class="standard-answer" data-ref="路 12:16-21"></div>
+                </div>
+                
+                </div>
+            </div>
+        
+            
+        <div class="application-section">
+            <h3>个人应用</h3>
+            <p class="application-prompt">个人应用：你认为钱财是有危险的吗？你是否很想发财？本课的教导对你有什么提醒？</p>
+            <textarea class="application-input" 
+                      placeholder="写下你的思考、感受和具体的行动计划..."
+                      rows="6"></textarea>
+        </div>
+    
+        </div>
+
+        <div class="action-bar">
+            <div class="score-display">
+                完成度: <span class="score-number" id="progressDisplay">0%</span>
+            </div>
+            <div>
+                <!-- <button class="btn btn-secondary" onclick="clearAnswers()">🗑️ 清空</button> -->
+                <!-- <button class="btn btn-secondary" onclick="saveProgress()">💾 保存</button> -->
+                <button class="btn btn-check" onclick="checkAnswers()">✓ 检查答案</button>
+                <button class="btn btn-submit" onclick="submitAnswers()">📝 提交成绩</button>
+            </div>
+        </div>
+
+        <div class="navigation">
+            
+            <a href="foundation_L9_S5.html" 
+               class="nav-btn prev-btn">
+                ← 上一节
+            </a>
+        
+        <a href="index.html" class="nav-btn home-btn">
+            返回目录
+        </a>
+    
+            <a href="foundation_L10_S2.html" 
+               class="nav-btn next-btn">
+                下一节 →
+            </a>
+        
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+    
+    <div class="score-modal" id="scoreModal">
+        <div class="score-modal-content">
+            <h2>🎉 成绩报告</h2>
+            <div class="final-score" id="finalScore">-</div>
+            <div class="score-message" id="scoreMessage"></div>
+            <div class="score-details" id="scoreDetails"></div>
+            <button class="btn-close-modal" onclick="closeScoreModal()">确定</button>
+        </div>
+    </div>
+
+    <script>
+        // 存储标准答案
+        let standardAnswers = {};
+        
+        // 页面加载时初始化
+        window.addEventListener('load', () => {
+            loadStandardAnswers();
+            loadProgress();
+            updateProgress();
+        });
+
+        // 自动保存
+        document.querySelectorAll('.answer-input, .application-input').forEach(input => {
+            input.addEventListener('input', () => {
+                updateProgress();
+            });
+        });
+
+        // 加载标准答案
+        async function loadStandardAnswers() {
+            try {
+                const response = await fetch('data/answers/foundation_L10_S1.json');
+                if (!response.ok) {
+                    console.warn('未找到答案数据文件');
+                    return;
+                }
+                
+                const answerData = await response.json();
+                standardAnswers = answerData.answers || {};
+                console.log('标准答案已加载:', Object.keys(standardAnswers).length, '个');
+            } catch (e) {
+                console.error('加载标准答案失败:', e);
+            }
+        }
+
+        // 显示完整提示（标准答案）
+        function showFullHint(questionId, ref) {
+            const answerKey = `q${questionId}_${ref}`;
+            const answerInfo = standardAnswers[answerKey];
+            
+            if (!answerInfo || !answerInfo.has_data) {
+                showToast('暂无标准答案');
+                return;
+            }
+            
+            const standardAnswerDiv = document.querySelector(`.standard-answer[data-ref="${ref}"]`);
+            if (standardAnswerDiv) {
+                if (standardAnswerDiv.classList.contains('show')) {
+                    // 隐藏答案
+                    standardAnswerDiv.classList.remove('show');
+                } else {
+                    // 显示答案
+                    standardAnswerDiv.innerHTML = `<strong>📖 标准答案:</strong> ${answerInfo.text}`;
+                    standardAnswerDiv.classList.add('show');
+                }
+            }
+        }
+
+        // 渐进提示（逐步填充答案）
+        function showPartialHint(questionId, ref) {
+            const answerKey = `q${questionId}_${ref}`;
+            const answerInfo = standardAnswers[answerKey];
+            
+            if (!answerInfo || !answerInfo.has_data) {
+                showToast('暂无标准答案');
+                return;
+            }
+            
+            const input = document.querySelector(`textarea[data-question="${questionId}"][data-reference="${ref}"]`);
+            if (!input) return;
+            
+            const standardText = answerInfo.text;
+            const currentProgress = parseInt(input.dataset.hintProgress || '0');
+            
+            // 每次填充20%的内容
+            const fillPercentage = Math.min(currentProgress + 20, 100);
+            const fillLength = Math.floor((standardText.length * fillPercentage) / 100);
+            const filledText = standardText.substring(0, fillLength);
+            
+            input.value = filledText;
+            input.dataset.hintProgress = fillPercentage;
+            
+            if (fillPercentage >= 100) {
+                showToast('💡 答案已全部填充');
+            } else {
+                showToast(`💡 已填充 ${fillPercentage}% 的答案`);
+            }
+            
+            updateProgress();
+        }
+
+        // 清空所有答案
+        function clearAnswers() {
+            if (!confirm('确定要清空所有答案吗？')) {
+                return;
+            }
+            
+            document.querySelectorAll('.answer-input').forEach(input => {
+                input.value = '';
+                input.classList.remove('correct', 'incorrect', 'partial');
+                input.dataset.hintProgress = '0';
+            });
+            
+            document.querySelector('.application-input').value = '';
+            
+            document.querySelectorAll('.answer-feedback').forEach(feedback => {
+                feedback.textContent = '';
+                feedback.className = 'answer-feedback';
+            });
+            
+            document.querySelectorAll('.standard-answer').forEach(div => {
+                div.classList.remove('show');
+            });
+            
+            updateProgress();
+            showToast('✓ 答案已清空');
+        }
+
+        // 检查答案
+        async function checkAnswers() {
+            await loadStandardAnswers();
+            
+            let checkedCount = 0;
+            
+            document.querySelectorAll('.answer-input').forEach(input => {
+                const ref = input.dataset.reference;
+                const hasAnswer = input.dataset.hasAnswer === 'true';
+                
+                if (!ref || !hasAnswer) {
+                    return;
+                }
+                
+                const questionId = input.dataset.question;
+                const answerKey = `q${questionId}_${ref}`;
+                const answerInfo = standardAnswers[answerKey];
+                
+                if (!answerInfo || !answerInfo.has_data) {
+                    return;
+                }
+                
+                const userAnswer = input.value.trim();
+                const standardAnswer = answerInfo.text || '';
+                
+                // 清除之前的标记
+                input.classList.remove('correct', 'incorrect', 'partial');
+                
+                const feedbackDiv = input.parentElement.querySelector('.answer-feedback');
+                
+                // 相似度检查
+                const similarity = calculateSimilarity(userAnswer, standardAnswer);
+                
+                if (similarity >= 0.85) {
+                    input.classList.add('correct');
+                    feedbackDiv.textContent = '✓ 正确！';
+                    feedbackDiv.className = 'answer-feedback correct show';
+                    checkedCount++;
+                } else if (similarity >= 0.6) {
+                    input.classList.add('partial');
+                    feedbackDiv.textContent = '△ 部分正确，请对照标准答案修改';
+                    feedbackDiv.className = 'answer-feedback partial show';
+                } else {
+                    input.classList.add('incorrect');
+                    feedbackDiv.textContent = '✗ 不正确，请对照标准答案修改';
+                    feedbackDiv.className = 'answer-feedback incorrect show';
+                }
+            });
+            
+            if (checkedCount > 0) {
+                showToast(`✓ 已检查完成`);
+            } else {
+                showToast('ℹ️ 请先填写答案');
+            }
+        }
+
+        // 提交成绩
+        async function submitAnswers() {
+            await loadStandardAnswers();
+            
+            let totalQuestions = 0;
+            let correctCount = 0;
+            let partialCount = 0;
+            let incorrectCount = 0;
+            
+            document.querySelectorAll('.answer-input').forEach(input => {
+                const ref = input.dataset.reference;
+                const hasAnswer = input.dataset.hasAnswer === 'true';
+                
+                if (!ref || !hasAnswer) {
+                    return;
+                }
+                
+                const questionId = input.dataset.question;
+                const answerKey = `q${questionId}_${ref}`;
+                const answerInfo = standardAnswers[answerKey];
+                
+                if (!answerInfo || !answerInfo.has_data) {
+                    return;
+                }
+                
+                totalQuestions++;
+                
+                const userAnswer = input.value.trim();
+                const standardAnswer = answerInfo.text || '';
+                
+                const similarity = calculateSimilarity(userAnswer, standardAnswer);
+                
+                if (similarity >= 0.85) {
+                    correctCount++;
+                } else if (similarity >= 0.6) {
+                    partialCount++;
+                } else {
+                    incorrectCount++;
+                }
+            });
+            
+            // 计算得分
+            const score = totalQuestions > 0 
+                ? Math.round(((correctCount + partialCount * 0.6) / totalQuestions) * 100) 
+                : 0;
+            
+            // 显示成绩模态框
+            const finalScoreEl = document.getElementById('finalScore');
+            const scoreMessageEl = document.getElementById('scoreMessage');
+            const scoreDetailsEl = document.getElementById('scoreDetails');
+            
+            finalScoreEl.textContent = score + '分';
+            
+            // 根据分数显示不同的消息
+            if (totalQuestions === 0) {
+                scoreMessageEl.textContent = '本节暂无可评分的题目';
+            } else if (score >= 90) {
+                scoreMessageEl.textContent = '优秀！你掌握得非常好！';
+            } else if (score >= 75) {
+                scoreMessageEl.textContent = '良好！继续加油！';
+            } else if (score >= 60) {
+                scoreMessageEl.textContent = '及格！建议再复习一下';
+            } else {
+                scoreMessageEl.textContent = '继续努力！多读几遍经文吧';
+            }
+            
+            scoreDetailsEl.innerHTML = `
+                <p>📊 总题数: ${totalQuestions}</p>
+                <p>✅ 完全正确: ${correctCount}</p>
+                <p>⚠️ 部分正确: ${partialCount}</p>
+                <p>❌ 需要改进: ${incorrectCount}</p>
+            `;
+            
+            document.getElementById('scoreModal').classList.add('show');
+            
+            // 保存进度
+            saveProgress();
+        }
+
+        function closeScoreModal() {
+            document.getElementById('scoreModal').classList.remove('show');
+        }
+
+        // 计算文本相似度（LCS算法）
+        function calculateSimilarity(text1, text2) {
+            const clean1 = text1.replace(/[\s\.,;:!?，。；：！？、""''（）【】《》]/g, '');
+            const clean2 = text2.replace(/[\s\.,;:!?，。；：！？、""''（）【】《》]/g, '');
+            
+            if (!clean1 || !clean2) return 0;
+            
+            const dp = Array(clean1.length + 1).fill(null).map(() => 
+                Array(clean2.length + 1).fill(0)
+            );
+            
+            for (let i = 1; i <= clean1.length; i++) {
+                for (let j = 1; j <= clean2.length; j++) {
+                    if (clean1[i-1] === clean2[j-1]) {
+                        dp[i][j] = dp[i-1][j-1] + 1;
+                    } else {
+                        dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
+                    }
+                }
+            }
+            
+            const lcs = dp[clean1.length][clean2.length];
+            return lcs / Math.max(clean1.length, clean2.length);
+        }
+
+        function loadProgress() {
+            const key = 'foundation_L10_S1';
+            const saved = localStorage.getItem(key);
+            if (saved) {
+                try {
+                    const data = JSON.parse(saved);
+                    document.querySelectorAll('.answer-input').forEach(input => {
+                        const q = input.dataset.question;
+                        const ref = input.dataset.reference || 'main';
+                        const savedAnswer = data.answers?.[`q${q}_${ref}`];
+                        if (savedAnswer) {
+                            input.value = savedAnswer;
+                        }
+                    });
+                    const appInput = document.querySelector('.application-input');
+                    if (appInput && data.application) {
+                        appInput.value = data.application;
+                    }
+                } catch (e) {
+                    console.error('加载进度失败:', e);
+                }
+            }
+        }
+
+        function saveProgress() {
+            const key = 'foundation_L10_S1';
+            const data = {
+                answers: {},
+                application: '',
+                timestamp: new Date().toISOString()
+            };
+            
+            document.querySelectorAll('.answer-input').forEach(input => {
+                const q = input.dataset.question;
+                const ref = input.dataset.reference || 'main';
+                data.answers[`q${q}_${ref}`] = input.value;
+            });
+            
+            const appInput = document.querySelector('.application-input');
+            if (appInput) {
+                data.application = appInput.value;
+            }
+            
+            localStorage.setItem(key, JSON.stringify(data));
+            showToast('✓ 进度已保存');
+        }
+
+        function updateProgress() {
+            let totalFields = 0;
+            let filledFields = 0;
+            
+            document.querySelectorAll('.answer-input').forEach(input => {
+                totalFields++;
+                if (input.value.trim()) {
+                    filledFields++;
+                }
+            });
+            
+            const appInput = document.querySelector('.application-input');
+            if (appInput) {
+                totalFields++;
+                if (appInput.value.trim()) {
+                    filledFields++;
+                }
+            }
+            
+            const percentage = totalFields > 0 ? Math.round((filledFields / totalFields) * 100) : 0;
+            document.getElementById('progressDisplay').textContent = percentage + '%';
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
