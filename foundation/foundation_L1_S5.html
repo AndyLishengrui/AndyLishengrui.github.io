@@ -1113,14 +1113,16 @@
         }
 
 
-        // 提交成绩// 提交成绩
+        // 提交成绩
         async function submitAnswers() {
             await loadStandardAnswers();
             
-            let totalQuestions = 0;
-            let correctCount = 0;
-            let partialCount = 0;
-            let incorrectCount = 0;
+            // 按问题ID统计，避免重复计数
+            const questionStats = {};
+            let totalInputs = 0;
+            let correctInputs = 0;
+            let partialInputs = 0;
+            let incorrectInputs = 0;
             
             document.querySelectorAll('.answer-input').forEach(input => {
                 const ref = input.dataset.reference;
@@ -1138,7 +1140,18 @@
                     return;
                 }
                 
-                totalQuestions++;
+                totalInputs++;
+                
+                // 初始化问题统计
+                if (!questionStats[questionId]) {
+                    questionStats[questionId] = {
+                        total: 0,
+                        correct: 0,
+                        partial: 0,
+                        incorrect: 0
+                    };
+                }
+                questionStats[questionId].total++;
                 
                 const userAnswer = input.value.trim();
                 const standardAnswer = answerInfo.text || '';
@@ -1146,8 +1159,28 @@
                 const similarity = calculateSimilarity(userAnswer, standardAnswer);
                 
                 if (similarity >= 0.85) {
-                    correctCount++;
+                    correctInputs++;
+                    questionStats[questionId].correct++;
                 } else if (similarity >= 0.6) {
+                    partialInputs++;
+                    questionStats[questionId].partial++;
+                } else {
+                    incorrectInputs++;
+                    questionStats[questionId].incorrect++;
+                }
+            });
+            
+            // 计算问题级别的统计
+            let totalQuestions = Object.keys(questionStats).length;
+            let correctCount = 0;
+            let partialCount = 0;
+            let incorrectCount = 0;
+            
+            Object.values(questionStats).forEach(stats => {
+                const accuracy = stats.total > 0 ? stats.correct / stats.total : 0;
+                if (accuracy >= 0.8) {
+                    correctCount++;
+                } else if (accuracy >= 0.4) {
                     partialCount++;
                 } else {
                     incorrectCount++;
@@ -1180,13 +1213,14 @@
             }
             
             scoreDetailsEl.innerHTML = `
-                <p>📊 总题数: ${totalQuestions}</p>
+                <p>📊 总题数: ${totalQuestions} (共 ${totalInputs} 个填空)</p>
                 <p>✅ 完全正确: ${correctCount}</p>
                 <p>⚠️ 部分正确: ${partialCount}</p>
                 <p>❌ 需要改进: ${incorrectCount}</p>
             `;
             
             document.getElementById('scoreModal').classList.add('show');
+            
             
             // 保存进度
             saveProgress();
