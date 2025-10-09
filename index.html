@@ -1,83 +1,330 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>5DG</title>
-<link rel="stylesheet" href="cs/style.css" type="text/css" />
-<link rel="icon" type="image/vnd.microsoft.icon/" href="cs/images/hat.ico" /> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第5维空间 - 5DG</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', 'SimSun', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 40px 20px;
+            margin-bottom: 30px;
+        }
+
+        .hero-section {
+            margin-bottom: 30px;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            color: #4a5568;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #718096;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: #2d3748;
+            font-weight: 500;
+        }
+
+        .navigation {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .nav-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #4a5568;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .nav-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.5s;
+        }
+
+        .nav-card:hover::before {
+            left: 100%;
+        }
+
+        .nav-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .nav-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .nav-desc {
+            font-size: 0.9rem;
+            color: #718096;
+        }
+
+        .team-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 40px 20px;
+            margin: 30px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #4a5568;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 25px;
+            background: rgba(247, 250, 252, 0.8);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: scale(1.02);
+            background: rgba(247, 250, 252, 1);
+        }
+
+        .member-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        .member-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+
+        .member-role {
+            font-size: 1rem;
+            color: #718096;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            margin-top: 40px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            header {
+                padding: 30px 15px;
+            }
+
+            .title {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .navigation {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 15px;
+                margin: 30px 0;
+            }
+
+            .nav-card {
+                padding: 20px 15px;
+            }
+
+            .nav-icon {
+                font-size: 2.5rem;
+                margin-bottom: 10px;
+            }
+
+            .nav-title {
+                font-size: 1.1rem;
+            }
+
+            .nav-desc {
+                font-size: 0.8rem;
+            }
+
+            .team-section {
+                padding: 30px 15px;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .member-avatar {
+                width: 100px;
+                height: 100px;
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 1.6rem;
+            }
+
+            .navigation {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-card {
+                padding: 25px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-	<div class="container_16 clear_fix">
-		<div id="header" class="grid_16">
-			<img src="cs/images/pirates.jpg" alt=""/> 
-			<img src="cs/images/op.jpg" alt=""/>
-			<div id="title">
-				<h2>Andy的第五维度</h2>
-				I am that I AM.
-				<h5>Andy:Engineer of Souls</h5>
-			</div>
-			<div class="grid_3 omega clear_fix">
-				<a href="index.html" class="navlink" onmouseover="this.style.backgroundImage='url(cs/images/index_hov.jpg)'" onmouseout="this.style.backgroundImage='url(cs/images/index.jpg)'" style="background: url('cs/images/index.jpg') no-repeat #fff;">
-                    <span class="linkname">5DG</span>
-					<br>
-				</a>
-			</div>
-	<!--		<div class="grid_3 omega lear_fix">
-				<a href="cs/Jesus001.html" class="navlink" onmouseover="this.style.backgroundImage='url(cs/images/cs001_hov.jpg)'" onmouseout="this.style.backgroundImage='url(cs/images/cs001.jpg)'" style="background: url('cs/images/cs001.jpg') no-repeat #fff;">
-					<span class="linkname">随笔</span>
-					<br>
-				</a>
-			</div>-->
-			<div class="grid_3 omega clear_fix">
-				<a href="bible-study/" class="navlink" onmouseover="this.style.backgroundImage='url(cs/images/xuedao_hov.jpg)'" onmouseout="this.style.backgroundImage='url(cs/images/xuedao.jpg)'" style="background: url('cs/images/xuedao.jpg') no-repeat #fff;">
-					<span class="linkname">学道</span>
-					<br>
-				</a>
-			</div>
-			<div class="grid_3 omega clear_fix">
-				<a href="foundation/" class="navlink" onmouseover="this.style.backgroundImage='url(cs/images/cs001_hov.jpg)'" onmouseout="this.style.backgroundImage='url(cs/images/cs001.jpg)'" style="background: url('cs/images/cs001.jpg') no-repeat #fff;">
-					<span class="linkname">根基</span>
-					<br>
-				</a>
-			</div>
-			<div class="grid_3 omega clear_fix">
-				<a href="cs/CS001.html" class="navlink" onmouseover="this.style.backgroundImage='url(cs/images/cs002_hov.jpg)'" onmouseout="this.style.backgroundImage='url(cs/images/cs002.jpg)'" style="background: url('cs/images/cs002.jpg') no-repeat #fff;">
-					<span class="linkname">编程</span>
-					<br>
-				</a>
-			</div>
-		</div>
-		<div id="content" class="grid_16">
-		<!--	<h4>人生的首要意义：荣耀上帝、以神为乐、直到永远 </h4>-->
-			<br>
-			<div class="member grid_8 alpha">
-				<img src="cs/images/arui.jpg" alt=""/>
-				<img src="cs/images/lufei.jpg" style="position: absolute; top: 0px; left: 0px;" class="imagehover" alt=""/>
-				<div class="memberDetail">
-                    <b>Andy</b><br>
-				</div>
-				<div class="links">
-				</div>
-			</div>
+    <div class="container">
+        <header>
+            <div class="hero-section">
+                <h1 class="title">第5维空间</h1>
+                <p class="subtitle">I am that I AM.</p>
+                <p class="tagline">5DG团队：灵魂工程师的数字空间</p>
+            </div>
+        </header>
 
-			<div class="member grid_8 alpha">
-				<img src="cs/images/jing.jpg" alt=""/>
-				<img src="cs/images/qiaoba.jpg" style="position: absolute; top: 0px; left: 0px;" class="imagehover" alt=""/>
-				<div class="memberDetail">
-                    <b>Designer:Cai_Jingjing</b><br>
-					xmu 05csd<br>
-				</div>
-				<div class="links">
-				</div>
-			</div>
-				<div class="links">
+        <nav class="navigation">
+            <a href="index.html" class="nav-card">
+                <span class="nav-icon">🏠</span>
+                <div class="nav-title">5DG</div>
+                <div class="nav-desc">主页导航</div>
+            </a>
 
-				</div>
-			</div>
-		</div>
+            <a href="bible-study/" class="nav-card">
+                <span class="nav-icon">📖</span>
+                <div class="nav-title">学道</div>
+                <div class="nav-desc">圣经研究</div>
+            </a>
 
-                        
-                <div id="footer" class="grid_16">
-		</div>
+            <a href="foundation/" class="nav-card">
+                <span class="nav-icon">🏗️</span>
+                <div class="nav-title">根基</div>
+                <div class="nav-desc">基础课程</div>
+            </a>
+
+            <a href="cs/CS001.html" class="nav-card">
+                <span class="nav-icon">💻</span>
+                <div class="nav-title">编程</div>
+                <div class="nav-desc">技术分享</div>
+            </a>
+        </nav>
+
+        <section class="team-section">
+            <h2 class="section-title">设计团队</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">CP</div>
+                    <div class="member-name">CodePilot</div>
+                    <div class="member-role">AI编程助手</div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">CS</div>
+                    <div class="member-name">Claude Sonnet</div>
+                    <div class="member-role">AI设计师</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 第5维空间 - 5DG团队 | 荣耀上帝，以神为乐，直到永远</p>
+        </footer>
+    </div>
 </body>
-
+</html>
