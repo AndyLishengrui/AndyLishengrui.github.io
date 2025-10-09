@@ -275,6 +275,21 @@
         @media (max-width: 768px) {
             body {
                 padding: 10px;
+            /* 优化手机端填空的视觉呈现 */
+            .answers-area {
+                margin-left: 10px; /* 从30px减少到10px */
+            }
+            
+            .reference-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            
+            .hint-buttons {
+                width: 100%;
+                justify-content: flex-start;
+            }
             }
 
             header, .content, .action-bar {

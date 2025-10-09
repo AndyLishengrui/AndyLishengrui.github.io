@@ -393,6 +393,21 @@
         @media (max-width: 768px) {
             body {
                 padding: 10px;
+            /* 优化手机端填空的视觉呈现 */
+            .answers-area {
+                margin-left: 10px; /* 从30px减少到10px */
+            }
+            
+            .reference-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            
+            .hint-buttons {
+                width: 100%;
+                justify-content: flex-start;
+            }
             }
 
             header, .content, .action-bar {
@@ -570,7 +585,7 @@
                     </div>
                     <textarea class="answer-input" data-question="1" data-reference="雅 1:22" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="雅 1:22"></div>
                     <div class="standard-answer" data-ref="雅 1:22"></div>
                 </div>
@@ -595,7 +610,7 @@
                     </div>
                     <textarea class="answer-input" data-question="2" data-reference="雅 1:23,24" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="雅 1:23,24"></div>
                     <div class="standard-answer" data-ref="雅 1:23,24"></div>
                 </div>
@@ -620,7 +635,7 @@
                     </div>
                     <textarea class="answer-input" data-question="3" data-reference="雅 1:25" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="雅 1:25"></div>
                     <div class="standard-answer" data-ref="雅 1:25"></div>
                 </div>
@@ -664,7 +679,7 @@
                     </div>
                     <textarea class="answer-input" data-question="4" data-reference="请阅读路加福音 6:46-49" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="请阅读路加福音 6:46-49"></div>
                     <div class="standard-answer" data-ref="请阅读路加福音 6:46-49"></div>
                 </div>
@@ -824,7 +839,7 @@
                     </div>
                     <textarea class="answer-input" data-question="9" data-reference="路加福音 5:27,28" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="路加福音 5:27,28"></div>
                     <div class="standard-answer" data-ref="路加福音 5:27,28"></div>
                 </div>
@@ -839,7 +854,7 @@
                     </div>
                     <textarea class="answer-input" data-question="9" data-reference="路加福音 9:23,24" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="路加福音 9:23,24"></div>
                     <div class="standard-answer" data-ref="路加福音 9:23,24"></div>
                 </div>
@@ -854,7 +869,7 @@
                     </div>
                     <textarea class="answer-input" data-question="9" data-reference="哥林多前书 11:1" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="哥林多前书 11:1"></div>
                     <div class="standard-answer" data-ref="哥林多前书 11:1"></div>
                 </div>

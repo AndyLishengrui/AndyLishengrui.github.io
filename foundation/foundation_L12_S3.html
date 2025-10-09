@@ -258,9 +258,17 @@
 
         .application-section h3 {
             color: #333;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-size: 2.1em;
+            letter-spacing: 0.02em;
+            font-family: 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', Arial, sans-serif;
             font-size: 1.1em;
             font-weight: 600;
+            font-weight: bold;
+            font-size: 1.4em;
+            color: #444;
+            font-family: 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', Arial, sans-serif;
         }
 
         .application-prompt {
@@ -422,6 +430,22 @@
                 flex-direction: column;
                 gap: 5px;
             }
+
+            /* 优化手机端填空的视觉呈现 */
+            .answers-area {
+                margin-left: 10px; /* 从30px减少到10px */
+            }
+            
+            .reference-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            
+            .hint-buttons {
+                width: 100%;
+                justify-content: flex-start;
+            }
         }
 
         .toast {
@@ -495,10 +519,12 @@
         }
 
         .final-score {
-            font-size: 4em;
-            color: #667eea;
+            font-size: 1.08em;
+            color: #222;
             font-weight: bold;
-            margin: 20px 0;
+            line-height: 1.7;
+            font-family: 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', Arial, sans-serif;
+            letter-spacing: 0.01em;
         }
 
         .score-message {
@@ -570,7 +596,7 @@
                     </div>
                     <textarea class="answer-input" data-question="1" data-reference="来 9:27" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="来 9:27"></div>
                     <div class="standard-answer" data-ref="来 9:27"></div>
                 </div>
@@ -643,7 +669,7 @@
                     </div>
                     <textarea class="answer-input" data-question="3" data-reference="阅读马太福音 25:31-46" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="阅读马太福音 25:31-46"></div>
                     <div class="standard-answer" data-ref="阅读马太福音 25:31-46"></div>
                 </div>
@@ -878,7 +904,7 @@
                     </div>
                     <textarea class="answer-input" data-question="6" data-reference="启 20:15" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="启 20:15"></div>
                     <div class="standard-answer" data-ref="启 20:15"></div>
                 </div>
@@ -893,7 +919,7 @@
                     </div>
                     <textarea class="answer-input" data-question="6" data-reference="启 21:8" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="启 21:8"></div>
                     <div class="standard-answer" data-ref="启 21:8"></div>
                 </div>
@@ -918,7 +944,7 @@
                     </div>
                     <textarea class="answer-input" data-question="7" data-reference="申 10:12" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="申 10:12"></div>
                     <div class="standard-answer" data-ref="申 10:12"></div>
                 </div>
@@ -933,7 +959,7 @@
                     </div>
                     <textarea class="answer-input" data-question="7" data-reference="传 12:13" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="传 12:13"></div>
                     <div class="standard-answer" data-ref="传 12:13"></div>
                 </div>
@@ -948,7 +974,7 @@
                     </div>
                     <textarea class="answer-input" data-question="7" data-reference="赛 8:13" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="赛 8:13"></div>
                     <div class="standard-answer" data-ref="赛 8:13"></div>
                 </div>
@@ -1076,6 +1102,7 @@
             loadStandardAnswers();
             loadProgress();
             updateProgress();
+            initializeTextareaAutoResize();
         });
 
         // 自动保存
@@ -1084,6 +1111,46 @@
                 updateProgress();
             });
         });
+
+        // 初始化自动调整文本框高度功能
+        function initializeTextareaAutoResize() {
+            document.querySelectorAll('.answer-input').forEach(textarea => {
+                // 设置初始高度
+                autoResizeTextarea(textarea);
+                
+                // 监听输入事件
+                textarea.addEventListener('input', function() {
+                    autoResizeTextarea(this);
+                });
+                
+                // 监听粘贴事件
+                textarea.addEventListener('paste', function() {
+                    setTimeout(() => autoResizeTextarea(this), 0);
+                });
+            });
+        }
+
+        // 自动调整文本框高度的函数
+        function autoResizeTextarea(textarea) {
+            // 重置高度以正确计算新高度
+            textarea.style.height = 'auto';
+            
+            // 计算合适的高度
+            const minHeight = 60; // 最小高度
+            const maxHeight = 300; // 最大高度
+            const scrollHeight = textarea.scrollHeight;
+            
+            // 设置新高度，确保在最小和最大高度之间
+            const newHeight = Math.max(minHeight, Math.min(maxHeight, scrollHeight));
+            textarea.style.height = newHeight + 'px';
+            
+            // 如果达到最大高度，显示滚动条
+            if (scrollHeight > maxHeight) {
+                textarea.style.overflowY = 'auto';
+            } else {
+                textarea.style.overflowY = 'hidden';
+            }
+        }
 
         // 加载标准答案
         async function loadStandardAnswers() {

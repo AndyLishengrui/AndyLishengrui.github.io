@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
-"""
-动态调整文本框高度脚本
-根据答案内容的实际长度来设置合适的文本框行数，优化页面布局
-"""
+# -*- coding: utf-8 -*-
 
-import json
 import os
 import glob
 import re

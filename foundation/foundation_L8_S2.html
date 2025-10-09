@@ -393,6 +393,21 @@
         @media (max-width: 768px) {
             body {
                 padding: 10px;
+            /* 优化手机端填空的视觉呈现 */
+            .answers-area {
+                margin-left: 10px; /* 从30px减少到10px */
+            }
+            
+            .reference-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            
+            .hint-buttons {
+                width: 100%;
+                justify-content: flex-start;
+            }
             }
 
             header, .content, .action-bar {
@@ -657,7 +672,7 @@
                     </div>
                     <textarea class="answer-input" data-question="4" data-reference="雅 4:3" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="雅 4:3"></div>
                     <div class="standard-answer" data-ref="雅 4:3"></div>
                 </div>
@@ -711,7 +726,7 @@
                     </div>
                     <textarea class="answer-input" data-question="6" data-reference="诗 66:18,19" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="诗 66:18,19"></div>
                     <div class="standard-answer" data-ref="诗 66:18,19"></div>
                 </div>
@@ -726,7 +741,7 @@
                     </div>
                     <textarea class="answer-input" data-question="6" data-reference="雅 1:6-8" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="雅 1:6-8"></div>
                     <div class="standard-answer" data-ref="雅 1:6-8"></div>
                 </div>
@@ -741,7 +756,7 @@
                     </div>
                     <textarea class="answer-input" data-question="6" data-reference="彼前 3:7" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="彼前 3:7"></div>
                     <div class="standard-answer" data-ref="彼前 3:7"></div>
                 </div>
@@ -882,7 +897,7 @@
                     </div>
                     <textarea class="answer-input" data-question="11" data-reference="约壹 5:14,15" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="约壹 5:14,15"></div>
                     <div class="standard-answer" data-ref="约壹 5:14,15"></div>
                 </div>
@@ -994,7 +1009,7 @@
                     </div>
                     <textarea class="answer-input" data-question="15" data-reference="雅 5:17,18" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="雅 5:17,18"></div>
                     <div class="standard-answer" data-ref="雅 5:17,18"></div>
                 </div>

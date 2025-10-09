@@ -393,6 +393,21 @@
         @media (max-width: 768px) {
             body {
                 padding: 10px;
+            /* 优化手机端填空的视觉呈现 */
+            .answers-area {
+                margin-left: 10px; /* 从30px减少到10px */
+            }
+            
+            .reference-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            
+            .hint-buttons {
+                width: 100%;
+                justify-content: flex-start;
+            }
             }
 
             header, .content, .action-bar {
@@ -734,7 +749,7 @@
                     </div>
                     <textarea class="answer-input" data-question="6" data-reference="请阅读使徒行传 2:42-47" data-has-answer="true"
                            data-hint-progress="0"
-                           placeholder="暂无标准答案"></textarea>
+                           placeholder="请填写经文内容..."></textarea>
                     <div class="answer-feedback" data-ref="请阅读使徒行传 2:42-47"></div>
                     <div class="standard-answer" data-ref="请阅读使徒行传 2:42-47"></div>
                 </div>
