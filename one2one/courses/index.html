@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一对一门徒训练课程 | 课程目录</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.15);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 2px solid #f0f0f0;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            color: #888;
+            margin-top: 5px;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .course-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .course-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .course-title {
+            flex: 1;
+        }
+
+        .course-title h2 {
+            color: #333;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .course-subtitle {
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        .course-sections {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .section-link {
+            display: inline-block;
+            padding: 6px 12px;
+            background: #f5f5f5;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.9em;
+            transition: all 0.3s;
+        }
+
+        .section-link:hover {
+            background: #667eea;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .progress-info {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        footer {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .courses-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 一对一门徒训练课程</h1>
+            <p class="subtitle">系统化的门徒培训，帮助信徒建立坚实的信仰根基</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">课程</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">56</div>
+                    <div class="stat-label">总节数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">互动练习</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="courses-grid">
+            <!-- 第1课 -->
+            <div class="course-card" onclick="window.location.href='one2one_C1_S1.html'">
+                <div class="course-header">
+                    <div class="course-number">1</div>
+                    <div class="course-title">
+                        <h2>新起点</h2>
+                        <div class="course-subtitle">得救 · 14节</div>
+                    </div>
+                </div>
+                <div class="course-sections">
+                    <a href="one2one_C1_S1.html" class="section-link" onclick="event.stopPropagation()">第1节</a>
+                    <a href="one2one_C1_S2.html" class="section-link" onclick="event.stopPropagation()">第2节</a>
+                    <a href="one2one_C1_S3.html" class="section-link" onclick="event.stopPropagation()">第3节</a>
+                    <a href="one2one_C1_S4.html" class="section-link" onclick="event.stopPropagation()">第4节</a>
+                    <a href="one2one_C1_S5.html" class="section-link" onclick="event.stopPropagation()">第5节</a>
+                    <a href="one2one_C1_S6.html" class="section-link" onclick="event.stopPropagation()">第6节</a>
+                    <a href="one2one_C1_S7.html" class="section-link" onclick="event.stopPropagation()">第7节</a>
+                    <a href="one2one_C1_S8.html" class="section-link" onclick="event.stopPropagation()">第8节</a>
+                    <a href="one2one_C1_S9.html" class="section-link" onclick="event.stopPropagation()">第9节</a>
+                    <a href="one2one_C1_S10.html" class="section-link" onclick="event.stopPropagation()">第10节</a>
+                    <a href="one2one_C1_S11.html" class="section-link" onclick="event.stopPropagation()">第11节</a>
+                    <a href="one2one_C1_S12.html" class="section-link" onclick="event.stopPropagation()">第12节</a>
+                    <a href="one2one_C1_S13.html" class="section-link" onclick="event.stopPropagation()">第13节</a>
+                    <a href="one2one_C1_S14.html" class="section-link" onclick="event.stopPropagation()">第14节</a>
+                </div>
+                <div class="progress-info">📖 认识救恩的真理与意义</div>
+            </div>
+
+            <!-- 第2课 -->
+            <div class="course-card" onclick="window.location.href='one2one_C2_S1.html'">
+                <div class="course-header">
+                    <div class="course-number">2</div>
+                    <div class="course-title">
+                        <h2>新主人</h2>
+                        <div class="course-subtitle">主权 · 8节</div>
+                    </div>
+                </div>
+                <div class="course-sections">
+                    <a href="one2one_C2_S1.html" class="section-link" onclick="event.stopPropagation()">第1节</a>
+                    <a href="one2one_C2_S2.html" class="section-link" onclick="event.stopPropagation()">第2节</a>
+                    <a href="one2one_C2_S3.html" class="section-link" onclick="event.stopPropagation()">第3节</a>
+                    <a href="one2one_C2_S4.html" class="section-link" onclick="event.stopPropagation()">第4节</a>
+                    <a href="one2one_C2_S5.html" class="section-link" onclick="event.stopPropagation()">第5节</a>
+                    <a href="one2one_C2_S6.html" class="section-link" onclick="event.stopPropagation()">第6节</a>
+                    <a href="one2one_C2_S7.html" class="section-link" onclick="event.stopPropagation()">第7节</a>
+                    <a href="one2one_C2_S8.html" class="section-link" onclick="event.stopPropagation()">第8节</a>
+                </div>
+                <div class="progress-info">👑 认识基督的主权与顺服</div>
+            </div>
+
+            <!-- 第3课 -->
+            <div class="course-card" onclick="window.location.href='one2one_C3_S1.html'">
+                <div class="course-header">
+                    <div class="course-number">3</div>
+                    <div class="course-title">
+                        <h2>新方向</h2>
+                        <div class="course-subtitle">悔改 · 9节</div>
+                    </div>
+                </div>
+                <div class="course-sections">
+                    <a href="one2one_C3_S1.html" class="section-link" onclick="event.stopPropagation()">第1节</a>
+                    <a href="one2one_C3_S2.html" class="section-link" onclick="event.stopPropagation()">第2节</a>
+                    <a href="one2one_C3_S3.html" class="section-link" onclick="event.stopPropagation()">第3节</a>
+                    <a href="one2one_C3_S4.html" class="section-link" onclick="event.stopPropagation()">第4节</a>
+                    <a href="one2one_C3_S5.html" class="section-link" onclick="event.stopPropagation()">第5节</a>
+                    <a href="one2one_C3_S6.html" class="section-link" onclick="event.stopPropagation()">第6节</a>
+                    <a href="one2one_C3_S7.html" class="section-link" onclick="event.stopPropagation()">第7节</a>
+                    <a href="one2one_C3_S8.html" class="section-link" onclick="event.stopPropagation()">第8节</a>
+                    <a href="one2one_C3_S9.html" class="section-link" onclick="event.stopPropagation()">第9节</a>
+                </div>
+                <div class="progress-info">🔄 学习悔改与生命更新</div>
+            </div>
+
+            <!-- 第4课 -->
+            <div class="course-card" onclick="window.location.href='one2one_C4_S1.html'">
+                <div class="course-header">
+                    <div class="course-number">4</div>
+                    <div class="course-title">
+                        <h2>新生命</h2>
+                        <div class="course-subtitle">洗礼 · 9节</div>
+                    </div>
+                </div>
+                <div class="course-sections">
+                    <a href="one2one_C4_S1.html" class="section-link" onclick="event.stopPropagation()">第1节</a>
+                    <a href="one2one_C4_S2.html" class="section-link" onclick="event.stopPropagation()">第2节</a>
+                    <a href="one2one_C4_S3.html" class="section-link" onclick="event.stopPropagation()">第3节</a>
+                    <a href="one2one_C4_S4.html" class="section-link" onclick="event.stopPropagation()">第4节</a>
+                    <a href="one2one_C4_S5.html" class="section-link" onclick="event.stopPropagation()">第5节</a>
+                    <a href="one2one_C4_S6.html" class="section-link" onclick="event.stopPropagation()">第6节</a>
+                    <a href="one2one_C4_S7.html" class="section-link" onclick="event.stopPropagation()">第7节</a>
+                    <a href="one2one_C4_S8.html" class="section-link" onclick="event.stopPropagation()">第8节</a>
+                    <a href="one2one_C4_S9.html" class="section-link" onclick="event.stopPropagation()">第9节</a>
+                </div>
+                <div class="progress-info">💧 认识洗礼的意义与实践</div>
+            </div>
+
+            <!-- 第5课 -->
+            <div class="course-card" onclick="window.location.href='one2one_C5_S1.html'">
+                <div class="course-header">
+                    <div class="course-number">5</div>
+                    <div class="course-title">
+                        <h2>新操练</h2>
+                        <div class="course-subtitle">灵修 · 9节</div>
+                    </div>
+                </div>
+                <div class="course-sections">
+                    <a href="one2one_C5_S1.html" class="section-link" onclick="event.stopPropagation()">第1节</a>
+                    <a href="one2one_C5_S2.html" class="section-link" onclick="event.stopPropagation()">第2节</a>
+                    <a href="one2one_C5_S3.html" class="section-link" onclick="event.stopPropagation()">第3节</a>
+                    <a href="one2one_C5_S4.html" class="section-link" onclick="event.stopPropagation()">第4节</a>
+                    <a href="one2one_C5_S5.html" class="section-link" onclick="event.stopPropagation()">第5节</a>
+                    <a href="one2one_C5_S6.html" class="section-link" onclick="event.stopPropagation()">第6节</a>
+                    <a href="one2one_C5_S7.html" class="section-link" onclick="event.stopPropagation()">第7节</a>
+                    <a href="one2one_C5_S8.html" class="section-link" onclick="event.stopPropagation()">第8节</a>
+                    <a href="one2one_C5_S9.html" class="section-link" onclick="event.stopPropagation()">第9节</a>
+                </div>
+                <div class="progress-info">🙏 建立每日灵修习惯</div>
+            </div>
+
+            <!-- 第6课 -->
+            <div class="course-card" onclick="window.location.href='one2one_C6_S1.html'">
+                <div class="course-header">
+                    <div class="course-number">6</div>
+                    <div class="course-title">
+                        <h2>新关系</h2>
+                        <div class="course-subtitle">教会 · 5节</div>
+                    </div>
+                </div>
+                <div class="course-sections">
+                    <a href="one2one_C6_S1.html" class="section-link" onclick="event.stopPropagation()">第1节</a>
+                    <a href="one2one_C6_S2.html" class="section-link" onclick="event.stopPropagation()">第2节</a>
+                    <a href="one2one_C6_S3.html" class="section-link" onclick="event.stopPropagation()">第3节</a>
+                    <a href="one2one_C6_S4.html" class="section-link" onclick="event.stopPropagation()">第4节</a>
+                    <a href="one2one_C6_S5.html" class="section-link" onclick="event.stopPropagation()">第5节</a>
+                </div>
+                <div class="progress-info">⛪ 认识教会与肢体关系</div>
+            </div>
+
+            <!-- 第7课 -->
+            <div class="course-card" onclick="window.location.href='one2one_C7_S1.html'">
+                <div class="course-header">
+                    <div class="course-number">7</div>
+                    <div class="course-title">
+                        <h2>新使命</h2>
+                        <div class="course-subtitle">带门徒 · 2节</div>
+                    </div>
+                </div>
+                <div class="course-sections">
+                    <a href="one2one_C7_S1.html" class="section-link" onclick="event.stopPropagation()">第1节</a>
+                    <a href="one2one_C7_S2.html" class="section-link" onclick="event.stopPropagation()">第2节</a>
+                </div>
+                <div class="progress-info">🌱 学习带领门徒的使命</div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2024 一对一门徒训练课程 · 所有页面支持和合本与新译本经文对照</p>
+            <p style="margin-top: 10px; font-size: 0.9em; color: #999;">
+                💾 自动保存进度 · 📊 即时评分 · 💡 渐进提示
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
