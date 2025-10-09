@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>建立根基 - 12课系统性门徒培训</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+
+        .intro {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .intro h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .lessons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .lesson-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .lesson-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .lesson-title {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .lesson-meta {
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .lesson-meta span {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .lesson-meta span::before {
+            content: '📖';
+            margin-right: 5px;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1.1em;
+            }
+
+            .lessons-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .lesson-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>建立根基</h1>
+            <p>12课系统性门徒培训课程</p>
+        </header>
+
+        <div class="intro">
+            <h2>课程简介</h2>
+            <p>想要成为基督精兵，就得先建立根基。耶稣说："凡到我这里来，听见我的话就去行的，他像一个人盖房子，深深的挖地，把根基安在磐石上；到发大水的时候，水冲那房子，房子总不能摇动，因为根基立在磐石上。"（路 6:47-48）</p>
+            <p>《建立根基》透过提问帮助你在圣经中去找答案，让你享受自己在圣经中发现真理的乐趣。圣经强调，理解之后的应用（去行）才决定了基础的质量。因此，每小节之后的个人应用是很重要的。</p>
+            <p>愿主祝福你在生命中打下坚实的圣经根基！</p>
+        </div>
+
+        <div class="lessons-grid" id="lessonsGrid">
+            <!-- 课程卡片将通过JavaScript动态生成 -->
+        </div>
+
+        <footer>
+            <p>© 2025 建立根基课程 | 愿神祝福你的学习</p>
+        </footer>
+    </div>
+
+    <script>
+        // 从JSON文件加载课程数据
+        fetch('data/foundation_course.json')
+            .then(response => response.json())
+            .then(data => {
+                const lessonsGrid = document.getElementById('lessonsGrid');
+                
+                // 合并重复的课程（按ID去重，保留第一个）
+                const uniqueLessons = [];
+                const seenIds = new Set();
+                
+                data.lessons.forEach(lesson => {
+                    if (!seenIds.has(lesson.id)) {
+                        seenIds.add(lesson.id);
+                        uniqueLessons.push(lesson);
+                    }
+                });
+                
+                // 按ID排序
+                uniqueLessons.sort((a, b) => a.id - b.id);
+                
+                // 生成课程卡片
+                uniqueLessons.forEach(lesson => {
+                    const totalQuestions = lesson.sections.reduce((sum, section) => 
+                        sum + section.questions.length, 0
+                    );
+                    
+                    const card = document.createElement('a');
+                    // 链接到该课的第一节
+                    card.href = `foundation_L${lesson.id}_S1.html`;
+                    card.className = 'lesson-card';
+                    card.innerHTML = `
+                        <div class="lesson-number">${lesson.id}</div>
+                        <div class="lesson-title">${lesson.title}</div>
+                        <div class="lesson-meta">
+                            <span>${lesson.sections.length} 节</span>
+                            <span>${totalQuestions} 个问题</span>
+                        </div>
+                    `;
+                    lessonsGrid.appendChild(card);
+                });
+            })
+            .catch(error => {
+                console.error('加载课程数据失败:', error);
+                document.getElementById('lessonsGrid').innerHTML = 
+                    '<p style="color: white; text-align: center;">加载课程数据失败，请刷新页面重试。</p>';
+            });
+    </script>
+</body>
+</html>

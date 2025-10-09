@@ -1,0 +1,1074 @@
+{
+  "book": "galatians",
+  "name": "加拉太书",
+  "englishName": "Galatians",
+  "testament": "new",
+  "category": "pauline_epistles",
+  "chapters": 6,
+  "color": "#e67e22",
+  "description": "保罗为维护福音真理，反对律法主义而写",
+  "keyThemes": [
+    "因信称义",
+    "福音的自由",
+    "圣灵的果子",
+    "属灵的争战"
+  ],
+  "verses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "zh": "作使徒的保罗（不是由于人，也不是藉着人，乃是藉着耶稣基督，与叫他从死里复活的父神），",
+      "en": "Paul, an apostle—sent not from men nor by a man, but by Jesus Christ and God the Father, who raised him from the dead—"
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "zh": "和一切与我同在的众弟兄，写信给加拉太的各教会。",
+      "en": "and all the brothers and sisters with me, To the churches in Galatia:"
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "zh": "愿恩惠、平安从父神与我们的主耶稣基督归与你们！",
+      "en": "Grace and peace to you from God our Father and the Lord Jesus Christ,"
+    },
+    {
+      "chapter": 1,
+      "verse": 4,
+      "zh": "基督照我们父神的旨意，为我们的罪舍己，要救我们脱离这罪恶的世代。",
+      "en": "who gave himself for our sins to rescue us from the present evil age, according to the will of our God and Father,"
+    },
+    {
+      "chapter": 1,
+      "verse": 5,
+      "zh": "但愿荣耀归于神，直到永永远远。阿们！",
+      "en": "to whom be glory for ever and ever. Amen."
+    },
+    {
+      "chapter": 1,
+      "verse": 6,
+      "zh": "我希奇你们这么快离开那藉着基督之恩召你们的，去从别的福音。",
+      "en": "I am astonished that you are so quickly deserting the one who called you to live in the grace of Christ and are turning to a different gospel—"
+    },
+    {
+      "chapter": 1,
+      "verse": 7,
+      "zh": "那并不是福音，不过有些人搅扰你们，要把基督的福音更改了。",
+      "en": "which is really no gospel at all. Evidently some people are throwing you into confusion and are trying to pervert the gospel of Christ."
+    },
+    {
+      "chapter": 1,
+      "verse": 8,
+      "zh": "但无论是我们，是天上来的使者，若传福音给你们，与我们所传给你们的不同，他就应当被咒诅。",
+      "en": "But even if we or an angel from heaven should preach a gospel other than the one we preached to you, let them be under God’s curse!"
+    },
+    {
+      "chapter": 1,
+      "verse": 9,
+      "zh": "我们已经说了，现在又说，若有人传福音给你们，与你们所领受的不同，他就应当被咒诅。",
+      "en": "As we have already said, so now I say again: If anybody is preaching to you a gospel other than what you accepted, let them be under God’s curse!"
+    },
+    {
+      "chapter": 1,
+      "verse": 10,
+      "zh": "我现在是要得人的心呢？还是要得神的心呢？我岂是讨人的喜欢吗？若仍旧讨人的喜欢，我就不是基督的仆人了。",
+      "en": "Am I now trying to win the approval of human beings, or of God? Or am I trying to please people? If I were still trying to please people, I would not be a servant of Christ."
+    },
+    {
+      "chapter": 1,
+      "verse": 11,
+      "zh": "弟兄们，我告诉你们，我素来所传的福音，不是出于人的意思。",
+      "en": "I want you to know, brothers and sisters, that the gospel I preached is not of human origin."
+    },
+    {
+      "chapter": 1,
+      "verse": 12,
+      "zh": "因为我不是从人领受的，也不是人教导我的，乃是从耶稣基督启示来的。",
+      "en": "I did not receive it from any man, nor was I taught it; rather, I received it by revelation from Jesus Christ."
+    },
+    {
+      "chapter": 1,
+      "verse": 13,
+      "zh": "你们听见我从前在犹太教中所行的事，怎样极力逼迫残害神的教会。",
+      "en": "For you have heard of my previous way of life in Judaism, how intensely I persecuted the church of God and tried to destroy it."
+    },
+    {
+      "chapter": 1,
+      "verse": 14,
+      "zh": "我又在犹太教中，比我本国许多同岁的人更有长进，为我祖宗的遗传更加热心。",
+      "en": "I was advancing in Judaism beyond many of my own age among my people and was extremely zealous for the traditions of my fathers."
+    },
+    {
+      "chapter": 1,
+      "verse": 15,
+      "zh": "然而，那把我从母腹里分别出来，又施恩召我的神，",
+      "en": "But when God, who set me apart from my mother’s womb and called me by his grace, was pleased"
+    },
+    {
+      "chapter": 1,
+      "verse": 16,
+      "zh": "既然乐意将他儿子启示在我心里，叫我把他传在外邦人中，我就没有与属血气的人商量，",
+      "en": "to reveal his Son in me so that I might preach him among the Gentiles, my immediate response was not to consult any human being."
+    },
+    {
+      "chapter": 1,
+      "verse": 17,
+      "zh": "也没有上耶路撒冷去见那些比我先作使徒的，惟独往亚拉伯去，后又回到大马士革。",
+      "en": "I did not go up to Jerusalem to see those who were apostles before I was, but I went into Arabia. Later I returned to Damascus."
+    },
+    {
+      "chapter": 1,
+      "verse": 18,
+      "zh": "过了三年，才上耶路撒冷去见矶法，和他同住了十五天。",
+      "en": "Then after three years, I went up to Jerusalem to get acquainted with Cephas and stayed with him fifteen days."
+    },
+    {
+      "chapter": 1,
+      "verse": 19,
+      "zh": "至于别的使徒，除了主的兄弟雅各，我都没有看见。",
+      "en": "I saw none of the other apostles—only James, the Lord’s brother."
+    },
+    {
+      "chapter": 1,
+      "verse": 20,
+      "zh": "我写给你们的，不是谎话，这是我在神面前说的。",
+      "en": "I assure you before God that what I am writing you is no lie."
+    },
+    {
+      "chapter": 1,
+      "verse": 21,
+      "zh": "以后我到了叙利亚和基利家境内。",
+      "en": "Then I went to Syria and Cilicia."
+    },
+    {
+      "chapter": 1,
+      "verse": 22,
+      "zh": "那时，犹太地信基督的各教会都没有见过我的面。",
+      "en": "I was personally unknown to the churches of Judea that are in Christ."
+    },
+    {
+      "chapter": 1,
+      "verse": 23,
+      "zh": "不过听说那从前逼迫我们的，现在传扬他素来所毁灭的真道。",
+      "en": "They only heard the report: The man who formerly persecuted us is now preaching the faith he once tried to destroy."
+    },
+    {
+      "chapter": 1,
+      "verse": 24,
+      "zh": "他们就为我的缘故，荣耀神。",
+      "en": "And they praised God because of me."
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "zh": "过了十四年，我同巴拿巴又上耶路撒冷去，也带着提多同去。",
+      "en": "Then after fourteen years, I went up again to Jerusalem, this time with Barnabas. I took Titus along also."
+    },
+    {
+      "chapter": 2,
+      "verse": 2,
+      "zh": "我是照启示上去的，把我在外邦人中所传的福音，对弟兄们陈说；却是背地里对那有名望的人说的，恐怕我现在所跑的，或是徒然跑了。",
+      "en": "I went in response to a revelation and, meeting privately with those esteemed as leaders, I presented to them the gospel that I preach among the Gentiles. I wanted to be sure I was not running and had not been running my race in vain."
+    },
+    {
+      "chapter": 2,
+      "verse": 3,
+      "zh": "但与我同去的提多，虽然是希利尼人，也没有勉强他受割礼。",
+      "en": "Yet not even Titus, who was with me, was compelled to be circumcised, even though he was a Greek."
+    },
+    {
+      "chapter": 2,
+      "verse": 4,
+      "zh": "因为有偷着引进来的假弟兄，私下窥探我们所享有的自由，就是基督耶稣所赐给我们的自由，意欲奴役我们。",
+      "en": "This matter arose because some false believers had infiltrated our ranks to spy on the freedom we have in Christ Jesus and to make us slaves."
+    },
+    {
+      "chapter": 2,
+      "verse": 5,
+      "zh": "我们就是一刻的工夫也没有容让顺服他们，为要叫福音的真理仍存在你们中间。",
+      "en": "We did not give in to them for a moment, so that the truth of the gospel might be preserved for you."
+    },
+    {
+      "chapter": 2,
+      "verse": 6,
+      "zh": "至于那些有名望的，不论他是何等人，都与我无干。神不以外貌取人，那些有名望的，并没有加增我甚么。",
+      "en": "As for those who were held in high esteem—whatever they were makes no difference to me; God does not show favoritism—they added nothing to my message."
+    },
+    {
+      "chapter": 2,
+      "verse": 7,
+      "zh": "反倒看见了主托我传福音给那未受割礼的人，正如托彼得传福音给那受割礼的人。",
+      "en": "On the contrary, they recognized that I had been entrusted with the task of preaching the gospel to the uncircumcised, just as Peter had been to the circumcised."
+    },
+    {
+      "chapter": 2,
+      "verse": 8,
+      "zh": "(那感动彼得，叫他作受割礼之人的使徒的，也感动我，叫我作外邦人的使徒。)",
+      "en": "For God, who was at work in Peter as an apostle to the circumcised, was also at work in me as an apostle to the Gentiles."
+    },
+    {
+      "chapter": 2,
+      "verse": 9,
+      "zh": "又知道所赐给我的恩典，那称为教会柱石的雅各、矶法、约翰，就向我和巴拿巴用右手行相交之礼，叫我们往外邦人那里去，他们往受割礼的人那里去。",
+      "en": "James, Cephas and John, those esteemed as pillars, gave me and Barnabas the right hand of fellowship when they recognized the grace given to me. They agreed that we should go to the Gentiles, and they to the circumcised."
+    },
+    {
+      "chapter": 2,
+      "verse": 10,
+      "zh": "只是愿意我们记念穷人，这就是我本来热心去行的。",
+      "en": "All they asked was that we should continue to remember the poor, the very thing I had been eager to do all along."
+    },
+    {
+      "chapter": 2,
+      "verse": 11,
+      "zh": "后来，矶法到了安提阿；因他有可责之处，我就当面抵挡他。",
+      "en": "When Cephas came to Antioch, I opposed him to his face, because he stood condemned."
+    },
+    {
+      "chapter": 2,
+      "verse": 12,
+      "zh": "从雅各那里来的人未到以先，他和外邦人一同吃饭；及至他们来到，他因怕奉割礼的人，就退去与外邦人隔开了。",
+      "en": "For before certain men came from James, he used to eat with the Gentiles. But when they arrived, he began to draw back and separate himself from the Gentiles because he was afraid of those who belonged to the circumcision group."
+    },
+    {
+      "chapter": 2,
+      "verse": 13,
+      "zh": "其余的犹太人也都随着他装假，甚至连巴拿巴也随伙装假。",
+      "en": "The other Jews joined him in his hypocrisy, so that by their hypocrisy even Barnabas was led astray."
+    },
+    {
+      "chapter": 2,
+      "verse": 14,
+      "zh": "但我一看见他们行的不正，与福音的真理不合，就在众人面前对矶法说：你既是犹太人，若随外邦人行事，不随犹太人行事，怎么还勉强外邦人随犹太人呢？",
+      "en": "When I saw that they were not acting in line with the truth of the gospel, I said to Cephas in front of them all, You are a Jew, yet you live like a Gentile and not like a Jew. How is it, then, that you force Gentiles to follow Jewish customs?"
+    },
+    {
+      "chapter": 2,
+      "verse": 15,
+      "zh": "我们这生来的犹太人，不是外邦的罪人。",
+      "en": "We who are Jews by birth and not sinful Gentiles"
+    },
+    {
+      "chapter": 2,
+      "verse": 16,
+      "zh": "既知道人称义不是因行律法，乃是因信耶稣基督，连我们也信了基督耶稣，使我们因信基督称义，不因行律法称义；因为凡有血气的，没有一人因行律法称义。",
+      "en": "know that a person is not justified by the works of the law, but by faith in Jesus Christ. So we, too, have put our faith in Christ Jesus that we may be justified by faith in Christ and not by the works of the law, because by the works of the law no one will be justified."
+    },
+    {
+      "chapter": 2,
+      "verse": 17,
+      "zh": "我们若求在基督里称义，却仍旧是罪人，难道基督是叫人犯罪的吗？断乎不是！",
+      "en": "But if, in seeking to be justified in Christ, we Jews find ourselves also among the sinners, doesn’t that mean that Christ promotes sin? Absolutely not!"
+    },
+    {
+      "chapter": 2,
+      "verse": 18,
+      "zh": "我若重新建造我所拆毁的，就证明自己是犯罪的人。",
+      "en": "If I rebuild what I destroyed, then I really would be a lawbreaker."
+    },
+    {
+      "chapter": 2,
+      "verse": 19,
+      "zh": "因为我因律法，就向律法死了，叫我可以向神活着。",
+      "en": "For through the law I died to the law so that I might live for God."
+    },
+    {
+      "chapter": 2,
+      "verse": 20,
+      "zh": "我已经与基督同钉十字架，现在活着的不再是我，乃是基督在我里面活着；并且我如今在肉身活着，是因信神的儿子而活，他是爱我，为我舍己。",
+      "en": "I have been crucified with Christ and I no longer live, but Christ lives in me. The life I now live in the body, I live by faith in the Son of God, who loved me and gave himself for me."
+    },
+    {
+      "chapter": 2,
+      "verse": 21,
+      "zh": "我不废掉神的恩；义若是藉着律法得的，基督就是徒然死了。",
+      "en": "I do not set aside the grace of God, for if righteousness could be gained through the law, Christ died for nothing!"
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "zh": "无知的加拉太人哪，耶稣基督钉十字架，已经活画在你们眼前，谁又迷惑了你们呢？",
+      "en": "You foolish Galatians! Who has bewitched you? Before your very eyes Jesus Christ was clearly portrayed as crucified."
+    },
+    {
+      "chapter": 3,
+      "verse": 2,
+      "zh": "我只要问你们这一件：你们受了圣灵，是因行律法呢？是因听信福音呢？",
+      "en": "I would like to learn just one thing from you: Did you receive the Spirit by the works of the law, or by believing what you heard?"
+    },
+    {
+      "chapter": 3,
+      "verse": 3,
+      "zh": "你们既靠圣灵入门，现在还靠肉身成全吗？你们是这样的无知吗？",
+      "en": "Are you so foolish? After beginning by means of the Spirit, are you now trying to finish by means of the flesh?"
+    },
+    {
+      "chapter": 3,
+      "verse": 4,
+      "zh": "你们受苦如此之多，都是徒然的吗？难道果真是徒然的吗？",
+      "en": "Have you experienced so much in vain—if it really was in vain?"
+    },
+    {
+      "chapter": 3,
+      "verse": 5,
+      "zh": "那赐给你们圣灵，又在你们中间行异能的，是因你们行律法呢？是因你们听信福音呢？",
+      "en": "So again I ask, does God give you his Spirit and work miracles among you by the works of the law, or by your believing what you heard?"
+    },
+    {
+      "chapter": 3,
+      "verse": 6,
+      "zh": "正如亚伯拉罕信神，这就算为他的义。",
+      "en": "So also Abraham believed God, and it was credited to him as righteousness."
+    },
+    {
+      "chapter": 3,
+      "verse": 7,
+      "zh": "所以你们要知道，那以信为本的人，就是亚伯拉罕的子孙。",
+      "en": "Understand, then, that those who have faith are children of Abraham."
+    },
+    {
+      "chapter": 3,
+      "verse": 8,
+      "zh": "并且圣经既然预先看明，神要叫外邦人因信称义，就预先传福音给亚伯拉罕，说：万国都必因你得福。",
+      "en": "Scripture foresaw that God would justify the Gentiles by faith, and announced the gospel in advance to Abraham: All nations will be blessed through you."
+    },
+    {
+      "chapter": 3,
+      "verse": 9,
+      "zh": "可见那以信为本的人和有信心的亚伯拉罕一同得福。",
+      "en": "So those who rely on faith are blessed along with Abraham, the man of faith."
+    },
+    {
+      "chapter": 3,
+      "verse": 10,
+      "zh": "凡以行律法为本的，都是被咒诅的；因为经上记着：凡不常照律法书上所写的一切去行的，就被咒诅。",
+      "en": "For all who rely on the works of the law are under a curse, as it is written: Cursed is everyone who does not continue to do everything written in the Book of the Law."
+    },
+    {
+      "chapter": 3,
+      "verse": 11,
+      "zh": "没有一个人靠着律法在神面前称义，这是明显的；因为经上说：义人必因信得生。",
+      "en": "Clearly no one who relies on the law is justified before God, because the righteous will live by faith."
+    },
+    {
+      "chapter": 3,
+      "verse": 12,
+      "zh": "律法原不本乎信，只说：行这些事的，就必因此活着。",
+      "en": "The law is not based on faith; on the contrary, it says, The person who does these things will live by them."
+    },
+    {
+      "chapter": 3,
+      "verse": 13,
+      "zh": "基督既为我们受了咒诅（就赎出我们脱离律法的咒诅），因为经上记着：凡挂在木头上都是被咒诅的。",
+      "en": "Christ redeemed us from the curse of the law by becoming a curse for us, for it is written: Cursed is everyone who is hung on a pole."
+    },
+    {
+      "chapter": 3,
+      "verse": 14,
+      "zh": "这便叫亚伯拉罕的福，因基督耶稣可以临到外邦人，使我们因信得着所应许的圣灵。",
+      "en": "He redeemed us in order that the blessing given to Abraham might come to the Gentiles through Christ Jesus, so that by faith we might receive the promise of the Spirit."
+    },
+    {
+      "chapter": 3,
+      "verse": 15,
+      "zh": "弟兄们，我且照着人的常话说：虽然是人的文约，若已经立定了，就没有人能废弃或加增。",
+      "en": "Brothers and sisters, let me take an example from everyday life. Just as no one can set aside or add to a human covenant that has been duly established, so it is in this case."
+    },
+    {
+      "chapter": 3,
+      "verse": 16,
+      "zh": "所应许的原是向亚伯拉罕和他子孙说的。神并不是说众子孙，指着许多人，乃是说你那一个子孙，就是基督。",
+      "en": "The promises were spoken to Abraham and to his seed. Scripture does not say and to seeds, meaning many people, but and to your seed, meaning one person, who is Christ."
+    },
+    {
+      "chapter": 3,
+      "verse": 17,
+      "zh": "我是这么说，神预先所立的约，不能被那四百三十年以后的律法废掉，叫应许归于虚空。",
+      "en": "What I mean is this: The law, introduced 430 years later, does not set aside the covenant previously established by God and thus do away with the promise."
+    },
+    {
+      "chapter": 3,
+      "verse": 18,
+      "zh": "因为承受产业，若本乎律法，就不本乎应许；但神是凭着应许把产业赐给亚伯拉罕。",
+      "en": "For if the inheritance depends on the law, then it no longer depends on the promise; but God in his grace gave it to Abraham through a promise."
+    },
+    {
+      "chapter": 3,
+      "verse": 19,
+      "zh": "这样说来，律法是为什么有的呢？原是为过犯添上的，等候那蒙应许的子孙来到，并且是藉天使经中保之手设立的。",
+      "en": "Why, then, was the law given at all? It was added because of transgressions until the Seed to whom the promise referred had come. The law was given through angels and entrusted to a mediator."
+    },
+    {
+      "chapter": 3,
+      "verse": 20,
+      "zh": "但中保本不是为一面作的，神却是一位。",
+      "en": "A mediator, however, implies more than one party; but God is one."
+    },
+    {
+      "chapter": 3,
+      "verse": 21,
+      "zh": "这样，律法是与神的应许反对吗？断乎不是！若曾传一个能叫人得生的律法，义就诚然本乎律法了。",
+      "en": "Is the law, therefore, opposed to the promises of God? Absolutely not! For if a law had been given that could impart life, then righteousness would certainly have come by the law."
+    },
+    {
+      "chapter": 3,
+      "verse": 22,
+      "zh": "但圣经把众人都圈在罪里，使所应许的福因信耶稣基督归给那信的人。",
+      "en": "But Scripture has locked up everything under the control of sin, so that what was promised, being given through faith in Jesus Christ, might be given to all who believe."
+    },
+    {
+      "chapter": 3,
+      "verse": 23,
+      "zh": "但这因信得救的理，还没有来到以先，我们被看守在律法之下，直圈到那将来的真道显明出来。",
+      "en": "Before the coming of this faith, we were held in custody under the law, locked up until the faith that was to come would be revealed."
+    },
+    {
+      "chapter": 3,
+      "verse": 24,
+      "zh": "这样，律法是我们训蒙的师傅，引我们到基督那里，使我们因信称义。",
+      "en": "So the law was our guardian until Christ came that we might be justified by faith."
+    },
+    {
+      "chapter": 3,
+      "verse": 25,
+      "zh": "但这因信得救的理既然来到，我们从此就不在训蒙的师傅手下了。",
+      "en": "Now that this faith has come, we are no longer under a guardian."
+    },
+    {
+      "chapter": 3,
+      "verse": 26,
+      "zh": "所以，你们因信基督耶稣，都是神的儿子。",
+      "en": "So in Christ Jesus you are all children of God through faith,"
+    },
+    {
+      "chapter": 3,
+      "verse": 27,
+      "zh": "你们受洗归入基督的，都是披戴基督了。",
+      "en": "for all of you who were baptized into Christ have clothed yourselves with Christ."
+    },
+    {
+      "chapter": 3,
+      "verse": 28,
+      "zh": "并不分犹太人、希利尼人、自主的、为奴的，或男或女，因为你们在基督耶稣里都成为一了。",
+      "en": "There is neither Jew nor Gentile, neither slave nor free, nor is there male and female, for you are all one in Christ Jesus."
+    },
+    {
+      "chapter": 3,
+      "verse": 29,
+      "zh": "你们既属乎基督，就是亚伯拉罕的后裔，是照着应许承受产业的了。",
+      "en": "If you belong to Christ, then you are Abraham’s seed, and heirs according to the promise."
+    },
+    {
+      "chapter": 4,
+      "verse": 1,
+      "zh": "我说那承受产业的，虽然是全业的主人，但为孩童的时候，却与奴仆毫无分别。",
+      "en": "What I am saying is that as long as the heir is underage, he is no different from a slave, although he owns the whole estate."
+    },
+    {
+      "chapter": 4,
+      "verse": 2,
+      "zh": "乃在父母所定的日期之下，接受人的监督。",
+      "en": "The heir is subject to guardians and trustees until the time set by his father."
+    },
+    {
+      "chapter": 4,
+      "verse": 3,
+      "zh": "我们为孩童的时候，受管于世上的小学之下，也是如此。",
+      "en": "So also, when we were underage, we were in slavery under the elemental spiritual forces of the world."
+    },
+    {
+      "chapter": 4,
+      "verse": 4,
+      "zh": "及至时候满足，神就差遣他的儿子，为女子所生，且生在律法以下，",
+      "en": "But when the set time had fully come, God sent his Son, born of a woman, born under the law,"
+    },
+    {
+      "chapter": 4,
+      "verse": 5,
+      "zh": "要把律法以下的人赎出来，叫我们得着儿子的名分。",
+      "en": "to redeem those under the law, that we might receive adoption to sonship."
+    },
+    {
+      "chapter": 4,
+      "verse": 6,
+      "zh": "你们既为儿子，神就差他儿子的灵进入你们的心，呼叫：阿爸，父！",
+      "en": "Because you are his sons, God sent the Spirit of his Son into our hearts, the Spirit who calls out, Abba, Father."
+    },
+    {
+      "chapter": 4,
+      "verse": 7,
+      "zh": "可见，从此以后，你不是奴仆，乃是儿子了；既是儿子，就靠着神为后嗣。",
+      "en": "So you are no longer a slave, but God’s child; and since you are his child, God has made you also an heir."
+    },
+    {
+      "chapter": 4,
+      "verse": 8,
+      "zh": "但从前你们不认识神的时候，是给那些本来不是神的作奴仆。",
+      "en": "Formerly, when you did not know God, you were slaves to those who by nature are not gods."
+    },
+    {
+      "chapter": 4,
+      "verse": 9,
+      "zh": "现在你们既然认识神，更可说是被神所认识的，怎么还要归回那懦弱无用的小学，情愿再给他作奴仆呢？",
+      "en": "But now that you know God—or rather are known by God—how is it that you are turning back to those weak and miserable forces? Do you wish to be enslaved by them all over again?"
+    },
+    {
+      "chapter": 4,
+      "verse": 10,
+      "zh": "你们谨守日子、月份、节期、年份。",
+      "en": "You are observing special days and months and seasons and years!"
+    },
+    {
+      "chapter": 4,
+      "verse": 11,
+      "zh": "我为你们害怕，惟恐我在你们身上是徒然劳苦了。",
+      "en": "I fear for you, that somehow I have wasted my efforts on you."
+    },
+    {
+      "chapter": 4,
+      "verse": 12,
+      "zh": "弟兄们，我劝你们要像我一样，因为我也像你们一样。你们一点没有亏负我。",
+      "en": "I plead with you, brothers and sisters, become like me, for I became like you. You did me no wrong."
+    },
+    {
+      "chapter": 4,
+      "verse": 13,
+      "zh": "你们知道我头一次传福音给你们，是因为身体有疾病。",
+      "en": "As you know, it was because of an illness that I first preached the gospel to you,"
+    },
+    {
+      "chapter": 4,
+      "verse": 14,
+      "zh": "你们为我身体的缘故受试炼，没有轻看我，也没有厌弃我，反倒接待我，如同神的使者，如同基督耶稣。",
+      "en": "and even though my illness was a trial to you, you did not treat me with contempt or scorn. Instead, you welcomed me as if I were an angel of God, as if I were Christ Jesus himself."
+    },
+    {
+      "chapter": 4,
+      "verse": 15,
+      "zh": "你们当日所夸的福气在哪里呢？那时你们若能行，就是把自己的眼睛剜出来给我，也都情愿。这是我可以给你们作见证的。",
+      "en": "Where, then, is your blessing of me now? I can testify that, if you could have done so, you would have torn out your eyes and given them to me."
+    },
+    {
+      "chapter": 4,
+      "verse": 16,
+      "zh": "如今我将真理告诉你们，就成了你们的仇敌吗？",
+      "en": "Have I now become your enemy by telling you the truth?"
+    },
+    {
+      "chapter": 4,
+      "verse": 17,
+      "zh": "那些人热心待你们，却不是好意，是要离间你们，叫你们热心待他们。",
+      "en": "Those people are zealous to win you over, but for no good. What they want is to alienate you from us, so that you may have zeal for them."
+    },
+    {
+      "chapter": 4,
+      "verse": 18,
+      "zh": "在善事上，常用热心待人，原是好的，却不单我与你们同在的时候才这样。",
+      "en": "It is fine to be zealous, provided the purpose is good, and to be so always, not just when I am with you."
+    },
+    {
+      "chapter": 4,
+      "verse": 19,
+      "zh": "我小子啊，我为你们再受生产之苦，直等到基督成形在你们心里。",
+      "en": "My dear children, for whom I am again in the pains of childbirth until Christ is formed in you,"
+    },
+    {
+      "chapter": 4,
+      "verse": 20,
+      "zh": "我巴不得现今在你们那里，改换口气，因我为你们心里作难。",
+      "en": "how I wish I could be with you now and change my tone, because I am perplexed about you!"
+    },
+    {
+      "chapter": 4,
+      "verse": 21,
+      "zh": "你们这愿意在律法以下的人，请告诉我，你们岂没有听见律法吗？",
+      "en": "Tell me, you who want to be under the law, are you not aware of what the law says?"
+    },
+    {
+      "chapter": 4,
+      "verse": 22,
+      "zh": "因为律法上记着，亚伯拉罕有两个儿子，一个是使女生的，一个是自主妇人生的。",
+      "en": "For it is written that Abraham had two sons, one by the slave woman and the other by the free woman."
+    },
+    {
+      "chapter": 4,
+      "verse": 23,
+      "zh": "然而，那使女所生的，是按着血气生的；那自主妇人所生的，是凭着应许生的。",
+      "en": "His son by the slave woman was born according to the flesh, but his son by the free woman was born as the result of a divine promise."
+    },
+    {
+      "chapter": 4,
+      "verse": 24,
+      "zh": "这都是比方：那两个妇人，就是两约。一约是出于西乃山，生子为奴，乃是夏甲。",
+      "en": "These things are being taken figuratively: The women represent two covenants. One covenant is from Mount Sinai and bears children who are to be slaves: This is Hagar."
+    },
+    {
+      "chapter": 4,
+      "verse": 25,
+      "zh": "这夏甲二字是指着亚拉伯的西乃山，与现在的耶路撒冷同类，因耶路撒冷和她的儿女都是为奴的。",
+      "en": "Now Hagar stands for Mount Sinai in Arabia and corresponds to the present city of Jerusalem, because she is in slavery with her children."
+    },
+    {
+      "chapter": 4,
+      "verse": 26,
+      "zh": "但那在上的耶路撒冷是自主的，她是我们的母。",
+      "en": "But the Jerusalem that is above is free, and she is our mother."
+    },
+    {
+      "chapter": 4,
+      "verse": 27,
+      "zh": "因为经上记着：不怀孕、不生养的，你要欢乐；未曾经过产难的，你要高声欢呼，因为没有丈夫的，比有丈夫的儿女更多。",
+      "en": "For it is written: Be glad, barren woman, you who never bore a child; shout for joy and cry aloud, you who were never in labor; because more are the children of the desolate woman than of her who has a husband."
+    },
+    {
+      "chapter": 4,
+      "verse": 28,
+      "zh": "弟兄们，我们是凭着应许作儿女，如同以撒一样。",
+      "en": "Now you, brothers and sisters, like Isaac, are children of promise."
+    },
+    {
+      "chapter": 4,
+      "verse": 29,
+      "zh": "当时，那按着血气生的，逼迫了那按着圣灵生的，现在也是这样。",
+      "en": "At that time the son born according to the flesh persecuted the son born by the power of the Spirit. It is the same now."
+    },
+    {
+      "chapter": 4,
+      "verse": 30,
+      "zh": "然而经上是怎么说的呢？是说：把使女和她儿子赶出去，因为使女的儿子不可与自主妇人的儿子一同承受产业。",
+      "en": "But what does Scripture say? Get rid of the slave woman and her son, for the slave woman’s son will never share in the inheritance with the free woman’s son."
+    },
+    {
+      "chapter": 4,
+      "verse": 31,
+      "zh": "弟兄们，这样看来，我们不是使女的儿女，乃是自主妇人的儿女了。",
+      "en": "Therefore, brothers and sisters, we are not children of the slave woman, but of the free woman."
+    },
+    {
+      "chapter": 5,
+      "verse": 1,
+      "zh": "基督释放了我们，叫我们得以自由，所以要站立得稳，不要再被奴仆的轭挟制。",
+      "en": "It is for freedom that Christ has set us free. Stand firm, then, and do not let yourselves be burdened again by a yoke of slavery."
+    },
+    {
+      "chapter": 5,
+      "verse": 2,
+      "zh": "我保罗告诉你们，若受割礼，基督就与你们无益了。",
+      "en": "Mark my words! I, Paul, tell you that if you let yourselves be circumcised, Christ will be of no value to you at all."
+    },
+    {
+      "chapter": 5,
+      "verse": 3,
+      "zh": "我再指着凡受割礼的人起誓，他们是欠着行全律法的债。",
+      "en": "Again I declare to every man who lets himself be circumcised that he is obligated to obey the whole law."
+    },
+    {
+      "chapter": 5,
+      "verse": 4,
+      "zh": "你们这要靠律法称义的，是与基督隔绝，从恩典中坠落了。",
+      "en": "You who are trying to be justified by the law have been alienated from Christ; you have fallen away from grace."
+    },
+    {
+      "chapter": 5,
+      "verse": 5,
+      "zh": "我们靠着圣灵，凭着信心，等候所盼望的义。",
+      "en": "For through the Spirit we eagerly await by faith the righteousness for which we hope."
+    },
+    {
+      "chapter": 5,
+      "verse": 6,
+      "zh": "因为在基督耶稣里，受割礼不受割礼全无功效，惟独使人生发仁爱的信心才有功效。",
+      "en": "For in Christ Jesus neither circumcision nor uncircumcision has any value. The only thing that counts is faith expressing itself through love."
+    },
+    {
+      "chapter": 5,
+      "verse": 7,
+      "zh": "你们向来跑得好，有谁拦阻你们，叫你们不顺从真理呢？",
+      "en": "You were running a good race. Who cut in on you to keep you from obeying the truth?"
+    },
+    {
+      "chapter": 5,
+      "verse": 8,
+      "zh": "这样的劝导，不是出于那召你们的。",
+      "en": "That kind of persuasion does not come from the one who calls you."
+    },
+    {
+      "chapter": 5,
+      "verse": 9,
+      "zh": "一点面酵能使全团发起来。",
+      "en": "A little yeast works through the whole batch of dough."
+    },
+    {
+      "chapter": 5,
+      "verse": 10,
+      "zh": "我在主里很信你们必不另有所见；但搅扰你们的，无论是谁，必担当他的罪名。",
+      "en": "I am confident in the Lord that you will take no other view. The one who is throwing you into confusion, whoever that may be, will have to pay the penalty."
+    },
+    {
+      "chapter": 5,
+      "verse": 11,
+      "zh": "弟兄们，我若仍旧传割礼，为什么还受逼迫呢？若这样，那十字架讨厌的地方就没有了。",
+      "en": "Brothers and sisters, if I am still preaching circumcision, why am I still being persecuted? In that case the offense of the cross has been abolished."
+    },
+    {
+      "chapter": 5,
+      "verse": 12,
+      "zh": "恨不得那些搅扰你们的人，把自己割绝了。",
+      "en": "As for those agitators, I wish they would go the whole way and emasculate themselves!"
+    },
+    {
+      "chapter": 5,
+      "verse": 13,
+      "zh": "弟兄们，你们蒙召是要得自由，只是不可将你们的自由当作放纵情欲的机会，总要用爱心互相服侍。",
+      "en": "You, my brothers and sisters, were called to be free. But do not use your freedom to indulge the flesh; rather, serve one another humbly in love."
+    },
+    {
+      "chapter": 5,
+      "verse": 14,
+      "zh": "因为全律法都包在爱人如己这一句话之内了。",
+      "en": "For the entire law is fulfilled in keeping this one command: Love your neighbor as yourself."
+    },
+    {
+      "chapter": 5,
+      "verse": 15,
+      "zh": "你们要谨慎，若相咬相吞，只怕要彼此消灭了。",
+      "en": "If you bite and devour each other, watch out or you will be destroyed by each other."
+    },
+    {
+      "chapter": 5,
+      "verse": 16,
+      "zh": "我说，你们当顺着圣灵而行，就不放纵肉体的情欲了。",
+      "en": "So I say, walk by the Spirit, and you will not gratify the desires of the flesh."
+    },
+    {
+      "chapter": 5,
+      "verse": 17,
+      "zh": "因为情欲和圣灵相争，圣灵和情欲相争，这两个是彼此相敌，使你们不能作所愿意作的。",
+      "en": "For the flesh desires what is contrary to the Spirit, and the Spirit what is contrary to the flesh. They are in conflict with each other, so that you are not to do whatever you want."
+    },
+    {
+      "chapter": 5,
+      "verse": 18,
+      "zh": "但你们若被圣灵引导，就不在律法以下。",
+      "en": "But if you are led by the Spirit, you are not under the law."
+    },
+    {
+      "chapter": 5,
+      "verse": 19,
+      "zh": "情欲的事，都是显而易见的，就如奸淫、污秽、邪荡、",
+      "en": "The acts of the flesh are obvious: sexual immorality, impurity and debauchery;"
+    },
+    {
+      "chapter": 5,
+      "verse": 20,
+      "zh": "拜偶像、邪术、仇恨、争竞、忌恨、恼怒、结党、纷争、异端、",
+      "en": "idolatry and witchcraft; hatred, discord, jealousy, fits of rage, selfish ambition, dissensions, factions"
+    },
+    {
+      "chapter": 5,
+      "verse": 21,
+      "zh": "嫉妒、醉酒、荒宴等类。我从前告诉你们，现在又告诉你们，行这样事的人，必不能承受神的国。",
+      "en": "and envy; drunkenness, orgies, and the like. I warn you, as I did before, that those who live like this will not inherit the kingdom of God."
+    },
+    {
+      "chapter": 5,
+      "verse": 22,
+      "zh": "圣灵所结的果子，就是仁爱、喜乐、和平、忍耐、恩慈、良善、信实、",
+      "en": "But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness,"
+    },
+    {
+      "chapter": 5,
+      "verse": 23,
+      "zh": "温柔、节制。这样的事，没有律法禁止。",
+      "en": "gentleness and self-control. Against such things there is no law."
+    },
+    {
+      "chapter": 5,
+      "verse": 24,
+      "zh": "凡属基督耶稣的人，是已经把肉体连肉体的邪情私欲同钉在十字架上了。",
+      "en": "Those who belong to Christ Jesus have crucified the flesh with its passions and desires."
+    },
+    {
+      "chapter": 5,
+      "verse": 25,
+      "zh": "我们若是靠圣灵得生，就当靠圣灵行事。",
+      "en": "Since we live by the Spirit, let us keep in step with the Spirit."
+    },
+    {
+      "chapter": 5,
+      "verse": 26,
+      "zh": "不要贪图虚名，彼此惹气，互相嫉妒。",
+      "en": "Let us not become conceited, provoking and envying each other."
+    },
+    {
+      "chapter": 6,
+      "verse": 1,
+      "zh": "弟兄们，若有人偶然被过犯所胜，你们属灵的人就当用温柔的心把他挽回过来；又当自己小心，恐怕也被引诱。",
+      "en": "Brothers and sisters, if someone is caught in a sin, you who live by the Spirit should restore that person gently. But watch yourselves, or you also may be tempted."
+    },
+    {
+      "chapter": 6,
+      "verse": 2,
+      "zh": "你们各人的重担要互相担当，这样，就完全了基督的律法。",
+      "en": "Carry each other’s burdens, and in this way you will fulfill the law of Christ."
+    },
+    {
+      "chapter": 6,
+      "verse": 3,
+      "zh": "人若无有，自己还以为有，就是自欺了。",
+      "en": "If anyone thinks they are something when they are not, they deceive themselves."
+    },
+    {
+      "chapter": 6,
+      "verse": 4,
+      "zh": "各人应当察验自己的行为；这样，他所夸的就专在自己，不在别人了。",
+      "en": "Each one should test their own actions. Then they can take pride in themselves alone, without comparing themselves to someone else,"
+    },
+    {
+      "chapter": 6,
+      "verse": 5,
+      "zh": "因为各人必担当自己的担子。",
+      "en": "for each one should carry their own load."
+    },
+    {
+      "chapter": 6,
+      "verse": 6,
+      "zh": "在道理上受教的，当把一切需用的供给施教的人。",
+      "en": "Nevertheless, the one who receives instruction in the word should share all good things with their instructor."
+    },
+    {
+      "chapter": 6,
+      "verse": 7,
+      "zh": "不要自欺，神是轻慢不得的。人种的是甚么，收的也是甚么。",
+      "en": "Do not be deceived: God cannot be mocked. A man reaps what he sows."
+    },
+    {
+      "chapter": 6,
+      "verse": 8,
+      "zh": "顺着情欲撒种的，必从情欲收败坏；顺着圣灵撒种的，必从圣灵收永生。",
+      "en": "Whoever sows to please their flesh, from the flesh will reap destruction; whoever sows to please the Spirit, from the Spirit will reap eternal life."
+    },
+    {
+      "chapter": 6,
+      "verse": 9,
+      "zh": "我们行善，不可丧志；若不灰心，到了时候就要收成。",
+      "en": "Let us not become weary in doing good, for at the proper time we will reap a harvest if we do not give up."
+    },
+    {
+      "chapter": 6,
+      "verse": 10,
+      "zh": "所以，有了机会，就当向众人行善，向信徒一家的人更当这样。",
+      "en": "Therefore, as we have opportunity, let us do good to all people, especially to those who belong to the family of believers."
+    },
+    {
+      "chapter": 6,
+      "verse": 11,
+      "zh": "请看我亲手写给你们的字，是何等的大呢！",
+      "en": "See what large letters I use as I write to you with my own hand!"
+    },
+    {
+      "chapter": 6,
+      "verse": 12,
+      "zh": "凡希图外貌体面的人，都勉强你们受割礼；无非是怕自己为基督的十字架受逼迫。",
+      "en": "Those who want to impress people by means of the flesh are trying to compel you to be circumcised. The only reason they do this is to avoid being persecuted for the cross of Christ."
+    },
+    {
+      "chapter": 6,
+      "verse": 13,
+      "zh": "他们那些受割礼的，连自己也不守律法；他们愿意你们受割礼，不过要藉着你们的肉体夸口。",
+      "en": "Not even those who are circumcised keep the law, yet they want you to be circumcised that they may boast about your circumcision in the flesh."
+    },
+    {
+      "chapter": 6,
+      "verse": 14,
+      "zh": "但我断不以别的夸口，只夸我们主耶稣基督的十字架；因这十字架，就我而论，世界已经钉在十字架上；就世界而论，我已经钉在十字架上。",
+      "en": "May I never boast except in the cross of our Lord Jesus Christ, through which the world has been crucified to me, and I to the world."
+    },
+    {
+      "chapter": 6,
+      "verse": 15,
+      "zh": "受割礼不受割礼都无关紧要，要紧的就是作新造的人。",
+      "en": "Neither circumcision nor uncircumcision means anything; what counts is the new creation."
+    },
+    {
+      "chapter": 6,
+      "verse": 16,
+      "zh": "凡照此理而行的，愿平安、怜悯加给他们，和神的以色列民。",
+      "en": "Peace and mercy to all who follow this rule—to the Israel of God."
+    },
+    {
+      "chapter": 6,
+      "verse": 17,
+      "zh": "从今以后，人都不要搅扰我，因为我身上带着耶稣的印记。",
+      "en": "From now on, let no one cause me trouble, for I bear on my body the marks of Jesus."
+    },
+    {
+      "chapter": 6,
+      "verse": 18,
+      "zh": "弟兄们，愿我主耶稣基督的恩常在你们心里。阿们！",
+      "en": "The grace of our Lord Jesus Christ be with your spirit, brothers and sisters. Amen."
+    }
+  ],
+  "keyVerses": [
+    {
+      "chapter": 1,
+      "verse": 4
+    },
+    {
+      "chapter": 1,
+      "verse": 6
+    },
+    {
+      "chapter": 1,
+      "verse": 8
+    },
+    {
+      "chapter": 1,
+      "verse": 10
+    },
+    {
+      "chapter": 1,
+      "verse": 11
+    },
+    {
+      "chapter": 1,
+      "verse": 12
+    },
+    {
+      "chapter": 2,
+      "verse": 16
+    },
+    {
+      "chapter": 2,
+      "verse": 20
+    },
+    {
+      "chapter": 2,
+      "verse": 21
+    },
+    {
+      "chapter": 3,
+      "verse": 1
+    },
+    {
+      "chapter": 3,
+      "verse": 6
+    },
+    {
+      "chapter": 3,
+      "verse": 11
+    },
+    {
+      "chapter": 3,
+      "verse": 13
+    },
+    {
+      "chapter": 3,
+      "verse": 14
+    },
+    {
+      "chapter": 3,
+      "verse": 24
+    },
+    {
+      "chapter": 3,
+      "verse": 26
+    },
+    {
+      "chapter": 3,
+      "verse": 28
+    },
+    {
+      "chapter": 4,
+      "verse": 4
+    },
+    {
+      "chapter": 4,
+      "verse": 5
+    },
+    {
+      "chapter": 4,
+      "verse": 6
+    },
+    {
+      "chapter": 4,
+      "verse": 7
+    },
+    {
+      "chapter": 4,
+      "verse": 31
+    },
+    {
+      "chapter": 5,
+      "verse": 1
+    },
+    {
+      "chapter": 5,
+      "verse": 6
+    },
+    {
+      "chapter": 5,
+      "verse": 13
+    },
+    {
+      "chapter": 5,
+      "verse": 14
+    },
+    {
+      "chapter": 5,
+      "verse": 16
+    },
+    {
+      "chapter": 5,
+      "verse": 17
+    },
+    {
+      "chapter": 5,
+      "verse": 18
+    },
+    {
+      "chapter": 5,
+      "verse": 22
+    },
+    {
+      "chapter": 5,
+      "verse": 23
+    },
+    {
+      "chapter": 5,
+      "verse": 24
+    },
+    {
+      "chapter": 5,
+      "verse": 25
+    },
+    {
+      "chapter": 6,
+      "verse": 2
+    },
+    {
+      "chapter": 6,
+      "verse": 7
+    },
+    {
+      "chapter": 6,
+      "verse": 8
+    },
+    {
+      "chapter": 6,
+      "verse": 9
+    },
+    {
+      "chapter": 6,
+      "verse": 14
+    },
+    {
+      "chapter": 6,
+      "verse": 15
+    },
+    {
+      "chapter": 6,
+      "verse": 17
+    }
+  ]
+}

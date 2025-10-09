@@ -1,0 +1,88 @@
+{
+  "lesson_id": 8,
+  "lesson_title": "祷告与敬拜",
+  "section_num": 5,
+  "section_title": "敬拜",
+  "answers": {
+    "q1_约 4:23": {
+      "reference": "约 4:23",
+      "text": "时候将到，如今就是了，那真正拜父的，要用心灵和诚实拜他，因为父要这样的人拜他。",
+      "has_data": true
+    },
+    "q2_约 4:24": {
+      "reference": "约 4:24",
+      "text": "神是个灵，所以拜他的必须用心灵和诚实拜他。",
+      "has_data": true
+    },
+    "q3_来 10:24,25": {
+      "reference": "来 10:24,25",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q4_来 12:28,29": {
+      "reference": "来 12:28,29",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q5_诗 47:1,5,6": {
+      "reference": "诗 47:1,5,6",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q5_诗 96:8,9": {
+      "reference": "诗 96:8,9",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q5_诗 98:1,4-6": {
+      "reference": "诗 98:1,4-6",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q5_诗 149:3": {
+      "reference": "诗 149:3",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q5_诗 150:3-6": {
+      "reference": "诗 150:3-6",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q5_徒 2:46": {
+      "reference": "徒 2:46",
+      "text": "他们天天同心合意恒切地在殿里，且在家中掰饼，存着欢喜诚实的心用饭，",
+      "has_data": true
+    },
+    "q5_徒 20:20": {
+      "reference": "徒 20:20",
+      "text": "你们也知道，凡与你们有益的，我没有一样避讳不说的，或在众人面前，或在各人家里，我都教导你们。",
+      "has_data": true
+    },
+    "q5_希伯来书 11:1": {
+      "reference": "希伯来书 11:1",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q5_创世记 15:5,6": {
+      "reference": "创世记 15:5,6",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q5_罗马书 1:17": {
+      "reference": "罗马书 1:17",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    }
+  }
+}

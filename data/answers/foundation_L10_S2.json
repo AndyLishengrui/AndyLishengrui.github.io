@@ -1,0 +1,99 @@
+{
+  "lesson_id": 10,
+  "lesson_title": "富足与慷慨",
+  "section_num": 2,
+  "section_title": "圣经中关于富足的法则",
+  "answers": {
+    "q1_申 8:18": {
+      "reference": "申 8:18",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q2_申 30:8-10": {
+      "reference": "申 30:8-10",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q3_箴 10:3": {
+      "reference": "箴 10:3",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q3_箴 10:4": {
+      "reference": "箴 10:4",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q3_箴 10:22": {
+      "reference": "箴 10:22",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q3_箴 13:21": {
+      "reference": "箴 13:21",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q3_箴 13:22": {
+      "reference": "箴 13:22",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q3_箴 21:21": {
+      "reference": "箴 21:21",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q3_箴 22:4": {
+      "reference": "箴 22:4",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q3_箴 22:9": {
+      "reference": "箴 22:9",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q4_路 6:38": {
+      "reference": "路 6:38",
+      "text": "你们要给人，就必有给你们的，并且用十足的升斗，连摇带按，上尖下流地倒在你们怀里。因为你们用什么量器量给人，也必用什么量器量给你们。'",
+      "has_data": true
+    },
+    "q4_请阅读哥林多后书 9:6-11": {
+      "reference": "请阅读哥林多后书 9:6-11",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q5_林后 9:6": {
+      "reference": "林后 9:6",
+      "text": "少种的少收，多种的多收，这话是真的。",
+      "has_data": true
+    },
+    "q6_林后 9:7": {
+      "reference": "林后 9:7",
+      "text": "各人要随本心所酌定的，不要作难，不要勉强，因为捐得乐意的人是神所喜爱的。",
+      "has_data": true
+    },
+    "q7_林后 9:8": {
+      "reference": "林后 9:8",
+      "text": "神能将各样的恩惠多多的加给你们，使你们凡事常常充足，能多行各样善事。",
+      "has_data": true
+    },
+    "q8_林后 9:11": {
+      "reference": "林后 9:11",
+      "text": "你们凡事富足，可以多多施舍，就藉着我们使感谢归于神。",
+      "has_data": true
+    }
+  }
+}

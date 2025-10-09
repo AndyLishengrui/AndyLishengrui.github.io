@@ -1,0 +1,767 @@
+{
+  "book": "1timothy",
+  "name": "提摩太前书",
+  "englishName": "1 Timothy",
+  "testament": "new",
+  "category": "pauline_epistles",
+  "chapters": 6,
+  "color": "#9b59b6",
+  "description": "保罗写给提摩太的信，指导他如何在以弗所教会中牧养和管理教会事务",
+  "keyThemes": [
+    "教会的治理",
+    "敬虔的生活",
+    "假教师的警告",
+    "妇女在教会中的角色",
+    "长老的资格"
+  ],
+  "verses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "zh": "奉我们救主神和我们的盼望基督耶稣之命，作基督耶稣使徒的保罗，",
+      "en": "Paul, an apostle of Christ Jesus by the command of God our Savior and of Christ Jesus our hope,"
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "zh": "写信给那因信主作我真儿子的提摩太。愿恩惠、怜悯、平安从父神和我们主基督耶稣归与你！",
+      "en": "To Timothy my true son in the faith: Grace, mercy and peace from God the Father and Christ Jesus our Lord."
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "zh": "我往马其顿去的时候，曾劝你仍住在以弗所，好嘱咐那几个人，不要传异教，",
+      "en": "As I urged you when I went into Macedonia, stay there in Ephesus so that you may command certain people not to teach false doctrines any longer"
+    },
+    {
+      "chapter": 1,
+      "verse": 4,
+      "zh": "也不要听从荒渺无凭的话语和无穷的家谱；这等事只生辩论，并不发明神在信上所立的章程。",
+      "en": "or to devote themselves to myths and endless genealogies. Such things promote controversial speculations rather than advancing God's work—which is by faith."
+    },
+    {
+      "chapter": 1,
+      "verse": 5,
+      "zh": "但命令的总归就是爱；这爱是从清洁的心和无亏的良心、无伪的信心生出来的。",
+      "en": "The goal of this command is love, which comes from a pure heart and a good conscience and a sincere faith."
+    },
+    {
+      "chapter": 1,
+      "verse": 6,
+      "zh": "有人偏离这些，反去讲虚浮的话，",
+      "en": "Some have departed from these and have turned to meaningless talk."
+    },
+    {
+      "chapter": 1,
+      "verse": 7,
+      "zh": "想要作教法师，却不明白自己所讲说的，也不明白自己所坚决主张的。",
+      "en": "They want to be teachers of the law, but they do not know what they are talking about or what they so confidently affirm."
+    },
+    {
+      "chapter": 1,
+      "verse": 8,
+      "zh": "我们知道律法原是好的，只要人用得合宜；",
+      "en": "We know that the law is good if one uses it properly."
+    },
+    {
+      "chapter": 1,
+      "verse": 9,
+      "zh": "因为律法不是为义人设立的，乃是为不法和不服的、不虔诚和犯罪的、不圣洁和恋世俗的、弑父母和杀人的、",
+      "en": "We also know that the law is made not for the righteous but for lawbreakers and rebels, the ungodly and sinful, the unholy and irreligious, for those who kill their fathers or mothers, for murderers,"
+    },
+    {
+      "chapter": 1,
+      "verse": 10,
+      "zh": "行淫和亲男色的、抢人口和说谎话的，并起假誓的，或是为别样敌正道的事设立的。",
+      "en": "for the sexually immoral, for those practicing homosexuality, for slave traders and liars and perjurers—and for whatever else is contrary to the sound doctrine"
+    },
+    {
+      "chapter": 1,
+      "verse": 11,
+      "zh": "这纯正道理的福音就是照着那荣耀之神的大使命托付我的。",
+      "en": "that conforms to the gospel concerning the glory of the blessed God, which he entrusted to me."
+    },
+    {
+      "chapter": 1,
+      "verse": 12,
+      "zh": "我感谢那给我力量的我们主基督耶稣，因他以我有忠心，派我服事他。",
+      "en": "I thank Christ Jesus our Lord, who has given me strength, that he considered me trustworthy, appointing me to his service."
+    },
+    {
+      "chapter": 1,
+      "verse": 13,
+      "zh": "我从前是亵渎神的、逼迫人的、侮慢人的；然而我还蒙了怜悯，因我是不信不明白的时候而作的。",
+      "en": "Even though I was once a blasphemer and a persecutor and a violent man, I was shown mercy because I acted in ignorance and unbelief."
+    },
+    {
+      "chapter": 1,
+      "verse": 14,
+      "zh": "并且我主的恩是格外丰盛，使我在基督耶稣里有信心和爱心。",
+      "en": "The grace of our Lord was poured out on me abundantly, along with the faith and love that are in Christ Jesus."
+    },
+    {
+      "chapter": 1,
+      "verse": 15,
+      "zh": "基督耶稣降世，为要拯救罪人。这话是可信的，是十分可佩服的。在罪人中我是个罪魁。",
+      "en": "Here is a trustworthy saying that deserves full acceptance: Christ Jesus came into the world to save sinners—of whom I am the worst."
+    },
+    {
+      "chapter": 1,
+      "verse": 16,
+      "zh": "然而我蒙了怜悯，是因耶稣基督要在我这罪魁身上显明他一切的忍耐，给后来信他得永生的人作榜样。",
+      "en": "But for that very reason I was shown mercy so that in me, the worst of sinners, Christ Jesus might display his immense patience as an example for those who would believe in him and receive eternal life."
+    },
+    {
+      "chapter": 1,
+      "verse": 17,
+      "zh": "但愿尊贵、荣耀归与那不能朽坏、不能看见、永世的君王、独一的神，直到永永远远。阿们！",
+      "en": "Now to the King eternal, immortal, invisible, the only God, be honor and glory for ever and ever. Amen."
+    },
+    {
+      "chapter": 1,
+      "verse": 18,
+      "zh": "我儿提摩太啊，我照从前指着你的预言，将这命令交托你，叫你因此打那美好的仗。",
+      "en": "Timothy, my son, I am giving you this command in keeping with the prophecies once made about you, so that by recalling them you may fight the battle well,"
+    },
+    {
+      "chapter": 1,
+      "verse": 19,
+      "zh": "常存信心和无亏的良心。有人丢弃良心，就在真道上如同船破坏了一般。",
+      "en": "holding on to faith and a good conscience, which some have rejected and so have suffered shipwreck with regard to the faith."
+    },
+    {
+      "chapter": 1,
+      "verse": 20,
+      "zh": "其中有许米乃和亚力山大；我已经把他们交给撒但，使他们受责罚就不再亵渎了。",
+      "en": "Among them are Hymenaeus and Alexander, whom I have handed over to Satan to be taught not to blaspheme."
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "zh": "我劝你，第一要为万人恳求、祷告、代求、祝谢；",
+      "en": "I urge, then, first of all, that petitions, prayers, intercession and thanksgiving be made for all people—"
+    },
+    {
+      "chapter": 2,
+      "verse": 2,
+      "zh": "为君王和一切在位的，也该如此，使我们可以敬虔、端正、平安无事的度日。",
+      "en": "for kings and all those in authority, that we may live peaceful and quiet lives in all godliness and holiness."
+    },
+    {
+      "chapter": 2,
+      "verse": 3,
+      "zh": "这是好的，在神我们救主面前可蒙悦纳。",
+      "en": "This is good, and pleases God our Savior,"
+    },
+    {
+      "chapter": 2,
+      "verse": 4,
+      "zh": "他愿意万人得救，并且明白真道。",
+      "en": "who wants all people to be saved and to come to a knowledge of the truth."
+    },
+    {
+      "chapter": 2,
+      "verse": 5,
+      "zh": "因为只有一位神，在神和人中间，只有一位中保，乃是降世为人的基督耶稣。",
+      "en": "For there is one God and one mediator between God and mankind, the man Christ Jesus,"
+    },
+    {
+      "chapter": 2,
+      "verse": 6,
+      "zh": "他舍自己作万人的赎价，到了时候，这见证必显明出来。",
+      "en": "who gave himself as a ransom for all people. This has now been witnessed to at the proper time."
+    },
+    {
+      "chapter": 2,
+      "verse": 7,
+      "zh": "我为此奉派作传道的，作使徒，说真道，不说谎言。我被立作外邦人的师傅，教导他们相信，学习真道。",
+      "en": "And for this purpose I was appointed a herald and an apostle—I am telling the truth, I am not lying—and a true and faithful teacher of the Gentiles."
+    },
+    {
+      "chapter": 2,
+      "verse": 8,
+      "zh": "我愿男人无忿怒，无争论，举起圣洁的手，随处祷告。",
+      "en": "Therefore I want the men everywhere to pray, lifting up holy hands without anger or disputing."
+    },
+    {
+      "chapter": 2,
+      "verse": 9,
+      "zh": "又愿女人廉耻、自守，以正派衣裳为妆饰，不以编发、黄金、珍珠和贵价的衣裳为妆饰；",
+      "en": "I also want the women to dress modestly, with decency and propriety, adorning themselves, not with elaborate hairstyles or gold or pearls or expensive clothes,"
+    },
+    {
+      "chapter": 2,
+      "verse": 10,
+      "zh": "只要有善行；这才合乎自称是敬神的女人。",
+      "en": "but with good deeds, appropriate for women who profess to worship God."
+    },
+    {
+      "chapter": 2,
+      "verse": 11,
+      "zh": "女人要沉静学道，一味的顺服。",
+      "en": "A woman should learn in quietness and full submission."
+    },
+    {
+      "chapter": 2,
+      "verse": 12,
+      "zh": "我不许女人讲道，也不许她辖管男人，只要沉静。",
+      "en": "I do not permit a woman to teach or to assume authority over a man; she must be quiet."
+    },
+    {
+      "chapter": 2,
+      "verse": 13,
+      "zh": "因为先造的是亚当，后造的是夏娃。",
+      "en": "For Adam was formed first, then Eve."
+    },
+    {
+      "chapter": 2,
+      "verse": 14,
+      "zh": "且不是亚当被引诱，乃是女人被引诱，陷在罪里。",
+      "en": "And Adam was not the one deceived; it was the woman who was deceived and became a transgressor."
+    },
+    {
+      "chapter": 2,
+      "verse": 15,
+      "zh": "然而，女人若常存信心、爱心，又圣洁、自守，就必在生产上得救。",
+      "en": "But women will be saved through childbearing—if they continue in faith, love and holiness with propriety."
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "zh": "人若想要得监督的职分，就是羡慕善工。这话是可信的。",
+      "en": "Here is a trustworthy saying: Whoever aspires to be an overseer desires a noble task."
+    },
+    {
+      "chapter": 3,
+      "verse": 2,
+      "zh": "作监督的，必须无可指责，只作一个妇人的丈夫，有节制，自守，端正，乐意接待远人，善于教导；",
+      "en": "Now the overseer is to be above reproach, faithful to his wife, temperate, self-controlled, respectable, hospitable, able to teach,"
+    },
+    {
+      "chapter": 3,
+      "verse": 3,
+      "zh": "不因酒醉闹事，不打人，只要温和，不争竞，不贪财；",
+      "en": "not given to drunkenness, not violent but gentle, not quarrelsome, not a lover of money."
+    },
+    {
+      "chapter": 3,
+      "verse": 4,
+      "zh": "好好管理自己的家，使儿女凡事端庄顺服。",
+      "en": "He must manage his own family well and see that his children obey him, and he must do so in a manner worthy of full respect."
+    },
+    {
+      "chapter": 3,
+      "verse": 5,
+      "zh": "人若不知道管理自己的家，焉能照管神的教会呢？",
+      "en": "If anyone does not know how to manage his own family, how can he take care of God's church?"
+    },
+    {
+      "chapter": 3,
+      "verse": 6,
+      "zh": "初入教的不可作监督，恐怕他自高自大，就落在魔鬼所受的刑罚里。",
+      "en": "He must not be a recent convert, or he may become conceited and fall under the same judgment as the devil."
+    },
+    {
+      "chapter": 3,
+      "verse": 7,
+      "zh": "在外人面前也必须有好见证，恐怕他落在魔鬼的毁谤和网罗里。",
+      "en": "He must also have a good reputation with outsiders, so that he will not fall into disgrace and into the devil's trap."
+    },
+    {
+      "chapter": 3,
+      "verse": 8,
+      "zh": "作执事的，也是如此：必须端庄，不一口两舌，不好喝酒，不贪不义之财；",
+      "en": "In the same way, deacons are to be worthy of respect, sincere, not indulging in much wine, and not pursuing dishonest gain."
+    },
+    {
+      "chapter": 3,
+      "verse": 9,
+      "zh": "要存清洁的良心，固守真道的奥秘。",
+      "en": "They must keep hold of the deep truths of the faith with a clear conscience."
+    },
+    {
+      "chapter": 3,
+      "verse": 10,
+      "zh": "这等人也要先受试验，若没有可指摘的，然后叫他们作执事。",
+      "en": "They are to be tested first; and only then if there is nothing against them, let them serve as deacons."
+    },
+    {
+      "chapter": 3,
+      "verse": 11,
+      "zh": "女执事（原文是女人）也是如此：必须端庄，不说谗言，有节制，凡事忠心。",
+      "en": "In the same way, the women are to be worthy of respect, not malicious talkers but temperate and trustworthy in everything."
+    },
+    {
+      "chapter": 3,
+      "verse": 12,
+      "zh": "执事只要作一个妇人的丈夫，好好管理儿女和自己的家。",
+      "en": "A deacon must be faithful to his wife and must manage his children and his household well."
+    },
+    {
+      "chapter": 3,
+      "verse": 13,
+      "zh": "因为好好管理家事的，得着美好的地步，并且在基督耶稣里的信心上大有胆量。",
+      "en": "Those who have served well gain an excellent standing and great assurance in their faith in Christ Jesus."
+    },
+    {
+      "chapter": 3,
+      "verse": 14,
+      "zh": "我指望快到你那里去，所以先将这些事写给你。",
+      "en": "Although I hope to come to you soon, I am writing you these instructions so that,"
+    },
+    {
+      "chapter": 3,
+      "verse": 15,
+      "zh": "倘若我耽延日久，你也可以知道在神的家中当怎样行；这家就是永生神的教会，真理的柱石和根基。",
+      "en": "if I am delayed, you will know how people ought to conduct themselves in God's household, which is the church of the living God, the pillar and foundation of the truth."
+    },
+    {
+      "chapter": 3,
+      "verse": 16,
+      "zh": "大哉！敬虔的奥秘，无人不以为然，就是神在肉身显现，被圣灵称义（或作在灵性称义），被天使看见，被传于外邦，被世人信服，被接在荣耀里。",
+      "en": "Beyond all question, the mystery from which true godliness springs is great: He appeared in the flesh, was vindicated by the Spirit, was seen by angels, was preached among the nations, was believed on in the world, was taken up in glory."
+    },
+    {
+      "chapter": 4,
+      "verse": 1,
+      "zh": "圣灵明说，在后来的时候，必有人离弃真道，听从那引诱人的邪灵和鬼魔的道理。",
+      "en": "The Spirit clearly says that in later times some will abandon the faith and follow deceiving spirits and things taught by demons."
+    },
+    {
+      "chapter": 4,
+      "verse": 2,
+      "zh": "这是因为说谎之人的假冒；这等人的良心如同被热铁烙惯了一般。",
+      "en": "Such teachings come through hypocritical liars, whose consciences have been seared as with a hot iron."
+    },
+    {
+      "chapter": 4,
+      "verse": 3,
+      "zh": "他们禁止嫁娶，又禁戒食物（或作又叫人戒荤），就是神所造叫那信而明白真道的人感谢着领受的。",
+      "en": "They forbid people to marry and order them to abstain from certain foods, which God created to be received with thanksgiving by those who believe and who know the truth."
+    },
+    {
+      "chapter": 4,
+      "verse": 4,
+      "zh": "凡神所造的物都是好的，若感谢着领受，就没有一样可弃的。",
+      "en": "For everything God created is good, and nothing is to be rejected if it is received with thanksgiving,"
+    },
+    {
+      "chapter": 4,
+      "verse": 5,
+      "zh": "都因神的道和人的祈求成为圣洁了。",
+      "en": "because it is consecrated by the word of God and prayer."
+    },
+    {
+      "chapter": 4,
+      "verse": 6,
+      "zh": "你若将这些事提醒弟兄们，便是基督耶稣的好执事，在真道的话语和你向来所服从的善道上得了教育。",
+      "en": "If you point these things out to the brothers and sisters, you will be a good minister of Christ Jesus, nourished on the truths of the faith and of the good teaching that you have followed."
+    },
+    {
+      "chapter": 4,
+      "verse": 7,
+      "zh": "只是要弃绝那世俗的言语和老妇荒渺的话，在敬虔上操练自己。",
+      "en": "Have nothing to do with godless myths and old wives' tales; rather, train yourself to be godly."
+    },
+    {
+      "chapter": 4,
+      "verse": 8,
+      "zh": "操练身体，益处还少；惟独敬虔，凡事都有益处，因有今生和来生的应许。",
+      "en": "For physical training is of some value, but godliness has value for all things, holding promise for both the present life and the life to come."
+    },
+    {
+      "chapter": 4,
+      "verse": 9,
+      "zh": "这话是可信的，是十分可佩服的。",
+      "en": "This is a trustworthy saying that deserves full acceptance."
+    },
+    {
+      "chapter": 4,
+      "verse": 10,
+      "zh": "我们劳苦努力，正是为此，因我们的指望在乎永生的神；他是万人的救主，更是信徒的救主。",
+      "en": "That is why we labor and strive, because we have put our hope in the living God, who is the Savior of all people, and especially of those who believe."
+    },
+    {
+      "chapter": 4,
+      "verse": 11,
+      "zh": "这些事你要吩咐人，也要教导人。",
+      "en": "Command and teach these things."
+    },
+    {
+      "chapter": 4,
+      "verse": 12,
+      "zh": "不可叫人小看你年轻，总要在言语、行为、爱心、信心、清洁上，都作信徒的榜样。",
+      "en": "Don't let anyone look down on you because you are young, but set an example for the believers in speech, in conduct, in love, in faith and in purity."
+    },
+    {
+      "chapter": 4,
+      "verse": 13,
+      "zh": "你要以宣读、劝勉、教导为念，直等到我来。",
+      "en": "Until I come, devote yourself to the public reading of Scripture, to preaching and to teaching."
+    },
+    {
+      "chapter": 4,
+      "verse": 14,
+      "zh": "你不要轻忽所得的恩赐，就是从前借着预言、在众长老按手的时候赐给你的。",
+      "en": "Do not neglect your gift, which was given you through prophecy when the body of elders laid their hands on you."
+    },
+    {
+      "chapter": 4,
+      "verse": 15,
+      "zh": "这些事你要殷勤去做，并要在此专心，使众人看出你的长进来。",
+      "en": "Be diligent in these matters; give yourself wholly to them, so that everyone may see your progress."
+    },
+    {
+      "chapter": 4,
+      "verse": 16,
+      "zh": "你要谨慎自己和自己的教训，要在这些事上恒心；因为这样行，又能救自己，又能救听你的人。",
+      "en": "Watch your life and doctrine closely. Persevere in them, because if you do, you will save both yourself and your hearers."
+    },
+    {
+      "chapter": 5,
+      "verse": 1,
+      "zh": "不可严责老年人，只要劝他如同父亲；劝少年人如同弟兄；",
+      "en": "Do not rebuke an older man harshly, but exhort him as if he were your father. Treat younger men as brothers,"
+    },
+    {
+      "chapter": 5,
+      "verse": 2,
+      "zh": "劝老年妇人如同母亲；劝少年妇人如同姐妹，总要清清洁洁的。",
+      "en": "older women as mothers, and younger women as sisters, with absolute purity."
+    },
+    {
+      "chapter": 5,
+      "verse": 3,
+      "zh": "要尊敬那真为寡妇的。",
+      "en": "Give proper recognition to those widows who are really in need."
+    },
+    {
+      "chapter": 5,
+      "verse": 4,
+      "zh": "若寡妇有儿女，或有孙子孙女，便叫他们先在自己家中学着行孝，报答亲恩，因为这在神面前是可悦纳的。",
+      "en": "But if a widow has children or grandchildren, these should learn first of all to put their religion into practice by caring for their own family and so repaying their parents and grandparents, for this is pleasing to God."
+    },
+    {
+      "chapter": 5,
+      "verse": 5,
+      "zh": "那独居无靠、真为寡妇的，是仰赖神，昼夜不住的祈求祷告。",
+      "en": "The widow who is really in need and left all alone puts her hope in God and continues night and day to pray and to ask God for help."
+    },
+    {
+      "chapter": 5,
+      "verse": 6,
+      "zh": "但那奢侈宴乐的寡妇，虽然活着，也是死的。",
+      "en": "But the widow who lives for pleasure is dead even while she lives."
+    },
+    {
+      "chapter": 5,
+      "verse": 7,
+      "zh": "这些事你要嘱咐他们，使他们无可指摘。",
+      "en": "Give the people these instructions, so that no one may be open to blame."
+    },
+    {
+      "chapter": 5,
+      "verse": 8,
+      "zh": "人若不看顾亲属，就是背了真道，比不信的人还不好，不看顾自己家里的人，更是如此。",
+      "en": "Anyone who does not provide for their relatives, and especially for members of their own household, has denied the faith and is worse than an unbeliever."
+    },
+    {
+      "chapter": 5,
+      "verse": 9,
+      "zh": "寡妇记在册子上，必须至少六十岁，方可录取；",
+      "en": "No widow may be put on the list of widows unless she is over sixty, has been faithful to her husband,"
+    },
+    {
+      "chapter": 5,
+      "verse": 10,
+      "zh": "又要作善事的见证，就如养育儿女，接待远人，洗圣徒的脚，救济遭难的人，竭力行各样善事。",
+      "en": "and is well known for her good deeds, such as bringing up children, showing hospitality, washing the feet of the Lord's people, helping those in trouble and devoting herself to all kinds of good deeds."
+    },
+    {
+      "chapter": 5,
+      "verse": 11,
+      "zh": "至於年轻的寡妇，就可以拒绝，因为她们的情欲发动，违背基督的时候就想要嫁人。",
+      "en": "As for younger widows, do not put them on such a list. For when their sensual desires overcome their dedication to Christ, they want to marry."
+    },
+    {
+      "chapter": 5,
+      "verse": 12,
+      "zh": "她们被定罪，是因废弃了当初所许的愿；",
+      "en": "Thus they bring judgment on themselves, because they have broken their first pledge."
+    },
+    {
+      "chapter": 5,
+      "verse": 13,
+      "zh": "并且她们又学会了懒惰，挨家闲游；不但是懒惰，又说长道短，管闲事，说些不当说的话。",
+      "en": "Besides, they get into the habit of being idle and going about from house to house. And not only do they become idlers, but also busybodies who talk nonsense, saying things they ought not to."
+    },
+    {
+      "chapter": 5,
+      "verse": 14,
+      "zh": "所以我愿意年轻的寡妇嫁人，生养儿女，治理家务，不给敌人以诽谤的把柄。",
+      "en": "So I counsel younger widows to marry, to have children, to manage their homes and to give the enemy no opportunity for slander."
+    },
+    {
+      "chapter": 5,
+      "verse": 15,
+      "zh": "因为已经有转去随从撒但的。",
+      "en": "Some have in fact already turned away to follow Satan."
+    },
+    {
+      "chapter": 5,
+      "verse": 16,
+      "zh": "信主的妇女，若家中有寡妇，自己就当救济她们，不可累着教会，好使教会能救济那真无倚靠的寡妇。",
+      "en": "If any woman who is a believer has widows in her care, she should continue to help them and not let the church be burdened with them, so that the church can help those widows who are really in need."
+    },
+    {
+      "chapter": 5,
+      "verse": 17,
+      "zh": "那善于管理教会的长老，当以为配受加倍的敬奉；那劳苦传道教导人的，更当如此。",
+      "en": "The elders who direct the affairs of the church well are worthy of double honor, especially those whose work is preaching and teaching."
+    },
+    {
+      "chapter": 5,
+      "verse": 18,
+      "zh": "因为经上说：牛在场上踹谷的时候，不可笼住它的嘴。又说：工人得工价，是应当的。",
+      "en": "For Scripture says, 'Do not muzzle an ox while it is treading out the grain,' and 'The worker deserves his wages.'"
+    },
+    {
+      "chapter": 5,
+      "verse": 19,
+      "zh": "控告长老的呈子，非有两三个见证，就不要收。",
+      "en": "Do not entertain an accusation against an elder unless it is brought by two or three witnesses."
+    },
+    {
+      "chapter": 5,
+      "verse": 20,
+      "zh": "犯罪的人，当在众人面前责备他，叫其余的人也可以惧怕。",
+      "en": "But those elders who are sinning you are to reprove before everyone, so that the others may take warning."
+    },
+    {
+      "chapter": 5,
+      "verse": 21,
+      "zh": "我在神和基督耶稣并蒙拣选的天使面前嘱咐你，要遵守这些话，不可存成见，行事也不可有偏心。",
+      "en": "I charge you, in the sight of God and Christ Jesus and the elect angels, to keep these instructions without partiality, and to do nothing out of favoritism."
+    },
+    {
+      "chapter": 5,
+      "verse": 22,
+      "zh": "给人行按手的礼，不可急促；不要在别人的罪上有分，要保守自己清洁。",
+      "en": "Do not be hasty in the laying on of hands, and do not share in the sins of others. Keep yourself pure."
+    },
+    {
+      "chapter": 5,
+      "verse": 23,
+      "zh": "因你胃口不清，屡次患病，再不要照常喝水，可以稍微用点酒。",
+      "en": "Stop drinking only water, and use a little wine because of your stomach and your frequent illnesses."
+    },
+    {
+      "chapter": 5,
+      "verse": 24,
+      "zh": "有些人的罪是明显的，如同先到审判案前；有些人的罪是随后跟了去的。",
+      "en": "The sins of some are obvious, reaching the place of judgment ahead of them; the sins of others trail behind them."
+    },
+    {
+      "chapter": 5,
+      "verse": 25,
+      "zh": "这样，善行也有明显的；那不明显的，也不能隐藏。",
+      "en": "In the same way, good deeds are obvious, and even those that are not obvious cannot remain hidden forever."
+    },
+    {
+      "chapter": 6,
+      "verse": 1,
+      "zh": "凡在轭下作仆人的，当以自己主人配受十分的恭敬，免得神的名和道理被人亵渎。",
+      "en": "All who are under the yoke of slavery should consider their masters worthy of full respect, so that God's name and our teaching may not be slandered."
+    },
+    {
+      "chapter": 6,
+      "verse": 2,
+      "zh": "仆人有信道的主人，不可因为与他是弟兄就轻看他，更要加意服事他，因为得服事之益处的，是信道蒙爱的。你要以此教训人，劝勉人。",
+      "en": "Those who have believing masters should not show them disrespect just because they are fellow believers. Instead, they should serve them even better because their masters are dear to them as fellow believers and are devoted to the welfare of their slaves. These are the things you are to teach and insist on."
+    },
+    {
+      "chapter": 6,
+      "verse": 3,
+      "zh": "若有人传异教，不服从我们主耶稣基督纯正的话，与那合乎敬虔的道理，",
+      "en": "If anyone teaches otherwise and does not agree to the sound instruction of our Lord Jesus Christ and to godly teaching,"
+    },
+    {
+      "chapter": 6,
+      "verse": 4,
+      "zh": "他是自高自大，一无所知，专好问难，争辩言词，从此就生出嫉妒、分争、毁谤、妄疑，",
+      "en": "they are conceited and understand nothing. They have an unhealthy interest in controversies and quarrels about words that result in envy, strife, malicious talk, evil suspicions"
+    },
+    {
+      "chapter": 6,
+      "verse": 5,
+      "zh": "并那坏了心术、失丧真理之人的争竞。他们以敬虔为得利的门路。",
+      "en": "and constant friction between people of corrupt mind, who have been robbed of the truth and who think that godliness is a means to financial gain."
+    },
+    {
+      "chapter": 6,
+      "verse": 6,
+      "zh": "然而，敬虔加上知足的心便是大利了；",
+      "en": "But godliness with contentment is great gain."
+    },
+    {
+      "chapter": 6,
+      "verse": 7,
+      "zh": "因为我们没有带甚么到世上来，也不能带甚么去；",
+      "en": "For we brought nothing into the world, and we can take nothing out of it."
+    },
+    {
+      "chapter": 6,
+      "verse": 8,
+      "zh": "只要有衣有食，就当知足。",
+      "en": "But if we have food and clothing, we will be content with that."
+    },
+    {
+      "chapter": 6,
+      "verse": 9,
+      "zh": "但那些想要发财的人，就陷在迷惑、落在网罗和许多无知有害的私欲里，叫人沉在败坏和灭亡中。",
+      "en": "Those who want to get rich fall into temptation and a trap and into many foolish and harmful desires that plunge people into ruin and destruction."
+    },
+    {
+      "chapter": 6,
+      "verse": 10,
+      "zh": "贪财是万恶之根。有人贪恋钱财，就被引诱离了真道，用许多愁苦把自己刺透了。",
+      "en": "For the love of money is a root of all kinds of evil. Some people, eager for money, have wandered from the faith and pierced themselves with many griefs."
+    },
+    {
+      "chapter": 6,
+      "verse": 11,
+      "zh": "但你这属神的人哪，要逃避这些事，追求公义、敬虔、信心、爱心、忍耐、温柔。",
+      "en": "But you, man of God, flee from all this, and pursue righteousness, godliness, faith, love, endurance and gentleness."
+    },
+    {
+      "chapter": 6,
+      "verse": 12,
+      "zh": "你要为真道打那美好的仗，持定永生。你为此被召，也在许多见证人面前已经作了那美好的见证。",
+      "en": "Fight the good fight of the faith. Take hold of the eternal life to which you were called when you made your good confession in the presence of many witnesses."
+    },
+    {
+      "chapter": 6,
+      "verse": 13,
+      "zh": "我在叫万物生活的神面前，并在向本丢彼拉多作过那美好见证的基督耶稣面前嘱咐你，",
+      "en": "In the sight of God, who gives life to everything, and of Christ Jesus, who while testifying before Pontius Pilate made the good confession, I charge you"
+    },
+    {
+      "chapter": 6,
+      "verse": 14,
+      "zh": "要守这命令，毫不玷污，无可指摘，直到我们的主耶稣基督显现。",
+      "en": "to keep this command without spot or blame until the appearing of our Lord Jesus Christ,"
+    },
+    {
+      "chapter": 6,
+      "verse": 15,
+      "zh": "到了日期，那可称颂、独有权能的，万王之王、万主之主，",
+      "en": "which God will bring about in his own time—God, the blessed and only Ruler, the King of kings and Lord of lords,"
+    },
+    {
+      "chapter": 6,
+      "verse": 16,
+      "zh": "就是那独一不死、住在人不能靠近的光里，是人未曾看见、也是不能看见的，要将他显明出来。但愿尊贵和永远的权能都归给他。阿们！",
+      "en": "who alone is immortal and who lives in unapproachable light, whom no one has seen or can see. To him be honor and might forever. Amen."
+    },
+    {
+      "chapter": 6,
+      "verse": 17,
+      "zh": "你要嘱咐那些今世富足的人，不要自高，也不要倚靠无定的钱财；只要倚靠那厚赐百物给我们享受的神。",
+      "en": "Command those who are rich in this present world not to be arrogant nor to put their hope in wealth, which is so uncertain, but to put their hope in God, who richly provides us with everything for our enjoyment."
+    },
+    {
+      "chapter": 6,
+      "verse": 18,
+      "zh": "又要嘱咐他们行善，在好事上富足，甘心施舍，乐意分享；",
+      "en": "Command them to do good, to be rich in good deeds, and to be generous and willing to share."
+    },
+    {
+      "chapter": 6,
+      "verse": 19,
+      "zh": "为自己积成美好的根基，预备将来，叫他们持定那真正的生命。",
+      "en": "In this way they will lay up treasure for themselves as a firm foundation for the coming age, so that they may take hold of the life that is truly life."
+    },
+    {
+      "chapter": 6,
+      "verse": 20,
+      "zh": "提摩太啊，你要保守所托付你的，躲避世俗的虚谈和那敌真道、似是而非的学问。",
+      "en": "Timothy, guard what has been entrusted to your care. Turn away from godless chatter and the opposing ideas of what is falsely called knowledge,"
+    },
+    {
+      "chapter": 6,
+      "verse": 21,
+      "zh": "已经有人自称有这学问，就偏离了真道。愿恩惠常与你们同在！",
+      "en": "which some have professed and in so doing have departed from the faith. Grace be with you all."
+    }
+  ],
+  "keyVerses": [
+    {
+      "chapter": 1,
+      "verse": 15
+    },
+    {
+      "chapter": 1,
+      "verse": 17
+    },
+    {
+      "chapter": 2,
+      "verse": 5
+    },
+    {
+      "chapter": 2,
+      "verse": 6
+    },
+    {
+      "chapter": 3,
+      "verse": 1
+    },
+    {
+      "chapter": 3,
+      "verse": 2
+    },
+    {
+      "chapter": 3,
+      "verse": 16
+    },
+    {
+      "chapter": 4,
+      "verse": 7
+    },
+    {
+      "chapter": 4,
+      "verse": 8
+    },
+    {
+      "chapter": 4,
+      "verse": 12
+    },
+    {
+      "chapter": 5,
+      "verse": 8
+    },
+    {
+      "chapter": 5,
+      "verse": 17
+    },
+    {
+      "chapter": 6,
+      "verse": 6
+    },
+    {
+      "chapter": 6,
+      "verse": 10
+    },
+    {
+      "chapter": 6,
+      "verse": 11
+    },
+    {
+      "chapter": 6,
+      "verse": 12
+    },
+    {
+      "chapter": 6,
+      "verse": 17
+    }
+  ]
+}

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圣经经文批量校对工具</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            color: #4facfe;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .controls {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .control-group {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .control-group label {
+            font-weight: bold;
+            color: #555;
+            min-width: 80px;
+        }
+        
+        select, input, button {
+            padding: 10px 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+        }
+        
+        select:focus, input:focus {
+            outline: none;
+            border-color: #4facfe;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, #ffc107, #ff8c00);
+        }
+        
+        .progress-area {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            display: none;
+        }
+        
+        .progress-bar {
+            background: #f0f0f0;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        
+        .progress-fill {
+            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        
+        .verses-area {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .verse-item {
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding: 20px;
+            background: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+        
+        .verse-item:hover {
+            border-color: #4facfe;
+            box-shadow: 0 3px 15px rgba(79, 172, 254, 0.1);
+        }
+        
+        .verse-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .verse-ref {
+            font-weight: bold;
+            color: #4facfe;
+            font-size: 1.1em;
+        }
+        
+        .verse-actions {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn-small {
+            padding: 5px 10px;
+            font-size: 12px;
+            min-width: auto;
+        }
+        
+        .verse-content {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #4facfe;
+        }
+        
+        .verse-edit {
+            display: none;
+            margin-top: 10px;
+        }
+        
+        .verse-edit textarea {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1.1em;
+            line-height: 1.6;
+            resize: vertical;
+        }
+        
+        .stats {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .stat-item {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .stat-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #4facfe;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .modified {
+            border-left-color: #28a745 !important;
+            background-color: #d4edda !important;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="background: #f8d7da; border: 1px solid #f5c6cb; padding: 15px; margin: 20px; border-radius: 5px;">
+            <h4>⚠️ 静态版本限制</h4>
+            <p>此为 GitHub Pages 静态托管版本，无法保存编辑结果到服务器。</p>
+            <p><strong>建议</strong>: 下载完整版本到本地使用，或将编辑结果手动复制保存。</p>
+        </div>
+        
+        <div class="header">
+            <h1><i class="fas fa-book-open"></i> 圣经经文批量校对工具</h1>
+            <p>系统性检查和修正经文内容，确保与和合本标准版本一致</p>
+        </div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label><i class="fas fa-book"></i> 选择书卷:</label>
+                <select id="bookSelect">
+                    <option value="">请选择书卷</option>
+                </select>
+                
+                <label><i class="fas fa-list-ol"></i> 章节范围:</label>
+                <input type="number" id="startChapter" placeholder="起始章" min="1" style="width: 100px;">
+                <span>-</span>
+                <input type="number" id="endChapter" placeholder="结束章" min="1" style="width: 100px;">
+                
+                <button class="btn" onclick="loadVerses()">
+                    <i class="fas fa-search"></i> 加载经文
+                </button>
+            </div>
+            
+            <div class="control-group">
+                <button class="btn btn-secondary" onclick="saveAllChanges()">
+                    <i class="fas fa-save"></i> 保存所有修改
+                </button>
+                
+                <button class="btn btn-secondary" onclick="exportChanges()">
+                    <i class="fas fa-download"></i> 导出修改记录
+                </button>
+                
+                <button class="btn" onclick="goBack()">
+                    <i class="fas fa-home"></i> 返回练习
+                </button>
+            </div>
+        </div>
+        
+        <div class="progress-area" id="progressArea">
+            <div class="stats">
+                <h3>校对统计</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value" id="totalVerses">0</div>
+                        <div class="stat-label">总经文数</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="modifiedVerses">0</div>
+                        <div class="stat-label">已修改</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="checkedVerses">0</div>
+                        <div class="stat-label">已检查</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="progressPercent">0%</div>
+                        <div class="stat-label">完成度</div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+        
+        <div class="verses-area">
+            <div id="versesContainer">
+                <div class="loading">
+                    <i class="fas fa-book"></i><br>
+                    选择书卷和章节范围开始校对工作
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let currentBook = '';
+        let versesData = [];
+        let modifiedVerses = new Set();
+        let checkedVerses = new Set();
+        
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            loadBooksOptions();
+        });
+        
+        // 加载可用书卷
+        async function loadBooksOptions() {
+            try {
+                const response = await fetch('data/config.json');
+                const config = await response.json();
+                
+                const select = document.getElementById('bookSelect');
+                config.availableBooks.forEach(bookKey => {
+                    const option = document.createElement('option');
+                    option.value = bookKey;
+                    option.textContent = config.books[bookKey].name;
+                    select.appendChild(option);
+                });
+            } catch (error) {
+                console.error('加载书卷列表失败:', error);
+            }
+        }
+        
+        // 加载经文
+        async function loadVerses() {
+            const bookSelect = document.getElementById('bookSelect');
+            const startChapter = parseInt(document.getElementById('startChapter').value) || 1;
+            const endChapter = parseInt(document.getElementById('endChapter').value) || startChapter;
+            
+            if (!bookSelect.value) {
+                alert('请选择书卷');
+                return;
+            }
+            
+            currentBook = bookSelect.value;
+            
+            try {
+                document.getElementById('versesContainer').innerHTML = '<div class="loading"><i class="fas fa-spinner fa-spin"></i><br>加载经文中...</div>';
+                document.getElementById('progressArea').style.display = 'block';
+                
+                const response = await fetch(`data/${currentBook}.json`);
+                const bookData = await response.json();
+                
+                // 筛选指定章节范围的经文
+                versesData = bookData.verses.filter(verse => 
+                    verse.chapter >= startChapter && verse.chapter <= endChapter
+                );
+                
+                displayVerses();
+                updateStats();
+            } catch (error) {
+                console.error('加载经文失败:', error);
+                document.getElementById('versesContainer').innerHTML = '<div class="loading"><i class="fas fa-exclamation-triangle"></i><br>加载失败，请检查网络连接</div>';
+            }
+        }
+        
+        // 显示经文
+        function displayVerses() {
+            const container = document.getElementById('versesContainer');
+            let html = '';
+            
+            versesData.forEach((verse, index) => {
+                const verseId = `${currentBook}_${verse.chapter}_${verse.verse}`;
+                const isModified = modifiedVerses.has(verseId);
+                const isChecked = checkedVerses.has(verseId);
+                
+                html += `
+                    <div class="verse-item ${isModified ? 'modified' : ''}" id="verse_${verseId}">
+                        <div class="verse-header">
+                            <span class="verse-ref">
+                                <i class="fas fa-bookmark"></i> 
+                                ${getBookName(currentBook)} ${verse.chapter}:${verse.verse}
+                            </span>
+                            <div class="verse-actions">
+                                <button class="btn btn-small" onclick="toggleEdit('${verseId}')" title="编辑经文">
+                                    <i class="fas fa-edit"></i> 编辑
+                                </button>
+                                <button class="btn btn-small btn-secondary" onclick="markChecked('${verseId}')" title="标记为已检查">
+                                    <i class="fas fa-check"></i> ${isChecked ? '已检查' : '确认'}
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="verse-content" id="content_${verseId}">
+                            ${verse.text || verse.zh || '经文内容缺失'}
+                        </div>
+                        
+                        <div class="verse-edit" id="edit_${verseId}">
+                            <textarea id="textarea_${verseId}" placeholder="在此输入正确的经文内容...">${verse.text || verse.zh || ''}</textarea>
+                            <div style="margin-top: 10px; display: flex; gap: 10px;">
+                                <button class="btn btn-small" onclick="saveVerse('${verseId}')">
+                                    <i class="fas fa-save"></i> 保存
+                                </button>
+                                <button class="btn btn-small btn-secondary" onclick="cancelEdit('${verseId}')">
+                                    <i class="fas fa-times"></i> 取消
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+        }
+        
+        // 切换编辑模式
+        function toggleEdit(verseId) {
+            const content = document.getElementById(`content_${verseId}`);
+            const edit = document.getElementById(`edit_${verseId}`);
+            
+            if (edit.style.display === 'block') {
+                cancelEdit(verseId);
+            } else {
+                content.style.display = 'none';
+                edit.style.display = 'block';
+                document.getElementById(`textarea_${verseId}`).focus();
+            }
+        }
+        
+        // 取消编辑
+        function cancelEdit(verseId) {
+            const content = document.getElementById(`content_${verseId}`);
+            const edit = document.getElementById(`edit_${verseId}`);
+            
+            content.style.display = 'block';
+            edit.style.display = 'none';
+        }
+        
+        // 保存单个经文
+        async function saveVerse(verseId) {
+            const textarea = document.getElementById(`textarea_${verseId}`);
+            const newText = textarea.value.trim();
+            
+            if (!newText) {
+                alert('经文内容不能为空');
+                return;
+            }
+            
+            const [book, chapter, verse] = verseId.split('_');
+            
+            try {
+                // 更新显示
+                document.getElementById(`content_${verseId}`).textContent = newText;
+                
+                // 更新数据
+                const verseIndex = versesData.findIndex(v => 
+                    v.chapter == chapter && v.verse == verse
+                );
+                if (verseIndex !== -1) {
+                    versesData[verseIndex].text = newText;
+                    versesData[verseIndex].zh = newText;
+                }
+                
+                // 标记为已修改
+                modifiedVerses.add(verseId);
+                document.getElementById(`verse_${verseId}`).classList.add('modified');
+                
+                // 保存到服务器
+                await saveVerseToServer(book, chapter, verse, newText);
+                
+                cancelEdit(verseId);
+                updateStats();
+                
+                alert('✅ 经文保存成功！');
+            } catch (error) {
+                console.error('保存失败:', error);
+                alert('❌ 保存失败，请重试');
+            }
+        }
+        
+        // 标记为已检查
+        function markChecked(verseId) {
+            if (checkedVerses.has(verseId)) {
+                checkedVerses.delete(verseId);
+            } else {
+                checkedVerses.add(verseId);
+            }
+            
+            const button = document.querySelector(`#verse_${verseId} .verse-actions button:last-child`);
+            if (checkedVerses.has(verseId)) {
+                button.innerHTML = '<i class="fas fa-check"></i> 已检查';
+                button.classList.add('btn-secondary');
+            } else {
+                button.innerHTML = '<i class="fas fa-check"></i> 确认';
+                button.classList.remove('btn-secondary');
+            }
+            
+            updateStats();
+        }
+        
+        // 保存到服务器
+        async function saveVerseToServer(book, chapter, verse, text) {
+            const response = await fetch('/api/save-verse', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    book: book,
+                    chapter: parseInt(chapter),
+                    verse: parseInt(verse),
+                    text: text
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error('网络错误');
+            }
+        }
+        
+        // 保存所有修改
+        async function saveAllChanges() {
+            if (modifiedVerses.size === 0) {
+                alert('没有需要保存的修改');
+                return;
+            }
+            
+            const confirmed = confirm(`确定要保存 ${modifiedVerses.size} 个修改的经文吗？`);
+            if (confirmed) {
+                alert(`✅ 已保存 ${modifiedVerses.size} 个修改的经文！`);
+            }
+        }
+        
+        // 导出修改记录
+        function exportChanges() {
+            if (modifiedVerses.size === 0) {
+                alert('没有修改记录可导出');
+                return;
+            }
+            
+            const changes = Array.from(modifiedVerses).map(verseId => {
+                const [book, chapter, verse] = verseId.split('_');
+                const verseData = versesData.find(v => v.chapter == chapter && v.verse == verse);
+                return {
+                    reference: `${getBookName(book)} ${chapter}:${verse}`,
+                    text: verseData.text || verseData.zh
+                };
+            });
+            
+            const blob = new Blob([JSON.stringify(changes, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `bible_changes_${currentBook}_${new Date().toISOString().slice(0, 10)}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+        
+        // 更新统计
+        function updateStats() {
+            document.getElementById('totalVerses').textContent = versesData.length;
+            document.getElementById('modifiedVerses').textContent = modifiedVerses.size;
+            document.getElementById('checkedVerses').textContent = checkedVerses.size;
+            
+            const progress = versesData.length > 0 ? Math.round((checkedVerses.size / versesData.length) * 100) : 0;
+            document.getElementById('progressPercent').textContent = progress + '%';
+            document.getElementById('progressFill').style.width = progress + '%';
+        }
+        
+        // 获取书卷名称
+        function getBookName(bookKey) {
+            const bookNames = {
+                'matthew': '马太福音',
+                'mark': '马可福音',
+                'luke': '路加福音',
+                'john': '约翰福音',
+                'acts': '使徒行传',
+                'romans': '罗马书',
+                'ephesians': '以弗所书',
+                '1corinthians': '哥林多前书',
+                '2corinthians': '哥林多后书',
+                'galatians': '加拉太书',
+                'philippians': '腓立比书',
+                'colossians': '歌罗西书',
+                '1thessalonians': '帖撒罗尼迦前书',
+                '2thessalonians': '帖撒罗尼迦后书',
+                '1timothy': '提摩太前书',
+                '2timothy': '提摩太后书',
+                'titus': '提多书',
+                'philemon': '腓利门书'
+            };
+            return bookNames[bookKey] || bookKey;
+        }
+        
+        // 返回练习页面
+        function goBack() {
+            window.location.href = 'practice.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,373 @@
+{
+  "book": "titus",
+  "name": "提多书",
+  "englishName": "Titus",
+  "testament": "new",
+  "category": "pauline_epistles",
+  "chapters": 3,
+  "color": "#daa520",
+  "description": "保罗写给提多的信，指导他在革哩底岛建立教会秩序和教导健康教义",
+  "keyThemes": [
+    "教会秩序",
+    "健康教义",
+    "长老资格",
+    "恩典与行为",
+    "敬虔生活"
+  ],
+  "verses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "zh": "神的仆人，耶稣基督的使徒保罗，凭着神选民的信心，与敬虔真理的知识，",
+      "en": "Paul, a servant of God and an apostle of Jesus Christ to further the faith of God's elect and their knowledge of the truth that leads to godliness—"
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "zh": "盼望那无谎言的神在万古之先所应许的永生，",
+      "en": "in the hope of eternal life, which God, who does not lie, promised before the beginning of time,"
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "zh": "到了日期，藉着传扬的工夫，把他的道显明了；这传扬的责任，是按着神我们救主的命令交托了我。",
+      "en": "and which now at his appointed season he has brought to light through the preaching entrusted to me by the command of God our Savior,"
+    },
+    {
+      "chapter": 1,
+      "verse": 4,
+      "zh": "写信给提多，就是照着我们共信之道作我真儿子的。愿恩惠、平安从父神和我们的救主基督耶稣归与你！",
+      "en": "To Titus, my true son in our common faith: Grace and peace from God the Father and Christ Jesus our Savior."
+    },
+    {
+      "chapter": 1,
+      "verse": 5,
+      "zh": "我从前留你在革哩底，是要你将那没有办完的事都办整齐了，又照我所吩咐你的，在各城设立长老。",
+      "en": "The reason I left you in Crete was that you might put in order what was left unfinished and appoint elders in every town, as I directed you."
+    },
+    {
+      "chapter": 1,
+      "verse": 6,
+      "zh": "若有无可指责的人，只作一个妇人的丈夫，儿女也是信主的，没有人告他们是放荡不服约束的，就可以设立。",
+      "en": "An elder must be blameless, faithful to his wife, a man whose children believe and are not open to the charge of being wild and disobedient."
+    },
+    {
+      "chapter": 1,
+      "verse": 7,
+      "zh": "监督既是神的管家，必须无可指责，不任性，不暴躁，不因酒滋事，不打人，不贪无义之财；",
+      "en": "Since an overseer manages God's household, he must be blameless—not overbearing, not quick-tempered, not given to drunkenness, not violent, not pursuing dishonest gain."
+    },
+    {
+      "chapter": 1,
+      "verse": 8,
+      "zh": "乐意接待远人，好善，庄重，公义，圣洁，自持。",
+      "en": "Rather, he must be hospitable, one who loves what is good, who is self-controlled, upright, holy and disciplined."
+    },
+    {
+      "chapter": 1,
+      "verse": 9,
+      "zh": "坚守所教真实的道理，就能将纯正的教训劝化人，又能把争辩的人驳倒了。",
+      "en": "He must hold firmly to the trustworthy message as it has been taught, so that he can encourage others by sound doctrine and refute those who oppose it."
+    },
+    {
+      "chapter": 1,
+      "verse": 10,
+      "zh": "因为有许多人不服约束，说虚空话欺哄人。那奉割礼的更是这样。",
+      "en": "For there are many rebellious people, full of meaningless talk and deception, especially those of the circumcision group."
+    },
+    {
+      "chapter": 1,
+      "verse": 11,
+      "zh": "这些人的口总要堵住。他们因贪不义之财，将不该教导的教导人，败坏人的全家。",
+      "en": "They must be silenced, because they are disrupting whole households by teaching things they ought not to teach—and that for the sake of dishonest gain."
+    },
+    {
+      "chapter": 1,
+      "verse": 12,
+      "zh": "有革哩底人中的一个本地先知说：革哩底人常说谎话，乃是恶兽，又馋又懒。",
+      "en": "One of Crete's own prophets has said it: 'Cretans are always liars, evil brutes, lazy gluttons.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 13,
+      "zh": "这个见证是真的。所以你要严严的责备他们，使他们在真道上纯全无疵，",
+      "en": "This saying is true. Therefore rebuke them sharply, so that they will be sound in the faith"
+    },
+    {
+      "chapter": 1,
+      "verse": 14,
+      "zh": "不听犹太人荒渺的言语和离弃真道之人的诫命。",
+      "en": "and not pay attention to Jewish myths or to the merely human commands of those who reject the truth."
+    },
+    {
+      "chapter": 1,
+      "verse": 15,
+      "zh": "在洁净的人，凡物都洁净；在污秽不信的人，什么都不洁净，连心地和天良也都污秽了。",
+      "en": "To the pure, all things are pure, but to those who are corrupted and do not believe, nothing is pure. In fact, both their minds and consciences are corrupted."
+    },
+    {
+      "chapter": 1,
+      "verse": 16,
+      "zh": "他们说是认识神，行事却和他相背；本是可憎恶的，是悖逆的，在各样善事上是可废弃的。",
+      "en": "They claim to know God, but by their actions they deny him. They are detestable, disobedient and unfit for doing anything good."
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "zh": "但你所讲的，总要合乎那纯正的道理。",
+      "en": "You, however, must teach what is appropriate to sound doctrine."
+    },
+    {
+      "chapter": 2,
+      "verse": 2,
+      "zh": "劝老年人要有节制、端庄、自守，在信心、爱心、忍耐上都要纯全无疵。",
+      "en": "Teach the older men to be temperate, worthy of respect, self-controlled, and sound in faith, in love and in endurance."
+    },
+    {
+      "chapter": 2,
+      "verse": 3,
+      "zh": "劝老年妇人，举止行动要恭敬，不说谗言，不给酒作奴仆，用善道教训人，",
+      "en": "Likewise, teach the older women to be reverent in the way they live, not to be slanderers or addicted to much wine, but to teach what is good."
+    },
+    {
+      "chapter": 2,
+      "verse": 4,
+      "zh": "好指教少年妇人爱丈夫，爱儿女，",
+      "en": "Then they can urge the younger women to love their husbands and children,"
+    },
+    {
+      "chapter": 2,
+      "verse": 5,
+      "zh": "谨守、贞洁，料理家务，待人有恩，顺服自己的丈夫，免得神的道理被毁谤。",
+      "en": "to be self-controlled and pure, to be busy at home, to be kind, and to be subject to their husbands, so that no one will malign the word of God."
+    },
+    {
+      "chapter": 2,
+      "verse": 6,
+      "zh": "又劝少年人要谨守。",
+      "en": "Similarly, encourage the young men to be self-controlled."
+    },
+    {
+      "chapter": 2,
+      "verse": 7,
+      "zh": "你自己凡事要显出善行的榜样，在教训上要正直、端庄，",
+      "en": "In everything set them an example by doing what is good. In your teaching show integrity, seriousness"
+    },
+    {
+      "chapter": 2,
+      "verse": 8,
+      "zh": "言语纯正，无可指责，叫那反对的人，既无处可说我们的不是，便自觉羞愧。",
+      "en": "and soundness of speech that cannot be condemned, so that those who oppose you may be ashamed because they have nothing bad to say about us."
+    },
+    {
+      "chapter": 2,
+      "verse": 9,
+      "zh": "劝仆人要顺服自己的主人，凡事讨他的喜欢，不可顶嘴，",
+      "en": "Teach slaves to be subject to their masters in everything, to try to please them, not to talk back to them,"
+    },
+    {
+      "chapter": 2,
+      "verse": 10,
+      "zh": "不私拿东西，要显为忠诚，以致凡事尊荣我们救主神的道。",
+      "en": "and not to steal from them, but to show that they can be fully trusted, so that in every way they will make the teaching about God our Savior attractive."
+    },
+    {
+      "chapter": 2,
+      "verse": 11,
+      "zh": "因为神救众人的恩典已经显明出来，",
+      "en": "For the grace of God has appeared that offers salvation to all people."
+    },
+    {
+      "chapter": 2,
+      "verse": 12,
+      "zh": "教训我们除去不敬虔的心和世俗的情欲，在今世自守、公义、敬虔度日，",
+      "en": "It teaches us to say 'No' to ungodliness and worldly passions, and to live self-controlled, upright and godly lives in this present age,"
+    },
+    {
+      "chapter": 2,
+      "verse": 13,
+      "zh": "等候所盼望的福，并等候至大的神和我们救主耶稣基督的荣耀显现。",
+      "en": "while we wait for the blessed hope—the appearing of the glory of our great God and Savior, Jesus Christ,"
+    },
+    {
+      "chapter": 2,
+      "verse": 14,
+      "zh": "他为我们舍了自己，要赎我们脱离一切罪恶，又洁净我们，特作自己的子民，热心为善。",
+      "en": "who gave himself for us to redeem us from all wickedness and to purify for himself a people that are his very own, eager to do what is good."
+    },
+    {
+      "chapter": 2,
+      "verse": 15,
+      "zh": "这些事你要讲明，劝戒人，用各等权柄责备人。不可叫人轻看你。",
+      "en": "These, then, are the things you should teach. Encourage and rebuke with all authority. Do not let anyone despise you."
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "zh": "你要提醒众人，叫他们顺服作官的、掌权的，遵他的命，预备行各样的善事。",
+      "en": "Remind the people to be subject to rulers and authorities, to be obedient, to be ready to do whatever is good,"
+    },
+    {
+      "chapter": 3,
+      "verse": 2,
+      "zh": "不要毁谤，不要争竞，总要和平，向众人大显温柔。",
+      "en": "to slander no one, to be peaceable and considerate, and always to be gentle toward everyone."
+    },
+    {
+      "chapter": 3,
+      "verse": 3,
+      "zh": "我们从前也是无知、悖逆、受迷惑、服事各样私欲和宴乐，常存恶毒、嫉妒的心，是可恨的，又彼此相恨。",
+      "en": "At one time we too were foolish, disobedient, deceived and enslaved by all kinds of passions and pleasures. We lived in malice and envy, being hated and hating one another."
+    },
+    {
+      "chapter": 3,
+      "verse": 4,
+      "zh": "但到了神我们救主所显明的恩慈和他向人所施的慈爱的时候，",
+      "en": "But when the kindness and love of God our Savior appeared,"
+    },
+    {
+      "chapter": 3,
+      "verse": 5,
+      "zh": "他便救了我们，并不是因我们自己所行的义，乃是照他的怜悯，藉着重生的洗和圣灵的更新。",
+      "en": "he saved us, not because of righteous things we had done, but because of his mercy. He saved us through the washing of rebirth and renewal by the Holy Spirit,"
+    },
+    {
+      "chapter": 3,
+      "verse": 6,
+      "zh": "圣灵就是神藉着耶稣基督我们救主厚厚浇灌在我们身上的，",
+      "en": "whom he poured out on us generously through Jesus Christ our Savior,"
+    },
+    {
+      "chapter": 3,
+      "verse": 7,
+      "zh": "好叫我们因他的恩得称为义，可以凭着永生的盼望成为后嗣。",
+      "en": "so that, having been justified by his grace, we might become heirs having the hope of eternal life."
+    },
+    {
+      "chapter": 3,
+      "verse": 8,
+      "zh": "这话是可信的。我也愿你把这些事切切实实的讲明，使那些已信神的人留心作正经事业。这些事本是善的，于人有益的。",
+      "en": "This is a trustworthy saying. And I want you to stress these things, so that those who have trusted in God may be careful to devote themselves to doing what is good. These things are excellent and profitable for everyone."
+    },
+    {
+      "chapter": 3,
+      "verse": 9,
+      "zh": "要远避无知的辩论和家谱的空谈，以及分争，并因律法而起的争竞，因为这都是虚妄无益的。",
+      "en": "But avoid foolish controversies and genealogies and arguments and quarrels about the law, because these are unprofitable and useless."
+    },
+    {
+      "chapter": 3,
+      "verse": 10,
+      "zh": "分门结党的人，警戒过一两次，就要弃绝他。",
+      "en": "Warn a divisive person once, and then warn them a second time. After that, have nothing to do with them."
+    },
+    {
+      "chapter": 3,
+      "verse": 11,
+      "zh": "因为知道这等人已经背道，犯了罪，自己明知不是，还是去作。",
+      "en": "You may be sure that such people are warped and sinful; they are self-condemned."
+    },
+    {
+      "chapter": 3,
+      "verse": 12,
+      "zh": "我打发亚提马或者推基古到你那里去的时候，你要赶紧往尼哥波立去见我，因为我已经定意在那里过冬。",
+      "en": "As soon as I send Artemas or Tychicus to you, do your best to come to me at Nicopolis, because I have decided to winter there."
+    },
+    {
+      "chapter": 3,
+      "verse": 13,
+      "zh": "你要赶紧打发律师西纳和亚波罗前行，使他们没有缺乏。",
+      "en": "Do everything you can to help Zenas the lawyer and Apollos on their way and see that they have everything they need."
+    },
+    {
+      "chapter": 3,
+      "verse": 14,
+      "zh": "并且我们的人要学习正经事业，预备所需用的，免得不结果子。",
+      "en": "Our people must learn to devote themselves to doing what is good, in order that they may provide for daily necessities and not live unproductive lives."
+    },
+    {
+      "chapter": 3,
+      "verse": 15,
+      "zh": "同我在一处的人都问你安。愿恩惠常与你们众人同在！阿们！",
+      "en": "Everyone with me sends you greetings. Greet those who love us in the faith. Grace be with you all."
+    }
+  ],
+  "keyVerses": [
+    {
+      "chapter": 1,
+      "verse": 5
+    },
+    {
+      "chapter": 1,
+      "verse": 6
+    },
+    {
+      "chapter": 1,
+      "verse": 7
+    },
+    {
+      "chapter": 1,
+      "verse": 9
+    },
+    {
+      "chapter": 1,
+      "verse": 15
+    },
+    {
+      "chapter": 1,
+      "verse": 16
+    },
+    {
+      "chapter": 2,
+      "verse": 1
+    },
+    {
+      "chapter": 2,
+      "verse": 11
+    },
+    {
+      "chapter": 2,
+      "verse": 12
+    },
+    {
+      "chapter": 2,
+      "verse": 13
+    },
+    {
+      "chapter": 2,
+      "verse": 14
+    },
+    {
+      "chapter": 2,
+      "verse": 15
+    },
+    {
+      "chapter": 3,
+      "verse": 3
+    },
+    {
+      "chapter": 3,
+      "verse": 4
+    },
+    {
+      "chapter": 3,
+      "verse": 5
+    },
+    {
+      "chapter": 3,
+      "verse": 7
+    },
+    {
+      "chapter": 3,
+      "verse": 8
+    },
+    {
+      "chapter": 3,
+      "verse": 9
+    },
+    {
+      "chapter": 3,
+      "verse": 10
+    }
+  ]
+}

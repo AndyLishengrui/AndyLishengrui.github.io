@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主权与顺服 - 第7节 | 建立根基</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            border-radius: 15px 15px 0 0;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .breadcrumb {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+
+        .section-title-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .section-label {
+            display: inline-block;
+            border: 2px solid #333;
+            padding: 8px 20px;
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .section-name {
+            font-size: 1.3em;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .question-block {
+            margin-bottom: 30px;
+            padding: 0;
+            background: transparent;
+            border: none;
+        }
+
+        .question-header {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .question-number {
+            flex-shrink: 0;
+            margin-right: 10px;
+            color: #333;
+            font-size: 1em;
+        }
+
+        .question-text {
+            font-size: 1em;
+            color: #333;
+            font-weight: normal;
+            line-height: 1.6;
+        }
+
+        .answers-area {
+            margin-left: 30px;
+        }
+
+        .reference-with-blank {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .reference-text {
+            color: #333;
+            font-size: 0.95em;
+            min-width: 100px;
+            flex-shrink: 0;
+        }
+
+        .answer-input {
+            flex: 1;
+            border: none;
+            border-bottom: 1px solid #333;
+            padding: 5px 0;
+            font-size: 1em;
+            font-family: inherit;
+            background: transparent;
+            outline: none;
+        }
+
+        .answer-input.full-width {
+            width: 100%;
+        }
+
+        .answer-input:focus {
+            border-bottom: 2px solid #667eea;
+        }
+
+        .application-section {
+            margin-top: 40px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .application-section h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .application-prompt {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        .application-input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            font-family: inherit;
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .application-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .action-bar {
+            background: white;
+            padding: 25px 40px;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .score-display {
+            font-size: 1.2em;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .score-number {
+            color: #667eea;
+            font-size: 1.5em;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        .navigation {
+            background: white;
+            padding: 20px 40px;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .nav-btn {
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .prev-btn, .next-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .prev-btn:hover, .next-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .home-btn {
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .home-btn:hover {
+            background: #e0e0e0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            /* 优化手机端填空的视觉呈现 */
+            .answers-area {
+                margin-left: 10px; /* 从30px减少到10px */
+            }
+            
+            .reference-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            
+            .hint-buttons {
+                width: 100%;
+                justify-content: flex-start;
+            }
+            }
+
+            header, .content, .action-bar {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            .navigation {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .nav-btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .action-bar {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            display: none;
+            z-index: 1000;
+        }
+
+        .toast.show {
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(400px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="index.html">建立根基</a> / 
+                第2课: 主权与顺服
+            </div>
+            <h1>主权与顺服</h1>
+            <div class="section-title-box">
+                <span class="section-label">第7节</span>
+                <span class="section-name">悔改：转向神</span>
+            </div>
+        </header>
+
+        <div class="content">
+            
+            <div class="question-block" data-question-id="1">
+                <div class="question-header">
+                    <span class="question-number">1.</span>
+                    <span class="question-text">使徒保罗说，我们转离黑暗后要归向哪里？</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <span class="reference-text">徒 26:18</span>
+                    <input type="text" 
+                           class="answer-input" 
+                           data-question="1" 
+                           data-reference="徒 26:18"
+                           placeholder="">
+                </div>
+                
+                </div>
+            </div>
+        
+            <div class="question-block" data-question-id="2">
+                <div class="question-header">
+                    <span class="question-number">2.</span>
+                    <span class="question-text">使徒行传 9 章记载的瘫子得医治的神迹， 带来了怎样的影响？</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <span class="reference-text">徒 9:35</span>
+                    <input type="text" 
+                           class="answer-input" 
+                           data-question="2" 
+                           data-reference="徒 9:35"
+                           placeholder="">
+                </div>
+                
+                </div>
+            </div>
+        
+            <div class="question-block" data-question-id="3">
+                <div class="question-header">
+                    <span class="question-number">3.</span>
+                    <span class="question-text">对传讲主耶稣的人来说，“主与他们同在”的明证是什么？</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <span class="reference-text">徒 11:21</span>
+                    <input type="text" 
+                           class="answer-input" 
+                           data-question="3" 
+                           data-reference="徒 11:21"
+                           placeholder="">
+                </div>
+                
+                </div>
+            </div>
+        
+            <div class="question-block" data-question-id="5">
+                <div class="question-header">
+                    <span class="question-number">5.</span>
+                    <span class="question-text">圣经如何看待没有行为的信心？</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <span class="reference-text">雅 2:26</span>
+                    <input type="text" 
+                           class="answer-input" 
+                           data-question="5" 
+                           data-reference="雅 2:26"
+                           placeholder="">
+                </div>
+                
+                </div>
+            </div>
+        
+            <div class="question-block" data-question-id="6">
+                <div class="question-header">
+                    <span class="question-number">6.</span>
+                    <span class="question-text">对于真正相信耶稣的人，圣经给了什么应许？</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <span class="reference-text">约 6:47</span>
+                    <input type="text" 
+                           class="answer-input" 
+                           data-question="6" 
+                           data-reference="约 6:47"
+                           placeholder="">
+                </div>
+                
+                </div>
+            </div>
+        
+            <div class="question-block" data-question-id="7">
+                <div class="question-header">
+                    <span class="question-number">7.</span>
+                    <span class="question-text">圣经说，耶稣的门徒为什么能胜过世界？</span>
+                </div>
+                <div class="answers-area">
+                    
+                <div class="reference-with-blank">
+                    <input type="text" 
+                           class="answer-input full-width" 
+                           data-question="7" 
+                           placeholder="">
+                </div>
+            
+                </div>
+            </div>
+        
+            
+        <div class="application-section">
+            <h3>个人应用</h3>
+            <p class="application-prompt">你在本节学习到了什么？要如何应用到生活中？</p>
+            <textarea class="application-input" 
+                      placeholder="写下你的思考、感受和具体的行动计划..."
+                      rows="6"></textarea>
+        </div>
+    
+        </div>
+
+        <div class="action-bar">
+            <div class="score-display">
+                完成度: <span class="score-number" id="scoreDisplay">0%</span>
+            </div>
+            <div>
+                <button class="btn btn-secondary" onclick="saveProgress()">💾 保存进度</button>
+                <button class="btn btn-primary" onclick="submitAnswers()">✓ 提交答案</button>
+            </div>
+        </div>
+
+        <div class="navigation">
+            
+            <a href="foundation_L2_S6.html" 
+               class="nav-btn prev-btn">
+                ← 上一节
+            </a>
+        
+        <a href="index.html" class="nav-btn home-btn">
+            返回目录
+        </a>
+    
+            <a href="foundation_L2_S8.html" 
+               class="nav-btn next-btn">
+                下一节 →
+            </a>
+        
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script>
+        // 加载保存的进度
+        window.addEventListener('load', () => {
+            loadProgress();
+            updateScore();
+        });
+
+        // 自动保存
+        document.querySelectorAll('.answer-input, .application-input').forEach(input => {
+            input.addEventListener('change', () => {
+                updateScore();
+            });
+        });
+
+        function loadProgress() {
+            const key = 'foundation_L2_S7';
+            const saved = localStorage.getItem(key);
+            if (saved) {
+                try {
+                    const data = JSON.parse(saved);
+                    // 恢复答案
+                    document.querySelectorAll('.answer-input').forEach(input => {
+                        const q = input.dataset.question;
+                        const ref = input.dataset.reference || 'main';
+                        const savedAnswer = data.answers?.[`q${q}_${ref}`];
+                        if (savedAnswer) {
+                            input.value = savedAnswer;
+                        }
+                    });
+                    // 恢复个人应用
+                    const appInput = document.querySelector('.application-input');
+                    if (appInput && data.application) {
+                        appInput.value = data.application;
+                    }
+                } catch (e) {
+                    console.error('加载进度失败:', e);
+                }
+            }
+        }
+
+        function saveProgress() {
+            const key = 'foundation_L2_S7';
+            const data = {
+                answers: {},
+                application: '',
+                timestamp: new Date().toISOString()
+            };
+            
+            // 保存所有答案
+            document.querySelectorAll('.answer-input').forEach(input => {
+                const q = input.dataset.question;
+                const ref = input.dataset.reference || 'main';
+                data.answers[`q${q}_${ref}`] = input.value;
+            });
+            
+            // 保存个人应用
+            const appInput = document.querySelector('.application-input');
+            if (appInput) {
+                data.application = appInput.value;
+            }
+            
+            localStorage.setItem(key, JSON.stringify(data));
+            showToast('✓ 进度已保存');
+        }
+
+        function submitAnswers() {
+            saveProgress();
+            updateScore();
+            showToast('✓ 答案已提交！继续下一节吧');
+        }
+
+        function updateScore() {
+            let totalFields = 0;
+            let filledFields = 0;
+            
+            // 统计答案输入框
+            document.querySelectorAll('.answer-input').forEach(input => {
+                totalFields++;
+                if (input.value.trim()) {
+                    filledFields++;
+                }
+            });
+            
+            // 统计个人应用
+            const appInput = document.querySelector('.application-input');
+            if (appInput) {
+                totalFields++;
+                if (appInput.value.trim()) {
+                    filledFields++;
+                }
+            }
+            
+            const percentage = totalFields > 0 ? Math.round((filledFields / totalFields) * 100) : 0;
+            document.getElementById('scoreDisplay').textContent = percentage + '%';
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "lesson_id": 3,
+  "lesson_title": "悔改与洗礼",
+  "section_num": 3,
+  "section_title": "悔改：转向神",
+  "answers": {
+    "q1_徒 26:18": {
+      "reference": "徒 26:18",
+      "text": "我差你到他们那里去，要叫他们的眼睛得开，从黑暗中归向光明，从撒但权下归向神；又因信我，得蒙赦罪，和一切成圣的人同得基业。",
+      "has_data": true
+    },
+    "q2_徒 9:35": {
+      "reference": "徒 9:35",
+      "text": "凡住吕大和沙仑的人都看见了他，就归服主。",
+      "has_data": true
+    },
+    "q3_徒 11:21": {
+      "reference": "徒 11:21",
+      "text": "主的手与他们同在，信而归主的人数就很多。",
+      "has_data": true
+    },
+    "q4_雅 2:19,20": {
+      "reference": "雅 2:19,20",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q5_雅 2:26": {
+      "reference": "雅 2:26",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    },
+    "q6_约 6:47": {
+      "reference": "约 6:47",
+      "text": "我实实在在地告诉你们：信的人有永生。",
+      "has_data": true
+    },
+    "q7_约壹 5:4,5": {
+      "reference": "约壹 5:4,5",
+      "text": "",
+      "has_data": false,
+      "note": "暂无此书卷数据（仅支持新约）"
+    }
+  }
+}

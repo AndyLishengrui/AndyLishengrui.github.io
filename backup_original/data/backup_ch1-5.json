@@ -1,0 +1,1554 @@
+{
+  "book": "luke",
+  "name": "路加福音",
+  "englishName": "Luke",
+  "testament": "new",
+  "category": "gospels",
+  "chapters": 24,
+  "color": "#5dade2",
+  "description": "详细记录耶稣基督的生平，强调祂对所有人的爱和救赎",
+  "keyThemes": [
+    "universal_salvation",
+    "compassion",
+    "prayer",
+    "holy_spirit"
+  ],
+  "verses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "zh": "提阿非罗大人哪，有好些人提笔作书，述说在我们中间所成就的事，",
+      "en": "Many have undertaken to draw up an account of the things that have been fulfilled among us,"
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "zh": "是照传道的人从起初亲眼看见又传给我们的。",
+      "en": "just as they were handed down to us by those who from the first were eyewitnesses and servants of the word."
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "zh": "这些事我既从起头都详细考察了，就定意要按着次序写给你，",
+      "en": "With this in mind, since I myself have carefully investigated everything from the beginning, I too decided to write an orderly account for you,"
+    },
+    {
+      "chapter": 1,
+      "verse": 4,
+      "zh": "使你知道所学之道都是确实的。",
+      "en": "most excellent Theophilus, so that you may know the certainty of the things you have been taught."
+    },
+    {
+      "chapter": 1,
+      "verse": 5,
+      "zh": "当犹太王希律的时候，亚比雅班里有一个祭司，名叫撒迦利亚；他妻子是亚伦的后人，名叫伊利莎白。",
+      "en": "In the time of Herod king of Judea there was a priest named Zechariah, who belonged to the priestly division of Abijah; his wife Elizabeth was also a descendant of Aaron."
+    },
+    {
+      "chapter": 1,
+      "verse": 6,
+      "zh": "他们二人在神面前都是义人，遵行主的一切诫命礼仪，没有可指摘的，",
+      "en": "Both of them were righteous in the sight of God, observing all the Lord's commands and decrees blamelessly."
+    },
+    {
+      "chapter": 1,
+      "verse": 7,
+      "zh": "只是没有孩子，因为伊利莎白不生育，两个人又年纪老迈了。",
+      "en": "But they were childless because Elizabeth was not able to conceive, and they were both very old."
+    },
+    {
+      "chapter": 1,
+      "verse": 8,
+      "zh": "撒迦利亚按班次在神面前供祭司的职分，",
+      "en": "Once when Zechariah's division was on duty and he was serving as priest before God,"
+    },
+    {
+      "chapter": 1,
+      "verse": 9,
+      "zh": "照祭司的规矩，掣签得进主殿烧香。",
+      "en": "he was chosen by lot, according to the custom of the priesthood, to go into the temple of the Lord and burn incense."
+    },
+    {
+      "chapter": 1,
+      "verse": 10,
+      "zh": "烧香的时候，众百姓在外面祈祷。",
+      "en": "And when the time for the burning of incense came, all the assembled worshipers were praying outside."
+    },
+    {
+      "chapter": 1,
+      "verse": 11,
+      "zh": "有主的使者站在香坛的右边，向他显现。",
+      "en": "Then an angel of the Lord appeared to him, standing at the right side of the altar of incense."
+    },
+    {
+      "chapter": 1,
+      "verse": 12,
+      "zh": "撒迦利亚看见，就惊慌害怕。",
+      "en": "When Zechariah saw him, he was startled and was gripped with fear."
+    },
+    {
+      "chapter": 1,
+      "verse": 13,
+      "zh": "天使对他说：'撒迦利亚，不要害怕，因为你的祈祷已经被听见了。你的妻子伊利莎白要给你生一个儿子，你要给他起名叫约翰。",
+      "en": "But the angel said to him: 'Do not be afraid, Zechariah; your prayer has been heard. Your wife Elizabeth will bear you a son, and you are to call him John."
+    },
+    {
+      "chapter": 1,
+      "verse": 14,
+      "zh": "你必欢喜快乐；有许多人因他出世，也必喜乐。",
+      "en": "He will be a joy and delight to you, and many will rejoice because of his birth,"
+    },
+    {
+      "chapter": 1,
+      "verse": 15,
+      "zh": "他在主面前将要为大，淡酒浓酒都不喝，从母腹里就被圣灵充满了。",
+      "en": "for he will be great in the sight of the Lord. He is never to take wine or other fermented drink, and he will be filled with the Holy Spirit even before he is born."
+    },
+    {
+      "chapter": 1,
+      "verse": 16,
+      "zh": "他要使许多以色列人回转，归于主他们的神。",
+      "en": "And he will go on before the Lord, in the spirit and power of Elijah, to turn the hearts of the parents to their children and the disobedient to the wisdom of the righteous—to make ready a people prepared for the Lord.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 17,
+      "zh": "他必有以利亚的心志能力，行在主的前面，叫为父的心转向儿女，叫悖逆的人转从义人的智慧；又为主预备合用的百姓。'",
+      "en": "Zechariah asked the angel, 'How can I be sure of this? I am an old man and my wife is well along in years.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 18,
+      "zh": "撒迦利亚对天使说：'我凭着什么可知道这事呢？我已经老了，我的妻子也年纪老迈了。'",
+      "en": "The angel said to him, 'I am Gabriel. I stand in the presence of God, and I have been sent to speak to you and to tell you this good news."
+    },
+    {
+      "chapter": 1,
+      "verse": 19,
+      "zh": "天使回答说：'我是站在神面前的加百列，奉差而来，对你说话，将这好信息报给你。",
+      "en": "And now you will be silent and not able to speak until the day this happens, because you did not believe my words, which will come true at their appointed time.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 20,
+      "zh": "到了时候，这话必然应验；只因你不信，你必哑巴，不能说话，直到这事成就的日子。'",
+      "en": "Meanwhile, the people were waiting for Zechariah and wondering why he stayed so long in the temple."
+    },
+    {
+      "chapter": 1,
+      "verse": 21,
+      "zh": "百姓等候撒迦利亚，诧异他许久在殿里。",
+      "en": "When he came out, he could not speak to them. They realized he had seen a vision in the temple, for he kept making signs to them but remained unable to speak."
+    },
+    {
+      "chapter": 1,
+      "verse": 22,
+      "zh": "及至他出来，不能和他们说话，他们就知道他在殿里见了异象；因为他直向他们打手式，总不能说话。",
+      "en": "When his time of service was completed, he returned home."
+    },
+    {
+      "chapter": 1,
+      "verse": 23,
+      "zh": "他供职的日子已满，就回家去了。",
+      "en": "After this his wife Elizabeth became pregnant and for five months remained in seclusion."
+    },
+    {
+      "chapter": 1,
+      "verse": 24,
+      "zh": "这些日子以后，他的妻子伊利莎白怀了孕，就隐藏了五个月，",
+      "en": "'The Lord has done this for me,' she said. 'In these days he has shown his favor and taken away my disgrace among the people.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 25,
+      "zh": "说：'主在眷顾我的日子，这样看待我，要把我在人间所受的羞耻除掉。'",
+      "en": "In the sixth month of Elizabeth's pregnancy, God sent the angel Gabriel to Nazareth, a town in Galilee,"
+    },
+    {
+      "chapter": 1,
+      "verse": 26,
+      "zh": "到了第六个月，天使加百列奉神的差遣，往加利利的一个城去，这城名叫拿撒勒，",
+      "en": "to a virgin pledged to be married to a man named Joseph, a descendant of David. The virgin's name was Mary."
+    },
+    {
+      "chapter": 1,
+      "verse": 27,
+      "zh": "到一个童女那里，是已经许配大卫家的一个人，名叫约瑟。童女的名字叫马利亚。",
+      "en": "The angel went to her and said, 'Greetings, you who are highly favored! The Lord is with you.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 28,
+      "zh": "天使进去，对她说：'蒙大恩的女子，我问你安，主和你同在了！'",
+      "en": "Mary was greatly troubled at his words and wondered what kind of greeting this might be."
+    },
+    {
+      "chapter": 1,
+      "verse": 29,
+      "zh": "马利亚因这话就很惊慌，又反复思想这样问安是什么意思。",
+      "en": "But the angel said to her, 'Do not be afraid, Mary; you have found favor with God."
+    },
+    {
+      "chapter": 1,
+      "verse": 30,
+      "zh": "天使对她说：'马利亚，不要怕！你在神面前已经蒙恩了。",
+      "en": "You will conceive and give birth to a son, and you are to call him Jesus."
+    },
+    {
+      "chapter": 1,
+      "verse": 31,
+      "zh": "你要怀孕生子，可以给他起名叫耶稣。",
+      "en": "He will be great and will be called the Son of the Most High. The Lord God will give him the throne of his father David,"
+    },
+    {
+      "chapter": 1,
+      "verse": 32,
+      "zh": "他在位必尊大，他的名称为至高者的儿子；主神要把他祖大卫的位给他。",
+      "en": "and he will reign over Jacob's descendants forever; his kingdom will never end.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 33,
+      "zh": "他要作雅各后裔的王，直到永远；他的国也没有穷尽。'",
+      "en": "'How will this be,' Mary asked the angel, 'since I am a virgin?'"
+    },
+    {
+      "chapter": 1,
+      "verse": 34,
+      "zh": "马利亚对天使说：'我没有出嫁，怎么有这事呢？'",
+      "en": "The angel answered, 'The Holy Spirit will come on you, and the power of the Most High will overshadow you. So the holy one to be born will be called the Son of God."
+    },
+    {
+      "chapter": 1,
+      "verse": 35,
+      "zh": "天使回答说：'圣灵要临到你身上，至高者的能力要荫庇你，因此所要生的圣者，必称为神的儿子。",
+      "en": "Even Elizabeth your relative is going to have a child in her old age, and she who was said to be unable to conceive is in her sixth month."
+    },
+    {
+      "chapter": 1,
+      "verse": 36,
+      "zh": "况且你的亲戚伊利莎白，在年老的时候也怀了男胎；就是那素来称为不生育的，现在有孕六个月了。",
+      "en": "For no word from God will ever fail.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 37,
+      "zh": "因为出于神的话，没有一句不带能力的。'",
+      "en": "'I am the Lord's servant,' Mary answered. 'May your word to me be fulfilled.' Then the angel left her."
+    },
+    {
+      "chapter": 1,
+      "verse": 38,
+      "zh": "马利亚说：'我是主的使女，情愿照你的话成就在我身上。'天使就离开她去了。",
+      "en": "At that time Mary got ready and hurried to a town in the hill country of Judea,"
+    },
+    {
+      "chapter": 1,
+      "verse": 39,
+      "zh": "那时候，马利亚起身，急忙往山地里去，来到犹大的一座城；",
+      "en": "where she entered Zechariah's home and greeted Elizabeth."
+    },
+    {
+      "chapter": 1,
+      "verse": 40,
+      "zh": "进了撒迦利亚的家，问伊利莎白安。",
+      "en": "When Elizabeth heard Mary's greeting, the baby leaped in her womb, and Elizabeth was filled with the Holy Spirit."
+    },
+    {
+      "chapter": 1,
+      "verse": 41,
+      "zh": "伊利莎白一听马利亚问安，所怀的胎就在腹里跳动，伊利莎白且被圣灵充满，",
+      "en": "In a loud voice she exclaimed: 'Blessed are you among women, and blessed is the child you will bear!"
+    },
+    {
+      "chapter": 1,
+      "verse": 42,
+      "zh": "高声喊着说：'你在妇女中是有福的！你所怀的胎也是有福的！",
+      "en": "But why am I so favored, that the mother of my Lord should come to me?"
+    },
+    {
+      "chapter": 1,
+      "verse": 43,
+      "zh": "我主的母亲到我这里来，这是从哪里得来的呢？",
+      "en": "As soon as the sound of your greeting reached my ears, the baby in my womb leaped for joy."
+    },
+    {
+      "chapter": 1,
+      "verse": 44,
+      "zh": "因为你问安的声音一入我耳，我腹里的胎就欢喜跳动。",
+      "en": "Blessed is she who has believed that the Lord would fulfill his promises to her!'"
+    },
+    {
+      "chapter": 1,
+      "verse": 45,
+      "zh": "这相信的女子是有福的！因为主对她所说的话都要应验。'",
+      "en": "And Mary said: 'My soul glorifies the Lord"
+    },
+    {
+      "chapter": 1,
+      "verse": 46,
+      "zh": "马利亚说：'我心尊主为大，",
+      "en": "and my spirit rejoices in God my Savior,"
+    },
+    {
+      "chapter": 1,
+      "verse": 47,
+      "zh": "我灵以神我的救主为乐；",
+      "en": "for he has been mindful of the humble state of his servant. From now on all generations will call me blessed,"
+    },
+    {
+      "chapter": 1,
+      "verse": 48,
+      "zh": "因为他顾念他使女的卑微；从今以后，万代要称我有福。",
+      "en": "for the Mighty One has done great things for me—holy is his name."
+    },
+    {
+      "chapter": 1,
+      "verse": 49,
+      "zh": "那有权能的为我成就了大事；他的名为圣。",
+      "en": "His mercy extends to those who fear him, from generation to generation."
+    },
+    {
+      "chapter": 1,
+      "verse": 50,
+      "zh": "他怜悯敬畏他的人，直到世世代代。",
+      "en": "He has performed mighty deeds with his arm; he has scattered those who are proud in their inmost thoughts."
+    },
+    {
+      "chapter": 1,
+      "verse": 51,
+      "zh": "他用膀臂施展大能；那狂傲的人正心里妄想就被他赶散了。",
+      "en": "He has brought down rulers from their thrones but has lifted up the humble."
+    },
+    {
+      "chapter": 1,
+      "verse": 52,
+      "zh": "他叫有权柄的失位，叫卑贱的升高；",
+      "en": "He has filled the hungry with good things but has sent the rich away empty."
+    },
+    {
+      "chapter": 1,
+      "verse": 53,
+      "zh": "叫饥饿的得饱美食，叫富足的空手回去。",
+      "en": "He has helped his servant Israel, remembering to be merciful"
+    },
+    {
+      "chapter": 1,
+      "verse": 54,
+      "zh": "他扶助了他的仆人以色列，",
+      "en": "to Abraham and his descendants forever, just as he promised our ancestors.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 55,
+      "zh": "为要纪念亚伯拉罕和他的后裔，施怜悯直到永远，正如从前对我们祖宗所说的话。'",
+      "en": "Mary stayed with Elizabeth for about three months and then returned home."
+    },
+    {
+      "chapter": 1,
+      "verse": 56,
+      "zh": "马利亚和伊利莎白同住，约有三个月，就回家去了。",
+      "en": "When it was time for Elizabeth to have her baby, she gave birth to a son."
+    },
+    {
+      "chapter": 1,
+      "verse": 57,
+      "zh": "伊利莎白的产期到了，就生了一个儿子。",
+      "en": "Her neighbors and relatives heard that the Lord had shown her great mercy, and they shared her joy."
+    },
+    {
+      "chapter": 1,
+      "verse": 58,
+      "zh": "邻里亲族听见主向伊利莎白大施怜悯，就和她一同欢乐。",
+      "en": "On the eighth day they came to circumcise the child, and they were going to name him after his father Zechariah,"
+    },
+    {
+      "chapter": 1,
+      "verse": 59,
+      "zh": "到了第八天，他们来要给孩子行割礼，并要照他父亲的名字叫他撒迦利亚。",
+      "en": "but his mother spoke up and said, 'No! He is to be called John.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 60,
+      "zh": "他母亲说：'不可！要叫他约翰。'",
+      "en": "They said to her, 'There is no one among your relatives who has that name.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 61,
+      "zh": "他们说：'你亲族中没有叫这名字的。'",
+      "en": "Then they made signs to his father, to find out what he would like to name the child."
+    },
+    {
+      "chapter": 1,
+      "verse": 62,
+      "zh": "他们就向他父亲打手式，问他要叫这孩子什么名字。",
+      "en": "He asked for a writing tablet, and to everyone's astonishment he wrote, 'His name is John.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 63,
+      "zh": "他要了一块写字的板，就写上说：'他的名字是约翰。'他们便都希奇。",
+      "en": "Immediately his mouth was opened and his tongue set free, and he began to speak, praising God."
+    },
+    {
+      "chapter": 1,
+      "verse": 64,
+      "zh": "他的口和舌头立刻开了，就说出话来，称颂神。",
+      "en": "All the neighbors were filled with awe, and throughout the hill country of Judea people were talking about all these things."
+    },
+    {
+      "chapter": 1,
+      "verse": 65,
+      "zh": "周围居住的人都惧怕起来；这一切的事就传遍了犹太的山地。",
+      "en": "Everyone who heard this wondered about it, asking, 'What then is this child going to be?' For the Lord's hand was with him."
+    },
+    {
+      "chapter": 1,
+      "verse": 66,
+      "zh": "凡听见的人都将这事放在心里，说：'这孩子将来怎么样呢？'因为有主与他同在。",
+      "en": "His father Zechariah was filled with the Holy Spirit and prophesied:"
+    },
+    {
+      "chapter": 1,
+      "verse": 67,
+      "zh": "他父亲撒迦利亚被圣灵充满，就预言说：",
+      "en": "'Praise be to the Lord, the God of Israel, because he has come to his people and redeemed them."
+    },
+    {
+      "chapter": 1,
+      "verse": 68,
+      "zh": "'主以色列的神是应当称颂的，因他眷顾他的百姓，为他们施行救赎，",
+      "en": "He has raised up a horn of salvation for us in the house of his servant David"
+    },
+    {
+      "chapter": 1,
+      "verse": 69,
+      "zh": "在我们祖宗大卫家中，为我们兴起了拯救的角，",
+      "en": "(as he said through his holy prophets of long ago),"
+    },
+    {
+      "chapter": 1,
+      "verse": 70,
+      "zh": "正如主藉那从创世以来圣先知的口所说的话，",
+      "en": "salvation from our enemies and from the hand of all who hate us—"
+    },
+    {
+      "chapter": 1,
+      "verse": 71,
+      "zh": "拯救我们脱离仇敌和一切恨我们之人的手，",
+      "en": "to show mercy to our ancestors and to remember his holy covenant,"
+    },
+    {
+      "chapter": 1,
+      "verse": 72,
+      "zh": "向我们列祖施怜悯，記念他的圣约，",
+      "en": "the oath he swore to our father Abraham:"
+    },
+    {
+      "chapter": 1,
+      "verse": 73,
+      "zh": "就是他对我们祖宗亚伯拉罕所起的誓，",
+      "en": "to rescue us from the hand of our enemies, and to enable us to serve him without fear"
+    },
+    {
+      "chapter": 1,
+      "verse": 74,
+      "zh": "叫我们既从仇敌手中被救出来，",
+      "en": "in holiness and righteousness before him all our days."
+    },
+    {
+      "chapter": 1,
+      "verse": 75,
+      "zh": "就可以终身在他面前，坦然无惧地用圣洁、公义事奉他。",
+      "en": "And you, my child, will be called a prophet of the Most High; for you will go on before the Lord to prepare the way for him,"
+    },
+    {
+      "chapter": 1,
+      "verse": 76,
+      "zh": "孩子啊，你要称为至高者的先知；因为你要行在主的前面，预备他的道路，",
+      "en": "to give his people the knowledge of salvation through the forgiveness of their sins,"
+    },
+    {
+      "chapter": 1,
+      "verse": 77,
+      "zh": "叫他的百姓因罪得赦，就知道救恩。",
+      "en": "because of the tender mercy of our God, by which the rising sun will come to us from heaven"
+    },
+    {
+      "chapter": 1,
+      "verse": 78,
+      "zh": "因我们神怜悯的心肠，叫清晨的日光从高天临到我们，",
+      "en": "to shine on those living in darkness and in the shadow of death, to guide our feet into the path of peace.'"
+    },
+    {
+      "chapter": 1,
+      "verse": 79,
+      "zh": "要照亮坐在黑暗中死荫里的人，把我们的脚引到平安的路上。'",
+      "en": "And the child grew and became strong in spirit; and he lived in the wilderness until he appeared publicly to Israel."
+    },
+    {
+      "chapter": 1,
+      "verse": 80,
+      "zh": "那孩子渐渐长大，心灵强健，住在旷野，直到他显明在以色列人面前的日子。",
+      "en": "The child grew and became strong in spirit; and he lived in the wilderness until he appeared publicly to Israel."
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "zh": "当那些日子，该撒亚古士督有旨意下来，叫天下人民都报名上册。",
+      "en": "In those days Caesar Augustus issued a decree that a census should be taken of the entire Roman world."
+    },
+    {
+      "chapter": 2,
+      "verse": 2,
+      "zh": "这是居里扭作叙利亚巡抚的时候，头一次行报名上册的事。",
+      "en": "This was the first census that took place while Quirinius was governor of Syria."
+    },
+    {
+      "chapter": 2,
+      "verse": 3,
+      "zh": "众人各归各城，报名上册。",
+      "en": "And everyone went to their own town to register."
+    },
+    {
+      "chapter": 2,
+      "verse": 4,
+      "zh": "约瑟也从加利利的拿撒勒城上犹太去，到了大卫的城，名叫伯利恒；因他本是大卫一族一家的人，",
+      "en": "So Joseph also went up from the town of Nazareth in Galilee to Judea, to Bethlehem the town of David, because he belonged to the house and line of David."
+    },
+    {
+      "chapter": 2,
+      "verse": 5,
+      "zh": "要和他所聘之妻马利亚一同报名上册。那时马利亚的身孕已经重了。",
+      "en": "He went there to register with Mary, who was pledged to be married to him and was expecting a child."
+    },
+    {
+      "chapter": 2,
+      "verse": 6,
+      "zh": "他们在那里的时候，马利亚的产期到了，",
+      "en": "While they were there, the time came for the baby to be born,"
+    },
+    {
+      "chapter": 2,
+      "verse": 7,
+      "zh": "就生了头胎的儿子，用布包起来，放在马槽里，因为客店里没有地方。",
+      "en": "and she gave birth to her firstborn, a son. She wrapped him in cloths and placed him in a manger, because there was no guest room available for them."
+    },
+    {
+      "chapter": 2,
+      "verse": 8,
+      "zh": "在伯利恒之野地里有牧羊的人，夜间按着更次看守羊群。",
+      "en": "And there were shepherds living out in the fields nearby, keeping watch over their flocks at night."
+    },
+    {
+      "chapter": 2,
+      "verse": 9,
+      "zh": "有主的使者站在他们旁边，主的荣光四面照着他们；牧羊的人就甚惧怕。",
+      "en": "An angel of the Lord appeared to them, and the glory of the Lord shone around them, and they were terrified."
+    },
+    {
+      "chapter": 2,
+      "verse": 10,
+      "zh": "那天使对他们说：'不要惧怕！我报给你们大喜的信息，是关乎万民的；",
+      "en": "But the angel said to them, 'Do not be afraid. I bring you good news that will cause great joy for all the people."
+    },
+    {
+      "chapter": 2,
+      "verse": 11,
+      "zh": "因今天在大卫的城里，为你们生了救主，就是主基督。",
+      "en": "Today in the town of David a Savior has been born to you; he is the Messiah, the Lord."
+    },
+    {
+      "chapter": 2,
+      "verse": 12,
+      "zh": "你们要看见一个婴孩，包着布，卧在马槽里，那就是记号了。'",
+      "en": "This will be a sign to you: You will find a baby wrapped in cloths and lying in a manger.'"
+    },
+    {
+      "chapter": 2,
+      "verse": 13,
+      "zh": "忽然，有一大队天兵同那天使赞美神说：",
+      "en": "Suddenly a great company of the heavenly host appeared with the angel, praising God and saying,"
+    },
+    {
+      "chapter": 2,
+      "verse": 14,
+      "zh": "'在至高之处荣耀归与神！在地上平安归与他所喜悦的人！'",
+      "en": "'Glory to God in the highest heaven, and on earth peace to those on whom his favor rests.'"
+    },
+    {
+      "chapter": 2,
+      "verse": 15,
+      "zh": "众天使离开他们，升天去了。牧羊的人彼此说：'我们往伯利恒去，看看所成的事，就是主所指示我们的。'",
+      "en": "When the angels had left them and gone into heaven, the shepherds said to one another, 'Let's go to Bethlehem and see this thing that has happened, which the Lord has told us about.'"
+    },
+    {
+      "chapter": 2,
+      "verse": 16,
+      "zh": "他们急忙去了，就寻见马利亚和约瑟，又有那婴孩卧在马槽里；",
+      "en": "So they hurried off and found Mary and Joseph, and the baby, who was lying in the manger."
+    },
+    {
+      "chapter": 2,
+      "verse": 17,
+      "zh": "看见了，就把天使论这孩子的话传开了。",
+      "en": "When they had seen him, they spread the word concerning what had been told them about this child,"
+    },
+    {
+      "chapter": 2,
+      "verse": 18,
+      "zh": "凡听见的，就诧异牧羊之人对他们所说的话。",
+      "en": "and all who heard it were amazed at what the shepherds said to them."
+    },
+    {
+      "chapter": 2,
+      "verse": 19,
+      "zh": "马利亚却把这一切的事存在心里，反复思想。",
+      "en": "But Mary treasured up all these things and pondered them in her heart."
+    },
+    {
+      "chapter": 2,
+      "verse": 20,
+      "zh": "牧羊的人回去了，因所听见所看见的一切事，正如天使向他们所说的，就归荣耀与神，赞美他。",
+      "en": "The shepherds returned, glorifying and praising God for all the things they had heard and seen, which were just as they had been told."
+    },
+    {
+      "chapter": 2,
+      "verse": 21,
+      "zh": "满了八天，就给孩子行割礼，与他起名叫耶稣；这就是没有成胎以前，天使所起的名。",
+      "en": "On the eighth day, when it was time to circumcise the child, he was named Jesus, the name the angel had given him before he was conceived."
+    },
+    {
+      "chapter": 2,
+      "verse": 22,
+      "zh": "按摩西的律法满了洁净的日子，他们带着孩子上耶路撒冷去，要把他献与主，",
+      "en": "When the time came for the purification rites required by the Law of Moses, Joseph and Mary took him to Jerusalem to present him to the Lord"
+    },
+    {
+      "chapter": 2,
+      "verse": 23,
+      "zh": "正如主的律法上所记：'凡头生的男子，必称圣归主'；",
+      "en": "(as it is written in the Law of the Lord, 'Every firstborn male is to be consecrated to the Lord'),"
+    },
+    {
+      "chapter": 2,
+      "verse": 24,
+      "zh": "又要照主的律法上所说，或用一对斑鸠，或用两只雏鸽献祭。",
+      "en": "and to offer a sacrifice in keeping with what is said in the Law of the Lord: 'a pair of doves or two young pigeons.'"
+    },
+    {
+      "chapter": 2,
+      "verse": 25,
+      "zh": "在耶路撒冷有一个人，名叫西面；这人又公义又虔诚，素常盼望以色列的安慰者来到，又有圣灵在他身上。",
+      "en": "Now there was a man in Jerusalem called Simeon, who was righteous and devout. He was waiting for the consolation of Israel, and the Holy Spirit was on him."
+    },
+    {
+      "chapter": 2,
+      "verse": 26,
+      "zh": "他得了圣灵的启示，知道自己未死以前，必看见主所立的基督。",
+      "en": "It had been revealed to him by the Holy Spirit that he would not die before he had seen the Lord's Messiah."
+    },
+    {
+      "chapter": 2,
+      "verse": 27,
+      "zh": "他受了圣灵的感动，进入圣殿。正当他父母带着孩子耶稣进来，要照律法的规矩办理的时候，",
+      "en": "Moved by the Spirit, he went into the temple courts. When the parents brought in the child Jesus to do for him what the custom of the Law required,"
+    },
+    {
+      "chapter": 2,
+      "verse": 28,
+      "zh": "西面就用手接过他来，称颂神说：",
+      "en": "Simeon took him in his arms and praised God, saying:"
+    },
+    {
+      "chapter": 2,
+      "verse": 29,
+      "zh": "'主啊！如今可以照你的话，释放仆人安然去世；",
+      "en": "'Sovereign Lord, as you have promised, you may now dismiss your servant in peace."
+    },
+    {
+      "chapter": 2,
+      "verse": 30,
+      "zh": "因为我的眼睛已经看见你的救恩，",
+      "en": "For my eyes have seen your salvation,"
+    },
+    {
+      "chapter": 2,
+      "verse": 31,
+      "zh": "就是你在万民面前所预备的：",
+      "en": "which you have prepared in the sight of all nations:"
+    },
+    {
+      "chapter": 2,
+      "verse": 32,
+      "zh": "是照亮外邦人的光，又是你民以色列的荣耀。'",
+      "en": "a light for revelation to the Gentiles, and the glory of your people Israel.'"
+    },
+    {
+      "chapter": 2,
+      "verse": 33,
+      "zh": "孩子的父母因这论耶稣的话就希奇。",
+      "en": "The child's father and mother marveled at what was said about him."
+    },
+    {
+      "chapter": 2,
+      "verse": 34,
+      "zh": "西面给他们祝福，又对孩子的母亲马利亚说：'这孩子被立，是要叫以色列中许多人跌倒，许多人兴起；又要作毁谤的话柄，叫许多人心里的意念显露出来；你自己的心也要被刀刺透。'",
+      "en": "Then Simeon blessed them and said to Mary, his mother: 'This child is destined to cause the falling and rising of many in Israel, and to be a sign that will be spoken against,"
+    },
+    {
+      "chapter": 2,
+      "verse": 35,
+      "zh": "西面给他们祝福，又对孩子的母亲马利亚说：'这孩子被立，是要叫以色列中许多人跌倒，许多人兴起；又要作毁谤的话柄，叫许多人心里的意念显露出来；你自己的心也要被刀刺透。'",
+      "en": "so that the thoughts of many hearts will be revealed. And a sword will pierce your own soul too.'"
+    },
+    {
+      "chapter": 2,
+      "verse": 36,
+      "zh": "又有女先知名叫亚拿，是亚设支派法内力的女儿；年纪已经老迈，从作童女出嫁的时候，同丈夫住了七年就寡居了，",
+      "en": "There was also a prophet, Anna, the daughter of Penuel, of the tribe of Asher. She was very old; she had lived with her husband seven years after her marriage,"
+    },
+    {
+      "chapter": 2,
+      "verse": 37,
+      "zh": "现在已经八十四岁，并不离开圣殿，禁食祈求，昼夜事奉神。",
+      "en": "and then was a widow until she was eighty-four. She never left the temple but worshiped night and day, fasting and praying."
+    },
+    {
+      "chapter": 2,
+      "verse": 38,
+      "zh": "正当那时，她上前称谢神，将孩子的事对一切盼望耶路撒冷得救赎的人讲说。",
+      "en": "Coming up to them at that very moment, she gave thanks to God and spoke about the child to all who were looking forward to the redemption of Jerusalem."
+    },
+    {
+      "chapter": 2,
+      "verse": 39,
+      "zh": "约瑟和马利亚照主的律法办完了一切的事，就回加利利，到自己的城拿撒勒去了。",
+      "en": "When Joseph and Mary had done everything required by the Law of the Lord, they returned to Galilee to their own town of Nazareth."
+    },
+    {
+      "chapter": 2,
+      "verse": 40,
+      "zh": "孩子渐渐长大，强健起来，充满智慧，又有神的恩在他身上。",
+      "en": "And the child grew and became strong; he was filled with wisdom, and the grace of God was on him."
+    },
+    {
+      "chapter": 2,
+      "verse": 41,
+      "zh": "每年到逾越节，他父母就上耶路撒冷去。",
+      "en": "Every year Jesus' parents went to Jerusalem for the Festival of the Passover."
+    },
+    {
+      "chapter": 2,
+      "verse": 42,
+      "zh": "当他十二岁的时候，他们按着节期的规矩上去。",
+      "en": "When he was twelve years old, they went up to the festival, according to the custom."
+    },
+    {
+      "chapter": 2,
+      "verse": 43,
+      "zh": "守满了节期，他们回去，孩童耶稣仍旧在耶路撒冷。他的父母并不知道，",
+      "en": "After the festival was over, while his parents were returning home, the boy Jesus stayed behind in Jerusalem, but they were unaware of it."
+    },
+    {
+      "chapter": 2,
+      "verse": 44,
+      "zh": "以为他在同行的人中间，走了一天的路程，就在亲族和熟人中找他，",
+      "en": "Thinking he was in their company, they traveled on for a day. Then they began looking for him among their relatives and friends."
+    },
+    {
+      "chapter": 2,
+      "verse": 45,
+      "zh": "既找不着，就回耶路撒冷去找他。",
+      "en": "When they did not find him, they went back to Jerusalem to look for him."
+    },
+    {
+      "chapter": 2,
+      "verse": 46,
+      "zh": "过了三天，就遇见他在殿里，坐在教师中间，一面听，一面问。",
+      "en": "After three days they found him in the temple courts, sitting among the teachers, listening to them and asking them questions."
+    },
+    {
+      "chapter": 2,
+      "verse": 47,
+      "zh": "凡听见他的，都希奇他的聪明和他的应对。",
+      "en": "Everyone who heard him was amazed at his understanding and his answers."
+    },
+    {
+      "chapter": 2,
+      "verse": 48,
+      "zh": "他父母看见就很希奇。他母亲对他说：'我儿，为什么向我们这样行呢？看哪，你父亲和我伤心来找你。'",
+      "en": "When his parents saw him, they were astonished. His mother said to him, 'Son, why have you treated us like this? Your father and I have been anxiously searching for you.'"
+    },
+    {
+      "chapter": 2,
+      "verse": 49,
+      "zh": "耶稣说：'为什么找我呢？岂不知我应当以我父的事为念吗？'",
+      "en": "'Why were you searching for me?' he asked. 'Didn't you know I had to be in my Father's house?'"
+    },
+    {
+      "chapter": 2,
+      "verse": 50,
+      "zh": "他所说的这话，他们不明白。",
+      "en": "But they did not understand what he was saying to them."
+    },
+    {
+      "chapter": 2,
+      "verse": 51,
+      "zh": "他就同他们下去，回到拿撒勒，并且顺从他们。他母亲把这一切的事都存在心里。",
+      "en": "Then he went down to Nazareth with them and was obedient to them. But his mother treasured all these things in her heart."
+    },
+    {
+      "chapter": 2,
+      "verse": 52,
+      "zh": "耶稣的智慧和身量，并神和人喜爱他的心，都一齐增长。",
+      "en": "And Jesus grew in wisdom and stature, and in favor with God and man."
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "zh": "该撒提庇留在位第十五年，本丢彼拉多作犹太巡抚，希律作加利利分封的王，他兄弟腓力作以土利亚和特拉可尼地方分封的王，吕撒聂作亚比利尼分封的王，",
+      "en": "In the fifteenth year of the reign of Tiberius Caesar—when Pontius Pilate was governor of Judea, Herod tetrarch of Galilee, his brother Philip tetrarch of Iturea and Traconitis, and Lysanias tetrarch of Abilene—"
+    },
+    {
+      "chapter": 3,
+      "verse": 2,
+      "zh": "亚那和该亚法作大祭司的时候，撒迦利亚的儿子约翰在旷野里，神的话临到他。",
+      "en": "during the high-priesthood of Annas and Caiaphas, the word of God came to John son of Zechariah in the wilderness."
+    },
+    {
+      "chapter": 3,
+      "verse": 3,
+      "zh": "他就来到约旦河一带地方，宣讲悔改的洗礼，使罪得赦。",
+      "en": "He went into all the country around the Jordan, preaching a baptism of repentance for the forgiveness of sins."
+    },
+    {
+      "chapter": 3,
+      "verse": 4,
+      "zh": "正如先知以赛亚书上所记的话，说：'在旷野有人声喊着说：预备主的道，修直他的路！",
+      "en": "As it is written in the book of the words of Isaiah the prophet: 'A voice of one calling in the wilderness, 'Prepare the way for the Lord, make straight paths for him."
+    },
+    {
+      "chapter": 3,
+      "verse": 5,
+      "zh": "一切山洼都要填满，大小山冈都要削平；弯弯曲曲的地方要改为正直，高高低低的道路要改为平坦。",
+      "en": "Every valley shall be filled in, every mountain and hill made low. The crooked roads shall become straight, the rough ways smooth."
+    },
+    {
+      "chapter": 3,
+      "verse": 6,
+      "zh": "凡有血气的，都要见神的救恩。'",
+      "en": "And all people will see God's salvation.''"
+    },
+    {
+      "chapter": 3,
+      "verse": 7,
+      "zh": "约翰对那出来要受他洗的众人说：'毒蛇的种类！谁指示你们逃避将来的忿怒呢？",
+      "en": "John said to the crowds coming out to be baptized by him, 'You brood of vipers! Who warned you to flee from the coming wrath?"
+    },
+    {
+      "chapter": 3,
+      "verse": 8,
+      "zh": "你们要结出果子来，与悔改的心相称。不要自己心里说：有亚伯拉罕为我们的祖宗。我告诉你们，神能从这些石头中，给亚伯拉罕兴起子孙来。",
+      "en": "Produce fruit in keeping with repentance. And do not begin to say to yourselves, 'We have Abraham as our father.' For I tell you that out of these stones God can raise up children for Abraham."
+    },
+    {
+      "chapter": 3,
+      "verse": 9,
+      "zh": "现在斧子已经放在树根上，凡不结好果子的树，就砍下来丢在火里。'",
+      "en": "The ax is already at the root of the trees, and every tree that does not produce good fruit will be cut down and thrown into the fire.'"
+    },
+    {
+      "chapter": 3,
+      "verse": 10,
+      "zh": "众人问他说：'这样，我们当作什么呢？'",
+      "en": "'What should we do then?' the crowd asked."
+    },
+    {
+      "chapter": 3,
+      "verse": 11,
+      "zh": "约翰回答说：'有两件衣裳的，就分给那没有的；有食物的，也当这样行。'",
+      "en": "John answered, 'Anyone who has two shirts should share with the one who has none, and anyone who has food should do the same.'"
+    },
+    {
+      "chapter": 3,
+      "verse": 12,
+      "zh": "又有税吏来要受洗，问他说：'夫子，我们当作什么呢？'",
+      "en": "Even tax collectors came to be baptized. 'Teacher,' they asked, 'what should we do?'"
+    },
+    {
+      "chapter": 3,
+      "verse": 13,
+      "zh": "约翰说：'除了例定的数目，不要多取。'",
+      "en": "Don't collect any more than you are required to,' he told them."
+    },
+    {
+      "chapter": 3,
+      "verse": 14,
+      "zh": "又有兵丁问他说：'我们当作什么呢？'约翰说：'不要以强暴待人，也不要讹诈人，自己有钱粮就当知足。'",
+      "en": "Then some soldiers asked him, 'And what should we do?' He replied, 'Don't extort money and don't accuse people falsely—be content with your pay.'"
+    },
+    {
+      "chapter": 3,
+      "verse": 15,
+      "zh": "百姓指望基督来的时候，人都心里猜疑，或者约翰是基督。",
+      "en": "The people were waiting expectantly and were all wondering in their hearts if John might possibly be the Messiah."
+    },
+    {
+      "chapter": 3,
+      "verse": 16,
+      "zh": "约翰说：'我是用水给你们施洗，但有一位能力比我更大的要来，我就是给他解鞋带也不配。他要用圣灵与火给你们施洗。",
+      "en": "John answered them all, 'I baptize you with water. But one who is more powerful than I will come, the straps of whose sandals I am not worthy to untie. He will baptize you with the Holy Spirit and fire."
+    },
+    {
+      "chapter": 3,
+      "verse": 17,
+      "zh": "他手里拿着簸箕，要扬净他的场，把麦子收在仓里，把糠用不灭的火烧尽了。'",
+      "en": "His winnowing fork is in his hand to clear his threshing floor and to gather the wheat into his barn, but he will burn up the chaff with unquenchable fire.'"
+    },
+    {
+      "chapter": 3,
+      "verse": 18,
+      "zh": "约翰又用许多别的话劝百姓，向他们传福音。",
+      "en": "And with many other words John exhorted the people and proclaimed the good news to them."
+    },
+    {
+      "chapter": 3,
+      "verse": 19,
+      "zh": "只是分封的王希律，因他兄弟之妻希罗底的缘故，又因他所行的一切恶事，被约翰责备。",
+      "en": "But when John rebuked Herod the tetrarch because of his marriage to Herodias, his brother's wife, and all the other evil things he had done,"
+    },
+    {
+      "chapter": 3,
+      "verse": 20,
+      "zh": "希律又另外添了一件，就是把约翰收在监里。",
+      "en": "Herod added this to them all: He locked John up in prison."
+    },
+    {
+      "chapter": 3,
+      "verse": 21,
+      "zh": "众百姓都受了洗，耶稣也受了洗。正祷告的时候，天就开了，",
+      "en": "When all the people were being baptized, Jesus was baptized too. And as he was praying, heaven was opened"
+    },
+    {
+      "chapter": 3,
+      "verse": 22,
+      "zh": "圣灵降临在他身上，形状仿佛鸽子；又有声音从天上来，说：'你是我的爱子，我喜悦你。'",
+      "en": "and the Holy Spirit descended on him in bodily form like a dove. And a voice came from heaven: 'You are my Son, whom I love; with you I am well pleased.'"
+    },
+    {
+      "chapter": 3,
+      "verse": 23,
+      "zh": "耶稣开头传道，年纪约有三十岁。依人看来，他是约瑟的儿子；约瑟是希里的儿子；",
+      "en": "Now Jesus himself was about thirty years old when he began his ministry. He was the son, so it was thought, of Joseph, the son of Heli,"
+    },
+    {
+      "chapter": 3,
+      "verse": 24,
+      "zh": "希里是玛塔的儿子；玛塔是利未的儿子；利未是麦基的儿子；麦基是雅拿的儿子；雅拿是约瑟的儿子；",
+      "en": "the son of Matthat, the son of Levi, the son of Melki, the son of Jannai, the son of Joseph,"
+    },
+    {
+      "chapter": 3,
+      "verse": 25,
+      "zh": "约瑟是玛他提亚的儿子；玛他提亚是亚摩斯的儿子；亚摩斯是拿鸿的儿子；拿鸿是以斯利的儿子；以斯利是拿该的儿子；",
+      "en": "the son of Mattathias, the son of Amos, the son of Nahum, the son of Esli, the son of Naggai,"
+    },
+    {
+      "chapter": 3,
+      "verse": 26,
+      "zh": "拿该是玛押的儿子；玛押是玛他提亚的儿子；玛他提亚是西美的儿子；西美是约瑟的儿子；约瑟是犹大的儿子；犹大是约亚拿的儿子；",
+      "en": "the son of Maath, the son of Mattathias, the son of Semein, the son of Josek, the son of Joda,"
+    },
+    {
+      "chapter": 3,
+      "verse": 27,
+      "zh": "约亚拿是利撒的儿子；利撒是所罗巴伯的儿子；所罗巴伯是撒拉铁的儿子；撒拉铁是尼利的儿子；尼利是麦基的儿子；",
+      "en": "the son of Joanan, the son of Rhesa, the son of Zerubbabel, the son of Shealtiel, the son of Neri,"
+    },
+    {
+      "chapter": 3,
+      "verse": 28,
+      "zh": "麦基是亚底的儿子；亚底是哥桑的儿子；哥桑是以摩当的儿子；以摩当是珥的儿子；珥是约细的儿子；",
+      "en": "the son of Melki, the son of Addi, the son of Cosam, the son of Elmadam, the son of Er,"
+    },
+    {
+      "chapter": 3,
+      "verse": 29,
+      "zh": "约细是以利以谢的儿子；以利以谢是约令的儿子；约令是玛塔的儿子；玛塔是利未的儿子；",
+      "en": "the son of Joshua, the son of Eliezer, the son of Jorim, the son of Matthat, the son of Levi,"
+    },
+    {
+      "chapter": 3,
+      "verse": 30,
+      "zh": "利未是西缅的儿子；西缅是犹大的儿子；犹大是约瑟的儿子；约瑟是约南的儿子；约南是以利亚敬的儿子；",
+      "en": "the son of Simeon, the son of Judah, the son of Joseph, the son of Jonam, the son of Eliakim,"
+    },
+    {
+      "chapter": 3,
+      "verse": 31,
+      "zh": "以利亚敬是米利亚的儿子；米利亚是买南的儿子；买南是玛达他的儿子；玛达他是拿单的儿子；拿单是大卫的儿子；",
+      "en": "the son of Melea, the son of Menna, the son of Mattatha, the son of Nathan, the son of David,"
+    },
+    {
+      "chapter": 3,
+      "verse": 32,
+      "zh": "大卫是耶西的儿子；耶西是俄备得的儿子；俄备得是波阿斯的儿子；波阿斯是撒门的儿子；撒门是拿顺的儿子；",
+      "en": "the son of Jesse, the son of Obed, the son of Boaz, the son of Salmon, the son of Nahshon,"
+    },
+    {
+      "chapter": 3,
+      "verse": 33,
+      "zh": "拿顺是亚米拿达的儿子；亚米拿达是亚兰的儿子；亚兰是希斯仑的儿子；希斯仑是法勒斯的儿子；法勒斯是犹大的儿子；",
+      "en": "the son of Amminadab, the son of Ram, the son of Hezron, the son of Perez, the son of Judah,"
+    },
+    {
+      "chapter": 3,
+      "verse": 34,
+      "zh": "犹大是他玛的儿子；他玛是便雅悯的儿子；便雅悯是雅各的儿子；雅各是以撒的儿子；以撒是亚伯拉罕的儿子；亚伯拉罕是他拉的儿子；他拉是拿鹤的儿子；",
+      "en": "the son of Judah, the son of Jacob, the son of Isaac, the son of Abraham, the son of Terah, the son of Nahor,"
+    },
+    {
+      "chapter": 3,
+      "verse": 35,
+      "zh": "拿鹤是西鹿的儿子；西鹿是拉吴的儿子；拉吴是法勒的儿子；法勒是希伯的儿子；希伯是沙拉的儿子；",
+      "en": "the son of Serug, the son of Reu, the son of Peleg, the son of Eber, the son of Shelah,"
+    },
+    {
+      "chapter": 3,
+      "verse": 36,
+      "zh": "沙拉是该南的儿子；该南是亚法撒的儿子；亚法撒是闪的儿子；闪是挪亚的儿子；挪亚是拉麦的儿子；",
+      "en": "the son of Cainan, the son of Arphaxad, the son of Shem, the son of Noah, the son of Lamech,"
+    },
+    {
+      "chapter": 3,
+      "verse": 37,
+      "zh": "拉麦是玛土撒拉的儿子；玛土撒拉是以诺的儿子；以诺是雅列的儿子；雅列是玛勒列的儿子；玛勒列是该南的儿子；",
+      "en": "the son of Methuselah, the son of Enoch, the son of Jared, the son of Mahalalel, the son of Kenan,"
+    },
+    {
+      "chapter": 3,
+      "verse": 38,
+      "zh": "该南是以挪士的儿子；以挪士是塞特的儿子；塞特是亚当的儿子；亚当是神的儿子。",
+      "en": "the son of Enosh, the son of Seth, the son of Adam, the son of God."
+    },
+    {
+      "chapter": 4,
+      "verse": 1,
+      "zh": "耶稣被圣灵充满，从约旦河回来，圣灵将他引到旷野四十天，受魔鬼的试探。",
+      "en": "Jesus, full of the Holy Spirit, left the Jordan and was led by the Spirit into the wilderness,"
+    },
+    {
+      "chapter": 4,
+      "verse": 2,
+      "zh": "那些日子没有吃什么；日子满了，他就饿了。",
+      "en": "where for forty days he was tempted by the devil. He ate nothing during those days, and at the end of them he was hungry."
+    },
+    {
+      "chapter": 4,
+      "verse": 3,
+      "zh": "魔鬼对他说：'你若是神的儿子，可以吩咐这块石头变成食物。'",
+      "en": "The devil said to him, 'If you are the Son of God, tell this stone to become bread.'"
+    },
+    {
+      "chapter": 4,
+      "verse": 4,
+      "zh": "耶稣回答说：'经上记着说：人活着，不是单靠食物，乃是靠神口里所出的一切话。'",
+      "en": "Jesus answered, 'It is written: 'Man shall not live on bread alone.''"
+    },
+    {
+      "chapter": 4,
+      "verse": 5,
+      "zh": "魔鬼又领他上了高山，霎时间把天下的万国都指给他看，",
+      "en": "The devil led him up to a high place and showed him in an instant all the kingdoms of the world."
+    },
+    {
+      "chapter": 4,
+      "verse": 6,
+      "zh": "对他说：'这一切的权柄、荣华，我都要给你，因为这原是交付我的，我愿意给谁就给谁。",
+      "en": "And he said to him, 'I will give you all their authority and splendor; it has been given to me, and I can give it to anyone I want to."
+    },
+    {
+      "chapter": 4,
+      "verse": 7,
+      "zh": "你若在我面前下拜，这都要归你。'",
+      "en": "If you worship me, it will all be yours.'"
+    },
+    {
+      "chapter": 4,
+      "verse": 8,
+      "zh": "耶稣回答说：'经上记着说：当拜主你的神，单要事奉他。'",
+      "en": "Jesus answered, 'It is written: 'Worship the Lord your God, and serve him only.''"
+    },
+    {
+      "chapter": 4,
+      "verse": 9,
+      "zh": "魔鬼又领他到耶路撒冷去，叫他站在殿顶上，对他说：'你若是神的儿子，可以从这里跳下去；",
+      "en": "The devil led him to Jerusalem and had him stand on the highest point of the temple. 'If you are the Son of God,' he said, 'throw yourself down from here."
+    },
+    {
+      "chapter": 4,
+      "verse": 10,
+      "zh": "因为经上记着说：主要为你吩咐他的使者保护你；",
+      "en": "For it is written: 'He will command his angels concerning you to guard you carefully;"
+    },
+    {
+      "chapter": 4,
+      "verse": 11,
+      "zh": "他们要用手托着你，免得你的脚碰在石头上。'",
+      "en": "they will lift you up in their hands, so that you will not strike your foot against a stone.''"
+    },
+    {
+      "chapter": 4,
+      "verse": 12,
+      "zh": "耶稣回答说：'经上说：不可试探主你的神。'",
+      "en": "Jesus answered, 'It is said: 'Do not put the Lord your God to the test.''"
+    },
+    {
+      "chapter": 4,
+      "verse": 13,
+      "zh": "魔鬼用完了各样的试探，就暂时离开耶稣。",
+      "en": "When the devil had finished all this tempting, he left him until an opportune time."
+    },
+    {
+      "chapter": 4,
+      "verse": 14,
+      "zh": "耶稣满有圣灵的能力，回到加利利；他的名声就传遍了四方。",
+      "en": "Jesus returned to Galilee in the power of the Spirit, and news about him spread through the whole countryside."
+    },
+    {
+      "chapter": 4,
+      "verse": 15,
+      "zh": "他在各会堂里教训人，众人都称赞他。",
+      "en": "He was teaching in their synagogues, and everyone praised him."
+    },
+    {
+      "chapter": 4,
+      "verse": 16,
+      "zh": "耶稣来到拿撒勒，就是他长大的地方。在安息日，照他平常的规矩，进了会堂，站起来要念圣经。",
+      "en": "He went to Nazareth, where he had been brought up, and on the Sabbath day he went into the synagogue, as was his custom. He stood up to read,"
+    },
+    {
+      "chapter": 4,
+      "verse": 17,
+      "zh": "有人把先知以赛亚的书交给他，他就打开，找到一处写着说：",
+      "en": "and the scroll of the prophet Isaiah was handed to him. Unrolling it, he found the place where it is written:"
+    },
+    {
+      "chapter": 4,
+      "verse": 18,
+      "zh": "'主的灵在我身上，因为他用膏膏我，叫我传福音给贫穷的人；差遣我报告：被掳的得释放，瞎眼的得看见，叫那受压制的得自由，",
+      "en": "'The Spirit of the Lord is on me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim freedom for the prisoners and recovery of sight for the blind, to set the oppressed free,"
+    },
+    {
+      "chapter": 4,
+      "verse": 19,
+      "zh": "报告神悦纳人的禧年。'",
+      "en": "to proclaim the year of the Lord's favor.'"
+    },
+    {
+      "chapter": 4,
+      "verse": 20,
+      "zh": "于是把书卷起来，交还执事，就坐下。会堂里的人都定睛看他。",
+      "en": "Then he rolled up the scroll, gave it back to the attendant and sat down. The eyes of everyone in the synagogue were fastened on him."
+    },
+    {
+      "chapter": 4,
+      "verse": 21,
+      "zh": "他就对他们说：'今天这经应验在你们耳中了。'",
+      "en": "He began by saying to them, 'Today this scripture is fulfilled in your hearing.'"
+    },
+    {
+      "chapter": 4,
+      "verse": 22,
+      "zh": "众人都称赞他，并希奇他口中所出的恩言；又说：'这不是约瑟的儿子吗？'",
+      "en": "All spoke well of him and were amazed at the gracious words that came from his lips. 'Isn't this Joseph's son?' they asked."
+    },
+    {
+      "chapter": 4,
+      "verse": 23,
+      "zh": "耶稣对他们说：'你们必引这俗语向我说：医生，你医治自己吧！我们听见你在迦百农所行的事，也当行在你自己家乡里。'",
+      "en": "Jesus said to them, 'Surely you will quote this proverb to me: 'Physician, heal yourself!' And you will tell me, 'Do here in your hometown what we have heard that you did in Capernaum.''"
+    },
+    {
+      "chapter": 4,
+      "verse": 24,
+      "zh": "又说：'我实在告诉你们，没有先知在自己家乡被人悦纳的。",
+      "en": "'Truly I tell you,' he continued, 'no prophet is accepted in his hometown."
+    },
+    {
+      "chapter": 4,
+      "verse": 25,
+      "zh": "我对你们说实话，当以利亚的时候，天闭塞了三年零六个月，遍地有大饥荒，那时，以色列中有许多寡妇，",
+      "en": "I assure you that there were many widows in Israel in Elijah's time, when the sky was shut for three and a half years and there was a severe famine throughout the land."
+    },
+    {
+      "chapter": 4,
+      "verse": 26,
+      "zh": "以利亚并没有奉差往他们一个人那里去，只奉差往西顿的撒勒法一个寡妇那里去。",
+      "en": "Yet Elijah was not sent to any of them, but to a widow in Zarephath in the region of Sidon."
+    },
+    {
+      "chapter": 4,
+      "verse": 27,
+      "zh": "当以利沙的时候，以色列中有许多长大麻风的，但内中除了叙利亚国的乃缦，没有一个得洁净的。'",
+      "en": "And there were many in Israel with leprosy in the time of Elisha the prophet, yet not one of them was cleansed—only Naaman the Syrian.'"
+    },
+    {
+      "chapter": 4,
+      "verse": 28,
+      "zh": "会堂里的人听见这话，都怒气满胸，",
+      "en": "All the people in the synagogue were furious when they heard this."
+    },
+    {
+      "chapter": 4,
+      "verse": 29,
+      "zh": "就起来撵他出城，他们的城造在山上，他们带他到山崖，要把他推下去。",
+      "en": "They got up, drove him out of the town, and took him to the brow of the hill on which the town was built, in order to throw him off the cliff."
+    },
+    {
+      "chapter": 4,
+      "verse": 30,
+      "zh": "他却从他们中间直行，过去了。",
+      "en": "But he walked right through the crowd and went on his way."
+    },
+    {
+      "chapter": 4,
+      "verse": 31,
+      "zh": "耶稣下到迦百农，就是加利利的一个城，在安息日教训众人。",
+      "en": "Then he went down to Capernaum, a town in Galilee, and on the Sabbath he taught the people."
+    },
+    {
+      "chapter": 4,
+      "verse": 32,
+      "zh": "他们很希奇他的教训，因为他的话里有权柄。",
+      "en": "They were amazed at his teaching, because his words had authority."
+    },
+    {
+      "chapter": 4,
+      "verse": 33,
+      "zh": "在会堂里有一个人，被污鬼的灵附着，大声喊叫说：",
+      "en": "In the synagogue there was a man possessed by a demon, an impure spirit. He cried out at the top of his voice,"
+    },
+    {
+      "chapter": 4,
+      "verse": 34,
+      "zh": "'唉！拿撒勒的耶稣，我们与你有什么相干？你来灭我们吗？我知道你是谁，乃是神的圣者！'",
+      "en": "'Go away! What do you want with us, Jesus of Nazareth? Have you come to destroy us? I know who you are—the Holy One of God!'"
+    },
+    {
+      "chapter": 4,
+      "verse": 35,
+      "zh": "耶稣责备他说：'不要作声，从这人身上出来吧！'鬼把那人摔倒在众人中间，就出来了，却也没有害他。",
+      "en": "'Be quiet!' Jesus said sternly. 'Come out of him!' Then the demon threw the man down before them all and came out without injuring him."
+    },
+    {
+      "chapter": 4,
+      "verse": 36,
+      "zh": "众人都惊讶，彼此对问说：'这是什么道理呢？因为他用权柄能力吩咐污鬼，污鬼就出来了。'",
+      "en": "All the people were amazed and said to each other, 'What words these are! With authority and power he gives orders to impure spirits and they come out!'"
+    },
+    {
+      "chapter": 4,
+      "verse": 37,
+      "zh": "于是耶稣的名声传遍了周围地方。",
+      "en": "And the news about him spread throughout the surrounding area."
+    },
+    {
+      "chapter": 4,
+      "verse": 38,
+      "zh": "耶稣出了会堂，进了西门的家。西门的岳母害热病甚重，他们为他求耶稣。",
+      "en": "Jesus left the synagogue and went to the home of Simon. Now Simon's mother-in-law was suffering from a high fever, and they asked Jesus to help her."
+    },
+    {
+      "chapter": 4,
+      "verse": 39,
+      "zh": "耶稣站在她旁边，责备那热病，热病就退了。她立刻起来服事他们。",
+      "en": "So he bent over her and rebuked the fever, and it left her. She got up at once and began to wait on them."
+    },
+    {
+      "chapter": 4,
+      "verse": 40,
+      "zh": "日落的时候，凡有病人的，不论害什么病，都带到耶稣那里。耶稣按手在他们各人身上，医治他们。",
+      "en": "At sunset, the people brought to Jesus all who had various kinds of sickness, and laying his hands on each one, he healed them."
+    },
+    {
+      "chapter": 4,
+      "verse": 41,
+      "zh": "又有鬼从好些人身上出来，喊着说：'你是神的儿子！'耶稣责备他们，不许他们说话，因为他们知道他是基督。",
+      "en": "Moreover, demons came out of many people, shouting, 'You are the Son of God!' But he rebuked them and would not allow them to speak, because they knew he was the Messiah."
+    },
+    {
+      "chapter": 4,
+      "verse": 42,
+      "zh": "天亮的时候，耶稣出来，走到旷野地方。众人去找他，到了他那里，要留住他，不要他离开他们。",
+      "en": "At daybreak, Jesus went out to a solitary place. The people were looking for him and when they came to where he was, they tried to keep him from leaving them."
+    },
+    {
+      "chapter": 4,
+      "verse": 43,
+      "zh": "但耶稣对他们说：'我也必须在别城传神国的福音，因我奉差原是为此。'",
+      "en": "But he said, 'I must proclaim the good news of the kingdom of God to the other towns also, because that is why I was sent.'"
+    },
+    {
+      "chapter": 4,
+      "verse": 44,
+      "zh": "于是耶稣在加利利的各会堂传道。",
+      "en": "And he kept on preaching in the synagogues of Judea."
+    },
+    {
+      "chapter": 5,
+      "verse": 1,
+      "zh": "耶稣站在革尼撒勒湖边，众人拥挤他，要听神的道。",
+      "en": "One day as Jesus was standing by the Lake of Gennesaret, the people were crowding around him and listening to the word of God."
+    },
+    {
+      "chapter": 5,
+      "verse": 2,
+      "zh": "他见有两只船湾在湖边；打鱼的人却离开船，洗网去了。",
+      "en": "He saw at the water's edge two boats, left there by the fishermen, who were washing their nets."
+    },
+    {
+      "chapter": 5,
+      "verse": 3,
+      "zh": "有一只船是西门的，耶稣就上去，请他把船撑开，稍微离岸，就坐下，从船上教训众人。",
+      "en": "He got into one of the boats, the one belonging to Simon, and asked him to put out a little from shore. Then he sat down and taught the people from the boat."
+    },
+    {
+      "chapter": 5,
+      "verse": 4,
+      "zh": "讲完了，对西门说：'把船开到水深之处，下网打鱼。'",
+      "en": "When he had finished speaking, he said to Simon, 'Put out into deep water, and let down the nets for a catch.'"
+    },
+    {
+      "chapter": 5,
+      "verse": 5,
+      "zh": "西门说：'夫子，我们整夜劳力，并没有打着什么。但依从你的话，我就下网。'",
+      "en": "Simon answered, 'Master, we've worked hard all night and haven't caught anything. But because you say so, I will let down the nets.'"
+    },
+    {
+      "chapter": 5,
+      "verse": 6,
+      "zh": "他们下了网，就圈住许多鱼，网险些裂开，",
+      "en": "When they had done so, they caught such a large number of fish that their nets began to break."
+    },
+    {
+      "chapter": 5,
+      "verse": 7,
+      "zh": "便招呼那只船上的同伴来帮助。他们就来，把鱼装满了两只船，甚至船要沉下去。",
+      "en": "So they signaled their partners in the other boat to come and help them, and they came and filled both boats so full that they began to sink."
+    },
+    {
+      "chapter": 5,
+      "verse": 8,
+      "zh": "西门彼得看见，就俯伏在耶稣膝前，说：'主啊，离开我，我是个罪人！'",
+      "en": "When Simon Peter saw this, he fell at Jesus' knees and said, 'Go away from me, Lord; I am a sinful man!'"
+    },
+    {
+      "chapter": 5,
+      "verse": 9,
+      "zh": "他和一切同在的人都惊讶这一网所打的鱼。",
+      "en": "For he and all his companions were astonished at the catch of fish they had taken,"
+    },
+    {
+      "chapter": 5,
+      "verse": 10,
+      "zh": "他的伙伴，就是西庇太的儿子雅各、约翰，也是这样。耶稣对西门说：'不要怕！从今以后，你要得人了。'",
+      "en": "and so were James and John, the sons of Zebedee, Simon's partners. Then Jesus said to Simon, 'Don't be afraid; from now on you will fish for people.'"
+    },
+    {
+      "chapter": 5,
+      "verse": 11,
+      "zh": "他们把两只船拢了岸，就撇下一切，跟从了耶稣。",
+      "en": "So they pulled their boats up on shore, left everything and followed him."
+    },
+    {
+      "chapter": 5,
+      "verse": 12,
+      "zh": "有一回，耶稣在一个城里，有人满身长了大麻风的，见到耶稣，就俯伏在地，求他说：'主若肯，必能叫我洁净了。'",
+      "en": "While Jesus was in one of the towns, a man came along who was covered with leprosy. When he saw Jesus, he fell with his face to the ground and begged him, 'Lord, if you are willing, you can make me clean.'"
+    },
+    {
+      "chapter": 5,
+      "verse": 13,
+      "zh": "耶稣伸手摸他，说：'我肯，你洁净了吧！'大麻风立刻就离了他的身。",
+      "en": "Jesus reached out his hand and touched the man. 'I am willing,' he said. 'Be clean!' And immediately the leprosy left him."
+    },
+    {
+      "chapter": 5,
+      "verse": 14,
+      "zh": "耶稣嘱咐他：'你切不可告诉人，只要去把身体给祭司察看，又因为你洁净了，照摩西所吩咐的，献上礼物。'",
+      "en": "Then Jesus ordered him, 'Don't tell anyone, but go, show yourself to the priest and offer the sacrifices that Moses commanded for your cleansing, as a testimony to them.'"
+    },
+    {
+      "chapter": 5,
+      "verse": 15,
+      "zh": "但耶稣的名声越发传扬出去。有极多的人聚集来听道，也指望医治他们的病。",
+      "en": "Yet the news about him spread all the more, so that crowds of people came to hear him and to be healed of their sicknesses."
+    },
+    {
+      "chapter": 5,
+      "verse": 16,
+      "zh": "耶稣却退到旷野去祷告。",
+      "en": "But Jesus often withdrew to lonely places and prayed."
+    },
+    {
+      "chapter": 5,
+      "verse": 17,
+      "zh": "有一天，耶稣教训人，有法利赛人和教法师在旁边坐着；他们是从加利利各乡村和犹太并耶路撒冷来的。主的能力与耶稣同在，使他能医治病人。",
+      "en": "One day Jesus was teaching, and Pharisees and teachers of the law were sitting there. They had come from every village of Galilee and from Judea and Jerusalem. And the power of the Lord was with Jesus to heal the sick."
+    },
+    {
+      "chapter": 5,
+      "verse": 18,
+      "zh": "有人用褥子抬着一个瘫子，要抬进去放在耶稣面前，",
+      "en": "Some men came carrying a paralyzed man on a mat and tried to take him into the house to lay him before Jesus."
+    },
+    {
+      "chapter": 5,
+      "verse": 19,
+      "zh": "却因人多，寻不出法子抬进去，就上了房顶，从瓦间把他连褥子缒到当中，正在耶稣面前。",
+      "en": "When they could not find a way to do this because of the crowd, they went up on the roof and lowered him on his mat through the tiles into the middle of the crowd, right in front of Jesus."
+    },
+    {
+      "chapter": 5,
+      "verse": 20,
+      "zh": "耶稣见他们的信心，就对瘫子说：'你的罪赦了。'",
+      "en": "When Jesus saw their faith, he said, 'Friend, your sins are forgiven.'"
+    },
+    {
+      "chapter": 5,
+      "verse": 21,
+      "zh": "文士和法利赛人就议论说：'这说僭妄话的是谁？除了神以外，谁能赦罪呢？'",
+      "en": "The Pharisees and the teachers of the law began thinking to themselves, 'Who is this fellow who speaks blasphemy? Who can forgive sins but God alone?'"
+    },
+    {
+      "chapter": 5,
+      "verse": 22,
+      "zh": "耶稣知道他们所议论的，就说：'你们心里为什么议论呢？",
+      "en": "Jesus knew what they were thinking and asked, 'Why are you thinking these things in your hearts?"
+    },
+    {
+      "chapter": 5,
+      "verse": 23,
+      "zh": "或说，你的罪赦了，或说，你起来行走，那一样容易呢？",
+      "en": "Which is easier: to say, 'Your sins are forgiven,' or to say, 'Get up and walk'?"
+    },
+    {
+      "chapter": 5,
+      "verse": 24,
+      "zh": "但要叫你们知道，人子在地上有赦罪的权柄。'就对瘫子说：'我吩咐你，起来，拿你的褥子回家去吧！'",
+      "en": "But I want you to know that the Son of Man has authority on earth to forgive sins.' So he said to the paralyzed man, 'I tell you, get up, take your mat and go home.'"
+    },
+    {
+      "chapter": 5,
+      "verse": 25,
+      "zh": "那人当众人面前立刻起来，拿着他所躺的褥子回家去，归荣耀与神。",
+      "en": "Immediately he stood up in front of them, took what he had been lying on and went home praising God."
+    },
+    {
+      "chapter": 5,
+      "verse": 26,
+      "zh": "众人都惊奇，也归荣耀与神，并且满心惧怕，说：'我们今日看见非常的事了。'",
+      "en": "Everyone was amazed and gave praise to God. They were filled with awe and said, 'We have seen remarkable things today.'"
+    },
+    {
+      "chapter": 5,
+      "verse": 27,
+      "zh": "这事以后，耶稣出去，看见一个税吏，名叫利未，坐在税关上，就对他说：'你跟从我来。'",
+      "en": "After this, Jesus went out and saw a tax collector by the name of Levi sitting at his tax booth. 'Follow me,' Jesus said to him,"
+    },
+    {
+      "chapter": 5,
+      "verse": 28,
+      "zh": "他就撇下一切，起来，跟从了耶稣。",
+      "en": "and Levi got up, left everything and followed him."
+    },
+    {
+      "chapter": 5,
+      "verse": 29,
+      "zh": "利未在自己家里为耶稣大摆筵席，有许多税吏和别人与他们一同坐席。",
+      "en": "Then Levi held a great banquet for Jesus at his house, and a large crowd of tax collectors and others were eating with them."
+    },
+    {
+      "chapter": 5,
+      "verse": 30,
+      "zh": "法利赛人和文士就向耶稣的门徒发怨言，说：'你们为什么和税吏并罪人一同吃喝呢？'",
+      "en": "But the Pharisees and the teachers of the law who belonged to their sect complained to his disciples, 'Why do you eat and drink with tax collectors and sinners?'"
+    },
+    {
+      "chapter": 5,
+      "verse": 31,
+      "zh": "耶稣回答说：'健康的人用不着医生；有病的人才用得着。",
+      "en": "Jesus answered them, 'It is not the healthy who need a doctor, but the sick."
+    },
+    {
+      "chapter": 5,
+      "verse": 32,
+      "zh": "我来本不是召义人悔改，乃是召罪人悔改。'",
+      "en": "I have not come to call the righteous, but sinners to repentance.'"
+    },
+    {
+      "chapter": 5,
+      "verse": 33,
+      "zh": "他们说：'约翰的门徒屡次禁食祈祷，法利赛人的门徒也是这样；惟独你的门徒又吃又喝。'",
+      "en": "They said to him, 'John's disciples often fast and pray, and so do the disciples of the Pharisees, but yours go on eating and drinking.'"
+    },
+    {
+      "chapter": 5,
+      "verse": 34,
+      "zh": "耶稣说：'新郎和陪伴之人同在的时候，岂能叫陪伴之人禁食呢？",
+      "en": "Jesus answered, 'Can you make the friends of the bridegroom fast while he is with them?"
+    },
+    {
+      "chapter": 5,
+      "verse": 35,
+      "zh": "但日子将到，新郎要离开他们，那日他们就要禁食了。'",
+      "en": "But the time will come when the bridegroom will be taken from them; in those days they will fast.'"
+    },
+    {
+      "chapter": 5,
+      "verse": 36,
+      "zh": "耶稣又设一个比喻，对他们说：'没有人把新衣服撕下一块来补旧衣服；若是这样，就把新的撕破了，并且所撕下来的那块新的和旧的也不相称。",
+      "en": "He told them this parable: 'No one tears a piece out of a new garment to patch an old one. Otherwise, they will have torn the new garment, and the patch from the new will not match the old."
+    },
+    {
+      "chapter": 5,
+      "verse": 37,
+      "zh": "也没有人把新酒装在旧皮袋里；若是这样，新酒必将皮袋裂开，酒便漏出来，皮袋也就坏了。",
+      "en": "And no one pours new wine into old wineskins. Otherwise, the new wine will burst the skins; the wine will run out and the wineskins will be ruined."
+    },
+    {
+      "chapter": 5,
+      "verse": 38,
+      "zh": "但新酒必须装在新皮袋里。",
+      "en": "No, new wine must be poured into new wineskins."
+    },
+    {
+      "chapter": 5,
+      "verse": 39,
+      "zh": "没有人喝了陈酒又想喝新的；他总说陈的好。'",
+      "en": "And no one after drinking old wine wants the new, for they say, 'The old is better.''"
+    }
+  ],
+  "keyVerses": [
+    {
+      "chapter": 1,
+      "verse": 37
+    },
+    {
+      "chapter": 2,
+      "verse": 10
+    },
+    {
+      "chapter": 2,
+      "verse": 11
+    },
+    {
+      "chapter": 3,
+      "verse": 16
+    }
+  ]
+}

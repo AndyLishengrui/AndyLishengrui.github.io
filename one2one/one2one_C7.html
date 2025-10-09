@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第7课 - 新使命 带门徒 - 一对一门徒训练</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', 'SimSun', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 30px 20px;
+            margin-bottom: 30px;
+        }
+        
+        .page-title {
+            font-size: 2.2rem;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        
+        .page-subtitle {
+            font-size: 1.1rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+        
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: #2d3748;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .main-content {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: #2d3748;
+        }
+        
+        .verse-container {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .verse-reference {
+            font-weight: bold;
+            color: #2b6cb0;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .verse-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .blank-input {
+            display: inline-block;
+            min-width: 60px;
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: transparent;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #2d3748;
+            padding: 2px 8px;
+            margin: 0 2px;
+        }
+        
+        .blank-input:focus {
+            outline: none;
+            border-bottom-color: #764ba2;
+            background: rgba(102, 126, 234, 0.1);
+        }
+        
+        .blank-input.correct {
+            border-bottom-color: #48bb78;
+            background: rgba(72, 187, 120, 0.1);
+        }
+        
+        .blank-input.incorrect {
+            border-bottom-color: #f56565;
+            background: rgba(245, 101, 101, 0.1);
+        }
+        
+        .verse-controls {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .verse-controls button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .hint-btn {
+            background: #fbb6ce;
+            color: #702459;
+        }
+        
+        .check-btn {
+            background: #9ae6b4;
+            color: #22543d;
+        }
+        
+        .answer-btn {
+            background: #90cdf4;
+            color: #1a365d;
+        }
+        
+        .verse-controls button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .navigation {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.9);
+            color: #2d3748;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .nav-btn:hover {
+            background: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 1.8rem;
+            }
+            
+            .content-section {
+                padding: 20px 15px;
+            }
+            
+            .verse-controls {
+                justify-content: center;
+            }
+            
+            .nav-btn {
+                display: block;
+                margin: 10px auto;
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="page-title">第7课 - 新使命 带门徒</h1>
+            <p class="page-subtitle">一对一门徒训练系列</p>
+        </header>
+        
+        <section class="content-section">
+            <h2 class="section-title">📖 内容</h2>
+            <div class="main-content">带门徒 69</div>
+        </section>
+        
+        
+        
+        <div class="navigation">
+            <a href="one2one_C6.html" class="nav-btn">⬅️ 上一页</a>
+            <a href="index.html" class="nav-btn">🏠 主页</a>
+            <a href="index.html" class="nav-btn">下一页 ➡️</a>
+        </div>
+    </div>
+    
+    <script>
+        const versesData = [];
+        
+        function showHints(verseId) {
+            const verseIndex = parseInt(verseId.split('_')[1]) - 1;
+            const verse = versesData[verseIndex];
+            const inputs = document.querySelectorAll(`#${verseId} .blank-input`);
+            
+            inputs.forEach((input, index) => {
+                if (verse.hints && verse.hints[index]) {
+                    input.placeholder = verse.hints[index];
+                }
+            });
+            
+            showMessage('💡 已显示提示', 'info');
+        }
+        
+        function checkAnswers(verseId) {
+            const verseIndex = parseInt(verseId.split('_')[1]) - 1;
+            const verse = versesData[verseIndex];
+            const inputs = document.querySelectorAll(`#${verseId} .blank-input`);
+            let correct = 0;
+            let total = inputs.length;
+            
+            inputs.forEach((input, index) => {
+                const userAnswer = input.value.trim();
+                const correctAnswer = verse.blanks[index];
+                
+                input.classList.remove('correct', 'incorrect');
+                
+                if (userAnswer === correctAnswer) {
+                    input.classList.add('correct');
+                    correct++;
+                } else if (userAnswer !== '') {
+                    input.classList.add('incorrect');
+                }
+            });
+            
+            const percentage = Math.round((correct / total) * 100);
+            let message = `检查完成！正确率: ${correct}/${total} (${percentage}%)`;
+            
+            if (percentage === 100) {
+                showMessage('🎉 完全正确！' + message, 'success');
+            } else if (percentage >= 80) {
+                showMessage('👍 很棒！' + message, 'success');
+            } else {
+                showMessage('📚 继续努力！' + message, 'warning');
+            }
+        }
+        
+        function showAnswers(verseId) {
+            const verseIndex = parseInt(verseId.split('_')[1]) - 1;
+            const verse = versesData[verseIndex];
+            const inputs = document.querySelectorAll(`#${verseId} .blank-input`);
+            
+            inputs.forEach((input, index) => {
+                input.value = verse.blanks[index];
+                input.classList.remove('incorrect');
+                input.classList.add('correct');
+            });
+            
+            showMessage('📖 已显示所有答案', 'info');
+        }
+        
+        function showMessage(text, type = 'info') {
+            const messageDiv = document.createElement('div');
+            messageDiv.textContent = text;
+            messageDiv.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 12px 20px;
+                border-radius: 8px;
+                color: white;
+                font-weight: bold;
+                z-index: 1000;
+                ${type === 'success' ? 'background: #48bb78;' :
+                  type === 'warning' ? 'background: #ed8936;' :
+                  'background: #4299e1;'}
+            `;
+            
+            document.body.appendChild(messageDiv);
+            setTimeout(() => messageDiv.remove(), 3000);
+        }
+    </script>
+</body>
+</html>

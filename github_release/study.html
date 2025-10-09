@@ -1,0 +1,1886 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">圣经学习 | Bible Study</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, var(--primary-color, #667eea) 0%, var(--secondary-color, #764ba2) 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .book-info {
+            color: white;
+        }
+        
+        .book-title {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .book-subtitle {
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-btn {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+        }
+        
+        .nav-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        
+        .container {
+            max-width: calc(100% - 460px);
+            margin: 0 auto 0 20px;
+            padding: 20px;
+        }
+        
+        .chapter-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+            gap: 10px;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .chapter-btn {
+            background: #f8f9fa;
+            border: 2px solid #dee2e6;
+            color: #495057;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .chapter-btn:hover {
+            background: var(--primary-color, #667eea);
+            color: white;
+            border-color: var(--primary-color, #667eea);
+            transform: translateY(-2px);
+        }
+        
+        .chapter-btn.active {
+            background: var(--primary-color, #667eea);
+            color: white;
+            border-color: var(--primary-color, #667eea);
+        }
+        
+        .study-content {
+            display: flex;
+            height: calc(100vh - 160px); /* 减去头部高度 */
+            gap: 20px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .verses-section {
+            flex: 1;
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow-y: auto;
+            height: 100%;
+        }
+        
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color, #667eea);
+            padding-bottom: 10px;
+        }
+        
+        .verse-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .verse-table th {
+            background: var(--primary-color, #667eea);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .verse-table td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+        
+        .verse-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .verse-number {
+            font-weight: bold;
+            color: var(--primary-color, #667eea);
+            min-width: 40px;
+        }
+        
+        .verse-text {
+            line-height: 1.7;
+        }
+        
+        .verse-zh {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+        
+        .verse-en {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .sidebar {
+            width: 420px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: fixed;
+            right: 20px;
+            top: 160px;
+            height: calc(100vh - 180px);
+            z-index: 50;
+        }
+        
+        .progress-card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+            max-height: 200px;
+        }
+        
+        .fill-blank-card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .progress-list {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .progress-item {
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .progress-item:last-child {
+            border-bottom: none;
+        }
+        
+        .verse-checkbox {
+            margin-right: 10px;
+            transform: scale(1.2);
+            accent-color: var(--primary-color, #667eea);
+        }
+        
+        .fill-blank-input {
+            border: 1px solid var(--primary-color, #667eea);
+            border-radius: 4px;
+            background: rgba(52, 152, 219, 0.1);
+            text-align: center;
+            height: 32px;
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #2c3e50;
+            padding: 4px 8px;
+            margin: 0 2px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: baseline;
+        }
+        
+        .fill-blank-input:focus {
+            outline: none;
+            border-color: var(--secondary-color, #764ba2);
+            background: rgba(52, 152, 219, 0.15);
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+        }
+        
+        .fill-blank-input.correct {
+            background-color: #d5f4e6;
+            border-color: #27ae60;
+            color: #27ae60;
+        }
+        
+        .fill-blank-input.incorrect {
+            background-color: #fdeaea;
+            border-color: #e74c3c;
+            color: #e74c3c;
+        }
+        
+        .fill-blank-input::placeholder {
+            color: #bdc3c7;
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
+        
+        .blank-container {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .hint-icon {
+            transition: all 0.3s ease;
+            opacity: 0.7;
+        }
+        
+        .blank-container:hover .hint-icon {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        .blank-container[title]:hover::after {
+            content: attr(title);
+            position: absolute;
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8em;
+            white-space: nowrap;
+            z-index: 1000;
+            pointer-events: none;
+        }
+        
+        #fill-blank-content {
+            flex: 1;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        
+        #fill-blank-content {
+            flex: 1;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 1200px) {
+            .sidebar {
+                width: 350px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .study-content {
+                flex-direction: column;
+                height: auto;
+            }
+            
+            .sidebar {
+                position: static;
+                width: 100%;
+                height: auto;
+                right: auto;
+                top: auto;
+            }
+            
+            .verses-section {
+                height: 60vh;
+            }
+        }
+        
+        .check-button {
+            background: var(--primary-color, #667eea);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+        
+        .check-button:hover {
+            background: var(--secondary-color, #764ba2);
+            transform: translateY(-2px);
+        }
+        
+        #recheck-btn {
+            background: linear-gradient(135deg, #f39c12, #e67e22) !important;
+        }
+        
+        #recheck-btn:hover {
+            background: linear-gradient(135deg, #e67e22, #f39c12) !important;
+        }
+        
+        .exercise-btn {
+            flex: 1;
+            min-width: 80px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        
+        .preview-btn {
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: white;
+        }
+        
+        .preview-btn:hover {
+            background: linear-gradient(135deg, #0984e3, #0056b3);
+            transform: translateY(-2px);
+        }
+        
+        .review-btn {
+            background: linear-gradient(135deg, #fd79a8, #e84393);
+            color: white;
+        }
+        
+        .review-btn:hover {
+            background: linear-gradient(135deg, #e84393, #d63384);
+            transform: translateY(-2px);
+        }
+        
+        .random-btn {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+        }
+        
+        .random-btn:hover {
+            background: linear-gradient(135deg, #e67e22, #d35400);
+            transform: translateY(-2px);
+        }
+        
+        /* 经文区域滚动条样式 */
+        .verses-section::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .verses-section::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        
+        .verses-section::-webkit-scrollbar-thumb {
+            background: var(--primary-color, #667eea);
+            border-radius: 10px;
+        }
+        
+        .verses-section::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary-color, #764ba2);
+        }
+        
+        /* 填空内容滚动条样式 */
+        #fill-blank-content::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        #fill-blank-content::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        
+        #fill-blank-content::-webkit-scrollbar-thumb {
+            background: #bdc3c7;
+            border-radius: 10px;
+        }
+        
+        #fill-blank-content::-webkit-scrollbar-thumb:hover {
+            background: #95a5a6;
+        }
+        
+        /* 固定侧边栏的进入动画 */
+        .sidebar {
+            animation: slideInRight 0.5s ease-out;
+        }
+        
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        /* 经文区域的淡入效果 */
+        .verses-section {
+            animation: fadeIn 0.3s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 1200px) {
+            .sidebar {
+                width: 350px;
+            }
+            
+            .container {
+                max-width: calc(100% - 390px);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .study-content {
+                flex-direction: column;
+                height: auto;
+            }
+            
+            .sidebar {
+                position: static;
+                width: 100%;
+                height: auto;
+                right: auto;
+                top: auto;
+            }
+            
+            .verses-section {
+                height: 60vh;
+            }
+            
+            .container {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+        
+        /* 经文区域滚动条样式 */
+        .verses-section::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .verses-section::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        
+        .verses-section::-webkit-scrollbar-thumb {
+            background: var(--primary-color, #667eea);
+            border-radius: 10px;
+        }
+        
+        .verses-section::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary-color, #764ba2);
+        }
+        
+        /* 填空内容滚动条样式 */
+        #fill-blank-content::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        #fill-blank-content::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        
+        #fill-blank-content::-webkit-scrollbar-thumb {
+            background: #bdc3c7;
+            border-radius: 10px;
+        }
+        
+        #fill-blank-content::-webkit-scrollbar-thumb:hover {
+            background: #95a5a6;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+        }
+        
+        .modal-content {
+            background: white;
+            margin: 10% auto;
+            padding: 30px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .close {
+            color: #999;
+            float: right;
+            font-size: 2em;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+        }
+        
+        .close:hover {
+            color: #333;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: white;
+            font-size: 1.2em;
+        }
+        
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #f5c6cb;
+        }
+        
+        @media (max-width: 768px) {
+            .study-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .chapter-nav {
+                grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+                gap: 8px;
+                padding: 15px;
+            }
+            
+            .book-title {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="nav-container">
+            <div class="book-info">
+                <div class="book-title" id="book-name">加载中...</div>
+                <div class="book-subtitle" id="book-description">Loading...</div>
+            </div>
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn">← 返回主页</a>
+                <a href="#" class="nav-btn" onclick="window.print()">📄 打印</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="loading" class="loading">正在加载圣经数据...</div>
+        <div id="error-message" class="error" style="display: none;"></div>
+        
+        <div id="main-content" style="display: none;">
+            <div class="chapter-nav" id="chapter-nav">
+                <!-- 章节导航将动态生成 -->
+            </div>
+
+            <div class="study-content">
+                <div class="verses-section">
+                    <h2 class="section-title">
+                        <span id="current-chapter-title">第1章 经文学习</span>
+                    </h2>
+                    <div id="verses-container">
+                        <table class="verse-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 60px;">节</th>
+                                    <th>经文 (和合本 + NIV)</th>
+                                    <th style="width: 60px;">✓</th>
+                                </tr>
+                            </thead>
+                            <tbody id="verses-tbody">
+                                <!-- 经文内容将动态加载 -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <div class="progress-card">
+                        <h3 class="section-title" style="font-size: 1.3em;">学习进度</h3>
+                        <div id="progress-summary">
+                            <p>当前章节: <span id="current-progress">0/0</span></p>
+                            <p>总体进度: <span id="total-progress">0/0</span></p>
+                        </div>
+                    </div>
+
+                    <div class="fill-blank-card">
+                        <h3 class="section-title" style="font-size: 1.3em;">填空练习 
+                            <small style="font-size: 0.6em; color: #7f8c8d; font-weight: normal;">📖 可边看经文边练习</small>
+                        </h3>
+                        <div class="exercise-buttons" style="margin-bottom: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
+                            <button class="exercise-btn preview-btn" onclick="generateFillBlank('preview')" title="优先选择未打卡的经文进行预习">
+                                📚 预习
+                            </button>
+                            <button class="exercise-btn review-btn" onclick="generateFillBlank('review')" title="复习已打卡的经文">
+                                🔄 复习
+                            </button>
+                            <button class="exercise-btn random-btn" onclick="generateFillBlank('random')" title="从金句中随机选择练习">
+                                ✨ 金句
+                            </button>
+                        </div>
+                        <div id="fill-blank-content">
+                            <p style="text-align: center; color: #7f8c8d; margin: 20px 0;">
+                                选择练习模式开始学习<br>
+                                <small>📚预习: 未打勾经文 | 🔄复习: 已打勾经文 | ✨金句: 重要经文练习</small>
+                            </p>
+                        </div>
+                        <div id="fill-result" style="margin-top: 15px; font-weight: bold;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 背景信息模态框 -->
+    <div id="background-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title">经文背景</h3>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script>
+        // 全局变量
+        let currentBook = null;
+        let bookData = null;
+        let currentChapter = 1;
+        let progressData = {};
+        
+        // 练习状态跟踪
+        let currentExerciseMode = null;
+        let exercisedVerses = new Set(); // 已练习过的经文
+        let currentExerciseVerse = null; // 当前练习的经文
+
+        // 初始化页面
+        document.addEventListener('DOMContentLoaded', async () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const bookId = urlParams.get('book');
+            
+            if (!bookId) {
+                showError('未指定书卷参数，正在跳转到主页...');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 2000);
+                return;
+            }
+            
+            await loadBookData(bookId);
+        });
+
+        // 加载书卷数据
+        async function loadBookData(bookId) {
+            try {
+                const response = await fetch(`data/${bookId}.json`);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                bookData = await response.json();
+                currentBook = bookId;
+                
+                // 设置页面主题色
+                document.documentElement.style.setProperty('--primary-color', bookData.color);
+                document.documentElement.style.setProperty('--secondary-color', adjustColor(bookData.color, -20));
+                
+                // 更新页面信息
+                document.getElementById('page-title').textContent = `${bookData.name} - 圣经互动学习`;
+                document.getElementById('book-name').textContent = `${bookData.name} ${bookData.englishName}`;
+                document.getElementById('book-description').textContent = bookData.description;
+                
+                // 渲染界面
+                renderChapterNav();
+                loadProgress();
+                changeChapter(1);
+                
+                // 隐藏加载提示，显示主内容
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('main-content').style.display = 'block';
+                
+            } catch (error) {
+                console.error('加载数据失败:', error);
+                showError(`加载 ${bookId} 数据失败: ${error.message}`);
+            }
+        }
+
+        // 显示错误信息
+        function showError(message) {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('error-message').textContent = message;
+            document.getElementById('error-message').style.display = 'block';
+        }
+
+        // 调整颜色亮度
+        function adjustColor(color, amount) {
+            const num = parseInt(color.replace("#",""), 16);
+            const amt = Math.round(2.55 * amount);
+            const R = (num >> 16) + amt;
+            const G = (num >> 8 & 0x00FF) + amt;
+            const B = (num & 0x0000FF) + amt;
+            return "#" + (0x1000000 + (R < 255 ? R < 1 ? 0 : R : 255) * 0x10000 +
+                (G < 255 ? G < 1 ? 0 : G : 255) * 0x100 +
+                (B < 255 ? B < 1 ? 0 : B : 255)).toString(16).slice(1);
+        }
+
+        // 渲染章节导航
+        function renderChapterNav() {
+            const nav = document.getElementById('chapter-nav');
+            nav.innerHTML = '';
+            
+            for (let i = 1; i <= bookData.chapters; i++) {
+                const btn = document.createElement('button');
+                btn.className = 'chapter-btn';
+                btn.textContent = i;
+                btn.onclick = () => changeChapter(i);
+                nav.appendChild(btn);
+            }
+        }
+
+        // 切换章节
+        function changeChapter(chapterNum) {
+            currentChapter = chapterNum;
+            
+            // 重置练习状态
+            exercisedVerses.clear();
+            currentExerciseVerse = null;
+            currentExerciseMode = null;
+            
+            // 重置填空练习内容
+            document.getElementById('fill-blank-content').innerHTML = `
+                <p style="text-align: center; color: #7f8c8d; margin: 20px 0;">
+                    选择练习模式开始学习<br>
+                    <small>📚预习: 未打勾经文 | 🔄复习: 已打勾经文 | ✨金句: 重要经文练习</small>
+                </p>
+            `;
+            
+            // 更新导航按钮状态
+            document.querySelectorAll('.chapter-btn').forEach((btn, index) => {
+                btn.classList.toggle('active', index + 1 === chapterNum);
+            });
+            
+            // 更新章节标题
+            document.getElementById('current-chapter-title').textContent = `第${chapterNum}章 经文学习`;
+            
+            // 渲染经文和其他内容
+            renderVerses();
+            renderKeyVerses();
+            updateProgressSummary();
+        }
+
+        // 渲染经文
+        function renderVerses() {
+            const tbody = document.getElementById('verses-tbody');
+            tbody.innerHTML = '';
+            
+            const chapterVerses = bookData.verses.filter(v => v.chapter === currentChapter);
+            
+            chapterVerses.forEach(verse => {
+                const row = document.createElement('tr');
+                row.setAttribute('data-chapter', verse.chapter);
+                row.setAttribute('data-verse', verse.verse);
+                
+                // 经文节数
+                const verseCell = document.createElement('td');
+                verseCell.className = 'verse-number';
+                verseCell.textContent = verse.verse;
+                
+                // 经文内容
+                const textCell = document.createElement('td');
+                textCell.className = 'verse-text';
+                
+                const zhDiv = document.createElement('div');
+                zhDiv.className = 'verse-zh';
+                zhDiv.textContent = verse.zh;
+                
+                const enDiv = document.createElement('div');
+                enDiv.className = 'verse-en';
+                enDiv.textContent = verse.en;
+                
+                textCell.appendChild(zhDiv);
+                textCell.appendChild(enDiv);
+                
+                // 添加背景信息按钮
+                if (verse.background) {
+                    const bgBtn = document.createElement('button');
+                    bgBtn.textContent = '📖';
+                    bgBtn.style.cssText = 'margin-left: 10px; background: none; border: 1px solid #ddd; border-radius: 50%; width: 30px; height: 30px; cursor: pointer;';
+                    bgBtn.onclick = () => showBackground(verse);
+                    textCell.appendChild(bgBtn);
+                }
+                
+                // 复选框
+                const checkCell = document.createElement('td');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.className = 'verse-checkbox';
+                checkbox.id = `check-${currentChapter}-${verse.verse}`;
+                checkbox.onchange = () => saveProgress(currentChapter, verse.verse);
+                
+                // 从本地存储恢复状态
+                const key = `${currentBook}-${currentChapter}-${verse.verse}`;
+                checkbox.checked = progressData[key] || false;
+                
+                checkCell.appendChild(checkbox);
+                
+                row.appendChild(verseCell);
+                row.appendChild(textCell);
+                row.appendChild(checkCell);
+                tbody.appendChild(row);
+            });
+        }
+
+        // 渲染金句练习
+        function renderKeyVerses() {
+            const keyVersesOfChapter = bookData.keyVerses.filter(kv => kv.chapter === currentChapter);
+            
+            if (keyVersesOfChapter.length === 0) {
+                document.getElementById('fill-blank-content').innerHTML = '<p>本章暂无填空练习</p>';
+                return;
+            }
+        }
+
+        // 计算输入框宽度的辅助函数
+        function calculateInputWidth(text) {
+            // 优化基础宽度，防止过宽导致换行
+            const baseWidth = 30;
+            // 减小每个字符的宽度，使输入框更紧凑
+            let totalWidth = baseWidth;
+            
+            for (let char of text) {
+                if (/[\u4e00-\u9fa5]/.test(char)) {
+                    // 中文字符
+                    totalWidth += 16;
+                } else if (/[a-zA-Z0-9]/.test(char)) {
+                    // 英文字符和数字
+                    totalWidth += 10;
+                } else {
+                    // 其他字符（标点符号等）
+                    totalWidth += 8;
+                }
+            }
+            
+            // 设置合理的宽度范围，防止过宽
+            return Math.max(40, Math.min(totalWidth + 15, 120));
+        }
+        
+        // 更新练习按钮状态
+        function updateExerciseButtonsState() {
+            // 获取当前章节所有经文
+            const allVersesInChapter = bookData.verses.filter(v => v.chapter === currentChapter);
+            const keyVersesOfChapter = bookData.keyVerses.filter(kv => kv.chapter === currentChapter);
+            
+            // 计算未打勾且未练习的经文数量（预习用）
+            const uncheckedAndUnexercisedVerses = allVersesInChapter.filter(v => {
+                const key = `${currentBook}-${v.chapter}-${v.verse}`;
+                const verseKey = `${v.chapter}:${v.verse}`;
+                return !progressData[key] && !exercisedVerses.has(verseKey);
+            }).length;
+            
+            // 计算已打勾且未练习的经文数量（复习用）
+            const checkedAndUnexercisedVerses = allVersesInChapter.filter(v => {
+                const key = `${currentBook}-${v.chapter}-${v.verse}`;
+                const verseKey = `${v.chapter}:${v.verse}`;
+                return progressData[key] && !exercisedVerses.has(verseKey);
+            }).length;
+            
+            // 计算未练习的金句数量
+            const unexercisedKeyVerses = keyVersesOfChapter.filter(kv => {
+                const verseKey = `${kv.chapter}:${kv.verse}`;
+                return !exercisedVerses.has(verseKey);
+            }).length;
+            
+            const previewBtn = document.querySelector('.preview-btn');
+            const reviewBtn = document.querySelector('.review-btn');
+            const randomBtn = document.querySelector('.random-btn');
+            
+            if (previewBtn && reviewBtn && randomBtn) {
+                // 更新按钮文本显示剩余可练习数量
+                previewBtn.innerHTML = `📚 预习 <small>(${uncheckedAndUnexercisedVerses})</small>`;
+                reviewBtn.innerHTML = `🔄 复习 <small>(${checkedAndUnexercisedVerses})</small>`;
+                randomBtn.innerHTML = `✨ 金句 <small>(${unexercisedKeyVerses})</small>`;
+                
+                // 设置按钮的可用状态
+                previewBtn.disabled = uncheckedAndUnexercisedVerses === 0;
+                reviewBtn.disabled = checkedAndUnexercisedVerses === 0;
+                randomBtn.disabled = unexercisedKeyVerses === 0;
+                
+                // 添加禁用状态的样式
+                if (uncheckedAndUnexercisedVerses === 0) {
+                    previewBtn.style.opacity = '0.5';
+                    previewBtn.style.cursor = 'not-allowed';
+                } else {
+                    previewBtn.style.opacity = '1';
+                    previewBtn.style.cursor = 'pointer';
+                }
+                
+                if (checkedAndUnexercisedVerses === 0) {
+                    reviewBtn.style.opacity = '0.5';
+                    reviewBtn.style.cursor = 'not-allowed';
+                } else {
+                    reviewBtn.style.opacity = '1';
+                    reviewBtn.style.cursor = 'pointer';
+                }
+                
+                if (unexercisedKeyVerses === 0) {
+                    randomBtn.style.opacity = '0.5';
+                    randomBtn.style.cursor = 'not-allowed';
+                } else {
+                    randomBtn.style.opacity = '1';
+                    randomBtn.style.cursor = 'pointer';
+                }
+            }
+        }
+        
+        // 根据练习模式选择经文（不重复）
+        function selectVerseByMode(keyVersesOfChapter, mode) {
+            
+            if (mode === 'preview') {
+                // 预习模式：从所有未打勾且未练习过的经文中选择
+                const allVersesInChapter = bookData.verses.filter(v => v.chapter === currentChapter);
+                const uncheckedAndUnexercisedVerses = allVersesInChapter.filter(v => {
+                    const key = `${currentBook}-${v.chapter}-${v.verse}`;
+                    const verseKey = `${v.chapter}:${v.verse}`;
+                    return !progressData[key] && !exercisedVerses.has(verseKey);
+                });
+                
+                if (uncheckedAndUnexercisedVerses.length === 0) {
+                    return null; // 没有可预习的经文
+                }
+                
+                const randomVerse = uncheckedAndUnexercisedVerses[Math.floor(Math.random() * uncheckedAndUnexercisedVerses.length)];
+                return {
+                    chapter: randomVerse.chapter,
+                    verse: randomVerse.verse
+                };
+                
+            } else if (mode === 'review') {
+                // 复习模式：从所有已打勾且未练习过的经文中选择
+                const allVersesInChapter = bookData.verses.filter(v => v.chapter === currentChapter);
+                const checkedAndUnexercisedVerses = allVersesInChapter.filter(v => {
+                    const key = `${currentBook}-${v.chapter}-${v.verse}`;
+                    const verseKey = `${v.chapter}:${v.verse}`;
+                    return progressData[key] && !exercisedVerses.has(verseKey);
+                });
+                
+                if (checkedAndUnexercisedVerses.length === 0) {
+                    return null; // 没有可复习的经文
+                }
+                
+                const randomVerse = checkedAndUnexercisedVerses[Math.floor(Math.random() * checkedAndUnexercisedVerses.length)];
+                return {
+                    chapter: randomVerse.chapter,
+                    verse: randomVerse.verse
+                };
+                
+            } else {
+                // 金句模式：从未练习过的金句中选择
+                const unexercisedKeyVerses = keyVersesOfChapter.filter(kv => {
+                    const verseKey = `${kv.chapter}:${kv.verse}`;
+                    return !exercisedVerses.has(verseKey);
+                });
+                
+                if (unexercisedKeyVerses.length === 0) {
+                    return null; // 没有可练习的金句
+                }
+                
+                return unexercisedKeyVerses[Math.floor(Math.random() * unexercisedKeyVerses.length)];
+            }
+        }
+        
+        // 处理练习完成的情况
+        function handleExerciseCompletion(mode) {
+            let message = '';
+            let buttons = '';
+            
+            if (mode === 'preview') {
+                // 预习完成，询问是否复习
+                const allVersesInChapter = bookData.verses.filter(v => v.chapter === currentChapter);
+                const checkedVerses = allVersesInChapter.filter(v => {
+                    const key = `${currentBook}-${v.chapter}-${v.verse}`;
+                    return progressData[key];
+                }).length;
+                
+                if (checkedVerses > 0) {
+                    message = `
+                        <div style="text-align: center; padding: 20px;">
+                            <h3 style="color: #27ae60;">🎉 预习完成！</h3>
+                            <p style="color: #7f8c8d; margin: 15px 0;">
+                                恭喜！本章所有未打勾的经文都已预习完毕。<br>
+                                现在有 <strong>${checkedVerses}</strong> 条经文可以复习，是否开始复习？
+                            </p>
+                        </div>
+                    `;
+                    buttons = `
+                        <div style="display: flex; gap: 10px; justify-content: center; margin-top: 15px;">
+                            <button class="check-button" onclick="startReview()" style="background: #fd79a8;">开始复习</button>
+                            <button class="check-button" onclick="resetExercise()" style="background: #74b9ff;">重新预习</button>
+                        </div>
+                    `;
+                } else {
+                    message = `
+                        <div style="text-align: center; padding: 20px;">
+                            <h3 style="color: #27ae60;">🎉 预习完成！</h3>
+                            <p style="color: #7f8c8d; margin: 15px 0;">
+                                恭喜！本章所有经文都已预习完毕，但还没有打勾的经文可供复习。
+                            </p>
+                        </div>
+                    `;
+                    buttons = `
+                        <div style="display: flex; gap: 10px; justify-content: center; margin-top: 15px;">
+                            <button class="check-button" onclick="resetExercise()" style="background: #74b9ff;">重新开始</button>
+                        </div>
+                    `;
+                }
+            } else if (mode === 'review') {
+                // 复习完成，询问是否重新开始
+                message = `
+                    <div style="text-align: center; padding: 20px;">
+                        <h3 style="color: #fd79a8;">🔄 复习完成！</h3>
+                        <p style="color: #7f8c8d; margin: 15px 0;">
+                            恭喜！本章所有已打勾的经文都已复习完毕。<br>
+                            是否要重新开始复习？
+                        </p>
+                    </div>
+                `;
+                buttons = `
+                    <div style="display: flex; gap: 10px; justify-content: center; margin-top: 15px;">
+                        <button class="check-button" onclick="resetExercise()" style="background: #fd79a8;">重新复习</button>
+                        <button class="check-button" onclick="startPreview()" style="background: #74b9ff;">转到预习</button>
+                    </div>
+                `;
+            } else {
+                // 金句练习完成
+                message = `
+                    <div style="text-align: center; padding: 20px;">
+                        <h3 style="color: #f39c12;">✨ 金句练习完成！</h3>
+                        <p style="color: #7f8c8d; margin: 15px 0;">
+                            恭喜！本章所有金句都已练习完毕。<br>
+                            是否要重新开始金句练习？
+                        </p>
+                    </div>
+                `;
+                buttons = `
+                    <div style="display: flex; gap: 10px; justify-content: center; margin-top: 15px;">
+                        <button class="check-button" onclick="resetExercise()" style="background: #f39c12;">重新练习</button>
+                        <button class="check-button" onclick="startPreview()" style="background: #74b9ff;">转到预习</button>
+                    </div>
+                `;
+            }
+            
+            document.getElementById('fill-blank-content').innerHTML = message + buttons;
+        }
+        
+        // 开始复习模式
+        function startReview() {
+            exercisedVerses.clear();
+            currentExerciseVerse = null;
+            generateFillBlank('review');
+        }
+        
+        // 开始预习模式
+        function startPreview() {
+            exercisedVerses.clear();
+            currentExerciseVerse = null;
+            generateFillBlank('preview');
+        }
+        
+        // 重置练习状态
+        function resetExercise() {
+            exercisedVerses.clear();
+            currentExerciseVerse = null;
+            generateFillBlank(currentExerciseMode);
+        }
+        
+        // 提取有意义的词语（2-7字的完整词组）
+        function extractMeaningfulWords(text) {
+            const meaningfulWords = [];
+            
+            // 高优先级词组模式（2-7字）
+            const phrasePatterns = [
+                // 神学概念词组（最高优先级）
+                '上帝的儿女', '神的国度', '耶稣基督', '圣灵充满', '救主耶稣', '天父上帝',
+                '基督的身体', '神的旨意', '主的命令', '圣灵的果子', '神的恩典', '主的道路',
+                '永生神的', '创造万物', '全能的神', '万物的主', '荣耀的王',
+                
+                // 属灵品质和状态
+                '圣洁无瑕', '公义和平', '慈爱和真理', '恩典和真理', '信望和爱',
+                '平安和喜乐', '谦卑和温柔', '良善和忍耐', '温柔谦卑', '善良忠厚',
+                
+                // 重要动作和状态
+                '称义称义', '成圣成义', '重生得救', '洁净更新', '赦免罪孽',
+                '遵守命令', '顺服真理', '信靠上帝', '敬拜神', '赞美主',
+                '奉献自己', '事奉上帝', '荣耀神', '见证基督',
+                
+                // 属灵生活和实践
+                '祷告交通', '读经祈祷', '敌拜赞美', '传福音', '作见证',
+                '爱人如己', '彼此相爱', '互相建立', '一同事奉', '同心合意',
+                
+                // 救恩和恩典
+                '永远的生命', '永生的盼望', '救恩的息息', '福音的大能',
+                '恩典的丰盛', '慈爱的天父', '公义的太阳', '平安的福音'
+            ];
+            
+            // 首先搜索高优先级的完整词组
+            phrasePatterns.forEach(phrase => {
+                const index = text.indexOf(phrase);
+                if (index !== -1 && phrase.length >= 2 && phrase.length <= 7) {
+                    meaningfulWords.push({
+                        word: phrase,
+                        index: index,
+                        category: 'important-phrase',
+                        priority: phrase.length * 4, // 高优先级
+                        length: phrase.length
+                    });
+                }
+            });
+            
+            // 使用正则表达式提取其他有意义的词组（2-7字）
+            const phraseRegex = /[一-龥]{2,7}/g;
+            let match;
+            
+            while ((match = phraseRegex.exec(text)) !== null) {
+                const phrase = match[0];
+                const index = match.index;
+                
+                // 过滤掉常见的虚词和不完整的词组
+                if (!isCommonWord(phrase) && 
+                    !meaningfulWords.find(w => w.word === phrase)) {
+                    
+                    let priority = phrase.length;
+                    
+                    // 根据词组特点调整优先级
+                    if (isTheologicalTerm(phrase)) {
+                        priority *= 3;
+                    } else if (isVerbPhrase(phrase)) {
+                        priority *= 2.5;
+                    } else if (isQualityPhrase(phrase)) {
+                        priority *= 2;
+                    }
+                    
+                    meaningfulWords.push({
+                        word: phrase,
+                        index: index,
+                        category: 'phrase',
+                        priority: priority,
+                        length: phrase.length
+                    });
+                }
+            }
+            
+            // 按优先级排序，选择最有意义的词组
+            return meaningfulWords.sort((a, b) => b.priority - a.priority);
+        }
+        
+        // 判断是否为常见虚词
+        function isCommonWord(phrase) {
+            const commonWords = [
+                '的人', '了吗', '还是', '就是', '都是', '也是', '不是', 
+                '可以', '应该', '可能', '也许', '或者', '但是', '而且',
+                '如果', '因为', '所以', '然后', '于是', '因此', '然而',
+                '这个', '那个', '这些', '那些', '这样', '那样',
+                '什么', '怎么', '为什么', '哪里', '怎样'
+            ];
+            
+            return commonWords.some(word => phrase.includes(word)) || 
+                   /^[，。；：！？“”‘’（）【】《》]+$/.test(phrase);
+        }
+        
+        // 判断是否为神学术语
+        function isTheologicalTerm(phrase) {
+            const coreTheologicalTerms = [
+                // 神的属性和名称
+                '神', '上帝', '耶和华', '主', '父', '天父', '全能者', '创造主', '救赎主',
+                
+                // 三位一体
+                '耶稣', '基督', '救主', '主耶稣', '耶稣基督', '圣子', '人子', '神的儿子',
+                '圣灵', '保惠师', '真理的灵', '神的灵',
+                
+                // 救恩概念
+                '救恩', '救赎', '恩典', '怜悯', '慈爱', '饶恕', '赦免', '称义', '成圣',
+                '重生', '得救', '永生', '复活', '升天', '再来',
+                
+                // 属灵概念
+                '信心', '盼望', '爱心', '真理', '公义', '圣洁', '良善', '忠心', '顺服',
+                '谦卑', '温柔', '忍耐', '节制', '智慧', '知识', '敬畏',
+                
+                // 教会和事工
+                '教会', '门徒', '使徒', '长老', '执事', '弟兄', '姐妹', '圣徒',
+                '事奉', '侍奉', '服事', '传道', '福音', '见证', '宣教',
+                
+                // 圣经和话语
+                '圣经', '经文', '话语', '真道', '律法', '诫命', '应许', '预言',
+                
+                // 属灵争战
+                '试探', '罪恶', '撒但', '魔鬼', '世界', '肉体', '争战',
+                
+                // 天国和永恒
+                '天国', '国度', '天堂', '永生', '永远', '荣耀', '宝座', '审判'
+            ];
+            
+            const conceptualPhrases = [
+                // 重要的神学短语
+                '因信称义', '恩典时代', '神的旨意', '主的恩典', '圣灵充满',
+                '基督的爱', '神的国度', '天父的爱', '主的怜悯', '神的荣耀',
+                '永远的生命', '救恩的盼望', '真理的道', '生命的粮', '世界的光'
+            ];
+            
+            // 检查是否包含核心神学术语
+            const hasCoreTerm = coreTheologicalTerms.some(term => phrase.includes(term));
+            // 检查是否是重要的概念短语
+            const hasConceptPhrase = conceptualPhrases.some(concept => phrase.includes(concept));
+            
+            return hasCoreTerm || hasConceptPhrase;
+        }
+        
+        // 判断是否为动词词组（保持原有兼容性）
+        function isVerbPhrase(phrase) {
+            const actionVerbs = [
+                "说", "讲", "告诉", "宣告", "呼喊", "回答", "问", "听见", "看见",
+                "来", "去", "走", "跑", "跟从", "离开", "进入", "出来", "回去",
+                "站起", "坐下", "起来", "躺下", "跪下", "俯伏", "举手",
+                "拿", "给", "带", "领", "递", "放", "扔", "伸出", "抓住",
+                "医治", "洁净", "赶出", "按手", "祷告", "祝福", "安慰", "扶持",
+                "传讲", "教训", "劝勉", "责备", "警告", "吩咐", "命令",
+                "爱", "恨", "喜悦", "忧愁", "害怕", "惊奇", "感谢", "赞美",
+                // 原有的神学动词
+                '称义', '成圣', '拯救', '赦免', '洁净', '更新', '重生',
+                '敬拜', '赞美', '事奉', '遵守', '顺服', '相信'
+            ];
+                          
+            const actionPhrases = [
+                "起来", "下来", "过来", "回来", "出去", "进去", "上去",
+                "伸出手", "举起手", "低下头", "抬起头", "睁开眼", "闭上眼",
+                "俯伏敬拜", "跪下祷告", "举手赞美", "开口说话", "侧耳听",
+                "放下", "拿起", "拥抱", "寻找", "寻求", "呼求", "倚靠"
+            ];
+            
+            return actionVerbs.some(verb => phrase.includes(verb)) || 
+                   actionPhrases.some(actionPhrase => phrase.includes(actionPhrase));
+        }
+        
+        // 判断是否为品质词组
+        function isQualityPhrase(phrase) {
+            const qualityKeywords = [
+                '慈爱', '恩典', '平安', '喜乐', '盼望', '信心', '爱心',
+                '忍耐', '良善', '温柔', '谦卑', '智慧', '能力'
+            ];
+            return qualityKeywords.some(quality => phrase.includes(quality));
+        }
+        
+        // 选择用于填空的词语
+        function selectWordsForBlanks(meaningfulWords, text) {
+            const maxBlanks = Math.min(3, Math.max(1, Math.floor(text.length / 12))); // 限制最多3个填空
+            const selectedWords = [];
+            const usedIndices = new Set();
+            
+            // 按学习价值重新排序
+            meaningfulWords.sort((a, b) => {
+                // 优先级计算：神学术语 > 动词短语 > 长词组 > 短词组
+                let scoreA = a.priority;
+                let scoreB = b.priority;
+                
+                // 给神学术语额外加分
+                if (isTheologicalTerm(a.word)) scoreA += 20;
+                if (isTheologicalTerm(b.word)) scoreB += 20;
+                
+                // 给动作词组加分（有助于记忆动态场景）
+                if (isVerbPhrase(a.word)) scoreA += 15;
+                if (isVerbPhrase(b.word)) scoreB += 15;
+                
+                // 适中长度的词组更有记忆价值（3-5字）
+                if (a.word.length >= 3 && a.word.length <= 5) scoreA += 10;
+                if (b.word.length >= 3 && b.word.length <= 5) scoreB += 10;
+                
+                // 人称代词和称呼有助于记忆对话情境
+                if (['你', '我', '他', '夫子', '先生', '老师'].some(pronoun => a.word.includes(pronoun))) {
+                    scoreA += 8;
+                }
+                if (['你', '我', '他', '夫子', '先生', '老师'].some(pronoun => b.word.includes(pronoun))) {
+                    scoreB += 8;
+                }
+                
+                return scoreB - scoreA;
+            });
+            
+            console.log('按记忆价值排序的词语:', meaningfulWords);
+            
+            for (let word of meaningfulWords) {
+                if (selectedWords.length >= maxBlanks) break;
+                
+                // 限制词语长度为2-7字，确保是有意义的词组
+                if (word.word.length < 2 || word.word.length > 7) continue;
+                
+                // 检查是否与已选词语有重叠
+                let hasOverlap = false;
+                const wordEnd = word.index + word.word.length;
+                
+                for (let i = word.index; i < wordEnd; i++) {
+                    if (usedIndices.has(i)) {
+                        hasOverlap = true;
+                        break;
+                    }
+                }
+                
+                if (!hasOverlap) {
+                    selectedWords.push(word);
+                    // 标记使用的字符位置
+                    for (let i = word.index; i < wordEnd; i++) {
+                        usedIndices.add(i);
+                    }
+                    
+                    console.log(`选择填空词语: "${word.word}" (类别: ${word.category}, 优先级: ${word.priority})`);
+                }
+            }
+            
+            return selectedWords;
+        }
+        
+        // 合并相邻的输入框，避免连续空格显得没有意义
+        function mergeAdjacentInputs(html) {
+            // 使用正则表达式匹配相邻的输入框（中间没有汉字）
+            return html.replace(
+                /(<input[^>]*>)\s*(<input[^>]*>)/g,
+                function(match, input1, input2) {
+                    // 提取两个输入框的答案
+                    const answer1 = input1.match(/data-answer="([^"]*)"/) || ['', ''];
+                    const answer2 = input2.match(/data-answer="([^"]*)"/) || ['', ''];
+                    
+                    // 合并答案
+                    const combinedAnswer = answer1[1] + answer2[1];
+                    const baseWidth = calculateInputWidth(combinedAnswer);
+                    const fixedWidth = Math.max(baseWidth + 10, 70); // 合并后的最小宽度70px
+                    const placeholder = '□'.repeat(combinedAnswer.length);
+                    
+                    return `<input type="text" class="fill-blank-input" data-answer="${combinedAnswer}" placeholder="${placeholder}" style="width: ${fixedWidth}px; min-width: ${fixedWidth}px; max-width: ${fixedWidth}px;">`;
+                }
+            );
+        }
+        
+        // 动态调整输入框宽度
+        function adjustInputWidth(input) {
+            const value = input.value || input.placeholder || '';
+            const answerLength = input.dataset.answer ? input.dataset.answer.length : 1;
+            
+            // 使用当前输入值或答案长度来计算宽度
+            const textToMeasure = value.length > 0 ? value : input.dataset.answer;
+            let width = calculateInputWidth(textToMeasure || '?');
+            
+            // 如果用户正在输入，给一些额外空间
+            if (value.length > 0) {
+                width += 10;
+            }
+            
+            input.style.width = width + 'px';
+        }
+        
+        // 生成填空练习
+        function generateFillBlank(mode = 'random') {
+            const keyVersesOfChapter = bookData.keyVerses.filter(kv => kv.chapter === currentChapter);
+            
+            // 设置当前练习模式
+            currentExerciseMode = mode;
+            
+            // 隐藏重新测评按钮
+            const recheckBtn = document.getElementById('recheck-btn');
+            if (recheckBtn) {
+                recheckBtn.style.display = 'none';
+            }
+            
+            if (mode === 'random' && keyVersesOfChapter.length === 0) {
+                document.getElementById('fill-blank-content').innerHTML = '<p>本章暂无金句可练习</p>';
+                return;
+            }
+            
+            // 根据模式选择合适的经文
+            const selectedVerseInfo = selectVerseByMode(keyVersesOfChapter, mode);
+            
+            if (!selectedVerseInfo) {
+                // 处理练习完成的情况
+                handleExerciseCompletion(mode);
+                return;
+            }
+            
+            // 记录当前练习的经文
+            currentExerciseVerse = selectedVerseInfo;
+            
+            const verse = bookData.verses.find(v => v.chapter === selectedVerseInfo.chapter && v.verse === selectedVerseInfo.verse);
+            
+            if (!verse) return;
+            
+            // 创建有意义的填空题
+            const meaningfulWords = extractMeaningfulWords(verse.zh);
+            const selectedWords = selectWordsForBlanks(meaningfulWords, verse.zh);
+            
+            let blankedVerse = verse.zh;
+            // 按照词语长度从长到短排序，避免替换冲突
+            selectedWords.sort((a, b) => b.word.length - a.word.length);
+            
+            selectedWords.forEach(wordInfo => {
+                // 计算固定宽度，适度增加空间但防止过宽
+                const baseWidth = calculateInputWidth(wordInfo.word);
+                const fixedWidth = Math.max(baseWidth + 10, 50); // 最小50px，增加10px缓冲
+                const placeholder = '□'.repeat(wordInfo.word.length);
+                
+                // 添加学习提示
+                let hint = '';
+                if (isTheologicalTerm(wordInfo.word)) {
+                    hint = ' 💡神学术语';
+                } else if (isVerbPhrase(wordInfo.word)) {
+                    hint = ' 🎭动作词';
+                } else if (wordInfo.word.length >= 4) {
+                    hint = ' 📝重要词组';
+                } else {
+                    hint = ' ✏️关键词';
+                }
+                
+                const inputHTML = `<span class="blank-container" title="提示：${wordInfo.word}${hint}">
+                    <input type="text" class="fill-blank-input" 
+                           data-answer="${wordInfo.word}" 
+                           placeholder="${placeholder}" 
+                           style="width: ${fixedWidth}px; min-width: ${fixedWidth}px; max-width: ${fixedWidth}px;">
+                    <span class="hint-icon" style="color: #3498db; font-size: 0.8em; margin-left: 2px; cursor: help;">${hint}</span>
+                </span>`;
+                
+                // 只替换第一个匹配的词语
+                blankedVerse = blankedVerse.replace(wordInfo.word, inputHTML);
+            });
+            
+            // 合并相邻的输入框，避免连续空格
+            blankedVerse = mergeAdjacentInputs(blankedVerse);
+            
+            // 根据模式显示不同的提示信息
+            let modeInfo = '';
+            let modeIcon = '';
+            if (mode === 'preview') {
+                modeInfo = '预习模式';
+                modeIcon = '📚';
+            } else if (mode === 'review') {
+                modeInfo = '复习模式';
+                modeIcon = '🔄';
+            } else {
+                modeInfo = '金句练习';
+                modeIcon = '✨';
+            }
+            
+            document.getElementById('fill-blank-content').innerHTML = `
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <div>
+                        <p><strong>${bookData.name} ${selectedVerseInfo.chapter}:${selectedVerseInfo.verse}</strong></p>
+                        <button onclick="scrollToVerse(${selectedVerseInfo.chapter}, ${selectedVerseInfo.verse})" 
+                                style="background: #74b9ff; color: white; border: none; padding: 3px 8px; border-radius: 10px; font-size: 0.7em; cursor: pointer; margin-top: 2px;">
+                            📖 定位经文
+                        </button>
+                    </div>
+                    <span style="background: rgba(116, 185, 255, 0.1); color: #0984e3; padding: 4px 8px; border-radius: 12px; font-size: 0.8em; font-weight: bold;">
+                        ${modeIcon} ${modeInfo}
+                    </span>
+                </div>
+                <p style="color: #7f8c8d; font-size: 0.9em; margin: 10px 0;">💡 请填入关键词语完成经文（□表示需要填入的字符数量）</p>
+                <p style="line-height: 2; margin: 15px 0;">${blankedVerse}</p>
+                <p style="font-style: italic; color: #666; margin-bottom: 15px;">${verse.en}</p>
+                <div style="display: flex; gap: 10px; margin-top: 15px;">
+                    <button class="check-button" onclick="checkFillBlank(this)">核对答案</button>
+                    <button class="check-button" onclick="recheckFillBlank(this)" style="background: #f39c12; display: none;" id="recheck-btn">重新测评</button>
+                    <button class="check-button" onclick="generateFillBlank('${mode}')" style="background: #74b9ff; display: none;" id="next-question-btn">下一题</button>
+                </div>
+                <div id="fill-result" style="margin-top: 15px;"></div>
+            `;
+            
+            // 为新创建的输入框添加基本事件监听器（不再动态调整宽度）
+            const inputs = document.getElementById('fill-blank-content').querySelectorAll('.fill-blank-input');
+            inputs.forEach(input => {
+                // 添加聚焦效果，但不调整宽度
+                input.addEventListener('focus', function() {
+                    this.style.transform = 'scale(1.05)';
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+            
+            // 更新按钮状态
+            updateExerciseButtonsState();
+        }
+
+        // 重新测评填空答案
+        function recheckFillBlank(button) {
+            // 重置结果显示
+            const resultElement = document.getElementById('fill-result');
+            resultElement.innerHTML = '';
+            
+            // 隐藏重新测评按钮
+            const recheckBtn = document.getElementById('recheck-btn');
+            if (recheckBtn) {
+                recheckBtn.style.display = 'none';
+            }
+            
+            // 清除所有之前的正确答案显示
+            const card = button.closest('.fill-blank-card');
+            const allExistingAnswers = card.querySelectorAll('.correct-answer');
+            allExistingAnswers.forEach(answer => answer.remove());
+            
+            // 调用检查函数
+            checkFillBlank(button, true);
+        }
+        
+        // 检查填空答案
+        function checkFillBlank(button, isRecheck = false) {
+            const card = button.closest('.fill-blank-card');
+            const inputs = card.querySelectorAll('.fill-blank-input');
+            let allCorrect = true;
+            let correctCount = 0;
+            
+            // 先清除所有之前的正确答案显示
+            const allExistingAnswers = card.querySelectorAll('.correct-answer');
+            allExistingAnswers.forEach(answer => answer.remove());
+            
+            inputs.forEach(input => {
+                input.classList.remove('correct', 'incorrect');
+                
+                const userAnswer = input.value.trim().replace(/\s+/g, ''); // 去除所有空格
+                const correctAnswer = input.dataset.answer.replace(/\s+/g, '');
+                
+                if (userAnswer === correctAnswer || userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+                    input.classList.add('correct');
+                    correctCount++;
+                } else {
+                    input.classList.add('incorrect');
+                    allCorrect = false;
+                    
+                    // 创建正确答案显示元素
+                    const correctAnswerSpan = document.createElement('span');
+                    correctAnswerSpan.className = 'correct-answer';
+                    correctAnswerSpan.style.cssText = 'color: #27ae60; margin-left: 5px; font-size: 0.85em; font-weight: bold; display: inline-block; white-space: nowrap;';
+                    correctAnswerSpan.textContent = `(${input.dataset.answer})`;
+                    
+                    // 在输入框后插入正确答案
+                    const container = input.parentElement;
+                    const nextElement = input.nextSibling;
+                    
+                    if (nextElement) {
+                        container.insertBefore(correctAnswerSpan, nextElement);
+                    } else {
+                        container.appendChild(correctAnswerSpan);
+                    }
+                    
+                    console.log(`添加正确答案显示: ${input.dataset.answer}`);
+                }
+            });
+            
+            const resultElement = document.getElementById('fill-result');
+            const recheckBtn = document.getElementById('recheck-btn');
+            
+            if (allCorrect) {
+                // 温和的成功反馈
+                const encouragements = [
+                    '🌟 太棒了！你完全掌握了这段经文的要点！',
+                    '✨ 做得很好！神的话语已经深深印在你心里！',
+                    '🎉 完美！你对这些神学概念理解得很透彻！',
+                    '💫 优秀！这些重要的词语你都记住了！',
+                    '🏆 精彩！你的记忆力真是令人赞叹！'
+                ];
+                
+                const randomEncouragement = encouragements[Math.floor(Math.random() * encouragements.length)];
+                resultElement.innerHTML = `<span style="color: #27ae60; font-weight: bold; font-size: 1.05em;">${randomEncouragement}</span>`;
+                
+                // 隐藏重新测评按钮
+                if (recheckBtn) {
+                    recheckBtn.style.display = 'none';
+                }
+                
+                // 如果是预习模式且答案完全正确，自动打勾
+                if (currentExerciseMode === 'preview' && currentExerciseVerse) {
+                    const checkbox = document.getElementById(`check-${currentExerciseVerse.chapter}-${currentExerciseVerse.verse}`);
+                    if (checkbox && !checkbox.checked) {
+                        checkbox.checked = true;
+                        saveProgress(currentExerciseVerse.chapter, currentExerciseVerse.verse);
+                        resultElement.innerHTML += `<br><span style="color: #27ae60; font-size: 0.9em;">✓ 已自动打勾此经文</span>`;
+                    }
+                }
+                
+                // 标记为已练习
+                if (currentExerciseVerse) {
+                    const verseKey = `${currentExerciseVerse.chapter}:${currentExerciseVerse.verse}`;
+                    exercisedVerses.add(verseKey);
+                }
+                
+            } else {
+                // 温和的学习反馈
+                let feedbackMessage;
+                const accuracy = correctCount / inputs.length;
+                
+                if (accuracy >= 0.8) {
+                    const goodMessages = [
+                        `📖 很不错！你答对了 ${correctCount}/${inputs.length} 个，只差一点点就完美了！`,
+                        `🌱 做得很好！${correctCount}/${inputs.length} 个正确答案，你正在稳步进步！`,
+                        `💡 棒极了！你对大部分内容都掌握得很好！`
+                    ];
+                    feedbackMessage = goodMessages[Math.floor(Math.random() * goodMessages.length)];
+                } else if (accuracy >= 0.5) {
+                    const encouragingMessages = [
+                        `📚 不错的开始！答对了 ${correctCount}/${inputs.length} 个，继续努力记忆这些重要概念！`,
+                        `🌿 正在进步中！${correctCount}/${inputs.length} 个正确，多读几遍会更熟悉！`,
+                        `💪 继续加油！你已经掌握了一半以上的内容！`
+                    ];
+                    feedbackMessage = encouragingMessages[Math.floor(Math.random() * encouragingMessages.length)];
+                } else {
+                    const gentleMessages = [
+                        `🌱 没关系，学习需要过程！多读几遍这段经文，重点关注那些重要的词语！`,
+                        `📖 这是很好的学习机会！重新阅读经文，特别留意神学术语的含义！`,
+                        `💝 不要灰心！神的话语需要反复默想才能深入人心！`
+                    ];
+                    feedbackMessage = gentleMessages[Math.floor(Math.random() * gentleMessages.length)];
+                }
+                
+                resultElement.innerHTML = `<span style="color: #3498db; font-weight: bold;">${feedbackMessage}</span>`;
+                
+                // 显示重新测评按钮（如果不是重新检查操作）
+                if (recheckBtn && !isRecheck) {
+                    recheckBtn.style.display = 'inline-block';
+                }
+            }
+            
+            // 显示下一题按钮（仅在完全正确时）
+            const nextBtn = document.getElementById('next-question-btn');
+            if (nextBtn) {
+                if (allCorrect) {
+                    nextBtn.style.display = 'block';
+                    nextBtn.textContent = '下一题';
+                } else {
+                    nextBtn.style.display = 'none';
+                }
+            }
+            
+            // 修改当前按钮为重新开始
+            button.textContent = '重新开始';
+            button.onclick = () => {
+                // 隐藏下一题按钮
+                if (nextBtn) nextBtn.style.display = 'none';
+                // 重置练习状态
+                exercisedVerses.clear();
+                currentExerciseVerse = null;
+                generateFillBlank(currentExerciseMode);
+            };
+        }
+
+        // 滚动到指定经文
+        function scrollToVerse(chapter, verse) {
+            const verseRow = document.querySelector(`tr[data-chapter="${chapter}"][data-verse="${verse}"]`);
+            if (verseRow) {
+                const versesSection = document.querySelector('.verses-section');
+                const rowOffset = verseRow.offsetTop;
+                const sectionOffset = versesSection.offsetTop;
+                const scrollTarget = rowOffset - sectionOffset - 20; // 20px 的偏移量
+                
+                versesSection.scrollTo({
+                    top: scrollTarget,
+                    behavior: 'smooth'
+                });
+                
+                // 高亮显示该经文
+                verseRow.style.backgroundColor = 'rgba(116, 185, 255, 0.2)';
+                setTimeout(() => {
+                    verseRow.style.backgroundColor = '';
+                }, 2000);
+            }
+        }
+
+        // 显示背景信息
+        function showBackground(verse) {
+            const modal = document.getElementById('background-modal');
+            document.getElementById('modal-title').textContent = `${bookData.name} ${verse.chapter}:${verse.verse}`;
+            document.getElementById('modal-body').innerHTML = verse.background;
+            modal.style.display = 'block';
+        }
+
+        // 保存进度
+        function saveProgress(chapter, verse) {
+            const key = `${currentBook}-${chapter}-${verse}`;
+            const checkbox = document.getElementById(`check-${chapter}-${verse}`);
+            progressData[key] = checkbox.checked;
+            localStorage.setItem('bible-study-progress', JSON.stringify(progressData));
+            updateProgressSummary();
+        }
+
+        // 加载进度
+        function loadProgress() {
+            const saved = localStorage.getItem('bible-study-progress');
+            progressData = saved ? JSON.parse(saved) : {};
+        }
+        
+        // 获取当前章节的进度数据
+        function getProgress() {
+            const progress = {};
+            const keyVersesOfChapter = bookData.keyVerses.filter(kv => kv.chapter === currentChapter);
+            
+            keyVersesOfChapter.forEach(kv => {
+                const key = `${currentBook}-${kv.chapter}-${kv.verse}`;
+                const verseKey = `${kv.chapter}:${kv.verse}`;
+                progress[verseKey] = progressData[key] || false;
+            });
+            
+            return progress;
+        }
+
+        // 更新进度摘要
+        function updateProgressSummary() {
+            const chapterVerses = bookData.verses.filter(v => v.chapter === currentChapter);
+            const completedInChapter = chapterVerses.filter(v => {
+                const key = `${currentBook}-${v.chapter}-${v.verse}`;
+                return progressData[key];
+            }).length;
+            
+            const totalCompleted = bookData.verses.filter(v => {
+                const key = `${currentBook}-${v.chapter}-${v.verse}`;
+                return progressData[key];
+            }).length;
+            
+            // 统计当前章节金句的预习和复习状态（基于所有经文，不仅是金句）
+            const keyVersesOfChapter = bookData.keyVerses.filter(kv => kv.chapter === currentChapter);
+            const checkedKeyVerses = keyVersesOfChapter.filter(kv => {
+                const key = `${currentBook}-${kv.chapter}-${kv.verse}`;
+                return progressData[key] || false;
+            }).length;
+            
+            // 修正统计数据：待预习 = 未打勾的经文数，可复习 = 已打勾的经文数
+            const uncheckedInChapter = chapterVerses.length - completedInChapter;
+            const previewCount = uncheckedInChapter;
+            const reviewCount = completedInChapter;
+            
+            document.getElementById('current-progress').textContent = `${completedInChapter}/${chapterVerses.length}`;
+            document.getElementById('total-progress').textContent = `${totalCompleted}/${bookData.verses.length}`;
+            
+            // 更新练习统计
+            const exerciseStats = document.getElementById('exercise-stats') || createExerciseStats();
+            exerciseStats.innerHTML = `
+                <div style="display: flex; justify-content: space-between; margin: 10px 0; font-size: 0.9em;">
+                    <div style="text-align: center;">
+                        <div style="color: #74b9ff; font-weight: bold;">${previewCount}</div>
+                        <div style="color: #7f8c8d; font-size: 0.8em;">待预习</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="color: #fd79a8; font-weight: bold;">${reviewCount}</div>
+                        <div style="color: #7f8c8d; font-size: 0.8em;">可复习</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="color: #fdcb6e; font-weight: bold;">${keyVersesOfChapter.length}</div>
+                        <div style="color: #7f8c8d; font-size: 0.8em;">金句总数</div>
+                    </div>
+                </div>
+            `;
+            
+            // 更新练习按钮状态
+            updateExerciseButtonsState();
+        }
+        
+        // 创建练习统计区域
+        function createExerciseStats() {
+            const progressSummary = document.getElementById('progress-summary');
+            const exerciseStats = document.createElement('div');
+            exerciseStats.id = 'exercise-stats';
+            progressSummary.appendChild(exerciseStats);
+            return exerciseStats;
+        }
+
+        // 模态框事件
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('background-modal');
+            const closeBtn = document.querySelector('.close');
+            
+            closeBtn.onclick = () => modal.style.display = 'none';
+            window.onclick = (event) => {
+                if (event.target === modal) modal.style.display = 'none';
+            };
+        });
+    </script>
+</body>
+</html>

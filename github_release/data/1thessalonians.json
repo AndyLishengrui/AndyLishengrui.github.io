@@ -1,0 +1,695 @@
+{
+  "book": "1thessalonians",
+  "name": "帖撒罗尼迦前书",
+  "englishName": "1 Thessalonians",
+  "testament": "new",
+  "category": "pauline_epistles",
+  "chapters": 5,
+  "color": "#9b59b6",
+  "description": "保罗写给帖撒罗尼迦教会的信，鼓励他们在信仰中恒心，并教导他们关于基督再来和圣洁生活",
+  "keyThemes": [
+    "基督的再来",
+    "圣洁的生活",
+    "在信仰中恒心",
+    "爱弟兄",
+    "敬虔的生活"
+  ],
+  "verses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "zh": "保罗、西拉、提摩太写信给帖撒罗尼迦在父神和主耶稣基督里的教会。愿恩惠、平安归与你们！",
+      "en": "Paul, Silas and Timothy, To the church of the Thessalonians in God the Father and the Lord Jesus Christ: Grace and peace to you."
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "zh": "我们为你们众人常常感谢神，祷告的时候提到你们。",
+      "en": "We always thank God for all of you and continually mention you in our prayers."
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "zh": "在神我们的父面前，不住地记念你们因信心所作的工夫，因爱心所受的劳苦，因盼望我们主耶稣基督所存的忍耐。",
+      "en": "We remember before our God and Father your work produced by faith, your labor prompted by love, and your endurance inspired by hope in our Lord Jesus Christ."
+    },
+    {
+      "chapter": 1,
+      "verse": 4,
+      "zh": "弟兄们哪，神所爱的，我们知道你们是蒙拣选的。",
+      "en": "For we know, brothers and sisters loved by God, that he has chosen you,"
+    },
+    {
+      "chapter": 1,
+      "verse": 5,
+      "zh": "因为我们的福音传到你们那里，不独在乎言语，也在乎权能和圣灵，并充足的信心，正如你们知道我们在你们那里，为你们的缘故是怎样为人。",
+      "en": "because our gospel came to you not simply with words but also with power, with the Holy Spirit and deep conviction. You know how we lived among you for your sake."
+    },
+    {
+      "chapter": 1,
+      "verse": 6,
+      "zh": "并且你们在大难之中，蒙了圣灵所赐的喜乐，领受真道就效法我们，也效法了主。",
+      "en": "You became imitators of us and of the Lord, for you welcomed the message in the midst of severe suffering with the joy given by the Holy Spirit."
+    },
+    {
+      "chapter": 1,
+      "verse": 7,
+      "zh": "甚至你们作了马其顿和亚该亚所有信主之人的榜样。",
+      "en": "And so you became a model to all the believers in Macedonia and Achaia."
+    },
+    {
+      "chapter": 1,
+      "verse": 8,
+      "zh": "因为主的道从你们那里已经传扬出来，不但在马其顿和亚该亚，就是在各处，你们的信心向神已经传开了，所以不用我们说甚么话。",
+      "en": "The Lord’s message rang out from you not only in Macedonia and Achaia—your faith in God has become known everywhere. Therefore we do not need to say anything about it,"
+    },
+    {
+      "chapter": 1,
+      "verse": 9,
+      "zh": "因为他们自己已经报明我们是怎样进到你们那里，你们是怎样离弃偶像归向神，要服事那又真又活的神。",
+      "en": "for they themselves report what kind of reception you gave us. They tell how you turned to God from idols to serve the living and true God,"
+    },
+    {
+      "chapter": 1,
+      "verse": 10,
+      "zh": "等候他儿子从天降临，就是他从死里复活的，那位救我们脱离将来忿怒的耶稣。",
+      "en": "and to wait for his Son from heaven, whom he raised from the dead—Jesus, who rescues us from the coming wrath."
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "zh": "弟兄们哪，你们自己原晓得我们进到你们那里，并不是徒然的。",
+      "en": "You know, brothers and sisters, that our visit to you was not without results."
+    },
+    {
+      "chapter": 2,
+      "verse": 2,
+      "zh": "我们从前在腓立比被害受辱，这是你们知道的。然而还是靠我们的神放开胆量，在大争战中将神的福音传给你们。",
+      "en": "We had previously suffered and been treated outrageously in Philippi, as you know, but with the help of our God we dared to tell you his gospel in the face of strong opposition."
+    },
+    {
+      "chapter": 2,
+      "verse": 3,
+      "zh": "我们的劝勉，不是出于错误，不是出于污秽，也不是用诡诈。",
+      "en": "For the appeal we make does not spring from error or impure motives, nor are we trying to trick you."
+    },
+    {
+      "chapter": 2,
+      "verse": 4,
+      "zh": "但神既然验中了我们，把福音托付我们，我们就照样讲，不是要讨人喜欢，乃是要讨那察验我们心的神喜欢。",
+      "en": "On the contrary, we speak as those approved by God to be entrusted with the gospel. We are not trying to please people but God, who tests our hearts."
+    },
+    {
+      "chapter": 2,
+      "verse": 5,
+      "zh": "因为我们从来没有用过谄媚的话，这是你们知道的，也没有藏着贪心，这是神可以作见证的。",
+      "en": "You know we never used flattery, nor did we put on a mask to cover up greed—God is our witness."
+    },
+    {
+      "chapter": 2,
+      "verse": 6,
+      "zh": "我们作基督的使徒，虽然可以叫人尊重，却没有向你们或向别人求荣耀。",
+      "en": "We were not looking for praise from people, not from you or anyone else, even though as apostles of Christ we could have asserted our authority."
+    },
+    {
+      "chapter": 2,
+      "verse": 7,
+      "zh": "只在你们中间存心温柔，如同母亲乳养自己的孩子。",
+      "en": "Instead, we were like young children among you. Just as a nursing mother cares for her children,"
+    },
+    {
+      "chapter": 2,
+      "verse": 8,
+      "zh": "我们既是这样爱你们，不但愿意将神的福音给你们，连自己的性命也愿意给你们，因你们是我们所疼爱的。",
+      "en": "so we cared for you. Because we loved you so much, we were delighted to share with you not only the gospel of God but our lives as well."
+    },
+    {
+      "chapter": 2,
+      "verse": 9,
+      "zh": "弟兄们哪，你们记念我们的辛苦劳碌，昼夜作工，传神的福音给你们，免得叫你们一人受累。",
+      "en": "Surely you remember, brothers and sisters, our toil and hardship; we worked night and day in order not to be a burden to anyone while we preached the gospel of God to you."
+    },
+    {
+      "chapter": 2,
+      "verse": 10,
+      "zh": "我们向你们信主的人，是何等圣洁、公义、无可指摘，有你们作见证，也有神作见证。",
+      "en": "You are witnesses, and so is God, of how holy, righteous and blameless we were among you who believed."
+    },
+    {
+      "chapter": 2,
+      "verse": 11,
+      "zh": "你们也晓得我们怎样劝勉你们，安慰你们，嘱咐你们各人，好像父亲待自己的儿女一样。",
+      "en": "For you know that we dealt with each of you as a father deals with his own children,"
+    },
+    {
+      "chapter": 2,
+      "verse": 12,
+      "zh": "要叫你们行事对得起那召你们进他国得他荣耀的神。",
+      "en": "encouraging, comforting and urging you to live lives worthy of God, who calls you into his kingdom and glory."
+    },
+    {
+      "chapter": 2,
+      "verse": 13,
+      "zh": "为此，我们也不住地感谢神，因你们听见我们所传神的道，就领受了，不以为是人的道，乃以为是神的道。这道实在是神的，并且运行在你们信主的人心中。",
+      "en": "And we also thank God continually because, when you received the word of God, which you heard from us, you accepted it not as a human word, but as it actually is, the word of God, which is indeed at work in you who believe."
+    },
+    {
+      "chapter": 2,
+      "verse": 14,
+      "zh": "弟兄们哪，你们曾效法犹太中在基督耶稣里的各教会。因为你们也受了本地人的苦害，像他们受了犹太人的苦害一样。",
+      "en": "For you, brothers and sisters, became imitators of God’s churches in Judea, which are in Christ Jesus: You suffered from your own people the same things those churches suffered from the Jews"
+    },
+    {
+      "chapter": 2,
+      "verse": 15,
+      "zh": "这犹太人杀了主耶稣和先知，又把我们赶出去。他们不得神的喜悦，并且与众人为敌。",
+      "en": "who killed the Lord Jesus and the prophets and also drove us out. They displease God and are hostile to everyone"
+    },
+    {
+      "chapter": 2,
+      "verse": 16,
+      "zh": "不许我们传道给外邦人使外邦人得救，常常充满自己的罪恶。这样，忿怒临到他们身上已经到了极处。",
+      "en": "in their effort to keep us from speaking to the Gentiles so that they may be saved. In this way they always heap up their sins to the limit. The wrath of God has come upon them at last."
+    },
+    {
+      "chapter": 2,
+      "verse": 17,
+      "zh": "弟兄们哪，我们暂时与你们离别，是面目离别，心里却不离别。我们极力地想法子，很愿意见你们的面。",
+      "en": "But, brothers and sisters, when we were orphaned by being separated from you for a short time (in person, not in thought), out of our intense longing we made every effort to see you."
+    },
+    {
+      "chapter": 2,
+      "verse": 18,
+      "zh": "所以我们有意到你们那里，我保罗一两次要去，只是撒但阻挡了我们。",
+      "en": "For we wanted to come to you—certainly I, Paul, did, again and again—but Satan blocked our way."
+    },
+    {
+      "chapter": 2,
+      "verse": 19,
+      "zh": "我们的盼望和喜乐，并所夸的冠冕，是甚么呢？岂不是我们主耶稣来的时候，你们在他面前站立得住吗？",
+      "en": "For what is our hope, our joy, or the crown in which we will glory in the presence of our Lord Jesus when he comes? Is it not you?"
+    },
+    {
+      "chapter": 2,
+      "verse": 20,
+      "zh": "因为你们就是我们的荣耀，我们的喜乐。",
+      "en": "Indeed, you are our glory and joy."
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "zh": "我们既不能再忍，就愿意独自等在雅典。",
+      "en": "So when we could stand it no longer, we thought it best to be left by ourselves in Athens."
+    },
+    {
+      "chapter": 3,
+      "verse": 2,
+      "zh": "打发我们的兄弟在基督福音上作神执事的提摩太前去，坚固你们，并在你们所信的道上劝慰你们。",
+      "en": "We sent Timothy, who is our brother and co-worker in God’s service in spreading the gospel of Christ, to strengthen and encourage you in your faith,"
+    },
+    {
+      "chapter": 3,
+      "verse": 3,
+      "zh": "免得有人被诸般患难摇动。因为你们自己知道我们受患难原是命定的。",
+      "en": "so that no one would be unsettled by these trials. For you know quite well that we are destined for them."
+    },
+    {
+      "chapter": 3,
+      "verse": 4,
+      "zh": "我们在你们那里的时候，预先告诉你们，我们必受患难，你们也知道果然遇到了。",
+      "en": "In fact, when we were with you, we kept telling you that we would be persecuted. And it turned out that way, as you well know."
+    },
+    {
+      "chapter": 3,
+      "verse": 5,
+      "zh": "为此，我既不能再忍，就打发人去，要晓得你们的信心如何，恐怕那诱惑人的到底诱惑了你们，叫我们的劳苦归于徒然。",
+      "en": "For this reason, when I could stand it no longer, I sent to find out about your faith. I was afraid that in some way the tempter had tempted you and that our labors might have been in vain."
+    },
+    {
+      "chapter": 3,
+      "verse": 6,
+      "zh": "但提摩太刚才从你们那里回来，将你们信心和爱心的好消息报给我们，又说你们常常记念我们，切切地想见我们，如同我们想见你们一样。",
+      "en": "But Timothy has just now come to us from you and has brought good news about your faith and love. He has told us that you always have pleasant memories of us and that you long to see us, just as we also long to see you."
+    },
+    {
+      "chapter": 3,
+      "verse": 7,
+      "zh": "因此，弟兄们哪，我们在一切困苦患难之中，因着你们的信心就得了安慰。",
+      "en": "Therefore, brothers and sisters, in all our distress and persecution we were encouraged about you because of your faith."
+    },
+    {
+      "chapter": 3,
+      "verse": 8,
+      "zh": "你们若在主里站立得稳，我们就活了。",
+      "en": "For now we really live, since you are standing firm in the Lord."
+    },
+    {
+      "chapter": 3,
+      "verse": 9,
+      "zh": "我们在神面前，因着你们甚么样的感谢，能报答神呢？",
+      "en": "How can we thank God enough for you in return for all the joy we have in the presence of our God because of you?"
+    },
+    {
+      "chapter": 3,
+      "verse": 10,
+      "zh": "我们昼夜切切地祈求，要见你们的面，补满你们信心的不足。",
+      "en": "Night and day we pray most earnestly that we may see you again and supply what is lacking in your faith."
+    },
+    {
+      "chapter": 3,
+      "verse": 11,
+      "zh": "愿神我们的父，和我们的主耶稣，一直引领我们到你们那里去。",
+      "en": "Now may our God and Father himself and our Lord Jesus clear the way for us to come to you."
+    },
+    {
+      "chapter": 3,
+      "verse": 12,
+      "zh": "又愿主叫你们彼此相爱的心，并爱众人的心，都能增长，充足，如同我们爱你们一样。",
+      "en": "May the Lord make your love increase and overflow for each other and for everyone else, just as ours does for you."
+    },
+    {
+      "chapter": 3,
+      "verse": 13,
+      "zh": "好使你们的心在神我们的父面前，坚定不移，圣洁无可指摘，直到我们的主耶稣同他众圣徒降临的时候。",
+      "en": "May he strengthen your hearts so that you will be blameless and holy in the presence of our God and Father when our Lord Jesus comes with all his holy ones."
+    },
+    {
+      "chapter": 4,
+      "verse": 1,
+      "zh": "弟兄们哪，我还有话说。我们靠着主耶稣求你们，劝你们，你们既然受了我们的教训，知道该怎样行，可以讨神的喜悦，就要照着去行。",
+      "en": "As for other matters, brothers and sisters, we instructed you how to live in order to please God, as in fact you are living. Now we ask you and urge you in the Lord Jesus to do this more and more."
+    },
+    {
+      "chapter": 4,
+      "verse": 2,
+      "zh": "因为你们知道我们凭主耶稣传给你们甚么命令。",
+      "en": "For you know what instructions we gave you by the authority of the Lord Jesus."
+    },
+    {
+      "chapter": 4,
+      "verse": 3,
+      "zh": "神的旨意就是要你们成为圣洁，远避淫行。",
+      "en": "It is God’s will that you should be sanctified: that you should avoid sexual immorality;"
+    },
+    {
+      "chapter": 4,
+      "verse": 4,
+      "zh": "要你们各人晓得怎样用圣洁尊贵，守着自己的身体。",
+      "en": "that each of you should learn to control your own body in a way that is holy and honorable,"
+    },
+    {
+      "chapter": 4,
+      "verse": 5,
+      "zh": "不放纵私欲的邪情，像那不认识神的外邦人。",
+      "en": "not in passionate lust like the pagans, who do not know God;"
+    },
+    {
+      "chapter": 4,
+      "verse": 6,
+      "zh": "要你们各人不要越分，欺负他的弟兄。因为这一类的事，主必报应，正如我预先对你们说过，又郑重嘱咐你们的。",
+      "en": "and that in this matter no one should wrong or take advantage of a brother or sister. The Lord will punish all those who commit such sins, as we told you and warned you before."
+    },
+    {
+      "chapter": 4,
+      "verse": 7,
+      "zh": "神召我们，本不是要我们沾染污秽，乃是要我们成为圣洁。",
+      "en": "For God did not call us to be impure, but to live a holy life."
+    },
+    {
+      "chapter": 4,
+      "verse": 8,
+      "zh": "所以那弃绝的，不是弃绝人，乃是弃绝那赐圣灵给你们的　神。",
+      "en": "Therefore, anyone who rejects this instruction does not reject a human being but God, the very God who gives you his Holy Spirit."
+    },
+    {
+      "chapter": 4,
+      "verse": 9,
+      "zh": "论到弟兄相爱，你们不必人写信给你们，因为你们自己蒙了神的教训，要彼此相爱。",
+      "en": "Now about your love for one another we do not need to write to you, for you yourselves have been taught by God to love each other."
+    },
+    {
+      "chapter": 4,
+      "verse": 10,
+      "zh": "你们向马其顿全地的众弟兄固然是这样行，但我们劝你们要更加勉励。",
+      "en": "And in fact, you do love all of God’s family throughout Macedonia. Yet we urge you, brothers and sisters, to do so more and more,"
+    },
+    {
+      "chapter": 4,
+      "verse": 11,
+      "zh": "又要立志作安静人，办自己的事，亲手作工，正如我们从前所吩咐你们的。",
+      "en": "and to make it your ambition to lead a quiet life: You should mind your own business and work with your hands, just as we told you,"
+    },
+    {
+      "chapter": 4,
+      "verse": 12,
+      "zh": "叫你们可以向外人行事端正，自己也就没有甚么缺乏了。",
+      "en": "so that your daily life may win the respect of outsiders and so that you will not be dependent on anybody."
+    },
+    {
+      "chapter": 4,
+      "verse": 13,
+      "zh": "论到睡了的人，我们不愿意弟兄们不知道，恐怕你们忧伤，像那些没有指望的人一样。",
+      "en": "Brothers and sisters, we do not want you to be uninformed about those who sleep in death, so that you do not grieve like the rest of mankind, who have no hope."
+    },
+    {
+      "chapter": 4,
+      "verse": 14,
+      "zh": "我们若信耶稣死而复活了，那已经在耶稣里睡了的人，神也必将他与耶稣一同带来。",
+      "en": "For we believe that Jesus died and rose again, and so we believe that God will bring with Jesus those who have fallen asleep in him."
+    },
+    {
+      "chapter": 4,
+      "verse": 15,
+      "zh": "我们现在照主的话告诉你们一件事：我们这活着还存留到主降临的人，断不能在那已经睡了的人之先。",
+      "en": "According to the Lord’s word, we tell you that we who are still alive, who are left until the coming of the Lord, will certainly not precede those who have fallen asleep."
+    },
+    {
+      "chapter": 4,
+      "verse": 16,
+      "zh": "因为主必亲自从天降临，有呼叫的声音和天使长的声音，又有神的号吹响。那在基督里死了的人必先复活。",
+      "en": "For the Lord himself will come down from heaven, with a loud command, with the voice of the archangel and with the trumpet call of God, and the dead in Christ will rise first."
+    },
+    {
+      "chapter": 4,
+      "verse": 17,
+      "zh": "以后我们这活着还存留的人，必同时与他们一同被提到云里，在空中与主相遇。这样，我们就要和主永远同在。",
+      "en": "After that, we who are still alive and are left will be caught up together with them in the clouds to meet the Lord in the air. And so we will be with the Lord forever."
+    },
+    {
+      "chapter": 4,
+      "verse": 18,
+      "zh": "所以，你们当用这些话彼此劝慰。",
+      "en": "Therefore encourage one another with these words."
+    },
+    {
+      "chapter": 5,
+      "verse": 1,
+      "zh": "弟兄们哪，论到时候日期，不用写信给你们。",
+      "en": "Now, brothers and sisters, about times and dates we do not need to write to you,"
+    },
+    {
+      "chapter": 5,
+      "verse": 2,
+      "zh": "因为你们自己明明晓得，主的日子来到，好像夜间的贼一样。",
+      "en": "for you know very well that the day of the Lord will come like a thief in the night."
+    },
+    {
+      "chapter": 5,
+      "verse": 3,
+      "zh": "人正说平安稳妥的时候，灾祸忽然临到他们，如同产难临到怀胎的妇人一样，他们绝不能逃脱。",
+      "en": "While people are saying, “Peace and safety,” destruction will come on them suddenly, as labor pains on a pregnant woman, and they will not escape."
+    },
+    {
+      "chapter": 5,
+      "verse": 4,
+      "zh": "弟兄们哪，你们却不在黑暗里，叫那日子临到你们像贼一样。",
+      "en": "But you, brothers and sisters, are not in darkness so that this day should surprise you like a thief."
+    },
+    {
+      "chapter": 5,
+      "verse": 5,
+      "zh": "你们都是光明之子，都是白昼之子。我们不是属黑夜的，也不是属幽暗的。",
+      "en": "You are all children of the light and children of the day. We do not belong to the night or to the darkness."
+    },
+    {
+      "chapter": 5,
+      "verse": 6,
+      "zh": "所以我们不要睡觉，像别人一样，总要儆醒谨守。",
+      "en": "So then, let us not be like others, who are asleep, but let us be awake and sober."
+    },
+    {
+      "chapter": 5,
+      "verse": 7,
+      "zh": "因为睡觉的人是在夜间睡觉，醉酒的人是在夜间醉酒。",
+      "en": "For those who sleep, sleep at night, and those who get drunk, get drunk at night."
+    },
+    {
+      "chapter": 5,
+      "verse": 8,
+      "zh": "我们既然属乎白昼，就应当谨守，把信和爱的胸牌当做护心镜遮胸，把得救的盼望当做头盔戴上。",
+      "en": "But since we belong to the day, let us be sober, putting on faith and love as a breastplate, and the hope of salvation as a helmet."
+    },
+    {
+      "chapter": 5,
+      "verse": 9,
+      "zh": "因为神不是预定我们受刑，乃是预定我们藉着我们主耶稣基督得救。",
+      "en": "For God did not appoint us to suffer wrath but to receive salvation through our Lord Jesus Christ."
+    },
+    {
+      "chapter": 5,
+      "verse": 10,
+      "zh": "他替我们死，叫我们无论醒着、睡着，都与他同活。",
+      "en": "He died for us so that, whether we are awake or asleep, we may live together with him."
+    },
+    {
+      "chapter": 5,
+      "verse": 11,
+      "zh": "所以你们要彼此劝慰，互相建立，正如你们素常所行的。",
+      "en": "Therefore encourage one another and build each other up, just as in fact you are doing."
+    },
+    {
+      "chapter": 5,
+      "verse": 12,
+      "zh": "弟兄们哪，我们劝你们敬重那在你们中间劳苦的人，就是在主里面治理你们、劝戒你们的。",
+      "en": "Now we ask you, brothers and sisters, to acknowledge those who work hard among you, who care for you in the Lord and who admonish you."
+    },
+    {
+      "chapter": 5,
+      "verse": 13,
+      "zh": "又因他们所作的工，用爱心格外尊重他们。你们也要彼此和睦。",
+      "en": "Hold them in the highest regard in love because of their work. Live in peace with each other."
+    },
+    {
+      "chapter": 5,
+      "verse": 14,
+      "zh": "我们又劝弟兄们，要警戒不守规矩的人，勉励灰心的人，扶助软弱的人，也要向众人忍耐。",
+      "en": "And we urge you, brothers and sisters, warn those who are idle and disruptive, encourage the disheartened, help the weak, be patient with everyone."
+    },
+    {
+      "chapter": 5,
+      "verse": 15,
+      "zh": "你们要谨慎，无论是谁都不可以恶报恶；或是彼此相待，或是待众人，常要追求良善。",
+      "en": "Make sure that nobody pays back wrong for wrong, but always strive to do what is good for each other and for everyone else."
+    },
+    {
+      "chapter": 5,
+      "verse": 16,
+      "zh": "要常常喜乐。",
+      "en": "Rejoice always,"
+    },
+    {
+      "chapter": 5,
+      "verse": 17,
+      "zh": "不住地祷告。",
+      "en": "pray continually,"
+    },
+    {
+      "chapter": 5,
+      "verse": 18,
+      "zh": "凡事谢恩。因为这是神在基督耶稣里向你们所定的旨意。",
+      "en": "give thanks in all circumstances; for this is God’s will for you in Christ Jesus."
+    },
+    {
+      "chapter": 5,
+      "verse": 19,
+      "zh": "不要消灭圣灵的感动。",
+      "en": "Do not quench the Spirit."
+    },
+    {
+      "chapter": 5,
+      "verse": 20,
+      "zh": "不要藐视先知的讲论。",
+      "en": "Do not treat prophecies with contempt"
+    },
+    {
+      "chapter": 5,
+      "verse": 21,
+      "zh": "但要凡事察验，善美的要持守。",
+      "en": "but test them all; hold on to what is good,"
+    },
+    {
+      "chapter": 5,
+      "verse": 22,
+      "zh": "各样的恶事要禁戒不作。",
+      "en": "reject every kind of evil."
+    },
+    {
+      "chapter": 5,
+      "verse": 23,
+      "zh": "愿赐平安的神亲自使你们全然成圣。又愿你们的灵与魂与身子得蒙保守，在我们主耶稣基督降临的时候，完全无可指摘。",
+      "en": "May God himself, the God of peace, sanctify you through and through. May your whole spirit, soul and body be kept blameless at the coming of our Lord Jesus Christ."
+    },
+    {
+      "chapter": 5,
+      "verse": 24,
+      "zh": "那召你们的本是信实的，他必成就这事。",
+      "en": "The one who calls you is faithful, and he will do it."
+    },
+    {
+      "chapter": 5,
+      "verse": 25,
+      "zh": "请弟兄们为我们祷告。",
+      "en": "Brothers and sisters, pray for us."
+    },
+    {
+      "chapter": 5,
+      "verse": 26,
+      "zh": "愿主耶稣基督的恩常与你们众人同在。",
+      "en": "Greet all God’s people with a holy kiss."
+    },
+    {
+      "chapter": 5,
+      "verse": 27,
+      "zh": "我指着主嘱咐你们，要把这信念给众弟兄听。",
+      "en": "I charge you before the Lord to have this letter read to all the brothers and sisters."
+    },
+    {
+      "chapter": 5,
+      "verse": 28,
+      "zh": "愿我们主耶稣基督的恩常与你们同在！",
+      "en": "The grace of our Lord Jesus Christ be with you."
+    }
+  ],
+  "keyVerses": [
+    {
+      "chapter": 1,
+      "verse": 3
+    },
+    {
+      "chapter": 1,
+      "verse": 4
+    },
+    {
+      "chapter": 1,
+      "verse": 5
+    },
+    {
+      "chapter": 1,
+      "verse": 6
+    },
+    {
+      "chapter": 1,
+      "verse": 9
+    },
+    {
+      "chapter": 1,
+      "verse": 10
+    },
+    {
+      "chapter": 2,
+      "verse": 4
+    },
+    {
+      "chapter": 2,
+      "verse": 8
+    },
+    {
+      "chapter": 2,
+      "verse": 13
+    },
+    {
+      "chapter": 2,
+      "verse": 19
+    },
+    {
+      "chapter": 2,
+      "verse": 20
+    },
+    {
+      "chapter": 3,
+      "verse": 8
+    },
+    {
+      "chapter": 3,
+      "verse": 12
+    },
+    {
+      "chapter": 3,
+      "verse": 13
+    },
+    {
+      "chapter": 4,
+      "verse": 3
+    },
+    {
+      "chapter": 4,
+      "verse": 7
+    },
+    {
+      "chapter": 4,
+      "verse": 11
+    },
+    {
+      "chapter": 4,
+      "verse": 12
+    },
+    {
+      "chapter": 4,
+      "verse": 13
+    },
+    {
+      "chapter": 4,
+      "verse": 14
+    },
+    {
+      "chapter": 4,
+      "verse": 15
+    },
+    {
+      "chapter": 4,
+      "verse": 16
+    },
+    {
+      "chapter": 4,
+      "verse": 17
+    },
+    {
+      "chapter": 4,
+      "verse": 18
+    },
+    {
+      "chapter": 5,
+      "verse": 2
+    },
+    {
+      "chapter": 5,
+      "verse": 6
+    },
+    {
+      "chapter": 5,
+      "verse": 8
+    },
+    {
+      "chapter": 5,
+      "verse": 9
+    },
+    {
+      "chapter": 5,
+      "verse": 10
+    },
+    {
+      "chapter": 5,
+      "verse": 11
+    },
+    {
+      "chapter": 5,
+      "verse": 16
+    },
+    {
+      "chapter": 5,
+      "verse": 17
+    },
+    {
+      "chapter": 5,
+      "verse": 18
+    },
+    {
+      "chapter": 5,
+      "verse": 23
+    },
+    {
+      "chapter": 5,
+      "verse": 24
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-10-04",
+  "availableBooks": ["matthew", "mark", "luke", "john", "acts", "romans", "1corinthians", "2corinthians", "galatians", "ephesians", "philippians", "colossians", "1thessalonians", "2thessalonians", "1timothy", "2timothy", "titus", "philemon"],
+  "books": {
+    "matthew": {
+      "name": "马太福音",
+      "englishName": "Matthew",
+      "testament": "new", 
+      "category": "gospels",
+      "chapters": 28,
+      "color": "#3498db",
+      "description": "记录耶稣基督的生平、教导和救赎工作，强调祂是应许的弥赛亚",
+      "keyThemes": ["弥赛亚", "天国", "门徒训练", "八福", "大使命"]
+    },
+    "mark": {
+      "name": "马可福音",
+      "englishName": "Mark",
+      "testament": "new",
+      "category": "gospels",
+      "chapters": 16,
+      "color": "#e74c3c",
+      "description": "记录耶稣基督作为神的儿子的服事和牺牲",
+      "keyThemes": ["耶稣的权柄", "门徒训练", "十字架", "服事", "神的国"]
+    },
+    "luke": {
+      "name": "路加福音",
+      "englishName": "Luke",
+      "testament": "new",
+      "category": "gospels",
+      "chapters": 24,
+      "color": "#2ecc71",
+      "description": "详细记录耶稣基督的生平，强调祂对所有人的救赎",
+      "keyThemes": ["救恩", "怜悯", "祷告", "圣灵", "普世福音"]
+    },
+    "john": {
+      "name": "约翰福音",
+      "englishName": "John",
+      "testament": "new",
+      "category": "gospels", 
+      "chapters": 21,
+      "color": "#9b59b6",
+      "description": "启示耶稣基督的神性和永生之道",
+      "keyThemes": ["永生", "信心", "爱", "光明", "神的儿子"]
+    },
+    "acts": {
+      "name": "使徒行传",
+      "englishName": "Acts",
+      "testament": "new",
+      "category": "historical_nt",
+      "chapters": 28,
+      "color": "#f39c12",
+      "description": "记录初期教会的建立和福音的传播",
+      "keyThemes": ["圣灵", "教会增长", "宣教", "逼迫", "福音传播"]
+    },
+    "romans": {
+      "name": "罗马书",
+      "englishName": "Romans",
+      "testament": "new",
+      "category": "pauline_epistles",
+      "chapters": 16,
+      "color": "#e74c3c",
+      "description": "保罗向罗马教会阐述因信称义的伟大真理",
+      "keyThemes": ["因信称义", "神的义", "罪与救恩", "基督徒生活", "神的主权"]
+    },
+    "ephesians": {
+      "name": "以弗所书",
+      "englishName": "Ephesians", 
+      "testament": "new",
+      "category": "pauline_epistles",
+      "chapters": 6,
+      "color": "#3498db",
+      "description": "保罗向以弗所教会论述神在基督里的丰盛恩典",
+      "keyThemes": ["神的拣选", "教会合一", "属灵争战", "夫妻关系", "基督的爱"]
+    },
+    "philippians": {
+      "name": "腓立比书",
+      "englishName": "Philippians",
+      "testament": "new",
+      "category": "pauline_epistles",
+      "chapters": 4,
+      "color": "#f39c12",
+      "description": "保罗在监狱中写给腓立比教会的信，强调喜乐和基督的榜样",
+      "keyThemes": ["喜乐", "谦卑", "基督的榜样", "属灵的成长", "合一"]
+    },
+    "colossians": {
+      "name": "歌罗西书",
+      "englishName": "Colossians",
+      "testament": "new",
+      "category": "pauline_epistles",
+      "chapters": 4,
+      "color": "#27ae60",
+      "description": "保罗驳斥异端，强调基督的完全和充足",
+      "keyThemes": ["基督的完全", "新生命", "教会秩序", "家庭关系", "见证"]
+    },
+    "1thessalonians": {
+      "name": "帖撒罗尼迦前书",
+      "englishName": "1 Thessalonians",
+      "testament": "new",
+      "category": "pauline_epistles",
+      "chapters": 5,
+      "color": "#8e44ad",
+      "description": "保罗鼓励帖撒罗尼迦教会，在信仰、爱心和盼望上恒心",
+      "keyThemes": ["主的再来", "圣洁生活", "爱心", "盼望", "安慰"]
+    },
+    "2thessalonians": {
+      "name": "帖撒罗尼迦后书",
+      "englishName": "2 Thessalonians",
+      "testament": "new",
+      "category": "pauline_epistles",
+      "chapters": 3,
+      "color": "#e67e22",
+      "description": "保罗澄清主的再来，鼓励在逼迫中坚忍",
+      "keyThemes": ["主的再来", "逼迫", "工作伦理", "分辨真假", "坚忍"]
+    },
+    "1timothy": {
+      "name": "提摩太前书",
+      "englishName": "1 Timothy",
+      "testament": "new",
+      "category": "pauline_epistles",
+      "chapters": 6,
+      "color": "#16a085",
+      "description": "保罗指导提摩太如何牧养教会和处理各种问题",
+      "keyThemes": ["教会秩序", "领袖资格", "敬虔生活", "假教师", "祷告"]
+    },
+    "2timothy": {
+      "name": "提摩太后书",
+      "englishName": "2 Timothy",
+      "testament": "new",
+      "category": "pauline_epistles",
+      "chapters": 4,
+      "color": "#8b4513",
+      "description": "保罗在监狱中写给提摩太的最后书信，鼓励他继续传道并预备面对逼迫",
+      "keyThemes": ["持守真道", "面对逼迫", "传道使命", "圣经的权威", "最后的见证"]
+    },
+    "titus": {
+      "name": "提多书",
+      "englishName": "Titus",
+      "testament": "new",
+      "category": "pauline_epistles",
+      "chapters": 3,
+      "color": "#daa520",
+      "description": "保罗写给提多的信，指导他在革哩底岛建立教会秩序和教导健康教义",
+      "keyThemes": ["教会秩序", "健康教义", "长老资格", "恩典与行为", "敬虔生活"]
+    },
+    "philemon": {
+      "name": "腓利门书",
+      "englishName": "Philemon",
+      "testament": "new",
+      "category": "pauline_epistles",
+      "chapters": 1,
+      "color": "#ff6347",
+      "description": "保罗写给腓利门的私人书信，请求他宽恕并接纳逃跑的奴隶阿尼西母",
+      "keyThemes": ["饶恕与和好", "基督里的关系", "恩典与慈悲", "接纳与合一", "福音的改变力量"]
+    },
+    "1corinthians": {
+      "name": "哥林多前书",
+      "englishName": "1 Corinthians",
+      "testament": "new",
+      "category": "pauline_epistles",
+      "chapters": 16,
+      "color": "#9b59b6",
+      "description": "保罗写给哥林多教会的信，解决教会内部的各种问题",
+      "keyThemes": ["教会合一", "属灵恩赐", "爱", "复活", "圣餐"]
+    },
+    "2corinthians": {
+      "name": "哥林多后书",
+      "englishName": "2 Corinthians",
+      "testament": "new",
+      "category": "pauline_epistles",
+      "chapters": 13,
+      "color": "#1abc9c",
+      "description": "保罗为自己事奉的辩护，强调恩典和安慰的福音",
+      "keyThemes": ["恩典", "安慰", "和好", "慷慨", "属灵争战"]
+    },
+    "galatians": {
+      "name": "加拉太书",
+      "englishName": "Galatians",
+      "testament": "new",
+      "category": "pauline_epistles",
+      "chapters": 6,
+      "color": "#34495e",
+      "description": "保罗捍卫因信称义的真理，反对律法主义的歪曲",
+      "keyThemes": ["因信称义", "自由", "圣灵", "信心", "新生命"]
+    }
+  },
+  "categories": {
+    "pentateuch": "摩西五经",
+    "historical_ot": "历史书",
+    "wisdom": "诗歌智慧书", 
+    "major_prophets": "大先知书",
+    "minor_prophets": "小先知书",
+    "gospels": "福音书",
+    "historical_nt": "历史书",
+    "pauline_epistles": "保罗书信",
+    "general_epistles": "普通书信",
+    "prophecy_nt": "预言书"
+  }
+}

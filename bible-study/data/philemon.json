@@ -1,0 +1,223 @@
+{
+  "book": "philemon",
+  "name": "腓利门书",
+  "englishName": "Philemon",
+  "testament": "new",
+  "category": "pauline_epistles",
+  "chapters": 1,
+  "color": "#ff6347",
+  "description": "保罗写给腓利门的私人书信，请求他宽恕并接纳逃跑的奴隶阿尼西母",
+  "keyThemes": [
+    "饶恕与和好",
+    "基督里的关系",
+    "恩典与慈悲",
+    "接纳与合一",
+    "福音的改变力量"
+  ],
+  "verses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "zh": "为基督耶稣被囚的保罗，同兄弟提摩太，写信给我们亲爱的同工腓利门，",
+      "en": "Paul, a prisoner of Christ Jesus, and Timothy our brother, To Philemon our dear friend and fellow worker—"
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "zh": "和妹子亚腓亚，并与我们同当兵的亚基布，以及在你家的教会。",
+      "en": "also to Apphia our sister and Archippus our fellow soldier—and to the church that meets in your home:"
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "zh": "愿恩惠、平安从神我们的父和主耶稣基督归与你们！",
+      "en": "Grace and peace to you from God our Father and the Lord Jesus Christ."
+    },
+    {
+      "chapter": 1,
+      "verse": 4,
+      "zh": "我祷告的时候提到你，常为你感谢我的神；",
+      "en": "I always thank my God as I remember you in my prayers,"
+    },
+    {
+      "chapter": 1,
+      "verse": 5,
+      "zh": "因听见你向主耶稣的信心，并向众圣徒的爱心。",
+      "en": "because I hear about your love for all his holy people and your faith in the Lord Jesus."
+    },
+    {
+      "chapter": 1,
+      "verse": 6,
+      "zh": "愿你与人所同有的信心显出功效，使人知道你们各样善事都是为基督作的。",
+      "en": "I pray that your partnership with us in the faith may be effective in deepening your understanding of every good thing we share for the sake of Christ."
+    },
+    {
+      "chapter": 1,
+      "verse": 7,
+      "zh": "兄弟啊，我为你的爱心大有快乐，大得安慰，因众圣徒的心从你得了畅快。",
+      "en": "Your love has given me great joy and encouragement, because you, brother, have refreshed the hearts of the Lord's people."
+    },
+    {
+      "chapter": 1,
+      "verse": 8,
+      "zh": "我虽然靠着基督能放胆吩咐你合宜的事，",
+      "en": "Therefore, although in Christ I could be bold and order you to do what you ought to do,"
+    },
+    {
+      "chapter": 1,
+      "verse": 9,
+      "zh": "然而像我这有年纪的保罗，现在又是为基督耶稣被囚的，宁可凭着爱心求你，",
+      "en": "yet I prefer to appeal to you on the basis of love. It is as none other than Paul—an old man and now also a prisoner of Christ Jesus—"
+    },
+    {
+      "chapter": 1,
+      "verse": 10,
+      "zh": "就是为我在捆锁中所生的儿子阿尼西母求你。",
+      "en": "that I appeal to you for my son Onesimus, who became my son while I was in chains."
+    },
+    {
+      "chapter": 1,
+      "verse": 11,
+      "zh": "他从前与你没有益处，但如今与你我都有益处。",
+      "en": "Formerly he was useless to you, but now he has become useful both to you and to me."
+    },
+    {
+      "chapter": 1,
+      "verse": 12,
+      "zh": "我现在打发他亲自回你那里去，他是我心上的人。",
+      "en": "I am sending him—who is my very heart—back to you."
+    },
+    {
+      "chapter": 1,
+      "verse": 13,
+      "zh": "我本来有意将他留下，在我为福音所受的捆锁中替你伺候我。",
+      "en": "I would have liked to keep him with me so that he could take your place in helping me while I am in chains for the gospel."
+    },
+    {
+      "chapter": 1,
+      "verse": 14,
+      "zh": "但不知道你的意思，我就不愿意这样行，叫你的善行不是出于勉强，乃是出于甘心。",
+      "en": "But I did not want to do anything without your consent, so that any favor you do would not seem forced but would be voluntary."
+    },
+    {
+      "chapter": 1,
+      "verse": 15,
+      "zh": "或者他暂时离开你，是特要叫你永远得着他。",
+      "en": "Perhaps the reason he was separated from you for a little while was that you might have him back forever—"
+    },
+    {
+      "chapter": 1,
+      "verse": 16,
+      "zh": "不再是奴仆，乃是高过奴仆，是亲爱的兄弟。在我实在是如此，何况在你呢！这也不仅在肉身，在主里更是如此。",
+      "en": "no longer as a slave, but better than a slave, as a dear brother. He is very dear to me but even dearer to you, both as a fellow man and as a brother in the Lord."
+    },
+    {
+      "chapter": 1,
+      "verse": 17,
+      "zh": "你若以我为同伴，就收纳他，如同收纳我一样。",
+      "en": "So if you consider me a partner, welcome him as you would welcome me."
+    },
+    {
+      "chapter": 1,
+      "verse": 18,
+      "zh": "他若亏负你，或欠你什么，都归在我的账上。",
+      "en": "If he has done you any wrong or owes you anything, charge it to me."
+    },
+    {
+      "chapter": 1,
+      "verse": 19,
+      "zh": "我必偿还。这是我保罗亲笔写的。我并不用对你说，连你自己也是亏欠于我。",
+      "en": "I, Paul, am writing this with my own hand. I will pay it back—not to mention that you owe me your very self."
+    },
+    {
+      "chapter": 1,
+      "verse": 20,
+      "zh": "兄弟啊，望你使我在主里因你得着益处，在基督里使我的心畅快。",
+      "en": "I do, dear brother, that I may have some benefit from you in the Lord; refresh my heart in Christ."
+    },
+    {
+      "chapter": 1,
+      "verse": 21,
+      "zh": "我写信给你，深信你必顺服，知道你所要行的必过于我所说的。",
+      "en": "Confident of your obedience, I write to you, knowing that you will do even more than I ask."
+    },
+    {
+      "chapter": 1,
+      "verse": 22,
+      "zh": "此外你还要给我预备住处，因为我盼望藉着你们的祷告，必蒙恩赐给你们。",
+      "en": "And one thing more: Prepare a guest room for me, because I hope to be restored to you in answer to your prayers."
+    },
+    {
+      "chapter": 1,
+      "verse": 23,
+      "zh": "为基督耶稣与我同坐监的以巴弗问你安。",
+      "en": "Epaphras, my fellow prisoner in Christ Jesus, sends you greetings."
+    },
+    {
+      "chapter": 1,
+      "verse": 24,
+      "zh": "与我同工的马可、亚里达古、底马、路加也都问你安。",
+      "en": "And so do Mark, Aristarchus, Demas and Luke, my fellow workers."
+    },
+    {
+      "chapter": 1,
+      "verse": 25,
+      "zh": "愿我们主耶稣基督的恩常在你的心里。阿们！",
+      "en": "The grace of the Lord Jesus Christ be with your spirit."
+    }
+  ],
+  "keyVerses": [
+    {
+      "chapter": 1,
+      "verse": 5
+    },
+    {
+      "chapter": 1,
+      "verse": 6
+    },
+    {
+      "chapter": 1,
+      "verse": 7
+    },
+    {
+      "chapter": 1,
+      "verse": 10
+    },
+    {
+      "chapter": 1,
+      "verse": 11
+    },
+    {
+      "chapter": 1,
+      "verse": 12
+    },
+    {
+      "chapter": 1,
+      "verse": 15
+    },
+    {
+      "chapter": 1,
+      "verse": 16
+    },
+    {
+      "chapter": 1,
+      "verse": 17
+    },
+    {
+      "chapter": 1,
+      "verse": 18
+    },
+    {
+      "chapter": 1,
+      "verse": 19
+    },
+    {
+      "chapter": 1,
+      "verse": 20
+    },
+    {
+      "chapter": 1,
+      "verse": 21
+    }
+  ]
+}

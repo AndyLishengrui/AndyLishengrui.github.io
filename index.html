@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圣经学习助手 | Bible Study Helper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 30px 20px;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .main-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.15);
+        }
+        
+        .feature-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .feature-card h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .feature-description {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        
+        .feature-stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 25px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .action-button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 250px;
+        }
+        
+        .action-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .testament-section {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .testament-section h2 {
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .books-container {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .book-category {
+            margin-bottom: 25px;
+        }
+        
+        .category-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .book-item {
+            display: block;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            color: #333;
+            text-decoration: none;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+            position: relative;
+        }
+        
+        .book-item.available {
+            border-left-color: #28a745;
+        }
+        
+        .book-item.available:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .book-item .status {
+            float: right;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        
+        .book-item.available .status {
+            color: #28a745;
+        }
+        
+        .book-item.available:hover .status {
+            color: white;
+        }
+        
+        .daily-verse {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .verse-text {
+            font-size: 1.2em;
+            font-style: italic;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        
+        .verse-reference {
+            font-weight: bold;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .main-features {
+                grid-template-columns: 1fr;
+            }
+            
+            .feature-stats {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .feature-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><i class="fas fa-book-open"></i> 圣经学习助手</h1>
+        <p>通过互动学习深入理解神的话语</p>
+    </div>
+    
+    <div class="container">
+        <!-- 主要功能卡片 -->
+        <div class="main-features">
+            <!-- 填空练习卡片 -->
+            <div class="feature-card" onclick="startFillBlankPractice()">
+                <div class="feature-icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <h2>填空练习</h2>
+                <p class="feature-description">通过填空练习加深对圣经经文的记忆，选择不同难度和章节进行针对性练习</p>
+                <div class="feature-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="completedPractices">0</div>
+                        <div class="stat-label">已完成练习</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="accuracy">0%</div>
+                        <div class="stat-label">准确率</div>
+                    </div>
+                </div>
+                <button class="action-button">
+                    <i class="fas fa-play"></i> 开始练习
+                </button>
+            </div>
+            
+            <!-- 建立根基课程卡片 -->
+            <div class="feature-card" onclick="window.location.href='foundation_course.html'">
+                <div class="feature-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h2>建立根基</h2>
+                <p class="feature-description">12课系统性门徒培训课程，透过提问帮助你在圣经中发现真理，建立坚实的信仰根基</p>
+                <div class="feature-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">课程</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">48</div>
+                        <div class="stat-label">节</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">455</div>
+                        <div class="stat-label">问题</div>
+                    </div>
+                </div>
+                <button class="action-button">
+                    <i class="fas fa-book-reader"></i> 开始学习
+                </button>
+            </div>
+            
+            <!-- 一对一门徒训练卡片 -->
+            <div class="feature-card" onclick="window.location.href='one2one/index.html'">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h2>一对一门徒训练</h2>
+                <p class="feature-description">个人跟进和带门徒的系统性训练，基于真实PDF内容的7课互动学习体验</p>
+                <div class="feature-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">课程</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">步骤</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">故事</div>
+                    </div>
+                </div>
+                <button class="action-button">
+                    <i class="fas fa-handshake"></i> 开始训练
+                </button>
+            </div>
+            
+            <!-- 读经打卡卡片 -->
+            <div class="feature-card" onclick="openReadingCheckin()">
+                <div class="feature-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>读经打卡</h2>
+                <p class="feature-description">建立每日读经习惯，记录学习进度，与其他学习者分享心得体会</p>
+                <div class="feature-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="streakDays">1</div>
+                        <div class="stat-label">连续天数</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalDays">1</div>
+                        <div class="stat-label">总计天数</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="chaptersRead">1</div>
+                        <div class="stat-label">已读章节</div>
+                    </div>
+                </div>
+                <button class="action-button">
+                    <i class="fas fa-calendar-check"></i> 今日打卡
+                </button>
+            </div>
+        </div>
+        
+        <!-- 今日金句 -->
+        <div class="daily-verse">
+            <div class="verse-text" id="dailyVerseText">
+                "在神凡事都能。"
+            </div>
+            <div class="verse-reference" id="dailyVerseRef">
+                路加福音 18:27
+            </div>
+        </div>
+
+        <!-- 书卷选择 -->
+        <div class="testament-section">
+            <h2><i class="fas fa-book-open"></i> 新约圣经 New Testament</h2>
+            <div id="bookGrid" class="books-container">
+                <!-- 书卷将通过JavaScript动态加载 -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 全局变量
+        let booksData = {};
+        let userProgress = JSON.parse(localStorage.getItem('userProgress')) || {
+            practices: 0,
+            accuracy: 0,
+            streakDays: 1,
+            totalDays: 1,
+            chaptersRead: 1,
+            lastCheckin: null
+        };
+
+        // 初始化页面
+        document.addEventListener('DOMContentLoaded', function() {
+            loadBooksData();
+            updateStats();
+            setDailyVerse();
+        });
+
+        // 加载书卷数据
+        async function loadBooksData() {
+            try {
+                const response = await fetch('data/config.json');
+                const config = await response.json();
+                
+                // 修复：config.books是对象，不是数组
+                for (let bookKey of config.availableBooks) {
+                    try {
+                        const bookResponse = await fetch(`data/${bookKey}.json`);
+                        const bookData = await bookResponse.json();
+                        // 合并配置信息和书卷数据
+                        booksData[bookKey] = {
+                            ...bookData,
+                            ...config.books[bookKey]
+                        };
+                    } catch (error) {
+                        console.log(`无法加载 ${bookKey}.json`);
+                    }
+                }
+                
+                displayBooks();
+                updateBookStats();
+            } catch (error) {
+                console.error('加载配置失败:', error);
+            }
+        }
+
+        // 更新书卷统计
+        function updateBookStats() {
+            let totalVerses = 0;
+            Object.keys(booksData).forEach(bookKey => {
+                const book = booksData[bookKey];
+                if (book.verses) {
+                    totalVerses += book.verses.length;
+                }
+            });
+            
+            // 更新统计显示（这里可以根据实际需要调整）
+            console.log(`可学习书卷: ${Object.keys(booksData).length}, 经文总数: ${totalVerses}`);
+        }
+
+        // 显示书卷
+        function displayBooks() {
+            const bookGrid = document.getElementById('bookGrid');
+            bookGrid.innerHTML = '';
+            
+            // 按类别组织书卷
+            const categories = {
+                'gospels': {title: '福音书', books: []},
+                'historical_nt': {title: '历史书', books: []}, 
+                'pauline_epistles': {title: '保罗书信', books: []},
+                'general_epistles': {title: '普通书信', books: []},
+                'prophecy_nt': {title: '预言书', books: []}
+            };
+            
+            // 分类书卷
+            Object.keys(booksData).forEach(bookKey => {
+                const book = booksData[bookKey];
+                const category = book.category || 'gospels';
+                if (categories[category]) {
+                    categories[category].books.push({key: bookKey, ...book});
+                }
+            });
+            
+            // 显示每个类别
+            Object.keys(categories).forEach(categoryKey => {
+                const category = categories[categoryKey];
+                if (category.books.length > 0) {
+                    const categoryDiv = document.createElement('div');
+                    categoryDiv.className = 'book-category';
+                    
+                    const titleDiv = document.createElement('div');
+                    titleDiv.className = 'category-title';
+                    titleDiv.textContent = category.title;
+                    categoryDiv.appendChild(titleDiv);
+                    
+                    category.books.forEach(book => {
+                        const bookLink = document.createElement('a');
+                        bookLink.href = `study.html?book=${book.key}`;
+                        bookLink.className = 'book-item available';
+                        bookLink.innerHTML = `
+                            ${book.name || book.key}
+                            <span class="status">✓ 可学习</span>
+                        `;
+                        categoryDiv.appendChild(bookLink);
+                    });
+                    
+                    bookGrid.appendChild(categoryDiv);
+                }
+            });
+        }
+
+        // 更新统计数据
+        function updateStats() {
+            document.getElementById('completedPractices').textContent = userProgress.practices;
+            document.getElementById('accuracy').textContent = userProgress.accuracy + '%';
+            document.getElementById('streakDays').textContent = userProgress.streakDays;
+            document.getElementById('totalDays').textContent = userProgress.totalDays;
+            document.getElementById('chaptersRead').textContent = userProgress.chaptersRead;
+        }
+
+        // 设置每日金句
+        function setDailyVerse() {
+            const verses = [
+                {text: "在神凡事都能。", ref: "路加福音 18:27"},
+                {text: "我靠着那加给我力量的，凡事都能做。", ref: "腓立比书 4:13"},
+                {text: "耶和华是我的牧者，我必不致缺乏。", ref: "诗篇 23:1"},
+                {text: "你们要将一切的忧虑卸给神，因为他顾念你们。", ref: "彼得前书 5:7"}
+            ];
+            
+            const today = new Date().getDate();
+            const verse = verses[today % verses.length];
+            
+            document.getElementById('dailyVerseText').textContent = `"${verse.text}"`;
+            document.getElementById('dailyVerseRef').textContent = verse.ref;
+        }
+
+        // 开始填空练习
+        function startFillBlankPractice() {
+            window.location.href = 'practice.html';
+        }
+
+        // 打开读经打卡
+        function openReadingCheckin() {
+            window.location.href = 'checkin.html';
+        }
+
+        // 保存用户进度
+        function saveProgress() {
+            localStorage.setItem('userProgress', JSON.stringify(userProgress));
+        }
+    </script>
+</body>
+</html>

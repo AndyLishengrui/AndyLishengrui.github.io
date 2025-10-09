@@ -1,0 +1,2434 @@
+{
+  "book": "romans",
+  "name": "罗马书",
+  "englishName": "Romans",
+  "testament": "new",
+  "category": "pauline_epistles",
+  "chapters": 16,
+  "color": "#e74c3c",
+  "description": "保罗向罗马教会阐述因信称义的伟大真理",
+  "keyThemes": [
+    "因信称义",
+    "神的义",
+    "罪与救恩",
+    "基督徒生活",
+    "神的主权"
+  ],
+  "verses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "zh": "耶稣基督的仆人保罗，奉召为使徒，特派传神的福音。",
+      "en": "Paul, a servant of Christ Jesus, called to be an apostle and set apart for the gospel of God—"
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "zh": "这福音是神从前藉众先知在圣经上所应许的，",
+      "en": "the gospel he promised beforehand through his prophets in the Holy Scriptures"
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "zh": "论到他儿子我主耶稣基督。按肉体说，是从大卫后裔生的；",
+      "en": "regarding his Son, who as to his earthly life was a descendant of David,"
+    },
+    {
+      "chapter": 1,
+      "verse": 4,
+      "zh": "按圣善的灵说，因从死里复活，以大能显明是神的儿子。",
+      "en": "and who through the Spirit of holiness was appointed the Son of God in power by his resurrection from the dead: Jesus Christ our Lord."
+    },
+    {
+      "chapter": 1,
+      "verse": 5,
+      "zh": "我们从他受了恩惠并使徒的职分，在万国之中叫人为他的名信服真道；",
+      "en": "Through him we received grace and apostleship to call all the Gentiles to the obedience that comes from faith for his name's sake."
+    },
+    {
+      "chapter": 1,
+      "verse": 6,
+      "zh": "其中也有你们这蒙召属耶稣基督的人。",
+      "en": "And you also are among those Gentiles who are called to belong to Jesus Christ."
+    },
+    {
+      "chapter": 1,
+      "verse": 7,
+      "zh": "我写信给你们在罗马、为神所爱、奉召作圣徒的众人。愿恩惠、平安从我们的父神并主耶稣基督归与你们！",
+      "en": "To all in Rome who are loved by God and called to be his holy people: Grace and peace to you from God our Father and from the Lord Jesus Christ."
+    },
+    {
+      "chapter": 1,
+      "verse": 8,
+      "zh": "第一，我靠着耶稣基督，为你们众人感谢我的神，因你们的信德传遍了天下。",
+      "en": "First, I thank my God through Jesus Christ for all of you, because your faith is being reported all over the world."
+    },
+    {
+      "chapter": 1,
+      "verse": 9,
+      "zh": "我在他儿子福音上，用心灵所事奉的神可以见证，我怎样不住地提到你们；",
+      "en": "God, whom I serve in my spirit in preaching the gospel of his Son, is my witness how constantly I remember you"
+    },
+    {
+      "chapter": 1,
+      "verse": 10,
+      "zh": "在祷告之间常常恳求，或者照神的旨意，终能得平坦的道路往你们那里去。",
+      "en": "in my prayers at all times; and I pray that now at last by God's will the way may be opened for me to come to you."
+    },
+    {
+      "chapter": 1,
+      "verse": 11,
+      "zh": "因为我切切地想见你们，要把些属灵的恩赐分给你们，使你们可以坚固。",
+      "en": "I long to see you so that I may impart to you some spiritual gift to make you strong—"
+    },
+    {
+      "chapter": 1,
+      "verse": 12,
+      "zh": "这样，我在你们中间，因你与我彼此的信心，就可以同得安慰。",
+      "en": "that is, that you and I may be mutually encouraged by each other's faith."
+    },
+    {
+      "chapter": 1,
+      "verse": 13,
+      "zh": "弟兄们，我不愿意你们不知道，我屡次定意往你们那里去，要在你们中间得些果子，如同在其余的外邦人中一样；只是到如今仍有阻隔。",
+      "en": "I do not want you to be unaware, brothers and sisters, that I planned many times to come to you (but have been prevented from doing so until now) in order that I might have a harvest among you, just as I have had among the other Gentiles."
+    },
+    {
+      "chapter": 1,
+      "verse": 14,
+      "zh": "无论是希利尼人、化外人、聪明人、愚拙人，我都欠他们的债，",
+      "en": "I am obligated both to Greeks and non-Greeks, both to the wise and the foolish."
+    },
+    {
+      "chapter": 1,
+      "verse": 15,
+      "zh": "所以情愿尽我的力量，将福音也传给你们在罗马的人。",
+      "en": "That is why I am so eager to preach the gospel also to you who are in Rome."
+    },
+    {
+      "chapter": 1,
+      "verse": 16,
+      "zh": "我不以福音为耻；这福音本是神的大能，要救一切相信的，先是犹太人，后是希利尼人。",
+      "en": "For I am not ashamed of the gospel, because it is the power of God that brings salvation to everyone who believes: first to the Jew, then to the Gentile.",
+      "background": "核心经文: 这是罗马书的主题经文之一。保罗宣告福音的大能，强调救恩是给所有相信的人，不分种族。'神的大能'希腊文是dunamis，是我们英文'动力'(dynamite)的词根，强调福音具有改变生命的强大力量。"
+    },
+    {
+      "chapter": 1,
+      "verse": 17,
+      "zh": "因为神的义正在这福音上显明出来；这义是本于信，以至于信。如经上所记：'义人必因信得生。'",
+      "en": "For in the gospel the righteousness of God is revealed—a righteousness that is by faith from first to last, just as it is written: 'The righteous will live by faith.'",
+      "background": "关键概念: '神的义'不是指神审判的义，而是神赐给人的义。'义人必因信得生'引自哈巴谷书2:4，是宗教改革的核心经文，强调称义完全是藉着信心，而非行为。"
+    },
+    {
+      "chapter": 1,
+      "verse": 18,
+      "zh": "原来，神的忿怒从天上显明在一切不虔不义的人身上，就是那些行不义阻挡真理的人。",
+      "en": "The wrath of God is being revealed from heaven against all the godlessness and wickedness of people, who suppress the truth by their wickedness,"
+    },
+    {
+      "chapter": 1,
+      "verse": 19,
+      "zh": "神的事情，人所能知道的，原显明在人心里，因为神已经给他们显明。",
+      "en": "since what may be known about God is plain to them, because God has made it plain to them."
+    },
+    {
+      "chapter": 1,
+      "verse": 20,
+      "zh": "自从造天地以来，神的永能和神性是明明可知的，虽是眼不能见，但藉着所造之物就可以晓得，叫人无可推诿。",
+      "en": "For since the creation of the world God's invisible qualities—his eternal power and divine nature—have been clearly seen, being understood from what has been made, so that people are without excuse.",
+      "background": "自然启示: 这节经文说明神通过创造向人类显明自己的存在和属性。即使没有圣经，人也可以通过观察自然界认识神的永能和神性，因此拒绝神的人是无可推诿的。"
+    },
+    {
+      "chapter": 1,
+      "verse": 21,
+      "zh": "因为，他们虽然知道神，却不当作神荣耀他，也不感谢他。他们的思念变为虚妄，无知的心就昏暗了。",
+      "en": "For although they knew God, they neither glorified him as God nor gave thanks to him, but their thinking became futile and their foolish hearts were darkened."
+    },
+    {
+      "chapter": 1,
+      "verse": 22,
+      "zh": "自称为聪明，反成了愚拙，",
+      "en": "Although they claimed to be wise, they became fools"
+    },
+    {
+      "chapter": 1,
+      "verse": 23,
+      "zh": "将不能朽坏之神的荣耀变为偶像，仿佛必朽坏的人和飞禽、走兽、昆虫的样式。",
+      "en": "and exchanged the glory of the immortal God for images made to look like a mortal human being and birds and animals and reptiles."
+    },
+    {
+      "chapter": 1,
+      "verse": 24,
+      "zh": "所以，神任凭他们逞着心里的情欲行污秽的事，以致彼此玷辱自己的身体。",
+      "en": "Therefore God gave them over in the sinful desires of their hearts to sexual impurity for the degrading of their bodies with one another."
+    },
+    {
+      "chapter": 1,
+      "verse": 25,
+      "zh": "他们将神的真实变为虚谎，去敬拜事奉受造之物，不敬奉那造物的主；主乃是可称颂的，直到永远。阿们！",
+      "en": "They exchanged the truth about God for a lie, and worshiped and served created things rather than the Creator—who is forever praised. Amen."
+    },
+    {
+      "chapter": 1,
+      "verse": 26,
+      "zh": "因此，神任凭他们放纵可羞耻的情欲。他们的女人把顺性的用处变为逆性的用处；",
+      "en": "Because of this, God gave them over to shameful lusts. Even their women exchanged natural sexual relations for unnatural ones."
+    },
+    {
+      "chapter": 1,
+      "verse": 27,
+      "zh": "男人也是如此，弃了女人顺性的用处，欲火攻心，彼此贪恋，男和男行可羞耻的事，就在自己身上受这妄为当得的报应。",
+      "en": "In the same way the men also abandoned natural relations with women and were inflamed with lust for one another. Men committed shameful acts with other men, and received in themselves the due penalty for their error."
+    },
+    {
+      "chapter": 1,
+      "verse": 28,
+      "zh": "他们既然故意不认识神，神就任凭他们存邪僻的心，行那些不合理的事；",
+      "en": "Furthermore, just as they did not think it worthwhile to retain the knowledge of God, so God gave them over to a depraved mind, so that they do what ought not to be done."
+    },
+    {
+      "chapter": 1,
+      "verse": 29,
+      "zh": "装满了各样不义、邪恶、贪婪、恶毒；满心是嫉妒、凶杀、争竞、诡诈、毒恨；",
+      "en": "They have become filled with every kind of wickedness, evil, greed and depravity. They are full of envy, murder, strife, deceit and malice. They are gossips,"
+    },
+    {
+      "chapter": 1,
+      "verse": 30,
+      "zh": "又是谗毁的、背后说人的、怨恨神的、侮慢人的、狂傲的、自夸的、捏造恶事的、违背父母的。",
+      "en": "slanderers, God-haters, insolent, arrogant and boastful; they invent ways of doing evil; they disobey their parents;"
+    },
+    {
+      "chapter": 1,
+      "verse": 31,
+      "zh": "无知的、背约的、无亲情的、不怜悯人的。",
+      "en": "they have no understanding, no fidelity, no love, no mercy."
+    },
+    {
+      "chapter": 1,
+      "verse": 32,
+      "zh": "他们虽知道神判定行这样事的人是当死的，然而他们不但自己去行，还喜欢别人去行。",
+      "en": "Although they know God's righteous decree that those who do such things deserve death, they not only continue to do these very things but also approve of those who practice them."
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "zh": "你这论断人的，无论你是谁，也无可推诿。你在什么事上论断人，就在什么事上定自己的罪；因你这论断人的，自己所行却和别人一样。",
+      "en": "You, therefore, have no excuse, you who pass judgment on someone else, for at whatever point you judge another, you are condemning yourself, because you who pass judgment do the same things."
+    },
+    {
+      "chapter": 2,
+      "verse": 2,
+      "zh": "我们知道这样行的人，神必照真理审判他。",
+      "en": "Now we know that God's judgment against those who do such things is based on truth."
+    },
+    {
+      "chapter": 2,
+      "verse": 3,
+      "zh": "你这人哪，你论断行这样事的人，自己所行的却和别人一样，你以为能逃脱神的审判吗？",
+      "en": "So when you, a mere human being, pass judgment on them and yet do the same things, do you think you will escape God's judgment?"
+    },
+    {
+      "chapter": 2,
+      "verse": 4,
+      "zh": "还是你藐视他丰富的恩慈、宽容、忍耐，不晓得他的恩慈是领你悔改呢？",
+      "en": "Or do you show contempt for the riches of his kindness, forbearance and patience, not realizing that God's kindness is intended to lead you to repentance?"
+    },
+    {
+      "chapter": 2,
+      "verse": 5,
+      "zh": "你竟任着你刚硬不悔改的心，为自己积蓄忿怒，以致神震怒，显他公义审判的日子来到。",
+      "en": "But because of your stubbornness and your unrepentant heart, you are storing up wrath against yourself for the day of God's wrath, when his righteous judgment will be revealed."
+    },
+    {
+      "chapter": 2,
+      "verse": 6,
+      "zh": "他必照各人的行为报应各人。",
+      "en": "God 'will repay each person according to what they have done.'"
+    },
+    {
+      "chapter": 2,
+      "verse": 7,
+      "zh": "凡恒心行善、寻求荣耀、尊贵和不能朽坏之福的，就以永生报应他们；",
+      "en": "To those who by persistence in doing good seek glory, honor and immortality, he will give eternal life."
+    },
+    {
+      "chapter": 2,
+      "verse": 8,
+      "zh": "惟有结党、不顺从真理、反顺从不义的，就以忿怒、恼恨报应他们；",
+      "en": "But for those who are self-seeking and who reject the truth and follow evil, there will be wrath and anger."
+    },
+    {
+      "chapter": 2,
+      "verse": 9,
+      "zh": "将患难、困苦加给一切作恶的人，先是犹太人，后是希利尼人，",
+      "en": "There will be trouble and distress for every human being who does evil: first for the Jew, then for the Gentile;"
+    },
+    {
+      "chapter": 2,
+      "verse": 10,
+      "zh": "却将荣耀、尊贵、平安加给一切行善的人，先是犹太人，后是希利尼人。",
+      "en": "but glory, honor and peace for everyone who does good: first for the Jew, then for the Gentile."
+    },
+    {
+      "chapter": 2,
+      "verse": 11,
+      "zh": "因为神不偏待人。",
+      "en": "For God does not show favoritism."
+    },
+    {
+      "chapter": 2,
+      "verse": 12,
+      "zh": "凡没有律法犯了罪的，也必不按律法灭亡；凡在律法以下犯了罪的，也必按律法受审判。",
+      "en": "All who sin apart from the law will also perish apart from the law, and all who sin under the law will be judged by the law."
+    },
+    {
+      "chapter": 2,
+      "verse": 13,
+      "zh": "（原来在神面前，不是听律法的为义，乃是行律法的称义。",
+      "en": "For it is not those who hear the law who are righteous in God's sight, but it is those who obey the law who will be declared righteous."
+    },
+    {
+      "chapter": 2,
+      "verse": 14,
+      "zh": "没有律法的外邦人若顺着本性行律法上的事，他们虽然没有律法，自己就是自己的律法。",
+      "en": "Indeed, when Gentiles, who do not have the law, do by nature things required by the law, they are a law for themselves, even though they do not have the law."
+    },
+    {
+      "chapter": 2,
+      "verse": 15,
+      "zh": "这是显出律法的功用刻在他们心里，他们的良心同作见证，并且他们的思念互相较量，或以为是，或以为非。）",
+      "en": "They show that the requirements of the law are written on their hearts, their consciences also bearing witness, and their thoughts sometimes accusing them and at other times even defending them.)"
+    },
+    {
+      "chapter": 2,
+      "verse": 16,
+      "zh": "就在神藉耶稣基督审判人隐秘事的日子，照着我的福音所言。",
+      "en": "This will take place on the day when God judges people's secrets through Jesus Christ, as my gospel declares."
+    },
+    {
+      "chapter": 2,
+      "verse": 17,
+      "zh": "你称为犹太人，又倚靠律法，且指着神夸口；",
+      "en": "Now you, if you call yourself a Jew; if you rely on the law and boast in God;"
+    },
+    {
+      "chapter": 2,
+      "verse": 18,
+      "zh": "既从律法中受了教训，就晓得神的旨意，也能分别是非（或译：也喜爱那美好的事）；",
+      "en": "if you know his will and approve of what is superior because you are instructed by the law;"
+    },
+    {
+      "chapter": 2,
+      "verse": 19,
+      "zh": "又深信自己是给瞎子领路的，是黑暗中人的光，",
+      "en": "if you are convinced that you are a guide for the blind, a light for those who are in the dark,"
+    },
+    {
+      "chapter": 2,
+      "verse": 20,
+      "zh": "是蠢笨人的师傅，是小孩子的先生，在律法上有知识和真理的模范。",
+      "en": "an instructor of the foolish, a teacher of little children, because you have in the law the embodiment of knowledge and truth—"
+    },
+    {
+      "chapter": 2,
+      "verse": 21,
+      "zh": "你既是教导别人，还不教导自己吗？你讲说人不可偷窃，自己还偷窃吗？",
+      "en": "you, then, who teach others, do you not teach yourself? You who preach against stealing, do you steal?"
+    },
+    {
+      "chapter": 2,
+      "verse": 22,
+      "zh": "你说人不可奸淫，自己还奸淫吗？你厌恶偶像，自己还偷窃庙中之物吗？",
+      "en": "You who say that people should not commit adultery, do you commit adultery? You who abhor idols, do you rob temples?"
+    },
+    {
+      "chapter": 2,
+      "verse": 23,
+      "zh": "你指着律法夸口，自己倒犯律法、羞辱神吗？",
+      "en": "You who boast in the law, do you dishonor God by breaking the law?"
+    },
+    {
+      "chapter": 2,
+      "verse": 24,
+      "zh": "神的名在外邦人中，因你们受了亵渎，正如经上所记的。",
+      "en": "As it is written: 'God's name is blasphemed among the Gentiles because of you.'"
+    },
+    {
+      "chapter": 2,
+      "verse": 25,
+      "zh": "你若是行律法的，割礼固然于你有益；若是犯律法的，你的割礼就算不得割礼。",
+      "en": "Circumcision has value if you observe the law, but if you break the law, you have become as though you had not been circumcised."
+    },
+    {
+      "chapter": 2,
+      "verse": 26,
+      "zh": "所以那未受割礼的，若遵守律法的条例，他虽然未受割礼，岂不算是有割礼吗？",
+      "en": "So then, if those who are not circumcised keep the law's requirements, will they not be regarded as though they were circumcised?"
+    },
+    {
+      "chapter": 2,
+      "verse": 27,
+      "zh": "而且那本来未受割礼的，若能全守律法，岂不是要审判你这有仪文和割礼竟犯律法的人吗？",
+      "en": "The one who is not circumcised physically and yet obeys the law will condemn you who, even though you have the written code and circumcision, are a lawbreaker."
+    },
+    {
+      "chapter": 2,
+      "verse": 28,
+      "zh": "因为外面作犹太人的，不是真犹太人；外面肉身的割礼，也不是真割礼。",
+      "en": "A person is not a Jew who is one only outwardly, nor is circumcision merely outward and physical."
+    },
+    {
+      "chapter": 2,
+      "verse": 29,
+      "zh": "惟有里面作的，才是真犹太人；真割礼也是心里的，在乎灵，不在乎仪文。这人的称赞不是从人来的，乃是从神来的。",
+      "en": "No, a person is a Jew who is one inwardly; and circumcision is circumcision of the heart, by the Spirit, not by the written code. Such a person's praise is not from other people, but from God."
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "zh": "这样说来，犹太人有什么长处？割礼有什么益处呢？",
+      "en": "What advantage, then, is there in being a Jew, or what value is there in circumcision?"
+    },
+    {
+      "chapter": 3,
+      "verse": 2,
+      "zh": "凡事大有好处：第一是神的圣言交托他们。",
+      "en": "Much in every way! First of all, the Jews have been entrusted with the very words of God."
+    },
+    {
+      "chapter": 3,
+      "verse": 3,
+      "zh": "即便有不信的，这有何妨呢？难道他们的不信就废掉神的信吗？",
+      "en": "What if some were unfaithful? Will their unfaithfulness nullify God's faithfulness?"
+    },
+    {
+      "chapter": 3,
+      "verse": 4,
+      "zh": "断乎不能！不如说，神是真实的，人都是虚谎的。如经上所记：你责备人的时候，显为公义；被人议论的时候，可以得胜。",
+      "en": "Not at all! Let God be true, and every human being a liar. As it is written: 'So that you may be proved right when you speak and prevail when you judge.'"
+    },
+    {
+      "chapter": 3,
+      "verse": 5,
+      "zh": "我且照着人的常话说，我们的不义若显出神的义来，我们可以怎么说呢？神降怒，是他不义吗？",
+      "en": "But if our unrighteousness brings out God's righteousness more clearly, what shall we say? That God is unjust in bringing his wrath on us? (I am using a human argument.)"
+    },
+    {
+      "chapter": 3,
+      "verse": 6,
+      "zh": "断乎不是！若是这样，神怎能审判世界呢？",
+      "en": "Certainly not! If that were so, how could God judge the world?"
+    },
+    {
+      "chapter": 3,
+      "verse": 7,
+      "zh": "若神的真实，因我的虚谎越发显出他的荣耀，为什么我还受审判，好像罪人呢？",
+      "en": "Someone might argue, 'If my falsehood enhances God's truthfulness and so increases his glory, why am I still condemned as a sinner?'"
+    },
+    {
+      "chapter": 3,
+      "verse": 8,
+      "zh": "为什么不说，我们可以作恶以成善呢？这是毁谤我们的人说我们有这话。这等人定罪是该当的。",
+      "en": "Why not say—as some slanderously claim that we say—'Let us do evil that good may result'? Their condemnation is just!"
+    },
+    {
+      "chapter": 3,
+      "verse": 9,
+      "zh": "这却怎么样呢？我们比他们强吗？决不是的！因我们已经证明：犹太人和希利尼人都在罪恶之下。",
+      "en": "What shall we conclude then? Do we have any advantage? Not at all! For we have already made the charge that Jews and Gentiles alike are all under the power of sin."
+    },
+    {
+      "chapter": 3,
+      "verse": 10,
+      "zh": "就如经上所记：没有义人，连一个也没有。",
+      "en": "As it is written: 'There is no one righteous, not even one;"
+    },
+    {
+      "chapter": 3,
+      "verse": 11,
+      "zh": "没有明白的；没有寻求神的；",
+      "en": "there is no one who understands; there is no one who seeks God."
+    },
+    {
+      "chapter": 3,
+      "verse": 12,
+      "zh": "都是偏离正路，一同变为无用。没有行善的，连一个也没有。",
+      "en": "All have turned away, they have together become worthless; there is no one who does good, not even one.'"
+    },
+    {
+      "chapter": 3,
+      "verse": 13,
+      "zh": "他们的喉咙是敞开的坟墓；他们用舌头弄诡诈，嘴唇里有虺蛇的毒气，",
+      "en": "'Their throats are open graves; their tongues practice deceit.' 'The poison of vipers is on their lips.'"
+    },
+    {
+      "chapter": 3,
+      "verse": 14,
+      "zh": "满口是咒骂苦毒。",
+      "en": "'Their mouths are full of cursing and bitterness.'"
+    },
+    {
+      "chapter": 3,
+      "verse": 15,
+      "zh": "杀人流血，他们的脚飞跑，",
+      "en": "'Their feet are swift to shed blood;"
+    },
+    {
+      "chapter": 3,
+      "verse": 16,
+      "zh": "所经过的路便行残害暴虐的事。",
+      "en": "ruin and misery mark their ways,"
+    },
+    {
+      "chapter": 3,
+      "verse": 17,
+      "zh": "平安的路，他们未曾知道；",
+      "en": "and the way of peace they do not know.'"
+    },
+    {
+      "chapter": 3,
+      "verse": 18,
+      "zh": "他们眼中不怕神。",
+      "en": "'There is no fear of God before their eyes.'"
+    },
+    {
+      "chapter": 3,
+      "verse": 19,
+      "zh": "我们晓得律法上的话都是对律法以下之人说的，好塞住各人的口，叫普世的人都伏在神审判之下。",
+      "en": "Now we know that whatever the law says, it says to those who are under the law, so that every mouth may be silenced and the whole world held accountable to God."
+    },
+    {
+      "chapter": 3,
+      "verse": 20,
+      "zh": "所以凡有血气的，没有一个因行律法能在神面前称义，因为律法本是叫人知罪。",
+      "en": "Therefore no one will be declared righteous in God's sight by the works of the law; rather, through the law we become conscious of our sin."
+    },
+    {
+      "chapter": 3,
+      "verse": 21,
+      "zh": "但如今，神的义在律法以外已经显明出来，有律法和先知为证：",
+      "en": "But now apart from the law the righteousness of God has been made known, to which the Law and the Prophets testify."
+    },
+    {
+      "chapter": 3,
+      "verse": 22,
+      "zh": "就是神的义，因信耶稣基督加给一切相信的人，并没有分别。",
+      "en": "This righteousness is given through faith in Jesus Christ to all who believe. There is no difference between Jew and Gentile,"
+    },
+    {
+      "chapter": 3,
+      "verse": 23,
+      "zh": "因为世人都犯了罪，亏缺了神的荣耀；",
+      "en": "for all have sinned and fall short of the glory of God,",
+      "background": "人类光景: 这是圣经中最著名的经文之一，描述了全人类的共同处境。'亏缺'原文意思是'缺少、达不到标准'，说明所有人都无法达到神完美圣洁的标准。"
+    },
+    {
+      "chapter": 3,
+      "verse": 24,
+      "zh": "如今却蒙神的恩典，因基督耶稣的救赎，就白白地称义。",
+      "en": "and all are justified freely by his grace through the redemption that came by Christ Jesus."
+    },
+    {
+      "chapter": 3,
+      "verse": 25,
+      "zh": "神设立耶稣作挽回祭，是凭着耶稣的血，借着人的信，要显明神的义；因为他用忍耐的心宽容人先时所犯的罪，",
+      "en": "God presented Christ as a sacrifice of atonement, through the shedding of his blood—to be received by faith. He did this to demonstrate his righteousness, because in his forbearance he had left the sins committed beforehand unpunished—"
+    },
+    {
+      "chapter": 3,
+      "verse": 26,
+      "zh": "好在今时显明他的义，使人知道他自己为义，也称信耶稣的人为义。",
+      "en": "he did it to demonstrate his righteousness at the present time, so as to be just and the one who justifies those who have faith in Jesus."
+    },
+    {
+      "chapter": 3,
+      "verse": 27,
+      "zh": "既是这样，哪里能夸口呢？没有可夸的了。用何法没有的呢？是用立功之法吗？不是，乃用信主之法。",
+      "en": "Where, then, is boasting? It is excluded. Because of what law? The law that requires works? No, because of the law that requires faith."
+    },
+    {
+      "chapter": 3,
+      "verse": 28,
+      "zh": "所以我们看定了：人称义是因着信，不在乎遵行律法。",
+      "en": "For we maintain that a person is justified by faith apart from the works of the law."
+    },
+    {
+      "chapter": 3,
+      "verse": 29,
+      "zh": "难道神只作犹太人的神吗？不也是作外邦人的神吗？是的，也作外邦人的神。",
+      "en": "Or is God the God of Jews only? Is he not the God of Gentiles too? Yes, of Gentiles too,"
+    },
+    {
+      "chapter": 3,
+      "verse": 30,
+      "zh": "神既是一位，他就要因信称那受割礼的为义，也要因信称那未受割礼的为义。",
+      "en": "since there is only one God, who will justify the circumcised by faith and the uncircumcised through that same faith."
+    },
+    {
+      "chapter": 3,
+      "verse": 31,
+      "zh": "这样，我们因信废了律法吗？断乎不是！更是坚固律法。",
+      "en": "Do we, then, nullify the law by this faith? Not at all! Rather, we uphold the law."
+    },
+    {
+      "chapter": 4,
+      "verse": 1,
+      "zh": "如此说来，我们的祖宗亚伯拉罕凭着肉体得了什么呢？",
+      "en": "What then shall we say that Abraham, our forefather according to the flesh, discovered in this matter?"
+    },
+    {
+      "chapter": 4,
+      "verse": 2,
+      "zh": "倘若亚伯拉罕是因行为称义，就有可夸的；只是在神面前并无可夸。",
+      "en": "If, in fact, Abraham was justified by works, he had something to boast about—but not before God."
+    },
+    {
+      "chapter": 4,
+      "verse": 3,
+      "zh": "经上说什么呢？说：'亚伯拉罕信神，这就算为他的义。'",
+      "en": "What does Scripture say? 'Abraham believed God, and it was credited to him as righteousness.'"
+    },
+    {
+      "chapter": 4,
+      "verse": 4,
+      "zh": "做工的得工价，不算恩典，乃是该得的；",
+      "en": "Now to the one who works, wages are not credited as a gift but as an obligation."
+    },
+    {
+      "chapter": 4,
+      "verse": 5,
+      "zh": "惟有不做工的，只信称罪人为义的神，他的信就算为义。",
+      "en": "However, to the one who does not work but trusts God who justifies the ungodly, their faith is credited as righteousness."
+    },
+    {
+      "chapter": 4,
+      "verse": 6,
+      "zh": "正如大卫称那在行为以外蒙神算为义的人是有福的。",
+      "en": "David says the same thing when he speaks of the blessedness of the one to whom God credits righteousness apart from works:"
+    },
+    {
+      "chapter": 4,
+      "verse": 7,
+      "zh": "他说：得赦免其过、遮盖其罪的，这人是有福的。",
+      "en": "'Blessed are those whose transgressions are forgiven, whose sins are covered."
+    },
+    {
+      "chapter": 4,
+      "verse": 8,
+      "zh": "主不算为有罪的，这人是有福的。",
+      "en": "Blessed is the one whose sin the Lord will never count against them.'"
+    },
+    {
+      "chapter": 4,
+      "verse": 9,
+      "zh": "如此看来，这福是单加给那受割礼的人吗？不也是加给那未受割礼的人吗？因我们所说，亚伯拉罕的信，就算为他的义。",
+      "en": "Is this blessedness only for the circumcised, or also for the uncircumcised? We have been saying that Abraham's faith was credited to him as righteousness."
+    },
+    {
+      "chapter": 4,
+      "verse": 10,
+      "zh": "是怎么算的呢？是在他受割礼的时候呢？是在他未受割礼的时候呢？不是在受割礼的时候，乃是在未受割礼的时候。",
+      "en": "Under what circumstances was it credited? Was it after he was circumcised, or before? It was not after, but before!"
+    },
+    {
+      "chapter": 4,
+      "verse": 11,
+      "zh": "并且他受了割礼的记号，作他未受割礼的时候因信称义的印证，叫他作一切未受割礼而信之人的父，使他们也算为义；",
+      "en": "And he received circumcision as a sign, a seal of the righteousness that he had by faith while he was still uncircumcised. So then, he is the father of all who believe but have not been circumcised, in order that righteousness might be credited to them."
+    },
+    {
+      "chapter": 4,
+      "verse": 12,
+      "zh": "又作受割礼之人的父，就是那些不但受割礼，并且按我们的祖宗亚伯拉罕未受割礼而信之踪迹去行的人。",
+      "en": "And he is then also the father of the circumcised who not only are circumcised but who also follow in the footsteps of the faith that our father Abraham had before he was circumcised."
+    },
+    {
+      "chapter": 4,
+      "verse": 13,
+      "zh": "因为神应许亚伯拉罕和他后裔，必得承受世界，不是因律法，乃是因信而得的义。",
+      "en": "It was not through the law that Abraham and his offspring received the promise that he would be heir of the world, but through the righteousness that comes by faith."
+    },
+    {
+      "chapter": 4,
+      "verse": 14,
+      "zh": "若是属乎律法的人才得为后嗣，信就归于虚空，应许也就废弃了。",
+      "en": "For if those who depend on the law are heirs, faith means nothing and the promise is worthless,"
+    },
+    {
+      "chapter": 4,
+      "verse": 15,
+      "zh": "因为律法是惹动忿怒的（或译：叫人受刑的）；哪里没有律法，那里就没有过犯。",
+      "en": "because the law brings wrath. And where there is no law there is no transgression."
+    },
+    {
+      "chapter": 4,
+      "verse": 16,
+      "zh": "所以人得为后嗣是本乎信，因此就属乎恩，叫应许定然归给一切后裔；不但归给那属乎律法的，也归给那效法亚伯拉罕之信的。",
+      "en": "Therefore, the promise comes by faith, so that it may be by grace and may be guaranteed to all Abraham's offspring—not only to those who are of the law but also to those who have the faith of Abraham. He is the father of us all."
+    },
+    {
+      "chapter": 4,
+      "verse": 17,
+      "zh": "亚伯拉罕所信的，是那叫死人复活、使无变为有的神，他在主面前作我们世人的父。如经上所记：'我已经立你作多国的父。'",
+      "en": "As it is written: 'I have made you a father of many nations.' He is our father in the sight of God, in whom he believed—the God who gives life to the dead and calls into being things that were not."
+    },
+    {
+      "chapter": 4,
+      "verse": 18,
+      "zh": "他在无可指望的时候，因信仍有指望，就得以作多国的父，正如先前所说：'你的后裔将要如此。'",
+      "en": "Against all hope, Abraham in hope believed and so became the father of many nations, just as it had been said to him, 'So shall your offspring be.'"
+    },
+    {
+      "chapter": 4,
+      "verse": 19,
+      "zh": "他将近百岁的时候，虽然想到自己的身体如同已死，撒拉的生育已经断绝，他的信心还是不软弱；",
+      "en": "Without weakening in his faith, he faced the fact that his body was as good as dead—since he was about a hundred years old—and that Sarah's womb was also dead."
+    },
+    {
+      "chapter": 4,
+      "verse": 20,
+      "zh": "并且仰望神的应许，总没有因不信心里起疑惑，反倒因信心里得坚固，将荣耀归给神，",
+      "en": "Yet he did not waver through unbelief regarding the promise of God, but was strengthened in his faith and gave glory to God,"
+    },
+    {
+      "chapter": 4,
+      "verse": 21,
+      "zh": "且满心相信神所应许的必能做成。",
+      "en": "being fully persuaded that God had power to do what he had promised."
+    },
+    {
+      "chapter": 4,
+      "verse": 22,
+      "zh": "所以，这就算为他的义。",
+      "en": "This is why 'it was credited to him as righteousness.'"
+    },
+    {
+      "chapter": 4,
+      "verse": 23,
+      "zh": "'算为他义'的这句话不是单为他写的，",
+      "en": "The words 'it was credited to him' were written not for him alone,"
+    },
+    {
+      "chapter": 4,
+      "verse": 24,
+      "zh": "也是为我们将来得算为义之人写的，就是我们这信神使我们的主耶稣从死里复活的人。",
+      "en": "but also for us, to whom God will credit righteousness—for us who believe in him who raised Jesus our Lord from the dead."
+    },
+    {
+      "chapter": 4,
+      "verse": 25,
+      "zh": "耶稣被交给人，是为我们的过犯；复活，是为叫我们称义。",
+      "en": "He was delivered over to death for our sins and was raised to life for our justification."
+    },
+    {
+      "chapter": 5,
+      "verse": 1,
+      "zh": "我们既因信称义，就藉着我们的主耶稣基督得与神相和。",
+      "en": "Therefore, since we have been justified through faith, we have peace with God through our Lord Jesus Christ,"
+    },
+    {
+      "chapter": 5,
+      "verse": 2,
+      "zh": "我们又藉着他，因信得进入现在所站的这恩典中，并且欢欢喜喜盼望神的荣耀。",
+      "en": "through whom we have gained access by faith into this grace in which we now stand. And we boast in the hope of the glory of God."
+    },
+    {
+      "chapter": 5,
+      "verse": 3,
+      "zh": "不但如此，就是在患难中也是欢欢喜喜的；因为知道患难生忍耐，",
+      "en": "Not only so, but we also glory in our sufferings, because we know that suffering produces perseverance;"
+    },
+    {
+      "chapter": 5,
+      "verse": 4,
+      "zh": "忍耐生老练，老练生盼望；",
+      "en": "perseverance, character; and character, hope."
+    },
+    {
+      "chapter": 5,
+      "verse": 5,
+      "zh": "盼望不至于羞耻，因为所赐给我们的圣灵将神的爱浇灌在我们心里。",
+      "en": "And hope does not put us to shame, because God's love has been poured out into our hearts through the Holy Spirit, who has been given to us."
+    },
+    {
+      "chapter": 5,
+      "verse": 6,
+      "zh": "因我们还软弱的时候，基督就按所定的日期为罪人死。",
+      "en": "You see, at just the right time, when we were still powerless, Christ died for the ungodly."
+    },
+    {
+      "chapter": 5,
+      "verse": 7,
+      "zh": "为义人死，是少有的；为仁人死、或者有敢做的。",
+      "en": "Very rarely will anyone die for a righteous person, though for a good person someone might possibly dare to die."
+    },
+    {
+      "chapter": 5,
+      "verse": 8,
+      "zh": "惟有基督在我们还作罪人的时候为我们死，神的爱就在此向我们显明了。",
+      "en": "But God demonstrates his own love for us in this: While we were still sinners, Christ died for us.",
+      "background": "神的爱: 这节经文揭示了神爱的特质—无条件的爱。不是因为我们好了神才爱我们，而是在我们还是罪人、还是神的仇敌时，基督就为我们死了。这是福音的核心—神主动的救赎之爱。"
+    },
+    {
+      "chapter": 5,
+      "verse": 9,
+      "zh": "现在我们既靠着他的血称义，就更要藉着他免去神的忿怒。",
+      "en": "Since we have now been justified by his blood, how much more shall we be saved from God's wrath through him!"
+    },
+    {
+      "chapter": 5,
+      "verse": 10,
+      "zh": "因为我们作仇敌的时候，且藉着神儿子的死，得与神和好；既已和好，就更要因他的生得救了。",
+      "en": "For if, while we were God's enemies, we were reconciled to him through the death of his Son, how much more, having been reconciled, shall we be saved through his life!"
+    },
+    {
+      "chapter": 5,
+      "verse": 11,
+      "zh": "不但如此，我们既藉着我主耶稣基督得与神和好，也就藉着他以神为乐。",
+      "en": "Not only is this so, but we also boast in God through our Lord Jesus Christ, through whom we have now received reconciliation."
+    },
+    {
+      "chapter": 5,
+      "verse": 12,
+      "zh": "这就如罪是从一人入了世界，死又是从罪来的；于是死就临到众人，因为众人都犯了罪。",
+      "en": "Therefore, just as sin entered the world through one man, and death through sin, and in this way death came to all people, because all sinned—"
+    },
+    {
+      "chapter": 5,
+      "verse": 13,
+      "zh": "没有律法之先，罪已经在世上；但没有律法，罪也不算罪。",
+      "en": "To be sure, sin was in the world before the law was given, but sin is not charged against anyone's account where there is no law."
+    },
+    {
+      "chapter": 5,
+      "verse": 14,
+      "zh": "然而从亚当到摩西，死就作了王，连那些不与亚当犯一样罪过的，也在他的权下。亚当乃是那以后要来之人的预像。",
+      "en": "Nevertheless, death reigned from the time of Adam to the time of Moses, even over those who did not sin by breaking a command, as did Adam, who is a pattern of the one to come."
+    },
+    {
+      "chapter": 5,
+      "verse": 15,
+      "zh": "只是过犯不如恩赐，若因一人的过犯，众人都死了，何况神的恩典，与那因耶稣基督一人恩典中的赏赐，岂不更加倍地临到众人吗？",
+      "en": "But the gift is not like the trespass. For if the many died by the trespass of the one man, how much more did God's grace and the gift that came by the grace of the one man, Jesus Christ, overflow to the many!"
+    },
+    {
+      "chapter": 5,
+      "verse": 16,
+      "zh": "因一人犯罪就定罪，也不如恩赐，原来审判是由一次过犯而来，定罪；恩赐乃是由许多过犯而来，称义。",
+      "en": "Nor can the gift of God be compared with the result of one man's sin: The judgment followed one sin and brought condemnation, but the gift followed many trespasses and brought justification."
+    },
+    {
+      "chapter": 5,
+      "verse": 17,
+      "zh": "若因一人的过犯，死就因这一人作了王，何况那些受洪恩又蒙所赐之义的，岂不更要因耶稣基督一人在生命中作王吗？",
+      "en": "For if, by the trespass of the one man, death reigned through that one man, how much more will those who receive God's abundant provision of grace and of the gift of righteousness reign in life through the one man, Jesus Christ!"
+    },
+    {
+      "chapter": 5,
+      "verse": 18,
+      "zh": "如此说来，因一次的过犯，众人都被定罪；照样，因一次的义行，众人也就被称义得生命了。",
+      "en": "Consequently, just as one trespass resulted in condemnation for all people, so also one righteous act resulted in justification and life for all people."
+    },
+    {
+      "chapter": 5,
+      "verse": 19,
+      "zh": "因一人的悖逆，众人成为罪人；照样，因一人的顺从，众人也成为义了。",
+      "en": "For just as through the disobedience of the one man the many were made sinners, so also through the obedience of the one man the many will be made righteous."
+    },
+    {
+      "chapter": 5,
+      "verse": 20,
+      "zh": "律法本是外添的，叫过犯显多；只是罪在哪里显多，恩典就更显多了。",
+      "en": "The law was brought in so that the trespass might increase. But where sin increased, grace increased all the more,"
+    },
+    {
+      "chapter": 5,
+      "verse": 21,
+      "zh": "就如罪作王叫人死；照样，恩典也藉着义作王，叫人因我们的主耶稣基督得永生。",
+      "en": "so that, just as sin reigned in death, so also grace might reign through righteousness to bring eternal life through Jesus Christ our Lord."
+    },
+    {
+      "chapter": 6,
+      "verse": 1,
+      "zh": "这样，怎么说呢？我们可以仍在罪中、叫恩典显多吗？",
+      "en": "What shall we say, then? Shall we go on sinning so that grace may increase?"
+    },
+    {
+      "chapter": 6,
+      "verse": 2,
+      "zh": "断乎不可！我们在罪上死了的人岂可仍在罪中活着呢？",
+      "en": "By no means! We are those who have died to sin; how can we live in it any longer?"
+    },
+    {
+      "chapter": 6,
+      "verse": 3,
+      "zh": "岂不知我们这受洗归入基督耶稣的人是受洗归入他的死吗？",
+      "en": "Or don't you know that all of us who were baptized into Christ Jesus were baptized into his death?"
+    },
+    {
+      "chapter": 6,
+      "verse": 4,
+      "zh": "所以，我们藉着洗礼归入死，和他一同埋葬，原是叫我们一举一动有新生的样式，像基督藉着父的荣耀从死里复活一样。",
+      "en": "We were therefore buried with him through baptism into death in order that, just as Christ was raised from the dead through the glory of the Father, we too may live a new life."
+    },
+    {
+      "chapter": 6,
+      "verse": 5,
+      "zh": "我们若在他死的形状上与他联合，也要在他复活的形状上与他联合；",
+      "en": "For if we have been united with him in a death like his, we will certainly also be united with him in a resurrection like his."
+    },
+    {
+      "chapter": 6,
+      "verse": 6,
+      "zh": "因为知道我们的旧人和他同钉十字架，使罪身灭绝，叫我们不再作罪的奴仆；",
+      "en": "For we know that our old self was crucified with him so that the body ruled by sin might be done away with, that we should no longer be slaves to sin—"
+    },
+    {
+      "chapter": 6,
+      "verse": 7,
+      "zh": "因为已死的人是脱离了罪。",
+      "en": "because anyone who has died has been set free from sin."
+    },
+    {
+      "chapter": 6,
+      "verse": 8,
+      "zh": "我们若是与基督同死，就信必与他同活。",
+      "en": "Now if we died with Christ, we believe that we will also live with him."
+    },
+    {
+      "chapter": 6,
+      "verse": 9,
+      "zh": "因为知道基督既从死里复活，就不再死，死也不再作他的主了。",
+      "en": "For we know that since Christ was raised from the dead, he cannot die again; death no longer has mastery over him."
+    },
+    {
+      "chapter": 6,
+      "verse": 10,
+      "zh": "他死是向罪死了，只有一次；他活是向神活着。",
+      "en": "The death he died, he died to sin once for all; but the life he lives, he lives to God."
+    },
+    {
+      "chapter": 6,
+      "verse": 11,
+      "zh": "这样，你们向罪也当看自己是死的；向神在基督耶稣里，却当看自己是活的。",
+      "en": "In the same way, count yourselves dead to sin but alive to God in Christ Jesus."
+    },
+    {
+      "chapter": 6,
+      "verse": 12,
+      "zh": "所以，不要容罪在你们必死的身上作王，使你们顺从身子的私欲。",
+      "en": "Therefore do not let sin reign in your mortal body so that you obey its evil desires."
+    },
+    {
+      "chapter": 6,
+      "verse": 13,
+      "zh": "也不要将你们的肢体献给罪作不义的器具；倒要像从死里复活的人，将自己献给神，并将肢体作义的器具献给神。",
+      "en": "Do not offer any part of yourself to sin as an instrument of wickedness, but rather offer yourselves to God as those who have been brought from death to life; and offer every part of yourself to him as an instrument of righteousness."
+    },
+    {
+      "chapter": 6,
+      "verse": 14,
+      "zh": "罪必不能作你们的主，因你们不在律法之下，乃在恩典之下。",
+      "en": "For sin shall no longer be your master, because you are not under the law, but under grace."
+    },
+    {
+      "chapter": 6,
+      "verse": 15,
+      "zh": "这却怎么样呢？我们在恩典之下，不在律法之下，就可以犯罪吗？断乎不可！",
+      "en": "What then? Shall we sin because we are not under the law but under grace? By no means!"
+    },
+    {
+      "chapter": 6,
+      "verse": 16,
+      "zh": "岂不晓得你们献上自己作奴仆，顺从谁，就作谁的奴仆吗？或作罪的奴仆，以至于死；或作顺命的奴仆，以至成义。",
+      "en": "Don't you know that when you offer yourselves to someone as obedient slaves, you are slaves of the one you obey—whether you are slaves to sin, which leads to death, or to obedience, which leads to righteousness?"
+    },
+    {
+      "chapter": 6,
+      "verse": 17,
+      "zh": "感谢神！因为你们从前虽然作罪的奴仆，现今却从心里顺服了所传给你们道理的模范。",
+      "en": "But thanks be to God that, though you used to be slaves to sin, you have come to obey from your heart the pattern of teaching that has now claimed your allegiance."
+    },
+    {
+      "chapter": 6,
+      "verse": 18,
+      "zh": "你们既从罪里得了释放，就作了义的奴仆。",
+      "en": "You have been set free from sin and have become slaves to righteousness."
+    },
+    {
+      "chapter": 6,
+      "verse": 19,
+      "zh": "我因你们肉体的软弱，就照人的常话对你们说。你们从前怎样将肢体献给不洁不法作奴仆，以至于不法；现今也要照样将肢体献给义作奴仆，以至于成圣。",
+      "en": "I am using an example from everyday life because of your human limitations. Just as you used to offer yourselves as slaves to impurity and to ever-increasing wickedness, so now offer yourselves as slaves to righteousness leading to holiness."
+    },
+    {
+      "chapter": 6,
+      "verse": 20,
+      "zh": "因为你们作罪之奴仆的时候，就不被义约束了。",
+      "en": "When you were slaves to sin, you were free from the control of righteousness."
+    },
+    {
+      "chapter": 6,
+      "verse": 21,
+      "zh": "你们现今所看为羞耻的事，当时有什么果子呢？那些事的结局就是死。",
+      "en": "What benefit did you reap at that time from the things you are now ashamed of? Those things result in death!"
+    },
+    {
+      "chapter": 6,
+      "verse": 22,
+      "zh": "但现今，你们既从罪里得了释放，作了神的奴仆，就有成圣的果子，那结局就是永生。",
+      "en": "But now that you have been set free from sin and have become slaves of God, the benefit you reap leads to holiness, and the result is eternal life."
+    },
+    {
+      "chapter": 6,
+      "verse": 23,
+      "zh": "因为罪的工价乃是死；惟有神的恩赐，在我们的主基督耶稣里，乃是永生。",
+      "en": "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.",
+      "background": "对比教学: 保罗用'工价'对比'恩赐'，工价是应得的报酬，恩赐是白白给予的礼物。罪带来的必然结果是死亡，但神给我们的是恩典的礼物—永生。"
+    },
+    {
+      "chapter": 7,
+      "verse": 1,
+      "zh": "弟兄们，我现在对明白律法的人说，你们岂不晓得律法管人是在活着的时候吗？",
+      "en": "Do you not know, brothers and sisters—for I am speaking to those who know the law—that the law has authority over someone only as long as that person lives?"
+    },
+    {
+      "chapter": 7,
+      "verse": 2,
+      "zh": "就如女人有了丈夫，丈夫还活着，就被律法约束；丈夫若死了，就脱离了丈夫的律法。",
+      "en": "For example, by law a married woman is bound to her husband as long as he is alive, but if her husband dies, she is released from the law that binds her to him."
+    },
+    {
+      "chapter": 7,
+      "verse": 3,
+      "zh": "所以丈夫活着，她若归于别人，便叫淫妇；丈夫若死了，她就脱离了那律法，虽然归于别人，也不是淫妇。",
+      "en": "So then, if she has sexual relations with another man while her husband is still alive, she is called an adulteress. But if her husband dies, she is released from that law and is not an adulteress if she marries another man."
+    },
+    {
+      "chapter": 7,
+      "verse": 4,
+      "zh": "我的弟兄们，这样说来，你们藉着基督的身体，在律法上也是死了，叫你们归于别人，就是归于那从死里复活的，叫我们结果子给神。",
+      "en": "So, my brothers and sisters, you also died to the law through the body of Christ, that you might belong to another, to him who was raised from the dead, in order that we might bear fruit for God."
+    },
+    {
+      "chapter": 7,
+      "verse": 5,
+      "zh": "因为我们属肉体的时候，那因律法而生的恶欲就在我们肢体中发动，以致结成死亡的果子。",
+      "en": "For when we were in the realm of the flesh, the sinful passions aroused by the law were at work in us, so that we bore fruit for death."
+    },
+    {
+      "chapter": 7,
+      "verse": 6,
+      "zh": "但我们既然在捆我们的律法上死了，现今就脱离了律法，叫我们服事主，要按着心灵（心灵：或译圣灵）的新样，不按着仪文的旧样。",
+      "en": "But now, by dying to what once bound us, we have been released from the law so that we serve in the new way of the Spirit, and not in the old way of the written code."
+    },
+    {
+      "chapter": 7,
+      "verse": 7,
+      "zh": "这样，我们可说什么呢？律法是罪吗？断乎不是！只是非因律法，我就不知何为罪。非律法说'不可起贪心'，我就不知何为贪心。",
+      "en": "What shall we say, then? Is the law sinful? Certainly not! Nevertheless, I would not have known what sin was had it not been for the law. For I would not have known what coveting really was if the law had not said, 'You shall not covet.'"
+    },
+    {
+      "chapter": 7,
+      "verse": 8,
+      "zh": "然而，罪趁着机会，就藉着诫命叫诸般的贪心在我里头发动；因为没有律法，罪是死的。",
+      "en": "But sin, seizing the opportunity afforded by the commandment, produced in me every kind of coveting. For apart from the law, sin was dead."
+    },
+    {
+      "chapter": 7,
+      "verse": 9,
+      "zh": "我以前没有律法是活着的；但是诫命来到，罪又活了，我就死了。",
+      "en": "Once I was alive apart from the law; but when the commandment came, sin sprang to life and I died."
+    },
+    {
+      "chapter": 7,
+      "verse": 10,
+      "zh": "那本来叫人活的诫命，反倒叫我死；",
+      "en": "I found that the very commandment that was intended to bring life actually brought death."
+    },
+    {
+      "chapter": 7,
+      "verse": 11,
+      "zh": "因为罪趁着机会，就藉着诫命引诱我，并且杀了我。",
+      "en": "For sin, seizing the opportunity afforded by the commandment, deceived me, and through the commandment put me to death."
+    },
+    {
+      "chapter": 7,
+      "verse": 12,
+      "zh": "这样看来，律法是圣洁的，诫命也是圣洁、公义、良善的。",
+      "en": "So then, the law is holy, and the commandment is holy, righteous and good."
+    },
+    {
+      "chapter": 7,
+      "verse": 13,
+      "zh": "既然如此，那良善的是叫我死吗？断乎不是！叫我死的乃是罪。但罪藉着那良善的叫我死，就显出真是罪，叫罪因着诫命更显出是恶极了。",
+      "en": "Did that which is good, then, become death to me? By no means! Nevertheless, in order that sin might be recognized as sin, it used what is good to bring about my death, so that through the commandment sin might become utterly sinful."
+    },
+    {
+      "chapter": 7,
+      "verse": 14,
+      "zh": "我们原晓得律法是属乎灵的，但我是属乎肉体的，是已经卖给罪了。",
+      "en": "We know that the law is spiritual; but I am unspiritual, sold as a slave to sin."
+    },
+    {
+      "chapter": 7,
+      "verse": 15,
+      "zh": "因为我所做的，我自己不明白；我所愿意的，我并不做；我所恨恶的，我倒去做。",
+      "en": "I do not understand what I do. For what I want to do I do not do, but what I hate I do."
+    },
+    {
+      "chapter": 7,
+      "verse": 16,
+      "zh": "若我所做的，是我所不愿意的，我就应承律法是善的。",
+      "en": "And if I do what I do not want to do, I agree that the law is good."
+    },
+    {
+      "chapter": 7,
+      "verse": 17,
+      "zh": "既是这样，就不是我做的，乃是住在我里头的罪做的。",
+      "en": "As it is, it is no longer I myself who do it, but it is sin living in me."
+    },
+    {
+      "chapter": 7,
+      "verse": 18,
+      "zh": "我也知道在我里头，就是我肉体之中，没有良善。因为，立志为善由得我，只是行出来由不得我。",
+      "en": "For I know that good itself does not dwell in me, that is, in my sinful nature. For I have the desire to do what is good, but I cannot carry it out."
+    },
+    {
+      "chapter": 7,
+      "verse": 19,
+      "zh": "故此，我所愿意的善，我反不做；我所不愿意的恶，我倒去做。",
+      "en": "For I do not do the good I want to do, but the evil I do not want to do—this I keep on doing."
+    },
+    {
+      "chapter": 7,
+      "verse": 20,
+      "zh": "若我去做所不愿意做的，就不是我做的，乃是住在我里头的罪做的。",
+      "en": "Now if I do what I do not want to do, it is no longer I who do it, but it is sin living in me that does it."
+    },
+    {
+      "chapter": 7,
+      "verse": 21,
+      "zh": "我觉得有个律，就是我愿意为善的时候，便有恶与我同在。",
+      "en": "So I find this law at work: Although I want to do good, evil is right there with me."
+    },
+    {
+      "chapter": 7,
+      "verse": 22,
+      "zh": "因为按着我里面的意思（原文是人），我是喜欢神的律；",
+      "en": "For in my inner being I delight in God's law;"
+    },
+    {
+      "chapter": 7,
+      "verse": 23,
+      "zh": "但我觉得肢体中另有个律和我心中的律交战，把我掳去，叫我附从那肢体中犯罪的律。",
+      "en": "but I see another law at work in me, waging war against the law of my mind and making me a prisoner of the law of sin at work within me."
+    },
+    {
+      "chapter": 7,
+      "verse": 24,
+      "zh": "我真是苦啊！谁能救我脱离这取死的身体呢？",
+      "en": "What a wretched man I am! Who will rescue me from this body that is subject to death?"
+    },
+    {
+      "chapter": 7,
+      "verse": 25,
+      "zh": "感谢神，靠着我们的主耶稣基督就能脱离了。这样看来，我以内心顺服神的律；我肉体却顺服罪的律了。",
+      "en": "Thanks be to God, who delivers me through Jesus Christ our Lord! So then, I myself in my mind am a slave to God's law, but in my sinful nature a slave to the law of sin."
+    },
+    {
+      "chapter": 8,
+      "verse": 1,
+      "zh": "如今，那些在基督耶稣里的就不定罪了。",
+      "en": "Therefore, there is now no condemnation for those who are in Christ Jesus,"
+    },
+    {
+      "chapter": 8,
+      "verse": 2,
+      "zh": "因为赐生命圣灵的律，在基督耶稣里释放了我，使我脱离罪和死的律了。",
+      "en": "because through Christ Jesus the law of the Spirit who gives life has set you free from the law of sin and death."
+    },
+    {
+      "chapter": 8,
+      "verse": 3,
+      "zh": "律法既因肉体软弱，有所不能行的，神就差遣自己的儿子，成为罪身的形状，作了赎罪祭，在肉体中定了罪案，",
+      "en": "For what the law was powerless to do because it was weakened by the flesh, God did by sending his own Son in the likeness of sinful flesh to be a sin offering. And so he condemned sin in the flesh,"
+    },
+    {
+      "chapter": 8,
+      "verse": 4,
+      "zh": "使律法的义成就在我们这不随从肉体、只随从圣灵的人身上。",
+      "en": "in order that the righteous requirement of the law might be fully met in us, who do not live according to the flesh but according to the Spirit."
+    },
+    {
+      "chapter": 8,
+      "verse": 5,
+      "zh": "因为随从肉体的人体贴肉体的事，随从圣灵的人体贴圣灵的事。",
+      "en": "Those who live according to the flesh have their minds set on what the flesh desires; but those who live in accordance with the Spirit have their minds set on what the Spirit desires."
+    },
+    {
+      "chapter": 8,
+      "verse": 6,
+      "zh": "体贴肉体的，就是死；体贴圣灵的，乃是生命、平安。",
+      "en": "The mind governed by the flesh is death, but the mind governed by the Spirit is life and peace."
+    },
+    {
+      "chapter": 8,
+      "verse": 7,
+      "zh": "原来体贴肉体的，就是与神为仇；因为不服神的律法，也是不能服，",
+      "en": "The mind governed by the flesh is hostile to God; it does not submit to God's law, nor can it do so."
+    },
+    {
+      "chapter": 8,
+      "verse": 8,
+      "zh": "而且属肉体的人不能得神的喜欢。",
+      "en": "Those who are in the realm of the flesh cannot please God."
+    },
+    {
+      "chapter": 8,
+      "verse": 9,
+      "zh": "如果神的灵住在你们心里，你们就不属肉体，乃属圣灵了。人若没有基督的灵，就不是属基督的。",
+      "en": "You, however, are not in the realm of the flesh but are in the realm of the Spirit, if indeed the Spirit of God lives in you. And if anyone does not have the Spirit of Christ, they do not belong to Christ."
+    },
+    {
+      "chapter": 8,
+      "verse": 10,
+      "zh": "基督若在你们心里，身体就因罪而死，心灵却因义而活。",
+      "en": "But if Christ is in you, then even though your body is subject to death because of sin, the Spirit gives life because of righteousness."
+    },
+    {
+      "chapter": 8,
+      "verse": 11,
+      "zh": "然而，叫耶稣从死里复活者的灵若住在你们心里，那叫基督耶稣从死里复活的，也必藉着住在你们心里的圣灵，使你们必死的身体又活过来。",
+      "en": "And if the Spirit of him who raised Jesus from the dead is living in you, he who raised Christ from the dead will also give life to your mortal bodies because of his Spirit who lives in you."
+    },
+    {
+      "chapter": 8,
+      "verse": 12,
+      "zh": "弟兄们，这样看来，我们并不是欠肉体的债去顺从肉体活着。",
+      "en": "Therefore, brothers and sisters, we have an obligation—but it is not to the flesh, to live according to it."
+    },
+    {
+      "chapter": 8,
+      "verse": 13,
+      "zh": "你们若顺从肉体活着，必要死；若靠着圣灵治死身体的恶行，必要活着。",
+      "en": "For if you live according to the flesh, you will die; but if by the Spirit you put to death the misdeeds of the body, you will live."
+    },
+    {
+      "chapter": 8,
+      "verse": 14,
+      "zh": "因为凡被神的灵引导的，都是神的儿子。",
+      "en": "For those who are led by the Spirit of God are the children of God."
+    },
+    {
+      "chapter": 8,
+      "verse": 15,
+      "zh": "你们所受的，不是奴仆的心，仍旧害怕；所受的，乃是儿子的心，因此我们呼叫：'阿爸！父！'",
+      "en": "The Spirit you received does not make you slaves, so that you live in fear again; rather, the Spirit you received brought about your adoption to sonship. And by him we cry, 'Abba, Father.'"
+    },
+    {
+      "chapter": 8,
+      "verse": 16,
+      "zh": "圣灵与我们的心同证我们是神的儿女；",
+      "en": "The Spirit himself testifies with our spirit that we are God's children."
+    },
+    {
+      "chapter": 8,
+      "verse": 17,
+      "zh": "既是儿女，便是后嗣，就是神的后嗣，和基督同作后嗣。如果我们和他一同受苦，也必和他一同得荣耀。",
+      "en": "Now if we are children, then we are heirs—heirs of God and co-heirs with Christ, if indeed we share in his sufferings in order that we may also share in his glory."
+    },
+    {
+      "chapter": 8,
+      "verse": 18,
+      "zh": "我想，现在的苦楚若比起将来要显于我们的荣耀就不足介意了。",
+      "en": "I consider that our present sufferings are not worth comparing with the glory that will be revealed in us."
+    },
+    {
+      "chapter": 8,
+      "verse": 19,
+      "zh": "受造之物切望等候神的众子显出来。",
+      "en": "For the creation waits in eager expectation for the children of God to be revealed."
+    },
+    {
+      "chapter": 8,
+      "verse": 20,
+      "zh": "因为受造之物服在虚空之下，不是自己愿意，乃是因那叫他如此的。",
+      "en": "For the creation was subjected to frustration, not by its own choice, but by the will of the one who subjected it, in hope"
+    },
+    {
+      "chapter": 8,
+      "verse": 21,
+      "zh": "但受造之物仍然指望脱离败坏的辖制，得享（享：原文是入）神儿女自由的荣耀。",
+      "en": "that the creation itself will be liberated from its bondage to decay and brought into the freedom and glory of the children of God."
+    },
+    {
+      "chapter": 8,
+      "verse": 22,
+      "zh": "我们知道，一切受造之物一同叹息，劳苦，直到如今。",
+      "en": "We know that the whole creation has been groaning as in the pains of childbirth right up to the present time."
+    },
+    {
+      "chapter": 8,
+      "verse": 23,
+      "zh": "不但如此，就是我们这有圣灵初结果子的，也是自己心里叹息，等候得着儿子的名分，乃是我们的身体得赎。",
+      "en": "Not only so, but we ourselves, who have the firstfruits of the Spirit, groan inwardly as we wait eagerly for our adoption to sonship, the redemption of our bodies."
+    },
+    {
+      "chapter": 8,
+      "verse": 24,
+      "zh": "我们得救是在乎盼望；只是所见的盼望不是盼望，谁还盼望他所见的呢（有古卷作：人所看见的何必再盼望呢）？",
+      "en": "For in this hope we were saved. But hope that is seen is no hope at all. Who hopes for what they already have?"
+    },
+    {
+      "chapter": 8,
+      "verse": 25,
+      "zh": "但我们若盼望那所不见的，就必忍耐等候。",
+      "en": "But if we hope for what we do not yet have, we wait for it patiently."
+    },
+    {
+      "chapter": 8,
+      "verse": 26,
+      "zh": "况且我们的软弱有圣灵帮助，我们本不晓得当怎样祷告，只是圣灵亲自用说不出来的叹息替我们祷告。",
+      "en": "In the same way, the Spirit helps us in our weakness. We do not know what we ought to pray for, but the Spirit himself intercedes for us through wordless groans."
+    },
+    {
+      "chapter": 8,
+      "verse": 27,
+      "zh": "鉴察人心的，晓得圣灵的意思，因为圣灵照着神的旨意替圣徒祈求。",
+      "en": "And he who searches our hearts knows the mind of the Spirit, because the Spirit intercedes for God's people in accordance with the will of God."
+    },
+    {
+      "chapter": 8,
+      "verse": 28,
+      "zh": "我们晓得万事都互相效力，叫爱神的人得益处，就是按他旨意被召的人。",
+      "en": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.",
+      "background": "安慰应许: 这是基督徒最喜爱的经文之一。'万事'包括好事坏事，'互相效力'原文意思是'一同工作'，如同交响乐团各乐器协调配合。神使用一切事情，包括苦难，成就对爱祂之人的益处。"
+    },
+    {
+      "chapter": 8,
+      "verse": 29,
+      "zh": "因为他预先所知道的人，就预先定下效法他儿子的模样，使他儿子在许多弟兄中作长子。",
+      "en": "For those God foreknew he also predestined to be conformed to the image of his Son, that he might be the firstborn among many brothers and sisters."
+    },
+    {
+      "chapter": 8,
+      "verse": 30,
+      "zh": "预先所定下的人又召他们来；所召来的人又称他们为义；所称为义的人又叫他们得荣耀。",
+      "en": "And those he predestined, he also called; those he called, he also justified; those he justified, he also glorified."
+    },
+    {
+      "chapter": 8,
+      "verse": 31,
+      "zh": "既是这样，还有什么说的呢？神若帮助我们，谁能敌挡我们呢？",
+      "en": "What, then, shall we say in response to these things? If God is for us, who can be against us?"
+    },
+    {
+      "chapter": 8,
+      "verse": 32,
+      "zh": "神既不爱惜自己的儿子，为我们众人舍了，岂不也把万物和他一同白白地赐给我们吗？",
+      "en": "He who did not spare his own Son, but gave him up for us all—how will he not also, along with him, graciously give us all things?"
+    },
+    {
+      "chapter": 8,
+      "verse": 33,
+      "zh": "谁能控告神所拣选的人呢？有神称他们为义了（或译：是称他们为义的神吗）。",
+      "en": "Who will bring any charge against those whom God has chosen? It is God who justifies."
+    },
+    {
+      "chapter": 8,
+      "verse": 34,
+      "zh": "谁能定他们的罪呢？有基督耶稣已经死了，而且从死里复活，现今在神的右边，也替我们祈求（有基督....或译：是已经死了，而且从死里复活，现今在神的右边，也替我们祈求的基督耶稣吗）。",
+      "en": "Who then is the one who condemns? No one. Christ Jesus who died—more than that, who was raised to life—is at the right hand of God and is also interceding for us."
+    },
+    {
+      "chapter": 8,
+      "verse": 35,
+      "zh": "谁能使我们与基督的爱隔绝呢？难道是患难吗？是困苦吗？是逼迫吗？是饥饿吗？是赤身露体吗？是危险吗？是刀剑吗？",
+      "en": "Who shall separate us from the love of Christ? Shall trouble or hardship or persecution or famine or nakedness or danger or sword?"
+    },
+    {
+      "chapter": 8,
+      "verse": 36,
+      "zh": "如经上所记：我们为你的缘故终日被杀；人看我们如将宰的羊。",
+      "en": "As it is written: 'For your sake we face death all day long; we are considered as sheep to be slaughtered.'"
+    },
+    {
+      "chapter": 8,
+      "verse": 37,
+      "zh": "然而，靠着爱我们的主，在这一切的事上已经得胜有余了。",
+      "en": "No, in all these things we are more than conquerors through him who loved us."
+    },
+    {
+      "chapter": 8,
+      "verse": 38,
+      "zh": "因为我深信无论是死，是生，是天使，是掌权的，是有能的，是现在的事，是将来的事，",
+      "en": "For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers,"
+    },
+    {
+      "chapter": 8,
+      "verse": 39,
+      "zh": "是高处的，是低处的，是别的受造之物，都不能叫我们与神的爱隔绝；这爱是在我们的主基督耶稣里的。",
+      "en": "neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord."
+    },
+    {
+      "chapter": 9,
+      "verse": 1,
+      "zh": "我在基督里说真话，并不谎言，有我良心被圣灵感动，给我作见证：",
+      "en": "I speak the truth in Christ—I am not lying, my conscience confirms it through the Holy Spirit—"
+    },
+    {
+      "chapter": 9,
+      "verse": 2,
+      "zh": "我是大有忧愁，心里时常伤痛；",
+      "en": "I have great sorrow and unceasing anguish in my heart."
+    },
+    {
+      "chapter": 9,
+      "verse": 3,
+      "zh": "为我弟兄，我骨肉之亲，就是自己被咒诅，与基督分离，我也愿意。",
+      "en": "For I could wish that I myself were cursed and cut off from Christ for the sake of my people, those of my own race,"
+    },
+    {
+      "chapter": 9,
+      "verse": 4,
+      "zh": "他们是以色列人；那儿子的名分、荣耀、诸约、律法、礼仪、应许都是他们的。",
+      "en": "the people of Israel. Theirs is the adoption to sonship; theirs the divine glory, the covenants, the receiving of the law, the temple worship and the promises."
+    },
+    {
+      "chapter": 9,
+      "verse": 5,
+      "zh": "列祖就是他们的祖宗；按肉体说，基督也是从他们出来的。他是在万有之上，永远可称颂的神。阿们！",
+      "en": "Theirs are the patriarchs, and from them is traced the human ancestry of the Messiah, who is God over all, forever praised! Amen."
+    },
+    {
+      "chapter": 9,
+      "verse": 6,
+      "zh": "这不是说神的话落了空。因为从以色列生的不都是以色列人，",
+      "en": "It is not as though God's word had failed. For not all who are descended from Israel are Israel."
+    },
+    {
+      "chapter": 9,
+      "verse": 7,
+      "zh": "也不因为是亚伯拉罕的后裔就都作他的儿女；惟独'从以撒生的才要称为你的后裔。'",
+      "en": "Nor because they are his descendants are they all Abraham's children. On the contrary, 'It is through Isaac that your offspring will be reckoned.'"
+    },
+    {
+      "chapter": 9,
+      "verse": 8,
+      "zh": "这就是说，肉身所生的儿女不是神的儿女，惟独那应许的儿女才算是后裔。",
+      "en": "In other words, it is not the children by physical descent who are God's children, but it is the children of the promise who are regarded as Abraham's offspring."
+    },
+    {
+      "chapter": 9,
+      "verse": 16,
+      "zh": "据此看来，这不在乎那定意的，也不在乎那奔跑的，只在乎发怜悯的神。",
+      "en": "It does not, therefore, depend on human desire or effort, but on God's mercy."
+    },
+    {
+      "chapter": 9,
+      "verse": 20,
+      "zh": "你这个人哪，你是谁，竟敢向神强嘴呢？受造之物岂能对造他的说：'你为什么这样造我呢？'",
+      "en": "But who are you, a human being, to talk back to God? 'Shall what is formed say to the one who formed it, \\\"Why did you make me like this?\\\"'"
+    },
+    {
+      "chapter": 9,
+      "verse": 21,
+      "zh": "窑匠难道没有权柄从一团泥里拿一块做成贵重的器皿，又拿一块做成卑贱的器皿吗？",
+      "en": "Does not the potter have the right to make out of the same lump of clay some pottery for special purposes and some for common use?"
+    },
+    {
+      "chapter": 10,
+      "verse": 1,
+      "zh": "弟兄们，我心里所愿的，向神所求的，是要以色列人得救。",
+      "en": "Brothers and sisters, my heart's desire and prayer to God for the Israelites is that they may be saved."
+    },
+    {
+      "chapter": 10,
+      "verse": 2,
+      "zh": "我可以证明，他们向神有热心，但不是按着真知识；",
+      "en": "For I can testify about them that they are zealous for God, but their zeal is not based on knowledge."
+    },
+    {
+      "chapter": 10,
+      "verse": 3,
+      "zh": "因为不知道神的义，想要立自己的义，就不服神的义了。",
+      "en": "Since they did not know the righteousness of God and sought to establish their own, they did not submit to God's righteousness."
+    },
+    {
+      "chapter": 10,
+      "verse": 4,
+      "zh": "律法的总结就是基督，使凡信他的都得着义。",
+      "en": "Christ is the culmination of the law so that there may be righteousness for everyone who believes."
+    },
+    {
+      "chapter": 10,
+      "verse": 9,
+      "zh": "你若口里认耶稣为主，心里信神叫他从死里复活，就必得救。",
+      "en": "If you declare with your mouth, 'Jesus is Lord,' and believe in your heart that God raised him from the dead, you will be saved."
+    },
+    {
+      "chapter": 10,
+      "verse": 10,
+      "zh": "因为，人心里相信就可以称义，口里承认就可以得救。",
+      "en": "For it is with your heart that you believe and are justified, and it is with your mouth that you profess your faith and are saved."
+    },
+    {
+      "chapter": 10,
+      "verse": 13,
+      "zh": "因为'凡求告主名的就必得救'。",
+      "en": "for, 'Everyone who calls on the name of the Lord will be saved.'"
+    },
+    {
+      "chapter": 10,
+      "verse": 14,
+      "zh": "然而，人未曾信他，怎能求他呢？未曾听见他，怎能信他呢？没有传道的，怎能听见呢？",
+      "en": "How, then, can they call on the one they have not believed in? And how can they believe in the one of whom they have not heard? And how can they hear without someone preaching to them?"
+    },
+    {
+      "chapter": 10,
+      "verse": 15,
+      "zh": "若没有奉差遣，怎能传道呢？如经上所记：'报福音、传喜信的人，他们的脚踪何等佳美！'",
+      "en": "And how can anyone preach unless they are sent? As it is written: 'How beautiful are the feet of those who bring good news!'"
+    },
+    {
+      "chapter": 11,
+      "verse": 1,
+      "zh": "我且说，神弃绝了他的百姓吗？断乎没有！因为我也是以色列人，亚伯拉罕的后裔，属便雅悯支派的。",
+      "en": "I ask then: Did God reject his people? By no means! I am an Israelite myself, a descendant of Abraham, from the tribe of Benjamin."
+    },
+    {
+      "chapter": 11,
+      "verse": 5,
+      "zh": "如今也是这样，照着拣选的恩典，还有所留的余数。",
+      "en": "So too, at the present time there is a remnant chosen by grace."
+    },
+    {
+      "chapter": 11,
+      "verse": 17,
+      "zh": "若有几根枝子被折下来，你这野橄榄得接在其中，一同得着橄榄根的肥汁，",
+      "en": "If some of the branches have been broken off, and you, though a wild olive shoot, have been grafted in among the others and now share in the nourishing sap from the olive root,"
+    },
+    {
+      "chapter": 11,
+      "verse": 18,
+      "zh": "你就不可向旧枝子夸口；若是夸口，当知道不是你托着根，乃是根托着你。",
+      "en": "do not consider yourself to be superior to those other branches. If you do, consider this: You do not support the root, but the root supports you."
+    },
+    {
+      "chapter": 11,
+      "verse": 25,
+      "zh": "弟兄们，我不愿意你们不知道这奥秘（恐怕你们自以为聪明），就是以色列人有几分是硬心的，等到外邦人的数目添满了，",
+      "en": "I do not want you to be ignorant of this mystery, brothers and sisters, so that you may not be conceited: Israel has experienced a hardening in part until the full number of the Gentiles has come in,"
+    },
+    {
+      "chapter": 11,
+      "verse": 26,
+      "zh": "于是以色列全家都要得救。如经上所记：必有一位救主从锡安出来，要消除雅各家的一切罪恶；",
+      "en": "and in this way all Israel will be saved. As it is written: 'The deliverer will come from Zion; he will turn godlessness away from Jacob.'"
+    },
+    {
+      "chapter": 11,
+      "verse": 33,
+      "zh": "深哉，神丰富的智慧和知识！他的判断何其难测！他的踪迹何其难寻！",
+      "en": "Oh, the depth of the riches of the wisdom and knowledge of God! How unsearchable his judgments, and his paths beyond tracing out!"
+    },
+    {
+      "chapter": 11,
+      "verse": 34,
+      "zh": "'谁知道主的心？谁作过他的谋士呢？'",
+      "en": "'Who has known the mind of the Lord? Or who has been his counselor?'"
+    },
+    {
+      "chapter": 11,
+      "verse": 35,
+      "zh": "'谁是先给了他，使他后来偿还呢？'",
+      "en": "'Who has ever given to God, that God should repay them?'"
+    },
+    {
+      "chapter": 11,
+      "verse": 36,
+      "zh": "因为万有都是本于他，倚靠他，归于他。愿荣耀归给他，直到永远。阿们！",
+      "en": "For from him and through him and for him are all things. To him be the glory forever! Amen."
+    },
+    {
+      "chapter": 12,
+      "verse": 1,
+      "zh": "所以弟兄们，我以神的慈悲劝你们，将身体献上，当作活祭，是圣洁的，是神所喜悦的；你们如此事奉乃是理所当然的。",
+      "en": "Therefore, I urge you, brothers and sisters, in view of God's mercy, to offer your bodies as a living sacrifice, holy and pleasing to God—this is your true and proper worship.",
+      "background": "这是罗马书从教义转向实际生活的转折点。'活祭'与旧约死的祭物对比，强调基督徒要将整个生命献给神。"
+    },
+    {
+      "chapter": 12,
+      "verse": 2,
+      "zh": "不要效法这个世界，只要心意更新而变化，叫你们察验何为神的善良、纯全、可喜悦的旨意。",
+      "en": "Do not conform to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God's will is—his good, pleasing and perfect will.",
+      "background": "基督徒应该与世界有所分别，通过心意的更新来明白神的旨意。"
+    },
+    {
+      "chapter": 12,
+      "verse": 3,
+      "zh": "我凭着所赐我的恩对你们各人说：不要看自己过于所当看的，要照着神所分给各人信心的大小，看得合乎中道。",
+      "en": "For by the grace given me I say to every one of you: Do not think of yourself more than you ought, but rather think of yourself with sober judgment, in accordance with the faith God has distributed to each of you."
+    },
+    {
+      "chapter": 12,
+      "verse": 4,
+      "zh": "正如我们一个身子上有好些肢体，肢体也不都是一样的用处。",
+      "en": "For just as each of us has one body with many members, and these members do not all have the same function,"
+    },
+    {
+      "chapter": 12,
+      "verse": 5,
+      "zh": "我们这许多人，在基督里成为一身，互相联络作肢体，也是如此。",
+      "en": "so in Christ we, though many, form one body, and each member belongs to all the others."
+    },
+    {
+      "chapter": 12,
+      "verse": 6,
+      "zh": "按我们所得的恩赐，各有不同。或说预言，就当照着信心的程度说预言，",
+      "en": "We have different gifts, according to the grace given to each of us. If your gift is prophesying, then prophesy in accordance with your faith;"
+    },
+    {
+      "chapter": 12,
+      "verse": 7,
+      "zh": "或作执事，就当专一执事；或作教导的，就当专一教导；",
+      "en": "if it is serving, then serve; if it is teaching, then teach;"
+    },
+    {
+      "chapter": 12,
+      "verse": 8,
+      "zh": "或作劝化的，就当专一劝化；施舍的，就当诚实；治理的，就当殷勤；怜悯人的，就当甘心。",
+      "en": "if it is to encourage, then give encouragement; if it is giving, then give generously; if it is to lead, do it diligently; if it is to show mercy, do it cheerfully."
+    },
+    {
+      "chapter": 12,
+      "verse": 9,
+      "zh": "爱人不可虚假；恶要厌恶，善要亲近。",
+      "en": "Love must be sincere. Hate what is evil; cling to what is good."
+    },
+    {
+      "chapter": 12,
+      "verse": 10,
+      "zh": "爱弟兄，要彼此亲热；恭敬人，要彼此推让。",
+      "en": "Be devoted to one another in love. Honor one another above yourselves."
+    },
+    {
+      "chapter": 12,
+      "verse": 11,
+      "zh": "殷勤，不可懒惰；要心里火热，常常服事主。",
+      "en": "Never be lacking in zeal, but keep your spiritual fervor, serving the Lord."
+    },
+    {
+      "chapter": 12,
+      "verse": 12,
+      "zh": "在指望中要喜乐，在患难中要忍耐，祷告要恒切。",
+      "en": "Be joyful in hope, patient in affliction, faithful in prayer."
+    },
+    {
+      "chapter": 12,
+      "verse": 13,
+      "zh": "圣徒缺乏，要帮补；客，要一味地款待。",
+      "en": "Share with the Lord's people who are in need. Practice hospitality."
+    },
+    {
+      "chapter": 12,
+      "verse": 14,
+      "zh": "逼迫你们的，要给他们祝福；只要祝福，不可咒诅。",
+      "en": "Bless those who persecute you; bless and do not curse."
+    },
+    {
+      "chapter": 12,
+      "verse": 15,
+      "zh": "与喜乐的人要同乐；与哀哭的人要同哭。",
+      "en": "Rejoice with those who rejoice; mourn with those who mourn."
+    },
+    {
+      "chapter": 12,
+      "verse": 16,
+      "zh": "要彼此同心；不要志气高大，倒要俯就卑微的人（人：或译事）；不要自以为聪明。",
+      "en": "Live in harmony with one another. Do not be proud, but be willing to associate with people of low position. Do not be conceited."
+    },
+    {
+      "chapter": 12,
+      "verse": 17,
+      "zh": "不要以恶报恶；众人以为美的事要留心去做。",
+      "en": "Do not repay anyone evil for evil. Be careful to do what is right in the eyes of everyone."
+    },
+    {
+      "chapter": 12,
+      "verse": 18,
+      "zh": "若是能行，总要尽力与众人和睦。",
+      "en": "If it is possible, as far as it depends on you, live at peace with everyone."
+    },
+    {
+      "chapter": 12,
+      "verse": 19,
+      "zh": "亲爱的弟兄，不要自己伸冤，宁可让步，听凭主怒；因为经上记着：'主说：伸冤在我，我必报应。'",
+      "en": "Do not take revenge, my dear friends, but leave room for God's wrath, for it is written: 'It is mine to avenge; I will repay,' says the Lord."
+    },
+    {
+      "chapter": 12,
+      "verse": 20,
+      "zh": "所以，'你的仇敌若饿了，就给他吃，若渴了，就给他喝；因为你这样行就是把炭火堆在他的头上。'",
+      "en": "On the contrary: 'If your enemy is hungry, feed him; if he is thirsty, give him something to drink. In doing this, you will heap burning coals on his head.'"
+    },
+    {
+      "chapter": 12,
+      "verse": 21,
+      "zh": "你不可为恶所胜，反要以善胜恶。",
+      "en": "Do not be overcome by evil, but overcome evil with good."
+    },
+    {
+      "chapter": 13,
+      "verse": 1,
+      "zh": "在上有权柄的，人人当顺服他，因为没有权柄不是出于神的。凡掌权的都是神所命的。",
+      "en": "Let everyone be subject to the governing authorities, for there is no authority except that which God has established. The authorities that exist have been established by God."
+    },
+    {
+      "chapter": 13,
+      "verse": 2,
+      "zh": "所以，抗拒掌权的就是抗拒神的命；抗拒的必自取刑罚。",
+      "en": "Consequently, whoever rebels against the authority is rebelling against what God has instituted, and those who do so will bring judgment on themselves."
+    },
+    {
+      "chapter": 13,
+      "verse": 3,
+      "zh": "作官的原不是叫行善的惧怕，乃是叫作恶的惧怕。你愿意不惧怕掌权的吗？你只要行善，就可得他的称赞；",
+      "en": "For the one in authority is God's servant for your good. But if you do wrong, be afraid, for rulers do not bear the sword for no reason. They are God's servants, agents of wrath to bring punishment on the wrongdoer."
+    },
+    {
+      "chapter": 13,
+      "verse": 4,
+      "zh": "因为他是神的用人，是与你有益的。你若作恶，却当惧怕；因为他不是空空地佩剑，他是神的用人，是伸冤的，刑罚那作恶的。",
+      "en": "Therefore, it is necessary to submit to the authorities, not only because of possible punishment but also as a matter of conscience."
+    },
+    {
+      "chapter": 13,
+      "verse": 5,
+      "zh": "所以，你们必须顺服，不但是因为刑罚，也是因为良心。",
+      "en": "This is also why you pay taxes, for the authorities are God's servants, who give their full time to governing."
+    },
+    {
+      "chapter": 13,
+      "verse": 6,
+      "zh": "你们纳粮，也为这个缘故；因他们是神的差役，常常特管这事。",
+      "en": "Give to everyone what you owe them: If you owe taxes, pay taxes; if revenue, then revenue; if respect, then respect; if honor, then honor."
+    },
+    {
+      "chapter": 13,
+      "verse": 7,
+      "zh": "凡人所当得的，就给他。当得粮的，给他纳粮；当得税的，给他上税；当惧怕的，惧怕他；当恭敬的，恭敬他。",
+      "en": "Let no debt remain outstanding, except the continuing debt to love one another, for whoever loves others has fulfilled the law."
+    },
+    {
+      "chapter": 13,
+      "verse": 8,
+      "zh": "凡事都不可亏欠人，惟有彼此相爱要常以为亏欠，因为爱人的就完全了律法。",
+      "en": "The commandments, 'You shall not commit adultery,' 'You shall not murder,' 'You shall not steal,' 'You shall not covet,' and whatever other command there may be, are summed up in this one command: 'Love your neighbor as yourself.'"
+    },
+    {
+      "chapter": 13,
+      "verse": 9,
+      "zh": "像那不可奸淫，不可杀人，不可偷盗，不可贪婪，或有别的诫命，都包在爱人如己这一句话之内了。",
+      "en": "Love does no harm to a neighbor. Therefore love is the fulfillment of the law."
+    },
+    {
+      "chapter": 13,
+      "verse": 10,
+      "zh": "爱是不加害与人的，所以爱就完全了律法。",
+      "en": "And do this, understanding the present time: The hour has already come for you to wake up from your slumber, because our salvation is nearer now than when we first believed."
+    },
+    {
+      "chapter": 13,
+      "verse": 11,
+      "zh": "再者，你们晓得现今就是该趁早睡醒的时候；因为我们得救，现今比初信的时候更近了。",
+      "en": "The night is nearly over; the day is almost here. So let us put aside the deeds of darkness and put on the armor of light."
+    },
+    {
+      "chapter": 13,
+      "verse": 12,
+      "zh": "黑夜已深，白昼将近；我们就当脱去暗昧的行为，带上光明的兵器。",
+      "en": "Let us behave decently, as in the daytime, not in carousing and drunkenness, not in sexual immorality and debauchery, not in dissension and jealousy."
+    },
+    {
+      "chapter": 13,
+      "verse": 13,
+      "zh": "行事为人要端正，好像行在白昼。不可荒宴醉酒，不可好色邪荡，不可争竞嫉妒；",
+      "en": "Rather, clothe yourselves with the Lord Jesus Christ, and do not think about how to gratify the desires of the flesh."
+    },
+    {
+      "chapter": 13,
+      "verse": 14,
+      "zh": "总要披戴主耶稣基督，不要为肉体安排，去放纵私欲。",
+      "en": "Accept the one whose faith is weak, without quarreling over disputable matters."
+    },
+    {
+      "chapter": 14,
+      "verse": 1,
+      "zh": "信心软弱的，你们要接纳，但不要辩论所疑惑的事。",
+      "en": "Accept the one whose faith is weak, without quarreling over disputable matters."
+    },
+    {
+      "chapter": 14,
+      "verse": 2,
+      "zh": "有人信百物都可吃；但那软弱的，只吃蔬菜。",
+      "en": "One person's faith allows them to eat anything, but another, whose faith is weak, eats only vegetables."
+    },
+    {
+      "chapter": 14,
+      "verse": 3,
+      "zh": "吃的人不可轻看不吃的人；不吃的人不可论断吃的人；因为神已经收纳他了。",
+      "en": "The one who eats everything must not treat with contempt the one who does not, and the one who does not eat everything must not judge the one who does, for God has accepted them."
+    },
+    {
+      "chapter": 14,
+      "verse": 4,
+      "zh": "你是谁，竟论断别人的仆人呢？他或站住，或跌倒，自有他的主人在；而且他也必要站住，因为主能使他站住。",
+      "en": "Who are you to judge someone else's servant? To their own master, servants stand or fall. And they will stand, for the Lord is able to make them stand."
+    },
+    {
+      "chapter": 14,
+      "verse": 5,
+      "zh": "有人看这日比那日强；有人看日日都是一样。只是各人心里要意见坚定。",
+      "en": "One person considers one day more sacred than another; another considers every day alike. Each of them should be fully convinced in their own mind."
+    },
+    {
+      "chapter": 14,
+      "verse": 10,
+      "zh": "你这个人，为什么论断弟兄呢？又为什么轻看弟兄呢？因我们都要站在神的台前。",
+      "en": "You, then, why do you judge your brother or sister? Or why do you treat them with contempt? For we will all stand before God's judgment seat."
+    },
+    {
+      "chapter": 14,
+      "verse": 11,
+      "zh": "经上写着：主说：'我凭着我的永生起誓：万膝必向我跪拜；万口必向我承认。'",
+      "en": "It is written: 'As surely as I live,' says the Lord, 'every knee will bow before me; every tongue will acknowledge God.'"
+    },
+    {
+      "chapter": 14,
+      "verse": 12,
+      "zh": "这样看来，我们各人必要将自己的事在神面前说明。",
+      "en": "So then, each of us will give an account of ourselves to God."
+    },
+    {
+      "chapter": 14,
+      "verse": 13,
+      "zh": "所以，我们不可再彼此论断，宁可定意谁也不给弟兄放下绊脚跌人之物。",
+      "en": "Therefore let us stop passing judgment on one another. Instead, make up your mind not to put any stumbling block or obstacle in the way of a brother or sister."
+    },
+    {
+      "chapter": 14,
+      "verse": 17,
+      "zh": "因为神的国不在乎吃喝，只在乎公义、和平，并圣灵中的喜乐。",
+      "en": "For the kingdom of God is not a matter of eating and drinking, but of righteousness, peace and joy in the Holy Spirit,"
+    },
+    {
+      "chapter": 14,
+      "verse": 19,
+      "zh": "所以，我们务要追求和睦的事与彼此建立德行的事。",
+      "en": "Let us therefore make every effort to do what leads to peace and to mutual edification."
+    },
+    {
+      "chapter": 14,
+      "verse": 23,
+      "zh": "若有疑心而吃的，就必有罪，因为他吃，不是出于信心。凡不出于信心的都是罪。",
+      "en": "But whoever has doubts is condemned if they eat, because their eating is not from faith; and everything that does not come from faith is sin."
+    },
+    {
+      "chapter": 15,
+      "verse": 1,
+      "zh": "我们坚固的人应该担代不坚固人的软弱，不求自己的喜悦。",
+      "en": "We who are strong ought to bear with the failings of the weak and not to please ourselves."
+    },
+    {
+      "chapter": 15,
+      "verse": 2,
+      "zh": "我们各人务要叫邻舍喜悦，使他得益处，建立德行。",
+      "en": "Each of us should please our neighbors for their good, to build them up."
+    },
+    {
+      "chapter": 15,
+      "verse": 3,
+      "zh": "因为基督也不求自己的喜悦，如经上所记：'辱骂你人的辱骂都落在我身上。'",
+      "en": "For even Christ did not please himself but, as it is written: 'The insults of those who insult you have fallen on me.'"
+    },
+    {
+      "chapter": 15,
+      "verse": 4,
+      "zh": "从前所写的圣经都是为教训我们写的，叫我们因圣经所生的忍耐和安慰可以得着盼望。",
+      "en": "For everything that was written in the past was written to teach us, so that through the endurance taught in the Scriptures and the encouragement they provide we might have hope."
+    },
+    {
+      "chapter": 15,
+      "verse": 5,
+      "zh": "但愿赐忍耐安慰的神叫你们彼此同心，效法基督耶稣，",
+      "en": "May the God who gives endurance and encouragement give you the same attitude of mind toward each other that Christ Jesus had,"
+    },
+    {
+      "chapter": 15,
+      "verse": 6,
+      "zh": "一心一口荣耀神—我们主耶稣基督的父！",
+      "en": "so that with one mind and one voice you may glorify the God and Father of our Lord Jesus Christ."
+    },
+    {
+      "chapter": 15,
+      "verse": 7,
+      "zh": "所以，你们要彼此接纳，如同基督接纳你们一样，使荣耀归与神。",
+      "en": "Accept one another, then, just as Christ accepted you, in order to bring praise to God."
+    },
+    {
+      "chapter": 15,
+      "verse": 13,
+      "zh": "但愿使人有盼望的神，因信将诸般的喜乐、平安充满你们的心，使你们藉着圣灵的能力大有盼望！",
+      "en": "May the God of hope fill you with all joy and peace as you trust in him, so that you may overflow with hope by the power of the Holy Spirit."
+    },
+    {
+      "chapter": 15,
+      "verse": 14,
+      "zh": "弟兄们，我自己也深信你们是满有良善，充足了诸般的知识，也能彼此劝戒。",
+      "en": "I myself am convinced, my brothers and sisters, that you yourselves are full of goodness, filled with knowledge and competent to instruct one another."
+    },
+    {
+      "chapter": 15,
+      "verse": 20,
+      "zh": "我立了志向，不在基督的名被称过的地方传福音，免得建造在别人的根基上。",
+      "en": "It has always been my ambition to preach the gospel where Christ was not known, so that I would not be building on someone else's foundation."
+    },
+    {
+      "chapter": 15,
+      "verse": 30,
+      "zh": "弟兄们，我借着我们主耶稣基督，又借着圣灵的爱，劝你们与我一同竭力，为我祈求神，",
+      "en": "I urge you, brothers and sisters, by our Lord Jesus Christ and by the love of the Spirit, to join me in my struggle by praying to God for me."
+    },
+    {
+      "chapter": 16,
+      "verse": 1,
+      "zh": "我对你们举荐我们的姊妹非比；她是坚革哩教会中的女执事。",
+      "en": "I commend to you our sister Phoebe, a deacon of the church in Cenchreae."
+    },
+    {
+      "chapter": 16,
+      "verse": 2,
+      "zh": "请你们为主接待她，合乎圣徒的体统。她在何事上要你们帮助，你们就帮助她，因她素来帮助许多人，也帮助了我。",
+      "en": "I ask you to receive her in the Lord in a way worthy of his people and to give her any help she may need from you, for she has been the benefactor of many people, including me."
+    },
+    {
+      "chapter": 16,
+      "verse": 3,
+      "zh": "问百基拉和亚居拉安。他们在基督耶稣里与我同工，",
+      "en": "Greet Priscilla and Aquila, my co-workers in Christ Jesus."
+    },
+    {
+      "chapter": 16,
+      "verse": 4,
+      "zh": "也为我的命将自己的颈项置之度外。不但我感谢他们，就是外邦的众教会也感谢他们。",
+      "en": "They risked their lives for me. Not only I but all the churches of the Gentiles are grateful to them."
+    },
+    {
+      "chapter": 16,
+      "verse": 5,
+      "zh": "又问在他们家中的教会安。问我所亲爱的以拜尼土安；他在亚西亚是归基督初结的果子。",
+      "en": "Greet also the church that meets at their house. Greet my dear friend Epenetus, who was the first convert to Christ in the province of Asia."
+    },
+    {
+      "chapter": 16,
+      "verse": 16,
+      "zh": "你们亲嘴问安，彼此务要圣洁。基督的众教会都问你们安。",
+      "en": "Greet one another with a holy kiss. All the churches of Christ send greetings."
+    },
+    {
+      "chapter": 16,
+      "verse": 17,
+      "zh": "弟兄们，那些离间你们、叫你们跌倒、背乎所学之道的人，我劝你们要留意躲避他们。",
+      "en": "I urge you, brothers and sisters, to watch out for those who cause divisions and put obstacles in your way that are contrary to the teaching you have learned. Keep away from them."
+    },
+    {
+      "chapter": 16,
+      "verse": 18,
+      "zh": "因为这样的人不服事我们的主基督，只服事自己的肚腹，用花言巧语诱惑那些老实人的心。",
+      "en": "For such people are not serving our Lord Christ, but their own appetites. By smooth talk and flattery they deceive the minds of naive people."
+    },
+    {
+      "chapter": 16,
+      "verse": 19,
+      "zh": "你们的顺服已经传于众人，所以我为你们欢喜，但我愿意你们在善上聪明，在恶上愚拙。",
+      "en": "Everyone has heard about your obedience, so I rejoice because of you; but I want you to be wise about what is good, and innocent about what is evil."
+    },
+    {
+      "chapter": 16,
+      "verse": 20,
+      "zh": "赐平安的神快要将撒但践踏在你们脚下。愿我主耶稣基督的恩常和你们同在！",
+      "en": "The God of peace will soon crush Satan under your feet. The grace of our Lord Jesus be with you."
+    },
+    {
+      "chapter": 16,
+      "verse": 25,
+      "zh": "惟有神能照我所传的福音和所讲的耶稣基督，并照永古隐藏不言的奥秘，坚固你们的心。",
+      "en": "Now to him who is able to establish you in accordance with my gospel, the message I proclaim about Jesus Christ, in keeping with the revelation of the mystery hidden for long ages past,"
+    },
+    {
+      "chapter": 16,
+      "verse": 26,
+      "zh": "这奥秘如今显明出来，而且按着永生神的命，借众先知的书指示万国的民，使他们信服真道。",
+      "en": "but now revealed and made known through the prophetic writings by the command of the eternal God, so that all the Gentiles might come to the obedience that comes from faith—"
+    },
+    {
+      "chapter": 16,
+      "verse": 27,
+      "zh": "愿荣耀因耶稣基督归与独一全智的神，直到永远。阿们！",
+      "en": "to the only wise God be glory forever through Jesus Christ! Amen."
+    }
+  ],
+  "keyVerses": [
+    {
+      "chapter": 1,
+      "verse": 16
+    },
+    {
+      "chapter": 1,
+      "verse": 17
+    },
+    {
+      "chapter": 1,
+      "verse": 20
+    },
+    {
+      "chapter": 1,
+      "verse": 21
+    },
+    {
+      "chapter": 1,
+      "verse": 25
+    },
+    {
+      "chapter": 1,
+      "verse": 28
+    },
+    {
+      "chapter": 1,
+      "verse": 32
+    },
+    {
+      "chapter": 2,
+      "verse": 1
+    },
+    {
+      "chapter": 2,
+      "verse": 4
+    },
+    {
+      "chapter": 2,
+      "verse": 6
+    },
+    {
+      "chapter": 2,
+      "verse": 11
+    },
+    {
+      "chapter": 2,
+      "verse": 13
+    },
+    {
+      "chapter": 2,
+      "verse": 24
+    },
+    {
+      "chapter": 2,
+      "verse": 29
+    },
+    {
+      "chapter": 3,
+      "verse": 10
+    },
+    {
+      "chapter": 3,
+      "verse": 20
+    },
+    {
+      "chapter": 3,
+      "verse": 21
+    },
+    {
+      "chapter": 3,
+      "verse": 22
+    },
+    {
+      "chapter": 3,
+      "verse": 23
+    },
+    {
+      "chapter": 3,
+      "verse": 24
+    },
+    {
+      "chapter": 3,
+      "verse": 28
+    },
+    {
+      "chapter": 4,
+      "verse": 3
+    },
+    {
+      "chapter": 4,
+      "verse": 16
+    },
+    {
+      "chapter": 4,
+      "verse": 17
+    },
+    {
+      "chapter": 4,
+      "verse": 20
+    },
+    {
+      "chapter": 4,
+      "verse": 21
+    },
+    {
+      "chapter": 4,
+      "verse": 24
+    },
+    {
+      "chapter": 4,
+      "verse": 25
+    },
+    {
+      "chapter": 5,
+      "verse": 1
+    },
+    {
+      "chapter": 5,
+      "verse": 3
+    },
+    {
+      "chapter": 5,
+      "verse": 5
+    },
+    {
+      "chapter": 5,
+      "verse": 6
+    },
+    {
+      "chapter": 5,
+      "verse": 8
+    },
+    {
+      "chapter": 5,
+      "verse": 17
+    },
+    {
+      "chapter": 5,
+      "verse": 21
+    },
+    {
+      "chapter": 6,
+      "verse": 3
+    },
+    {
+      "chapter": 6,
+      "verse": 4
+    },
+    {
+      "chapter": 6,
+      "verse": 11
+    },
+    {
+      "chapter": 6,
+      "verse": 13
+    },
+    {
+      "chapter": 6,
+      "verse": 16
+    },
+    {
+      "chapter": 6,
+      "verse": 18
+    },
+    {
+      "chapter": 6,
+      "verse": 23
+    },
+    {
+      "chapter": 7,
+      "verse": 6
+    },
+    {
+      "chapter": 7,
+      "verse": 15
+    },
+    {
+      "chapter": 7,
+      "verse": 18
+    },
+    {
+      "chapter": 7,
+      "verse": 21
+    },
+    {
+      "chapter": 7,
+      "verse": 24
+    },
+    {
+      "chapter": 7,
+      "verse": 25
+    },
+    {
+      "chapter": 7,
+      "verse": 19
+    },
+    {
+      "chapter": 8,
+      "verse": 1
+    },
+    {
+      "chapter": 8,
+      "verse": 14
+    },
+    {
+      "chapter": 8,
+      "verse": 26
+    },
+    {
+      "chapter": 8,
+      "verse": 28
+    },
+    {
+      "chapter": 8,
+      "verse": 31
+    },
+    {
+      "chapter": 8,
+      "verse": 37
+    },
+    {
+      "chapter": 8,
+      "verse": 39
+    },
+    {
+      "chapter": 9,
+      "verse": 6
+    },
+    {
+      "chapter": 9,
+      "verse": 8
+    },
+    {
+      "chapter": 9,
+      "verse": 16
+    },
+    {
+      "chapter": 9,
+      "verse": 20
+    },
+    {
+      "chapter": 9,
+      "verse": 21
+    },
+    {
+      "chapter": 9,
+      "verse": 25
+    },
+    {
+      "chapter": 9,
+      "verse": 33
+    },
+    {
+      "chapter": 10,
+      "verse": 1
+    },
+    {
+      "chapter": 10,
+      "verse": 4
+    },
+    {
+      "chapter": 10,
+      "verse": 9
+    },
+    {
+      "chapter": 10,
+      "verse": 10
+    },
+    {
+      "chapter": 10,
+      "verse": 13
+    },
+    {
+      "chapter": 10,
+      "verse": 14
+    },
+    {
+      "chapter": 10,
+      "verse": 15
+    },
+    {
+      "chapter": 11,
+      "verse": 1
+    },
+    {
+      "chapter": 11,
+      "verse": 5
+    },
+    {
+      "chapter": 11,
+      "verse": 17
+    },
+    {
+      "chapter": 11,
+      "verse": 25
+    },
+    {
+      "chapter": 11,
+      "verse": 26
+    },
+    {
+      "chapter": 11,
+      "verse": 33
+    },
+    {
+      "chapter": 11,
+      "verse": 36
+    },
+    {
+      "chapter": 12,
+      "verse": 1
+    },
+    {
+      "chapter": 12,
+      "verse": 2
+    },
+    {
+      "chapter": 12,
+      "verse": 9
+    },
+    {
+      "chapter": 12,
+      "verse": 12
+    },
+    {
+      "chapter": 12,
+      "verse": 15
+    },
+    {
+      "chapter": 12,
+      "verse": 19
+    },
+    {
+      "chapter": 12,
+      "verse": 21
+    },
+    {
+      "chapter": 13,
+      "verse": 1
+    },
+    {
+      "chapter": 13,
+      "verse": 8
+    },
+    {
+      "chapter": 13,
+      "verse": 10
+    },
+    {
+      "chapter": 13,
+      "verse": 11
+    },
+    {
+      "chapter": 13,
+      "verse": 12
+    },
+    {
+      "chapter": 13,
+      "verse": 13
+    },
+    {
+      "chapter": 13,
+      "verse": 14
+    },
+    {
+      "chapter": 14,
+      "verse": 1
+    },
+    {
+      "chapter": 14,
+      "verse": 4
+    },
+    {
+      "chapter": 14,
+      "verse": 12
+    },
+    {
+      "chapter": 14,
+      "verse": 13
+    },
+    {
+      "chapter": 14,
+      "verse": 17
+    },
+    {
+      "chapter": 14,
+      "verse": 19
+    },
+    {
+      "chapter": 14,
+      "verse": 23
+    },
+    {
+      "chapter": 15,
+      "verse": 1
+    },
+    {
+      "chapter": 15,
+      "verse": 4
+    },
+    {
+      "chapter": 15,
+      "verse": 5
+    },
+    {
+      "chapter": 15,
+      "verse": 6
+    },
+    {
+      "chapter": 15,
+      "verse": 7
+    },
+    {
+      "chapter": 15,
+      "verse": 13
+    },
+    {
+      "chapter": 15,
+      "verse": 30
+    },
+    {
+      "chapter": 16,
+      "verse": 1
+    },
+    {
+      "chapter": 16,
+      "verse": 17
+    },
+    {
+      "chapter": 16,
+      "verse": 19
+    },
+    {
+      "chapter": 16,
+      "verse": 20
+    },
+    {
+      "chapter": 16,
+      "verse": 25
+    },
+    {
+      "chapter": 16,
+      "verse": 26
+    },
+    {
+      "chapter": 16,
+      "verse": 27
+    }
+  ]
+}

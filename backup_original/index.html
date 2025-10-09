@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圣经互动学习 | Bible Interactive Study</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .testament-section {
+            background: white;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .testament-title {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #444;
+        }
+        
+        .old-testament {
+            border-left: 5px solid #e67e22;
+        }
+        
+        .new-testament {
+            border-left: 5px solid #3498db;
+        }
+        
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+        
+        .book-category {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .book-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .category-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .book-item {
+            display: block;
+            padding: 12px 18px;
+            margin: 8px 0;
+            background: white;
+            color: #444;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .book-item:hover {
+            background: #667eea;
+            color: white;
+            transform: translateX(8px);
+            border-color: #667eea;
+        }
+        
+        .book-item.available {
+            border-left: 4px solid #27ae60;
+        }
+        
+        .book-item.coming-soon {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .book-item .status {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.9em;
+        }
+        
+        .available .status {
+            color: #27ae60;
+        }
+        
+        .coming-soon .status {
+            color: #e74c3c;
+        }
+        
+        .stats {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        
+        .stat-item {
+            padding: 15px;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95em;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.2em;
+            }
+            
+            .books-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>圣经互动学习</h1>
+        <p>Bible Interactive Study Platform</p>
+        <p>通过填空练习、进度跟踪深入学习神的话语</p>
+    </div>
+
+    <div class="container">
+        <div class="stats">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">66</span>
+                    <span class="stat-label">圣经书卷</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="available-count">2</span>
+                    <span class="stat-label">可学习书卷</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="total-verses">0</span>
+                    <span class="stat-label">经文总数</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="key-verses">0</span>
+                    <span class="stat-label">金句总数</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 新约圣经 -->
+        <div class="testament-section new-testament">
+            <h2 class="testament-title">新约圣经 New Testament</h2>
+            <div class="books-grid">
+                <div class="book-category">
+                    <div class="category-title">福音书</div>
+                    <a href="study.html?book=matthew" class="book-item available">
+                        马太福音<span class="status">✓ 可学习</span>
+                    </a>
+                    <a href="study.html?book=mark" class="book-item available">
+                        马可福音<span class="status">✓ 可学习</span>
+                    </a>
+                    <a href="study.html?book=luke" class="book-item available">
+                        路加福音<span class="status">✓ 可学习</span>
+                    </a>
+                    <a href="study.html?book=john" class="book-item available">
+                        约翰福音<span class="status">✓ 可学习</span>
+                    </a>
+                </div>
+
+                <div class="book-category">
+                    <div class="category-title">历史书</div>
+                    <a href="study.html?book=acts" class="book-item available">
+                        使徒行传<span class="status">✓ 可学习</span>
+                    </a>
+                </div>
+
+                <div class="book-category">
+                    <div class="category-title">保罗书信</div>
+                    <a href="study.html?book=romans" class="book-item available">
+                        罗马书<span class="status">✓ 可学习</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        哥林多前书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        哥林多后书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        加拉太书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="study.html?book=ephesians" class="book-item available">
+                        以弗所书<span class="status">✓ 可学习</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        腓立比书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        歌罗西书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        帖撒罗尼迦前书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        帖撒罗尼迦后书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        提摩太前书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        提摩太后书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        提多书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        腓利门书<span class="status">敬请期待</span>
+                    </a>
+                </div>
+
+                <div class="book-category">
+                    <div class="category-title">普通书信</div>
+                    <a href="#" class="book-item coming-soon">
+                        希伯来书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        雅各书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        彼得前书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        彼得后书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        约翰一书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        约翰二书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        约翰三书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        犹大书<span class="status">敬请期待</span>
+                    </a>
+                </div>
+
+                <div class="book-category">
+                    <div class="category-title">预言书</div>
+                    <a href="#" class="book-item coming-soon">
+                        启示录<span class="status">敬请期待</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 旧约圣经 -->
+        <div class="testament-section old-testament">
+            <h2 class="testament-title">旧约圣经 Old Testament</h2>
+            <div class="books-grid">
+                <div class="book-category">
+                    <div class="category-title">摩西五经</div>
+                    <a href="#" class="book-item coming-soon">
+                        创世记<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        出埃及记<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        利未记<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        民数记<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        申命记<span class="status">敬请期待</span>
+                    </a>
+                </div>
+
+                <div class="book-category">
+                    <div class="category-title">历史书</div>
+                    <a href="#" class="book-item coming-soon">
+                        约书亚记<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        士师记<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        路得记<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        撒母耳记上<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        撒母耳记下<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        列王纪上<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        列王纪下<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        历代志上<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        历代志下<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        以斯拉记<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        尼希米记<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        以斯帖记<span class="status">敬请期待</span>
+                    </a>
+                </div>
+
+                <div class="book-category">
+                    <div class="category-title">诗歌智慧书</div>
+                    <a href="#" class="book-item coming-soon">
+                        约伯记<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        诗篇<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        箴言<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        传道书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        雅歌<span class="status">敬请期待</span>
+                    </a>
+                </div>
+
+                <div class="book-category">
+                    <div class="category-title">大先知书</div>
+                    <a href="#" class="book-item coming-soon">
+                        以赛亚书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        耶利米书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        耶利米哀歌<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        以西结书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        但以理书<span class="status">敬请期待</span>
+                    </a>
+                </div>
+
+                <div class="book-category">
+                    <div class="category-title">小先知书</div>
+                    <a href="#" class="book-item coming-soon">
+                        何西阿书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        约珥书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        阿摩司书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        俄巴底亚书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        约拿书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        弥迦书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        那鸿书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        哈巴谷书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        西番雅书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        哈该书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        撒迦利亚书<span class="status">敬请期待</span>
+                    </a>
+                    <a href="#" class="book-item coming-soon">
+                        玛拉基书<span class="status">敬请期待</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 圣经互动学习平台 | 为了神的荣耀而建 | Bible Interactive Study Platform</p>
+        <p>技术栈：HTML5 + CSS3 + JavaScript + JSON API</p>
+    </div>
+
+    <script>
+        // 动态统计数据
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                // 加载配置文件
+                const response = await fetch('data/config.json');
+                const config = await response.json();
+                
+                // 更新统计数据
+                document.getElementById('available-count').textContent = config.availableBooks.length;
+                
+                let totalVerses = 0;
+                let totalKeyVerses = 0;
+                
+                for (const bookId of config.availableBooks) {
+                    try {
+                        const bookResponse = await fetch(`data/${bookId}.json`);
+                        const bookData = await bookResponse.json();
+                        totalVerses += bookData.verses.length;
+                        totalKeyVerses += bookData.keyVerses.length;
+                    } catch (e) {
+                        console.warn(`Could not load data for ${bookId}`);
+                    }
+                }
+                
+                document.getElementById('total-verses').textContent = totalVerses;
+                document.getElementById('key-verses').textContent = totalKeyVerses;
+            } catch (e) {
+                console.warn('Could not load statistics');
+            }
+        });
+    </script>
+</body>
+</html>

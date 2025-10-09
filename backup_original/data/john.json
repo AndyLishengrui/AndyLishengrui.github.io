@@ -1,0 +1,231 @@
+{
+  "name": "约翰福音",
+  "englishName": "john",
+  "color": "#85c1e9",
+  "description": "强调耶稣基督的神性和永生的真理，包含许多深刻的神学教导",
+  "chapters": 21,
+  "verses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "zh": "太初有道，道与神同在，道就是神。",
+      "en": "In the beginning was the Word, and the Word was with God, and the Word was God."
+    },
+    {
+      "chapter": 1,
+      "verse": 2,
+      "zh": "这道太初与神同在。",
+      "en": "He was with God in the beginning."
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "zh": "万物是藉着他造的；凡被造的，没有一样不是藉着他造的。",
+      "en": "Through him all things were made; without him nothing was made that has been made."
+    },
+    {
+      "chapter": 1,
+      "verse": 4,
+      "zh": "生命在他里头，这生命就是人的光。",
+      "en": "In him was life, and that life was the light of all mankind."
+    },
+    {
+      "chapter": 1,
+      "verse": 5,
+      "zh": "光照在黑暗里，黑暗却不接受光。",
+      "en": "The light shines in the darkness, and the darkness has not overcome it."
+    },
+    {
+      "chapter": 1,
+      "verse": 6,
+      "zh": "有一个人，是从神那里差来的，名叫约翰。",
+      "en": "There was a man sent from God whose name was John."
+    },
+    {
+      "chapter": 1,
+      "verse": 7,
+      "zh": "这人来，为要作见证，就是为光作见证，叫众人因他可以信。",
+      "en": "He came as a witness to testify concerning that light, so that through him all might believe."
+    },
+    {
+      "chapter": 1,
+      "verse": 8,
+      "zh": "他不是那光，乃是要为光作见证。",
+      "en": "He himself was not the light; he came only as a witness to the light."
+    },
+    {
+      "chapter": 1,
+      "verse": 9,
+      "zh": "那光是真光，照亮一切生在世上的人。",
+      "en": "The true light that gives light to everyone was coming into the world."
+    },
+    {
+      "chapter": 1,
+      "verse": 10,
+      "zh": "他在世界，世界也是藉着他造的，世界却不认识他。",
+      "en": "He was in the world, and though the world was made through him, the world did not recognize him."
+    },
+    {
+      "chapter": 1,
+      "verse": 11,
+      "zh": "他到自己的地方来，自己的人倒不接待他。",
+      "en": "He came to that which was his own, but his own did not receive him."
+    },
+    {
+      "chapter": 1,
+      "verse": 12,
+      "zh": "凡接待他的，就是信他名的人，他就赐他们权柄作神的儿女。",
+      "en": "Yet to all who did receive him, to those who believed in his name, he gave the right to become children of God."
+    },
+    {
+      "chapter": 1,
+      "verse": 13,
+      "zh": "这等人不是从血气生的，不是从情欲生的，也不是从人意生的，乃是从神生的。",
+      "en": "children born not of natural descent, nor of human decision or a husband's will, but born of God."
+    },
+    {
+      "chapter": 1,
+      "verse": 14,
+      "zh": "道成了肉身，住在我们中间，充充满满地有恩典，有真理。我们也见过他的荣光，正是父独生子的荣光。",
+      "en": "The Word became flesh and made his dwelling among us. We have seen his glory, the glory of the one and only Son, who came from the Father, full of grace and truth."
+    },
+    {
+      "chapter": 3,
+      "verse": 3,
+      "zh": "耶稣回答说：我实实在在地告诉你：人若不重生，就不能见神的国。",
+      "en": "Jesus replied, Very truly I tell you, no one can see the kingdom of God unless they are born again."
+    },
+    {
+      "chapter": 3,
+      "verse": 16,
+      "zh": "神爱世人，甚至将他的独生子赐给他们，叫一切信他的，不至灭亡，反得永生。",
+      "en": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."
+    },
+    {
+      "chapter": 4,
+      "verse": 24,
+      "zh": "神是个灵，所以拜他的必须用心灵和诚实拜他。",
+      "en": "God is spirit, and his worshipers must worship in the Spirit and in truth."
+    },
+    {
+      "chapter": 5,
+      "verse": 24,
+      "zh": "我实实在在地告诉你们：那听我话、又信差我来者的，就有永生，不至于定罪，是已经出死入生了。",
+      "en": "Very truly I tell you, whoever hears my word and believes him who sent me has eternal life and will not be judged but has crossed over from death to life."
+    },
+    {
+      "chapter": 6,
+      "verse": 35,
+      "zh": "耶稣说：我就是生命的粮，到我这里来的，必定不饿；信我的，永远不渴。",
+      "en": "Then Jesus declared, I am the bread of life. Whoever comes to me will never go hungry, and whoever believes in me will never be thirsty."
+    },
+    {
+      "chapter": 8,
+      "verse": 12,
+      "zh": "耶稣又对众人说：我是世界的光，跟从我的，就不在黑暗里走，必要得着生命的光。",
+      "en": "When Jesus spoke again to the people, he said, I am the light of the world. Whoever follows me will never walk in darkness, but will have the light of life."
+    },
+    {
+      "chapter": 8,
+      "verse": 32,
+      "zh": "你们必晓得真理，真理必叫你们得以自由。",
+      "en": "Then you will know the truth, and the truth will set you free."
+    },
+    {
+      "chapter": 10,
+      "verse": 10,
+      "zh": "盗贼来，无非要偷窃、杀害、毁坏；我来了，是要叫羊得生命，并且得的更丰盛。",
+      "en": "The thief comes only to steal and kill and destroy; I have come that they may have life, and have it to the full."
+    },
+    {
+      "chapter": 10,
+      "verse": 11,
+      "zh": "我是好牧人，好牧人为羊舍命。",
+      "en": "I am the good shepherd. The good shepherd lays down his life for the sheep."
+    },
+    {
+      "chapter": 11,
+      "verse": 25,
+      "zh": "耶稣对她说：复活在我，生命也在我！信我的人，虽然死了，也必复活。",
+      "en": "Jesus said to her, I am the resurrection and the life. The one who believes in me will live, even though they die."
+    },
+    {
+      "chapter": 13,
+      "verse": 34,
+      "zh": "我赐给你们一条新命令，乃是叫你们彼此相爱；我怎样爱你们，你们也要怎样相爱。",
+      "en": "A new command I give you: Love one another. As I have loved you, so you must love one another."
+    },
+    {
+      "chapter": 14,
+      "verse": 6,
+      "zh": "耶稣说：我就是道路、真理、生命，若不藉着我，没有人能到父那里去。",
+      "en": "Jesus answered, I am the way and the truth and the life. No one comes to the Father except through me."
+    },
+    {
+      "chapter": 14,
+      "verse": 27,
+      "zh": "我留下平安给你们，我将我的平安赐给你们；我所赐的，不像世人所赐的，你们心里不要忧愁，也不要胆怯。",
+      "en": "Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid."
+    },
+    {
+      "chapter": 15,
+      "verse": 5,
+      "zh": "我是葡萄树，你们是枝子；常在我里面的，我也常在他里面，这人就多结果子，因为离了我，你们就不能做什么。",
+      "en": "I am the vine; you are the branches. If you remain in me and I in you, you will bear much fruit; apart from me you can do nothing."
+    },
+    {
+      "chapter": 16,
+      "verse": 33,
+      "zh": "我将这些事告诉你们，是要叫你们在我里面有平安。在世上你们有苦难，但你们可以放心，我已经胜了世界。",
+      "en": "I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world."
+    },
+    {
+      "chapter": 17,
+      "verse": 3,
+      "zh": "认识你独一的真神，并且认识你所差来的耶稣基督，这就是永生。",
+      "en": "Now this is eternal life: that they know you, the only true God, and Jesus Christ, whom you have sent."
+    },
+    {
+      "chapter": 19,
+      "verse": 30,
+      "zh": "耶稣尝了那醋，就说：成了！便低下头，将灵魂交付神了。",
+      "en": "When he had received the drink, Jesus said, It is finished. With that, he bowed his head and gave up his spirit."
+    },
+    {
+      "chapter": 20,
+      "verse": 21,
+      "zh": "耶稣又对他们说：愿你们平安！父怎样差遣了我，我也照样差遣你们。",
+      "en": "Again Jesus said, Peace be with you! As the Father has sent me, I am sending you."
+    },
+    {
+      "chapter": 20,
+      "verse": 31,
+      "zh": "但记这些事，要叫你们信耶稣是基督，是神的儿子，并且叫你们信了他，就可以因他的名得生命。",
+      "en": "But these are written that you may believe that Jesus is the Messiah, the Son of God, and that by believing you may have life in his name."
+    }
+  ],
+  "keyVerses": [
+    {"chapter": 1, "verse": 1},
+    {"chapter": 1, "verse": 12},
+    {"chapter": 1, "verse": 14},
+    {"chapter": 3, "verse": 3},
+    {"chapter": 3, "verse": 16},
+    {"chapter": 4, "verse": 24},
+    {"chapter": 5, "verse": 24},
+    {"chapter": 6, "verse": 35},
+    {"chapter": 8, "verse": 12},
+    {"chapter": 8, "verse": 32},
+    {"chapter": 10, "verse": 10},
+    {"chapter": 10, "verse": 11},
+    {"chapter": 11, "verse": 25},
+    {"chapter": 13, "verse": 34},
+    {"chapter": 14, "verse": 6},
+    {"chapter": 14, "verse": 27},
+    {"chapter": 15, "verse": 5},
+    {"chapter": 16, "verse": 33},
+    {"chapter": 17, "verse": 3},
+    {"chapter": 19, "verse": 30},
+    {"chapter": 20, "verse": 21},
+    {"chapter": 20, "verse": 31}
+  ]
+}

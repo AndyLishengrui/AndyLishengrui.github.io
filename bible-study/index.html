@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圣经学习助手 | Bible Study Helper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 30px 20px;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .main-features {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .feature-content {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+        
+        .feature-icon {
+            font-size: 2.5em;
+            margin-right: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            flex-shrink: 0;
+        }
+        
+        .feature-info h2 {
+            font-size: 1.5em;
+            margin: 0 0 5px 0;
+            color: #333;
+        }
+        
+        .feature-info .feature-description {
+            font-size: 0.9em;
+            color: #666;
+            margin: 0;
+            line-height: 1.4;
+        }
+        
+
+        
+        .action-button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 20px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+        
+        .action-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .testament-section {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .testament-section h2 {
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .books-container {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .book-category {
+            margin-bottom: 25px;
+        }
+        
+        .category-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .book-item {
+            display: block;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            color: #333;
+            text-decoration: none;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+            position: relative;
+        }
+        
+        .book-item.available {
+            border-left-color: #28a745;
+        }
+        
+        .book-item.available:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .book-item .status {
+            float: right;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        
+        .book-item.available .status {
+            color: #28a745;
+        }
+        
+        .book-item.available:hover .status {
+            color: white;
+        }
+        
+        .daily-verse {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .verse-text {
+            font-size: 1.2em;
+            font-style: italic;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        
+        .verse-reference {
+            font-weight: bold;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .feature-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+            
+            .feature-content {
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+            
+            .feature-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .action-button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><i class="fas fa-book-open"></i> 圣经学习助手</h1>
+        <p>通过互动学习深入理解神的话语</p>
+    </div>
+    
+    <div class="container">
+        <!-- 主要功能卡片 -->
+        <div class="main-features">
+            <!-- 经文小测卡片 -->
+            <div class="feature-card" onclick="startFillBlankPractice()">
+                <div class="feature-content">
+                    <div class="feature-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="feature-info">
+                        <h2>经文小测</h2>
+                        <p class="feature-description">通过填空练习加深对圣经经文的记忆，选择不同难度和章节进行针对性练习</p>
+                    </div>
+                </div>
+                <button class="action-button">
+                    <i class="fas fa-play"></i> 开始经文测试
+                </button>
+            </div>
+        </div>
+        
+        <!-- 今日金句 -->
+        <div class="daily-verse">
+            <div class="verse-text" id="dailyVerseText">
+                "在神凡事都能。"
+            </div>
+            <div class="verse-reference" id="dailyVerseRef">
+                路加福音 18:27
+            </div>
+        </div>
+
+        <!-- 书卷选择 -->
+        <div class="testament-section">
+            <h2><i class="fas fa-book-open"></i> 新约圣经 New Testament</h2>
+            <div id="bookGrid" class="books-container">
+                <!-- 书卷将通过JavaScript动态加载 -->
+            </div>
+        </div>
+
+        <!-- 旧约圣经部分 -->
+        <div class="testament-section" style="margin-top: 40px;">
+            <h2><i class="fas fa-scroll"></i> 旧约圣经 Old Testament</h2>
+            <div id="oldTestamentGrid" class="books-container">
+                <!-- 旧约书卷将通过JavaScript动态加载 -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 全局变量
+        let booksData = {};
+        let userProgress = JSON.parse(localStorage.getItem('userProgress')) || {
+            practices: 0,
+            accuracy: 0
+        };
+
+        // 初始化页面
+        document.addEventListener('DOMContentLoaded', function() {
+            loadBooksData();
+            setDailyVerse();
+        });
+
+        // 备用书卷数据
+        const fallbackBooksData = {
+            matthew: { chineseName: '马太福音', totalChapters: 28 },
+            mark: { chineseName: '马可福音', totalChapters: 16 },
+            luke: { chineseName: '路加福音', totalChapters: 24 },
+            john: { chineseName: '约翰福音', totalChapters: 21 },
+            acts: { chineseName: '使徒行传', totalChapters: 28 },
+            romans: { chineseName: '罗马书', totalChapters: 16 },
+            '1corinthians': { chineseName: '哥林多前书', totalChapters: 16 },
+            '2corinthians': { chineseName: '哥林多后书', totalChapters: 13 },
+            galatians: { chineseName: '加拉太书', totalChapters: 6 },
+            ephesians: { chineseName: '以弗所书', totalChapters: 6 }
+        };
+
+        // 加载书卷数据
+        async function loadBooksData() {
+            try {
+                console.log('开始加载配置文件...');
+                const configUrl = 'data/config.json';
+                console.log('配置文件路径:', configUrl);
+                
+                const response = await fetch(configUrl);
+                console.log('配置文件响应状态:', response.status);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP错误! 状态: ${response.status}`);
+                }
+                
+                const config = await response.json();
+                console.log('配置文件加载成功:', config);
+                
+                // 修复：config.books是对象，不是数组
+                for (let bookKey of config.availableBooks) {
+                    try {
+                        const bookUrl = `data/${bookKey}.json`;
+                        console.log(`加载书卷: ${bookKey}, 路径: ${bookUrl}`);
+                        
+                        const bookResponse = await fetch(bookUrl);
+                        if (!bookResponse.ok) {
+                            console.error(`无法加载 ${bookKey}.json, 状态: ${bookResponse.status}`);
+                            continue;
+                        }
+                        
+                        const bookData = await bookResponse.json();
+                        // 合并配置信息和书卷数据
+                        booksData[bookKey] = {
+                            ...bookData,
+                            ...config.books[bookKey]
+                        };
+                        console.log(`${bookKey} 加载成功`);
+                    } catch (error) {
+                        console.error(`加载 ${bookKey}.json 时出错:`, error);
+                    }
+                }
+                
+                console.log('所有书卷数据:', booksData);
+                displayBooks();
+                updateBookStats();
+            } catch (error) {
+                console.error('加载配置失败:', error);
+                console.log('使用备用书卷数据...');
+                
+                // 使用备用数据
+                booksData = { ...fallbackBooksData };
+                displayBooks();
+                updateBookStats();
+                
+                // 显示警告但不阻止使用
+                console.warn('正在使用备用数据，某些功能可能受限');
+            }
+        }
+
+        // 显示加载错误
+        function showLoadingError(error) {
+            const booksGrid = document.getElementById('booksGrid');
+            if (booksGrid) {
+                booksGrid.innerHTML = `
+                    <div style="
+                        text-align: center; 
+                        padding: 40px; 
+                        background: rgba(255,255,255,0.1); 
+                        border-radius: 15px; 
+                        color: white;
+                        grid-column: 1 / -1;
+                    ">
+                        <i class="fas fa-exclamation-triangle" style="font-size: 2em; margin-bottom: 15px; color: #f39c12;"></i>
+                        <h3>数据加载失败</h3>
+                        <p>无法加载圣经书卷数据，请检查网络连接或稍后重试。</p>
+                        <p style="font-size: 0.9em; opacity: 0.8; margin-top: 10px;">
+                            错误详情: ${error.message}
+                        </p>
+                        <button onclick="location.reload()" style="
+                            margin-top: 15px;
+                            padding: 10px 20px;
+                            background: #3498db;
+                            color: white;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        ">
+                            重新加载
+                        </button>
+                    </div>
+                `;
+            }
+        }
+
+        // 更新书卷统计
+        function updateBookStats() {
+            let totalVerses = 0;
+            Object.keys(booksData).forEach(bookKey => {
+                const book = booksData[bookKey];
+                if (book.verses) {
+                    totalVerses += book.verses.length;
+                }
+            });
+            
+            // 更新统计显示（这里可以根据实际需要调整）
+            console.log(`可学习书卷: ${Object.keys(booksData).length}, 经文总数: ${totalVerses}`);
+        }
+
+        // 显示书卷
+        function displayBooks() {
+            const bookGrid = document.getElementById('bookGrid');
+            const oldTestamentGrid = document.getElementById('oldTestamentGrid');
+            bookGrid.innerHTML = '';
+            oldTestamentGrid.innerHTML = '';
+            
+            // 按类别组织书卷 - 新约
+            const ntCategories = {
+                'gospels': {title: '福音书', books: []},
+                'historical_nt': {title: '历史书', books: []}, 
+                'pauline_epistles': {title: '保罗书信', books: []},
+                'general_epistles': {title: '普通书信', books: []},
+                'prophecy_nt': {title: '预言书', books: []}
+            };
+            
+            // 按类别组织书卷 - 旧约
+            const otCategories = {
+                'law': {title: '律法书', books: []},
+                'historical_ot': {title: '历史书', books: []},
+                'wisdom': {title: '智慧书', books: []},
+                'major_prophets': {title: '大先知书', books: []},
+                'minor_prophets': {title: '小先知书', books: []}
+            };
+            
+            // 分类书卷
+            Object.keys(booksData).forEach(bookKey => {
+                const book = booksData[bookKey];
+                const category = book.category || 'gospels';
+                const testament = book.testament || 'new';
+                
+                if (testament === 'new' && ntCategories[category]) {
+                    ntCategories[category].books.push({key: bookKey, ...book});
+                } else if (testament === 'old' && otCategories[category]) {
+                    otCategories[category].books.push({key: bookKey, ...book});
+                }
+            });
+            
+            // 显示新约每个类别
+            Object.keys(ntCategories).forEach(categoryKey => {
+                const category = ntCategories[categoryKey];
+                if (category.books.length > 0) {
+                    const categoryDiv = document.createElement('div');
+                    categoryDiv.className = 'book-category';
+                    
+                    const titleDiv = document.createElement('div');
+                    titleDiv.className = 'category-title';
+                    titleDiv.textContent = category.title;
+                    categoryDiv.appendChild(titleDiv);
+                    
+                    category.books.forEach(book => {
+                        const bookLink = document.createElement('a');
+                        bookLink.href = `study.html?book=${book.key}`;
+                        bookLink.className = 'book-item available';
+                        bookLink.innerHTML = `
+                            ${book.name || book.key}
+                            <span class="status">✓ 可学习</span>
+                        `;
+                        categoryDiv.appendChild(bookLink);
+                    });
+                    
+                    bookGrid.appendChild(categoryDiv);
+                }
+            });
+            
+            // 显示旧约每个类别
+            Object.keys(otCategories).forEach(categoryKey => {
+                const category = otCategories[categoryKey];
+                if (category.books.length > 0) {
+                    const categoryDiv = document.createElement('div');
+                    categoryDiv.className = 'book-category';
+                    
+                    const titleDiv = document.createElement('div');
+                    titleDiv.className = 'category-title';
+                    titleDiv.textContent = category.title;
+                    categoryDiv.appendChild(titleDiv);
+                    
+                    category.books.forEach(book => {
+                        const bookLink = document.createElement('a');
+                        bookLink.href = `study.html?book=${book.key}`;
+                        bookLink.className = 'book-item available';
+                        bookLink.innerHTML = `
+                            ${book.name || book.key}
+                            <span class="status">✓ 可学习</span>
+                        `;
+                        categoryDiv.appendChild(bookLink);
+                    });
+                    
+                    oldTestamentGrid.appendChild(categoryDiv);
+                }
+            });
+        }
+
+
+
+        // 设置每日金句
+        function setDailyVerse() {
+            const verses = [
+                {text: "在神凡事都能。", ref: "路加福音 18:27"},
+                {text: "我靠着那加给我力量的，凡事都能做。", ref: "腓立比书 4:13"},
+                {text: "耶和华是我的牧者，我必不致缺乏。", ref: "诗篇 23:1"},
+                {text: "你们要将一切的忧虑卸给神，因为他顾念你们。", ref: "彼得前书 5:7"}
+            ];
+            
+            const today = new Date().getDate();
+            const verse = verses[today % verses.length];
+            
+            document.getElementById('dailyVerseText').textContent = `"${verse.text}"`;
+            document.getElementById('dailyVerseRef').textContent = verse.ref;
+        }
+
+        // 开始填空练习
+        function startFillBlankPractice() {
+            window.location.href = 'practice.html';
+        }
+
+        // 保存用户进度
+        function saveProgress() {
+            localStorage.setItem('userProgress', JSON.stringify(userProgress));
+        }
+    </script>
+</body>
+</html>
