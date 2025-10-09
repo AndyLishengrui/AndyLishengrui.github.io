@@ -1,0 +1,24 @@
+{
+  "course_num": 5,
+  "course_title": "新操练 灵修",
+  "section_num": 44,
+  "section_title": "待定",
+  "answers": {
+    "q1_雅各书 1:22": {
+      "reference": "雅各书 1:22",
+      "text": "",
+      "version": "和修版",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": false
+    },
+    "q2_彼得前书 2:2,3": {
+      "reference": "彼得前书 2:2,3",
+      "text": "因为你们尝过主仁慈的滋味。",
+      "version": "标准译本",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": true
+    }
+  }
+}

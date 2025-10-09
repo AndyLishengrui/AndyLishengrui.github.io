@@ -1,0 +1,16 @@
+{
+  "course_num": 7,
+  "course_title": "新使命 带门徒",
+  "section_num": 66,
+  "section_title": "待定",
+  "answers": {
+    "q1_马太福音 28:19,20": {
+      "reference": "马太福音 28:19,20",
+      "text": "所以，你们要去使万民作我\n的门徒，奉父、子、圣灵的名\n给他们施洗。20 凡我所吩咐你\n们的，都教训他们遵守，我就\n常与你们同在，直到世界的末\n了。",
+      "version": "和合本",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": true
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "course_num": 6,
+  "course_title": "新关系 教会",
+  "section_num": 60,
+  "section_title": "19 耶稣没有答应，却对他说：“你",
+  "answers": {
+    "q1_彼得前书 3:15": {
+      "reference": "彼得前书 3:15",
+      "text": "",
+      "version": "标准译本",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": false
+    },
+    "q2_马可福音 5:18,19": {
+      "reference": "马可福音 5:18,19",
+      "text": "耶稣没有答应，却对他说：“你\n回家去吧，到你的亲友那里，告\n诉他们主为你做了什么，以及他\n怎样怜悯你。”",
+      "version": "标准译本",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": true
+    }
+  }
+}

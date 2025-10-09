@@ -2,6 +2,23 @@
   "course_num": 1,
   "course_title": "新起点 得救",
   "section_num": 10,
-  "section_title": "个人应用",
-  "answers": {}
+  "section_title": "待定",
+  "answers": {
+    "q1_罗马书 10:9,10": {
+      "reference": "罗马书 10:9,10",
+      "text": "",
+      "version": "和修版",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": false
+    },
+    "q2_以弗所书 2:8,9": {
+      "reference": "以弗所书 2:8,9",
+      "text": "你们得救是本乎恩，也因着\n信；这并不是出于自己，而是\n神所赐的； 9 也不是出于行为，\n免得有人自夸。",
+      "version": "和修版",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": true
+    }
+  }
 }

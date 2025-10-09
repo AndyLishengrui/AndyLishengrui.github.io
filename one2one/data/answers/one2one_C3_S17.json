@@ -1,0 +1,24 @@
+{
+  "course_num": 3,
+  "course_title": "新方向 悔改",
+  "section_num": 17,
+  "section_title": "主啊’，却不照我的话做呢？”",
+  "answers": {
+    "q1_路加福音 6:46": {
+      "reference": "路加福音 6:46",
+      "text": "",
+      "version": "和修版",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": false
+    },
+    "q2_马太福音 7:21": {
+      "reference": "马太福音 7:21",
+      "text": "",
+      "version": "标准译本",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": false
+    }
+  }
+}

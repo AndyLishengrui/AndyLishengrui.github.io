@@ -2,15 +2,6 @@
   "course_num": 1,
   "course_title": "新起点 得救",
   "section_num": 12,
-  "section_title": "新的生命",
-  "answers": {
-    "q1_哥林多后书5:17": {
-      "reference": "哥林多后书 5:17",
-      "text": "新的生命 若有人在基督里，他就是新造 的人，旧事已过，都变成新的 了。",
-      "version": "和合本",
-      "text_alt": "",
-      "version_alt": "",
-      "has_data": true
-    }
-  }
+  "section_title": "待定",
+  "answers": {}
 }

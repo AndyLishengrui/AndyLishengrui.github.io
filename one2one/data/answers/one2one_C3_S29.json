@@ -1,0 +1,16 @@
+{
+  "course_num": 3,
+  "course_title": "新方向 悔改",
+  "section_num": 29,
+  "section_title": "待定",
+  "answers": {
+    "q1_哥林多后书 7:10": {
+      "reference": "哥林多后书 7:10",
+      "text": "",
+      "version": "标准译本",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": false
+    }
+  }
+}

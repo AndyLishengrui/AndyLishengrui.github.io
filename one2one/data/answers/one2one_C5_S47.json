@@ -1,0 +1,24 @@
+{
+  "course_num": 5,
+  "course_title": "新操练 灵修",
+  "section_num": 47,
+  "section_title": "说：“主啊，求你教我们祷告，",
+  "answers": {
+    "q1_路加福音 11:1": {
+      "reference": "路加福音 11:1",
+      "text": "",
+      "version": "标准译本",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": false
+    },
+    "q2_马太福音 6:5": {
+      "reference": "马太福音 6:5",
+      "text": "",
+      "version": "标准译本",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": false
+    }
+  }
+}
