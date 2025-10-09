@@ -3,144 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>开始作门徒 - 五个步骤 - 一对一门徒训练</title>
+    <title>开始作门徒 | 一对一门徒训练</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: 'Microsoft YaHei', 'SimSun', Arial, sans-serif;
-            line-height: 1.8;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 900px;
             margin: 0 auto;
         }
-        
-        .header {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            padding: 30px 20px;
-            margin-bottom: 30px;
+
+        header {
+            background: white;
+            border-radius: 15px 15px 0 0;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
-        
-        .page-title {
-            font-size: 2.2rem;
-            color: #2d3748;
+
+        .breadcrumb {
+            color: #888;
+            font-size: 0.9em;
             margin-bottom: 10px;
         }
-        
-        .page-subtitle {
-            font-size: 1.1rem;
+
+        .breadcrumb a {
             color: #667eea;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .content-paragraph {
+            font-size: 1.05em;
+            line-height: 1.9;
+            margin-bottom: 18px;
+            color: #333;
+            text-align: justify;
+        }
+
+        .navigation {
+            background: white;
+            border-radius: 0 0 15px 15px;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .nav-btn {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
             font-weight: 500;
         }
-        
-        .content-section {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 15px;
-            padding: 40px 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-        }
-        
-        .steps-content {
-            font-size: 1.2rem;
-            line-height: 2;
-            color: #2d3748;
-        }
-        
-        .steps-content p {
-            margin-bottom: 15px;
-        }
-        
-        .verse-container {
-            background: #f7fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        
-        .question-box {
-            background: #fff5f5;
-            border: 1px solid #feb2b2;
-            border-radius: 10px;
-            padding: 15px;
-            margin: 15px 0;
-            color: #c53030;
-        }
-        
-        .navigation {
-            text-align: center;
-            margin: 30px 0;
-        }
-        
-        .nav-btn {
+
+        .btn-primary {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 25px;
-            font-size: 1rem;
-            cursor: pointer;
-            margin: 0 10px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
         }
-        
-        .nav-btn:hover {
+
+        .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
-        
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
         @media (max-width: 768px) {
-            .page-title {
-                font-size: 1.8rem;
+            header, .content, .navigation {
+                padding: 20px;
             }
-            
-            .content-section {
-                padding: 20px 15px;
+
+            h1 {
+                font-size: 1.6em;
             }
-            
-            .steps-content {
-                font-size: 1.1rem;
-                line-height: 1.8;
+
+            .content-paragraph {
+                font-size: 1em;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1 class="page-title">开始作门徒</h1>
-            <p class="page-subtitle">五个重要步骤</p>
-        </div>
-        
-        <div class="content-section">
-            <div class="steps-content">
-                <div class="verse-container"><div class="verse-content">开始作门徒 “来跟从我！ 我要使你们成为得 人的渔夫。” 马可福音1:17（当代译本） 当你开始跟随耶稣，下面这 五个步骤能够帮助你有一个好 的开始。 1. 不再信靠你自己和你的好行 为，而是单单信靠耶稣基督得 拯救。 8 你们得救是本乎恩，也因着 信；这并不是出于自己，而是 神所赐的；9也不是出于行为， 免得有人自夸。 以弗所书2:8,9（和修版） 2. 转离圣经上所说的一切罪。 然而，上帝所立的坚实根基永 不动摇，这根基上刻着：“主认 识谁是属于祂的人”，“凡自称 是属于主的人都要离弃罪恶。” 提摩太后书2:19 （当代译本） 3. 参加小组聚会和每周的主日 崇拜。 24我们要想办法彼此相顾，激 发爱心，勉励行善。25不要停 止聚会，像那些停止惯了的人， 要互相鼓励，特别是你们知道 主再来的日子近了。 希伯来书10:24,25（当代译本） 4. 每天读圣经并且顺服神的话 语。 这律法书不可离开你的口，总 要昼夜思想，好使你谨守遵行 这书上所写的一切话。如此， 你的道路就可以亨通，凡事顺 利。 约书亚记1:8（和合本） 5. 向别人分享你信耶稣的见证。 19 耶稣没有答应，只对他说： “回去见你的家人，将主为你 所做的事和祂怜悯你的经过 告诉他们吧！” 20这人就回到 低加坡里一带宣扬耶稣为他 所行的奇事，大家都很惊奇。 马可福音5:19,20（当代译本）</div></div>
+        <header>
+            <div class="breadcrumb">
+                <a href="index.html">一对一首页</a> &gt; 开始作门徒
             </div>
+            <h1>开始作门徒</h1>
+            <p class="subtitle">五个重要步骤</p>
+        </header>
+
+        <div class="content">
+            <p class="content-paragraph">开始作门徒“来跟从我！我要使你们成为得人的渔夫。”马可福音1:17（当代译本）当你开始跟随耶稣，下面这五个步骤能够帮助你有一个好的开始。1.不再信靠你自己和你的好行为，而是单单信靠耶稣基督得拯救。8你们得救是本乎恩，也因着信；这并不是出于自己，而是神所赐的；9也不是出于行为，免得有人自夸。以弗所书2:8,9（和修版）</p>
+            <p class="content-paragraph">2.转离圣经上所说的一切罪。然而，上帝所立的坚实根基永不动摇，这根基上刻着：“主认识谁是属于祂的人”，“凡自称是属于主的人都要离弃罪恶。”提摩太后书2:19（当代译本）3.参加小组聚会和每周的主日崇拜。24我们要想办法彼此相顾，激发爱心，勉励行善。25不要停止聚会，像那些停止惯了的人，要互相鼓励，特别是你们知道主再来的日子近了。希伯来书10:24,25（当代译本）</p>
+            <p class="content-paragraph">4.每天读圣经并且顺服神的话语。这律法书不可离开你的口，总要昼夜思想，好使你谨守遵行这书上所写的一切话。如此，你的道路就可以亨通，凡事顺利。约书亚记1:8（和合本）5.向别人分享你信耶稣的见证。19耶稣没有答应，只对他说：“回去见你的家人，将主为你所做的事和祂怜悯你的经过告诉他们吧！”20这人就回到低加坡里一带宣扬耶稣为他所行的奇事，大家都很惊奇。马可福音5:19,20（当代译本）</p>
         </div>
-        
+
         <div class="navigation">
-            <a href="preface.html" class="nav-btn">上一步：前言</a>
-            <a href="one2one_C1.html" class="nav-btn">开始第一课</a>
+            <a href="preface.html" class="nav-btn btn-secondary">← 上一步：前言</a>
+            <a href="one2one_C1.html" class="nav-btn btn-primary">开始第一课 →</a>
         </div>
     </div>
 </body>

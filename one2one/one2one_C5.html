@@ -3,164 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第5课 - 新操练 - 灵修 - 一对一门徒训练</title>
+    <title>第5课 - 新操练 | 一对一门徒训练</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: 'Microsoft YaHei', 'SimSun', Arial, sans-serif;
-            line-height: 1.8;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 900px;
             margin: 0 auto;
         }
-        
-        .header {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            padding: 30px 20px;
-            margin-bottom: 30px;
+
+        header {
+            background: white;
+            border-radius: 15px 15px 0 0;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
-        
-        .page-title {
-            font-size: 2.2rem;
-            color: #2d3748;
+
+        .breadcrumb {
+            color: #888;
+            font-size: 0.9em;
             margin-bottom: 10px;
         }
-        
-        .page-subtitle {
-            font-size: 1.1rem;
+
+        .breadcrumb a {
             color: #667eea;
-            font-weight: 500;
+            text-decoration: none;
         }
-        
-        .content-section {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 15px;
-            padding: 40px 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
         }
-        
-        .lesson-content {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #2d3748;
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2em;
         }
-        
-        .lesson-content p {
-            margin-bottom: 15px;
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            color: #667eea;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+            display: inline-block;
+        }
+
+        .content-paragraph {
+            font-size: 1.05em;
+            line-height: 1.9;
+            margin-bottom: 16px;
+            color: #333;
             text-align: justify;
         }
-        
-        .verse-container {
-            background: #f7fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 10px;
-            padding: 20px;
+
+        .verse-ref {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
             margin: 20px 0;
+            font-size: 1.02em;
+            color: #2d3748;
+            font-weight: 500;
         }
-        
-        .verse-reference {
-            font-weight: bold;
-            color: #2b6cb0;
-            margin-bottom: 10px;
-        }
-        
+
         .question-box {
             background: #fff5f5;
-            border: 1px solid #feb2b2;
-            border-radius: 10px;
-            padding: 15px;
-            margin: 15px 0;
+            border-left: 4px solid #f56565;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-size: 1.02em;
             color: #c53030;
         }
-        
-        .application-section {
-            background: #f0fff4;
-            border: 1px solid #9ae6b4;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        
-        .blank-input {
-            display: inline-block;
-            min-width: 60px;
-            border: none;
-            border-bottom: 2px solid #667eea;
-            background: transparent;
-            text-align: center;
-            font-size: inherit;
-            padding: 2px 5px;
-        }
-        
+
         .navigation {
-            text-align: center;
-            margin: 30px 0;
+            background: white;
+            border-radius: 0 0 15px 15px;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
-        
+
         .nav-btn {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .btn-primary {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 25px;
-            font-size: 1rem;
-            cursor: pointer;
-            margin: 0 10px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
         }
-        
-        .nav-btn:hover {
+
+        .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
-        
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
         @media (max-width: 768px) {
-            .page-title {
-                font-size: 1.8rem;
+            header, .content, .navigation {
+                padding: 20px;
             }
-            
-            .content-section {
-                padding: 20px 15px;
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .section-title {
+                font-size: 1.2em;
+            }
+
+            .content-paragraph {
+                font-size: 1em;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1 class="page-title">第5课 - 新操练 - 灵修</h1>
-            <p class="page-subtitle">一对一门徒训练系列</p>
-        </div>
-        
-        <div class="content-section">
-            <div class="lesson-content">
-                <div class="verse-container"><div class="verse-content">新操练 灵修 他们都专注于使徒的教导和彼此 的团契，擘饼和祈祷。 使徒行传2:42（和修版） 初代教会之所以充满活力 并健康发展，是因为他们向神委 身，他们透过灵修培养跟神的关 系。灵修有不同的方式，其中最 重要的方式就是读经和祷告。 灵修 42 读经 圣经并不是偶然凑在一起 的故事、诗歌、书信汇编，它是 神所默示的话语，能够教导、指 正、引导我们，让我们可以更有 耶稣基督的形象，去做神呼召我 们要做的事。 16圣经都是神所默示的，于教 训、督责、使人归正、教导人 学义，都是有益的。17叫属神 的人得以完全，预备行各样的 善事。 提摩太后书3:16,17（和合本） 灵修 43 我们要向约伯学习，他把神 的话语看得比食物更加重要。 他嘴唇的命令，我未曾背弃； 我看重他口中的言语，过于我 需用的饮食。 约伯记23:12（和合本） 在归向耶稣之前，我们按照 世界的标准生活。现在，圣经才 是我们信仰和生活的最终权威。 在我们生活的每个层面，神的话 语都是终极的、绝对的标准。 我们的属灵进步不在于懂 得多少圣经知识，而在于我们有 多少的顺服。只学习却不去顺服， 就是自欺。 灵修 44 但是，你们要作行道的人，不 要只作听道的人，自己欺骗自 己。 雅各书1:22（和修版） 读圣经对我们属灵成长是 至关重要的。我们靠着圣经抵挡 诱惑，过得胜的生活，并认识神 对我们生命的旨意。 2 要像刚出生的婴孩一样，爱 慕那纯净的话语之奶，好使你 们藉着它成长，以至于救恩 ， 3 因为你们尝过主仁慈的滋味。 彼得前书2:2,3（标准译本） 9 青年要如何保持纯洁呢？是 要遵行你的话！ 诗篇119:9和修版） 灵修 45 11我将你的话藏在心里，免得 我得罪你。 诗篇119:11（和修版） 这律法书不可离开你的口，总 要昼夜思想，好使你谨守遵行 这书上所写的一切话。如此， 你的道路就可以亨通，凡事顺 利。 约书亚记1:8（和合本） 不要效法这个世界，只要心意 更新而变化，叫你们察验何为 神的善良、纯全、可喜悦的旨 意。 罗马书12:2（和合本） 灵修 46 祷告 基督信仰不是宗教，而是与 神的关系。任何关系想要保持健 康，良好的沟通都是必不可少的。 沟通越好，关系也会越好。神通 过很多种方式对我们说话，但他 首先是通过圣经对我们说话。我 们则通过祷告对神说话。当我们 读经的时候，我们学会聆听神的 话语。我们祷告的时候，神听我 们说话。我们以行动来回应神， 神也以行动回应我们的祷告。 耶稣是祷告的典范。通过观 察他的祷告生活，我们可以学到 一些重要的原则，帮助我们跟天 父保持亲密的联结。 灵修 47 有一次，耶稣在一个地方祷告。 祷告完了，他的一个门徒对他 说：“主啊，求你教我们祷告， 就像约翰教导他的门徒们那 样。” 路加福音11:1（标准译本） 耶稣教导我们不要像那些 伪君子和不认识神的人一样祷 告。 “你们祷告的时候，不要像伪 善的人那样。他们喜爱站在会 堂里和十字路口祷告，好让人 看见。我确实地告诉你们：他 们已经得到了他们的报偿。” 马太福音6:5（标准译本） 7“你们祷告的时候，不要像外 邦人那样，重复无意义的话。 灵修 48 他们以为话多了就蒙垂听。8 不要像他们那样，因为在你们 祈求以前，你们的父就已经知 道你们有什么需要了。” 马太福音6:7,8（标准译本） 我们是靠着圣灵，透过耶稣， 向天父祷告。 靠着圣灵，随时多方祷告祈求， 并要在此警醒不倦，为众圣徒 祈求。 以弗所书6:18（和合本） 耶稣说：“我就是道路、真理、 生命；若不藉着我，没有人能 到父那里去。” 约翰福音14:6（和合本） 灵修 49 “至于你，你祷告的时候，要 进入你的内室，关上门，向你 在隐秘中的父祷告。这样，你 那在隐秘中察看的父就将回 报你。” 马太福音6:6（标准译本） 耶稣在主祷文中教导门徒 祷告，为了神的旨意、供应、饶 恕、胜过诱惑和免于仇敌的计谋 而祷告。 9 我们在天上的父，愿人都尊 你的名为圣。10愿你的国降临。 愿你的旨意行在地上，如同行 在天上。11 我们日用的饮食， 今日赐给我们。12免我们的债， 如同我们免了人的债。13不叫 我们遇见试探；救我们脱离凶 灵修 50 恶。因为国度、权柄、荣耀， 全是你的，直到永远。阿们。 马太福音6:9-13（和合本） 当我们读经并顺服神的话 语，祷告并在生命中信靠神，让 我们不要忘记，神真的回应我们 的祷告。我们的祷告越明确，神 的回应也越明确。秘诀是按照神 的心意祷告。我们通过了解神的 话语来明白他的心意。因此，当 我们按照神的话语祷告，我们知 道他一定会听。 14我们对神所怀的确信是这样 的：如果我们按照他的旨意求 什么，他就垂听我们。15如果 我们已经知道凡是我们所求 的他都垂听，我们就知道我们 灵修 51 已经拥有了向他所求的。 约翰一书 5:14,15（标准译本） 个人应用  你每天有固定的时间读经祷 告吗？  你参加小组了吗？  你饶恕了所有得罪过你的人 吗？  开始为你“日用的饮食”祷告 吧。 灵修 52</div></div>
+        <header>
+            <div class="breadcrumb">
+                <a href="index.html">一对一首页</a> &gt; 第5课
             </div>
+            <h1>第5课 - 新操练</h1>
+            <p class="subtitle">一对一门徒训练系列</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">洗礼 40</h2>
+                <div class="question-box">个人应用你是否已经认罪悔改？你已经信靠耶稣得救了吗？你准备好受洗了吗？你领受圣灵的洗了吗？你愿意有人为你祷告，领受圣灵的洗吗？</div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">洗礼 41</h2>
+                <p class="content-paragraph">新操练灵修他们都专注于使徒的教导和彼此的团契，擘饼和祈祷。使徒行传2:42（和修版）初代教会之所以充满活力并健康发展，是因为他们向神委身，他们透过灵修培养跟神的关系。灵修有不同的方式，其中最重要的方式就是读经和祷告。</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">灵修 42</h2>
+                <p class="content-paragraph">读经圣经并不是偶然凑在一起的故事、诗歌、书信汇编，它是神所默示的话语，能够教导、指正、引导我们，让我们可以更有耶稣基督的形象，去做神呼召我们要做的事。16圣经都是神所默示的，于教训、督责、使人归正、教导人学义，都是有益的。17叫属神的人得以完全，预备行各样的善事。提摩太后书3:16,17（和合本）</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">灵修 43</h2>
+                <p class="content-paragraph">我们要向约伯学习，他把神的话语看得比食物更加重要。他嘴唇的命令，我未曾背弃；我看重他口中的言语，过于我需用的饮食。约伯记23:12（和合本）在归向耶稣之前，我们按照世界的标准生活。现在，圣经才是我们信仰和生活的最终权威。在我们生活的每个层面，神的话语都是终极的、绝对的标准。我们的属灵进步不在于懂得多少圣经知识，而在于我们有多少的顺服。只学习却不去顺服，就是自欺。灵修44</p>
+                <p class="content-paragraph">但是，你们要作行道的人，不要只作听道的人，自己欺骗自己。雅各书1:22（和修版）读圣经对我们属灵成长是至关重要的。我们靠着圣经抵挡诱惑，过得胜的生活，并认识神对我们生命的旨意。2要像刚出生的婴孩一样，爱慕那纯净的话语之奶，好使你们藉着它成长，以至于救恩，3因为你们尝过主仁慈的滋味。彼得前书2:2,3（标准译本）9青年要如何保持纯洁呢？是要遵行你的话！诗篇119:9和修版）灵修45</p>
+                <p class="content-paragraph">11我将你的话藏在心里，免得我得罪你。诗篇119:11（和修版）这律法书不可离开你的口，总要昼夜思想，好使你谨守遵行这书上所写的一切话。如此，你的道路就可以亨通，凡事顺利。约书亚记1:8（和合本）不要效法这个世界，只要心意更新而变化，叫你们察验何为神的善良、纯全、可喜悦的旨意。罗马书12:2（和合本）</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">灵修 46</h2>
+                <p class="content-paragraph">祷告基督信仰不是宗教，而是与神的关系。任何关系想要保持健康，良好的沟通都是必不可少的。沟通越好，关系也会越好。神通过很多种方式对我们说话，但他首先是通过圣经对我们说话。我们则通过祷告对神说话。当我们读经的时候，我们学会聆听神的话语。我们祷告的时候，神听我们说话。我们以行动来回应神，神也以行动回应我们的祷告。耶稣是祷告的典范。通过观察他的祷告生活，我们可以学到一些重要的原则，帮助我们跟天父保持亲密的联结。灵修47</p>
+                <p class="content-paragraph">有一次，耶稣在一个地方祷告。祷告完了，他的一个门徒对他说：“主啊，求你教我们祷告，就像约翰教导他的门徒们那样。”路加福音11:1（标准译本）耶稣教导我们不要像那些伪君子和不认识神的人一样祷告。“你们祷告的时候，不要像伪善的人那样。他们喜爱站在会堂里和十字路口祷告，好让人看见。我确实地告诉你们：他们已经得到了他们的报偿。”马太福音6:5（标准译本）7“你们祷告的时候，不要像外邦人那样，重复无意义的话。灵修48</p>
+                <p class="content-paragraph">他们以为话多了就蒙垂听。8不要像他们那样，因为在你们祈求以前，你们的父就已经知道你们有什么需要了。”马太福音6:7,8（标准译本）</p>
+                <p class="content-paragraph">我们是靠着圣灵，透过耶稣，向天父祷告。</p>
+                <p class="content-paragraph">靠着圣灵，随时多方祷告祈求，并要在此警醒不倦，为众圣徒祈求。以弗所书6:18（和合本）耶稣说：“我就是道路、真理、生命；若不藉着我，没有人能到父那里去。”约翰福音14:6（和合本）灵修49</p>
+            </div>
+
         </div>
-        
+
         <div class="navigation">
-            <a href="one2one_C4.html" class="nav-btn">上一课</a> <a href="index.html" class="nav-btn">返回首页</a> <a href="one2one_C6.html" class="nav-btn">下一课</a>
+            <a href="one2one_C4.html" class="nav-btn btn-secondary">← 第4课</a>
+            <a href="one2one_C6.html" class="nav-btn btn-primary">第6课 →</a>
         </div>
     </div>
 </body>

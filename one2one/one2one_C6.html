@@ -3,164 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第6课 - 新关系 - 教会 - 一对一门徒训练</title>
+    <title>第6课 - 新关系 | 一对一门徒训练</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: 'Microsoft YaHei', 'SimSun', Arial, sans-serif;
-            line-height: 1.8;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 900px;
             margin: 0 auto;
         }
-        
-        .header {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            padding: 30px 20px;
-            margin-bottom: 30px;
+
+        header {
+            background: white;
+            border-radius: 15px 15px 0 0;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
-        
-        .page-title {
-            font-size: 2.2rem;
-            color: #2d3748;
+
+        .breadcrumb {
+            color: #888;
+            font-size: 0.9em;
             margin-bottom: 10px;
         }
-        
-        .page-subtitle {
-            font-size: 1.1rem;
+
+        .breadcrumb a {
             color: #667eea;
-            font-weight: 500;
+            text-decoration: none;
         }
-        
-        .content-section {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 15px;
-            padding: 40px 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
         }
-        
-        .lesson-content {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #2d3748;
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2em;
         }
-        
-        .lesson-content p {
-            margin-bottom: 15px;
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            color: #667eea;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+            display: inline-block;
+        }
+
+        .content-paragraph {
+            font-size: 1.05em;
+            line-height: 1.9;
+            margin-bottom: 16px;
+            color: #333;
             text-align: justify;
         }
-        
-        .verse-container {
-            background: #f7fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 10px;
-            padding: 20px;
+
+        .verse-ref {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
             margin: 20px 0;
+            font-size: 1.02em;
+            color: #2d3748;
+            font-weight: 500;
         }
-        
-        .verse-reference {
-            font-weight: bold;
-            color: #2b6cb0;
-            margin-bottom: 10px;
-        }
-        
+
         .question-box {
             background: #fff5f5;
-            border: 1px solid #feb2b2;
-            border-radius: 10px;
-            padding: 15px;
-            margin: 15px 0;
+            border-left: 4px solid #f56565;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-size: 1.02em;
             color: #c53030;
         }
-        
-        .application-section {
-            background: #f0fff4;
-            border: 1px solid #9ae6b4;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        
-        .blank-input {
-            display: inline-block;
-            min-width: 60px;
-            border: none;
-            border-bottom: 2px solid #667eea;
-            background: transparent;
-            text-align: center;
-            font-size: inherit;
-            padding: 2px 5px;
-        }
-        
+
         .navigation {
-            text-align: center;
-            margin: 30px 0;
+            background: white;
+            border-radius: 0 0 15px 15px;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
-        
+
         .nav-btn {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .btn-primary {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 25px;
-            font-size: 1rem;
-            cursor: pointer;
-            margin: 0 10px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
         }
-        
-        .nav-btn:hover {
+
+        .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
-        
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
         @media (max-width: 768px) {
-            .page-title {
-                font-size: 1.8rem;
+            header, .content, .navigation {
+                padding: 20px;
             }
-            
-            .content-section {
-                padding: 20px 15px;
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .section-title {
+                font-size: 1.2em;
+            }
+
+            .content-paragraph {
+                font-size: 1em;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1 class="page-title">第6课 - 新关系 - 教会</h1>
-            <p class="page-subtitle">一对一门徒训练系列</p>
-        </div>
-        
-        <div class="content-section">
-            <div class="lesson-content">
-                <div class="verse-container"><div class="verse-content">新关系 教会 16 西门彼得回答说：“你是基督， 是永生神的儿子！”17耶稣对他说： “约拿的儿子西门，你是蒙福的， 因为这不是任何人启示你的，而 是我在天上的父启示你的。18 我 还告诉你：你是彼得，我要在这 磐石上建立我的教会，阴间的门 不能胜过它。” 马太福音16:16-18（标准译本） 教会 53 借着圣灵的启示，彼得说出 了耶稣真实的身份：神的儿子。 耶稣说这个真理是一块基石，他 要把教会建立在这个基石之上。 耶稣还描述了他要建立的是一 个怎样的教会，这是一个得胜的 教会，能胜过黑暗的权势。耶稣 和保罗用“教会”来指称神的百 姓。教会从来都不是指宗教建筑 物。委身于教会这个属灵家庭有 四大好处： 教会 54 友谊 每个人都需要真正的朋友， 但是很少有人能找到真正的朋 友。寻找真正的朋友，最好的地 方是教会，是在神的百姓中间。 真正的朋友总是为我们的益处 着想，无论我们的环境是好是坏， 他们都和我们在一起。真正的朋 友决不会使我们远离神，相反， 他们会激励我们活出圣洁的生 活。 朋友常显爱心，兄弟为患难而 生。 箴言17:17（新译本） 滥交朋友的，自取败坏；但有 一朋友，比弟兄更亲密。 箴言18:24（和合本） 教会 55 团契 如果把一块煤从燃烧的火 中取走，它就会逐渐冷却。如果 把它放回一堆熊熊燃烧的火中， 它又会重新燃烧起来。基督徒也 是一样，如果一个基督徒停止聚 会，断开了跟其他热心基督徒的 联结，他的灵里面也会逐渐冷淡。 如果他保持在团契当中，那么他 就能一直为主火热。 42他们都专注于使徒的教导和 彼此的团契，擘饼和祈祷…… 44信的人都聚在一处，凡物公 用，45又卖了田产和家业，照 每一个人所需要的分给他们。 46他们天天同心合意恒切地在 教会 56 圣殿里敬拜，且在家中擘饼， 存着欢喜坦诚的心用饭…… 使徒行传2:42,44-46（和修版） 你们和不信的原不相配，不要 同负一轭。义和不义有什么相 交呢？光明和黑暗有什么相 通呢？ 哥林多后书6:14（和合本） 教会 57 敬拜 神在寻找真心敬拜他的人。 敬拜是把我们对神的爱、奉献和 委身表达出来。在教会中我们可 以和其他爱神的人一同敬拜神。 23“然而，时候就要到了，现在 就是了！那时真正敬拜的人， 要在灵里和真理中敬拜父，因 为父就是想要这样的人来敬 拜他。 24神是灵，敬拜他的人 必须在灵里和真理中敬拜。” 约翰福音4:23,24（标准译本） 教会 58 带门徒 耶稣在升天之前给门徒最 后的命令，是让他们走出去，带 门徒，给门徒施洗，教导他们遵 行神的话语。因此，我们首先要 自己做门徒，跟随耶稣，然后才 能教导别人跟随他。 19所以，你们要去使万民作我 的门徒，奉父子圣灵的名，给 他们施洗。20凡我所吩咐你们 的，都教训他们遵守，我就常 与你们同在，直到世界的末了。 马太福音28:19,20（和合本） 教会 59 你要把那些在许多见证人面 前 从我所听见的，交托给那些 忠心可靠、又有能力教导别人 的人。 提摩太后书2:2 （标准译本） 个人应用  有人带你作耶稣的门徒吗？ 无论是“一对一”，还是小组聚 会的形式。  你在带门徒吗？  你有积极参与教会的服事吗？  说出三个基督徒，当你在属灵 方面需要帮助时可以向他们 求助。 教会 60</div></div>
+        <header>
+            <div class="breadcrumb">
+                <a href="index.html">一对一首页</a> &gt; 第6课
             </div>
+            <h1>第6课 - 新关系</h1>
+            <p class="subtitle">一对一门徒训练系列</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">灵修 52</h2>
+                <p class="content-paragraph">新关系教会16西门彼得回答说：“你是基督，是永生神的儿子！”17耶稣对他说：“约拿的儿子西门，你是蒙福的，因为这不是任何人启示你的，而是我在天上的父启示你的。18我还告诉你：你是彼得，我要在这磐石上建立我的教会，阴间的门不能胜过它。”马太福音16:16-18（标准译本）</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">教会 53</h2>
+                <p class="content-paragraph">借着圣灵的启示，彼得说出了耶稣真实的身份：神的儿子。耶稣说这个真理是一块基石，他要把教会建立在这个基石之上。耶稣还描述了他要建立的是一个怎样的教会，这是一个得胜的教会，能胜过黑暗的权势。耶稣和保罗用“教会”来指称神的百姓。教会从来都不是指宗教建筑物。委身于教会这个属灵家庭有四大好处：</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">教会 54</h2>
+                <p class="content-paragraph">友谊每个人都需要真正的朋友，但是很少有人能找到真正的朋友。寻找真正的朋友，最好的地方是教会，是在神的百姓中间。真正的朋友总是为我们的益处着想，无论我们的环境是好是坏，他们都和我们在一起。真正的朋友决不会使我们远离神，相反，他们会激励我们活出圣洁的生活。朋友常显爱心，兄弟为患难而生。箴言17:17（新译本）滥交朋友的，自取败坏；但有一朋友，比弟兄更亲密。箴言18:24（和合本）教会55</p>
+                <p class="content-paragraph">团契如果把一块煤从燃烧的火中取走，它就会逐渐冷却。如果把它放回一堆熊熊燃烧的火中，它又会重新燃烧起来。基督徒也是一样，如果一个基督徒停止聚会，断开了跟其他热心基督徒的联结，他的灵里面也会逐渐冷淡。如果他保持在团契当中，那么他就能一直为主火热。42他们都专注于使徒的教导和彼此的团契，擘饼和祈祷……44信的人都聚在一处，凡物公用，45又卖了田产和家业，照每一个人所需要的分给他们。46他们天天同心合意恒切地在教会56</p>
+                <p class="content-paragraph">圣殿里敬拜，且在家中擘饼，存着欢喜坦诚的心用饭……使徒行传2:42,44-46（和修版）你们和不信的原不相配，不要同负一轭。义和不义有什么相交呢？光明和黑暗有什么相通呢？哥林多后书6:14（和合本）</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">教会 57</h2>
+                <p class="content-paragraph">敬拜神在寻找真心敬拜他的人。敬拜是把我们对神的爱、奉献和委身表达出来。在教会中我们可以和其他爱神的人一同敬拜神。23“然而，时候就要到了，现在就是了！那时真正敬拜的人，要在灵里和真理中敬拜父，因为父就是想要这样的人来敬拜他。24神是灵，敬拜他的人必须在灵里和真理中敬拜。”约翰福音4:23,24（标准译本）</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">教会 58</h2>
+                <p class="content-paragraph">带门徒耶稣在升天之前给门徒最后的命令，是让他们走出去，带门徒，给门徒施洗，教导他们遵行神的话语。因此，我们首先要自己做门徒，跟随耶稣，然后才能教导别人跟随他。19所以，你们要去使万民作我的门徒，奉父子圣灵的名，给他们施洗。20凡我所吩咐你们的，都教训他们遵守，我就常与你们同在，直到世界的末了。马太福音28:19,20（和合本）</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">教会 59</h2>
+            </div>
+
         </div>
-        
+
         <div class="navigation">
-            <a href="one2one_C5.html" class="nav-btn">上一课</a> <a href="index.html" class="nav-btn">返回首页</a> <a href="one2one_C7.html" class="nav-btn">下一课</a>
+            <a href="one2one_C5.html" class="nav-btn btn-secondary">← 第5课</a>
+            <a href="one2one_C7.html" class="nav-btn btn-primary">第7课 →</a>
         </div>
     </div>
 </body>

@@ -3,164 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第4课 - 新生命 - 洗礼 - 一对一门徒训练</title>
+    <title>第4课 - 新生命 | 一对一门徒训练</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: 'Microsoft YaHei', 'SimSun', Arial, sans-serif;
-            line-height: 1.8;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 900px;
             margin: 0 auto;
         }
-        
-        .header {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            padding: 30px 20px;
-            margin-bottom: 30px;
+
+        header {
+            background: white;
+            border-radius: 15px 15px 0 0;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
-        
-        .page-title {
-            font-size: 2.2rem;
-            color: #2d3748;
+
+        .breadcrumb {
+            color: #888;
+            font-size: 0.9em;
             margin-bottom: 10px;
         }
-        
-        .page-subtitle {
-            font-size: 1.1rem;
+
+        .breadcrumb a {
             color: #667eea;
-            font-weight: 500;
+            text-decoration: none;
         }
-        
-        .content-section {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 15px;
-            padding: 40px 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
         }
-        
-        .lesson-content {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #2d3748;
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2em;
         }
-        
-        .lesson-content p {
-            margin-bottom: 15px;
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            color: #667eea;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+            display: inline-block;
+        }
+
+        .content-paragraph {
+            font-size: 1.05em;
+            line-height: 1.9;
+            margin-bottom: 16px;
+            color: #333;
             text-align: justify;
         }
-        
-        .verse-container {
-            background: #f7fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 10px;
-            padding: 20px;
+
+        .verse-ref {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
             margin: 20px 0;
+            font-size: 1.02em;
+            color: #2d3748;
+            font-weight: 500;
         }
-        
-        .verse-reference {
-            font-weight: bold;
-            color: #2b6cb0;
-            margin-bottom: 10px;
-        }
-        
+
         .question-box {
             background: #fff5f5;
-            border: 1px solid #feb2b2;
-            border-radius: 10px;
-            padding: 15px;
-            margin: 15px 0;
+            border-left: 4px solid #f56565;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-size: 1.02em;
             color: #c53030;
         }
-        
-        .application-section {
-            background: #f0fff4;
-            border: 1px solid #9ae6b4;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        
-        .blank-input {
-            display: inline-block;
-            min-width: 60px;
-            border: none;
-            border-bottom: 2px solid #667eea;
-            background: transparent;
-            text-align: center;
-            font-size: inherit;
-            padding: 2px 5px;
-        }
-        
+
         .navigation {
-            text-align: center;
-            margin: 30px 0;
+            background: white;
+            border-radius: 0 0 15px 15px;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
-        
+
         .nav-btn {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .btn-primary {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 25px;
-            font-size: 1rem;
-            cursor: pointer;
-            margin: 0 10px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
         }
-        
-        .nav-btn:hover {
+
+        .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
-        
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
         @media (max-width: 768px) {
-            .page-title {
-                font-size: 1.8rem;
+            header, .content, .navigation {
+                padding: 20px;
             }
-            
-            .content-section {
-                padding: 20px 15px;
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .section-title {
+                font-size: 1.2em;
+            }
+
+            .content-paragraph {
+                font-size: 1em;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1 class="page-title">第4课 - 新生命 - 洗礼</h1>
-            <p class="page-subtitle">一对一门徒训练系列</p>
-        </div>
-        
-        <div class="content-section">
-            <div class="lesson-content">
-                <div class="verse-container"><div class="verse-content">复活。当我们信靠耶稣，就得到 饶恕和永生。在耶稣基督里，我 们恢复了与天父的亲密关系，享 受作为神儿女的新生命。 在他里面，我们藉着他的血， 得蒙救赎、过犯得到赦免，都 是出于神恩典的丰盛。 以弗所书1:7（标准译本） 但你们这些从前远离神的人， 现在靠着基督所流的血，已经 重归神，可以亲近他了！ 以弗所书2:13（当代译本） 得救 9 回应： 凭信心领受神的恩典 当我们不再信靠自己，而将 信心放在耶稣为我们所成就的 事情上时，我们就得救了。 我们得救是因为神的恩典， 是基于耶稣在十字架上为我们 所做的事，而不在于我们做了什 么。我们不可能将功补过拯救自 己，也不可能通过做好事来赚取 神的认可。当我们认识到没办法 靠自己与神和好，无力自救，并 愿意转离罪，接受耶稣基督做我 们的救主和生命的主宰时，我们 就因为神的恩典得救。 得救 10 9 你若口里宣认耶稣为主，心 里信神叫他从死人中复活，就 必得救。10因为，人心里信就 可以称义，口里宣认就可以得 救。 罗马书10:9,10（和修版） 8 你们得救是本乎恩，也因着 信；这并不是出于自己，而是 神所赐的；9也不是出于行为， 免得有人自夸。 以弗所书2:8,9（和修版） 得救 11 个人应用  你相信有神吗？  你认识到你有罪，而且靠自己 不能解决罪的问题了吗？  你是否相信耶稣已经为你赎 罪？  你是否愿意转离你所有已知 的罪？  你是否愿意一生跟随耶稣，顺 服耶稣？ 得救 12 得救的祷告 天父，我承认我犯了罪，亏缺 了你的荣耀。我承认是我的罪 使我与你隔绝。我知道你爱我， 我感谢你差遣你的独生儿子 耶稣，为我的罪付出了代价。 我相信耶稣为我的罪被钉死 在十字架上。我相信你让他从 死里复活。我为我的罪感到痛 悔，求你赦免我的罪，洁净我。 我要转离圣经上所说的一切 罪，接受你成为我的救主和生 命的主。请帮助我，让我一生 一世爱你，服事你，顺服你。 奉耶稣的名祷告。阿们！ 得救 13 新的生命 若有人在基督里，他就是新造 的人，旧事已过，都变成新的 了。 哥林多后书5:17（和合本） 祝贺你！当你真诚地向神作 了以上祷告，圣经应许，旧事已 过，都变成新的了。接下来的六 课就是要帮助你明白一些已经 来临的新事。 得救 14 不再懊悔 悔改是远离罪并转向神。这 意味着，我们不再靠着自己的好 行为或者靠着参加宗教活动来 得救，而是单单信靠主耶稣。以 前我们弄错了方向，而现在我们 找到了正确的方向。以前我们远 离神，现在我们与他同行。悔改 是新生命的开始，它使我们脱离 自我中心的牢笼，走上正确的道 路，得以完成神在我们生命中美 好的计划。 因为按神的意思忧伤，就生出 悔改通向救恩，是不懊悔的。 哥林多后书7:10（标准译本） 悔改 30 个人应用  你的生命是在朝着一个新的 方向前进吗？  你是否仍在为你生命中的一 些罪而挣扎？  有哪方面你仍然面临巨大的 试探，或者总是软弱，非常需 要代祷吗？  有没有一些罪，你虽然已经远 离，却仍然有罪恶感，常常自 责？ 悔改 31 新生命 洗礼 彼得对他们说：“你们各人要悔改， 奉耶稣基督的名受洗，使你们的 罪得赦免，就会领受所赐的圣 灵……” 使徒行传2:38（和修版） 于是领受他话的人，都受了洗； 那一天，门徒约添了三千人。 使徒行传2:41（和修版） 人们听完讲道后，问彼得应 当怎样行。彼得给他们的答案分 为三步：悔改、受洗、领受圣灵。 数千人照做，加入了门徒的行列。 洗礼 32 圣经中的模式是，凡是受洗的人 都会加入门徒的行列，都要积极 地参与教会生活。 水洗礼 在水洗礼中，我们公开承认 耶稣在十字架上为我们所成就 的事情。我们不是靠着洗礼得救， 但是我们相信福音，并回转归向 神后，就透过洗礼来宣告我们的 信心和顺服。 圣经中给出了几个例证帮 助我们理解水洗礼，其中之一就 是埋葬与复活。保罗将基督徒的 洗礼比喻为葬礼。人要被埋葬， 就得先要死。同样，受洗的先决 条件是向罪而死。当我们在洗礼 洗礼 33 中被埋葬后，就从水中出来，去 活出一个全新的得胜的生命。 1 那么，我们要怎么说呢？难 道我们可以留在罪中，好让恩 典增多吗？2 绝对不可！我们 这些向罪已经死了的人，怎么 还能活在罪中呢？3 难道你们 不明白，所有受洗归入基督耶 稣的人，就是受洗归入了他的 死吗？4 所以，我们藉着洗礼 归入死，和他一同埋葬，好使 我们也能以生命的新样式行 事为人，就像基督藉着父的荣 耀从死人中复活那样。 罗马书6:1-4（标准译本） 所以，水洗礼就象征着埋葬 旧我，活出新我，顺服耶稣基督。 洗礼 34 圣灵的洗 除非有圣灵所赐的能力和 圣灵的同在，否则，想过一个基 督徒的生活是不可能办到的事。 耶稣应许说圣灵会来带领我们 进入一切的真理。 7然而，我把真情告诉你们，我 去对你们是有益的。我若不去， 保惠师就不会到你们这里来； 我若去，就差他到你们这里 来……13但真理的灵来的时候， 他要引导你们进入一切真理。 因为他不是凭着自己说的，而 是把他所听见的都说出来，并 且要把将要来的事向你们传 达。 约翰福音16:7,13（和修版） 洗礼 35 圣灵赐给我们能力，成为有 果效的见证人。做见证的人不仅 要宣讲真理，还要活出真理。圣 灵帮助我们去做我们靠自己做 不出来的事，那就是，大胆地传 扬并活出神的真理。 “可是圣灵降临在你们身上， 你们就必领受能力，并且要在 耶路撒冷、犹太全地、撒玛利 亚，直到地极，作我的见证人。” 使徒行传1:8（新译本） 洗礼 36 领受圣灵的洗 圣灵的洗是神为每一个信 他的人所预备的恩赐，而不仅仅 是为彼得讲道的那个五旬节在 场的人。彼得在讲道中告诉我们 如何去领受圣灵的恩赐。 38彼得对他们说：“你们各人要 悔改，奉耶稣基督的名受洗， 使你们的罪得赦免，就会领受 所赐的圣灵。39因为这应许是 给你们和你们的儿女，并一切 在远方的人，就是给所有主— —我们的神所召来的人。” 使徒行传2:38,39（和修版） 为了领受圣灵的洗，我们一 定要凭着信心求。 洗礼 37 你们虽然不好，尚且知道拿好 东西给儿女，何况天父，他岂 不更要把圣灵赐给求他的人 吗？ 路加福音11:13（和修版） 在新约时代，很多门徒通过 按手的方式领受圣灵的洗。 于是使徒按手在他们头上，他 们就领受了圣灵。 使徒行传8:17（和修版） 洗礼 38 属灵恩赐 领受圣灵的洗时，往往伴随 着受洗者得到属灵的恩赐。在圣 经的记载中，领受圣灵时，最常 见的属灵恩赐是说方言。 他们就都被圣灵充满，按着圣 灵所赐的口才，说起别国的话 来。 使徒行传2:4（和合本） 保罗给他们按手，圣灵就降在 他们身上，他们开始说方言和 说预言。 使徒行传19:6（和修版） 洗礼 39 得能力成为见证人 耶稣应许让圣灵充满我们， 好让我们成为有果效的见证人。 圣灵赐给我们能力，让我们无论 去到哪里，都可以传扬福音。 “可是圣灵降临在你们身上， 你们就必领受能力，并且要在 耶路撒冷、犹太全地、撒玛利 亚，直到地极，作我的见证人。” 使徒行传1:8（新译本） 洗礼 40 个人应用  你是否已经认罪悔改？  你已经信靠耶稣得救了吗？  你准备好受洗了吗？  你领受圣灵的洗了吗？你愿 意有人为你祷告，领受圣灵的 洗吗？ 洗礼 41</div></div>
+        <header>
+            <div class="breadcrumb">
+                <a href="index.html">一对一首页</a> &gt; 第4课
             </div>
+            <h1>第4课 - 新生命</h1>
+            <p class="subtitle">一对一门徒训练系列</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">悔改 30</h2>
+                <div class="question-box">个人应用你的生命是在朝着一个新的方向前进吗？你是否仍在为你生命中的一些罪而挣扎？有哪方面你仍然面临巨大的试探，或者总是软弱，非常需要代祷吗？有没有一些罪，你虽然已经远离，却仍然有罪恶感，常常自责？</div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">悔改 31</h2>
+                <p class="content-paragraph">新生命洗礼彼得对他们说：“你们各人要悔改，奉耶稣基督的名受洗，使你们的罪得赦免，就会领受所赐的圣灵……”使徒行传2:38（和修版）于是领受他话的人，都受了洗；那一天，门徒约添了三千人。使徒行传2:41（和修版）人们听完讲道后，问彼得应当怎样行。彼得给他们的答案分为三步：悔改、受洗、领受圣灵。数千人照做，加入了门徒的行列。洗礼32</p>
+                <p class="content-paragraph">圣经中的模式是，凡是受洗的人都会加入门徒的行列，都要积极地参与教会生活。水洗礼在水洗礼中，我们公开承认耶稣在十字架上为我们所成就的事情。我们不是靠着洗礼得救，但是我们相信福音，并回转归向神后，就透过洗礼来宣告我们的信心和顺服。圣经中给出了几个例证帮助我们理解水洗礼，其中之一就是埋葬与复活。保罗将基督徒的洗礼比喻为葬礼。人要被埋葬，就得先要死。同样，受洗的先决条件是向罪而死。当我们在洗礼洗礼33</p>
+                <p class="content-paragraph">中被埋葬后，就从水中出来，去活出一个全新的得胜的生命。1那么，我们要怎么说呢？难道我们可以留在罪中，好让恩典增多吗？2绝对不可！我们这些向罪已经死了的人，怎么还能活在罪中呢？3难道你们不明白，所有受洗归入基督耶稣的人，就是受洗归入了他的死吗？4所以，我们藉着洗礼归入死，和他一同埋葬，好使我们也能以生命的新样式行事为人，就像基督藉着父的荣耀从死人中复活那样。罗马书6:1-4（标准译本）所以，水洗礼就象征着埋葬旧我，活出新我，顺服耶稣基督。洗礼34</p>
+                <p class="content-paragraph">圣灵的洗除非有圣灵所赐的能力和圣灵的同在，否则，想过一个基督徒的生活是不可能办到的事。耶稣应许说圣灵会来带领我们进入一切的真理。7然而，我把真情告诉你们，我去对你们是有益的。我若不去，保惠师就不会到你们这里来；我若去，就差他到你们这里来……13但真理的灵来的时候，他要引导你们进入一切真理。因为他不是凭着自己说的，而是把他所听见的都说出来，并且要把将要来的事向你们传达。约翰福音16:7,13（和修版）洗礼35</p>
+                <p class="content-paragraph">圣灵赐给我们能力，成为有果效的见证人。做见证的人不仅要宣讲真理，还要活出真理。圣灵帮助我们去做我们靠自己做不出来的事，那就是，大胆地传扬并活出神的真理。“可是圣灵降临在你们身上，你们就必领受能力，并且要在耶路撒冷、犹太全地、撒玛利亚，直到地极，作我的见证人。”使徒行传1:8（新译本）</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">洗礼 36</h2>
+                <p class="content-paragraph">领受圣灵的洗圣灵的洗是神为每一个信他的人所预备的恩赐，而不仅仅是为彼得讲道的那个五旬节在场的人。彼得在讲道中告诉我们如何去领受圣灵的恩赐。38彼得对他们说：“你们各人要悔改，奉耶稣基督的名受洗，使你们的罪得赦免，就会领受所赐的圣灵。39因为这应许是给你们和你们的儿女，并一切在远方的人，就是给所有主——我们的神所召来的人。”使徒行传2:38,39（和修版）为了领受圣灵的洗，我们一定要凭着信心求。洗礼37</p>
+                <p class="content-paragraph">你们虽然不好，尚且知道拿好东西给儿女，何况天父，他岂不更要把圣灵赐给求他的人吗？路加福音11:13（和修版）在新约时代，很多门徒通过按手的方式领受圣灵的洗。于是使徒按手在他们头上，他们就领受了圣灵。使徒行传8:17（和修版）</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">洗礼 38</h2>
+                <p class="content-paragraph">属灵恩赐领受圣灵的洗时，往往伴随着受洗者得到属灵的恩赐。在圣经的记载中，领受圣灵时，最常见的属灵恩赐是说方言。他们就都被圣灵充满，按着圣灵所赐的口才，说起别国的话来。使徒行传2:4（和合本）保罗给他们按手，圣灵就降在他们身上，他们开始说方言和说预言。使徒行传19:6（和修版）</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">洗礼 39</h2>
+            </div>
+
         </div>
-        
+
         <div class="navigation">
-            <a href="one2one_C3.html" class="nav-btn">上一课</a> <a href="index.html" class="nav-btn">返回首页</a> <a href="one2one_C5.html" class="nav-btn">下一课</a>
+            <a href="one2one_C3.html" class="nav-btn btn-secondary">← 第3课</a>
+            <a href="one2one_C5.html" class="nav-btn btn-primary">第5课 →</a>
         </div>
     </div>
 </body>

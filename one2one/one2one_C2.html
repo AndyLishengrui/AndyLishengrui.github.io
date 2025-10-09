@@ -3,164 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第2课 - 新主人 - 主权 - 一对一门徒训练</title>
+    <title>第2课 - 新主人 | 一对一门徒训练</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: 'Microsoft YaHei', 'SimSun', Arial, sans-serif;
-            line-height: 1.8;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 900px;
             margin: 0 auto;
         }
-        
-        .header {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            padding: 30px 20px;
-            margin-bottom: 30px;
+
+        header {
+            background: white;
+            border-radius: 15px 15px 0 0;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
-        
-        .page-title {
-            font-size: 2.2rem;
-            color: #2d3748;
+
+        .breadcrumb {
+            color: #888;
+            font-size: 0.9em;
             margin-bottom: 10px;
         }
-        
-        .page-subtitle {
-            font-size: 1.1rem;
+
+        .breadcrumb a {
             color: #667eea;
-            font-weight: 500;
+            text-decoration: none;
         }
-        
-        .content-section {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 15px;
-            padding: 40px 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
         }
-        
-        .lesson-content {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #2d3748;
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2em;
         }
-        
-        .lesson-content p {
-            margin-bottom: 15px;
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            color: #667eea;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+            display: inline-block;
+        }
+
+        .content-paragraph {
+            font-size: 1.05em;
+            line-height: 1.9;
+            margin-bottom: 16px;
+            color: #333;
             text-align: justify;
         }
-        
-        .verse-container {
-            background: #f7fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 10px;
-            padding: 20px;
+
+        .verse-ref {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
             margin: 20px 0;
+            font-size: 1.02em;
+            color: #2d3748;
+            font-weight: 500;
         }
-        
-        .verse-reference {
-            font-weight: bold;
-            color: #2b6cb0;
-            margin-bottom: 10px;
-        }
-        
+
         .question-box {
             background: #fff5f5;
-            border: 1px solid #feb2b2;
-            border-radius: 10px;
-            padding: 15px;
-            margin: 15px 0;
+            border-left: 4px solid #f56565;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-size: 1.02em;
             color: #c53030;
         }
-        
-        .application-section {
-            background: #f0fff4;
-            border: 1px solid #9ae6b4;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        
-        .blank-input {
-            display: inline-block;
-            min-width: 60px;
-            border: none;
-            border-bottom: 2px solid #667eea;
-            background: transparent;
-            text-align: center;
-            font-size: inherit;
-            padding: 2px 5px;
-        }
-        
+
         .navigation {
-            text-align: center;
-            margin: 30px 0;
+            background: white;
+            border-radius: 0 0 15px 15px;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
-        
+
         .nav-btn {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .btn-primary {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 25px;
-            font-size: 1rem;
-            cursor: pointer;
-            margin: 0 10px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
         }
-        
-        .nav-btn:hover {
+
+        .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
-        
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
         @media (max-width: 768px) {
-            .page-title {
-                font-size: 1.8rem;
+            header, .content, .navigation {
+                padding: 20px;
             }
-            
-            .content-section {
-                padding: 20px 15px;
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .section-title {
+                font-size: 1.2em;
+            }
+
+            .content-paragraph {
+                font-size: 1em;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1 class="page-title">第2课 - 新主人 - 主权</h1>
-            <p class="page-subtitle">一对一门徒训练系列</p>
-        </div>
-        
-        <div class="content-section">
-            <div class="lesson-content">
-                <div class="verse-container"><div class="verse-content">新主人 主权 故此，以色列全家当确实知道， 你们钉在十字架上的这位耶稣， 神已经立他为主，为基督了。 使徒行传 2:36（和修版） 我们不仅要接受耶稣作为 我们的救主，让他拯救我们脱离 罪的捆绑和永恒的灭亡，圣经告 诉我们，更重要的是，我们要让 耶稣来作我们生命的主宰。 神创造了这个世界，并按照 他的形象创造了人，把世界交给 人管理。神创造了所有的自然规 悔改 15 律，我们只有按照这些规律工作， 才能在物质上更加丰富；神也定 义了生命与属灵的规律，我们只 有让耶稣作我们生命的主，才能 享受神给我们预备一切的丰盛 恩典。 把主权交给耶稣会让我们 失去“自由”吗？的确，当我们 顺服耶稣的主权时，就会失去撒 谎、欺骗、奸淫、自私、仇恨等 等的“自由”，但我们将会得到诚 实、正直、勤劳、忠诚、慷慨和 爱等等真正的自由！ 悔改 16 尊主权与得救 救恩的起点就是承认耶稣 的主权。承认耶稣是主，意味着 生命的每一个层面都要降服在 他的主权之下。如果我们不把主 权完全交给耶稣，就意味着还是 自己在作主，仍然在罪和死的权 势之下。 你若口里宣认耶稣为主，心里 信神叫他从死人中复活，就必 得救。 罗马书10:9（和修版） 悔改 17 尊主权要求顺服 任何人宣称耶稣是主，他就 该照着耶稣说的去做。单是理性 上的接受和空泛的承认是不够 的。如果我们说耶稣是主，那么 从我们的生活方式上应该能够 看出来他真正是我们的主。 “你们为什么称呼我‘主啊， 主啊’，却不照我的话做呢？” 路加福音 6:46（和修版） “不是每一个称呼我‘主啊， 主啊’的人，都能进入天国； 只有遵行我天父旨意的人，才 能进去。 马太福音 7:21（标准译本） 悔改 18 尊主权从内心开始 尊主权不在于遵守一系列 的宗教规条和传统，而是要在心 里让耶稣做主。尊主权是从我们 内心的顺服开始。如果我们真心 愿意让他做主，那么我们外在的 行为上最终会表现出来。 只要心里奉主基督为圣，尊他 为主。 彼得前书 3:15（和修版） 悔改 19 尊主权是在他里面行事为人 承认耶稣是主，这是我们基 督徒生命的开始。我们必须持续 地活在他的主权之下。尊主权不 只是一段时间的经历而已，而是 一生一世都在他里面行事为人。 我们对耶稣的认识越深，就越能 顺服他。 你们怎样接受了基督耶稣为 主 ，就当照样在他里面行事为 人。 歌罗西书 2:6（新译本） 悔改 20 爱主才能尊主权 尊耶稣为主在于和耶稣建 立真实、深入、亲密的关系—— 爱的关系。他多么渴望我们认识 他的丰富而完全的爱，并且以爱 来回应他。我们让耶稣作主的根 本动机和原因是因为我们爱神。 因为爱，我们乐意顺服；因为爱， 顺服就是一种享受。 作为基督徒，我们最大的、 首要的诫命就是要爱神。 4以色列啊，你要听！耶和华我 们神是独一的主。5你要尽心、 尽性、尽力爱耶和华你的神。 申命记6:4,5（和合本） 悔改 21 36“老师，律法上的诫命哪一 条是最大的呢？”37耶稣对他 说：“你要尽心、尽性、尽意爱 主——你的神。38这是最大的， 且是第一条诫命。” 马太福音22:36-38（和修版） 个人应用  你的生命中还有哪些领域没 有降服在耶稣基督的主权之 下？  耶稣是你人际关系的主吗？  耶稣是你金钱的主吗？  耶稣是你时间的主吗？ 悔改 22</div></div>
+        <header>
+            <div class="breadcrumb">
+                <a href="index.html">一对一首页</a> &gt; 第2课
             </div>
+            <h1>第2课 - 新主人</h1>
+            <p class="subtitle">一对一门徒训练系列</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">得救 10</h2>
+                <p class="content-paragraph">9你若口里宣认耶稣为主，心里信神叫他从死人中复活，就必得救。10因为，人心里信就可以称义，口里宣认就可以得救。罗马书10:9,10（和修版）8你们得救是本乎恩，也因着信；这并不是出于自己，而是神所赐的；9也不是出于行为，免得有人自夸。以弗所书2:8,9（和修版）</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">得救 11</h2>
+                <div class="question-box">个人应用你相信有神吗？你认识到你有罪，而且靠自己不能解决罪的问题了吗？你是否相信耶稣已经为你赎罪？你是否愿意转离你所有已知的罪？你是否愿意一生跟随耶稣，顺服耶稣？</div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">得救 12</h2>
+                <p class="content-paragraph">得救的祷告天父，我承认我犯了罪，亏缺了你的荣耀。我承认是我的罪使我与你隔绝。我知道你爱我，我感谢你差遣你的独生儿子耶稣，为我的罪付出了代价。我相信耶稣为我的罪被钉死在十字架上。我相信你让他从死里复活。我为我的罪感到痛悔，求你赦免我的罪，洁净我。我要转离圣经上所说的一切罪，接受你成为我的救主和生命的主。请帮助我，让我一生一世爱你，服事你，顺服你。奉耶稣的名祷告。阿们！</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">得救 13</h2>
+                <p class="content-paragraph">新的生命若有人在基督里，他就是新造的人，旧事已过，都变成新的了。哥林多后书5:17（和合本）祝贺你！当你真诚地向神作了以上祷告，圣经应许，旧事已过，都变成新的了。接下来的六课就是要帮助你明白一些已经来临的新事。</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">得救 14</h2>
+                <p class="content-paragraph">新主人主权故此，以色列全家当确实知道，你们钉在十字架上的这位耶稣，神已经立他为主，为基督了。使徒行传2:36（和修版）我们不仅要接受耶稣作为我们的救主，让他拯救我们脱离罪的捆绑和永恒的灭亡，圣经告诉我们，更重要的是，我们要让耶稣来作我们生命的主宰。神创造了这个世界，并按照他的形象创造了人，把世界交给人管理。神创造了所有的自然规悔改15</p>
+                <p class="content-paragraph">律，我们只有按照这些规律工作，才能在物质上更加丰富；神也定义了生命与属灵的规律，我们只有让耶稣作我们生命的主，才能享受神给我们预备一切的丰盛恩典。把主权交给耶稣会让我们失去“自由”吗？的确，当我们顺服耶稣的主权时，就会失去撒谎、欺骗、奸淫、自私、仇恨等等的“自由”，但我们将会得到诚实、正直、勤劳、忠诚、慷慨和爱等等真正的自由！</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">悔改 16</h2>
+                <p class="content-paragraph">尊主权与得救救恩的起点就是承认耶稣的主权。承认耶稣是主，意味着生命的每一个层面都要降服在他的主权之下。如果我们不把主权完全交给耶稣，就意味着还是自己在作主，仍然在罪和死的权势之下。你若口里宣认耶稣为主，心里信神叫他从死人中复活，就必得救。罗马书10:9（和修版）</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">悔改 17</h2>
+                <p class="content-paragraph">尊主权要求顺服任何人宣称耶稣是主，他就该照着耶稣说的去做。单是理性上的接受和空泛的承认是不够的。如果我们说耶稣是主，那么从我们的生活方式上应该能够看出来他真正是我们的主。“你们为什么称呼我‘主啊，主啊’，却不照我的话做呢？”路加福音6:46（和修版）“不是每一个称呼我‘主啊，主啊’的人，都能进入天国；只有遵行我天父旨意的人，才能进去。马太福音7:21（标准译本）</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">悔改 18</h2>
+                <p class="content-paragraph">尊主权从内心开始尊主权不在于遵守一系列的宗教规条和传统，而是要在心里让耶稣做主。尊主权是从我们内心的顺服开始。如果我们真心愿意让他做主，那么我们外在的行为上最终会表现出来。只要心里奉主基督为圣，尊他为主。彼得前书3:15（和修版）</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">悔改 19</h2>
+            </div>
+
         </div>
-        
+
         <div class="navigation">
-            <a href="one2one_C1.html" class="nav-btn">上一课</a> <a href="index.html" class="nav-btn">返回首页</a> <a href="one2one_C3.html" class="nav-btn">下一课</a>
+            <a href="one2one_C1.html" class="nav-btn btn-secondary">← 第1课</a>
+            <a href="one2one_C3.html" class="nav-btn btn-primary">第3课 →</a>
         </div>
     </div>
 </body>
