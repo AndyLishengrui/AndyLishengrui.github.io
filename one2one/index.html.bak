@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一对一门徒训练 - 目录</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', 'SimSun', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 30px 20px;
+            margin-bottom: 30px;
+        }
+        
+        .page-title {
+            font-size: 2.5rem;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        
+        .page-subtitle {
+            font-size: 1.2rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+        
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: #2d3748;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .nav-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+        
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .intro-text {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .nav-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="page-title">一对一门徒训练</h1>
+            <p class="page-subtitle">跟随耶稣，带领门徒</p>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">📖 开始学习</h2>
+            <p class="intro-text">
+                一对一门徒训练是基于圣经的个人跟进和门徒培养系统。通过系统的学习和实践，
+                帮助每一位基督徒成长为成熟的门徒，并学会带领其他人跟随耶稣。
+            </p>
+            <div class="nav-grid">
+                <a href="preface.html" class="nav-btn">📚 前言：一对一的故事</a>
+                <a href="steps.html" class="nav-btn">🎯 五个门徒训练步骤</a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">📑 七课内容</h2>
+            <p class="intro-text">
+                系统性的七课门徒训练内容，每课都包含圣经学习、实践练习和生活应用。
+            </p>
+            <div class="nav-grid">
+                <a href="one2one_C1.html" class="nav-btn">第一课：新起点</a>
+                <a href="one2one_C2.html" class="nav-btn">第二课：新生命</a>
+                <a href="one2one_C3.html" class="nav-btn">第三课：新关系</a>
+                <a href="one2one_C4.html" class="nav-btn">第四课：新身份</a>
+                <a href="one2one_C5.html" class="nav-btn">第五课：新目标</a>
+                <a href="one2one_C6.html" class="nav-btn">第六课：新能力</a>
+                <a href="one2one_C7.html" class="nav-btn">第七课：新使命</a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">🔗 相关资源</h2>
+            <div class="nav-grid">
+                <a href="../foundation/" class="nav-btn">🏗️ 建立根基课程</a>
+                <a href="../bible-study/" class="nav-btn">📖 圣经研读</a>
+                <a href="../index.html" class="nav-btn">🏠 返回主站</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

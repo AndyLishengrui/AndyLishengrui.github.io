@@ -1,0 +1,16 @@
+{
+  "course_num": 3,
+  "course_title": "新方向 悔改",
+  "section_num": 28,
+  "section_title": "不再懊悔",
+  "answers": {
+    "q1_哥林多后书7:10": {
+      "reference": "哥林多后书 7:10",
+      "text": "可是属世界的忧伤，却带来死 亡。",
+      "version": "标准译本",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": true
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "course_num": 3,
+  "course_title": "新方向 悔改",
+  "section_num": 24,
+  "section_title": "和属世界的忧伤最大的不同在",
+  "answers": {
+    "q1_使徒行传26:20": {
+      "reference": "使徒行传 26:20",
+      "text": "和属世界的忧伤最大的不同在 于所结出的果子不同。属世界的 忧伤永远无法带来生命的改变， 它只会带来灵性的死亡。 劝勉他们应当悔改归向神，行 事与悔改的心相称。",
+      "version": "和合本",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": true
+    },
+    "q2_马太福音3:8": {
+      "reference": "马太福音 3:8",
+      "text": "和属世界的忧伤最大的不同在 于所结出的果子不同。属世界的 忧伤永远无法带来生命的改变， 它只会带来灵性的死亡。 劝勉他们应当悔改归向神，行 事与悔改的心相称。 你们要结出果子来，与悔改的 心相称。",
+      "version": "和合本",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": true
+    },
+    "q3_路加福音15:11-24": {
+      "reference": "路加福音 15:11-24",
+      "text": "",
+      "version": "和合本",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": false
+    }
+  }
+}

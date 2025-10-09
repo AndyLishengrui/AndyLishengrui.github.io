@@ -1,0 +1,16 @@
+{
+  "course_num": 2,
+  "course_title": "新主人 主权",
+  "section_num": 21,
+  "section_title": "新方向",
+  "answers": {
+    "q1_使徒行传2:38": {
+      "reference": "使徒行传 2:38",
+      "text": "彼得对他们说：“你们各人要悔改， 奉耶稣基督的名受洗，使你们的 罪得赦免，就会领受所赐的圣 灵……”",
+      "version": "和修版",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": true
+    }
+  }
+}

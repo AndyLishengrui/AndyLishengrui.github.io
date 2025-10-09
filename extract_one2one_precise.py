@@ -21,32 +21,108 @@ LESSON_TITLES = {
 }
 
 def extract_page_with_paragraphs(page):
-    """从PDF页面提取文本，保持段落结构"""
+    """从PDF页面提取文本，保持段落结构，并识别经文区域"""
     words = page.extract_words()
     
     if not words:
         return []
     
+    # 获取矩形（用于识别经文区域的左侧竖线）
+    rects = []
+    if hasattr(page, 'rects'):
+        # 筛选出可能是竖线的矩形（宽度小，高度大）
+        rects = [r for r in page.rects if r['width'] < 1 and r['height'] > 10]
+    
+    # 计算页面高度，用于判断是否是页脚页码
+    page_height = page.height
+    
     paragraphs = []
     current_para = []
     last_y = None
+    in_verse_area = False
+    verse_content = []
     
     for word in words:
         text = word['text'].strip()
         current_y = word['top']
+        current_x = word['x0']
+        
+        # 跳过页面底部的页码（Y坐标大于页面高度的90%）
+        if current_y > page_height * 0.9:
+            # 检查是否只是数字（页码）
+            if re.match(r'^\d+$', text):
+                continue
+        
+        # 检查当前位置是否在经文区域（有左侧竖线）
+        is_in_verse = False
+        for rect in rects:
+            # 如果当前文本的Y坐标在竖线范围内，且X坐标在竖线右侧
+            if (rect['top'] - 5 <= current_y <= rect['bottom'] + 5 and 
+                current_x > rect['x1']):
+                is_in_verse = True
+                break
+        
+        # 检查是否是经文节号（小字体的单个数字，如 8、9、10）
+        is_verse_number = (re.match(r'^\d{1,2}$', text) and 
+                          word['height'] < 10 and  # 小字体
+                          is_in_verse)
+        
+        # 检查是否是书卷引用（含括号的引用）
+        is_book_ref = bool(re.search(r'[\u4e00-\u9fff]+\s*\d+:\d+.*[（(].*[）)]', text))
         
         # 如果Y坐标跳跃超过25（表示新段落）
         if last_y is not None and (current_y - last_y) > 25:
             if current_para:
-                paragraphs.append(''.join(current_para))
+                para_text = ''.join(current_para)
+                # 标记经文段落
+                if in_verse_area and verse_content:
+                    paragraphs.append({'type': 'verse', 'content': verse_content})
+                    verse_content = []
+                    in_verse_area = False
+                else:
+                    paragraphs.append({'type': 'text', 'content': para_text})
                 current_para = []
         
-        current_para.append(text)
+        # 处理经文区域
+        if is_in_verse or is_verse_number or is_book_ref:
+            if is_verse_number:
+                # 节号作为新经文行的开始
+                if verse_content and current_para:
+                    verse_content.append(''.join(current_para))
+                    current_para = []
+                current_para.append(f"{text} ")
+                in_verse_area = True
+            elif is_book_ref:
+                # 书卷引用，结束当前经文内容
+                if current_para:
+                    verse_content.append(''.join(current_para))
+                    current_para = []
+                verse_content.append({'type': 'ref', 'text': text})
+                in_verse_area = True
+            else:
+                current_para.append(text)
+                in_verse_area = True
+        else:
+            # 普通文本
+            if in_verse_area and verse_content:
+                # 结束经文区域
+                if current_para:
+                    verse_content.append(''.join(current_para))
+                    current_para = []
+                paragraphs.append({'type': 'verse', 'content': verse_content})
+                verse_content = []
+                in_verse_area = False
+            current_para.append(text)
+        
         last_y = current_y + word['height']
     
-    # 添加最后一个段落
-    if current_para:
-        paragraphs.append(''.join(current_para))
+    # 添加最后的内容
+    if verse_content:
+        if current_para:
+            verse_content.append(''.join(current_para))
+        paragraphs.append({'type': 'verse', 'content': verse_content})
+    elif current_para:
+        paragraphs.append({'type': 'text', 'content': ''.join(current_para)})
     
     return paragraphs
 
@@ -106,15 +182,24 @@ def extract_all_content():
 
 def clean_paragraph(para):
     """清理段落"""
+    # 处理新的数据结构
+    if isinstance(para, dict):
+        if para['type'] == 'verse':
+            return para  # 保持经文结构
+        else:
+            text = para['content']
+    else:
+        text = para
+    
     # 移除标题和页码
-    if para in ['前言', '前言 - 一对一的故事', '开始作门徒', '一对一门徒训练系列']:
+    if text in ['前言', '前言 - 一对一的故事', '开始作门徒', '一对一门徒训练系列']:
         return None
-    if re.match(r'^\d+$', para):
+    if re.match(r'^\d+$', text):
         return None
-    if para in LESSON_TITLES.values():
+    if text in LESSON_TITLES.values():
         return None
     
-    return para.strip()
+    return text.strip() if isinstance(text, str) else text
 
 def generate_preface_html(paragraphs):
     """生成前言HTML"""
@@ -456,16 +541,31 @@ def generate_lesson_html(lesson_num, paragraphs):
     i = 0
     while i < len(paragraphs):
         para = paragraphs[i]
+        
+        # 如果已经是字典结构（经文），直接保留
+        if isinstance(para, dict):
+            cleaned_paras.append(para)
+            i += 1
+            continue
+        
         cleaned = clean_paragraph(para)
         
         # 检查是否是节标题的第一部分（如"得救"）
-        if cleaned and i + 1 < len(paragraphs):
+        if cleaned and isinstance(cleaned, str) and i + 1 < len(paragraphs):
             next_para = paragraphs[i + 1]
-            # 如果下一个是数字（节编号），合并它们
-            if re.match(r'^\d+$', next_para.strip()):
-                cleaned_paras.append(f"{cleaned}{next_para.strip()}")
-                i += 2
-                continue
+            # 如果下一个也是字符串
+            if isinstance(next_para, str):
+                # 如果是1-9的数字（节编号），合并它们；大于9的是页码，跳过
+                if re.match(r'^[1-9]$', next_para.strip()):
+                    cleaned_paras.append(f"{cleaned}{next_para.strip()}")
+                    i += 2
+                    continue
+                # 如果是两位数的页码，跳过它
+                elif re.match(r'^\d{2,}$', next_para.strip()):
+                    if cleaned:
+                        cleaned_paras.append(cleaned)
+                    i += 2  # 跳过页码
+                    continue
         
         if cleaned:
             cleaned_paras.append(cleaned)
@@ -476,35 +576,70 @@ def generate_lesson_html(lesson_num, paragraphs):
     current_section = None
     
     for para in cleaned_paras:
-        # 检测节标题（如：得救1）
-        section_match = re.match(r'^([一-九十\u4e00-\u9fff]{2,4})(\d+)$', para)
-        if section_match:
-            if current_section:
-                sections.append(current_section)
-            section_name = section_match.group(1)
-            section_num = section_match.group(2)
-            current_section = {
-                'title': f"{section_name} {section_num}",
-                'content': []
-            }
-        elif current_section:
-            # 检测圣经引用
-            if re.match(r'^[\u4e00-\u9fff]+书?\s*\d+:\d+', para):
-                current_section['content'].append({
-                    'type': 'verse_ref',
-                    'text': para
-                })
-            # 检测问题
-            elif para.startswith('问题：') or para.endswith('？'):
-                current_section['content'].append({
-                    'type': 'question',
-                    'text': para
-                })
-            else:
-                current_section['content'].append({
-                    'type': 'paragraph',
-                    'text': para
-                })
+        # 检测节标题（如：得救1，节编号只能是1-9）
+        if isinstance(para, str):
+            section_match = re.match(r'^([一-九十\u4e00-\u9fff]{2,4})([1-9])$', para)
+            if section_match:
+                if current_section:
+                    sections.append(current_section)
+                section_name = section_match.group(1)
+                section_num = section_match.group(2)
+                current_section = {
+                    'title': f"{section_name} {section_num}",
+                    'content': []
+                }
+                continue
+        
+        if current_section:
+            # 处理经文结构
+            if isinstance(para, dict) and para.get('type') == 'verse':
+                verse_parts = para['content']
+                verse_text_parts = []
+                verse_ref = None
+                
+                for part in verse_parts:
+                    if isinstance(part, dict) and part.get('type') == 'ref':
+                        verse_ref = part['text']
+                    elif isinstance(part, str):
+                        verse_text_parts.append(part)
+                
+                # 添加经文内容
+                if verse_text_parts:
+                    full_verse_text = ''.join(verse_text_parts).strip()
+                    current_section['content'].append({
+                        'type': 'verse_text',
+                        'text': full_verse_text
+                    })
+                
+                # 添加经文引用
+                if verse_ref:
+                    current_section['content'].append({
+                        'type': 'verse_ref',
+                        'text': verse_ref
+                    })
+            
+            # 处理普通字符串段落
+            elif isinstance(para, str):
+                # 检测圣经引用 - 格式：书卷名 章:节（版本）
+                verse_pattern = r'^([\u4e00-\u9fff]+书?)\s*(\d+):(\d+[\d,\-]*)\s*[（(]([^）)]+)[）)]'
+                verse_match = re.match(verse_pattern, para)
+                if verse_match:
+                    # 这是独立的经文引用
+                    current_section['content'].append({
+                        'type': 'verse_ref',
+                        'text': para
+                    })
+                # 检测问题
+                elif para.startswith('问题：') or (para.endswith('？') and '个人应用' in para):
+                    current_section['content'].append({
+                        'type': 'question',
+                        'text': para
+                    })
+                else:
+                    current_section['content'].append({
+                        'type': 'paragraph',
+                        'text': para
+                    })
     
     if current_section:
         sections.append(current_section)
@@ -516,7 +651,11 @@ def generate_lesson_html(lesson_num, paragraphs):
         section_html += f'                <h2 class="section-title">{section["title"]}</h2>\n'
         
         for item in section['content']:
-            if item['type'] == 'verse_ref':
+            if item['type'] == 'verse_text':
+                # 经文内容（带引号的经文文本）
+                section_html += f'                <div class="verse-text">{item["text"]}</div>\n'
+            elif item['type'] == 'verse_ref':
+                # 经文引用（书卷 章:节）
                 section_html += f'                <div class="verse-ref">{item["text"]}</div>\n'
             elif item['type'] == 'question':
                 section_html += f'                <div class="question-box">{item["text"]}</div>\n'
@@ -623,6 +762,17 @@ def generate_lesson_html(lesson_num, paragraphs):
             margin-bottom: 16px;
             color: #333;
             text-align: justify;
+        }}
+
+        .verse-text {{
+            background: #fffaf0;
+            border-left: 4px solid #f6ad55;
+            padding: 15px 20px;
+            margin: 15px 0;
+            font-size: 1.02em;
+            color: #2d3748;
+            line-height: 1.8;
+            font-style: italic;
         }}
 
         .verse-ref {{

@@ -1,0 +1,16 @@
+{
+  "course_num": 2,
+  "course_title": "新主人 主权",
+  "section_num": 20,
+  "section_title": "说：“你要尽心、尽性、尽意爱",
+  "answers": {
+    "q1_马太福音22:36-38": {
+      "reference": "马太福音 22:36-38",
+      "text": "36“老师，律法上的诫命哪一 条是最大的呢？”37 耶稣对他 说：“你要尽心、尽性、尽意爱 主——你的神。 38 这是最大的， 且是第一条诫命。”",
+      "version": "和修版",
+      "text_alt": "",
+      "version_alt": "",
+      "has_data": true
+    }
+  }
+}

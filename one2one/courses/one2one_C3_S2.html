@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第3课 第2节 - 和属世界的忧伤最大的不同在 | 一对一门徒训练</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            border-radius: 15px 15px 0 0;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .breadcrumb {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+
+        .section-title-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .section-label {
+            display: inline-block;
+            border: 2px solid #333;
+            padding: 8px 20px;
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .section-name {
+            font-size: 1.3em;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .question-block {
+            margin-bottom: 35px;
+            padding: 0;
+            background: transparent;
+            border: none;
+        }
+
+        .question-header {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .question-number {
+            flex-shrink: 0;
+            margin-right: 10px;
+            color: #333;
+            font-size: 1em;
+        }
+
+        .question-text {
+            font-size: 1em;
+            color: #333;
+            font-weight: normal;
+            line-height: 1.6;
+        }
+
+        .answers-area {
+            margin-left: 30px;
+        }
+
+        .reference-with-blank {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .reference-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .reference-text {
+            color: #667eea;
+            font-size: 0.95em;
+            font-weight: 500;
+        }
+
+        .hint-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-hint-partial, .btn-hint-full {
+            padding: 4px 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.85em;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: white;
+        }
+
+        .btn-hint-partial {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+        }
+
+        .btn-hint-partial:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(243, 156, 18, 0.3);
+        }
+
+        .btn-hint-full {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+        }
+
+        .btn-hint-full:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(52, 152, 219, 0.3);
+        }
+
+        .answer-input {
+            width: 100%;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 1em;
+            font-family: inherit;
+            resize: vertical;
+            outline: none;
+            transition: all 0.3s;
+            line-height: 1.6;
+        }
+
+        .answer-input:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .answer-input.correct {
+            border-color: #27ae60;
+            background: rgba(39, 174, 96, 0.05);
+        }
+
+        .answer-input.incorrect {
+            border-color: #e74c3c;
+            background: rgba(231, 76, 60, 0.05);
+        }
+
+        .answer-input.partial {
+            border-color: #f39c12;
+            background: rgba(243, 156, 18, 0.05);
+        }
+
+        .answer-feedback {
+            margin-top: 8px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            display: none;
+        }
+
+        .answer-feedback.show {
+            display: block;
+        }
+
+        .answer-feedback.correct {
+            background: #d4edda;
+            color: #155724;
+            border-left: 4px solid #27ae60;
+        }
+
+        .answer-feedback.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .answer-feedback.partial {
+            background: #fff3cd;
+            color: #856404;
+            border-left: 4px solid #f39c12;
+        }
+
+        .standard-answer {
+            display: none;
+            margin-top: 10px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 0 5px 5px 0;
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .standard-answer.show {
+            display: block;
+        }
+
+        .standard-answer strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+
+        .application-section {
+            margin-top: 40px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .application-section h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .application-prompt {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        .application-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            font-family: inherit;
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .application-input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .action-bar {
+            background: white;
+            padding: 25px 40px;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .score-display {
+            font-size: 1.1em;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .score-number {
+            color: #667eea;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 500;
+        }
+
+        .btn-check {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-check:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-submit {
+            background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+            color: white;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(39, 174, 96, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        .navigation {
+            background: white;
+            padding: 20px 40px;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .nav-btn {
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .prev-btn, .next-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .prev-btn:hover, .next-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .home-btn {
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .home-btn:hover {
+            background: #e0e0e0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            /* 优化手机端填空的视觉呈现 */
+            .answers-area {
+                margin-left: 10px; /* 从30px减少到10px */
+            }
+            
+            .reference-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            
+            .hint-buttons {
+                width: 100%;
+                justify-content: flex-start;
+            }
+            }
+
+            header, .content, .action-bar {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .navigation {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .nav-btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .action-bar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hint-buttons {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            display: none;
+            z-index: 1000;
+            max-width: 300px;
+        }
+
+        .toast.show {
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(400px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .score-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        .score-modal.show {
+            display: flex;
+        }
+
+        .score-modal-content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 400px;
+            animation: scaleIn 0.3s ease;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0.7);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .score-modal-content h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .final-score {
+            font-size: 4em;
+            color: #667eea;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .score-message {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .score-details {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .score-details p {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .btn-close-modal {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .btn-close-modal:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="../index.html">一对一首页</a> &gt; <a href="../index.html">第3课：新方向 悔改</a> &gt; 第2节
+            </div>
+            <h1>第3课：新方向 悔改</h1>
+            <div class="section-title-box">
+                <span class="section-label">第 2 节</span>
+                <span class="section-name">和属世界的忧伤最大的不同在</span>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="question-block">
+                <p class="content-paragraph">
+                    和属世界的忧伤最大的不同在 于所结出的果子不同。属世界的 忧伤永远无法带来生命的改变， 它只会带来灵性的死亡。 劝勉他们应当悔改归向神，行
+                </p>
+            </div>
+
+            
+            <!-- 经文填空 1 -->
+            <div class="blank-section">
+                <div class="blank-header">
+                    <span class="blank-reference">📖 使徒行传 26:20</span>
+                    <div class="hint-buttons">
+                        <button class="btn-hint btn-hint-partial" onclick="showPartialHint(1, '使徒行传 26:20')">💡 渐进提示</button>
+                        <button class="btn-hint btn-hint-full" onclick="showFullHint(1, '使徒行传 26:20')">📝 查看答案</button>
+                    </div>
+                </div>
+                <textarea 
+                    class="answer-input" 
+                    data-question="1" 
+                    data-reference="使徒行传 26:20"
+                    data-has-answer="true"
+                    placeholder="请根据经文引用，写出完整的经文内容..."></textarea>
+                <div class="answer-feedback"></div>
+                <div class="standard-answer" data-ref="使徒行传 26:20">
+                    <strong>📖 标准答案（和合本）：</strong>
+                    <p>【待补充】</p>
+                </div>
+            </div>
+
+            <!-- 经文填空 2 -->
+            <div class="blank-section">
+                <div class="blank-header">
+                    <span class="blank-reference">📖 马太福音 3:8</span>
+                    <div class="hint-buttons">
+                        <button class="btn-hint btn-hint-partial" onclick="showPartialHint(2, '马太福音 3:8')">💡 渐进提示</button>
+                        <button class="btn-hint btn-hint-full" onclick="showFullHint(2, '马太福音 3:8')">📝 查看答案</button>
+                    </div>
+                </div>
+                <textarea 
+                    class="answer-input" 
+                    data-question="2" 
+                    data-reference="马太福音 3:8"
+                    data-has-answer="true"
+                    placeholder="请根据经文引用，写出完整的经文内容..."></textarea>
+                <div class="answer-feedback"></div>
+                <div class="standard-answer" data-ref="马太福音 3:8">
+                    <strong>📖 标准答案（和合本）：</strong>
+                    <p>【待补充】</p>
+                </div>
+            </div>
+
+            <!-- 经文填空 3 -->
+            <div class="blank-section">
+                <div class="blank-header">
+                    <span class="blank-reference">📖 路加福音 15:11-24</span>
+                    <div class="hint-buttons">
+                        <button class="btn-hint btn-hint-partial" onclick="showPartialHint(3, '路加福音 15:11-24')">💡 渐进提示</button>
+                        <button class="btn-hint btn-hint-full" onclick="showFullHint(3, '路加福音 15:11-24')">📝 查看答案</button>
+                    </div>
+                </div>
+                <textarea 
+                    class="answer-input" 
+                    data-question="3" 
+                    data-reference="路加福音 15:11-24"
+                    data-has-answer="true"
+                    placeholder="请根据经文引用，写出完整的经文内容..."></textarea>
+                <div class="answer-feedback"></div>
+                <div class="standard-answer" data-ref="路加福音 15:11-24">
+                    <strong>📖 标准答案（和合本）：</strong>
+                    <p>【待补充】</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 操作栏 -->
+        <div class="action-bar">
+            <div class="score-display">
+                完成进度: <span class="score-number" id="progressDisplay">0%</span>
+            </div>
+            <div>
+                <button class="btn-check" onclick="checkAnswers()">✓ 检查答案</button>
+                <button class="btn-submit" onclick="submitAnswers()">📊 提交成绩</button>
+                <button class="btn-clear" onclick="clearAnswers()">🔄 清空答案</button>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <a href="one2one_C3_S1.html" class="btn btn-secondary">← 上一节</a>
+            <a href="../index.html" class="btn btn-secondary">返回目录</a>
+            <a href="one2one_C3_S3.html" class="btn btn-primary">下一节 →</a>
+        </div>
+    </div>
+
+    <!-- Toast提示 -->
+    <div class="toast" id="toast"></div>
+
+    <script src="js/one2one_common.js"></script>
+    <script>
+        // 设置当前页面的JSON文件路径
+        const ANSWER_JSON_FILE = '../data/answers/one2one_C3_S2.json';
+        const STORAGE_KEY = 'one2one_C3_S24';
+    </script>
+</body>
+</html>

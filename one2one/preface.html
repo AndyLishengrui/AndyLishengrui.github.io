@@ -1,130 +1,308 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>前言 - 一对一的故事 | 一对一门徒训练</title>
-    <link rel="stylesheet" href="../cs/css/foundation_style.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+<!DOCTYPE html><!DOCTYPE html>
+
+<html lang="zh-CN"><html lang="zh-CN">
+
+<head><head>
+
+    <meta charset="UTF-8">    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>前言 | 一对一门徒训练</title>    <title>前言 - 一对一的故事 | 一对一门徒训练</title>
+
+    <style>    <link rel="stylesheet" href="../cs/css/foundation_style.css">
+
+        * {    <style>
+
+            margin: 0;        * {
+
+            padding: 0;            margin: 0;
+
+            box-sizing: border-box;            padding: 0;
+
+        }            box-sizing: border-box;
+
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
+
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;        body {
+
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+
+            min-height: 100vh;            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+            padding: 20px;            min-height: 100vh;
+
+        }            padding: 20px;
+
         }
 
         .container {
-            max-width: 900px;
-            margin: 0 auto;
+
+            max-width: 900px;        .container {
+
+            margin: 0 auto;            max-width: 900px;
+
+        }            margin: 0 auto;
+
         }
 
         header {
-            background: white;
-            border-radius: 15px 15px 0 0;
-            padding: 30px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+            background: white;        header {
+
+            border-radius: 15px 15px 0 0;            background: white;
+
+            padding: 30px;            border-radius: 15px 15px 0 0;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);            padding: 30px;
+
+        }            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
         }
 
         .breadcrumb {
-            color: #888;
-            font-size: 0.9em;
-            margin-bottom: 10px;
+
+            color: #888;        .breadcrumb {
+
+            font-size: 0.9em;            color: #888;
+
+            margin-bottom: 10px;            font-size: 0.9em;
+
+        }            margin-bottom: 10px;
+
         }
 
         .breadcrumb a {
-            color: #667eea;
-            text-decoration: none;
+
+            color: #667eea;        .breadcrumb a {
+
+            text-decoration: none;            color: #667eea;
+
+        }            text-decoration: none;
+
         }
 
         .breadcrumb a:hover {
-            text-decoration: underline;
+
+            text-decoration: underline;        .breadcrumb a:hover {
+
+        }            text-decoration: underline;
+
         }
 
         h1 {
-            color: #333;
-            margin-bottom: 10px;
-            font-size: 2em;
-        }
 
-        .subtitle {
-            color: #666;
-            font-size: 1.1em;
+            color: #333;        h1 {
+
+            margin-bottom: 10px;            color: #333;
+
+            font-size: 2em;            margin-bottom: 10px;
+
+        }            font-size: 2em;
+
         }
 
         .content {
-            background: white;
-            padding: 40px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
 
-        .content-paragraph {
-            font-size: 1.05em;
-            line-height: 1.9;
-            margin-bottom: 18px;
-            color: #333;
+            background: white;        .subtitle {
+
+            padding: 40px;            color: #666;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);            font-size: 1.1em;
+
+        }        }
+
+
+
+        .content-paragraph {        .content {
+
+            font-size: 1.05em;            background: white;
+
+            line-height: 1.9;            padding: 40px;
+
+            margin-bottom: 18px;            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+            color: #333;        }
+
             text-align: justify;
+
+            text-indent: 2em;        .content-paragraph {
+
+        }            font-size: 1.05em;
+
+            line-height: 1.9;
+
+        .content-paragraph.no-indent {            margin-bottom: 18px;
+
+            text-indent: 0;            color: #333;
+
+        }            text-align: justify;
+
         }
 
-        .navigation {
-            background: white;
-            border-radius: 0 0 15px 15px;
-            padding: 25px;
-            display: flex;
-            justify-content: space-between;
+        .highlight-box {
+
+            background: #f8f9fa;        .navigation {
+
+            border-left: 4px solid #667eea;            background: white;
+
+            padding: 20px;            border-radius: 0 0 15px 15px;
+
+            margin: 25px 0;            padding: 25px;
+
+            border-radius: 0 8px 8px 0;            display: flex;
+
+        }            justify-content: space-between;
+
             align-items: center;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
 
-        .nav-btn {
-            padding: 12px 28px;
+        .highlight-box p {            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+            margin-bottom: 12px;        }
+
+            line-height: 1.8;
+
+            color: #555;        .nav-btn {
+
+        }            padding: 12px 28px;
+
             border: none;
-            border-radius: 8px;
-            font-size: 1em;
-            cursor: pointer;
-            text-decoration: none;
-            transition: all 0.3s;
-            font-weight: 500;
-        }
 
-        .btn-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+        .highlight-box p:last-child {            border-radius: 8px;
+
+            margin-bottom: 0;            font-size: 1em;
+
+        }            cursor: pointer;
+
+            text-decoration: none;
+
+        .navigation {            transition: all 0.3s;
+
+            background: white;            font-weight: 500;
+
+            border-radius: 0 0 15px 15px;        }
+
+            padding: 25px;
+
+            display: flex;        .btn-primary {
+
+            justify-content: space-between;            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+            align-items: center;            color: white;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);        }
+
         }
 
         .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+
+        .nav-btn {            transform: translateY(-2px);
+
+            padding: 12px 28px;            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+
+            border: none;        }
+
+            border-radius: 8px;
+
+            font-size: 1em;        .btn-secondary {
+
+            cursor: pointer;            background: #f0f0f0;
+
+            text-decoration: none;            color: #333;
+
+            transition: all 0.3s;        }
+
+            font-weight: 500;
+
+            display: inline-block;        .btn-secondary:hover {
+
+        }            background: #e0e0e0;
+
         }
 
-        .btn-secondary {
-            background: #f0f0f0;
-            color: #333;
-        }
+        .btn-primary {
 
-        .btn-secondary:hover {
-            background: #e0e0e0;
-        }
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);        @media (max-width: 768px) {
 
-        @media (max-width: 768px) {
-            header, .content, .navigation {
-                padding: 20px;
+            color: white;            header, .content, .navigation {
+
+        }                padding: 20px;
+
             }
 
-            h1 {
-                font-size: 1.6em;
-            }
+        .btn-primary:hover {
 
-            .content-paragraph {
-                font-size: 1em;
-            }
-        }
+            transform: translateY(-2px);            h1 {
+
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);                font-size: 1.6em;
+
+        }            }
+
+
+
+        .btn-secondary {            .content-paragraph {
+
+            background: #f0f0f0;                font-size: 1em;
+
+            color: #333;            }
+
+        }        }
+
     </style>
+
+        .btn-secondary:hover {</head>
+
+            background: #e0e0e0;<body>
+
+        }    <div class="container">
+
+        <header>
+
+        .author {            <div class="breadcrumb">
+
+            text-align: right;                <a href="index.html">一对一首页</a> &gt; 前言
+
+            font-style: italic;            </div>
+
+            color: #667eea;            <h1>前言 - 一对一的故事</h1>
+
+            margin-top: 25px;            <p class="subtitle">一对一门徒训练系列</p>
+
+            font-size: 1.1em;        </header>
+
+        }
+
+        <div class="content">
+
+        @media (max-width: 768px) {            <p class="content-paragraph">前言我在读书的时候遇见了一位年轻的基督徒，他很乐于向学生传福音。在这期间，许多同学第一次听到了福音，知道了神拯救人类的计划，有好几百人信了耶稣。后来，他们当中有不少人出去开创教会，有人做了牧师，也有人做了宣教士。我也是在那时第一次听到了福音。然而，我的第一反应不是悔改，而是逃跑。我逃避这个基督徒，也逃避神。我逃了六个月，尽量地躲开他。我躲得很辛苦，因为他似乎无处不在。每场</p>
+
+            header, .content, .navigation {            <p class="content-paragraph">足球赛、篮球赛他都参加，学校大楼、食堂和停车场都有他的身影。他和他那帮门徒们又经常邀请我去参加查经会、祷告会以及青年之夜等等。后来，我终于接受了耶稣，成为了基督徒。但是他还是“不放过我”，他不仅帮助我信了耶稣，还带领我作耶稣的门徒。其实，他在我身上的工作才刚刚开始。他带我去一个小组，我们八个人每周聚会来学习跟随耶稣。我深信这种“一对一”的个人跟进是很有功效的。因为当初他跟我分享福音时，我跑，他追，有六个月之久，他对我锲而不舍，</p>
+
+                padding: 20px;            <p class="content-paragraph">向我讲解，为我祷告，他就是不放弃。这就是“一对一”的传福音。在我信了耶稣以后，他开始带我作耶稣的门徒。他教我怎样阅读查考圣经，怎样将所学的应用到生活中去，怎样祷告。他教我怎样向别人分享我的信仰，怎样带门徒。这就是“一对一”的带门徒。个人跟进和带门徒，这就是耶稣给我们的大使命。也就是这本小册子要讲的。多年来，我鼓励每一个基督徒都作个人跟进。有些人作得很</p>
+
+            }            <p class="content-paragraph">好，也有些人虽尽了力，效果却不佳，很有挫败感。因为他们不知道该说什么，他们缺少一个向导。《一对一》就是用来帮你进行个人跟进和带门徒的向导。它本身带不了门徒，但它能帮你带领门徒。</p>
+
+            <p class="content-paragraph">慕荣</p>
+
+            h1 {        </div>
+
+                font-size: 1.6em;
+
+            }        <div class="navigation">
+
+            <a href="index.html" class="nav-btn btn-secondary">返回首页</a>
+
+            .content-paragraph {            <a href="steps.html" class="nav-btn btn-primary">下一步：开始作门徒 →</a>
+
+                font-size: 1em;        </div>
+
+            }    </div>
+
+        }</body>
+
+    </style></html>
 </head>
 <body>
     <div class="container">
@@ -132,20 +310,30 @@
             <div class="breadcrumb">
                 <a href="index.html">一对一首页</a> &gt; 前言
             </div>
-            <h1>前言 - 一对一的故事</h1>
-            <p class="subtitle">一对一门徒训练系列</p>
+            <h1>前言</h1>
         </header>
 
         <div class="content">
-            <p class="content-paragraph">前言我在读书的时候遇见了一位年轻的基督徒，他很乐于向学生传福音。在这期间，许多同学第一次听到了福音，知道了神拯救人类的计划，有好几百人信了耶稣。后来，他们当中有不少人出去开创教会，有人做了牧师，也有人做了宣教士。我也是在那时第一次听到了福音。然而，我的第一反应不是悔改，而是逃跑。我逃避这个基督徒，也逃避神。我逃了六个月，尽量地躲开他。我躲得很辛苦，因为他似乎无处不在。每场</p>
-            <p class="content-paragraph">足球赛、篮球赛他都参加，学校大楼、食堂和停车场都有他的身影。他和他那帮门徒们又经常邀请我去参加查经会、祷告会以及青年之夜等等。后来，我终于接受了耶稣，成为了基督徒。但是他还是“不放过我”，他不仅帮助我信了耶稣，还带领我作耶稣的门徒。其实，他在我身上的工作才刚刚开始。他带我去一个小组，我们八个人每周聚会来学习跟随耶稣。我深信这种“一对一”的个人跟进是很有功效的。因为当初他跟我分享福音时，我跑，他追，有六个月之久，他对我锲而不舍，</p>
-            <p class="content-paragraph">向我讲解，为我祷告，他就是不放弃。这就是“一对一”的传福音。在我信了耶稣以后，他开始带我作耶稣的门徒。他教我怎样阅读查考圣经，怎样将所学的应用到生活中去，怎样祷告。他教我怎样向别人分享我的信仰，怎样带门徒。这就是“一对一”的带门徒。个人跟进和带门徒，这就是耶稣给我们的大使命。也就是这本小册子要讲的。多年来，我鼓励每一个基督徒都作个人跟进。有些人作得很</p>
-            <p class="content-paragraph">好，也有些人虽尽了力，效果却不佳，很有挫败感。因为他们不知道该说什么，他们缺少一个向导。《一对一》就是用来帮你进行个人跟进和带门徒的向导。它本身带不了门徒，但它能帮你带领门徒。</p>
-            <p class="content-paragraph">慕荣</p>
+            <p class="content-paragraph">我在读书的时候遇见了一位年轻的基督徒，他很乐于向学生传福音。在这期间，许多同学第一次听到了福音，知道了神拯救人类的计划，有好几百人信了耶稣。后来，他们当中有不少人出去开创教会，有人做了牧师，也有人做了宣教士。</p>
+
+            <p class="content-paragraph">我也是在那时第一次听到了福音。然而，我的第一反应不是悔改，而是逃跑。我逃避这个基督徒，也逃避神。我逃了六个月，尽量地躲开他。我躲得很辛苦，因为他似乎无处不在。每场足球赛、篮球赛他都参加，学校大楼、食堂和停车场都有他的身影。他和他那帮门徒们又经常邀请我去参加查经会、祷告会以及青年之夜等等。后来，我终于接受了耶稣，成为了基督徒。</p>
+
+            <p class="content-paragraph">但是他还是"不放过我"，他不仅帮助我信了耶稣，还带领我作耶稣的门徒。其实，他在我身上的工作才刚刚开始。他带我去一个小组，我们八个人每周聚会来学习跟随耶稣。</p>
+
+            <div class="highlight-box">
+                <p>我深信这种"一对一"的个人跟进是很有功效的。因为当初他跟我分享福音时，我跑，他追，有六个月之久，他对我锲而不舍，向我讲解，为我祷告，他就是不放弃。这就是"一对一"的传福音。</p>
+                <p>在我信了耶稣以后，他开始带我作耶稣的门徒。他教我怎样阅读查考圣经，怎样将所学的应用到生活中去，怎样祷告。他教我怎样向别人分享我的信仰，怎样带门徒。这就是"一对一"的带门徒。</p>
+            </div>
+
+            <p class="content-paragraph">个人跟进和带门徒，这就是耶稣给我们的大使命。也就是这本小册子要讲的。</p>
+
+            <p class="content-paragraph">多年来，我鼓励每一个基督徒都作个人跟进。有些人作得很好，也有些人虽尽了力，效果却不佳，很有挫败感。因为他们不知道该说什么，他们缺少一个向导。《一对一》就是用来帮你进行个人跟进和带门徒的向导。它本身带不了门徒，但它能帮你带领门徒。</p>
+
+            <p class="author">—— 慕荣</p>
         </div>
 
         <div class="navigation">
-            <a href="index.html" class="nav-btn btn-secondary">返回首页</a>
+            <a href="index.html" class="nav-btn btn-secondary">← 返回首页</a>
             <a href="steps.html" class="nav-btn btn-primary">下一步：开始作门徒 →</a>
         </div>
     </div>

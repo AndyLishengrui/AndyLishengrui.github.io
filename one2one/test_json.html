@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON测试</title>
+</head>
+<body>
+    <h1>JSON加载测试</h1>
+    <button onclick="testLoad()">测试加载JSON</button>
+    <pre id="output"></pre>
+
+    <script>
+        async function testLoad() {
+            const output = document.getElementById('output');
+            output.textContent = '正在加载...\n';
+            
+            try {
+                const response = await fetch('data/answers/one2one_C1_S1.json');
+                output.textContent += `Status: ${response.status}\n`;
+                
+                const data = await response.json();
+                output.textContent += `Data loaded: ${JSON.stringify(data, null, 2)}\n\n`;
+                
+                const answers = data.answers;
+                output.textContent += `答案数量: ${Object.keys(answers).length}\n`;
+                output.textContent += `答案keys:\n`;
+                
+                for (const key of Object.keys(answers)) {
+                    output.textContent += `  - ${key}\n`;
+                    output.textContent += `    引用: ${answers[key].reference}\n`;
+                    output.textContent += `    版本: ${answers[key].version}\n`;
+                    output.textContent += `    内容长度: ${answers[key].text.length}字\n`;
+                }
+                
+                // 测试查找
+                const testKey = 'q1_以赛亚书 59:1,2';
+                output.textContent += `\n测试查找 "${testKey}":\n`;
+                if (answers[testKey]) {
+                    output.textContent += `  ✅ 找到了！\n`;
+                    output.textContent += `  内容: ${answers[testKey].text.substring(0, 50)}...\n`;
+                } else {
+                    output.textContent += `  ❌ 未找到\n`;
+                }
+                
+            } catch (e) {
+                output.textContent += `❌ 错误: ${e.message}\n`;
+                console.error(e);
+            }
+        }
+    </script>
+</body>
+</html>

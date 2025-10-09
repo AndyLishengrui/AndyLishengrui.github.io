@@ -3,108 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>一对一门徒训练 - 目录</title>
+    <title>一对一门徒训练课程 | 个人跟进及带门徒</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: 'Microsoft YaHei', 'SimSun', Arial, sans-serif;
-            line-height: 1.8;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
         }
-        
+
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
         }
-        
-        .header {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            padding: 30px 20px;
-            margin-bottom: 30px;
-        }
-        
-        .page-title {
-            font-size: 2.5rem;
-            color: #2d3748;
-            margin-bottom: 10px;
-        }
-        
-        .page-subtitle {
-            font-size: 1.2rem;
-            color: #667eea;
-            font-weight: 500;
-        }
-        
-        .section {
-            background: rgba(255, 255, 255, 0.95);
+
+        .hero {
+            background: white;
+            color: #333;
+            padding: 60px 30px;
             border-radius: 15px;
-            padding: 30px;
+            text-align: center;
             margin-bottom: 30px;
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
         }
-        
-        .section-title {
-            font-size: 1.5rem;
-            color: #2d3748;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 10px;
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
-        
-        .nav-grid {
+
+        .hero p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .course-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
         }
-        
-        .nav-btn {
+
+        .course-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .course-number {
+            display: inline-block;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            border: none;
-            padding: 15px 20px;
-            border-radius: 10px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: block;
-            text-align: center;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.95em;
+            margin-bottom: 15px;
         }
-        
-        .nav-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-        
-        .intro-text {
-            font-size: 1.1rem;
-            color: #4a5568;
+
+        .course-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #333;
             margin-bottom: 20px;
-            line-height: 1.8;
         }
-        
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
         @media (max-width: 768px) {
-            .page-title {
-                font-size: 2rem;
+            .hero h1 {
+                font-size: 1.8em;
             }
-            
-            .nav-grid {
+
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .course-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -112,46 +137,83 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1 class="page-title">一对一门徒训练</h1>
-            <p class="page-subtitle">跟随耶稣，带领门徒</p>
+        <div class="hero">
+            <h1>一对一门徒训练</h1>
+            <p>个人跟进及带门徒 | ONE TO ONE</p>
+            <p style="font-size: 0.95em; margin-top: 15px; font-style: italic;">"来跟从我！我要使你们成为得人的渔夫。" — 马可福音 1:17</p>
         </div>
-        
-        <div class="section">
-            <h2 class="section-title">📖 开始学习</h2>
-            <p class="intro-text">
-                一对一门徒训练是基于圣经的个人跟进和门徒培养系统。通过系统的学习和实践，
-                帮助每一位基督徒成长为成熟的门徒，并学会带领其他人跟随耶稣。
-            </p>
-            <div class="nav-grid">
-                <a href="preface.html" class="nav-btn">📚 前言：一对一的故事</a>
-                <a href="steps.html" class="nav-btn">🎯 五个门徒训练步骤</a>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number">7</span>
+                <span class="stat-label">课程</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">62</span>
+                <span class="stat-label">小节</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">66+</span>
+                <span class="stat-label">经文</span>
             </div>
         </div>
-        
-        <div class="section">
-            <h2 class="section-title">📑 七课内容</h2>
-            <p class="intro-text">
-                系统性的七课门徒训练内容，每课都包含圣经学习、实践练习和生活应用。
-            </p>
-            <div class="nav-grid">
-                <a href="one2one_C1.html" class="nav-btn">第一课：新起点</a>
-                <a href="one2one_C2.html" class="nav-btn">第二课：新生命</a>
-                <a href="one2one_C3.html" class="nav-btn">第三课：新关系</a>
-                <a href="one2one_C4.html" class="nav-btn">第四课：新身份</a>
-                <a href="one2one_C5.html" class="nav-btn">第五课：新目标</a>
-                <a href="one2one_C6.html" class="nav-btn">第六课：新能力</a>
-                <a href="one2one_C7.html" class="nav-btn">第七课：新使命</a>
+
+        <div class="course-grid">
+            <div class="course-card">
+                <span class="course-number">第1课</span>
+                <h2 class="course-title">新起点 得救</h2>
+                <p style="color: #666; margin: 15px 0;">14个小节 • 完整</p>
+                <a href="courses/one2one_C1_S1.html" class="btn btn-primary" style="display: inline-block; padding: 12px 25px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 500; transition: all 0.3s;">开始学习 →</a>
+            </div>
+
+            <div class="course-card">
+                <span class="course-number">第2课</span>
+                <h2 class="course-title">新主人 主权</h2>
+                <p style="color: #666; margin: 15px 0;">8个小节 • 完整</p>
+                <a href="courses/one2one_C2_S1.html" class="btn btn-primary" style="display: inline-block; padding: 12px 25px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 500; transition: all 0.3s;">开始学习 →</a>
+            </div>
+
+            <div class="course-card">
+                <span class="course-number">第3课</span>
+                <h2 class="course-title">新方向 悔改</h2>
+                <p style="color: #666; margin: 15px 0;">9个小节 • 完整</p>
+                <a href="courses/one2one_C3_S1.html" class="btn btn-primary" style="display: inline-block; padding: 12px 25px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 500; transition: all 0.3s;">开始学习 →</a>
+            </div>
+
+            <div class="course-card">
+                <span class="course-number">第4课</span>
+                <h2 class="course-title">新生命 洗礼</h2>
+                <p style="color: #666; margin: 15px 0;">10个小节 • 完整</p>
+                <a href="courses/one2one_C4_S1.html" class="btn btn-primary" style="display: inline-block; padding: 12px 25px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 500; transition: all 0.3s;">开始学习 →</a>
+            </div>
+
+            <div class="course-card">
+                <span class="course-number">第5课</span>
+                <h2 class="course-title">新操练 灵修</h2>
+                <p style="color: #666; margin: 15px 0;">11个小节 • 完整</p>
+                <a href="courses/one2one_C5_S1.html" class="btn btn-primary" style="display: inline-block; padding: 12px 25px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 500; transition: all 0.3s;">开始学习 →</a>
+            </div>
+
+            <div class="course-card">
+                <span class="course-number">第6课</span>
+                <h2 class="course-title">新关系 教会</h2>
+                <p style="color: #666; margin: 15px 0;">8个小节 • 完整</p>
+                <a href="courses/one2one_C6_S1.html" class="btn btn-primary" style="display: inline-block; padding: 12px 25px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 500; transition: all 0.3s;">开始学习 →</a>
+            </div>
+
+            <div class="course-card">
+                <span class="course-number">第7课</span>
+                <h2 class="course-title">新使命 带门徒</h2>
+                <p style="color: #666; margin: 15px 0;">2个小节 • 进行中</p>
+                <a href="courses/one2one_C7_S1.html" class="btn btn-primary" style="display: inline-block; padding: 12px 25px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 500; transition: all 0.3s;">开始学习 →</a>
+                <p style="margin-top: 15px; padding: 15px; background: #fff3cd; border-radius: 8px; font-size: 0.9em; color: #856404;">
+                    ⚠️ 第7课内容正在补充中...
+                </p>
             </div>
         </div>
-        
-        <div class="section">
-            <h2 class="section-title">🔗 相关资源</h2>
-            <div class="nav-grid">
-                <a href="../foundation/" class="nav-btn">🏗️ 建立根基课程</a>
-                <a href="../bible-study/" class="nav-btn">📖 圣经研读</a>
-                <a href="../index.html" class="nav-btn">🏠 返回主站</a>
-            </div>
+
+        <div style="background: white; padding: 30px; border-radius: 12px; margin-top: 30px; text-align: center; box-shadow: 0 3px 15px rgba(0,0,0,0.1);">
+            <p style="color: #666; line-height: 1.8;">愿神祝福你的学习！让我们一起，荣耀神，带门徒！</p>
         </div>
     </div>
 </body>

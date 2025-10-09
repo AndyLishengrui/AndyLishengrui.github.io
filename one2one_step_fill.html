@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开始做门徒 - 五个重要步骤（经文填空互动版）</title>
+  <style>
+    body {
+      background: #f3f4f6;
+      font-family: 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 650px;
+      margin: 40px auto 32px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.09);
+      padding: 32px 20px 24px 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 0.2em;
+      font-weight: 600;
+    }
+    h2 {
+      text-align: center;
+      color: #666;
+      font-size: 1.15em;
+      margin-bottom: 1.5em;
+      font-weight: 400;
+    }
+    .step {
+      margin-bottom: 2.2em;
+    }
+    .step-title {
+      font-size: 1.13em;
+      font-weight: 500;
+      margin-bottom: 0.7em;
+    }
+    .step-content {
+      margin-left: 0.5em;
+    }
+    blockquote {
+      border-left: 4px solid #bbb;
+      margin: 0.5em 0 0.5em 0;
+      padding: 0.7em 1em 0.7em 1.2em;
+      background: #fafbfc;
+      font-size: 1.08em;
+      position: relative;
+    }
+    .verse-ref {
+      color: #666;
+      font-size: 0.98em;
+      text-align: right;
+      margin-top: 0.2em;
+    }
+    .fill-blank {
+      display: inline-block;
+      min-width: 60px;
+      border: none;
+      border-bottom: 1.5px solid #888;
+      background: #f7f7f7;
+      font-size: 1em;
+      padding: 2px 6px;
+      margin: 0 2px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .fill-blank.correct {
+      border-bottom: 2px solid #3bb34a;
+      background: #eafbe7;
+    }
+    .fill-blank.incorrect {
+      border-bottom: 2px solid #e74c3c;
+      background: #fff0f0;
+    }
+    .hint-btn {
+      background: #e0e7ef;
+      color: #3a4a5a;
+      border: none;
+      border-radius: 4px;
+      padding: 2px 10px;
+      margin-left: 8px;
+      font-size: 0.98em;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .hint-btn:hover {
+      background: #c9d6e3;
+    }
+    .hint-text {
+      display: none;
+      color: #888;
+      font-size: 0.97em;
+      margin-left: 10px;
+    }
+    .show-hint {
+      display: inline;
+    }
+    .submit-btn {
+      display: block;
+      width: 100%;
+      background: #3b82f6;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.15em;
+      padding: 12px 0;
+      margin-top: 18px;
+      cursor: pointer;
+      font-weight: 500;
+      letter-spacing: 1px;
+      transition: background 0.2s;
+    }
+    .submit-btn:hover {
+      background: #2563eb;
+    }
+    .feedback {
+      margin-top: 10px;
+      font-size: 1.05em;
+      text-align: center;
+    }
+    @media (max-width: 700px) {
+      .container { padding: 18px 2vw 18px 2vw; }
+      h1 { font-size: 1.5em; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>开始做门徒</h1>
+  <h2>五个重要步骤（经文填空互动版）</h2>
+
+  <form id="fillForm" autocomplete="off">
+    <div class="step">
+      <div class="step-title">1. 不再信靠你自己和你的好行为，而是单单信靠耶稣基督得拯救。</div>
+      <div class="step-content">
+        <blockquote>
+          <span>你们得救是本乎<input class="fill-blank" data-answer="恩" data-hint="神的礼物" maxlength="2">，也因着<input class="fill-blank" data-answer="信" data-hint="相信" maxlength="2">；这并不是出于自己，乃是神所赐的；也不是出于<input class="fill-blank" data-answer="行为" data-hint="做的事" maxlength="2">，免得有人自夸。</span>
+          <div class="verse-ref">以弗所书 2:8,9（和修版）
+            <button type="button" class="hint-btn" onclick="showHint(this)">提示</button>
+            <span class="hint-text">答案依次为：恩、信、行为</span>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-title">2. 转离圣经上所说的一切罪。</div>
+      <div class="step-content">
+        <blockquote>
+          <span>上帝所立的坚实根基永不动摇，这根基上刻着：“主认识谁是属于祂的人”，<br>“凡自称是属于主的人都要离弃<input class="fill-blank" data-answer="罪恶" data-hint="不讨神喜悦的事" maxlength="3">。”</span>
+          <div class="verse-ref">提摩太后书 2:19（当代译本）
+            <button type="button" class="hint-btn" onclick="showHint(this)">提示</button>
+            <span class="hint-text">答案：罪恶</span>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-title">3. 参加小组聚会和每周的主日崇拜。</div>
+      <div class="step-content">
+        <blockquote>
+          <span>我们要想办法彼此相顾，激发爱心，勉励行善。不要停止<input class="fill-blank" data-answer="聚会" data-hint="团契、教会" maxlength="2">，像那些停止惯了的人，要互相鼓励，特别是你们知道主再来的日子近了。</span>
+          <div class="verse-ref">希伯来书 10:24,25（当代译本）
+            <button type="button" class="hint-btn" onclick="showHint(this)">提示</button>
+            <span class="hint-text">答案：聚会</span>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-title">4. 每天读圣经并且顺服神的话语。</div>
+      <div class="step-content">
+        <blockquote>
+          <span>这律法书不可离开你的口，总要昼夜<input class="fill-blank" data-answer="思想" data-hint="默想、思考" maxlength="2">，好使你谨守遵行这书上所写的一切话。如此，你的道路就可以亨通，凡事顺利。</span>
+          <div class="verse-ref">约书亚记 1:8（和合本）
+            <button type="button" class="hint-btn" onclick="showHint(this)">提示</button>
+            <span class="hint-text">答案：思想</span>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-title">5. 向别人分享你信耶稣的见证。</div>
+      <div class="step-content">
+        <blockquote>
+          <span>耶稣没有答应，只对他说：“回去见你的家人，将主为你所做的事和祂怜悯你的经过告诉他们吧！”这人就回到低加波里一带宣扬耶稣为他所行的<input class="fill-blank" data-answer="奇事" data-hint="神迹、恩典" maxlength="2">，大家都很惊奇。</span>
+          <div class="verse-ref">马可福音 5:19,20（当代译本）
+            <button type="button" class="hint-btn" onclick="showHint(this)">提示</button>
+            <span class="hint-text">答案：奇事</span>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+
+    <button type="button" class="submit-btn" onclick="checkAnswers()">提交答案并批改</button>
+    <div class="feedback" id="feedback"></div>
+  </form>
+</div>
+
+<script>
+function showHint(btn) {
+  const hint = btn.parentElement.querySelector('.hint-text');
+  if (hint) hint.classList.toggle('show-hint');
+}
+
+function checkAnswers() {
+  let correct = 0, total = 0;
+  document.querySelectorAll('.fill-blank').forEach(input => {
+    const ans = (input.dataset.answer || '').trim();
+    const val = (input.value || '').trim();
+    total++;
+    if (val === ans) {
+      input.classList.add('correct');
+      input.classList.remove('incorrect');
+      input.disabled = true;
+      correct++;
+    } else {
+      input.classList.add('incorrect');
+      input.classList.remove('correct');
+      input.disabled = false;
+    }
+  });
+  const feedback = document.getElementById('feedback');
+  if (correct === total) {
+    feedback.innerHTML = '全部正确，太棒了！🎉';
+  } else {
+    feedback.innerHTML = `共${total}空，已答对 <b>${correct}</b> 个。错误的空请重试，或点击提示。`;
+  }
+}
+</script>
+</body>
+</html>

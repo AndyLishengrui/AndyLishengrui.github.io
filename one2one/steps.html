@@ -62,43 +62,220 @@
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
 
-        .content-paragraph {
-            font-size: 1.05em;
-            line-height: 1.9;
-            margin-bottom: 18px;
-            color: #333;
-            text-align: justify;
+        .intro-section {
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #f0f0f0;
         }
 
-        .navigation {
-            background: white;
-            border-radius: 0 0 15px 15px;
+        .intro-verse {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .intro-verse-text {
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 8px;
+        }
+
+        .intro-verse-ref {
+            color: #667eea;
+            font-size: 0.95em;
+            text-align: right;
+            font-weight: 500;
+        }
+
+        .intro-text {
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .step-block {
+            margin-bottom: 40px;
             padding: 25px;
+            background: #fafbfc;
+            border-radius: 10px;
+            border: 1px solid #e8e8e8;
+        }
+
+        .step-title {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .verse-block {
+            background: white;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 15px;
+        }
+
+        .verse-content {
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 12px;
+        }
+
+        .verse-number {
+            display: inline-block;
+            font-size: 0.85em;
+            vertical-align: super;
+            color: #667eea;
+            font-weight: 600;
+            margin-right: 2px;
+        }
+
+        .fill-blank {
+            display: inline-block;
+            min-width: 80px;
+            border: none;
+            border-bottom: 2px solid #667eea;
+            background: #f0f3ff;
+            font-size: 1em;
+            padding: 3px 8px;
+            margin: 0 3px;
+            outline: none;
+            transition: all 0.3s;
+            font-family: inherit;
+        }
+
+        .fill-blank:focus {
+            border-bottom-color: #764ba2;
+            background: #e8edff;
+        }
+
+        .fill-blank.correct {
+            border-bottom: 2px solid #27ae60;
+            background: rgba(39, 174, 96, 0.1);
+        }
+
+        .fill-blank.incorrect {
+            border-bottom: 2px solid #e74c3c;
+            background: rgba(231, 76, 60, 0.1);
+        }
+
+        .verse-reference {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-top: 12px;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
-        .nav-btn {
-            padding: 12px 28px;
+        .verse-ref {
+            color: #667eea;
+            font-size: 0.95em;
+            font-weight: 500;
+        }
+
+        .hint-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-hint {
+            padding: 4px 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.85em;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+        }
+
+        .btn-hint:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(243, 156, 18, 0.3);
+        }
+
+        .hint-display {
+            display: none;
+            margin-top: 10px;
+            padding: 12px 15px;
+            background: #fff3cd;
+            border-left: 4px solid #f39c12;
+            border-radius: 0 5px 5px 0;
+            font-size: 0.95em;
+            color: #856404;
+        }
+
+        .hint-display.show {
+            display: block;
+        }
+
+        .action-bar {
+            background: white;
+            padding: 25px 40px;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .score-display {
+            font-size: 1.1em;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .score-number {
+            color: #667eea;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 25px;
             border: none;
             border-radius: 8px;
             font-size: 1em;
             cursor: pointer;
-            text-decoration: none;
             transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
             font-weight: 500;
         }
 
-        .btn-primary {
+        .btn-check {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
         }
 
-        .btn-primary:hover {
+        .btn-check:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-submit {
+            background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+            color: white;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(39, 174, 96, 0.4);
         }
 
         .btn-secondary {
@@ -110,8 +287,41 @@
             background: #e0e0e0;
         }
 
+        .navigation {
+            background: white;
+            padding: 25px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .feedback-message {
+            display: none;
+            margin-top: 15px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-size: 1.05em;
+            text-align: center;
+        }
+
+        .feedback-message.show {
+            display: block;
+        }
+
+        .feedback-message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .feedback-message.warning {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+
         @media (max-width: 768px) {
-            header, .content, .navigation {
+            header, .content, .action-bar, .navigation {
                 padding: 20px;
             }
 
@@ -119,8 +329,26 @@
                 font-size: 1.6em;
             }
 
-            .content-paragraph {
-                font-size: 1em;
+            .step-block {
+                padding: 15px;
+            }
+
+            .btn-group {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .action-bar {
+                flex-direction: column;
+            }
+
+            .score-display {
+                width: 100%;
+                text-align: center;
             }
         }
     </style>
@@ -132,19 +360,220 @@
                 <a href="index.html">一对一首页</a> &gt; 开始作门徒
             </div>
             <h1>开始作门徒</h1>
-            <p class="subtitle">五个重要步骤</p>
+            <p class="subtitle">五个重要步骤（经文填空互动版）</p>
         </header>
 
         <div class="content">
-            <p class="content-paragraph">开始作门徒“来跟从我！我要使你们成为得人的渔夫。”马可福音1:17（当代译本）当你开始跟随耶稣，下面这五个步骤能够帮助你有一个好的开始。1.不再信靠你自己和你的好行为，而是单单信靠耶稣基督得拯救。8你们得救是本乎恩，也因着信；这并不是出于自己，而是神所赐的；9也不是出于行为，免得有人自夸。以弗所书2:8,9（和修版）</p>
-            <p class="content-paragraph">2.转离圣经上所说的一切罪。然而，上帝所立的坚实根基永不动摇，这根基上刻着：“主认识谁是属于祂的人”，“凡自称是属于主的人都要离弃罪恶。”提摩太后书2:19（当代译本）3.参加小组聚会和每周的主日崇拜。24我们要想办法彼此相顾，激发爱心，勉励行善。25不要停止聚会，像那些停止惯了的人，要互相鼓励，特别是你们知道主再来的日子近了。希伯来书10:24,25（当代译本）</p>
-            <p class="content-paragraph">4.每天读圣经并且顺服神的话语。这律法书不可离开你的口，总要昼夜思想，好使你谨守遵行这书上所写的一切话。如此，你的道路就可以亨通，凡事顺利。约书亚记1:8（和合本）5.向别人分享你信耶稣的见证。19耶稣没有答应，只对他说：“回去见你的家人，将主为你所做的事和祂怜悯你的经过告诉他们吧！”20这人就回到低加坡里一带宣扬耶稣为他所行的奇事，大家都很惊奇。马可福音5:19,20（当代译本）</p>
+            <div class="intro-section">
+                <div class="intro-verse">
+                    <div class="intro-verse-text">"来跟从我！我要使你们成为得人的渔夫。"</div>
+                    <div class="intro-verse-ref">马可福音 1:17（当代译本）</div>
+                </div>
+                <div class="intro-text">
+                    当你开始跟随耶稣，下面这五个步骤能够帮助你有一个好的开始。请完成下面的经文填空，加深对这些真理的记忆。
+                </div>
+            </div>
+
+            <form id="stepsForm">
+                <!-- 步骤1 -->
+                <div class="step-block">
+                    <div class="step-title">1. 不再信靠你自己和你的好行为，而是单单信靠耶稣基督得拯救。</div>
+                    <div class="verse-block">
+                        <div class="verse-content">
+                            <span class="verse-number">8</span> 你们得救是本乎<input type="text" class="fill-blank" data-answer="恩" data-hint="神白白的礼物" maxlength="1">，也因着<input type="text" class="fill-blank" data-answer="信" data-hint="相信、信靠" maxlength="1">；这并不是出于<input type="text" class="fill-blank" data-answer="自己" data-hint="你自己" maxlength="2">，而是神所赐的；<span class="verse-number">9</span>也不是出于<input type="text" class="fill-blank" data-answer="行为" data-hint="你做的事" maxlength="2">，免得有人自夸。
+                        </div>
+                        <div class="verse-reference">
+                            <div class="verse-ref">以弗所书 2:8,9（和修版）</div>
+                            <div class="hint-buttons">
+                                <button type="button" class="btn-hint" onclick="showHint(this, 0)">💡 提示</button>
+                            </div>
+                        </div>
+                        <div class="hint-display" id="hint-0">
+                            <strong>填空提示：</strong>依次填入：恩、信、自己、行为
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步骤2 -->
+                <div class="step-block">
+                    <div class="step-title">2. 转离圣经上所说的一切罪。</div>
+                    <div class="verse-block">
+                        <div class="verse-content">
+                            然而，上帝所立的坚实根基永不动摇，这根基上刻着："主<input type="text" class="fill-blank" data-answer="认识" data-hint="知道" maxlength="2">谁是属于祂的人"，"凡自称是属于主的人都要<input type="text" class="fill-blank" data-answer="离弃" data-hint="远离、不再做" maxlength="2"><input type="text" class="fill-blank" data-answer="罪恶" data-hint="不讨神喜悦的事" maxlength="2">。"
+                        </div>
+                        <div class="verse-reference">
+                            <div class="verse-ref">提摩太后书 2:19（当代译本）</div>
+                            <div class="hint-buttons">
+                                <button type="button" class="btn-hint" onclick="showHint(this, 1)">💡 提示</button>
+                            </div>
+                        </div>
+                        <div class="hint-display" id="hint-1">
+                            <strong>填空提示：</strong>依次填入：认识、离弃、罪恶
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步骤3 -->
+                <div class="step-block">
+                    <div class="step-title">3. 参加小组聚会和每周的主日崇拜。</div>
+                    <div class="verse-block">
+                        <div class="verse-content">
+                            <span class="verse-number">24</span>我们要想办法彼此相顾，激发<input type="text" class="fill-blank" data-answer="爱心" data-hint="彼此相爱" maxlength="2">，勉励行善。<span class="verse-number">25</span>不要停止<input type="text" class="fill-blank" data-answer="聚会" data-hint="团契、教会活动" maxlength="2">，像那些停止惯了的人，要互相<input type="text" class="fill-blank" data-answer="鼓励" data-hint="激励、劝勉" maxlength="2">，特别是你们知道主再来的日子近了。
+                        </div>
+                        <div class="verse-reference">
+                            <div class="verse-ref">希伯来书 10:24,25（当代译本）</div>
+                            <div class="hint-buttons">
+                                <button type="button" class="btn-hint" onclick="showHint(this, 2)">💡 提示</button>
+                            </div>
+                        </div>
+                        <div class="hint-display" id="hint-2">
+                            <strong>填空提示：</strong>依次填入：爱心、聚会、鼓励
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步骤4 -->
+                <div class="step-block">
+                    <div class="step-title">4. 每天读圣经并且顺服神的话语。</div>
+                    <div class="verse-block">
+                        <div class="verse-content">
+                            这律法书不可离开你的口，总要昼夜<input type="text" class="fill-blank" data-answer="思想" data-hint="默想、思考" maxlength="2">，好使你<input type="text" class="fill-blank" data-answer="谨守" data-hint="小心遵守" maxlength="2"><input type="text" class="fill-blank" data-answer="遵行" data-hint="去做、实践" maxlength="2">这书上所写的一切话。如此，你的道路就可以<input type="text" class="fill-blank" data-answer="亨通" data-hint="顺利、成功" maxlength="2">，凡事顺利。
+                        </div>
+                        <div class="verse-reference">
+                            <div class="verse-ref">约书亚记 1:8（和合本）</div>
+                            <div class="hint-buttons">
+                                <button type="button" class="btn-hint" onclick="showHint(this, 3)">💡 提示</button>
+                            </div>
+                        </div>
+                        <div class="hint-display" id="hint-3">
+                            <strong>填空提示：</strong>依次填入：思想、谨守、遵行、亨通
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 步骤5 -->
+                <div class="step-block">
+                    <div class="step-title">5. 向别人分享你信耶稣的见证。</div>
+                    <div class="verse-block">
+                        <div class="verse-content">
+                            <span class="verse-number">19</span>耶稣没有答应，只对他说："回去见你的家人，将主为你所做的事和祂<input type="text" class="fill-blank" data-answer="怜悯" data-hint="慈爱、恩待" maxlength="2">你的经过告诉他们吧！"<span class="verse-number">20</span>这人就回到低加坡里一带<input type="text" class="fill-blank" data-answer="宣扬" data-hint="传扬、见证" maxlength="2">耶稣为他所行的<input type="text" class="fill-blank" data-answer="奇事" data-hint="神迹、大事" maxlength="2">，大家都很惊奇。
+                        </div>
+                        <div class="verse-reference">
+                            <div class="verse-ref">马可福音 5:19,20（当代译本）</div>
+                            <div class="hint-buttons">
+                                <button type="button" class="btn-hint" onclick="showHint(this, 4)">💡 提示</button>
+                            </div>
+                        </div>
+                        <div class="hint-display" id="hint-4">
+                            <strong>填空提示：</strong>依次填入：怜悯、宣扬、奇事
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feedback-message" id="feedbackMessage"></div>
+            </form>
+        </div>
+
+        <div class="action-bar">
+            <div class="score-display">
+                成绩：<span class="score-number" id="scoreDisplay">0/19</span>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-check" onclick="checkAnswers()">检查答案</button>
+                <button type="button" class="btn btn-submit" onclick="submitAnswers()">提交完成</button>
+            </div>
         </div>
 
         <div class="navigation">
-            <a href="preface.html" class="nav-btn btn-secondary">← 上一步：前言</a>
-            <a href="one2one_C1.html" class="nav-btn btn-primary">开始第一课 →</a>
+            <a href="preface.html" class="btn btn-secondary">← 上一步：前言</a>
+            <a href="one2one_C1_S1.html" class="btn btn-check">开始第一课 →</a>
         </div>
     </div>
+
+    <script>
+        // 显示/隐藏提示
+        function showHint(btn, hintId) {
+            const hintDiv = document.getElementById('hint-' + hintId);
+            hintDiv.classList.toggle('show');
+        }
+
+        // 检查答案
+        function checkAnswers() {
+            let correct = 0;
+            let total = 0;
+            
+            document.querySelectorAll('.fill-blank').forEach(input => {
+                const answer = input.dataset.answer.trim();
+                const userAnswer = input.value.trim();
+                total++;
+                
+                if (userAnswer === answer) {
+                    input.classList.remove('incorrect');
+                    input.classList.add('correct');
+                    correct++;
+                } else if (userAnswer === '') {
+                    input.classList.remove('correct', 'incorrect');
+                } else {
+                    input.classList.remove('correct');
+                    input.classList.add('incorrect');
+                }
+            });
+            
+            // 更新成绩显示
+            document.getElementById('scoreDisplay').textContent = correct + '/' + total;
+            
+            // 显示反馈消息
+            const feedbackMsg = document.getElementById('feedbackMessage');
+            if (correct === total) {
+                feedbackMsg.className = 'feedback-message success show';
+                feedbackMsg.innerHTML = '🎉 全部正确！你已经很好地掌握了这五个重要步骤！';
+            } else if (correct > 0) {
+                feedbackMsg.className = 'feedback-message warning show';
+                feedbackMsg.innerHTML = `答对了 ${correct} 个，还有 ${total - correct} 个需要修改。可以点击"💡 提示"查看帮助。`;
+            } else {
+                feedbackMsg.className = 'feedback-message warning show';
+                feedbackMsg.innerHTML = '请填写答案后再检查。可以点击"💡 提示"获取帮助。';
+            }
+        }
+
+        // 提交答案
+        function submitAnswers() {
+            // 先检查一次
+            checkAnswers();
+            
+            // 计算正确率
+            let correct = document.querySelectorAll('.fill-blank.correct').length;
+            let total = document.querySelectorAll('.fill-blank').length;
+            
+            if (correct === total) {
+                alert('恭喜你！全部答对了！\n\n你已经完成了"开始作门徒"的五个重要步骤学习。\n\n成绩：' + correct + '/' + total + '\n\n现在可以继续学习第一课了！');
+            } else {
+                if (confirm('你的成绩是：' + correct + '/' + total + '\n\n还有一些空格需要修正，是否要继续修改？\n\n点击"确定"继续修改，点击"取消"查看答案。')) {
+                    // 继续修改
+                    return;
+                } else {
+                    // 显示所有答案
+                    document.querySelectorAll('.fill-blank').forEach(input => {
+                        if (!input.classList.contains('correct')) {
+                            input.value = input.dataset.answer;
+                            input.classList.add('correct');
+                            input.classList.remove('incorrect');
+                        }
+                    });
+                    checkAnswers();
+                }
+            }
+        }
+
+        // 页面加载时初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 为所有输入框添加实时验证
+            document.querySelectorAll('.fill-blank').forEach(input => {
+                input.addEventListener('input', function() {
+                    this.classList.remove('correct', 'incorrect');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
