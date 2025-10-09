@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第7课 - 新使命 带门徒 - 一对一门徒训练</title>
+    <title>第7课 - 新使命 - 带门徒 - 一对一门徒训练</title>
     <style>
         * {
             margin: 0;
@@ -21,7 +21,7 @@
         }
         
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
         }
         
@@ -51,23 +51,22 @@
         .content-section {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 25px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            padding: 40px 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
         }
         
-        .section-title {
-            font-size: 1.5rem;
-            color: #2d3748;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 10px;
-        }
-        
-        .main-content {
+        .lesson-content {
             font-size: 1.1rem;
-            line-height: 1.9;
+            line-height: 1.8;
             color: #2d3748;
+        }
+        
+        .lesson-content p {
+            margin-bottom: 15px;
+            text-align: justify;
         }
         
         .verse-container {
@@ -75,20 +74,30 @@
             border: 1px solid #e2e8f0;
             border-radius: 10px;
             padding: 20px;
-            margin-bottom: 20px;
+            margin: 20px 0;
         }
         
         .verse-reference {
             font-weight: bold;
             color: #2b6cb0;
             margin-bottom: 10px;
-            font-size: 1.1rem;
         }
         
-        .verse-content {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 15px;
+        .question-box {
+            background: #fff5f5;
+            border: 1px solid #feb2b2;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            color: #c53030;
+        }
+        
+        .application-section {
+            background: #f0fff4;
+            border: 1px solid #9ae6b4;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
         }
         
         .blank-input {
@@ -98,75 +107,21 @@
             border-bottom: 2px solid #667eea;
             background: transparent;
             text-align: center;
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: #2d3748;
-            padding: 2px 8px;
-            margin: 0 2px;
-        }
-        
-        .blank-input:focus {
-            outline: none;
-            border-bottom-color: #764ba2;
-            background: rgba(102, 126, 234, 0.1);
-        }
-        
-        .blank-input.correct {
-            border-bottom-color: #48bb78;
-            background: rgba(72, 187, 120, 0.1);
-        }
-        
-        .blank-input.incorrect {
-            border-bottom-color: #f56565;
-            background: rgba(245, 101, 101, 0.1);
-        }
-        
-        .verse-controls {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-        
-        .verse-controls button {
-            padding: 8px 16px;
-            border: none;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .hint-btn {
-            background: #fbb6ce;
-            color: #702459;
-        }
-        
-        .check-btn {
-            background: #9ae6b4;
-            color: #22543d;
-        }
-        
-        .answer-btn {
-            background: #90cdf4;
-            color: #1a365d;
-        }
-        
-        .verse-controls button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            font-size: inherit;
+            padding: 2px 5px;
         }
         
         .navigation {
             text-align: center;
-            margin-top: 30px;
+            margin: 30px 0;
         }
         
         .nav-btn {
-            background: rgba(255, 255, 255, 0.9);
-            color: #2d3748;
-            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
             border: none;
-            border-radius: 8px;
+            padding: 12px 24px;
+            border-radius: 25px;
             font-size: 1rem;
             cursor: pointer;
             margin: 0 10px;
@@ -176,7 +131,6 @@
         }
         
         .nav-btn:hover {
-            background: white;
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
@@ -189,124 +143,25 @@
             .content-section {
                 padding: 20px 15px;
             }
-            
-            .verse-controls {
-                justify-content: center;
-            }
-            
-            .nav-btn {
-                display: block;
-                margin: 10px auto;
-                width: 200px;
-            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <h1 class="page-title">第7课 - 新使命 带门徒</h1>
+        <div class="header">
+            <h1 class="page-title">第7课 - 新使命 - 带门徒</h1>
             <p class="page-subtitle">一对一门徒训练系列</p>
-        </header>
+        </div>
         
-        <section class="content-section">
-            <h2 class="section-title">📖 内容</h2>
-            <div class="main-content">带门徒 69</div>
-        </section>
-        
-        
+        <div class="content-section">
+            <div class="lesson-content">
+                <div class="verse-container"><div class="verse-content">新使命 带门徒 只要你们心里尊主基督为圣，无 论谁要你们对你们里面的盼望做 个交代，你们都要随时预备好答 复他…… 彼得前书3:15（标准译本） 18 耶稣上船的时候，那曾被鬼魔 附身的人恳求他，要与他在一起。 19耶稣没有答应，却对他说：“你 回家去吧，到你的亲友那里，告 诉他们主为你做了什么，以及他 怎样怜悯你。” 马可福音5:18,19（标准译本） 带门徒 61 假如你是医生，你发现了治 愈癌症的神奇疗法，你难道不希 望每个人都知道这个发现吗？ 现在你有了一个神奇疗法，它能 治愈比癌症更危险可怕的东西 ——罪。 传福音就是向你的家 人和朋友讲述神对于罪的疗法。 为了预备好自己向别人讲述救 恩的盼望，我们就必须先学习如 何讲见证以及传福音。当我们这 样去做时，就开始带门徒了。 带门徒 62 如何讲见证 在法庭上，证人必须诚实地 将他所听见、所看见以及所经历 的说出来。我们被称为神的见证 人，就必须诚实地将他为我们、 在我们身上和通过我们所作的 一切说出来。要为神作见证，我 们的生命就要能够让人看见神 的恩典。作神的见证人，关键是 我们是怎样的人，而不是我们做 了什么事。作神的见证人只有一 个办法，就是依靠圣灵的能力， 他赐给我们能力去大胆地讲见 证并传福音。 你的见证是大有能力的。当 你分享耶稣如何改变你的生命， 这是发生在你身上的事情，没有 带门徒 63 人能反驳。见证分享主要有三个 部分，这是你的两分钟神迹： 1. 简要讲述你信耶稣前的生 活（有些什么问题和挣扎）； 2. 详细解说你是如何把生命 交给耶稣的（你如何与耶 稣建立个人的关系）； 3. 喜乐地描述你信耶稣后的 生活（信耶稣后有什么改 变）。 弟兄胜过它，是因羔羊的血和 自己所见证的道。他们虽至于 死，也不爱惜性命。 启示录12:11（和合本） 带门徒 64 如何传福音 福音是神的大能，把救恩带 给一切相信的人。所以我们要去 接触文化和社区，成为神的见证 人，去分享我们的见证。 的确，我不以福音为耻，因为 这福音是神的大能，把救恩带 给一切相信的人，先是犹太人、 后是外邦人。 罗马书1:16（标准译本） 用下面这两节经文向你的 家人和朋友传福音。 要知道，每个人都犯了罪，亏 缺了神的荣耀。 罗马书3:23（标准译本） 带门徒 65 每个人都犯了罪。任何对于 神的不顺服或叛逆都是罪。事实 上，没有任何一个人完全地顺服 了神的命令。 罪的报应就是死，惟有神在主 基督耶稣里赐给我们的恩赐， 乃是永生！ 罗马书6:23（当代译本） 既然我们都犯了罪，当得的 报应就是死并且永远离开神的 同在。好消息是，神将救恩白白 地赐给我们！唯有耶稣能够拯救 我们，因为他代替我们承受了罪 的惩罚，为我们死在十字架上。 当我们相信他在十字架上所成 就的工作时，就可以凭信心白白 地领受救恩。 带门徒 66 当你向家人和朋友分享福 音之后，就可以带他们祷告了。 如何带门徒 带门徒就是带人信靠耶稣 基督，并告诉他们如何顺服神的 话语。保罗让提摩太把所学到的 东西分享给别人，以便他们能够 分享给更多的人，这就是带门徒。 19所以，你们要去使万民作我 的门徒，奉父、子、圣灵的名 给他们施洗。20凡我所吩咐你 们的，都教训他们遵守，我就 常与你们同在，直到世界的末 了。 马太福音28:19,20（和合本） 带门徒 67 你要把那些在许多见证人面 前 从我所听见的，交托给那些 忠心可靠、又有能力教导别人 的人。 提摩太后书2:2 （标准译本） 个人应用  你的生命是神的见证吗？  现在就和带你学习《一对一》 的人分享你的两分钟神迹。回 头把它写下来。  你打算接下来跟谁传福音并 带他们一起学习《一对一》？ 现在就为他们祷告。  让我们一起，荣耀神，带门徒！ 带门徒 68 带门徒 69</div></div>
+            </div>
+        </div>
         
         <div class="navigation">
-            <a href="one2one_C6.html" class="nav-btn">⬅️ 上一页</a>
-            <a href="index.html" class="nav-btn">🏠 主页</a>
-            <a href="index.html" class="nav-btn">下一页 ➡️</a>
+            <a href="one2one_C6.html" class="nav-btn">上一课</a> <a href="index.html" class="nav-btn">返回首页</a>
         </div>
     </div>
-    
-    <script>
-        const versesData = [];
-        
-        function showHints(verseId) {
-            const verseIndex = parseInt(verseId.split('_')[1]) - 1;
-            const verse = versesData[verseIndex];
-            const inputs = document.querySelectorAll(`#${verseId} .blank-input`);
-            
-            inputs.forEach((input, index) => {
-                if (verse.hints && verse.hints[index]) {
-                    input.placeholder = verse.hints[index];
-                }
-            });
-            
-            showMessage('💡 已显示提示', 'info');
-        }
-        
-        function checkAnswers(verseId) {
-            const verseIndex = parseInt(verseId.split('_')[1]) - 1;
-            const verse = versesData[verseIndex];
-            const inputs = document.querySelectorAll(`#${verseId} .blank-input`);
-            let correct = 0;
-            let total = inputs.length;
-            
-            inputs.forEach((input, index) => {
-                const userAnswer = input.value.trim();
-                const correctAnswer = verse.blanks[index];
-                
-                input.classList.remove('correct', 'incorrect');
-                
-                if (userAnswer === correctAnswer) {
-                    input.classList.add('correct');
-                    correct++;
-                } else if (userAnswer !== '') {
-                    input.classList.add('incorrect');
-                }
-            });
-            
-            const percentage = Math.round((correct / total) * 100);
-            let message = `检查完成！正确率: ${correct}/${total} (${percentage}%)`;
-            
-            if (percentage === 100) {
-                showMessage('🎉 完全正确！' + message, 'success');
-            } else if (percentage >= 80) {
-                showMessage('👍 很棒！' + message, 'success');
-            } else {
-                showMessage('📚 继续努力！' + message, 'warning');
-            }
-        }
-        
-        function showAnswers(verseId) {
-            const verseIndex = parseInt(verseId.split('_')[1]) - 1;
-            const verse = versesData[verseIndex];
-            const inputs = document.querySelectorAll(`#${verseId} .blank-input`);
-            
-            inputs.forEach((input, index) => {
-                input.value = verse.blanks[index];
-                input.classList.remove('incorrect');
-                input.classList.add('correct');
-            });
-            
-            showMessage('📖 已显示所有答案', 'info');
-        }
-        
-        function showMessage(text, type = 'info') {
-            const messageDiv = document.createElement('div');
-            messageDiv.textContent = text;
-            messageDiv.style.cssText = `
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                padding: 12px 20px;
-                border-radius: 8px;
-                color: white;
-                font-weight: bold;
-                z-index: 1000;
-                ${type === 'success' ? 'background: #48bb78;' :
-                  type === 'warning' ? 'background: #ed8936;' :
-                  'background: #4299e1;'}
-            `;
-            
-            document.body.appendChild(messageDiv);
-            setTimeout(() => messageDiv.remove(), 3000);
-        }
-    </script>
 </body>
 </html>

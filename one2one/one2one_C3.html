@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第3课 - 新方向 悔改 - 一对一门徒训练</title>
+    <title>第3课 - 新方向 - 悔改 - 一对一门徒训练</title>
     <style>
         * {
             margin: 0;
@@ -21,7 +21,7 @@
         }
         
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
         }
         
@@ -51,23 +51,22 @@
         .content-section {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 25px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            padding: 40px 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
         }
         
-        .section-title {
-            font-size: 1.5rem;
-            color: #2d3748;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 10px;
-        }
-        
-        .main-content {
+        .lesson-content {
             font-size: 1.1rem;
-            line-height: 1.9;
+            line-height: 1.8;
             color: #2d3748;
+        }
+        
+        .lesson-content p {
+            margin-bottom: 15px;
+            text-align: justify;
         }
         
         .verse-container {
@@ -75,20 +74,30 @@
             border: 1px solid #e2e8f0;
             border-radius: 10px;
             padding: 20px;
-            margin-bottom: 20px;
+            margin: 20px 0;
         }
         
         .verse-reference {
             font-weight: bold;
             color: #2b6cb0;
             margin-bottom: 10px;
-            font-size: 1.1rem;
         }
         
-        .verse-content {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 15px;
+        .question-box {
+            background: #fff5f5;
+            border: 1px solid #feb2b2;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            color: #c53030;
+        }
+        
+        .application-section {
+            background: #f0fff4;
+            border: 1px solid #9ae6b4;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
         }
         
         .blank-input {
@@ -98,75 +107,21 @@
             border-bottom: 2px solid #667eea;
             background: transparent;
             text-align: center;
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: #2d3748;
-            padding: 2px 8px;
-            margin: 0 2px;
-        }
-        
-        .blank-input:focus {
-            outline: none;
-            border-bottom-color: #764ba2;
-            background: rgba(102, 126, 234, 0.1);
-        }
-        
-        .blank-input.correct {
-            border-bottom-color: #48bb78;
-            background: rgba(72, 187, 120, 0.1);
-        }
-        
-        .blank-input.incorrect {
-            border-bottom-color: #f56565;
-            background: rgba(245, 101, 101, 0.1);
-        }
-        
-        .verse-controls {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-        
-        .verse-controls button {
-            padding: 8px 16px;
-            border: none;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .hint-btn {
-            background: #fbb6ce;
-            color: #702459;
-        }
-        
-        .check-btn {
-            background: #9ae6b4;
-            color: #22543d;
-        }
-        
-        .answer-btn {
-            background: #90cdf4;
-            color: #1a365d;
-        }
-        
-        .verse-controls button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            font-size: inherit;
+            padding: 2px 5px;
         }
         
         .navigation {
             text-align: center;
-            margin-top: 30px;
+            margin: 30px 0;
         }
         
         .nav-btn {
-            background: rgba(255, 255, 255, 0.9);
-            color: #2d3748;
-            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
             border: none;
-            border-radius: 8px;
+            padding: 12px 24px;
+            border-radius: 25px;
             font-size: 1rem;
             cursor: pointer;
             margin: 0 10px;
@@ -176,7 +131,6 @@
         }
         
         .nav-btn:hover {
-            background: white;
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
@@ -189,124 +143,25 @@
             .content-section {
                 padding: 20px 15px;
             }
-            
-            .verse-controls {
-                justify-content: center;
-            }
-            
-            .nav-btn {
-                display: block;
-                margin: 10px auto;
-                width: 200px;
-            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <h1 class="page-title">第3课 - 新方向 悔改</h1>
+        <div class="header">
+            <h1 class="page-title">第3课 - 新方向 - 悔改</h1>
             <p class="page-subtitle">一对一门徒训练系列</p>
-        </header>
+        </div>
         
-        <section class="content-section">
-            <h2 class="section-title">📖 内容</h2>
-            <div class="main-content"> 你是否已经认罪悔改？ 灵修</div>
-        </section>
-        
-        
+        <div class="content-section">
+            <div class="lesson-content">
+                <div class="verse-container"><div class="verse-content">新方向 悔改 彼得对他们说：“你们各人要悔改， 奉耶稣基督的名受洗，使你们的 罪得赦免，就会领受所赐的圣灵。” 使徒行传2:38（和修版） 开着车在单行道上逆向狂 奔真是愚蠢，更别提有多危险了！ 有的人这样做，是因为他们不知 道自己弄错了方向；而有的人这 样做则是因为叛逆，寻求刺激。 在属灵的事情上也是一样，无论 是出于无知还是出于叛逆，我们 悔改 23 都是在一条险象丛生的单行道 上逆向行驶，其结果导致与神永 远地隔绝。除非我们调转方向 （悔改）开始跟随耶稣，否则我 们所走的每一步都是在朝着错 误的方向，每一步都在使我们更 加远离神。 悔改，忧伤，结果子 当我们真心为自己的罪忧 伤难过时，真正的悔改就开始了。 这种忧伤是按神的意思忧伤,它 不找任何借口，不指责别人、社 会和环境，它承认我们犯罪首先 是得罪了神。按神的意思忧伤会 带来真正的悔改，生命的改变和 更新。 悔改 24 因为按神的意思忧伤，就生出 悔改通向救恩，是不懊悔的； 可是属世界的忧伤，却带来死 亡。 哥林多后书7:10（标准译本） 我向你陈明我的罪，不隐瞒我 的恶。我说：“我要向耶和华承 认我的过犯。”你就赦免我的 罪恶。 诗篇32:5（和合本） 另一方面，属世界的忧伤只 会生出各种各样的借口。按神的 意思忧伤，是人真正地认识到自 己冒犯了圣洁的神，而痛悔心碎； 属世界的忧伤则是因为做错事 被抓而懊恼，或者因为要承担罪 的后果而难过。按神的意思忧伤 悔改 25 和属世界的忧伤最大的不同在 于所结出的果子不同。属世界的 忧伤永远无法带来生命的改变， 它只会带来灵性的死亡。 劝勉他们应当悔改归向神，行 事与悔改的心相称。 使徒行传26:20（和合本） 你们要结出果子来，与悔改的 心相称。 马太福音3:8（和合本） 悔改与饶恕 路加福音 15:11-24 中关于 浪子的故事向我们展现了一幅 真正悔改的图画。悖逆的小儿子 幡然醒悟，转离他的愚蠢行为， 悔改 26 回到父亲身旁。他做了一个 180 度的大转变，不愿意再活在罪孽 和悖逆之中。慈爱的父亲不仅原 谅了他，更是敞开胸怀接纳了他。 同样，我们的天父是信实的，当 我们悔改认罪归向他的时候，他 就饶恕我们。 19所以，你们当悔改归正，使 你们的罪得以涂抹。20 这样， 那安舒的日子就必从主面前 来到。 使徒行传3:19,20（和合本） 你在白衬衫上沾染过洗不 掉的污渍吗？想象一下，有一种 去污剂，不仅可以把污渍洗干净， 还能让衬衫像新的一样。当我们 悔改 27 接受耶稣做我们的救主和生命 的主宰时，就是这样。他不仅洗 净我们的罪和我们心里的愧疚 羞耻，他还赐给我们一颗新的心。 我们若认自己的罪，神是信实 的，是公义的，必要赦免我们 的罪，洗净我们一切的不义。 约翰一书1:9（和合本） 饶恕他人 因为神饶恕了我们，所以我 们也要饶恕那些得罪我们的人。 21那时，彼得前来问耶稣：“主 啊，如果弟兄对我犯罪，我该 饶恕多少次呢？到七次可以 吗？”22耶稣对他说：“我告诉 悔改 28 你：不是七次，而是七十个七 次。” 马太福音18:21-22（标准译本） 如果我们拒绝饶恕，就会有 苦毒的根在我们里面长起来，不 但搅扰我们自己，还会让其他人 被污秽。 你们要谨慎，免得有人亏缺了 神的恩典；免得有苦毒的根长 起来搅扰你们，使许多人因此 被污秽了。 希伯来书12:15（标准译本） 悔改 29</div></div>
+            </div>
+        </div>
         
         <div class="navigation">
-            <a href="one2one_C2.html" class="nav-btn">⬅️ 上一页</a>
-            <a href="index.html" class="nav-btn">🏠 主页</a>
-            <a href="one2one_C4.html" class="nav-btn">下一页 ➡️</a>
+            <a href="one2one_C2.html" class="nav-btn">上一课</a> <a href="index.html" class="nav-btn">返回首页</a> <a href="one2one_C4.html" class="nav-btn">下一课</a>
         </div>
     </div>
-    
-    <script>
-        const versesData = [];
-        
-        function showHints(verseId) {
-            const verseIndex = parseInt(verseId.split('_')[1]) - 1;
-            const verse = versesData[verseIndex];
-            const inputs = document.querySelectorAll(`#${verseId} .blank-input`);
-            
-            inputs.forEach((input, index) => {
-                if (verse.hints && verse.hints[index]) {
-                    input.placeholder = verse.hints[index];
-                }
-            });
-            
-            showMessage('💡 已显示提示', 'info');
-        }
-        
-        function checkAnswers(verseId) {
-            const verseIndex = parseInt(verseId.split('_')[1]) - 1;
-            const verse = versesData[verseIndex];
-            const inputs = document.querySelectorAll(`#${verseId} .blank-input`);
-            let correct = 0;
-            let total = inputs.length;
-            
-            inputs.forEach((input, index) => {
-                const userAnswer = input.value.trim();
-                const correctAnswer = verse.blanks[index];
-                
-                input.classList.remove('correct', 'incorrect');
-                
-                if (userAnswer === correctAnswer) {
-                    input.classList.add('correct');
-                    correct++;
-                } else if (userAnswer !== '') {
-                    input.classList.add('incorrect');
-                }
-            });
-            
-            const percentage = Math.round((correct / total) * 100);
-            let message = `检查完成！正确率: ${correct}/${total} (${percentage}%)`;
-            
-            if (percentage === 100) {
-                showMessage('🎉 完全正确！' + message, 'success');
-            } else if (percentage >= 80) {
-                showMessage('👍 很棒！' + message, 'success');
-            } else {
-                showMessage('📚 继续努力！' + message, 'warning');
-            }
-        }
-        
-        function showAnswers(verseId) {
-            const verseIndex = parseInt(verseId.split('_')[1]) - 1;
-            const verse = versesData[verseIndex];
-            const inputs = document.querySelectorAll(`#${verseId} .blank-input`);
-            
-            inputs.forEach((input, index) => {
-                input.value = verse.blanks[index];
-                input.classList.remove('incorrect');
-                input.classList.add('correct');
-            });
-            
-            showMessage('📖 已显示所有答案', 'info');
-        }
-        
-        function showMessage(text, type = 'info') {
-            const messageDiv = document.createElement('div');
-            messageDiv.textContent = text;
-            messageDiv.style.cssText = `
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                padding: 12px 20px;
-                border-radius: 8px;
-                color: white;
-                font-weight: bold;
-                z-index: 1000;
-                ${type === 'success' ? 'background: #48bb78;' :
-                  type === 'warning' ? 'background: #ed8936;' :
-                  'background: #4299e1;'}
-            `;
-            
-            document.body.appendChild(messageDiv);
-            setTimeout(() => messageDiv.remove(), 3000);
-        }
-    </script>
 </body>
 </html>
