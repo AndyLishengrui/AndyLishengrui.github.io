@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>一对一学习</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">一对一学习</div>
+    <div class="actions">
+      <button id="btnPrev" title="上一节">← 上一节</button>
+      <button id="btnNext" title="下一节">下一节 →</button>
+      <button id="btnNotes" title="显示/隐藏笔记">笔记</button>
+    </div>
+  </header>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <input id="searchInput" type="search" placeholder="搜索..." />
+      </div>
+      <nav id="toc"></nav>
+    </aside>
+    <main class="content">
+      <div class="progress" id="progress"></div>
+      <article id="article"></article>
+    </main>
+    <aside class="notes" id="notesPanel">
+      <div class="notes-header">我的笔记</div>
+      <textarea id="notesArea" placeholder="记录关键点、问题、代祷..."></textarea>
+      <div class="notes-actions">
+        <button id="btnExport">导出</button>
+        <input type="file" id="importFile" accept="application/json" />
+      </div>
+    </aside>
+  </div>
+
+  <template id="toastTpl"><div class="toast"></div></template>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
+
+
+
+
