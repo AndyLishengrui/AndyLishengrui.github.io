@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新方向 悔改 | 一对一门徒训练</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+
+        header {
+            background: white;
+            padding: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .breadcrumb {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #667eea;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .content h3 {
+            color: #333;
+            margin: 35px 0 20px 0;
+            font-size: 1.4em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .content h4 {
+            color: #555;
+            margin: 25px 0 15px 0;
+            font-size: 1.2em;
+        }
+
+        .content p {
+            color: #444;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .content strong {
+            color: #333;
+            font-weight: 600;
+        }
+
+        .content ul, .content ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        .content li {
+            margin-bottom: 12px;
+            color: #444;
+        }
+
+        .content hr {
+            border: none;
+            border-top: 2px solid #e0e0e0;
+            margin: 40px 0;
+        }
+
+        /* 圣经经文样式 */
+        .scripture {
+            background: linear-gradient(135deg, #f0fff4 0%, #e6f7ed 100%);
+            border-left: 5px solid #27ae60;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 10px 10px 0;
+            box-shadow: 0 3px 10px rgba(39, 174, 96, 0.1);
+        }
+
+        .scripture-text {
+            color: #2c3e50;
+            font-size: 1.05em;
+            line-height: 1.9;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
+        .scripture-ref {
+            color: #27ae60;
+            font-weight: 600;
+            font-size: 0.95em;
+            text-align: right;
+        }
+
+        /* 导航 */
+        .navigation {
+            background: #f8f9fa;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .nav-btn {
+            padding: 12px 28px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .nav-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .nav-btn.home {
+            background: #667eea;
+            color: white;
+        }
+
+        .nav-btn.home:hover {
+            background: #5a67d8;
+        }
+
+        .nav-btn:disabled,
+        .nav-btn.disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 20px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .content h3 {
+                font-size: 1.2em;
+            }
+
+            .scripture {
+                padding: 20px;
+            }
+
+            .navigation {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="index.html">一对一</a> &gt; 新方向 悔改
+            </div>
+            <h1>新方向 悔改</h1>
+            <div class="subtitle">第3课</div>
+        </header>
+
+        <div class="content">
+            <div class="scripture"><div class="scripture-text">彼得说：“你们各人要悔改，奉耶稣基督的名受洗，叫你们的罪得赦，就必领受所赐的圣灵。”</div><div class="scripture-ref">(使徒行传 2:38 和合本)</div></div>
+<p>开着车在单行道上逆向狂奔真是愚蠢，更别提有多危险了。有的人这样做，是因为他们不知道自己弄错了方向；而有的人这样做则是因为叛逆，寻求刺激。 在属灵的事情上也是一样，无论是因为无知还是因为叛逆，我们都是在一条险象丛生的单行道上逆向行驶，其结果导致与神永远地隔绝。 除非我们调转方向（悔改）开始跟随耶稣，否则我们所走的每一步都是在朝着错误的方向，每一步都在使我们更加远离神。</p>
+<h3>属神的忧伤与属世的忧伤</h3>
+<div class="scripture"><div class="scripture-text">因为依着神的意思忧愁，就生出没有后悔的悔改来，以致得救；但世俗的忧愁是叫人死。</div><div class="scripture-ref">(哥林多后书 7:10 和合本)</div></div>
+<p>圣经告诉我们，有两种不同的忧愁。一种是“依着神的意思忧愁”，当我们因自己的罪恶、因得罪神而发自内心感到忧愁痛悔时，这忧愁会促使我们真心悔改，带来生命的转变，使我们得着救恩。这种忧愁不是指自责或沉溺在情绪里，而是带着转向神的盼望。</p>
+<div class="scripture"><div class="scripture-text">我向你陈明我的罪，不隐瞒我的恶。<br>我说：“我要向耶和华承认我的过犯”，你就赦免我的罪恶。</div><div class="scripture-ref">(诗篇 32:5 和合本)</div></div>
+<p>另一种是“世俗的忧愁”，这种忧愁只是为自己的失败、犯罪的后果或被人发现而难过。它不带来真实的悔改，也不会令生命有所改变。世俗的忧愁只会带来懊悔、痛苦，甚至绝望，最终叫人灵性死亡。</p>
+<h3>真正的悔改</h3>
+<div class="scripture"><div class="scripture-text">劝勉他们应当悔改归向神，行事与悔改的心相称。</div><div class="scripture-ref">(使徒行传 26:20 和合本)</div></div>
+<p>真正的悔改不仅仅是感到一时的内疚或后悔，而是发自内心认识到自己得罪了神，为此生发出属神的忧伤。这种忧伤不是消极的自责，而是促使人转离罪恶、归向神的动力。正如保罗所说，“因为依着神的意思忧愁，就生出没有后悔的悔改来，以致得救”（参哥林多后书7:10）。 当我们有这样的悔改时，内心会发生真正的转变，愿意承认自己的过犯，并主动回到神面前，寻求祂的赦免。</p>
+<div class="scripture"><div class="scripture-text">你们要结出果子来，与悔改的心相称。</div><div class="scripture-ref">(马太福音 3:8 和合本)</div></div>
+<p>这种悔改会带来实际生命的果子——我们的思想、行为开始改变，愿意顺服神、追求圣洁，与原来的罪恶生活划清界限。悔改的真实证据，就是我们的生活能结出与悔改心相称的果子，例如谦卑、良善、悔改的行为、以及爱神爱人的实际行动。这是神所悦纳的悔改，也是带来新生命的开始。</p>
+<h3>悔改与饶恕</h3>
+<p>路加福音15:11-24中浪子的比喻深刻描绘了真正的悔改。那悖逆的小儿子在耗尽所有、落魄潦倒之际，圣经说：“他醒悟过来”（路加福音15:17），这不仅仅是人的自觉，更是天父圣灵的光照和感动。悔改的起点在于神主动的介入，使我们认清自己的真实处境。</p>
+<p>小儿子对自己说：“我要起来，到我父亲那里去，对他说：父亲，我得罪了天，又得罪了你。”（路加福音15:18）这里的悔改，首先是承认自己的罪“得罪了天”，即得罪了神，然后才是对人的亏欠。“得罪了天”让他明白，所有的罪最终都是顶撞神、亏缺了祂的荣耀——正如大卫在诗篇51:4所说：“我向你犯罪，惟独得罪了你。”只有真正意识到对神的亏欠，我们的悔改才会是发自内心、真实彻底的，而不是仅仅后悔行为或惧怕后果。</p>
+<p>他由衷地转离以前悖逆的道路，决定归回父亲身边。当小儿子还在远处，父亲就看见了他，动了慈心，跑去迎接、拥抱并亲吻他（路加福音15:20）。父亲不仅饶恕了他，还恢复了他儿子的身份，为他披上上好的袍子，戴上戒指，预备筵席庆祝。这极大的接纳，彰显了神无限的信实与慈爱。</p>
+<p>同样，天父也温柔地等待并迎接每一位愿意真实悔改归向他的人。当我们谦卑地承认：“我得罪了天，又得罪了你”，从心底向神悔改时，神就乐意全然饶恕，并将我们恢复为他所爱的儿女。</p>
+<p>真正的悔改，是在神面前承认自己的过犯，愿意离弃罪恶，回到天父那里，领受祂的怜悯与赦免。 愿我们都像浪子一样，在圣灵的光照中谦卑悔改，经历天父奇妙的接纳与赦免。 正如圣经所应许：</p>
+<div class="scripture"><div class="scripture-text">我们若认自己的罪，神是信实的，是公义的，必要赦免我们的罪，洗净我们一切的不义。</div><div class="scripture-ref">(约翰一书 1:9 和合本)</div></div>
+<div class="scripture"><div class="scripture-text">所以，你们当悔改归正，使你们的罪得以涂抹。这样，<br>那安舒的日子就必从主面前来到。</div><div class="scripture-ref">(使徒行传 3:19,20 和合本)</div></div>
+<p>这段经文告诉我们，当我们悔改归向神时，神会把我们的罪完全涂抹，不再计较，就好像表上的污渍被彻底清除了一样。想象你最喜欢的白衬衫上不小心沾染上无法自己去除的污点——普通的清洗方法根本没有用。可是现在，有一种最强力的去污剂，不但能把污渍彻底洗掉，还能让整件衣服变得焕然一新，没有残留，没有痕迹。 同样地，悔改就是把我们的罪和羞耻带到耶稣面前，让祂成为我们得洗净和更新的唯一方法。当我们认罪悔改，相信并接受耶稣作救主和生命的主宰时，祂不仅涂抹了我们的罪，还除去我们里面的愧疚和羞耻，赐我们一个全新的生命和一颗崭新的心。正如主所应许，安舒的日子，就是与神亲近、心灵安息和喜乐的生活，就会临到我们身上。</p>
+<h3>饶恕他人</h3>
+<p>神已经因为耶稣赦免了我们的罪，所以我们也要学习去饶恕那些冒犯我们、伤害我们的人。神希望我们像祂一样，有宽容和饶恕的心。</p>
+<div class="scripture"><div class="scripture-text">那时彼得进前来，对耶稣说：“主阿，我弟兄得罪我，我当饶恕他几次呢？到七次可以吗？”<br>耶稣说：“我对你说，不是到七次，乃是到七十个七次。”</div><div class="scripture-ref">(马太福音 18:21-22 和合本)</div></div>
+<p>彼得以为七次已经够多了，耶稣却说要七十个七次，也就是说，我们要常常去饶恕对我们有亏欠的人。我们自己也曾得罪神很多次，神都乐意赦免我们，所以我们也要饶恕他人。</p>
+<p>如果我们不肯饶恕别人，这样的苦毒和怨恨会像根一样在心里生长，不但让自己痛苦、没有平安，还会影响到身边的人。</p>
+<div class="scripture"><div class="scripture-text">又要谨慎，恐怕有人失了神的恩；恐怕有毒根生出来扰乱你们，因此叫众人沾染污秽。</div><div class="scripture-ref">(希伯来书 12:15 和合本)</div></div>
+<p>所以，让神的爱充满我们，去饶恕那些伤害过我们的人吧，这样我们才能经历神真正的自由和喜乐。</p>
+<h3>不再懊悔</h3>
+<div class="scripture"><div class="scripture-text">因为依着神的意思忧愁，就生出没有后悔的悔改来，以致得救；但世俗的忧愁是叫人死。</div><div class="scripture-ref">(哥林多后书 7:10 和合本)</div></div>
+<p>真正的悔改是远离罪恶并转向神。这表示，我们不再依靠自己的好行为，或是努力参加宗教活动来寻求得救，而是单单信靠耶稣基督。过去，我们走错了方向，离神越来越远；如今，我们回转归向神，与祂同行。悔改标志着新生命的开始，让我们脱离以自我为中心的捆绑，进入神所预备的正路，从而能够成就祂在我们生命中的美好计划。真正按着神的意思忧愁，会带来毫无懊悔的悔改，也带下救恩和新的盼望。</p>
+<h3>个人应用</h3>
+<ul>
+<li>你觉得自己在哪些方面最需要悔改和改变？可以具体列出一项，请向神祷告交托。</li>
+<li>在面对诱惑和罪的时候，你有没有尝试向身边信主的弟兄姊妹求帮助或请他们为你代祷？如果没有，可以尝试主动找一位信任的基督徒一起同行。</li>
+<li>当你回想过往的错误或软弱时，你愿意相信神已经因耶稣饶恕了你，并且选择放下自责，开始新的生活吗？</li>
+<li>如果你和某人有矛盾或受伤害，你愿意按照神的话语先主动道歉或饶恕他人吗？可以为此祷告并勇敢迈出一步。</li>
+<li>这周你可以怎样用一个实际行动（如读经、祷告、参加教会或帮助别人）来回应本章的信息？写下并计划去做。</li>
+</ul>
+<hr>
+        </div>
+
+        <div class="navigation">
+            <div>
+                <a href="chapter_2.html" class="nav-btn">← 上一课</a>
+            </div>
+            <div>
+                <a href="index.html" class="nav-btn home">📚 目录</a>
+            </div>
+            <div>
+                <a href="chapter_4.html" class="nav-btn">下一课 →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

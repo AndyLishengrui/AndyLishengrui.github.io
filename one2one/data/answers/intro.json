@@ -1,0 +1,64 @@
+{
+  "section": "intro",
+  "has_data": true,
+  "refs": [
+    "马可福音 1:17",
+    "以弗所书 2:8-9",
+    "提摩太后书 2:19",
+    "约书亚记 1:8",
+    "希伯来书 10:24-25",
+    "雅各书 5:16",
+    "彼得前书 4:10",
+    "马太福音 28:18-20"
+  ],
+  "answers": {
+    "马可福音 1:17": {
+      "reference": "罗 1:17",
+      "text": "因为神的义正在这福音上显明出来；这义是本于信，以至于信。如经上所记：'义人必因信得生。'",
+      "has_data": true,
+      "source_file": "foundation_L9_S2.json"
+    },
+    "以弗所书 2:8-9": {
+      "reference": "弗 2:8",
+      "text": "你们得救是本乎恩，也因着信；这并不是出于自己，乃是神所赐的；",
+      "has_data": true,
+      "source_file": "foundation_L9_S2.json"
+    },
+    "提摩太后书 2:19": {
+      "reference": "帖前 2:19",
+      "text": "我们的盼望和喜乐，并所夸的冠冕，是甚么呢？岂不是我们主耶稣来的时候，你们在他面前站立得住吗？",
+      "has_data": true,
+      "source_file": "foundation_L12_S4.json"
+    },
+    "约书亚记 1:8": {
+      "reference": "徒 1:8",
+      "text": "但圣灵降临在你们身上，你们就必得着能力；并要在耶路撒冷、犹太全地和撒玛利亚，直到地极，作我的见证。",
+      "has_data": true,
+      "source_file": "foundation_L4_S1.json"
+    },
+    "希伯来书 10:24-25": {
+      "reference": "徒 10:24",
+      "text": "又次日，他们进入凯撒利亚，哥尼流已经请了他的亲属密友等候他们。",
+      "has_data": true,
+      "source_file": "foundation_L11_S1.json"
+    },
+    "雅各书 5:16": {
+      "reference": "林前 15:16",
+      "text": "因为若死人不复活，基督也就没有复活了。",
+      "has_data": true,
+      "source_file": "foundation_L1_S3.json"
+    },
+    "彼得前书 4:10": {
+      "reference": "罗 14:10",
+      "text": "你这个人，为什么论断弟兄呢？又为什么轻看弟兄呢？因我们都要站在神的台前。",
+      "has_data": true,
+      "source_file": "foundation_L12_S1.json"
+    },
+    "马太福音 28:18-20": {
+      "reference": "太 28:18",
+      "text": "耶稣进前来，对他们说：天上地下所有的权柄都赐给我了。",
+      "has_data": true,
+      "source_file": "foundation_L11_S4.json"
+    }
+  }
+}
