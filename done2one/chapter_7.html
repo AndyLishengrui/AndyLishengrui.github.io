@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新使命 带门徒 | 一对一门徒训练</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+
+        header {
+            background: white;
+            padding: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .breadcrumb {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #667eea;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .content h3 {
+            color: #333;
+            margin: 35px 0 20px 0;
+            font-size: 1.4em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .content h4 {
+            color: #555;
+            margin: 25px 0 15px 0;
+            font-size: 1.2em;
+        }
+
+        .content p {
+            color: #444;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .content strong {
+            color: #333;
+            font-weight: 600;
+        }
+
+        .content ul, .content ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        .content li {
+            margin-bottom: 12px;
+            color: #444;
+        }
+
+        .content hr {
+            border: none;
+            border-top: 2px solid #e0e0e0;
+            margin: 40px 0;
+        }
+
+        /* 圣经经文样式 */
+        .scripture {
+            background: linear-gradient(135deg, #f0fff4 0%, #e6f7ed 100%);
+            border-left: 5px solid #27ae60;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 10px 10px 0;
+            box-shadow: 0 3px 10px rgba(39, 174, 96, 0.1);
+        }
+
+        .scripture-text {
+            color: #2c3e50;
+            font-size: 1.05em;
+            line-height: 1.9;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
+        .scripture-ref {
+            color: #27ae60;
+            font-weight: 600;
+            font-size: 0.95em;
+            text-align: right;
+        }
+
+        /* 导航 */
+        .navigation {
+            background: #f8f9fa;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .nav-btn {
+            padding: 12px 28px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .nav-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .nav-btn.home {
+            background: #667eea;
+            color: white;
+        }
+
+        .nav-btn.home:hover {
+            background: #5a67d8;
+        }
+
+        .nav-btn:disabled,
+        .nav-btn.disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 20px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .content h3 {
+                font-size: 1.2em;
+            }
+
+            .scripture {
+                padding: 20px;
+            }
+
+            .navigation {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="index.html">一对一</a> &gt; 新使命 带门徒
+            </div>
+            <h1>新使命 带门徒</h1>
+            <div class="subtitle">第7课</div>
+        </header>
+
+        <div class="content">
+            <div class="scripture"><div class="scripture-text">只要心里尊主基督为圣，有人问你们心中盼望的缘由，就要常作准备，以温柔敬畏的心回答各人。</div><div class="scripture-ref">(彼得前书 3:15 和合本)</div></div>
+<div class="scripture"><div class="scripture-text">耶稣上船的时候，纳鬼附的人恳求和耶稣同在。<br>耶稣不许，却对他说：“你回家去，到你的亲属那里，将主为你所作的是何等大的事，是怎样怜悯你，都告诉他们。”</div><div class="scripture-ref">(马可福音 5:18-19 和合本)</div></div>
+<p>假如你是医生，你发现了治愈癌症的神奇疗法，你难道不希望每个人都知道这个发现吗？现在你有了一个神奇疗法，它能治愈比癌症更危险可怕的东西——罪。传福音就是向你的家人和朋友讲述神对于罪的疗法。为了预备好自己向别人讲述救恩的盼望，我们就必须先学习如何讲见证以及传福音。当我们这样做时，就开始带门徒了。</p>
+<h3>如何讲见证</h3>
+<p>在法庭上，证人必须诚实地将他所听见、所看见以及所经历的说出来。我们被称为神的证人，就必须诚实地将他为我们、在我们身上和通过我们所作的一切说出来。要为神作见证，我们的生命就要能够让人看见神的恩典。作神的见证人，关键是我们是怎样的人，而不是我们做了什么事。作神的见证人只有一个办法，就是依靠圣灵的能力，他赐给我们能力去大胆地讲见证并传福音。</p>
+<p>你的见证是大有能力的。当你分享耶稣如何改变你的生命，这是发生在你身上的事情，没有人能反驳。</p>
+<p>见证分享主要有三个部分，这是你的<strong>两分钟神迹</strong>：</p>
+<ol>
+<li><strong>简要讲述你信耶稣前的生活（有些什么问题和挣扎）；</strong></li>
+<li><strong>详细解说你是如何把生命交给耶稣的（你如何与耶稣建立个人的关系）；</strong></li>
+<li><strong>喜乐地描述你信耶稣后的生活（信耶稣后有什么改变）。</strong></li>
+</ol>
+<p>4.</p>
+<div class="scripture"><div class="scripture-text">弟兄胜过它，是因羔羊的血和自己所见证的道，他们虽至于死，也不爱惜性命。</div><div class="scripture-ref">(启示录 12:11 和合本)</div></div>
+<h3>如何传福音</h3>
+<p>福音是神的大能，要救一切相信的。我们要去接触文化和社区，成为神的见证人，去分享我们的见证。</p>
+<div class="scripture"><div class="scripture-text">我不以福音为耻，这福音本是神的大能，要救一切相信的，先是犹太人，后是希腊人。</div><div class="scripture-ref">(罗马书 1:16 和合本)</div></div>
+<p>用下面这两节经文向你的家人和朋友传福音。</p>
+<div class="scripture"><div class="scripture-text">因为世人都犯了罪，亏缺了神的荣耀。</div><div class="scripture-ref">(罗马书 3:23 和合本)</div></div>
+<p>每个人都犯了罪。任何对于神的不顺服或叛逆都是罪。事实上，没有任何一个人完全地顺服了神的命令。</p>
+<div class="scripture"><div class="scripture-text">因为罪的工价乃是死，惟有神的恩赐，在我们的主基督耶稣里，乃是永生。</div><div class="scripture-ref">(罗马书 6:23 和合本)</div></div>
+<p>既然我们都犯了罪，当得的报应就是死并且永远离开神的同在。好消息是，神将救恩白白地赐给我们！唯有耶稣能够拯救我们，因为他代替我们承受了罪的惩罚，为我们死在十字架上。当我们相信他在十字架上所成就的工作时，就可以凭信心白白地领受救恩。</p>
+<p>当你向家人和朋友分享福音之后，就可以带他们祷告了。</p>
+<h3>如何带门徒</h3>
+<p>带门徒最根本的含义，是带领人信靠耶稣基督，并教导他们顺服神的话语和跟随基督的脚踪。</p>
+<div class="scripture"><div class="scripture-text">所以你们要去，使万民作我的门徒，奉父、子、圣灵的名给他们施洗。<br>凡我所吩咐你们的，都教训他们遵守，我就常与你们同在，直到世界的末了。</div><div class="scripture-ref">(马太福音 28:19-20 和合本)</div></div>
+<p>在带门徒的过程中，更进一步的目标，是照着圣经的教导，兴起可以带领他人的属灵领袖。</p>
+<div class="scripture"><div class="scripture-text">你在许多见证人面前听见我所教训的，也要交托那忠心能教导别人的人。</div><div class="scripture-ref">(提摩太后书 2:2 和合本)</div></div>
+<p>这节经文强调了门徒训练的“传承性”——不只自己学习主的话，更要帮助别人明白、实践，再教导更多的人。兴起门徒成为领袖，正是带门徒使命的重要延展。</p>
+<h3>个人应用</h3>
+<ul>
+<li>你的生命是神的见证吗？</li>
+<li>现在就和带你学习《一对一》的人分享你的两分钟神迹。回头把它写下来。</li>
+<li>你打算接下来跟谁传福音并带他们一起学习《一对一》？现在就为他们祷告。</li>
+</ul>
+<p>让我们一起，荣耀神，带门徒！</p>
+        </div>
+
+        <div class="navigation">
+            <div>
+                <a href="chapter_6.html" class="nav-btn">← 上一课</a>
+            </div>
+            <div>
+                <a href="index.html" class="nav-btn home">📚 目录</a>
+            </div>
+            <div>
+                <span class="nav-btn disabled">下一课 →</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+{
+  "section": "chapter_4",
+  "has_data": true,
+  "refs": [
+    "使徒行传 2:38",
+    "使徒行传 2:41",
+    "罗马书 6:1-4",
+    "约翰福音 16:7",
+    "使徒行传 1:8",
+    "使徒行传 2:38-39",
+    "路加福音 11:13",
+    "使徒行传 8:17",
+    "使徒行传 2:4",
+    "使徒行传 19:6"
+  ],
+  "answers": {
+    "使徒行传 2:38": {
+      "reference": "徒 2:38",
+      "text": "彼得说：你们各人要悔改，奉耶稣基督的名受洗，叫你们的罪得赦，就必领受所赐的圣灵。",
+      "has_data": true,
+      "source_file": "foundation_L3_S1.json"
+    },
+    "使徒行传 2:41": {
+      "reference": "徒 2:41",
+      "text": "于是领受他话的人就受了洗。那一天，门徒约添了三千人。",
+      "has_data": true,
+      "source_file": "foundation_L3_S4.json"
+    },
+    "罗马书 6:1-4": {
+      "reference": "罗 6:1,2",
+      "text": "这样，怎么说呢？我们可以仍在罪中、叫恩典显多吗？ 断乎不可！我们在罪上死了的人岂可仍在罪中活着呢？",
+      "has_data": true,
+      "source_file": "foundation_L3_S4.json"
+    },
+    "约翰福音 16:7": {
+      "reference": "约翰福音 16:7",
+      "text": "",
+      "has_data": false
+    },
+    "使徒行传 1:8": {
+      "reference": "徒 1:8",
+      "text": "但圣灵降临在你们身上，你们就必得着能力；并要在耶路撒冷、犹太全地和撒玛利亚，直到地极，作我的见证。",
+      "has_data": true,
+      "source_file": "foundation_L4_S1.json"
+    },
+    "使徒行传 2:38-39": {
+      "reference": "徒 2:38",
+      "text": "彼得说：你们各人要悔改，奉耶稣基督的名受洗，叫你们的罪得赦，就必领受所赐的圣灵。",
+      "has_data": true,
+      "source_file": "foundation_L3_S1.json"
+    },
+    "路加福音 11:13": {
+      "reference": "路 11:13",
+      "text": "你们虽然不好，尚且知道拿好东西给儿女；何况天父，岂不更将圣灵给求他的人吗？'",
+      "has_data": true,
+      "source_file": "foundation_L4_S4.json"
+    },
+    "使徒行传 8:17": {
+      "reference": "太 18:17",
+      "text": "若是不听他们，就告诉教会；若是不听教会，就看他像外邦人和税吏一样。",
+      "has_data": true,
+      "source_file": "foundation_L7_S4.json"
+    },
+    "使徒行传 2:4": {
+      "reference": "徒 2:42",
+      "text": "都恒心遵守使徒的教训，彼此交接、掰饼、祈祷。",
+      "has_data": true,
+      "source_file": "foundation_L5_S1.json"
+    },
+    "使徒行传 19:6": {
+      "reference": "使徒行传 19:6",
+      "text": "",
+      "has_data": false
+    }
+  }
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新操练 灵修 | 一对一门徒训练</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+
+        header {
+            background: white;
+            padding: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .breadcrumb {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #667eea;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .content h3 {
+            color: #333;
+            margin: 35px 0 20px 0;
+            font-size: 1.4em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .content h4 {
+            color: #555;
+            margin: 25px 0 15px 0;
+            font-size: 1.2em;
+        }
+
+        .content p {
+            color: #444;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .content strong {
+            color: #333;
+            font-weight: 600;
+        }
+
+        .content ul, .content ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        .content li {
+            margin-bottom: 12px;
+            color: #444;
+        }
+
+        .content hr {
+            border: none;
+            border-top: 2px solid #e0e0e0;
+            margin: 40px 0;
+        }
+
+        /* 圣经经文样式 */
+        .scripture {
+            background: linear-gradient(135deg, #f0fff4 0%, #e6f7ed 100%);
+            border-left: 5px solid #27ae60;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 10px 10px 0;
+            box-shadow: 0 3px 10px rgba(39, 174, 96, 0.1);
+        }
+
+        .scripture-text {
+            color: #2c3e50;
+            font-size: 1.05em;
+            line-height: 1.9;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
+        .scripture-ref {
+            color: #27ae60;
+            font-weight: 600;
+            font-size: 0.95em;
+            text-align: right;
+        }
+
+        /* 导航 */
+        .navigation {
+            background: #f8f9fa;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .nav-btn {
+            padding: 12px 28px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .nav-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .nav-btn.home {
+            background: #667eea;
+            color: white;
+        }
+
+        .nav-btn.home:hover {
+            background: #5a67d8;
+        }
+
+        .nav-btn:disabled,
+        .nav-btn.disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 20px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .content h3 {
+                font-size: 1.2em;
+            }
+
+            .scripture {
+                padding: 20px;
+            }
+
+            .navigation {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="index.html">一对一</a> &gt; 新操练 灵修
+            </div>
+            <h1>新操练 灵修</h1>
+            <div class="subtitle">第5课</div>
+        </header>
+
+        <div class="content">
+            <div class="scripture"><div class="scripture-text">他们都恒心遵守使徒的教训，彼此交接，掰饼，祈祷。</div><div class="scripture-ref">(使徒行传 2:42 和合本)</div></div>
+<p>初代教会之所以充满活力并健康发展，是因为他们向神委身，他们透过灵修培养跟神的关系。 灵修有不同的方式，其中最重要的方式就是读经和祷告。</p>
+<h3>学道--读圣经学习神的话语</h3>
+<div class="scripture"><div class="scripture-text">圣经都是神所默示的，于教训、督责、使人归正、教导人学义，都是有益的，叫属神的人得以完全，预备行各样的善事。</div><div class="scripture-ref">(提摩太后书 3:16-17 和合本)</div></div>
+<p>圣经不是一部普通的历史或文学汇编，而是神亲自默示、启示给人类的话语。它在教训、责备、纠正和教导人行义方面都有极大的益处，使每一个属神的人能够被造就得以完全，有力量行在神所喜悦的道路上（提后3:16-17）。 信主以前，我们常按自己的想法和世界标准生活；但当我们得救后，神的话就成了我们信仰和生活的最高准则。圣经带领我们明白神的心意，成为圣洁的器皿，效法基督。</p>
+<p>神的话是我们生命的根基，是判断一切的标准。无论遭遇何种处境和选择，都应以神的话为准，而不是自己的想法或世俗观念。</p>
+<p>*“人活着不是单靠食物，乃是靠神口里所出的一切话。”*</p>
+<p>*（马太福音 4:4 和合本）*</p>
+<p>神的话比我们日常所需的饮食更重要，是我们灵命成长和生命更新的真正粮食。 约伯为我们立下了榜样，他把神的话语看得胜过自己每日的饮食，极度珍视和顺服神的指示。</p>
+<div class="scripture"><div class="scripture-text">他口中的命令，我未曾违背；我看重他口中的言语，过于我需用的饮食。</div><div class="scripture-ref">(约伯记 23:12 和合本)</div></div>
+<div class="scripture"><div class="scripture-text">要爱慕那纯净的灵奶，像才生的婴孩爱慕奶一样，叫你们因此渐长，以致得救。你们若尝过主恩的滋味，就必如此。</div><div class="scripture-ref">(彼得前书 2:2-3 和合本)</div></div>
+<p>我们要有渴慕的心切慕神的话，就如新生婴儿渴慕奶一样，我们才能不断长大成熟。</p>
+<p>神的话语能帮助我们胜过试探，洁净我们的思想和行为，引导我们遵行祂的旨意。</p>
+<div class="scripture"><div class="scripture-text">少年人用什么洁净他的行为呢？是要遵行你的话。</div><div class="scripture-ref">(诗篇 119:9 和合本)</div></div>
+<div class="scripture"><div class="scripture-text">我将你的话藏在心里，免得我得罪你。</div><div class="scripture-ref">(诗篇 119:11 和合本)</div></div>
+<h3>行道——用生命回应神的话</h3>
+<p>每日读圣经，固然宝贵；但更重要的是把所明白的活出来。</p>
+<div class="scripture"><div class="scripture-text">只是你们要行道，不要单单听道，自己欺哄自己。</div><div class="scripture-ref">(雅各书 1:22 和合本)</div></div>
+<p>仅仅积累圣经知识，并不能带来真正的生命成长。</p>
+<p>属灵的成熟在于我们对神话语的顺服和实践。</p>
+<p>如果只停留在“听道”“学习”，却没有真实地把神的话应用在生活中，便是在欺骗自己。</p>
+<p>真正的跟随者，是把神的话语活出来。</p>
+<div class="scripture"><div class="scripture-text">这律法书不可离开你的口，总要昼夜思想，好使你谨守遵行这书上所写的一切话。如此，你的道路就可以亨通，凡事顺利。</div><div class="scripture-ref">(约书亚记 1:8 和合本)</div></div>
+<div class="scripture"><div class="scripture-text">不要效法这个世界，只要心意更新而变化，叫你们察验何为神的善良、纯全、可喜悦的旨意。</div><div class="scripture-ref">(罗马书 12:2 和合本)</div></div>
+<p>让我们带着顺服的心领受神的话，每天思想、默想、查验并付诸实践，使生命更新变化，活出神所喜悦的样式。</p>
+<h3>祷告</h3>
+<p>祷告是神子民与神交通的重要特权，是与天父建立真实关系的不可或缺的途径。</p>
+<p>*“你们要靠着圣灵，随时多方祷告祈求，并要在此警醒不倦，为众圣徒祈求。”*</p>
+<p>*（以弗所书 6:18 和合本）*</p>
+<p>圣经清楚启示，祷告不仅仅是宗教的仪式或个人情感的抒发，更是我们凭信心来到神面前，直接向祂倾心吐意、寻求祂、仰望祂恩典的途径。</p>
+<p>耶稣在地上的时候，经常祷告。他常常一个人到安静的地方，和天父说话，不管遇到什么事，都依靠祷告。 祷告不是一件自然就会的事，需要我们学习，也需要慢慢练习。</p>
+<p>耶稣教导的主祷文：</p>
+<p>*我们在天上的父，愿人都尊你的名为圣。愿你的国降临，愿你的旨意行在地上，如同行在天上。我们日用的饮食，今日赐给我们。免我们的债，如同我们免了人的债。不叫我们遇见试探，救我们脱离凶恶，因为国度、权柄、荣耀，全是你的，直到永远。阿们。*</p>
+<p>*（马太福音 6:9-13）*</p>
+<p>耶稣教导门徒祷告时，很强调要用真诚的心，不是做给别人看，也不是用很多好听或复杂的话来感动神。</p>
+<p>*“你们祷告的时候，不可像假冒为善的人，爱站在会堂里和十字路口上祷告，故意叫人看见。我实在告诉你们，他们已经得了他们的赏赐。你祷告的时候，要进你的内屋，关上门，祷告你在暗中的父，你父在暗中察看，必然报答你。”*</p>
+<p>*（马太福音 6:5-6，和合本）*</p>
+<p>有时我们不知道该怎么祷告，圣灵也会帮助我们，为我们向神祷告。正如圣经所说：</p>
+<p>*“况且我们的软弱有圣灵帮助，我们本不晓得当怎样祷告，只是圣灵亲自用说不出来的叹息替我们祷告。鉴察人心的，晓得圣灵的意思，因为圣灵照着神的旨意替圣徒祈求。”*</p>
+<p>*（罗马书 8:26-27 和合本）*</p>
+<p>圣经告诉我们，神很乐意听祷告。如果我们按着神的意思来求，神一定会听。有时候我们觉得神没有马上回应，其实神最了解我们的需要，祂的安排和时间总是最好的。祷告不是让神听从我们，而是我们愿意把自己的想法、需要和担心都交托给神，请神带领。</p>
+<div class="scripture"><div class="scripture-text">我们若照他的旨意求什么，他就听我们，这是我们向他所存坦然无惧的心。既然知道他听我们一切所求的，就知道我们所求于他的，无不得着。</div><div class="scripture-ref">(约翰一书 5:14-15 和合本)</div></div>
+<p>让我们每天坚持祷告，无论事情大小，都交给神，相信祂会按最好的带领我们。</p>
+<h3>个人应用</h3>
+<ol>
+<li>你是否每天设定一个固定的时间安静读经和祷告？</li>
+<li>你愿意主动融入教会的小组或团契，与弟兄姊妹一起成长吗？</li>
+<li>当遇到不容易饶恕的人时，你会选择向神祷告并依靠祂的能力去饶恕吗？</li>
+<li>你在祷告中会具体为日常生活所需、学习或工作的事情向神交托吗？</li>
+<li>你最近有没有试着把自己在每天读圣经或祷告时学到的真理，用在生活里？举个例子说明一下。</li>
+</ol>
+<hr>
+        </div>
+
+        <div class="navigation">
+            <div>
+                <a href="chapter_4.html" class="nav-btn">← 上一课</a>
+            </div>
+            <div>
+                <a href="index.html" class="nav-btn home">📚 目录</a>
+            </div>
+            <div>
+                <a href="chapter_6.html" class="nav-btn">下一课 →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

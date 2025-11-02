@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前言 | 一对一门徒训练</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+
+        header {
+            background: white;
+            padding: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .breadcrumb {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #667eea;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .content h3 {
+            color: #333;
+            margin: 35px 0 20px 0;
+            font-size: 1.4em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .content h4 {
+            color: #555;
+            margin: 25px 0 15px 0;
+            font-size: 1.2em;
+        }
+
+        .content p {
+            color: #444;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .content strong {
+            color: #333;
+            font-weight: 600;
+        }
+
+        .content ul, .content ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        .content li {
+            margin-bottom: 12px;
+            color: #444;
+        }
+
+        .content hr {
+            border: none;
+            border-top: 2px solid #e0e0e0;
+            margin: 40px 0;
+        }
+
+        /* 圣经经文样式 */
+        .scripture {
+            background: linear-gradient(135deg, #f0fff4 0%, #e6f7ed 100%);
+            border-left: 5px solid #27ae60;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 10px 10px 0;
+            box-shadow: 0 3px 10px rgba(39, 174, 96, 0.1);
+        }
+
+        .scripture-text {
+            color: #2c3e50;
+            font-size: 1.05em;
+            line-height: 1.9;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
+        .scripture-ref {
+            color: #27ae60;
+            font-weight: 600;
+            font-size: 0.95em;
+            text-align: right;
+        }
+
+        /* 导航 */
+        .navigation {
+            background: #f8f9fa;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .nav-btn {
+            padding: 12px 28px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .nav-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .nav-btn.home {
+            background: #667eea;
+            color: white;
+        }
+
+        .nav-btn.home:hover {
+            background: #5a67d8;
+        }
+
+        .nav-btn:disabled,
+        .nav-btn.disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 20px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .content h3 {
+                font-size: 1.2em;
+            }
+
+            .scripture {
+                padding: 20px;
+            }
+
+            .navigation {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="index.html">一对一</a> &gt; 前言
+            </div>
+            <h1>前言</h1>
+            
+        </header>
+
+        <div class="content">
+            <p>我在读书的时候遇见了一位年轻的基督徒，他很乐于向学生传福音。在这期间，许多同学第一次听到了福音，知道了神拯救人类的计划，有好几百人信了耶稣。后来，他们当中有不少人出去开创教会，有人做了牧师，也有人做了宣教士。</p>
+<p>我也是在那时第一次听到了福音。然而，我的第一反应不是悔改，而是逃跑。我逃避这个基督徒，也逃避神。我逃了六个月，尽量地躲开他。我躲得很辛苦，因为他似乎无处不在。每场足球赛、篮球赛他都参加，学校大楼、食堂和停车场都有他的身影。他和他那帮门徒们又经常邀请我去参加查经会、祷告会以及青年之夜等等。后来，我终于接受了耶稣，成为了基督徒。</p>
+<p>但是他还是“不放过我”，他不仅帮助我信了耶稣，还带领我作耶稣的门徒。其实，他在我身上的工作才刚刚开始。他带我去一个小组，我们八个人每周聚会来学习跟随耶稣。我深信这种“一对一”的个人跟进是很有功效的。因为当初他跟我分享福音时，我跑，他追，有六个月之久，他对我锲而不舍，向我讲解，为我祷告，他就是不放弃。这就是“一对一”的传福音。</p>
+<p>在我信了耶稣以后，他开始带我作耶稣的门徒。他教我怎样阅读查考圣经，怎样将所学的应用到生活中去，怎样祷告。他教我怎样向别人分享我的信仰，怎样带门徒。这就是“一对一”的带门徒。</p>
+<p>个人跟进和带门徒，这就是耶稣给我们的大使命。也就是这本小册子要讲的。</p>
+<p>多年来，我鼓励每一个基督徒都作个人跟进。有些人作得很好，也有些人虽尽了力，效果却不佳，很有挫败感。因为他们不知道该说什么，他们缺少一个向导。《一对一》就是用来帮你进行个人跟进和带门徒的向导。它本身带不了门徒，但它能帮你带领门徒。</p>
+        </div>
+
+        <div class="navigation">
+            <div>
+                <span class="nav-btn disabled">← 上一课</span>
+            </div>
+            <div>
+                <a href="index.html" class="nav-btn home">📚 目录</a>
+            </div>
+            <div>
+                <a href="intro.html" class="nav-btn">下一课 →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

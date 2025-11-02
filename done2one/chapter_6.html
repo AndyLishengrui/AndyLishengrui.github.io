@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新关系 教会 | 一对一门徒训练</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+
+        header {
+            background: white;
+            padding: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .breadcrumb {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #667eea;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .content h3 {
+            color: #333;
+            margin: 35px 0 20px 0;
+            font-size: 1.4em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .content h4 {
+            color: #555;
+            margin: 25px 0 15px 0;
+            font-size: 1.2em;
+        }
+
+        .content p {
+            color: #444;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .content strong {
+            color: #333;
+            font-weight: 600;
+        }
+
+        .content ul, .content ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        .content li {
+            margin-bottom: 12px;
+            color: #444;
+        }
+
+        .content hr {
+            border: none;
+            border-top: 2px solid #e0e0e0;
+            margin: 40px 0;
+        }
+
+        /* 圣经经文样式 */
+        .scripture {
+            background: linear-gradient(135deg, #f0fff4 0%, #e6f7ed 100%);
+            border-left: 5px solid #27ae60;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 10px 10px 0;
+            box-shadow: 0 3px 10px rgba(39, 174, 96, 0.1);
+        }
+
+        .scripture-text {
+            color: #2c3e50;
+            font-size: 1.05em;
+            line-height: 1.9;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
+        .scripture-ref {
+            color: #27ae60;
+            font-weight: 600;
+            font-size: 0.95em;
+            text-align: right;
+        }
+
+        /* 导航 */
+        .navigation {
+            background: #f8f9fa;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .nav-btn {
+            padding: 12px 28px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .nav-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .nav-btn.home {
+            background: #667eea;
+            color: white;
+        }
+
+        .nav-btn.home:hover {
+            background: #5a67d8;
+        }
+
+        .nav-btn:disabled,
+        .nav-btn.disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 20px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .content h3 {
+                font-size: 1.2em;
+            }
+
+            .scripture {
+                padding: 20px;
+            }
+
+            .navigation {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="index.html">一对一</a> &gt; 新关系 教会
+            </div>
+            <h1>新关系 教会</h1>
+            <div class="subtitle">第6课</div>
+        </header>
+
+        <div class="content">
+            <div class="scripture"><div class="scripture-text">西门彼得回答说：“你是基督，是永生神的儿子。”<br>耶稣对他说：“西门巴约拿，你是有福的！因为这不是属血肉的指示你的，乃是我在天上的父指示的。我还告诉你，你是彼得，我要把我的教会建造在这磐石上，阴间的权柄不能胜过他。”</div><div class="scripture-ref">(马太福音 16:16-18 和合本)</div></div>
+<p>借着圣灵的启示，彼得说出了耶稣真实的身份：神的儿子。</p>
+<p>耶稣说这个真理是一块基石，他要把教会建立在这个基石之上。 耶稣还描述了他要建立的是一个怎样的教会，这是一个得胜的教会，能胜过黑暗的权势。</p>
+<p><strong>耶稣和保罗用“教会”来指称神的百姓。</strong> 教会从来都不是指宗教建筑物。</p>
+<p>委身于教会这个属灵家庭有四大好处：</p>
+<h3>属灵的友谊</h3>
+<p>每个人都需要真正的朋友，但是很少有人能找到真正的朋友。 寻找真正的朋友，最好的地方是教会，是在神的百姓中间。 真正的朋友总是为我们的益处着想，无论我们的环境是好是坏，他们都和我们在一起。 真正的朋友决不会使我们远离神，相反，他们会激励我们活出圣洁的生活。</p>
+<div class="scripture"><div class="scripture-text">朋友乃时常亲爱，弟兄为患难而生。</div><div class="scripture-ref">(箴言 17:17 和合本)</div></div>
+<div class="scripture"><div class="scripture-text">滥交朋友的，自取败坏，但有一朋友比弟兄更亲密。</div><div class="scripture-ref">(箴言 18:24 和合本)</div></div>
+<h3>团契相交</h3>
+<p>如果把一块煤从燃烧的火中取走，它就会逐渐冷却。如果把它放回一堆熊熊燃烧的火中，它又会重新燃烧起来。 基督徒也是一样，如果一个基督徒停止聚会，断开了跟其他热心基督徒的联结，他的灵里面也会逐渐冷淡。 如果他持续委身在团契当中，那么他就能一直为主火热。</p>
+<div class="scripture"><div class="scripture-text">都恒心遵守使徒的教训，彼此交接，擘饼，祈祷……<br>信的人都在一处，凡物公用；又卖了田产，家业，照各人所需用的分给各人。<br>他们天天同心合意恒切地在殿里，且在家中擘饼，存着欢喜、诚实的心用饭……</div><div class="scripture-ref">(使徒行传 2:42,44-46 和合本)</div></div>
+<p>初代教会的信徒们不仅在信仰教义上彼此相交，更在生活上彼此关心、互相帮助，真实活出了团契的生命。 他们常常在一起学习圣经、祷告、分享资源，彼此服事和支持，建立了紧密又充满爱的属灵家庭，这正是团契的美好写照。</p>
+<div class="scripture"><div class="scripture-text">你们和不信的原不相配，不要同负一轭。义和不义有甚么相交呢？光明和黑暗有甚么相通呢？</div><div class="scripture-ref">(哥林多后书 6:14 和合本)</div></div>
+<p>这节经文提醒我们，在属灵的团契中，基督徒需要彼此联结，而不应与不信主的人在信仰和生活目标上同负一轭。 只有在与同样追求属灵生命的弟兄姊妹一同追求主、互相勉励时，我们才能得到真正的造就和守望，也更能保持属灵的火热。</p>
+<h3>敬拜神</h3>
+<div class="scripture"><div class="scripture-text">时候将到，如今就是了，那真正拜父的，要用心灵和诚实拜他，因为父要这样的人拜他。神是个灵，所以拜他的必须用心灵和诚实拜他。</div><div class="scripture-ref">(约翰福音 4:23-24 和合本)</div></div>
+<p>这段经文出自耶稣与撒玛利亚妇人的对话。当时的人普遍认为，敬拜神要在特定的圣地、用特定的仪式。但耶稣在这里揭示了敬拜的核心：真正的敬拜不在于外在的地点、传统或形式，而在于内心对神的真实态度。 “心灵”表示我们要用发自内心的情感、思想、意志来亲近神，而不是只停留在嘴唇和外表。“诚实”原文可作“真理”，意思是我们的敬拜要根据神的启示、神的话语来进行，是合乎神心意而非凭个人想象。</p>
+<p>神是灵，不被时空、形式所限制。他在寻找用心灵和真理（诚实）来敬拜他的人，这样的敬拜才蒙悦纳。真正的敬拜意味着我们愿意谦卑、真实、全心全意把神当作我们生命的主，顺服祂、尊荣祂，并把自己完全献上。 在教会中，我们一起敬拜，是用心灵表达对神的热爱与敬畏，用神的话语和真理引导我们的敬拜。无论是唱诗、祷告、聆听讲道，还是日常生活的每一选择，都是敬拜神的方式。让我们一同学习做神所喜悦的敬拜者，让敬拜成为我们生命的中心和动力。</p>
+<h3>共赴大使命——带门徒</h3>
+<p>耶稣在升天升天之前，把“去使万民作门徒”的使命托付给教会。完成这份使命，不是个人可以单独完成的，而是需要我们彼此相连、共同委身、一起服事的生命共同体。在新的关系里，神把我们连结在基督的身体里，彼此成为肢体、一起成长，也一同参与建立祂的教会。</p>
+<div class="scripture"><div class="scripture-text">所以你们要去，使万民作我的门徒，奉父、子、圣灵的名给他们施洗。<br>凡我所吩咐你们的，都教训他们遵守，我就常与你们同在，直到世界的末了。</div><div class="scripture-ref">(马太福音 28:19-20 和合本)</div></div>
+<div class="scripture"><div class="scripture-text">他所赐的，有使徒，有先知，有传福音的，有牧师和教师，为要成全圣徒，各尽其职，建立基督的身体。</div><div class="scripture-ref">(以弗所书 4:11-12 和合本)</div></div>
+<p>大使命呼召我们每一个基督徒都委身于教会生活，发挥神赐予的恩赐和职分，各尽其职，彼此相爱和建造。我们需要主动加入教会、参加小组或服事团队，在真实关系中体验互相扶持、彼此守望、携手拓展神国度的实际。这样的新关系，远超过宗教活动，而是我们一生同心合意建造基督身体、见证耶稣荣美的旅程。</p>
+<p>让我们回应大使命，也回应神的新关系，把自己全然献上，委身教会，积极参与，彼此成全，让教会成为这个世界荣耀的见证！</p>
+<p>在新生命的新关系中，大使命是我们彼此的责任，我们一起成长、一起委身、一起回应神的托付。 鼓励你积极参与教会、团契和门徒训练，在关系中经历共同奔走、同工收割的福分，让神的国度因我们这一代的回应而得扩展！</p>
+<h3>个人应用</h3>
+<ul>
+<li>现在有哪些人在带领你作门徒、陪伴你灵命成长？</li>
+<li>你现在有在带门徒吗？</li>
+<li>你在教会生活和服事中最喜欢或正在参与哪些具体事工？</li>
+<li>当你在信仰和生活中遇到挑战时，你身边有哪些基督徒可以成为你的属灵伙伴，支持和守望你？</li>
+</ul>
+<hr>
+        </div>
+
+        <div class="navigation">
+            <div>
+                <a href="chapter_5.html" class="nav-btn">← 上一课</a>
+            </div>
+            <div>
+                <a href="index.html" class="nav-btn home">📚 目录</a>
+            </div>
+            <div>
+                <a href="chapter_7.html" class="nav-btn">下一课 →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
