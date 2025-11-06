@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神的拣选与预定 | 罗马书八部曲</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            border-radius: 15px 15px 0 0;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .breadcrumb {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 1.8em;
+        }
+
+        .chapter-info {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .content-paragraph {
+            font-size: 1.05em;
+            line-height: 1.9;
+            margin-bottom: 16px;
+            color: #333;
+            text-align: justify;
+        }
+
+        .sub-title {
+            color: #667eea;
+            font-size: 1.2em;
+            margin: 30px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e8e8ff;
+        }
+
+        /* 紧凑型经文样式 */
+        .scripture-block {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e8f4ff 100%);
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .scripture-text {
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #667eea;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .scripture-ref {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 0.95em;
+            text-align: right;
+            font-style: normal;
+        }
+
+        /* 段内经文样式 - 内联显示 */
+        .inline-scripture {
+            color: #667eea;
+            font-weight: 500;
+            font-size: 0.95em;
+            text-decoration: underline;
+            text-decoration-color: rgba(102, 126, 234, 0.3);
+            text-underline-offset: 3px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+            padding: 2px 6px;
+            border-radius: 3px;
+            white-space: nowrap;
+        }
+
+        .quote-block {
+            border-left: 4px solid #fbbf24;
+            padding: 15px 20px;
+            margin: 20px 0;
+            background: #fffbeb;
+            font-style: italic;
+            color: #78350f;
+        }
+
+        .point-list {
+            margin: 20px 0 20px 30px;
+            line-height: 1.8;
+        }
+
+        .point-list li {
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .navigation {
+            background: white;
+            border-radius: 0 0 15px 15px;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .nav-btn {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        @media (max-width: 768px) {
+            header, .content, .navigation {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .sub-title {
+                font-size: 1.1em;
+            }
+
+            .content-paragraph {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="index.html">罗马书首页</a> &gt; 
+                <a href="chapter_12_index.html">第12章</a> &gt; 
+                主题22
+            </div>
+            <h1>神的拣选与预定</h1>
+            <div class="chapter-info">第12章: 成圣与律法 · 主题22</div>
+        </header>
+
+        <div class="content">
+            <p class="content-paragraph">我们晓得万事都互相效力，叫爱神的人得益处，就是按他旨意被召的人。因为祂预先所知道的人，就预先定下效法祂儿子的模样，使祂儿子在许多弟兄中做长子，预先定下来的人又召他们来，所召来的人又称他们为义，所称为义的人又教他们得荣耀。<span class="inline-scripture">(罗马书8:28-30)</span></p>
+<p class="content-paragraph">我们从不同的角度和不同的层面在一层一层地解释这段经文。今天我们思考一个问题，上次说按祂旨意被召的人，提到四个非常重要的字，就是“神的旨意”，这里特指的是在救恩方面祂的旨意。神的旨意是一个比较大的概念，在神的旨意里的一个核心，就是神要拣选一些人，神在救恩方面的旨意要成就在哪些人身上呢？从29-30节我们可以看到，它要成就在一部分人身上，而且圣经讲是预定的人，是被拣选的人。这就是我们这次的议题，一起讨论预定、拣选。这个部分非常需要圣灵的开启，如果今天我们当中有人听了之后不明白或者不理解，我祷告圣灵帮助你，我想不是一下不明白就不正常，但我盼望你有一个谦卑的心可以不断在这方面反复思索、祷告、寻求，直到有一天圣灵开启你心的时候，你可以感受到这个伟大的真理在你心里所带来的伟大奇妙的功效。</p>
+<p class="content-paragraph">首先我要提到的一个词是普救论，什么叫普救论？相信世界上所活过的每一个人都是得救的，条条大路通罗马，就是说无论你是信佛、信主、不信的、无神论，反正神既然爱世人，最终是人人得救，这样才算做神是爱，这样才说得过去！这样的教导怎么可能盛行呢？原因在于它不是基于圣经，而是基于哲学。这个理论会有市场，因为哲学是人的思想可以理解的，当然不是所有人都可以理解，但哲学是一种逻辑、一种推理，当有一些想法不是基于神的启示，而是基于人的智慧，基于人推理的时候反而会被更多人接受。需要小心的是，一个被广泛接受的理论可能不是完全来自圣经，而是来自于逻辑推理、哲学思想，可能会被误以为是圣经中的教导，原因是人们喜欢听到比较容易明白接受的道理。当你在读圣经的时候，有一种“我怎么不明白”的感觉，有一种诱惑、有一套理论更容易明白，你愿意了解吗？当了解的时候，就以为是圣经真理，其实是哲学，而不是圣经中的真理。圣经至今很多是无法理解无法接受的。对于我们当中一些人来讲，你可以不理解，你可以不接受，但你需要明白圣经是怎么教导的，而不是什么听起来比较有道理。</p>
+<p class="content-paragraph">宣扬普救论的人，是这样进行逻辑推理的：神爱世人，既然爱，怎么可能把人放在地狱里呢？所以他们说耶稣来是要拯救全人类的，无论信耶稣不信耶稣的，神有大爱，统统要救他们。大家要非常小心，历史上有些出名的人，甚至是基督教、天主教的人持有这个观点。</p>
+<p class="content-paragraph">但没有什么想法比这个更加偏离圣经教导。我们今天分析之后，当这样的教导来到的时候，你第一秒钟就要拒绝它，因为这偏离圣经十万八千里。我们来读一下：</p>
+<p class="content-paragraph">神爱世人，甚至将他的独生子赐给他们，叫一切信他的，不至灭亡，反得永生。因为神差他的儿子降世，不是要定世人的罪（或译：审判世人；下同），乃是要叫世人因他得救。信他的人，不被定罪；不信的人，罪已经定了，因为他不信神独生子的名。<span class="inline-scripture">(约翰福音 3:16-18)</span></p>
+<p class="content-paragraph">弟兄姊妹们，当我们读到保罗的书信时，可能会说，保罗太严厉了，你看圣经当中爱的使徒就不会这样，“小子们啊，你们要彼此相爱，”这是出自于那篇书信作者呢？约翰。同样是出自于最讲爱的使徒约翰，他说什么呢？不信的人罪已经定了。<span class="inline-scripture">(约翰福音3:18)</span></p>
+<p class="content-paragraph">约翰福音 3:16怎么说呢？信子的人有永生，不信子的人得不着永生，神的愤怒常在他身上。所以我要告诉大家，一个爱的使徒约翰他是如何讲爱的呢？他所讲的爱里面有审判，他讲的爱里面有教导，有神的震怒。他很清楚的将神的旨意宣扬出来，就是信与不信最终的结局是不一样的。而不是说无论你信与不信，我们所有的人类都是一个欢乐的大家庭；无论你信或者不信，没有地狱、地狱是空的——这不是圣经的教导，这不是使徒约翰的教导。</p>
+<p class="content-paragraph">今天有许多人这样想：既然圣经讲上帝是爱，所以我们就不要讲什么神的愤怒，也不要讲审判，无论我做什么，神都是爱我们的，神都是全然接纳我们的。我想这不是一个整全的福音，这是一个被改造过的福音，这是一个危险的假福音。</p>
+<p class="content-paragraph">我的羊听我的声音，我也认识他们，他们也跟着我。<span class="inline-scripture">(约翰福音10:27)</span></p>
+<p class="content-paragraph">知道有些人为什么死心塌地跟着耶稣吗？因为属于他的羊是能够认得主的声音，并且愿意跟着祂。你搞不明白这件事情，但这事情是千真万确的，真正认识主的羊是那么愿意跟随主，那么愿意死心塌地地跟着主。</p>
+<p class="content-paragraph">接下来圣经又说，我要赐给他们永生，他们永不灭亡，谁也不能从我手中把他们夺去，这是谁讲的？耶稣说这是我拣选的，这是属于我的，这些属于我的人谁都无法将他们从我手中夺去。接下来他说：</p>
+<p class="content-paragraph">我父把羊赐给我，他比万有都大，谁也不能从我父手里把他们夺去。<span class="inline-scripture">(约翰福音10:29)</span></p>
+<p class="content-paragraph">正如你曾赐给他权柄管理凡有血气的，叫他将永生赐给你所赐给他的人。<span class="inline-scripture">(约翰福音17:2)</span></p>
+<p class="content-paragraph">我为他们祈求，不为世人祈求，却为你所赐给我的人祈求，因他们本是你的。<span class="inline-scripture">(约翰福音17:9)</span></p>
+<p class="content-paragraph">全人类都是神的吗？为什么只为一部分人祷告？不为另外一部分人祷告？这是非常难以明白的。但是当我们在圣灵的光照中去看神永恒的旨意，祂的预定、祂的拣选，我们就明白了这段经文所指的意思。圣经里面非常清晰地提到有一种分离，有两类人：一类人信十字架，信耶稣，信耶稣从死里复活，另外一部分人不信；有一部分人最终结局是永生，另外一部分人最终的结局是永远的沉沦。</p>
+<p class="content-paragraph">路加福音16章25节描述：亚伯拉罕说：“儿啊，你该回想你生前享过福，拉撒路也受过苦；如今他在这里得安慰，你倒受痛苦。” 在耶稣所讲的故事里面，这个财主现在是在地狱，而拉撒路现在是在天国。然后接下来说：“不但这样，并且在你我之间，有深渊限定，以致人要从这边过到你们那边是不能的；要从那边过到我们这边也是不能的。”<span class="inline-scripture">(路加福音16:26)</span> 大家明白这里面提到的“不能”吗？指的是天堂和地狱之间是没有任何通道的，被永远地隔离了。所以两类人最终的结局不可能是一个地方，而是两个地方。王又要向那左边的说：‘你们这被咒诅的人，离开我，进入那为魔鬼和他的使者所预备的永火里去！<span class="inline-scripture">(马太福音25:41)</span> 所以这些没有得救的人、这些被咒诅的人，耶稣说：“离开我，离开神荣耀的同在，要准备去到哪里呢？永火！第46节又讲到说：“这些人，要往永刑里去；那些义人要往永生里去。<span class="inline-scripture">(马太福音25:46)</span></p>
+<p class="content-paragraph">所以普救论是一个与圣经相违背的教导，所有爱神、相信圣经的人应当彻底拒绝。这个理论带来的危害是很大的，他让人非常盲目乐观。就是说没事的，最终我们都是得救的，不用太热心去传福音，最终他信不信都是得救的。这种看法其实大大地冒犯了神，在神永恒的旨意里并不是这样的。</p>
+<p class="content-paragraph">既然普救论是错的，圣经里又提到一种恩典，这种恩典是这样说的，他叫日头照好人，也照歹人，降雨给义人，也给不义的人。<span class="inline-scripture">(马太福音5:45)</span> 又怎么理解呢？神不是祝福所有人吗？今天我要提到一个重要的词，叫“普遍恩典”，介绍一些神学名词，会帮助大家明白它的定义，慢慢地将来大家在读神学著作的时候不会觉得特别陌生。</p>
+<p class="content-paragraph">我想要提醒大家的是，保罗所写的这封书信，它不是一部神学著作，而是一封牧养书信，所以不要以讨论这些神学概念为乐。我给大家这个提醒，就是当我们在讨论这些的时候，不要置身事外，因为有些人在谈论一些事情的时候，就好像这些事情跟自己无关，他好像一个评论家。你知道评论家都是很会讲的，但是他讲的事情都跟自己无关，但圣经却把我们讲进去了，所以提到的每个概念都是跟我们有关的，跟我们相关。我想帮助大家建立一个正确的态度，在进入这个比较难的区域时，每个人都要保持谦卑的心，那就不会吵起来了。但我要警告大家，在我们现在这个场合肯定不会吵起来，但在别的场合呢？不要去跟一些人辩论，因为在谈论这些问题的时候，人如果稍微不小心，还没学足够，就开始辩论起来，所学的还不足以辩论。你要谦卑地意识到不应该辩论，而且你所学的也不足以去辩论，神不喜悦辩论。我们可以讨论，但不要辩论。之所以说这个，是因为我曾身处过一些不同的场景，在一些事情上人容易开始发脾气，失去谦卑的心，所以我先提醒大家注意。</p>
+<p class="content-paragraph">接下来我们讲一个非常重要的概念，就是“普遍恩典”。普遍恩典叫作common grace，普遍恩典是指那些不属于救恩范畴的无数的祝福。除了神拯救人这件事情，神其实还有很多很多赐给人的祝福，但不属于救赎恩典，叫saving grace, 或者叫special grace，特殊恩典，所以记住这几个名词：common grace, saving grace, special grace，普遍恩典，救赎恩典、特殊恩典。</p>
+<p class="content-paragraph">当我们讲到普遍恩典和救赎恩典的时候，我们不是在讲神身上有两种恩典，而是说神的恩典就只有一种，但在世上以两种不同的方式显现出来。普遍恩典和救赎恩典不同之处在于其结果，普遍恩典不会带来救恩，接受者——就是接受普遍恩典的人，他可以是信徒也可以是非信徒。普遍恩典的来源不是直接来源于耶稣基督救赎的工作，因为基督的死没有为非信徒赢得任何赦免。就是说，一个人如果不信，耶稣的死跟他一点关系都没有，但普遍恩典乃是间接地源于耶稣基督的救赎工作。为什么会有普遍恩典呢？就是神没有在罪进入世界的时候就立即施行审判，这当中主要原因是因为神已经计划好，最终旨意是神要借着他儿子耶稣的死来拯救一些罪人。现在还有日头，还有良辰美景，是因为神已经有一个计划，那就是神的儿子耶稣基督要拯救一部分世人，若不是这样的话，人一旦犯罪马上遭毁灭，那就没有普遍恩典了。所以，普遍恩典不是直接受益于神救赎的工作，而是间接受益于神救赎的工作。</p>
+<p class="content-paragraph">神的普遍恩典反映在物质领域，人的智力、道德领域，创意领域以及社会领域，所以它涉及到方方面面。但我们要强调的是，普遍恩典并不改变人心，也不带领人进入真实的悔改与信心。现在很多人在享受着上帝的恩典，但他们绝对不会归功于上帝。他过着很美好的生活，但他不会说感谢神。当你感谢神的时候、你谢饭的时候，他会觉得很奇怪——你们为什么要感谢神？这钱是我赚来的！所以，普遍恩典不会改变人心。神赐下普遍恩典的原因是什么呢？在彼得书信里，彼得说：</p>
+<p class="content-paragraph">主所应许的尚未成就，有人以为他是耽延, (也就是说主迟到了)，其实不是耽延(其实不是迟到)，乃是宽容你们，不愿有一人沉沦，乃愿人人都悔改。但主的日子要像贼来到一样。(彼得后书3: 9-10)</p>
+<p class="content-paragraph">注意听！神如果想要从罪恶的人类中拯救出任何人，他就不能立即毁掉所有的罪人，因此祂容许罪恶的人存活一段日子，好使他们有机会悔改，并且也因此能够生儿育女，使他们的后裔得以存活，以至于听到福音而悔改。如果神没有使我们的前辈们可以活着，那怎么可能有我们呢？我们今天得以存活，那是因为神的普遍恩典临到那些没有得救的人。由于他们可以存活下来，我们今天才可以信主，才可以得到永生。为什么会有普遍恩典？是因为神要救赎祂所拣选的人！</p>
+<p class="content-paragraph">关于普遍恩典，我们就先讲到这里。接下来我们要讲神的拣选。</p>
+<p class="content-paragraph">在开始之前，我先给大家一个救恩的次序(Order of Salvation)，一共有10个。第一拣选；第二福音的呼召，或者称之为一般呼召；第三重生；第四归正；第五称义；第六得儿子的名分；第七成圣；第八恒忍；第九死亡；第十得荣。这十个方面，就构成了神救恩的次序。我们正在读的罗马书第8章29和30节被称为救恩的金链条。</p>
+<p class="content-paragraph">因为他预先所知道的人，就预先定下效法他儿子的模样，使他儿子在许多弟兄中作长子。预先所定下的人又召他们来；所召来的人又称他们为义；所称为义的人又叫他们得荣耀。<span class="inline-scripture">(罗马书8:29-30)</span></p>
+<p class="content-paragraph">这里面一环扣一环，是神非常精密的安排。我们成为基督徒是因着神的安排，神的拣选。</p>
+<p class="content-paragraph">接下来，我们来讲，什么是预定，什么是拣选。</p>
+<p class="content-paragraph">预定是Predestination。Destine，指的是命运或者天命。Predestination它包括了两个部分，一个部分是拣选，是对信徒而言；一个部分包括弃绝，是对不信的人而言。拣选是神在创立世界以前的一项作为。祂使一些人得救，但不是因为祂预先看见这些人身上有一些美德，而是单单因为祂主权的美意。我再说一遍，拣选是神在创世以前的一项作为，祂选择使一些人得救，但祂这么做不是因为祂预先看到这人以后是会信我的，所以我基于他以后会信我的这个前提，我来选择救他。这一点非常重要——神预先命定了哪些人要得救！</p>
+<p class="content-paragraph">使徒行传13章48节这样说：外邦人听见这话，就欢喜了，赞美神的道；凡预定得永生的人都信了。这句话常常被忽略掉。当时传福音的时候和现在一样，有人信，有人不信。但是预定得永生的人，最终都信了。所以如果有人不信，不是传福音的人的错，而是在于神最终是否拣选了他。</p>
+<p class="content-paragraph">罗马书的11章第7节：这是怎么样呢？以色列人所求的，他们没有得着，惟有蒙拣选的人得着了，其余的就成了顽梗不化的。你们很难想象这是圣经的经文吧？我再读一遍，你们去看一下你们的圣经有没有这句话，还是只有我的圣经印有这句话。惟有蒙拣选的人得着了，其余的就成了顽梗不化的。</p>
+<p class="content-paragraph">但是你不要拿这句话来传福音。我昨天已经提到了，不要说我丈夫不信，我给他看这句话，然后告诉他“其余的人顽梗不化”，就像你这样顽梗不化。你现在先不要下结论他就是顽梗不化的。这指的是最终的结局，如果最终的结局他是没有信主的，那你可以下结论他是顽梗不化的。但还没有到最后时刻，我们没有权利讲这个人是被拣选的那个人不是被拣选的。</p>
+<p class="content-paragraph">所以，神在创立世界以前就拣选了信徒，这是圣经中非常清楚的启示。保罗在帖撒罗尼迦传福音的时候，说，“因为我们的福音传到你们那里，不独在乎言语，也在乎权能和圣灵，并充足的信心。<span class="inline-scripture">(帖撒罗尼迦前书1:5)</span>” 就是说，这福音传到你们那里，是在乎神的大能，是神的拣选。保罗知道他们信主原因是神拣选他们。所以，一旦信主，保罗就下了结论神老早就拣选了他们，他在讲福音的时候，这些人就信了。</p>
+<p class="content-paragraph">在启示录13章8节，约翰这么说，凡住在地上、名字从创世以来没有记在被杀之羔羊生命册上的人，都要拜它。约翰在异象当中看到这些没有在逼迫当中屈服敬拜那兽的人。为什么他们不屈服？为什么在千辛万苦，千般万般的困难中，他们都能够坚持相信主？为什么他们能够有这么坚定的立场？为什么他们没有放弃呢？圣经说，因为他们的名字，早就在创立世界以前，被写在一本书上，这本书叫做生命册。这些经文是不是大家在读圣经的时候被忽略了？神为什么要将这个旨意启示给我们呢？因为拣选是对神的子民一个最深的安慰。</p>
+<p class="content-paragraph">这个结论我之前有提到。在现今的每个环境，可能是你想要的，可能是你讨厌、不想要的，可能是你一直祷告，主啊主啊，别让这样的事情临到我，但却临到了。但这个时候神带给我们的安慰是，这些被拣选被预定的人，最终神要使我们所有的境遇都是为了我们的益处而服务。所以，我们要来看这闪耀的真理，关于神的拣选，关于神的预定，这样我们的心里能够加倍地来赞美神，能够降低我们心里的骄傲。我们信主不是基于我们的美德，不是因为我们比较聪明，我们比较有悟性，我们研究了各种书籍之后最终很聪明地选择了基督教。凡是这么想的人，或多或少在他心里有些骄傲。然而圣经的教导，要彻底根除这些东西，让人知道，一个人被拣选自己一点功劳都没有。那是基于神的拣选，那是基于神的预定。</p>
+<p class="content-paragraph">我们会继续讲关于拣选的一些错误理解，在此我们还得花一点时间，有拣选就有弃绝，弃绝是圣经非常让人难以接受的教导。所以我说，我们要接受的不是一个让我们头脑能够接受的道理，我们要问我们所接受的，是不是圣经的教导，是不是神的话语，是不是圣经的真理？如果是，即使我们无法理解，甚至难以接受，都是我们要去接受的。</p>
+        </div>
+
+        <div class="navigation">
+            <a href="chapter_12_topic_21.html" class="nav-btn btn-secondary">← 上一主题</a>
+            <a href="chapter_12_topic_23.html" class="nav-btn btn-primary">下一主题 →</a>
+        </div>
+    </div>
+</body>
+</html>

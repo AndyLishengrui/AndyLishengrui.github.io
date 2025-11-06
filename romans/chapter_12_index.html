@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第12章 - 成圣与律法 | 罗马书八部曲</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .topic-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .topic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .topic-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .topic-title {
+            color: #333;
+            font-size: 1.4em;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .topic-preview {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            max-height: 4.8em;
+            overflow: hidden;
+        }
+
+        .read-more {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 0.9em;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+
+        .back-home {
+            text-align: center;
+            margin-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .back-home a {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .back-home a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .topics-grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>第12章 - 成圣与律法</h1>
+            <p class="subtitle">64 个主题</p>
+        </header>
+
+        <div class="topics-grid">
+            
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_1.html'">
+                <div class="topic-number">主题 1</div>
+                <h3 class="topic-title">基督徒与律法的关系</h3>
+                <p class="topic-preview">我们开始学习罗马书第 7 章，第 7 章是非常重要但又很容易被误解的一段经文。我可以给大家举一些例子。比如 7 章 1 到 4 节讲到说如果“女人有了丈夫，丈夫还活着，就被律法约束；丈夫若死了，就脱离...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_2.html'">
+                <div class="topic-number">主题 2</div>
+                <h3 class="topic-title">耶稣的拯救</h3>
+                <p class="topic-preview">弟兄们，我现在对明白律法的人说：你们岂不晓得律法管人是在活着的时候吗？就如女人有了丈夫，丈夫还活着，就被律法约束；丈夫若死了，就脱离了丈夫的律法。所以丈夫活着，她若归于别人，便叫淫妇；丈夫若死了，她就...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_3.html'">
+                <div class="topic-number">主题 3</div>
+                <h3 class="topic-title">属肉体与属灵</h3>
+                <p class="topic-preview">因为我们属肉体的时候，那因律法而生的恶欲就在我们肢体中发动，以致结成死亡的果子。但我们既然在捆我们的律法上死了，现今就脱离了律法，叫我们服侍主，要按着心灵的新样(“心灵”或作“圣灵”) ，不按着仪文的...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_4.html'">
+                <div class="topic-number">主题 4</div>
+                <h3 class="topic-title">律法的功用</h3>
+                <p class="topic-preview">这样，我们可说什么呢？律法是罪吗？断乎不是！只是非因律法，我就不知何为罪。非律法说，  “不可起贪心”，我就不知何为贪心。然而罪趁着机会，就藉着诫命叫诸般的贪心在我里头发动，因为没有律法，罪是死的。{...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_5.html'">
+                <div class="topic-number">主题 5</div>
+                <h3 class="topic-title">律法与罪的关系</h3>
+                <p class="topic-preview">因为没有律法，罪是死的。我以前没有律法是活着的；但是诫命来到，罪又活了，我就死了。那本来叫人活的诫命，反倒叫我死；因为罪趁着机会，就藉着诫命引诱我，并且杀了我。这样看来，律法是圣洁的，诫命也是圣洁、公...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_6.html'">
+                <div class="topic-number">主题 6</div>
+                <h3 class="topic-title">罪的可怕</h3>
+                <p class="topic-preview">那本来叫人活的诫命，反倒叫我死。因为罪趁着机会，就藉着诫命引诱我，并且杀了我。{{inline-scripture}}(罗马书 7:10-11){{/inline-scripture}} 神的诫命是圣...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_8.html'">
+                <div class="topic-number">主题 8</div>
+                <h3 class="topic-title">“我”所处属灵状态的讨论(一)</h3>
+                <p class="topic-preview">我们原晓得律法是属乎灵的，但我是属乎肉体的，是已经卖给罪了。因为我所作的，我自己不明白。我所愿意的，我并不作；我所恨恶的，我倒去作。若我所作的，是我所不愿意的，我就应承律法是善的。既是这样，就不是我作...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_9.html'">
+                <div class="topic-number">主题 9</div>
+                <h3 class="topic-title">“我”所处属灵状态的讨论(二)</h3>
+                <p class="topic-preview">我们原晓得律法是属乎灵的，但我是属乎肉体的，是已经卖给罪了。因为我所作的，我自己不明白。我所愿意的，我并不作；我所恨恶的，我倒去作。若我所作的，是我所不愿意的，我就应承律法是善的。既是这样，就不是我作...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_10.html'">
+                <div class="topic-number">主题 10</div>
+                <h3 class="topic-title">不靠律法乃靠恩典</h3>
+                <p class="topic-preview">我们原晓得律法是属乎灵的，但我是属乎肉体的，是已经卖给罪了。 {{inline-scripture}}(罗马书 7:14){{/inline-scripture}} 这里所讲的“我”是谁在历史上有三个...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_1.html'">
+                <div class="topic-number">主题 1</div>
+                <h3 class="topic-title">根本性的转折</h3>
+                <p class="topic-preview">如今那些在基督耶稣里的，就不定罪了。因为赐生命圣灵的律，在基督耶稣里释放了我，使我脱离罪和死的律了。{{inline-scripture}}(罗马书8:1-2){{/inline-scripture}...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_2.html'">
+                <div class="topic-number">主题 2</div>
+                <h3 class="topic-title">如何脱离罪与死的律</h3>
+                <p class="topic-preview">罗马书7章15节保罗提到：我所愿意的，我并不做；我所恨恶的，我倒去做 {{inline-scripture}}(罗马书7:15){{/inline-scripture}}；24节：我真是苦啊！谁能救我...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_3.html'">
+                <div class="topic-number">主题 3</div>
+                <h3 class="topic-title">圣灵带领里的生活</h3>
+                <p class="topic-preview">我们继续学习神的话语。约翰福音第8章提到，你们必晓得真理，真理必叫你们得自由；第17章讲到，求你用真理使他们成圣，你的道就是真理。我们每天早上这样花时间，我们称之为晨祷，为什么我们不一开始就祷告呢？为...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_4.html'">
+                <div class="topic-number">主题 4</div>
+                <h3 class="topic-title">随从肉体与随从圣灵</h3>
+                <p class="topic-preview">使律法的义成就在我们这不随从肉体，只随从圣灵的人身上。{{inline-scripture}}(罗马书8:4){{/inline-scripture}} 什么是随从？随从意味着什么？随从肉体意味着什么...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_5.html'">
+                <div class="topic-number">主题 5</div>
+                <h3 class="topic-title">完全的得胜</h3>
+                <p class="topic-preview">因为没有律法，罪是死的。我以前没有律法是活着的；但是诫命来到，罪又活了，我就死了。那本来叫人活的诫命，反倒叫我死；因为罪趁着机会，就藉着诫命引诱我，并且杀了我。这样看来，律法是圣洁的，诫命也是圣洁、公...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_6.html'">
+                <div class="topic-number">主题 6</div>
+                <h3 class="topic-title">治死身体的恶行</h3>
+                <p class="topic-preview">弟兄们，这样看来，我们并不是欠肉体的债去顺从肉体活着。你们若顺从肉体活着，必要死；若靠着圣灵治死身体的恶行，必要活着。{{inline-scripture}}(罗马书 8:12-13){{/inlin...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_8.html'">
+                <div class="topic-number">主题 8</div>
+                <h3 class="topic-title">是否可以治死罪？</h3>
+                <p class="topic-preview">圣经说昼夜思想神的话语便为有福，我们上次讲到治死罪。首先，治死罪不是指我们要彻底消灭它，完全根除它，从身体里面完全消灭它，或者说我们不能够指望在今生会把罪斩草除根。然后我们说在腓立比书3:12节，保罗...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_9.html'">
+                <div class="topic-number">主题 9</div>
+                <h3 class="topic-title">基督徒的身份</h3>
+                <p class="topic-preview">因为凡被神的灵引导的，都是神的儿子。{{inline-scripture}}(罗马书8:14){{/inline-scripture}} 当我们看这节经文时，我们可以看到，他的第一个词就是一个连词“因...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_10.html'">
+                <div class="topic-number">主题 10</div>
+                <h3 class="topic-title">儿子的心</h3>
+                <p class="topic-preview">你们所受的不是奴仆的心，仍旧害怕，所受的乃是儿子的心，因此，我们呼叫：阿爸，父！{{inline-scripture}}(罗马书 8:15){{/inline-scripture}} 我们继续思考关于...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_11.html'">
+                <div class="topic-number">主题 11</div>
+                <h3 class="topic-title">我们是神的儿女</h3>
+                <p class="topic-preview">圣灵与我们的心同证，我们是神的儿女。{{inline-scripture}}(罗马书8:16){{/inline-scripture}} 好，我要告诉大家，今天我们学习的这节经文，是非常奇妙的应许。圣...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_12.html'">
+                <div class="topic-number">主题 12</div>
+                <h3 class="topic-title">成为后嗣</h3>
+                <p class="topic-preview">既是儿女，便是后嗣，就是神的后嗣，和基督同作后嗣。如果我们和他一同受苦，也必和他一同得荣耀。{{inline-scripture}}(罗马书8:17){{/inline-scripture}} “后嗣...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_13.html'">
+                <div class="topic-number">主题 13</div>
+                <h3 class="topic-title">与基督一同受苦得荣耀</h3>
+                <p class="topic-preview">既是儿女，便是后嗣，就是神的后嗣，和基督同作后嗣。如果我们和他一同受苦，也必和他一同得荣耀。我想，现在的苦楚若比起将来要显于我们的荣耀，就不足介意了。{{inline-scripture}}(罗马书8...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_14.html'">
+                <div class="topic-number">主题 14</div>
+                <h3 class="topic-title">永恒的荣耀</h3>
+                <p class="topic-preview">我想现在的苦楚，若比起将来要显于我们的荣耀，就不足介意了。受造之物，切望等候神的众子显出来。因为受造之物服在虚空之下，不是自己愿意，乃是因那叫他如此的。但受造之物仍然指望脱离败坏的辖制，得享神儿女自由...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_15.html'">
+                <div class="topic-number">主题 15</div>
+                <h3 class="topic-title">圣经中的末世观</h3>
+                <p class="topic-preview">我想现在的苦楚，若比起将来要显于我们的荣耀，就不足介意了。受造之物，切望等候神的众子显出来。因为受造之物服在虚空之下，不是自己愿意，乃是因那叫他如此的。但受造之物仍然指望脱离败坏的辖制，得享神儿女自由...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_16.html'">
+                <div class="topic-number">主题 16</div>
+                <h3 class="topic-title">基督徒的盼望</h3>
+                <p class="topic-preview">读经、灵修就像锻炼身体，不是一天猛跑50公里就可以了，在属灵的历程当中也是这样，往往那些可以坚持的人，灵性就比较稳定，如果我们无法做到坚持聆听神的话语、读圣经、灵修祷告，让神的话语进入我们的心，让我们...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_18.html'">
+                <div class="topic-number">主题 18</div>
+                <h3 class="topic-title">圣灵中的祷告</h3>
+                <p class="topic-preview">况且，我们的软弱有圣灵帮助，我们本不晓得当怎样祷告，只是圣灵亲自用说不出来的叹息替我们祷告。鉴察人心的，晓得圣灵的意思，因为圣灵照着神的旨意替圣徒祈求。{{inline-scripture}}(罗马书...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_19.html'">
+                <div class="topic-number">主题 19</div>
+                <h3 class="topic-title">神使万事互相效力</h3>
+                <p class="topic-preview">我们晓得万事都互相效力，叫爱神的人得益处，就是按他旨意被召的人。因为祂预先所知道的人，就预先定下效法祂儿子的模样，使祂儿子在许多弟兄中做长子，预先定下来的人又召他们来，所召来的人又称他们为义，所称为义...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_20.html'">
+                <div class="topic-number">主题 20</div>
+                <h3 class="topic-title">蒙爱的人爱神</h3>
+                <p class="topic-preview">我们晓得万事都互相效力，叫爱神的人得益处，就是按他旨意被召的人。因为祂预先所知道的人，就预先定下效法祂儿子的模样，使祂儿子在许多弟兄中做长子，预先定下来的人又召他们来，所召来的人又称他们为义，所称为义...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_21.html'">
+                <div class="topic-number">主题 21</div>
+                <h3 class="topic-title">按神旨意被召</h3>
+                <p class="topic-preview">我们晓得万事都互相效力，叫爱神的人得益处，就是按他旨意被召的人。因为祂预先所知道的人，就预先定下效法祂儿子的模样，使祂儿子在许多弟兄中做长子，预先定下来的人又召他们来，所召来的人又称他们为义，所称为义...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_22.html'">
+                <div class="topic-number">主题 22</div>
+                <h3 class="topic-title">神的拣选与预定</h3>
+                <p class="topic-preview">我们晓得万事都互相效力，叫爱神的人得益处，就是按他旨意被召的人。因为祂预先所知道的人，就预先定下效法祂儿子的模样，使祂儿子在许多弟兄中做长子，预先定下来的人又召他们来，所召来的人又称他们为义，所称为义...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_23.html'">
+                <div class="topic-number">主题 23</div>
+                <h3 class="topic-title">神的预定</h3>
+                <p class="topic-preview">我们晓得万事都互相效力，叫爱神的人得益处，就是按他旨意被召的人。因为祂预先所知道的人，就预先定下效法祂儿子的模样，使祂儿子在许多弟兄中做长子，预先定下来的人又召他们来，所召来的人又称他们为义，所称为义...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_24.html'">
+                <div class="topic-number">主题 24</div>
+                <h3 class="topic-title">预定中的弃绝</h3>
+                <p class="topic-preview">我们晓得万事都互相效力，叫爱神的人得益处，就是按他旨意被召的人。因为祂预先所知道的人，就预先定下效法祂儿子的模样，使祂儿子在许多弟兄中做长子，预先定下来的人又召他们来，所召来的人又称他们为义，所称为义...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_25.html'">
+                <div class="topic-number">主题 25</div>
+                <h3 class="topic-title">呼召</h3>
+                <p class="topic-preview">预先所定下的人又召他们来；所召来的人又称他们为义； (罗马书8:30a) 就是预定、呼召、称义，这是一环扣一环。这里所讲的呼召到底是什么呢？这个呼召并不是呼召我们一生背起十字架来跟从主。这个呼召是这位...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_26.html'">
+                <div class="topic-number">主题 26</div>
+                <h3 class="topic-title">神保守信徒到底(一)</h3>
+                <p class="topic-preview">我们晓得万事都互相效力，叫爱神的人得益处，就是按他旨意被召的人。因为他预先所知道的人，就预先定下效法他儿子的模样，使他儿子在许多弟兄中作长子。预先所定下的人又召他们来。所召来的人，又称他们为义。所称为...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_27.html'">
+                <div class="topic-number">主题 27</div>
+                <h3 class="topic-title">神保守信徒到底(二)</h3>
+                <p class="topic-preview">昨天因为时间关系，我们只讲到一段经文，这段经文常常被用来反对圣经里讲到的“圣徒蒙保守”的这个教义。今天我们继续讲，我们要提到第二个例子。 凡属我不结果子的枝子，他就剪去；凡结果子的，他就修理干净，使枝...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_28.html'">
+                <div class="topic-number">主题 28</div>
+                <h3 class="topic-title">信徒在一切境遇中得益处</h3>
+                <p class="topic-preview">我们晓得万事都互相效力，叫爱神的人得益处，就是按他旨意被召的人。因为他预先所知道的人，就预先定下效法他儿子的模样，使他儿子在许多弟兄中作长子。预先所定下的人又召他们来；所召来的人又称他们为义；所称为义...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_29.html'">
+                <div class="topic-number">主题 29</div>
+                <h3 class="topic-title">神若帮助我们</h3>
+                <p class="topic-preview">既是这样，还有什么说的呢？神若帮助我们，谁能敌挡我们呢？{{inline-scripture}}(罗马书8:31){{/inline-scripture}} 请注意，接下来这里所用的文法，是有很多的反...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_30.html'">
+                <div class="topic-number">主题 30</div>
+                <h3 class="topic-title">神为众人舍了耶稣</h3>
+                <p class="topic-preview">神既不爱惜自己的儿子，为我们众人舍了，岂不也把万物和他一同白白地赐给我们吗？{{inline-scripture}}(罗马书8:32){{/inline-scripture}} 对于神将保守祂所拣选的...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_31.html'">
+                <div class="topic-number">主题 31</div>
+                <h3 class="topic-title">谁能控告神所拣选的人</h3>
+                <p class="topic-preview">谁能控告神所拣选的人呢？有神称他们为义了（或作“是称他们为义的神吗？”）。谁能定他们的罪呢？有基督耶稣已经死了，而且从死里复活，现今在神的右边，也替我们祈求。{{inline-scripture}}(...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_32.html'">
+                <div class="topic-number">主题 32</div>
+                <h3 class="topic-title">谁能使我们与神的爱隔绝</h3>
+                <p class="topic-preview">谁能使我们与基督的爱隔绝呢？难道是患难吗？是困苦吗？是逼迫吗？是饥饿吗？是赤身露体吗？是危险吗？是刀剑吗？如经上所记：“我们为你的缘故终日被杀；人看我们如将宰的羊。”然而，靠着爱我们的主，在这一切的事...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_2.html'">
+                <div class="topic-number">主题 2</div>
+                <h3 class="topic-title">谁是他的选民？</h3>
+                <p class="topic-preview">今天的经文是罗马书9章1-18节，主题是谁是他的选民，经文可以大概分为两个大的段落，这其中有三个问题，帮助我们理清这段经文的思路，第一段是1- 5节，保罗的忧伤。我们看到第8章结尾的时候讲到神救恩的金...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_3.html'">
+                <div class="topic-number">主题 3</div>
+                <h3 class="topic-title">上帝拣选的目的</h3>
+                <p class="topic-preview">今天我们要讲罗马书第9章19-29节，今天我们要讲的一个主题是上帝拣选的目的，第9章18节结尾的时候说总之上帝要怜悯谁就怜悯谁，要叫谁顽固就叫谁顽固，所以这是讲到关于上帝的主权和上帝拣选依据的问题。那...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_4.html'">
+                <div class="topic-number">主题 4</div>
+                <h3 class="topic-title">为什么有些人不得救？</h3>
+                <p class="topic-preview">今天我们要讲的是罗马书第9章30节到第10章4节，这是一个完整的一段。所以有时候我们看到罗马书的分段，我们会看到说有些上下文的分法不一定是那么好，好像会割裂，但是我们按照上下文的意思，第9章30节一直...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_5.html'">
+                <div class="topic-number">主题 5</div>
+                <h3 class="topic-title">凡信主的必得救</h3>
+                <p class="topic-preview">今天我们要分享的是罗马书第10章5-13节，我先要稍微做一个回顾。我现在要回顾第9章和第10章。第9章保罗提到说，对于以色列人他怀着一个怎样的心，他对于这些失丧的本来是最应该得救的以色列人，他说为了我...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_6.html'">
+                <div class="topic-number">主题 6</div>
+                <h3 class="topic-title">四个神学议题</h3>
+                <p class="topic-preview">今天的经文是在罗马书第10章第14节-17节。我今天要讲四个非常重要的神学议题。首先来读一下这段经文：可是，人还没信他，怎能求告他呢？还没听说过他，怎能信他呢？没有人传道，怎能听说过他呢？人没有受差遣...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_7.html'">
+                <div class="topic-number">主题 7</div>
+                <h3 class="topic-title">为什么本来应该得救的没有得救</h3>
+                <p class="topic-preview">我们今天就可以完成罗马书第10章的分享。我来帮助大家回顾一下罗马书第9章第10章的特别之处，就是大量引用旧约经文，因为讨论的对象是以色列人。我们来看一下单单罗马书第10章，他引自旧约以下书卷，利未记、...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_8.html'">
+                <div class="topic-number">主题 8</div>
+                <h3 class="topic-title">以色列人失足的属灵意义</h3>
+                <p class="topic-preview">今天我们讲的是罗马书11章的1-12节，今天我要讲的一个题目，以色列人失足的属灵意义。我们说罗马书第9章、第10章、第11章这三章是罗马书一个新的独立单元，如果说罗马书1-8章都在讲福音的基本内容，福...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_9.html'">
+                <div class="topic-number">主题 9</div>
+                <h3 class="topic-title">对外族人说的话</h3>
+                <p class="topic-preview">今天给大家分享的是罗马书第11章13-24节，今天这段经文的主题是对外族人说的话。今天这段话是保罗对外族人说的话，我们要回顾一下罗马书的背景，前面我们曾经讲过，罗马书的写作对象是在罗马的教会，但是据历...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_10.html'">
+                <div class="topic-number">主题 10</div>
+                <h3 class="topic-title">以色列的复兴与得救</h3>
+                <p class="topic-preview">今天我们要分享的是罗马书第11章25节-32节，今天的题目是救恩的奥秘，以色列的复兴与得救。在这段经文当中，我们首先来看这个奥秘是什么？第一我们来看救恩的奥秘到底是什么，第25节到26节前半段说，弟兄...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_11.html'">
+                <div class="topic-number">主题 11</div>
+                <h3 class="topic-title">源于他，依靠他，归于他</h3>
+                <p class="topic-preview">今天我们讲罗马书第11章的最后一段，罗马书11章32节-36节，感谢神的带领，感谢大家的坚持，罗马书要结束这样一个重要的段落，然后下次会开始进入到12章。今天早上我们分享的主题是源于他，依靠他，归于他...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_2.html'">
+                <div class="topic-number">主题 2</div>
+                <h3 class="topic-title">心意更新而变化</h3>
+                <p class="topic-preview">在罗马书第11章的末尾，这是一首颂赞的诗歌。在阐述完第1章到第11章高深的神学之后，保罗发出的是一种赞美，他说上帝的智慧和知识多么博大精深，他的判断多么难测，他的踪迹多么难寻，谁知道主的心意？谁曾做过...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_3.html'">
+                <div class="topic-number">主题 3</div>
+                <h3 class="topic-title">渴慕属灵的恩赐</h3>
+                <p class="topic-preview">就像我们的身体的各部分有不同功能，我们众人在基督里组成一个身体，彼此连接息息相关，我们照所得的恩典各有不同的恩赐，所预言的要按着信心的程度说预言，服侍的要忠心服侍，教导的要专一教导，劝勉的要诚心劝勉，...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_4.html'">
+                <div class="topic-number">主题 4</div>
+                <h3 class="topic-title">相爱相顾</h3>
+                <p class="topic-preview">今天我们要把12章第9节到第21节学完，这一段话可以分成8个小点。第1章到第11章是教义的教导，第12章到第15章就是生活的实际应用。昨天我们讲到关于教会内部的恩赐运用，接下来分成8个部分，我重点讲其...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_5.html'">
+                <div class="topic-number">主题 5</div>
+                <h3 class="topic-title">顺服政府的权柄</h3>
+                <p class="topic-preview">今天我们的主题是顺服政府的权柄，也就是基督徒和政府的关系。我们要讲罗马书第13章第1节-7节。我们回顾一下罗马书最主要的主题是福音，所以保罗说这福音本是神的大能要救一切相信的人，所以他从人的罪开始讲到...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_6.html'">
+                <div class="topic-number">主题 6</div>
+                <h3 class="topic-title">爱邻如己</h3>
+                <p class="topic-preview">今天我们要讲的是罗马书第13章8-10节。主题是爱邻如己，就是爱邻舍如同爱自己。我们一起来读今天的经文： 凡事都不可亏欠人，但在彼此相爱方面要常常觉得做得不够，一个人爱别人，就成全了律法。因为“不可通...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_7.html'">
+                <div class="topic-number">主题 7</div>
+                <h3 class="topic-title">活在光明中</h3>
+                <p class="topic-preview">我们今天要分享的主题是活在光明中。我们要读的经文是罗马书13章11-14节： 还有要知道现今是你们该醒过来的时候了，因为与初信的时候相比，我们得救的日子更近了，黑夜已深，天将破晓，我们要除掉黑暗的行为...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_8.html'">
+                <div class="topic-number">主题 8</div>
+                <h3 class="topic-title">体恤信心软弱的人</h3>
+                <p class="topic-preview">今天我们来到罗马书的第14章，我们来读一下1-12节的经文。这段经文我们分成三个段落。第一个段落是你们要接纳信心软弱的弟兄姐妹，不要因为看法不同便彼此批评，所以这里问题的性质不是教义错误与否的性质，而...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_9.html'">
+                <div class="topic-number">主题 9</div>
+                <h3 class="topic-title">不可互相论断</h3>
+                <p class="topic-preview">我们今天继续罗马书第14章13-18节：所以，我们不可再互相论断，要留心自己的言行，不要绊倒弟兄姊妹。我知道并靠着主耶稣深信，没有什么是不洁净的，但若有人以为某物不洁净，那物对他来说就不洁净。如果你吃...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_10.html'">
+                <div class="topic-number">主题 10</div>
+                <h3 class="topic-title">凭信心行事</h3>
+                <p class="topic-preview">昨天我在苏州跟大家分享，今天我在厦门五缘湾堂大家分享，这是现代科技非常美好的地方，无论我们身在何处，都可以藉着神的话语，藉着圣灵彼此建造，彼此鼓励。我们今天要读罗马书14章的最后一段话。我们来读14章...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_11.html'">
+                <div class="topic-number">主题 11</div>
+                <h3 class="topic-title">彼此接纳使上帝得荣耀</h3>
+                <p class="topic-preview">今天我们要讲的是罗马书第15章的1-13节，主题是彼此接纳使上帝得荣耀。我们稍微回顾一下罗马书，罗马书如果从写作目的来说，其中一个非常重要的目的就是使徒保罗想藉着罗马书重新传讲福音，系统阐释福音，帮助...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_12.html'">
+                <div class="topic-number">主题 12</div>
+                <h3 class="topic-title">外族人的使徒</h3>
+                <p class="topic-preview">在这个特别美好的清晨，我们宣告耶稣基督永远是我们的主我们的王，他的话语立定在天永不废弃，他的话语是我们生命的粮，非常感恩清早我们能够一起聆听神的话语。今天我们要读的经文是罗马书15章14-22节，今天...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_13.html'">
+                <div class="topic-number">主题 13</div>
+                <h3 class="topic-title">保罗的旅行计划</h3>
+                <p class="topic-preview">今天我们要讲的是罗马书15章23-33节，这是罗马书第15章的最后一部分。保罗这里主要讲他的旅行计划，并且借着向他的读者解释说明他的旅行计划，也再次阐释或者解释说明他访问罗马的目的，当然也包括他更长远...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_14.html'">
+                <div class="topic-number">主题 14</div>
+                <h3 class="topic-title">保罗的同工</h3>
+                <p class="topic-preview">我们今天要进入罗马书第16章，大家在读这章的时候有没有发现，很特别的有35个名字，就是有提到名字的，在这章里面就有35个，我来念一下,菲比、百基拉、亚居拉、以拜尼土、玛利亚、安多尼古、犹尼亚、暗伯利、...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_15.html'">
+                <div class="topic-number">主题 15</div>
+                <h3 class="topic-title">失传的手术刀</h3>
+                <p class="topic-preview">我们今天要学习的这段经文是罗马书16章17-20节，我们一起来读这段话：弟兄姐妹，我劝你们要留意那些制造分裂，设置障碍，背离你们所学之道的人，你们要避开他们，他们并不是在侍奉我们的主基督，只是为了满足...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_12_topic_16.html'">
+                <div class="topic-number">主题 16</div>
+                <h3 class="topic-title">最后的话：福音是什么？</h3>
+                <p class="topic-preview">罗马书16章的最后一段话。感谢上帝，他能使你们刚强，正如我所传的福音和耶稣基督的教导。这福音是自古隐藏从未显明的奥秘。如今按着永恒上帝的命令，藉着先知们所写的经书公诸于世，让世人都信从耶稣基督。愿荣耀...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+        </div>
+
+        <div class="back-home">
+            <a href="index.html">← 返回章节列表</a>
+        </div>
+    </div>
+</body>
+</html>

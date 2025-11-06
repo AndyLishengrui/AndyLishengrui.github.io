@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第11章 - 圣洁与成圣 | 罗马书八部曲</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .topic-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .topic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .topic-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .topic-title {
+            color: #333;
+            font-size: 1.4em;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .topic-preview {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            max-height: 4.8em;
+            overflow: hidden;
+        }
+
+        .read-more {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 0.9em;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+
+        .back-home {
+            text-align: center;
+            margin-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .back-home a {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .back-home a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .topics-grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>第11章 - 圣洁与成圣</h1>
+            <p class="subtitle">12 个主题</p>
+        </header>
+
+        <div class="topics-grid">
+            
+            <div class="topic-card" onclick="window.location.href='chapter_11_topic_1.html'">
+                <div class="topic-number">主题 1</div>
+                <h3 class="topic-title">向罪死了</h3>
+                <p class="topic-preview">这样，怎么说呢？我们可以仍在罪中，叫恩典显多吗？断乎不可！我们在罪上死了的人岂可仍在罪中活着呢？{{inline-scripture}}(罗马书 6:1-2){{/inline-scripture}}...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_11_topic_2.html'">
+                <div class="topic-number">主题 2</div>
+                <h3 class="topic-title">与基督联合</h3>
+                <p class="topic-preview">岂不知我们这受洗归入基督耶稣的人，是受洗归入他的死吗？所以我们藉着洗礼归入死，和他一同埋葬，原是叫我们一举一动有新生的样式，像基督藉着父的荣耀从死里复活一样。我们若在他死的形状上与他联合，也要在他复活...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_11_topic_3.html'">
+                <div class="topic-number">主题 3</div>
+                <h3 class="topic-title">与主相似</h3>
+                <p class="topic-preview">让我们一起以敬拜的心开始学习。我之前有提到过，当我们来到神宝贵的话语面前，唯有用敬拜的心才能真正学好神的话语，就是我们到神面前是以一颗敬拜者的心，而不是以一颗研究者的心；不是以学者的思维，而是作为神的...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_11_topic_4.html'">
+                <div class="topic-number">主题 4</div>
+                <h3 class="topic-title">旧人与耶稣同钉十架</h3>
+                <p class="topic-preview">因为知道我们的旧人和他同钉十字架，使罪身灭绝，叫我们不再作罪的奴仆；因为已死的人是脱离了罪。{{inline-scripture}}(罗马书6:6-7){{/inline-scripture}} 其实...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_11_topic_5.html'">
+                <div class="topic-number">主题 5</div>
+                <h3 class="topic-title">已经与基督同死同活</h3>
+                <p class="topic-preview">我们每天早晨思想神的话语，我相信我们生命在这当中会不断经历更新和改变。在使徒行传6章7节记载着当时的教会是如何兴盛的。可能跟现在的教会如何兴盛有些不太一样的地方，他们兴盛是从神的话语兴盛开始。 神的道...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_11_topic_6.html'">
+                <div class="topic-number">主题 6</div>
+                <h3 class="topic-title">基督徒的死亡</h3>
+                <p class="topic-preview">他死是向罪死了，只有一次，他活是向神活着。这样，你们向罪也当看自己是死的。向神在基督耶稣里，也当看自己是活的。所以，不要容罪在你们必死的身上做王，使你们顺从身子的私欲。{{inline-scriptu...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_11_topic_7.html'">
+                <div class="topic-number">主题 7</div>
+                <h3 class="topic-title">向罪死向神活</h3>
+                <p class="topic-preview">神所造的子民、神所拣选、神所救赎、神所洗净的子民，竟然能够每天坚持早起读祂的话语，彼此鼓励亲近祂，谦卑自己来寻求神的面，大家有没有意识到我们是何等一群特殊的群体、非常特别的一群子民。在这世界上有各种各...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_11_topic_8.html'">
+                <div class="topic-number">主题 8</div>
+                <h3 class="topic-title">必死的身体</h3>
+                <p class="topic-preview">这次我们要完成罗马书第6章第一部分的学习，第6章可以分为两部分，1到14节是第一部分，接下来第15到23节是第二部分。 所以，不要容罪在你们必死的身上作王，使你们顺从身子的私欲。也不要将你们的肢体献给...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_11_topic_9.html'">
+                <div class="topic-number">主题 9</div>
+                <h3 class="topic-title">义的奴仆(一)</h3>
+                <p class="topic-preview">这却怎么样呢？我们在恩典之下，不在律法之下，就可以犯罪吗？断乎不可！岂不晓得你们献上自己作奴仆，顺从谁，就作谁的奴仆吗？或作罪的奴仆，以至于死；或作顺命的奴仆，以至成义。感谢神！因为你们从前虽然作罪的...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_11_topic_10.html'">
+                <div class="topic-number">主题 10</div>
+                <h3 class="topic-title">义的奴仆(二)</h3>
+                <p class="topic-preview">我因你们肉体的软弱，就照人的常话对你们说。你们从前怎样将肢体献给不洁不法作奴仆，以至于不法；现今也要照样将肢体献给义作奴仆，以至于成圣。{{inline-scripture}}(罗马书6:19){{/...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_11_topic_11.html'">
+                <div class="topic-number">主题 11</div>
+                <h3 class="topic-title">自己的义与神的义</h3>
+                <p class="topic-preview">因为你们作罪之奴仆的时候，就不被义约束了。你们现今所看为羞耻的事，当日有甚么果子呢？那些事的结局就是死。{{inline-scripture}}(罗马书6:20-21){{/inline-script...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_11_topic_12.html'">
+                <div class="topic-number">主题 12</div>
+                <h3 class="topic-title">永生的结局</h3>
+                <p class="topic-preview">但现今，你们既从罪里得了释放，作了神的奴仆，就有成圣的果子，那结局就是永生。因为罪的工价乃是死；惟有神的恩赐，在我们的主基督耶稣里，乃是永生。{{inline-scripture}}(罗马书6:22-...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+        </div>
+
+        <div class="back-home">
+            <a href="index.html">← 返回章节列表</a>
+        </div>
+    </div>
+</body>
+</html>

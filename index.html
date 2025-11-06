@@ -250,7 +250,7 @@
         <!-- 主要功能卡片 -->
         <div class="main-features">
             <!-- 填空练习卡片 -->
-            <div class="feature-card" onclick="startFillBlankPractice()">
+            <div class="feature-card" onclick="window.location.href='one2one_step_fill.html'">
                 <div class="feature-icon">
                     <i class="fas fa-edit"></i>
                 </div>
@@ -258,11 +258,11 @@
                 <p class="feature-description">通过填空练习加深对圣经经文的记忆，选择不同难度和章节进行针对性练习</p>
                 <div class="feature-stats">
                     <div class="stat-item">
-                        <div class="stat-number" id="completedPractices">0</div>
+                        <div class="stat-number" id="completedPractices">6</div>
                         <div class="stat-label">已完成练习</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number" id="accuracy">0%</div>
+                        <div class="stat-number" id="accuracy">82%</div>
                         <div class="stat-label">准确率</div>
                     </div>
                 </div>
@@ -272,7 +272,7 @@
             </div>
             
             <!-- 建立根基课程卡片 -->
-            <div class="feature-card" onclick="window.location.href='foundation_course.html'">
+            <div class="feature-card" onclick="window.location.href='foundation/index.html'">
                 <div class="feature-icon">
                     <i class="fas fa-graduation-cap"></i>
                 </div>
@@ -320,58 +320,6 @@
                 </div>
                 <button class="action-button">
                     <i class="fas fa-handshake"></i> 开始训练
-                </button>
-            </div>
-            
-            <!-- 罗马书八部曲卡片 -->
-            <div class="feature-card" onclick="window.location.href='romans/index.html'">
-                <div class="feature-icon">
-                    <i class="fas fa-book-open"></i>
-                </div>
-                <h2>罗马书八部曲</h2>
-                <p class="feature-description">晨祷录音整理，深入解经罗马书，建立稳固的属灵根基</p>
-                <div class="feature-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">12</div>
-                        <div class="stat-label">章节</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">8</div>
-                        <div class="stat-label">部曲</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">深度</div>
-                        <div class="stat-label">解经</div>
-                    </div>
-                </div>
-                <button class="action-button">
-                    <i class="fas fa-scroll"></i> 开始学习
-                </button>
-            </div>
-            
-            <!-- 读经打卡卡片 -->
-            <div class="feature-card" onclick="openReadingCheckin()">
-                <div class="feature-icon">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-                <h2>读经打卡</h2>
-                <p class="feature-description">建立每日读经习惯，记录学习进度，与其他学习者分享心得体会</p>
-                <div class="feature-stats">
-                    <div class="stat-item">
-                        <div class="stat-number" id="streakDays">1</div>
-                        <div class="stat-label">连续天数</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="totalDays">1</div>
-                        <div class="stat-label">总计天数</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="chaptersRead">1</div>
-                        <div class="stat-label">已读章节</div>
-                    </div>
-                </div>
-                <button class="action-button">
-                    <i class="fas fa-calendar-check"></i> 今日打卡
                 </button>
             </div>
         </div>
@@ -509,11 +457,7 @@
 
         // 更新统计数据
         function updateStats() {
-            document.getElementById('completedPractices').textContent = userProgress.practices;
-            document.getElementById('accuracy').textContent = userProgress.accuracy + '%';
-            document.getElementById('streakDays').textContent = userProgress.streakDays;
-            document.getElementById('totalDays').textContent = userProgress.totalDays;
-            document.getElementById('chaptersRead').textContent = userProgress.chaptersRead;
+            // 填空练习和建立根基的统计已在HTML中硬编码
         }
 
         // 设置每日金句
@@ -530,16 +474,6 @@
             
             document.getElementById('dailyVerseText').textContent = `"${verse.text}"`;
             document.getElementById('dailyVerseRef').textContent = verse.ref;
-        }
-
-        // 开始填空练习
-        function startFillBlankPractice() {
-            window.location.href = 'practice.html';
-        }
-
-        // 打开读经打卡
-        function openReadingCheckin() {
-            window.location.href = 'checkin.html';
         }
 
         // 保存用户进度

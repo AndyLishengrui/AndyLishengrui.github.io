@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神的预定 | 罗马书八部曲</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            border-radius: 15px 15px 0 0;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .breadcrumb {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 1.8em;
+        }
+
+        .chapter-info {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .content-paragraph {
+            font-size: 1.05em;
+            line-height: 1.9;
+            margin-bottom: 16px;
+            color: #333;
+            text-align: justify;
+        }
+
+        .sub-title {
+            color: #667eea;
+            font-size: 1.2em;
+            margin: 30px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e8e8ff;
+        }
+
+        /* 紧凑型经文样式 */
+        .scripture-block {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e8f4ff 100%);
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .scripture-text {
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #667eea;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .scripture-ref {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 0.95em;
+            text-align: right;
+            font-style: normal;
+        }
+
+        /* 段内经文样式 - 内联显示 */
+        .inline-scripture {
+            color: #667eea;
+            font-weight: 500;
+            font-size: 0.95em;
+            text-decoration: underline;
+            text-decoration-color: rgba(102, 126, 234, 0.3);
+            text-underline-offset: 3px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+            padding: 2px 6px;
+            border-radius: 3px;
+            white-space: nowrap;
+        }
+
+        .quote-block {
+            border-left: 4px solid #fbbf24;
+            padding: 15px 20px;
+            margin: 20px 0;
+            background: #fffbeb;
+            font-style: italic;
+            color: #78350f;
+        }
+
+        .point-list {
+            margin: 20px 0 20px 30px;
+            line-height: 1.8;
+        }
+
+        .point-list li {
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .navigation {
+            background: white;
+            border-radius: 0 0 15px 15px;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .nav-btn {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        @media (max-width: 768px) {
+            header, .content, .navigation {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .sub-title {
+                font-size: 1.1em;
+            }
+
+            .content-paragraph {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="index.html">罗马书首页</a> &gt; 
+                <a href="chapter_12_index.html">第12章</a> &gt; 
+                主题23
+            </div>
+            <h1>神的预定</h1>
+            <div class="chapter-info">第12章: 成圣与律法 · 主题23</div>
+        </header>
+
+        <div class="content">
+            <p class="content-paragraph">我们晓得万事都互相效力，叫爱神的人得益处，就是按他旨意被召的人。因为祂预先所知道的人，就预先定下效法祂儿子的模样，使祂儿子在许多弟兄中做长子，预先定下来的人又召他们来，所召来的人又称他们为义，所称为义的人又教他们得荣耀。<span class="inline-scripture">(罗马书8:28-30)</span></p>
+<p class="content-paragraph">我再次提醒大家，当我们每次来学习神的话语时，我们不是想要在神学概念上多增加一些知识，这是学习的结果，但我们学习的目的是为了亲近神，为了借着这样的学习，我们对神，以及对祂的旨意的认识又再次被更新，又进一步更加清晰地认识神以及祂的旨意。</p>
+<p class="content-paragraph">那么刚才我们读的这段经文，我们在强调四个字，就是“神的旨意”，我们基督徒，就是对救恩终极的确信，来自于相信，这是神的旨意，不是人，而是神的旨意，而且神的旨意是没有失败的，祂所拣选的，一定得救。而且这段话里，提到救恩的最后一个部分，那就是得荣耀。因为使我们得救，是神的旨意，所以这确保了我们不会倒毙在旷野，不会死在半路，不论多么艰难，得荣耀这件事情，必定要发生在我们这些被拣选的属神子民身上，所以不要忘记，这里保罗在教导罗马的基督徒对苦难的态度，书信的意思不是说，弟兄姊妹们，要挺住、努力，你们能不能得救，取决于你们有多努力。所以我今天要提醒大家，我们要非常小心这样的想法占据我们的心，事实上这是非常容易发生的，若不是借着圣经的帮助，你知道我们天然的想法是什么吗？对于我们来讲，我们天然的想法是，我要努力一点，我要努力一点以确保我的得救是真实有效的，然而当这样的想法进入人心时，带来的想法是惶恐不安，或许他在努力，但他的努力是基于不安全感，不是基于对神的旨意的认知的那种信心。所以，我们基督徒是要努力，但我们基督徒的努力是基于什么，这非常重要。如果是基于对神的话语的认识，基于对神的认知，对神的旨意的信心，那我们整个生命的状态，虽然努力，虽然辛苦，但我们是喜乐的，不是忧愁、恐惧、惶恐不安。</p>
+<p class="content-paragraph">接下来我们来看29节，提到 “因为他预先所知道的人，就预先定下效法他儿子的模样，使他儿子在许多弟兄中作长子。” 这里提到一个连词——因为，前面一句话提到“我们晓得万事都互相效力，叫爱神的人得益处，就是按他旨意被召的人”，这里说“因为”，接下来指出神的旨意，每一步被细化实施出来，这里面有几个关键词，大家来看一下：第一个“预先所知道的”，第二个“预先定下”，第三个又召他们来，第四个称义，第五个“使他们得荣耀”。所以你看一下，我再重复一遍，神预先所知道的、预先定下的、呼召、称义、得荣耀。在这段话里，将神的旨意一步一步地、细化地告诉属神的百姓，神是如何一步一步实施祂的旨意。</p>
+<p class="content-paragraph">首先来看这个词“预先所知道的”，这个意思是不是说因为神是全知全能的，所以他预先知道我们会不会相信，以此为依据，来决定要不要拣选我们？这是我们这次要思考的话题。神是不是借着祂的全能全知，祂预先知道谁会信主，所以基于这个，祂决定说，好吧，既然我预知他们会信主，要不我来拣选他们吧？这是不是圣经的启示？这是不是我们所读的这段经文的意思？我们来看其它几段经文，我们来思想：</p>
+<p class="content-paragraph">他既按着神的定旨先见被交与人，你们就藉着无法之人的手，把他钉在十字架上，杀了。<span class="inline-scripture">(使徒行传 2:23)</span></p>
+<p class="content-paragraph">这是彼得在讲道的时候对着众人讲的，你们这些无法之人把神的儿子杀了，但这件事情并没有超出神的旨意，他说是按着神的定旨，先见，被交于人。所以这让我们思考，基督的死不是丧命，而是舍命，丧命，是什么意思呢？不是他来了，没想到大家居然把他弄死了，所以神也觉得很意外，说你们这些人，怎么可以把我的儿子钉死呢？圣经给我们的启示是，首先是父神的旨意，神儿子的命，如果说父神不给我们，我们绝对拿不到，明白吗？就是说，他说“他既按着神的定旨先见被交与人”，是神定意要这么做，所以这件事情才发生的，这不仅是神预先所知道的，这是神预先所定下来的旨意。接下来读另一段经文：</p>
+<p class="content-paragraph">世上的君王一齐起来，臣宰也聚集，要敌挡主，并主的受膏者（或译：基督）。’希律和本丢彼拉多，外邦人和以色列民，果然在这城里聚集，要攻打你所膏的圣仆（仆：或译子）耶稣，成就你手和你意旨所预定必有的事。<span class="inline-scripture">(使徒行传 4:26-28)</span></p>
+<p class="content-paragraph">所以，基督的死是父神的意旨，不只是预知，不是说神预先知道，而是说这整个事件，是祂策动的，是神预定必须要发生的，否则人是得不到拯救的。所以大家想想，神策动了耶稣基督来到世上，为要拯救世人。但如果耶稣死了，升天了，接下来也传福音了，那么神的荣耀彰显在哪里呢？所以在罗马书提到说，首先，神预先所知道的人，就是这里超越了神只是全知全能的，就是超越神只是预知，他在讲神的预旨，神预定一些人是必定会相信这福音的，所以神不仅预定基督要受害，基督要复活，神预定这福音传出来的时候是会有人相信的，就是神确保这件事情不会落空。</p>
+<p class="content-paragraph">再来读一段经文：</p>
+<p class="content-paragraph">我且说，神弃绝了他的百姓吗？断乎没有！因为我也是以色列人，亚伯拉罕的后裔，属便雅悯支派的。<span class="inline-scripture">(罗马书11:1)</span></p>
+<p class="content-paragraph">预定里面包含神的拣选，预定里面也包含拒绝。</p>
+<p class="content-paragraph">所以这里保罗在谈到神对以色列人的心意是什么，就是以色列人在神旨意里面的位置是什么。他说以色列人是亚伯拉罕的后裔，而且是属便雅悯支派的。然后第2节他说：</p>
+<p class="content-paragraph">神并没有弃绝他预先所知道的百姓。<span class="inline-scripture">(罗马书11:2)</span></p>
+<p class="content-paragraph">所以弟兄姐妹们，我们现在来思考一个话题：神到底只是知道，还是神掌管一切?祂只是知道耶稣会死，但祂无能为力吗？那肯定不是这样的！所以我们看到无论是耶稣的死与复活，还是之后神差派谁去传福音，无论是所传的福音到底谁会信，这是神不仅预先知道的，而且是神的谕旨。</p>
+<p class="content-paragraph">接下来提到神的预旨，神的谕旨是一个更大的概念，在神的预旨里就包含了神的预定。预定这个词又包含了两个概念，预定里包含神的拣选，预定里也包含弃绝。我们提到拣选乃是神在创世以前的一项作为。就是在这个物质世界还不存在的时候，神已经选择了一些人要得救。祂不仅知道接下来祂要创造人，祂也知道祂创造的人会堕落败坏。因此在所有这一切都还没发生的时候，圣经启示我们祂拣选一些人，最终是要得救。祂不是基于预先知道这个人会来信祂，而是基于祂的主权、祂的美意。当然我要提醒大家，关于这方面的认识是有不同看法的，那么与之针锋相对的另一个看法认为说：神拣选没错，但祂拣选是基于祂知道人的自由意志里的选择，神知道一个人会信主，这就是祂拣选的原因。</p>
+<p class="content-paragraph">在这里我们要提到说，新约当中所教导的拣选容易带来哪些误解呢？首先一个最大的误解就是宿命论。宿命论——整个宇宙处于一种机械性的系统，像一个机械表。一个机械表是这样的：一旦做好，接下来你只要上了发条，它就按原来设定的规律运作。所以在这个想法里，他认为整个宇宙，是在一种机械性的系统里。他们认为说拣选就等于宿命论。说如果你认为人是被拣选的，那人的选择或决定，起不到任何作用。因为不管我们做什么事情，事情的结果总是会按照已被命定好的情形发生。所以想要做任何的努力来改变事情，或者改变生命的结果，那都是徒然的，因为这一切不会改变。真正的宿命论中，人性是被抹灭的，因为我们的选择没有真正的意义，而且要为我们的选择去负责任的动机也不存在。所以在这种机械性的系统中，它所描述的是一个不具备关系的宇宙，发生一些事情都是在很久之前就被死板地决定了。那人也因此降级为大概是机器的层次，我们只不过是按照已经定好的计划去运作，并且按照已经定下的方式去回应。</p>
+<p class="content-paragraph">刚才我所描述的对拣选的误解，这显然不是圣经的意思。圣经告诉我们：我们所敬拜的这位神是有关系的。因着祂与受造者之间的关系，而成就救恩的作为。神拣选的作为不是冷漠的，不是没有关系的，也不是机械性的。祂对人的拣选充满了对人的爱。</p>
+<p class="content-paragraph">你对他们说，主耶和华说：我指着我的永生起誓，我断不喜悦恶人死亡，惟喜悦恶人转离所行的道而活。以色列家啊，你们转回，转回吧！离开恶道，何必死亡呢？<span class="inline-scripture">(以西结书33:11)</span></p>
+<p class="content-paragraph">大家能够体会这句话神的心意吗？神的心意不是说当一个恶人受惩罚的时候，觉得大快人心，觉得拍手称快。神说：我断不喜悦恶人死亡。所以他说以色列你们悔改吧，回家吧，你们为什么要这么做呢，你们为什么一定要跟我作对呢，你们为什么要灭亡呢，你们干嘛不转离你们的恶行呢。大家能从这句话里读出神真实的心吗？所以神不是在创世以前就把所有的东西很死板地定下来，充满冷漠，这是宿命论，这不是我们所讲的拣选。神的拣选是基于神美好的神性。所以我们在这里应当要摆脱宇宙像机械，我们像机器人，一早都被定下来的想法，这不是拣选，这不是圣经所启示的拣选。我们是有关系的受造者，我们可以做出意志上的决定来接受或者拒绝福音。</p>
+<p class="content-paragraph">凡劳苦担重担的人，可以到我这里来，我就使你们得安息。<span class="inline-scripture">(马太福音11:28)</span></p>
+<p class="content-paragraph">所以这项邀请，圣经当中很多类似这样的邀请，都是向我们这些真实的人发出地。当你听到这话的时候，你们是要来到神面前呢，还是拒绝来到祂面前呢？所以关于那些不接受祂的人，耶稣清楚地强调这是出于他们心中的刚硬，以及他们的顽梗。</p>
+<p class="content-paragraph">然而你们不肯到我这里来得生命。<span class="inline-scripture">(约翰福音5:40)</span></p>
+<p class="content-paragraph">耶稣在忧伤当中对那些拒绝他的城市说：</p>
+<p class="content-paragraph">“耶路撒冷啊，耶路撒冷啊，你常杀害先知，又用石头打死那奉差遣到你这里来的人。我多次愿意聚集你的儿女，好像母鸡把小鸡聚集在翅膀底下，只是你们不愿意。<span class="inline-scripture">(马太福音23:37)</span></p>
+<p class="content-paragraph">我们小时候很喜欢老鹰捉小鸡的游戏，就在这节经文中体现。神把自己比喻成母鸡，祂多么希望保护祂的小鸡，但祂说你们却不愿意到我这里来，你们却拒绝我，你们杀害先知，你们打死那奉差遣来到你们当中的先知。所以圣经让我们看到对神的拒绝，是出于人意志上的抉择。所以当你拒绝神的时候，你不能怪神没有拣选你，因为这是你在意志上所做的一个真实的决定。所以我们相信基督或者不相信基督是一个个人的决定，而这个决定将影响我们生命永恒的命定。这是圣经明确启示我们的，信与不信的抉择将关系到永恒的命运。所以基于此，我们知道人永恒的命运与我们是否传福音是有关系的。在使徒行传记载，有一天晚上，主对保罗说：</p>
+<p class="content-paragraph">有我与你同在，必没有人下手害你，因为在这城里我有许多的百姓。<span class="inline-scripture">(使徒行传18:10)</span></p>
+<p class="content-paragraph">那时候保罗才刚住下来，他因为那句话，就在那里住了一年零六个月，保罗听了那句话并没有说，神啊你命定这里有很多你的子民，那我可以往下一个城市去。保罗为甚么要传福音呢？是神应许他说，你尽管传，一定会有人信主的，为什么呢？这城里有许多是我拣选的，就是保罗很清楚，神虽然拣选了，但除非有人传福音，否则别人就无法得救，这就是为什么弟兄姐妹们，我们在传福音作神的工时，我们里面会充满信心，充满喜乐，因为我们在做神的工！所以关于神的拣选，这是非常重要的教导，就是关系到我们在传福音当中，我们所带的那种热情。接下来，我要提到一点，圣经从未启示我们说信心是神拣选我们的原因，神拣选我们是基于祂的主权，这称之为神的主权。在我们查考罗马书第9章时有这样一段话：</p>
+<p class="content-paragraph">双子还没有生下来，善恶还没有做出来，只因要显明神拣选人的旨意，不在乎人的行为，乃在乎召人的主。 <span class="inline-scripture">(罗马书 9:11)</span></p>
+<p class="content-paragraph">神就对利百加说：“将来，大的要服侍小的。” <span class="inline-scripture">(罗马书9:12)</span></p>
+<p class="content-paragraph">正如经上所记：雅各是我所爱；以扫是我所恶的。<span class="inline-scripture">(罗马书9:13)</span></p>
+<p class="content-paragraph">所以大家想想，雅各和以扫一生所做的并没有影响到神的决定，神这个决定并不是基于他们的表现，神这个决定是基于祂的主权，是神的预旨。拣选他们的旨意是基于神，神按着祂的主权所作出的自由选择。所以我们要再次看到神的主权是我们得救的终极原因。就是我们要非常小心，想到最后变成说能不能得救最终取决于我，最终不取决于你，而是取决于神的主权。那这是不是反对的人认为的：如果神的主权也包含了祂预先定准谁会信主，谁不信主？就是说，在这里我要很小心地解释，他们认为，如果是这样，人是没有真正意义上的自由意志，他们认为真正的自由意志是排除神的影响，他们认为如果神可以命定，神拣选，那么这就不是我们真正意义上的自由选择。</p>
+<p class="content-paragraph">这是圣经上启示我们的两个方面，一方面圣经告诉我们，神有至高无上的主权，神掌权就是谁都不能够超过神的主权。若不是这样的话，未来我们会不会得救呢？这还是未知数，大家明白吗？如果神的主权是可以被超越的，是可以被违背的，神终极的旨意是要到时候调调，是等等看看，那么罗马书第8章28到30节我们刚刚所读的那段经文，就没有任何意义。所以，圣经一方面启示我们神有至高无上的主权，圣经也启示我们，在神的主权之内所做的选择也是真实有效的选择，这不是一个机器人般的选择，这是真实有效的选择。</p>
+<p class="content-paragraph">所以我们要看到就是对拣选这个话题，我们需要很仔细地思想，很小心地去处理这个话题，因为会有很多不同的声音，甚至是反对的意见。其中还有一个反对的意见提到说：这样不信的人永无机会信主。这我们刚才已经解释过了。不信是因为他们不愿意到神的面前来，所以弟兄姐妹们，我们要有一个确信，神不拒绝任何一个到他面前来的人。这个人如果寻求神，愿意到神的面前来，神不会说：“我没有拣选你啊！”这是不可能发生的，这是我们要明确的，就是他们如果不信，绝对因为他们不肯到神的面前来，而并非神没有拣选他们。所以圣经的逻辑是这样的，若是你得救是基于神的拣选，神的恩典；若是你不得救，是基于你的责任，你拒绝了神。另外一种反对的意见说，那这样是不公平的，但我们要提出一点，神有义务拯救世界上的所有人吗？就是全人类最终一定要成为一个很大很快乐的大家庭？就是他无论做好事或坏事，神必须得救他，这样才公平，是这样的吗？我要告诉大家，神若是不拯救任何人，也是全然公平的。所以神拣选一些人，彰显的是祂的恩典远超过公平，远超过公义，远超过公正，我们要很小心，我们的思想里面，会按照自己有罪的头脑去判定神，如果不按我们的想法拯救人，我们就判定神是不公义的。这是我们要很小心的。圣经并没有说神要拯救每个人。你可能会说圣经里不是说神愿万人都得救，明白真道吗？是的，圣经所启示的是神心所愿---每个人都得救。但遗憾的是，因为人的罪，许多人选择了拒绝神。这在神学上称为神启示的旨意和神隐秘的旨意。神启示的旨意就是神告诉我们该做的事，神隐秘的旨意是启示我们将会真实发生的事是什么。神邀请每个人都来悔改，但神隐秘的旨意却启示我们，并不是所有人都会到祂面前来悔改。</p>
+        </div>
+
+        <div class="navigation">
+            <a href="chapter_12_topic_22.html" class="nav-btn btn-secondary">← 上一主题</a>
+            <a href="chapter_12_topic_24.html" class="nav-btn btn-primary">下一主题 →</a>
+        </div>
+    </div>
+</body>
+</html>

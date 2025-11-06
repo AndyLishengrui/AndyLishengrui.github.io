@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神的义(二) | 罗马书八部曲</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            border-radius: 15px 15px 0 0;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .breadcrumb {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 1.8em;
+        }
+
+        .chapter-info {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .content-paragraph {
+            font-size: 1.05em;
+            line-height: 1.9;
+            margin-bottom: 16px;
+            color: #333;
+            text-align: justify;
+        }
+
+        .sub-title {
+            color: #667eea;
+            font-size: 1.2em;
+            margin: 30px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e8e8ff;
+        }
+
+        /* 紧凑型经文样式 */
+        .scripture-block {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e8f4ff 100%);
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .scripture-text {
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #667eea;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .scripture-ref {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 0.95em;
+            text-align: right;
+            font-style: normal;
+        }
+
+        /* 段内经文样式 - 内联显示 */
+        .inline-scripture {
+            color: #667eea;
+            font-weight: 500;
+            font-size: 0.95em;
+            text-decoration: underline;
+            text-decoration-color: rgba(102, 126, 234, 0.3);
+            text-underline-offset: 3px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+            padding: 2px 6px;
+            border-radius: 3px;
+            white-space: nowrap;
+        }
+
+        .quote-block {
+            border-left: 4px solid #fbbf24;
+            padding: 15px 20px;
+            margin: 20px 0;
+            background: #fffbeb;
+            font-style: italic;
+            color: #78350f;
+        }
+
+        .point-list {
+            margin: 20px 0 20px 30px;
+            line-height: 1.8;
+        }
+
+        .point-list li {
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .navigation {
+            background: white;
+            border-radius: 0 0 15px 15px;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .nav-btn {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        @media (max-width: 768px) {
+            header, .content, .navigation {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .sub-title {
+                font-size: 1.1em;
+            }
+
+            .content-paragraph {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="breadcrumb">
+                <a href="index.html">罗马书首页</a> &gt; 
+                <a href="chapter_4_index.html">第4章</a> &gt; 
+                主题6
+            </div>
+            <h1>神的义(二)</h1>
+            <div class="chapter-info">第4章: 保罗与宣教 · 主题6</div>
+        </header>
+
+        <div class="content">
+            <p class="content-paragraph">我不以福音为耻；这福音本是神的大能，要救一切相信的，先是犹太人，后是希腊人。因为神的义正在这福音上显明出来；这义是本于信，以致于信。如经上所记：“义人必因信得生。” <span class="inline-scripture">(罗马书 1:16-17)</span></p>
+<p class="content-paragraph">但如今，神的义在律法以外已经显明出来，有律法和先知为证：就是神的义，因信耶稣基督加给一切相信的人，并没有分别。  <span class="inline-scripture">(罗马书 3:21-22)</span></p>
+<p class="content-paragraph">这是理解《罗马书》1 章 16 、17 节的关键，就是“神的义在福音上显明出来”，这个“义”是什么呢？这个“义”加给一切相信的人，这个义加给了基督徒。</p>
+<p class="content-paragraph">神使那无罪的，替我们成为罪。好叫我们在他里面成为神的义。 <span class="inline-scripture">(哥林多后书 5:21)</span></p>
+<p class="content-paragraph">原来十字架上发生了一个非常不公平的交换，就是神使那无罪的耶稣基督替我们成为罪，担当了我们的罪，成为神的羔羊，除去一切世人的罪。施洗约翰说：“看哪，神的羔羊，除去世人罪孽的！” <span class="inline-scripture">(约翰福音 1:29)</span>  神预备了洁白无瑕的羔羊来除去我们满身的污秽。如果有人讲：“太不公平了！我信主之后怎么样、怎么样，你看人家，生活过得这么好，我的生活依然一样糟。”我想问：“你信的是哪个福音呢？”不管你信的是哪个福音，你信的和我是不一样的。</p>
+<p class="content-paragraph">弟兄姊妹们，我很坦白地告诉大家，如果一个人信主之后还是满肚子的抱怨，我真的怀疑他是否是一个得救的人。因为他理解的十字架和圣经所说的相差十万八千里，圣经讲的十字架的确是一个不公平的交换，在这场不公平的交换里面，我们是受益的。神让无罪的替我们成为了罪，然而“神的义”是谁呢？这里“神的义”指的不是神的公义，当然耶稣基督身上彰显了神的公义。</p>
+<p class="content-paragraph">“神的义”有三层意思。第一，在耶稣基督身上显示神是公义的。祂并没有说：“犯罪，没关系。”神是公义的，罪不能不受惩罚，如果罪就这样算了，那神就不是公义的。第二，神有一个公义的要求，祂是洁白无暇的，所以污秽对神来说无法容忍。神自己满足了公义的要求，祂提供了耶稣基督，耶稣基督在这世上的时候是一个洁白无瑕的人。他没有违背天父一丝一毫的旨意，耶稣在世上没有犯任何罪，他向我们世人展示了什么才是“神的义”。在神面前，我们说“称义”就是被看为无罪，被看为完全，被看为美好，在父的眼里，耶稣是洁白无瑕的神的羔羊。在十字架上发生了一个不公平的交换。这位洁白无瑕的耶稣，他的一生行出了“神的义”，他的一生在神的眼中毫无瑕疵。</p>
+<p class="content-paragraph">圣经说：“神使那无罪的，替我们成为罪。” 就是替我们担了罪的意思，在十字架上的不公平是怎么个不公平呢？他的无罪、他的义加给了我们，而我们的罪却给了他。打一个比方帮助大家理解到底是怎样的不公平：有一个人，信用卡债有 100 万，这个人已经是焦头烂额，绝对还不起了，而且利息非常高，他一辈子只能做奴隶、做还债的人。耶稣和他见面之后，非常爱他，跟他说：“拿出你的卡，这债我来帮你还。”然后，耶稣掏出一张储蓄卡，交给那个人，放在他手里，眼睛看着他说：“这里面是 500 亿的现金，你可以花，但请你不要乱花，这里面的一切财富都是你的。”弟兄姊妹们，罪被赦免还没有完，我们很多人只理解到这个程度，就是：“主啊，我感谢你，过去一切的罪你都赦免了。”对！如果你这样理解，你只是理解到你欠债的卡给了耶稣，然后耶稣替你偿还。我问大家这是不是圣经的启示？是，但不是圣经全部的启示。这样的解释是对的，但不完整。你忘记了耶稣把一张卡交到了你手中，而这张卡里有无限的现金，你不可能花完它。神将那洁白无瑕的神羔羊在世上所行的一切义加给我们。弟兄姊妹们，如果你们不这样理解，你怎么理解将来有一天，你来到神的面前，神看我们是洁白无瑕的，这是怎么做到的呢？我告诉大家，今天如果你在耶稣基督里，你已经在神面前洁白无瑕了。“咦，不对啊，我还有犯错啊，等等.”，这就是为什么我要这样不厌其烦地花时间讲“称义”，可能你已经信主了，但你还是不明白。我们在神面前没有大罪人、小罪人，也没有大义人和小义人之分，今天在耶稣基督里你就是新造的人，你就有耶稣基督洁白无瑕的生命在你里面。所以在天父上帝看着你的时候，不是看着你的过去，甚至看的不是你现在的成长，而是看到遮盖你的耶稣基督。这是在罗马书的 3 章谈到的经文，我们一直在谈这节经文，如果你不能明白，也就不能明白罗马书的 1 章 17 节。所以现在你可以努力地变得更像耶稣，但你不能增加你的洁白无瑕，因为你已经是全然的洁白无瑕，这就是称义。</p>
+<p class="content-paragraph">我为什么要讲这个呢，因为我要讲第三个“义”，必须要讲清楚第二个“义”，第三个是以第二个为前提的。耶稣基督的公义是绝对的，无限的，这义能够瞬间抹除一切的罪，因为罪在基督里是无法存留的。在他里面唯有神的义，那些信耶稣基督的是从亚当里迁移到耶稣基督里。信主的人是从中国移民到天国，信主的人是地位的迁移，身份的转换，不是一些改进而已。所以大家现在要抹除一些旧的观念，我们要重新按着圣经，藉着圣灵的帮助建立深刻的认识。那些信靠耶稣基督的人，就是住在耶稣基督里的人，这些靠着信耶稣基督与耶稣联合的人，就获得了与耶稣基督一样的义。所以十字架上发生的就是耶稣基督把他的卡给我们了，我们把我们的卡给祂了，我们享受祂的义。神不仅赦免了我们的罪，我们还承受了耶稣基督一切的美好，有祂的生命在我们里面活着。</p>
+<p class="content-paragraph">这是第二个“义”，神提供了祂自己所要求的义。神说：“我是圣洁的，所以你们要圣洁。可是我知道你们没有一个人可以圣洁，没有一个义人，那怎么办呢？”神提供了这样的可能，就是耶稣基督成为唯一的真理，唯一的生命，唯一的道路，只有藉着耶稣基督，人才可以洁白无瑕，可以圣洁，因为这是神提供的。神没有提供两条路，神提供了唯一的方式，就是藉着耶稣基督使祂的公义得到满足，因为祂知道我们办不到，所以他差派祂的独生爱子，使我们可以回到祂那里去。这是第二层 “义”，那第三层 “义”呢？</p>
+<p class="content-paragraph">我们讲神的义，有三个标准，第一个是神的公义，第二个是从神而来的义，第三个是实行的义，是 actual righteousness。这是神学概念，我请大家不要厌烦这些概念，我们不是要研究这些理论，为了研究就没有意义，是为了学习和探讨，为了明白神的心意，活在神的心意里面。</p>
+<p class="content-paragraph">按照罗马书的教导，基督徒有两种义。第一种是我们因信耶稣基督而来的义，是神的救恩，与我们无关，这种义确保了我们义人的身份和得救。基督徒都是圣徒，基督徒都是义人。哎呀，讲这话心里很虚啊，不敢讲这话。我曾经说过，当我们讲自己是圣徒的时候，不是在夸我们自己，我们讲圣徒是在讲自己是被分别为圣出来的，按照圣经，每个基督徒都是圣徒，不是我们在夸耀自己。所以这是因信耶稣一次获得的，不会失去，也永远不减少的义。但是基督徒还有第二种义，这是神的义的第三种含义，就是实行的义，是勤奋出来的义，这义不是独立于第一种义的，而是基于第一种义。第一种义就是因信称义，神加给我们的义，这种义挪去了我们在神面前罪人的地位，除去了罪人的刑罚。而第二种义除去我们对罪的喜好，能够治死肉体的情欲，使我们效法耶稣的榜样，行出各样善行的果子。</p>
+<p class="content-paragraph">接下来有一个词是“称义 ”。提到称义，很多基督徒就说不要提这些神学概念，我只要实用的。圣经可以帮助我们什么呢？那些我可以听得懂的我就听，听不懂的我就扔到一边。所以那些人有这样的态度，一定要帮助他，因为我们明白这些神学概念是非常重要的。第一种称义，是称义的果子，第二种义是成圣。第一种义是从神而来的礼物，第二种义是神从内而外改变生命的大能。第一种义是瞬间得到的，第二种义是不断成长的。马丁路德打了一个比方可以帮助我们明白，第一种义就是称义，就是新郎对新娘说“我是你的”，而第二种义就是新娘对新郎说“我也是你的”，这时候婚姻就变得很圆满，他们的关系就变得坚固。这就是《雅歌》所说的 “良人属我，我也属他。”  所以你看，从罗马书第 3 章到第 5  章，重点在讲称义，第 6 章到第 8 章重点在讲成圣，称义和成圣。17 节讲到，这义是本于信，也因着信。是因着信，这义藉着福音传给我们，是我们凭信心领受的，没有人可以制造出来，因为这是从外加进来的义。就是独立于我们以外的义加给我们，我们只能领受，我们不能自己产生，我们不能赚取，所以我们是因信得着永恒的生命，我们是因信得着从耶稣而来的义。</p>
+<p class="content-paragraph">本于信是这个意思，以至于信呢，是因为我们的信心是活的，成长的，不断进步的，我们的生命因此在每天得到更新，越来越行出公义，越来越有神的样式，越来越像耶稣。或者说耶稣基督义的种子已经种进来了，这个义的种子在里面不断长大，别人看到就会说，你信主这十年来，变化真是太大了，你变得越来越像耶稣，证明原来的那个种子真的种进去了。如果一个人说他信主，但是他的生命一团糟，过着污秽的生活。就好像新郎对她说，我是你的，而新娘却跑去做妓女，他们之间还有这个关系吗？是新郎不爱她吗？所以他们的关系是否成立？大家想一想这幅画面。</p>
+<p class="content-paragraph">我现在用一个比方来帮助大家明白这个的重要性。假如你在登山，你走在一个非常狭窄的地方，左边是万丈深渊，右边是悬崖峭壁，大家想一下，中间这条路是福音，左边是放纵主义，右边呢叫律法主义。我今天讲这个为什么这么重要，如果你不明白称义，你很难去对抗律法主义，你很容易掉进去。所有不理解因信称义的，很容易把基督教理解为一套规条，信得津津有味的。他经常严格要求自己，严格要求别人，他常常陷入沮丧，因为别人没有做到，自己也没做到，他就无限沮丧、无限忧伤。这样的人非常苛刻、非常挑剔、缺乏恩慈，这展现出他真理上的无知，一旦他明白真理，律法主义在他里面破除，他就从这里面得释放。真理使我们得以自由，不是要把我们捆起来。所以有些人不是在传真理，而是拿一条条绳子把人捆死。我作为一个牧师，如果我没有传讲真理，很可能每一次的讲道每一次的培训都是在拿一条条的绳子，把人捆起来，大家来的时候还挺自由的，回去时一个个被捆住。这是第一个危险，律法主义的危险。</p>
+<p class="content-paragraph">如果不明白成圣，我们会陷入放纵主义。什么是放纵主义呢？没关系嘛，你已经因信称义了，你这样子可以理解，哪一个人是圣人呢？尽量吧尽量吧。这样的人根本不明白圣经里面关于成圣的教训，你有义的身份，但你没有义的生命。所以神的义，不仅是神公义的标准在耶稣基督身上得到满足，而且耶稣基督的生命也加给了我们。我们因为信这福音，这义本于信，然后也要进深到一个地步是以至于信，也就是义的种子已经种进来了，在我们里面不断地长大，终于有一天要预备我们，越来越像那义者，就是耶稣基督，预备我们进入永恒荣耀的同在。弟兄姐妹们，如果你们的生命在改变，感谢主，你是很安全的，成圣表明从前的称义是有效的。如果一个人信主之后，生命是乱七八糟的，而且屡劝不改，对真理也没有渴慕，我们非常有理由而且是根据圣经怀疑他是否是得救的，在圣经中我找不到任何根据，说一个称义得救的人却是不成圣的，没有不断的变为圣洁。</p>
+        </div>
+
+        <div class="navigation">
+            <a href="chapter_4_topic_5.html" class="nav-btn btn-secondary">← 上一主题</a>
+            <a href="chapter_5_index.html" class="nav-btn btn-primary">下一章 →</a>
+        </div>
+    </div>
+</body>
+</html>

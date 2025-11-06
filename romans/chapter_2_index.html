@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第2章 - 保罗与福音 | 罗马书八部曲</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .topic-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .topic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .topic-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .topic-title {
+            color: #333;
+            font-size: 1.4em;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .topic-preview {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            max-height: 4.8em;
+            overflow: hidden;
+        }
+
+        .read-more {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 0.9em;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+
+        .back-home {
+            text-align: center;
+            margin-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .back-home a {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .back-home a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .topics-grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>第2章 - 保罗与福音</h1>
+            <p class="subtitle">15 个主题</p>
+        </header>
+
+        <div class="topics-grid">
+            
+            <div class="topic-card" onclick="window.location.href='chapter_2_topic_1.html'">
+                <div class="topic-number">主题 1</div>
+                <h3 class="topic-title">保罗是谁？</h3>
+                <p class="topic-preview">“耶稣基督的仆人保罗，奉召为使徒，特派传神的福音。”{{inline-scripture}}(罗马书 1:1){{/inline-scripture}} 保罗在圣经里是很特别的一个人。圣经里很多的书信...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_2_topic_2.html'">
+                <div class="topic-number">主题 2</div>
+                <h3 class="topic-title">耶稣基督的仆人保罗</h3>
+                <p class="topic-preview">耶稣基督的仆人保罗，奉召为使徒，特派传神的福音。{{inline-scripture}}(罗马书 1:1){{/inline-scripture}} 我们要从三个方面讲解这节经文。对保罗身份的形容，第...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_2_topic_3.html'">
+                <div class="topic-number">主题 3</div>
+                <h3 class="topic-title">耶稣基督的使徒保罗</h3>
+                <p class="topic-preview">保罗是仆人，但他不是一般的仆人，他以特殊的方式服侍神。他以什么方式服侍神呢？他是一个使徒。使徒是什么意思？使徒就是大使的意思。他们见过复活的基督，换句话讲，他们是“第一手的见证人”。他们不是“道听途说...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_2_topic_4.html'">
+                <div class="topic-number">主题 4</div>
+                <h3 class="topic-title">特派传神的福音</h3>
+                <p class="topic-preview">保罗说自己是要来传神的福音。所以，他写信给罗马教会的第一句话里，说自己是“特派”，被神使用，要来做一件事情，就是传神的福音。首先我们来看这个词 “福音”，福音是什么意思？很多人都不约而同地说，福音是好...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_2_topic_5.html'">
+                <div class="topic-number">主题 5</div>
+                <h3 class="topic-title">三位一体神的福音</h3>
+                <p class="topic-preview">大家和我一起做两个动作，现在，低头，然后抬头。这两个动作，代表什么呢？我觉得作为基督徒，我们应该知道这两个动作。大家知道，以色列人硬着颈项，硬着颈项是什么样子呢？就是没有办法低头，也没有办法抬头。而作...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_2_topic_6.html'">
+                <div class="topic-number">主题 6</div>
+                <h3 class="topic-title">福音的历史性</h3>
+                <p class="topic-preview">“这福音是神从前借着众先知在圣经上所应许的。 ”  {{inline-scripture}}(罗马书 1:2){{/inline-scripture}} 这福音首先是什么呢？我们要强调这福音的历史性，...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_2_topic_7.html'">
+                <div class="topic-number">主题 7</div>
+                <h3 class="topic-title">圣经与圣灵</h3>
+                <p class="topic-preview">我们继续思想“神借众先知在圣经上所应许的”{{inline-scripture}}(罗马书 1:2){{/inline-scripture}}这节经文。我们一直都在强调“The word of God...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_2_topic_8.html'">
+                <div class="topic-number">主题 8</div>
+                <h3 class="topic-title">神的儿子</h3>
+                <p class="topic-preview">耶稣基督的仆人保罗，奉召为使徒，特派传神的福音。这福音是神从前藉众先知在圣经上所应许的，论到他儿子我主耶稣基督，按肉体说，是从大卫后裔生的；按圣善的灵说，因从死里复活，以大能显明是神的儿子。 {{in...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_2_topic_9.html'">
+                <div class="topic-number">主题 9</div>
+                <h3 class="topic-title">以大能显明</h3>
+                <p class="topic-preview">你们必晓得真理，真理必叫你们得以自由。 {{inline-scripture}}(约翰福音 8:32){{/inline-scripture}} 我想鼓励大家的是，经常导致我们生命中，比如失眠、焦虑，...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_2_topic_10.html'">
+                <div class="topic-number">主题 10</div>
+                <h3 class="topic-title">主耶稣基督</h3>
+                <p class="topic-preview">耶稣基督的仆人保罗，奉召为使徒，特派传神的福音。这福音是神从前藉众先知在圣经上所应许的。论到他儿子我主耶稣基督，按肉体说，是从大卫后裔生的；按圣善的灵说，因从死里复活，以大能显明是神的儿子。 {{in...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_2_topic_11.html'">
+                <div class="topic-number">主题 11</div>
+                <h3 class="topic-title">信服真道</h3>
+                <p class="topic-preview">首先我想鼓励大家的是，要默想。大家不要只是听，还要默想。圣经里面说：昼夜思想这人便为有福。他要像一棵树，栽在溪水旁。 {{inline-scripture}}(诗篇 1:2-3){{/inline-s...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_2_topic_12.html'">
+                <div class="topic-number">主题 12</div>
+                <h3 class="topic-title">在万国中</h3>
+                <p class="topic-preview">我们从他受了恩惠并使徒的职分，在万国之中叫人为他的名信服真道； {{inline-scripture}}(罗马书 1:5){{/inline-scripture}} 这节经文里保罗说  “我在万国之中...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_2_topic_13.html'">
+                <div class="topic-number">主题 13</div>
+                <h3 class="topic-title">为他的名</h3>
+                <p class="topic-preview">在团队里面服侍非常开心，彼此激励，彼此支持。我们都竭力追求耶和华，然后也极力地去服侍他。当我们在一个大家庭中，我们在一个这样的团队时，我们每个人都是在这样被激励的状态中去生活去服侍，我跟大家分享一段经...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_2_topic_14.html'">
+                <div class="topic-number">主题 14</div>
+                <h3 class="topic-title">蒙召</h3>
+                <p class="topic-preview">“其中也有你们这蒙召属耶稣基督的人。我写信给你们在罗马为神所爱、奉召作圣徒的众人。愿恩惠平安、从我们的父   神、并主耶稣基督、归与你们。”(罗马书 1 章 6-7 节) 当保罗讲完自己是谁的时候，他...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_2_topic_15.html'">
+                <div class="topic-number">主题 15</div>
+                <h3 class="topic-title">奉召作圣徒的众人</h3>
+                <p class="topic-preview">昨天晨祷之后，有人提了问题，我觉得非常好。我想告诉大家：真理如同一颗闪亮的钻石，有好几个切面，每一个面都是很闪亮的，每一面都是钻石，合起来也是钻石。当我们学习真理的时候，我希望大家明白这点，你了解了一...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+        </div>
+
+        <div class="back-home">
+            <a href="index.html">← 返回章节列表</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第10章 - 称义的结果 | 罗马书八部曲</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .topic-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .topic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .topic-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .topic-title {
+            color: #333;
+            font-size: 1.4em;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .topic-preview {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            max-height: 4.8em;
+            overflow: hidden;
+        }
+
+        .read-more {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 0.9em;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+
+        .back-home {
+            text-align: center;
+            margin-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .back-home a {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .back-home a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .topics-grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>第10章 - 称义的结果</h1>
+            <p class="subtitle">8 个主题</p>
+        </header>
+
+        <div class="topics-grid">
+            
+            <div class="topic-card" onclick="window.location.href='chapter_10_topic_1.html'">
+                <div class="topic-number">主题 1</div>
+                <h3 class="topic-title">称义的结果---总论</h3>
+                <p class="topic-preview">我们既因信称义，就借着我们的主耶稣基督，得与神相和。我们又借着他，因信得进入现在所站的这恩典中，并且欢欢喜喜盼望神的荣耀。不但如此，就是在患难中，也是欢欢喜喜的。因为知道患难生忍耐。忍耐生老练。老练生...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_10_topic_2.html'">
+                <div class="topic-number">主题 2</div>
+                <h3 class="topic-title">在患难中欢欢喜喜</h3>
+                <p class="topic-preview">不但如此，就是在患难中也是欢欢喜喜地。因为知道患难生忍耐，忍耐生老练，老练生盼望，盼望不至于羞耻，因为所赐给我们的圣灵将神的爱浇灌在我们心里。{{inline-scripture}}(罗马书5:5){...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_10_topic_3.html'">
+                <div class="topic-number">主题 3</div>
+                <h3 class="topic-title">神的爱如何显明？(一)</h3>
+                <p class="topic-preview">因我们还软弱的时候，基督就按所定的日期为罪人死。为义人死，是少有的；为仁人死或者有敢作的。惟有基督在我们还做罪人的时候为我们死，神的爱就在此向我们显明了。现在我们既靠着他的血称义，就更要藉着他免去神的...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_10_topic_4.html'">
+                <div class="topic-number">主题 4</div>
+                <h3 class="topic-title">神的爱如何显明？(二)</h3>
+                <p class="topic-preview">我们继续学习罗马书5章6-11节。当一个人要向另一个人表达爱的时候，如何去衡量这个人的爱到底有多深呢？我们从四个问题思考。第一个问题，他的爱是否是完全自由自愿的，还是他是出于责任、被迫的？第二个问题，...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_10_topic_5.html'">
+                <div class="topic-number">主题 5</div>
+                <h3 class="topic-title">在亚当里和在基督里</h3>
+                <p class="topic-preview">耶稣基督为我们死在十字架上，这样的爱激励我们前行。有一次讲完这篇道之后，我心里有很多感动，很多激动，回家路上一直在想，主啊，我还可以为你做什么，我还可以为你再付出什么？我想我们每天不是责任在驱动着我们...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_10_topic_6.html'">
+                <div class="topic-number">主题 6</div>
+                <h3 class="topic-title">原罪的教义</h3>
+                <p class="topic-preview">这就如罪是从一人入了世界，死又是从罪来的，于是死就临到众人，因为众人都犯了罪。没有律法之先，罪已经在世上；但没有律法，罪也不算罪。然而从亚当到摩西，死就作了王，连那些不与亚当犯一样罪过的，也在他的权下...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_10_topic_7.html'">
+                <div class="topic-number">主题 7</div>
+                <h3 class="topic-title">恩赐胜过过犯</h3>
+                <p class="topic-preview">亚当和末后的亚当——耶稣基督，历史上再也没有其他人比这两个人更加重要了。我们稍微回顾一下：第12节讲到“这就如罪是从一人入了世界，死又是从罪来的，”(罗马书5:12a) 这句话讲到一切问题的根源，就是...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_10_topic_8.html'">
+                <div class="topic-number">主题 8</div>
+                <h3 class="topic-title">律法与恩典</h3>
+                <p class="topic-preview">这就如罪是从一人入了世界，死又是从罪来的，于是死就临到众人，因为众人都犯了罪。{{inline-scripture}}(罗马书5:12){{/inline-scripture}} 这就是关于原罪的教导...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+        </div>
+
+        <div class="back-home">
+            <a href="index.html">← 返回章节列表</a>
+        </div>
+    </div>
+</body>
+</html>

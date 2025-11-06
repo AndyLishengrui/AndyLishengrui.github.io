@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第4章 - 保罗与宣教 | 罗马书八部曲</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .topic-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .topic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .topic-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .topic-title {
+            color: #333;
+            font-size: 1.4em;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .topic-preview {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            max-height: 4.8em;
+            overflow: hidden;
+        }
+
+        .read-more {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 0.9em;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+
+        .back-home {
+            text-align: center;
+            margin-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .back-home a {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .back-home a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .topics-grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>第4章 - 保罗与宣教</h1>
+            <p class="subtitle">6 个主题</p>
+        </header>
+
+        <div class="topics-grid">
+            
+            <div class="topic-card" onclick="window.location.href='chapter_4_topic_1.html'">
+                <div class="topic-number">主题 1</div>
+                <h3 class="topic-title">传福音的热情</h3>
+                <p class="topic-preview">耶稣说：我的食物就是遵行差我来者的旨意，做成他的工。 {{inline-scripture}}(约翰福音 4:34){{/inline-scripture}} 英文说： My food is to d...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_4_topic_2.html'">
+                <div class="topic-number">主题 2</div>
+                <h3 class="topic-title">不以福音为耻</h3>
+                <p class="topic-preview">我不以福音为耻；这福音本是神的大能，要救一切相信的，先是犹太人，后是希腊人。因为神的义正在这福音上显明出来；这义是本于信，以至于信。如经上所记：“义人必因信得生。” {{inline-scriptur...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_4_topic_3.html'">
+                <div class="topic-number">主题 3</div>
+                <h3 class="topic-title">救人的福音</h3>
+                <p class="topic-preview">我不以福音为耻；这福音本是神的大能，要救一切相信的，先是犹太人，后是希腊人。因为神的义正在这福音上显明出来；这义是本于信，以至于信。如经上所记：“义人必因信得生。”{{inline-scripture...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_4_topic_4.html'">
+                <div class="topic-number">主题 4</div>
+                <h3 class="topic-title">渐进显明的福音</h3>
+                <p class="topic-preview">神的道兴旺起来；在耶路撒冷门徒数目加增的甚多，也有许多祭司信从了这道。 {{inline-scripture}}(使徒行传 6:7){{/inline-scripture}} 当时教会的增长非常快。而...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_4_topic_5.html'">
+                <div class="topic-number">主题 5</div>
+                <h3 class="topic-title">神的义(一)</h3>
+                <p class="topic-preview">我不以福音为耻，这福音本是神的大能，要救一切相信的，先是犹太人，后是希腊人。因为神的义正在这福音上显明出来；这义是本于信，以至于信。如经上所记：“义人必因信得生。” {{inline-scriptur...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_4_topic_6.html'">
+                <div class="topic-number">主题 6</div>
+                <h3 class="topic-title">神的义(二)</h3>
+                <p class="topic-preview">我不以福音为耻；这福音本是神的大能，要救一切相信的，先是犹太人，后是希腊人。因为神的义正在这福音上显明出来；这义是本于信，以致于信。如经上所记：“义人必因信得生。” {{inline-scriptur...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+        </div>
+
+        <div class="back-home">
+            <a href="index.html">← 返回章节列表</a>
+        </div>
+    </div>
+</body>
+</html>

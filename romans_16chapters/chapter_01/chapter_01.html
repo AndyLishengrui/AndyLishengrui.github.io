@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. 序言 - 罗马书天书八部</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        .breadcrumb {
+            font-size: 14px;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+        
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .topic-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            display: block;
+        }
+        
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .topic-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .topic-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .topic-preview {
+            color: #7f8c8d;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+        
+        .nav-footer {
+            display: flex;
+            justify-content: space-between;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .nav-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 20px rgba(255,255,255,0.3);
+        }
+        
+        .nav-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255,255,255,0.4);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .topics-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-footer {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav-btn {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="breadcrumb">
+                <a href="../index.html">主页</a> / 1. 序言
+            </div>
+            <h1>1. 序言</h1>
+            <div class="subtitle">共 24 个主题</div>
+        </div>
+        
+        <div class="topics-grid">
+            
+            <a href="topic_1.html" class="topic-card">
+                <div class="topic-number">1</div>
+                <div class="topic-title">保罗是谁？</div>
+                <div class="topic-preview">“耶稣基督的仆人保罗， 奉召为使徒， 特派传神的福 音。”(罗马书 1:1) 保罗在圣经里是很特别的一个人。圣经里很多的书信都是保罗 写的，以弗所书、提摩太前后书、提多书等，至...</div>
+            </a>
+            <a href="topic_2.html" class="topic-card">
+                <div class="topic-number">2</div>
+                <div class="topic-title">耶稣基督的仆人保罗</div>
+                <div class="topic-preview">耶稣基督的仆人保罗，奉召为使徒，特派传神的福音。(罗 马书 1:1) 我们要从三个方面讲解这节经文。对保罗身份的形容，第一个 是“仆人”，第二个是“使徒”，第三个是“特派传神的福音”。保罗是 如何自我介绍的呢？他说他是仆人，他说他是使徒。当时在罗马的 大部分信徒都是不认识保罗的，所以他亮明自己的身份...</div>
+            </a>
+            <a href="topic_3.html" class="topic-card">
+                <div class="topic-number">3</div>
+                <div class="topic-title">耶稣基督的使徒保罗</div>
+                <div class="topic-preview">保罗是仆人，但他不是一般的仆人， 他以特殊的方式服侍神。 他以什么方式服侍神呢？他是一个使徒。使徒是什么意思？使徒就 是大使的意思。他们见过复活的基督， 换句话讲， 他们是“第一手 的见证人”。他们不是“道听途说”，不是听别人讲，他们是亲眼见过 的。大家今天在读圣经的时候， 要知道保罗、彼得...</div>
+            </a>
+            <a href="topic_4.html" class="topic-card">
+                <div class="topic-number">4</div>
+                <div class="topic-title">特派传神的福音</div>
+                <div class="topic-preview">保罗说自己是要来传神的福音。所以，他写信给罗马教会的第 一句话里，说自己是“特派”，被神使用，要来做一件事情，就是传 神的福音。首先我们来看这个词 “福音”，福音是什么意思？很多人 都不约而同地说，福音是好消息。那么，我想要问，对我们来说， 福音是什么样的好消息呢？ 让我们想一想，保罗自己的...</div>
+            </a>
+            <a href="topic_5.html" class="topic-card">
+                <div class="topic-number">5</div>
+                <div class="topic-title">三位一体神的福音</div>
+                <div class="topic-preview">大家和我一起做两个动作， 现在， 低头， 然后抬头。这两个动 作，代表什么呢？我觉得作为基督徒，我们应该知道这两个动作。 大家知道， 以色列人硬着颈项，硬着颈项是什么样子呢？就是没有 办法低头， 也没有办法抬头。而作为基督徒， 这两个动作是我们最 基本的动作。 一个是低头的动作， 代表认罪悔改， 一...</div>
+            </a>
+            <a href="topic_6.html" class="topic-card">
+                <div class="topic-number">6</div>
+                <div class="topic-title">福音的历史性</div>
+                <div class="topic-preview">“这福音是神从前借着众先知在圣经上所应许的。 ” (罗马 书 1:2) 这福音首先是什么呢？ 我们要强调这福音的历史性，就是它是 发生过的。我不知道听过多少次：我知道你们基督教劝人信什么， 就是劝人为善， 凡是劝人为善的都是好的。我说： 不是的。首先， 我们的福音不是劝人为善。我们的福音是...</div>
+            </a>
+            <a href="topic_7.html" class="topic-card">
+                <div class="topic-number">7</div>
+                <div class="topic-title">圣经与圣灵</div>
+                <div class="topic-preview">我们继续思想“神借众先知在圣经上所应许的”(罗马书 1:2)这节经文。我们一直都在强调“The word of God”神的话语，神的道。 首先我要提出一个问题， 同样一本圣经， 放在不同的人手里， 为什么有些人能够明白神的话，有...</div>
+            </a>
+            <a href="topic_8.html" class="topic-card">
+                <div class="topic-number">8</div>
+                <div class="topic-title">神的儿子</div>
+                <div class="topic-preview">耶稣基督的仆人保罗，奉召为使徒， 特派传神的福音。这 福音是 神从前藉众先知在圣经上所应许的，论到他儿子我主 耶稣基督，按肉体说，是从大卫后裔生的；按圣善的灵说， 因 从死里复活， 以大能显明是 神的儿子。 (罗马书 1:1-3){{/scripture-r...</div>
+            </a>
+            <a href="topic_9.html" class="topic-card">
+                <div class="topic-number">9</div>
+                <div class="topic-title">以大能显明</div>
+                <div class="topic-preview">你们必晓得真理， 真理必叫你们得以自由。 (约翰福音 8:32) 我想鼓励大家的是， 经常导致我们生命中， 比如失眠、焦虑， 使我们痛苦难过的， 是因为， 我们容许一些谎言在...</div>
+            </a>
+            <a href="topic_10.html" class="topic-card">
+                <div class="topic-number">10</div>
+                <div class="topic-title">主耶稣基督</div>
+                <div class="topic-preview">耶稣基督的仆人保罗，奉召为使徒，特派传 神的福音。 这福音是神从前藉众先知在圣经上所应许的。论到他儿子我主 耶稣基督，按肉体说，是从大卫后裔生的；按圣善的灵说， 因 从死里复活， 以大能显明是神的儿子。 (罗马书 1:1-4){{/scripture-ref...</div>
+            </a>
+            <a href="topic_11.html" class="topic-card">
+                <div class="topic-number">11</div>
+                <div class="topic-title">信服真道</div>
+                <div class="topic-preview">首先我想鼓励大家的是，要默想。大家不要只是听，还要默想。 圣经里面说： 昼夜思想这人便为有福。他要像一棵树，栽在溪水旁。 (诗篇 1:2-3) 我想，昼夜思想是非常关键的，这是现代人非常缺乏 的操练。我们听了，但是有没有把它存...</div>
+            </a>
+            <a href="topic_12.html" class="topic-card">
+                <div class="topic-number">12</div>
+                <div class="topic-title">在万国中</div>
+                <div class="topic-preview">我们从他受了恩惠并使徒的职分，在万国之中叫人为他的名信服真道； (罗马书 1:5) 这节经文里保罗说 “我在万国之中”，哇！在当时谈论万国是 一个很了不起的事情。现在，我们已...</div>
+            </a>
+            <a href="topic_13.html" class="topic-card">
+                <div class="topic-number">13</div>
+                <div class="topic-title">为他的名</div>
+                <div class="topic-preview">在团队里面服侍非常开心， 彼此激励， 彼此支持。我们都竭力 追求耶和华， 然后也极力地去服侍他。当我们在一个大家庭中， 我 们在一个这样的团队时，我们每个人都是在这样被激励的状态中去 生活去服侍，我跟大家分享一段经文 ，在何西阿书 6 章 3 节： 我们务要认识耶和华，竭力...</div>
+            </a>
+            <a href="topic_14.html" class="topic-card">
+                <div class="topic-number">14</div>
+                <div class="topic-title">蒙召</div>
+                <div class="topic-preview">“其中也有你们这蒙召属耶稣基督的人。我写信给你们在 罗马为 神所爱、奉召作圣徒的众人。愿恩惠平安、从我们的 父 神、并主耶稣基督、归与你们。”(罗马书 1 章 6-7 节) 当保罗讲完自己是谁的时候， 他接下来描述了写信的对象是 谁。保罗说： 我们从祂受了恩惠、并使徒的职分，在万国之中叫人...</div>
+            </a>
+            <a href="topic_15.html" class="topic-card">
+                <div class="topic-number">15</div>
+                <div class="topic-title">奉召作圣徒的众人</div>
+                <div class="topic-preview">昨天晨祷之后，有人提了问题，我觉得非常好。我想告诉大家： 真理如同一颗闪亮的钻石，有好几个切面，每一个面都是很闪亮的， 每一面都是钻石， 合起来也是钻石。当我们学习真理的时候， 我希 望大家明白这点， 你了解了一面， 还要了解另一面， 我们要了解全 备的福音。我举几个例子： {{scriptur...</div>
+            </a>
+            <a href="topic_16.html" class="topic-card">
+                <div class="topic-number">1</div>
+                <div class="topic-title">我的神</div>
+                <div class="topic-preview">第一，我靠着耶稣基督，为你们众人感谢我的神， 因你们 的信德传遍了天下。我在他儿子福音上， 用心灵所侍奉的神， 可以见证我怎样不住地提到你们；在祷告之间， 常常恳求，或 者照神的旨意，终能得平坦的道路往你们那里去。因为我切切 地想见你们， 要把些属灵的恩赐分给你们，使你们可以坚固。 这样...</div>
+            </a>
+            <a href="topic_17.html" class="topic-card">
+                <div class="topic-number">2</div>
+                <div class="topic-title">写信的目的</div>
+                <div class="topic-preview">第一，我靠着耶稣基督，为你们众人感谢我的 神， 因你 们的信德传遍了天下。 (罗马书 1:8) 首先“信德”是什么意思呢？当我查考很多的英文版本，“信 德”指的是信心“Fa...</div>
+            </a>
+            <a href="topic_18.html" class="topic-card">
+                <div class="topic-number">3</div>
+                <div class="topic-title">祷告</div>
+                <div class="topic-preview">第一，我靠着耶稣基督，为你们众人感谢我的 神， 因你 们的信德传遍了天下。 我在他儿子福音上， 用心灵所侍奉的 神， 可以见证我怎样不住地提到你们； 在祷告之间常常恳求， 或者照 神的旨意，终能得平坦的道路往你们那里去。因为我 切切地想见你们，要把些属灵的恩赐分给你们，使你们可以坚 固。{{...</div>
+            </a>
+            <a href="topic_19.html" class="topic-card">
+                <div class="topic-number">1</div>
+                <div class="topic-title">传福音的热情</div>
+                <div class="topic-preview">耶稣说：我的食物就是遵行差我来者的旨意，做成他的工。 (约翰福音 4:34) 英文说： My food is to do，什么意思？就是说我的力量就是遵 行天父的旨意， 这样...</div>
+            </a>
+            <a href="topic_20.html" class="topic-card">
+                <div class="topic-number">2</div>
+                <div class="topic-title">不以福音为耻</div>
+                <div class="topic-preview">我不以福音为耻；这福音本是 神的大能，要救一切相信 的，先是犹太人，后是希腊人。因为 神的义正在这福音上显 明出来； 这义是本于信， 以至于信。如经上所记：“义人必因 信得生。” (罗马书 1:16-17) 如果我们看英文...</div>
+            </a>
+            <a href="topic_21.html" class="topic-card">
+                <div class="topic-number">3</div>
+                <div class="topic-title">救人的福音</div>
+                <div class="topic-preview">我不以福音为耻；这福音本是 神的大能，要救一切相信 的，先是犹太人，后是希腊人。因为 神的义正在这福音上显 明出来； 这义是本于信， 以至于信。如经上所记：“义人必因 信得生。”(罗马书 1:16-17) 保罗说：我不以福...</div>
+            </a>
+            <a href="topic_22.html" class="topic-card">
+                <div class="topic-number">4</div>
+                <div class="topic-title">渐进显明的福音</div>
+                <div class="topic-preview">神的道兴旺起来；在耶路撒冷门徒数目加增的甚多，也有 许多祭司信从了这道。 (使徒行传 6:7) 当时教会的增长非常快。 而这里很重要的就是 “神的道兴旺 起来。” 他们...</div>
+            </a>
+            <a href="topic_23.html" class="topic-card">
+                <div class="topic-number">5</div>
+                <div class="topic-title">神的义(一)</div>
+                <div class="topic-preview">我不以福音为耻，这福音本是神的大能，要救一切相信的， 先是犹太人，后是希腊人。因为神的义正在这福音上显明出来； 这义是本于信，以至于信。如经上所记：“义人必因信得生。” (罗马书 1:16-17) 罗马书这封书信的论述是围绕着神...</div>
+            </a>
+            <a href="topic_24.html" class="topic-card">
+                <div class="topic-number">6</div>
+                <div class="topic-title">神的义(二)</div>
+                <div class="topic-preview">我不以福音为耻；这福音本是神的大能，要救一切相信的， 先是犹太人，后是希腊人。因为神的义正在这福音上显明出来； 这义是本于信，以致于信。如经上所记：“义人必因信得生。” (罗马书 1:16-17) 但如...</div>
+            </a>
+        </div>
+        
+        <div class="nav-footer">
+            <a href="../index.html" class="nav-btn">← 返回主页</a>
+            <a href="topic_1.html" class="nav-btn">开始阅读 →</a>
+        </div>
+    </div>
+</body>
+</html>

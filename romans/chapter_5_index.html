@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第5章 - 外邦人的罪 | 罗马书八部曲</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .topic-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .topic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .topic-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .topic-title {
+            color: #333;
+            font-size: 1.4em;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .topic-preview {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            max-height: 4.8em;
+            overflow: hidden;
+        }
+
+        .read-more {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 0.9em;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+
+        .back-home {
+            text-align: center;
+            margin-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .back-home a {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .back-home a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .topics-grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>第5章 - 外邦人的罪</h1>
+            <p class="subtitle">5 个主题</p>
+        </header>
+
+        <div class="topics-grid">
+            
+            <div class="topic-card" onclick="window.location.href='chapter_5_topic_1.html'">
+                <div class="topic-number">主题 1</div>
+                <h3 class="topic-title">神的忿怒</h3>
+                <p class="topic-preview">原来，神的忿怒从天上显明在一切不虔不义的人身上，就是那些行不义阻挡真理的人。{{inline-scripture}}(罗马书1:18){{/inline-scripture}} 《罗马书》1章16、1...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_5_topic_2.html'">
+                <div class="topic-number">主题 2</div>
+                <h3 class="topic-title">神的忿怒在哪里显明？</h3>
+                <p class="topic-preview">原来，神的忿怒从天上显明在一切不虔不义的人身上，就是那些行不义阻挡真理的人。{{inline-scripture}}(罗马书1:18){{/inline-scripture}} 上次我们讲了神的忿怒，...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_5_topic_3.html'">
+                <div class="topic-number">主题 3</div>
+                <h3 class="topic-title">行不义阻挡真理的人</h3>
+                <p class="topic-preview">罗马书1章18-32节虽然我们是一段一段讲，但这是一个整体，所以可能在讲的过程中会有一些前后联系，不只是这句讲完再讲下句，可能这句和最后一句连起来一起讲。 原来，神的忿怒，从天上显明在一切不虔不义的人...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_5_topic_4.html'">
+                <div class="topic-number">主题 4</div>
+                <h3 class="topic-title">神的忿怒体现在哪里？</h3>
+                <p class="topic-preview">原来，神的忿怒，从天上显明在一切不虔不义的人身上，就是那些行不义阻挡真理的人。神的事情，人所能知道的，原显明在人心里，因为神已经给他们显明。自从造天地以来，神的永能和神性是明明可知的，虽是眼不能见，但...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+
+            <div class="topic-card" onclick="window.location.href='chapter_5_topic_5.html'">
+                <div class="topic-number">主题 5</div>
+                <h3 class="topic-title">罪的隐蔽性</h3>
+                <p class="topic-preview">他们虽知道神判定行这样事的人是当死的，然而他们不但自己去行，还喜欢别人去行。你这论断人的，无论你是谁，也无可推诿。你在什么事上论断人，就在什么事上定自己的罪；因你这论断人的，自己所行却和别人一样。(罗...</p>
+                <div class="read-more">开始阅读 →</div>
+            </div>
+        </div>
+
+        <div class="back-home">
+            <a href="index.html">← 返回章节列表</a>
+        </div>
+    </div>
+</body>
+</html>
