@@ -1,0 +1,8 @@
+{
+  // Use the project root as the web server root
+  "livePreview.serverRoot": "${workspaceFolder}",
+  // Auto refresh preview when files are saved
+  "livePreview.autoRefreshPreview": true,
+  // Prefer opening the preview to the side
+  "livePreview.openPreviewTarget": "Beside"
+}
